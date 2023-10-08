@@ -400,8 +400,8 @@ function B_fdf(model::SAFTVRMieNN, V, T, z, λ, x_0, ζ_X_=@f(ζ_X), ρ_S_=@f(ρ
     ζX3 = (1 - ζ_X_)^3
     ζX6 = ζX3 * ζX3
 
-    _f::T1 = I * (1 - ζ_X_ / 2) / ζX3 - 9 * J * ζ_X_ * (ζ_X_ + 1) / (2 * ζX3)
-    _df::T1 = (((1 - ζ_X_ / 2) * I / ζX3 - 9 * ζ_X_ * (1 + ζ_X_) * J / (2 * ζX3))
+    _f = I * (1 - ζ_X_ / 2) / ζX3 - 9 * J * ζ_X_ * (ζ_X_ + 1) / (2 * ζX3)
+    _df = (((1 - ζ_X_ / 2) * I / ζX3 - 9 * ζ_X_ * (1 + ζ_X_) * J / (2 * ζX3))
            +
            ζ_X_ * ((3 * (1 - ζ_X_ / 2) * ζX2
                     -
@@ -490,7 +490,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     a₁ = zero(V + T + first(z))
     a₂ = a₁
     a₃ = a₁
-    achain::T1 = a₁
+    achain = a₁
     _ζst5 = _ζst^5
     _ζst8 = _ζst^8
     _KHS, _∂KHS = @f(KHS_fdf, ζₓ, ρS)
@@ -584,7 +584,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
 
         g_2_ = (1 + γc) * gMCA2
         g_Mie_ = g_HSi * exp(τ * g_1_ / g_HSi + τ^2 * g_2_ / g_HSi)
-        achain::T1 -= z[i] * (log(g_Mie_) * (mi - 1))
+        achain -= z[i] * (log(g_Mie_) * (mi - 1))
         for j ∈ 1:i-1
             x_Sj = z[j] * m[j] * m̄inv
             ϵ = _ϵ[i, j]
@@ -621,7 +621,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     a₁ = a₁ * m̄ / T / ∑z
     a₂ = a₂ * m̄ / (T * T) / ∑z
     a₃ = a₃ * m̄ / (T * T * T) / ∑z
-    adisp::T1 = a₁ + a₂ + a₃
+    adisp = a₁ + a₂ + a₃
     return adisp + achain / ∑z
 end
 
