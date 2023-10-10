@@ -218,8 +218,10 @@ function d_vrmie(T, λa, λr, σ, ϵ)
     θ = C / Tx
     λrinv = 1 / λr
     λaλr = λa / λr
+    #? Is this the only part incompatible with Zygote?
+    #* If so, we should be able to use ImplicitDifferentiation.jl -- then can just use Zygote end-to-end
     f_laguerre(x) = x^(-λrinv) * exp(θ * x^(λaλr)) * λrinv / x
-    ∑fi = Solvers.laguerre5(f_laguerre, θ, one(θ))
+    ∑fi = Solvers.laguerre5(f_laguerre, θ, one(θ)) 
     #∑fi2 = Solvers.laguerre10(f_laguerre,θ,1.)
     di = σ * (1 - ∑fi)
     return di
@@ -314,24 +316,11 @@ end
 function f123456(model::SAFTVRMieNN, V, T, z, α)
     ϕ = SAFTVRMieconsts.ϕ
     _0 = zero(α)
-    fa = (_0, _0, _0, _0, _0, _0)
-    fb = (_0, _0, _0, _0, _0, _0)
-    # @inbounds for i ∈ 1:4
-    for i ∈ 1:4
-        ϕi = ϕ[i]#::NTuple{6,Float64}
-        ii = i - 1
-        αi = α^ii
-        fa = fa .+ ϕi .* αi
-    end
-    # @inbounds for i ∈ 5:7
-    for i ∈ 5:7
-        ϕi = ϕ[i]#::NTuple{6,Float64}
-        ii = i - 4
-        αi = α^ii
-        fb = fb .+ ϕi .* αi
-    end
+    
+    add_tuples(a, b) = map(+, a, b)
+    fa = reduce(add_tuples, (ϕ[i] .* α^(i-1) for i in 1:4))
+    fb = reduce(add_tuples, (ϕ[i] .* α^(i-4) for i in 1:3))
     return fa ./ (one(_0) .+ fb)
-    #return sum(ϕ[i+1][m]*α^i for i ∈ 0:3)/(1+∑(ϕ[i+1][m]*α^(i-3) for i ∈ 4:6))
 end
 
 function ζst(model::SAFTVRMieNN, V, T, z, _σ=model.params.sigma)
@@ -358,12 +347,12 @@ end
 
 function g_HS(model::SAFTVRMieNN, V, T, z, x_0ij, ζ_X_=@f(ζ_X))
     ζX3 = (1 - ζ_X_)^3
-    #evalpoly(ζ_X_,(0,42,-39,9,-2)) = (42ζ_X_-39ζ_X_^2+9ζ_X_^3-2ζ_X_^4)
+    # evalpoly(ζ_X_,(0,42,-39,9,-2)) = (42ζ_X_-39ζ_X_^2+9ζ_X_^3-2ζ_X_^4)
     k_0 = -log(1 - ζ_X_) + evalpoly(ζ_X_, (0, 42, -39, 9, -2)) / (6 * ζX3)
-    #evalpoly(ζ_X_,(0,-12,6,0,1)) = (ζ_X_^4+6*ζ_X_^2-12*ζ_X_)
+    # evalpoly(ζ_X_,(0,-12,6,0,1)) = (ζ_X_^4+6*ζ_X_^2-12*ζ_X_)
     k_1 = evalpoly(ζ_X_, (0, -12, 6, 0, 1)) / (2 * ζX3)
     k_2 = -3 * ζ_X_^2 / (8 * (1 - ζ_X_)^2)
-    #(-ζ_X_^4+3*ζ_X_^2+3*ζ_X_) = evalpoly(ζ_X_,(0,3,3,0,-1))
+    # (-ζ_X_^4+3*ζ_X_^2+3*ζ_X_) = evalpoly(ζ_X_,(0,3,3,0,-1))
     k_3 = evalpoly(ζ_X_, (0, 3, 3, 0, -1)) / (6 * ζX3)
     return exp(evalpoly(x_0ij, (k_0, k_1, k_2, k_3)))
 end
