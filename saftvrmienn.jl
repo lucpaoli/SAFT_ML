@@ -158,16 +158,21 @@ end
 # end
 
 #fused chain and disp calculation
-function Clapeyron.a_res(model::SAFTVRMieNN, V, T, z=[1.0])
+function a_res(model::SAFTVRMieNN, V, T, z)
     _data = @f(data)
-    # @show _data
-    #! Data is the same
-    hs = @f(a_hs, _data)
-    dispchain = @f(a_dispchain, _data)
-    # assoc = @f(a_assoc, _data)
-    assoc = 0.0 # association not differentiable
-    return hs + dispchain + assoc #! No association yet
+    return @f(a_hs, _data) + @f(a_dispchain, _data) + @f(a_assoc, _data)
 end
+
+# function Clapeyron.a_res(model::SAFTVRMieNN, V, T, z=[1.0])
+#     _data = @f(data)
+#     # @show _data
+#     #! Data is the same
+#     hs = @f(a_hs, _data)
+#     dispchain = @f(a_dispchain, _data)
+#     # assoc = @f(a_assoc, _data)
+#     assoc = 0.0 # association not differentiable
+#     return hs + dispchain + assoc #! No association yet
+# end
 
 # function Clapeyron.pressure(model::SAFTVRMieNN, V, T, z)
 #     f_a(V) = a_res(model, V, T, z)
@@ -423,7 +428,6 @@ function KHS_fdf(model::SAFTVRMieNN, V, T, z, ζ_X_, ρ_S_=@f(ρ_S))
     ∂denom1 = evalpoly(ζ_X_, (4, 8, -12, 4))
     _f = ζX4 / denom1
     _df = -(ζ_X_ / ρ_S_) * ((4 * (1 - ζ_X_)^3 * denom1 + ζX4 * ∂denom1) / denom1^2)
-    #@show _f,_df
     return _f, _df
 end
 
@@ -525,7 +529,6 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
         B_r, ∂B∂ρS_r = @f(B_fdf, λr, x_0ij, ζₓ, ρS)
         a1_ij = (2 * T1(π) * ϵ * dij3) * _C * ρS *
                 (x_0ij_λa * (aS₁_a + B_a) - x_0ij_λr * (aS₁_r + B_r))
-        @show a1_ij
 
         #calculations for a2 - diagonal
         aS₁_2a, ∂aS₁∂ρS_2a = @f(aS_1_fdf, 2 * λa, ζₓ, ρS)
@@ -536,7 +539,6 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
         B_ar, ∂B∂ρS_ar = @f(B_fdf, λr + λa, x_0ij, ζₓ, ρS)
         α = _C * (1 / (λa - 3) - 1 / (λr - 3))
         f1, f2, f3, f4, f5, f6 = @f(f123456, α)
-        @show f1, f2, f3, f4, f5, f6
         _χ = f1 * _ζst + f2 * _ζst5 + f3 * _ζst8
         a2_ij = T1(π) * _KHS * (1 + _χ) * ρS * ϵ^2 * dij3 * _C^2 *
                 (x_0ij_2λa * (aS₁_2a + B_2a)
@@ -545,12 +547,9 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
                  +
                  x_0ij_2λr * (aS₁_2r + B_2r)
                 )
-        @show a2_ij
 
         #calculations for a3 - diagonal
         a3_ij = -ϵ^3 * f4 * _ζst * exp(_ζst * (f5 + f6 * _ζst))
-        # @show ϵ, f1, _ζst, f5, f6
-        @show a3_ij
         #adding - diagonal
         a₁ += a1_ij * x_Si * x_Sj
         a₂ += a2_ij * x_Si * x_Sj
@@ -625,13 +624,10 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
             a₃ += 2 * a3_ij * x_Si * x_Sj
         end
     end
-    # @show a₁, a₂, a₃
-    #! a₁ same, a₂ a₃ different
     a₁ = a₁ * m̄ / T / ∑z
     a₂ = a₂ * m̄ / (T * T) / ∑z
     a₃ = a₃ * m̄ / (T * T * T) / ∑z
     adisp = a₁ + a₂ + a₃
-    # @show adisp, achain, ∑z
     return adisp + achain / ∑z
 end
 
@@ -735,7 +731,6 @@ function a_disp(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     a₁ = a₁ * m̄ / T #/sum(z)
     a₂ = a₂ * m̄ / (T * T)  #/sum(z)
     a₃ = a₃ * m̄ / (T * T * T)  #/sum(z)
-    #@show (a₁,a₂,a₃)
     adisp::Float32 = a₁ + a₂ + a₃
     return adisp
 end
@@ -804,14 +799,11 @@ function a_chain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
         a₃ += a3_ij * x_Si * x_Sj
 
         g_HSi = @f(g_HS, x_0ij, _ζ_X)
-        #@show (g_HSi,i)
         ∂a_1∂ρ_S = _C * (x_0ij^λa * (∂aS_1∂ρS_a + ∂B∂ρS_a)
                          -
                          x_0ij^λr * (∂aS_1∂ρS_r + ∂B∂ρS_r))
-        #@show (∂a_1∂ρ_S,1)
 
         g_1_ = 3 * ∂a_1∂ρ_S - _C * (λa * x_0ij^λa * (aS_1_a + B_a) - λr * x_0ij^λr * (aS_1_r + B_r))
-        #@show (g_1_,i)
         θ = exp(ϵ / T) - 1
         γc = 10 * (-tanh(10 * (0.57 - α)) + 1) * _ζst * θ * exp(-6.7 * _ζst - 8 * _ζst^2)
         ∂a_2∂ρ_S = 0.5 * _C^2 *
@@ -832,9 +824,7 @@ function a_chain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
                                 (λa + λr) * x_0ij^(λa + λr) * (aS_1_ar + B_ar) +
                                 λa * x_0ij^(2 * λa) * (aS_1_2a + B_2a))
         g_2_ = (1 + γc) * gMCA2
-        #@show (g_2_,i)
         g_Mie_ = g_HSi * exp(ϵ / T * g_1_ / g_HSi + (ϵ / T)^2 * g_2_ / g_HSi)
-        #@show (g_Mie_,i)
         achain += z[i] * (log(g_Mie_) * (m[i] - 1))
     end
     return -achain / ∑z
