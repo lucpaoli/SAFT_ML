@@ -160,6 +160,8 @@ end
 #fused chain and disp calculation
 function Clapeyron.a_res(model::SAFTVRMieNN, V, T, z=[1.0])
     _data = @f(data)
+    # @show _data
+    #! Data is the same
     hs = @f(a_hs, _data)
     dispchain = @f(a_dispchain, _data)
     # assoc = @f(a_assoc, _data)
@@ -331,7 +333,7 @@ function f123456(model::SAFTVRMieNN, V, T, z, α)
     
     add_tuples(a, b) = map(+, a, b)
     fa = reduce(add_tuples, (ϕ[i] .* α^(i-1) for i in 1:4))
-    fb = reduce(add_tuples, (ϕ[i] .* α^(i-4) for i in 1:3))
+    fb = reduce(add_tuples, (ϕ[i] .* α^(i-4) for i in 5:7))
     return fa ./ (one(_0) .+ fb)
 end
 
@@ -480,7 +482,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     T1 = eltype(V + T + first(z))
     _d, ρS, ζi, ζₓ, _ζst, _, m̄ = _data
     comps = @comps
-    ∑z = sum(z)
+    ∑z = Clapeyron.∑(z)
     m = model.params.segment
     _ϵ = model.params.epsilon
     _λr = model.params.lambda_r
@@ -523,7 +525,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
         B_r, ∂B∂ρS_r = @f(B_fdf, λr, x_0ij, ζₓ, ρS)
         a1_ij = (2 * T1(π) * ϵ * dij3) * _C * ρS *
                 (x_0ij_λa * (aS₁_a + B_a) - x_0ij_λr * (aS₁_r + B_r))
-
+        @show a1_ij
 
         #calculations for a2 - diagonal
         aS₁_2a, ∂aS₁∂ρS_2a = @f(aS_1_fdf, 2 * λa, ζₓ, ρS)
@@ -534,6 +536,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
         B_ar, ∂B∂ρS_ar = @f(B_fdf, λr + λa, x_0ij, ζₓ, ρS)
         α = _C * (1 / (λa - 3) - 1 / (λr - 3))
         f1, f2, f3, f4, f5, f6 = @f(f123456, α)
+        @show f1, f2, f3, f4, f5, f6
         _χ = f1 * _ζst + f2 * _ζst5 + f3 * _ζst8
         a2_ij = T1(π) * _KHS * (1 + _χ) * ρS * ϵ^2 * dij3 * _C^2 *
                 (x_0ij_2λa * (aS₁_2a + B_2a)
@@ -542,9 +545,12 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
                  +
                  x_0ij_2λr * (aS₁_2r + B_2r)
                 )
+        @show a2_ij
 
         #calculations for a3 - diagonal
         a3_ij = -ϵ^3 * f4 * _ζst * exp(_ζst * (f5 + f6 * _ζst))
+        # @show ϵ, f1, _ζst, f5, f6
+        @show a3_ij
         #adding - diagonal
         a₁ += a1_ij * x_Si * x_Sj
         a₂ += a2_ij * x_Si * x_Sj
@@ -619,10 +625,13 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
             a₃ += 2 * a3_ij * x_Si * x_Sj
         end
     end
+    # @show a₁, a₂, a₃
+    #! a₁ same, a₂ a₃ different
     a₁ = a₁ * m̄ / T / ∑z
     a₂ = a₂ * m̄ / (T * T) / ∑z
     a₃ = a₃ * m̄ / (T * T * T) / ∑z
     adisp = a₁ + a₂ + a₃
+    # @show adisp, achain, ∑z
     return adisp + achain / ∑z
 end
 
