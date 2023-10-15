@@ -160,7 +160,11 @@ end
 #fused chain and disp calculation
 function Clapeyron.a_res(model::SAFTVRMieNN, V, T, z=[1.0])
     _data = @f(data)
-    return @f(a_hs, _data) + @f(a_dispchain, _data) #+ @f(a_assoc, _data) #! No association yet
+    hs = @f(a_hs, _data)
+    dispchain = @f(a_dispchain, _data)
+    # assoc = @f(a_assoc, _data)
+    assoc = 0.0 # association not differentiable
+    return hs + dispchain + assoc #! No association yet
 end
 
 # function Clapeyron.pressure(model::SAFTVRMieNN, V, T, z)
