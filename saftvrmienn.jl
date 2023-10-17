@@ -158,9 +158,9 @@ end
 # end
 
 #fused chain and disp calculation
-function a_res(model::SAFTVRMieNN, V, T, z)
+function Clapeyron.a_res(model::SAFTVRMieNN, V, T, z)
     _data = @f(data)
-    return @f(a_hs, _data) + @f(a_dispchain, _data) + @f(a_assoc, _data)
+    return @f(a_hs, _data) + @f(a_dispchain, _data)# + @f(a_assoc, _data)
 end
 
 # function Clapeyron.a_res(model::SAFTVRMieNN, V, T, z=[1.0])
@@ -174,11 +174,6 @@ end
 #     return hs + dispchain + assoc #! No association yet
 # end
 
-# function Clapeyron.pressure(model::SAFTVRMieNN, V, T, z)
-#     f_a(V) = a_res(model, V, T, z)
-#     p = -Zygote.gradient(f_a, V)[1]
-#     return p
-# end
 
 function a_mono(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     return @f(a_hs, _data) + @f(a_disp, _data)
