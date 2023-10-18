@@ -3,7 +3,7 @@ import Clapeyron: *, @comps
 import Clapeyron: dot, a_assoc, bmcs_hs, N_A, Solvers, diagvalues, SAFTγMieconsts, SA, SingleComp
 import Base: @kwdef
 
-using Zygote
+using Zygote, ChainRulesCore
 
 # struct SAFTVRMieParam{T} <: EoSParam
 #     Mw::SingleParam{T}
@@ -106,6 +106,83 @@ end
     params::SAFTVRMieNNParams
     idealmodel::IdealModel = BasicIdeal(["methane"])
     components::Vector{String} = ["methane"]
+end
+
+function make_NN_model(Mw, m, σ, λ_a, λ_r, ϵ)
+    model = SAFTVRMieNN(
+        params = SAFTVRMieNNParams(
+            Mw=[Mw],
+            segment=[m],
+            sigma=[σ*1e-10],
+            lambda_a=[λ_a],
+            lambda_r=[λ_r],
+            epsilon=[ϵ],
+            epsilon_assoc=Float32[],
+            bondvol=Float32[],
+        )
+    )
+    return model
+end
+
+# Hack to get around Clapeyron model construction API
+function make_model(Mw, m, σ, λ_a, λ_r, ϵ)
+    model = SAFTVRMie(["methane"])
+    
+    model.params.Mw[1] = Mw
+    model.params.segment[1] = m
+    model.params.sigma[1] = σ*1e-10
+    model.params.lambda_a[1] = λ_a
+    model.params.lambda_r[1] = λ_r
+    model.params.epsilon[1] = ϵ
+
+    return model
+end
+
+#! Not differentiable! 
+function critical_temperature_NN(X)
+    saft_model = make_model(X...)
+    Tc, pc, Vc = crit_pure(saft_model)
+    
+    return Tc
+end
+
+function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
+    saft_model = make_model(X...)
+    Tc, pc, Vc = crit_pure(saft_model)
+    
+    function f_pullback(Δy)
+        return (NoTangent(), NoTangent())
+    end
+
+    return Tc, f_pullback
+end
+
+
+function saturation_pressure_NN(X, T)
+    model = make_model(X...)
+    p, Vₗ, Vᵥ = saturation_pressure(model, T)
+
+    return p
+end
+
+function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
+    model = make_model(X...)
+    p, Vₗ, Vᵥ = saturation_pressure(model, T)
+    
+    function f_pullback(Δy)
+        #* Newton step from perfect initialisation
+        function f_p(X, T)
+            model = make_NN_model(X...)
+            p2 = -(eos(model, Vᵥ, T) - eos(model, Vₗ, T))/(Vᵥ - Vₗ);
+            return p2
+        end
+
+        ∂X = @thunk(ForwardDiff.gradient(X -> f_p(X, T), X) .* Δy)
+        ∂T = @thunk(ForwardDiff.derivative(T -> f_p(X, T), T) .* Δy)
+        return (NoTangent(), ∂X, ∂T)
+    end
+
+    return p, f_pullback
 end
 
 # diagvalues(x<:Rea) = x
