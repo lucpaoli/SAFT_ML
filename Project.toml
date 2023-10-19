@@ -1,10 +1,12 @@
 [deps]
+BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
 Clapeyron = "7c7805af-46cc-48c9-995b-ed0ed2dc909a"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
 DiffResults = "163ba53b-c6d8-5494-b064-1a9d43ac40c5"
+Feather = "becb17da-46f6-5d3c-ad1b-1c5fe96bc73c"
 Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
 ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
 GeometricFlux = "7e08b658-56d3-11e9-2997-919d5b31e4ea"
