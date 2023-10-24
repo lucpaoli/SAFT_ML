@@ -1,4 +1,3 @@
-
 using Revise
 using Clapeyron
 includet("./saftvrmienn.jl")
@@ -49,7 +48,7 @@ T = Float32
 X_data = Vector{Tuple{Vector{T},T,T}}([])
 Y_data = Vector{Vector{T}}()
 
-n = 50
+n = 15
 for (name, smiles, Mw) in mol_data
     saft_model = PPCSAFT([name])
     Tc, pc, Vc = crit_pure(saft_model)
@@ -87,9 +86,10 @@ X_data = [(vec[keep_cols], val1, val2) for (vec, val1, val2) in X_data]
 
 train_data, test_data = splitobs((X_data, Y_data), at=0.8, shuffle = true)
 
-train_loader = DataLoader(train_data, batchsize=32, shuffle=true)
-test_loader = DataLoader(test_data, batchsize=32, shuffle=false)
+train_loader = DataLoader(train_data, batchsize=64, shuffle=true)
+test_loader = DataLoader(test_data, batchsize=64, shuffle=false)
 
+@info "n_batches = $(length(train_loader))"
 # Base NN architecture from "Fitting Error vs Parameter Performance"
 nfeatures = length(X_data[1][1])
 nout = 5
@@ -123,69 +123,93 @@ loss_vec = Float32[]
 mean_loss_vec = Float32[]
 mean_percent_loss_vec = Float32[]
 
-# Create thread-safe arrays for storing intermediate results
 const n_threads = Threads.nthreads()
-thread_batch_loss = Vector{Float32}(undef, n_threads)
-thread_percent_error = Vector{Float32}(undef, n_threads)
+# mutex = Threads.Mutex()
+l = Threads.SpinLock()
+thread_batch_losses = Vector{Float32}(undef, n_threads)
+thread_percent_errors = Vector{Float32}(undef, n_threads)
 
-function parallel_loss_fn(X_batch, y_batch)
-    Threads.@threads for i in 1:length(X_batch)
-        tid = Threads.threadid()
-        X, y = X_batch[i], y_batch[i]
+loss_fn(X_batch, y_batch) = begin
+    n = 0
+    batch_loss = 0.0
+    percent_error = 0.0
+    for (X, y_vec) in zip(X_batch, y_batch)
         fp, T, Mw = X
-        y = y[1]
-        
+        y = y_vec[1]
+
         X_pred = nn_model(fp)
         X_saft = vcat(Mw, X_pred)
         Tc = critical_temperature_NN(X_saft)
-        
         if T < Tc
             ŷ = saturation_pressure_NN(X_saft, T)
             if !isnan(ŷ)
-                thread_batch_loss[tid] += ((ŷ - y) / y)^2
-                thread_percent_error[tid] += 100 * abs((ŷ - y) / y)
+                n += 1
+                batch_loss += ((ŷ - y) / y)^2
+                percent_error += 100 * abs((ŷ - y) / y)
             end
         end
     end
-    mean_batch_loss = mean(thread_batch_loss)
-    mean_percent_error = mean(thread_percent_error)
-    return mean_batch_loss, mean_percent_error
+    if n != 0
+        batch_loss /= n
+        percent_error /= n
+    end
+    batch_loss, percent_error
 end
 
 for epoch in 1:epochs
-    epoch_loss_vec = Float32[]
-    epoch_loss = 0.0
-
-    for (X_batch, y_batch) in train_loader
-        # @show loss_fn(X_batch, y_batch) 
-
-        batch_loss = 0.0
-        percent_error = 0.0
+    Threads.@threads for batch_idx in 1:length(train_loader)
+    # for batch_idx in 1:length(train_loader)
+        # Each thread computes its own X_batch and y_batch based on batch_idx
+        # Initialize DataLoader iterator and skip to the batch corresponding to batch_idx
+        # todo: check this works locally (can protype multithreading locally)
+        data_iterator = iterate(train_loader)
+        for _ in 1:batch_idx-1
+            data_iterator = iterate(train_loader, data_iterator[2])
+        end
+        X_batch, y_batch = data_iterator[1]
+        
+        local_batch_loss = 0.0
+        local_percent_error = 0.0
+        
+        # Calculate gradients in a usual way
         grads = Zygote.gradient(Flux.params(unbounded_model)) do
-            batch_loss, percent_error = parallel_loss_fn(X_batch, y_batch)
+            batch_loss, percent_error = loss_fn(X_batch, y_batch)
+            local_batch_loss = batch_loss
+            local_percent_error = percent_error
             percent_error
         end
 
-        # Update model parameters
-        Flux.update!(opt, Flux.params(unbounded_model), grads)
+        # Update thread-local storage after gradient calculation
+        thread_batch_losses[Threads.threadid()] = local_batch_loss
+        thread_percent_errors[Threads.threadid()] = local_percent_error
+        # thread_batch_losses[1] = local_batch_loss
+        # thread_percent_errors[1] = local_percent_error
 
-        append!(epoch_loss_vec, batch_loss)
-        append!(epoch_percent_loss_vec, percent_error)
+        # Lock needed here if update is not thread-safe
+        lock(l)
+        try
+            Flux.update!(opt, Flux.params(unbounded_model), grads)
+        finally
+            unlock(l)
+        end
     end
-    mean_loss = mean(epoch_loss_vec)
-    mean_percent_loss = mean(epoch_percent_loss_vec)
-    append!(loss_vec, epoch_loss_vec)
+    
+    # Aggregate results from all threads
+    # epoch_loss_vec = thread_batch_losses
+    # epoch_percent_loss_vec = thread_percent_errors
+    mean_loss = mean(thread_batch_losses)
+    std_loss = mean(thread_batch_losses)
+    mean_percent_loss = mean(thread_percent_errors)
+    # append!(loss_vec, thread_batch_losses)
     append!(mean_loss_vec, mean_loss)
     append!(mean_percent_loss_vec, mean_percent_loss)
 
-    # if epoch in [1, 2, 3, 4, 5, 10] || epoch % 5 == 0 || epoch == epochs || epoch % 2 == 0
-    println("Epoch: $epoch, Loss: (μ=$mean_loss, σ=$(std(epoch_loss_vec))), Percent Error: $mean_percent_loss")
-    # end
+    println("Epoch: $epoch, Loss: (μ=$mean_loss, σ=$std_loss), Percent Error: $mean_percent_loss")
 end
 
 model_state = Flux.state(unbounded_model);
 jldsave("model_state.jld2"; model_state)
-jldsave("epoch_percent_loss_vec.jld2"; epoch_percent_loss_vec)
+jldsave("mean_percent_loss_vec.jld2"; mean_percent_loss_vec)
 
 plot(epoch_percent_loss_vec)
 savefig("epoch_loss.png")
