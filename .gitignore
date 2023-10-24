@@ -26,3 +26,6 @@ Manifest.toml
 # Swap files
 *.swp
 */.vscode/settings.json
+
+# symlink
+julia
