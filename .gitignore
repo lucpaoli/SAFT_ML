@@ -28,3 +28,7 @@ Manifest.toml
 
 # symlink
 julia
+
+# Cluster outputs
+*.e*
+*.o*
