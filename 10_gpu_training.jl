@@ -132,6 +132,7 @@ loss_fn(X_batch, y_batch) = begin
     n = 0
     batch_loss = 0.0
     percent_error = 0.0
+    #! To use a GPU, I cannot have this as an iterative procedure
     for (X, y) in zip(X_batch, y_batch)
         fp, T, Mw = X
         y = y[1]
@@ -139,7 +140,7 @@ loss_fn(X_batch, y_batch) = begin
         X_pred = nn_model(fp)
         X_saft = vcat(Mw, X_pred)
         Tc = critical_temperature_NN(X_saft)
-        if T < Tc
+        if T < Tc #! If statements don't work well on a GPU. Use masking instead
             ŷ = saturation_pressure_NN(X_saft, T)
             if !isnan(ŷ)
                 n += 1
@@ -153,6 +154,23 @@ loss_fn(X_batch, y_batch) = begin
         percent_error /= n
     end
     batch_loss, percent_error
+end
+
+predict_X(X) = begin
+    fp, _... = X
+    X_pred = nn_model(fp)
+    X_pred
+end
+
+get_Tcrit(X, saft_params_pred) = begin
+    fp, _... = X
+    Tc = critical_temperature_NN(X_saft)
+end
+
+gpu_loss_fn(X_batch, y_batch) = begin 
+    saft_params_pred = @. predict_X(X_batch)
+    Tc = @. get_Tcrit(X_batch, saft_params_pred)
+    # Create mask
 end
 
 for epoch in 1:epochs
