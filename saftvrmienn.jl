@@ -153,16 +153,16 @@ function critical_temperature_NN(X)
     return Tc
 end
 
-function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
-    saft_model = make_model(X...)
-    Tc, pc, Vc = crit_pure(saft_model)
+# function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
+#     saft_model = make_model(X...)
+#     Tc, pc, Vc = crit_pure(saft_model)
 
-    function f_pullback(Δy)
-        return (NoTangent(), NoTangent())
-    end
+#     function f_pullback(Δy)
+#         return (NoTangent(), NoTangent())
+#     end
 
-    return Tc, f_pullback
-end
+#     return Tc, f_pullback
+# end
 
 
 function saturation_pressure_NN(X, T)
@@ -172,6 +172,8 @@ function saturation_pressure_NN(X, T)
     return p
 end
 
+#! In the forward pass, use ForwardDiff to compute value + gradient
+#! Then return cached value in pullback function
 function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
     model = make_model(X...)
     p, Vₗ, Vᵥ = saturation_pressure(model, T)
@@ -520,7 +522,7 @@ function B_fdf(model::SAFTVRMieNN, V, T, z, λ, x_0, ζ_X_=@f(ζ_X), ρ_S_=@f(ρ
     ζX2 = (1 - ζ_X_)^2
     ζX3 = (1 - ζ_X_)^3
     ζX6 = ζX3 * ζX3
-    @show ζ_X_
+    # @show ζ_X_
 
     _f = I * (1 - ζ_X_ / 2) / ζX3 - 9 * J * ζ_X_ * (ζ_X_ + 1) / (2 * ζX3)
     _df = (((1 - ζ_X_ / 2) * I / ζX3 - 9 * ζ_X_ * (1 + ζ_X_) * J / (2 * ζX3))
@@ -673,20 +675,20 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
                 )
 
         #calculations for a3 - diagonal
-        @show ϵ
-        @show f4
-        @show _ζst
-        @show f5
-        @show f6
+        # @show ϵ
+        # @show f4
+        # @show _ζst
+        # @show f5
+        # @show f6
         a3_ij = -ϵ^3 * f4 * _ζst * exp(_ζst * (f5 + f6 * _ζst))
         #adding - diagonal
         a₁ += a1_ij * x_Si * x_Sj
         a₂ += a2_ij * x_Si * x_Sj
         a₃ += a3_ij * x_Si * x_Sj
         
-        @show a₁
-        @show a₂
-        @show a₃
+        # @show a₁
+        # @show a₂
+        # @show a₃
 
         g_HSi = @f(g_HS, x_0ij, ζₓ)
 
@@ -731,7 +733,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
                             x_0ij_2λr * (∂aS₁∂ρS_2r + ∂B∂ρS_2r)
                    )
                    )
-        @show ∂a_2∂ρ_S
+        # @show ∂a_2∂ρ_S
 
         gMCA2 = 3 * ∂a_2∂ρ_S - _KHS * _C^2 *
                                (λr * x_0ij_2λr * (aS₁_2r + B_2r) -
@@ -780,8 +782,8 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     a₂ = a₂ * m̄ / (T * T) / ∑z
     a₃ = a₃ * m̄ / (T * T * T) / ∑z
     adisp = a₁ + a₂ + a₃
-    @show adisp
-    @show achain
+    # @show adisp
+    # @show achain
     return adisp + achain / ∑z
 end
 
@@ -885,7 +887,7 @@ function a_disp(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     a₁ = a₁ * m̄ / T #/sum(z)
     a₂ = a₂ * m̄ / (T * T)  #/sum(z)
     a₃ = a₃ * m̄ / (T * T * T)  #/sum(z)
-    adisp::Float32 = a₁ + a₂ + a₃
+    adisp = a₁ + a₂ + a₃
     return adisp
 end
 
@@ -1022,14 +1024,14 @@ function d(model::SAFTVRMieNN, V, T, z::SingleComp)
     return [d_vrmie(T, λa[1], λr[1], σ[1], ϵ[1])]
 end
 
-function a_ideal(model::BasicIdeal, V, T, z=[1.0])
-    # N = ∑(z)
-    #x = z/∑(z)
-    res = ∑(xlogx,z) 
-    res /= 1.0
-    res -= log(V) 
-    res -= 1.5*log(T)
-    res -= one(res)
-    # ∑(x .* log.(z/V)) - 1 original formulation, prone no NaN when passing pure Fractions
-    return res
-end
+# function a_ideal(model::BasicIdeal, V, T, z=[1.0])
+#     # N = ∑(z)
+#     #x = z/∑(z)
+#     res = ∑(xlogx,z) 
+#     res /= 1.0
+#     res -= log(V) 
+#     res -= 1.5*log(T)
+#     res -= one(res)
+#     # ∑(x .* log.(z/V)) - 1 original formulation, prone no NaN when passing pure Fractions
+#     return res
+# end
