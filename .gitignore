@@ -25,10 +25,7 @@ Manifest.toml
 
 # Swap files
 *.swp
+*/.vscode/settings.json
 
 # symlink
 julia
-
-# Cluster outputs
-*.e*
-*.o*

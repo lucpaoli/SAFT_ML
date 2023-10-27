@@ -1,9 +1,16 @@
 using Clapeyron
 import Clapeyron: *, @comps
-import Clapeyron: dot, a_assoc, bmcs_hs, N_A, Solvers, diagvalues, SAFTγMieconsts, SA, SingleComp
+import Clapeyron: dot, a_assoc, N_A, Solvers, diagvalues, SAFTγMieconsts, SA, SingleComp
 import Base: @kwdef
 
 using Zygote, ChainRulesCore
+
+function bmcs_hs(ζ0, ζ1, ζ2, ζ3)
+    ζ3m1 = (1 - ζ3)
+    ζ3m1² = ζ3m1 * ζ3m1
+    res = 1 / ζ0 * (3ζ1 * ζ2 / ζ3m1 + ζ2^3 / (ζ3 * ζ3m1²) + (ζ2^3 / ζ3^2 - ζ0) * Solvers.log1p(-ζ3))
+    return res
+end
 
 # struct SAFTVRMieParam{T} <: EoSParam
 #     Mw::SingleParam{T}
@@ -110,10 +117,10 @@ end
 
 function make_NN_model(Mw, m, σ, λ_a, λ_r, ϵ)
     model = SAFTVRMieNN(
-        params = SAFTVRMieNNParams(
+        params=SAFTVRMieNNParams(
             Mw=[Mw],
             segment=[m],
-            sigma=[σ*1e-10],
+            sigma=[σ * 1e-10],
             lambda_a=[λ_a],
             lambda_r=[λ_r],
             epsilon=[ϵ],
@@ -127,10 +134,10 @@ end
 # Hack to get around Clapeyron model construction API
 function make_model(Mw, m, σ, λ_a, λ_r, ϵ)
     model = SAFTVRMie(["methane"])
-    
+
     model.params.Mw[1] = Mw
     model.params.segment[1] = m
-    model.params.sigma[1] = σ*1e-10
+    model.params.sigma[1] = σ * 1e-10
     model.params.lambda_a[1] = λ_a
     model.params.lambda_r[1] = λ_r
     model.params.epsilon[1] = ϵ
@@ -142,20 +149,20 @@ end
 function critical_temperature_NN(X)
     saft_model = make_model(X...)
     Tc, pc, Vc = crit_pure(saft_model)
-    
+
     return Tc
 end
 
-function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
-    saft_model = make_model(X...)
-    Tc, pc, Vc = crit_pure(saft_model)
-    
-    function f_pullback(Δy)
-        return (NoTangent(), NoTangent())
-    end
+# function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
+#     saft_model = make_model(X...)
+#     Tc, pc, Vc = crit_pure(saft_model)
 
-    return Tc, f_pullback
-end
+#     function f_pullback(Δy)
+#         return (NoTangent(), NoTangent())
+#     end
+
+#     return Tc, f_pullback
+# end
 
 
 function saturation_pressure_NN(X, T)
@@ -165,15 +172,17 @@ function saturation_pressure_NN(X, T)
     return p
 end
 
+#! In the forward pass, use ForwardDiff to compute value + gradient
+#! Then return cached value in pullback function
 function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
     model = make_model(X...)
     p, Vₗ, Vᵥ = saturation_pressure(model, T)
-    
+
     function f_pullback(Δy)
         #* Newton step from perfect initialisation
         function f_p(X, T)
             model = make_NN_model(X...)
-            p2 = -(eos(model, Vᵥ, T) - eos(model, Vₗ, T))/(Vᵥ - Vₗ);
+            p2 = -(eos(model, Vᵥ, T) - eos(model, Vₗ, T)) / (Vᵥ - Vₗ)
             return p2
         end
 
@@ -303,6 +312,27 @@ if T⋆ < 1:
 else:
     10-point modified gauss-legendre with cut. (pending)
 =#
+function _laguerrex(Base.@specialize(f), r, a, u, w)
+    k = exp(-r * a) / r
+    u1, w1 = u[1], w[1]
+    rinv = 1 / r
+    x1 = u1 * rinv + a
+    f1 = f(x1)
+    res = w1 * f1
+    l = length(u)
+    for i in 2:l
+        xi = u[i] * rinv + a
+        res += w[i] * f(xi)
+    end
+    return res * k
+end
+
+function laguerre5(Base.@specialize(f), r=1.0, a=0.0)
+    laguerre5_u = (0.26356031971814109102031, 1.41340305910651679221800, 3.59642577104072208122300, 7.08581000585883755692200, 12.6408008442757826594300)
+    laguerre5_w = (0.5217556105828086524759, 0.3986668110831759274500, 7.5942449681707595390e-2, 3.6117586799220484545e-3, 2.3369972385776227891e-5)
+    return _laguerrex(f, r, a, laguerre5_u, laguerre5_w)
+end
+
 function d_vrmie(T, λa, λr, σ, ϵ)
     Tx = T / ϵ
     C = Cλ_mie(λa, λr)
@@ -312,7 +342,7 @@ function d_vrmie(T, λa, λr, σ, ϵ)
     #? Is this the only part incompatible with Zygote?
     #* If so, we should be able to use ImplicitDifferentiation.jl -- then can just use Zygote end-to-end
     f_laguerre(x) = x^(-λrinv) * exp(θ * x^(λaλr)) * λrinv / x
-    ∑fi = Solvers.laguerre5(f_laguerre, θ, one(θ)) 
+    ∑fi = laguerre5(f_laguerre, θ, one(θ))
     #∑fi2 = Solvers.laguerre10(f_laguerre,θ,1.)
     di = σ * (1 - ∑fi)
     return di
@@ -360,13 +390,16 @@ function ζ_X_σ3(model::SAFTVRMieNN, V, T, z, _d=@f(d), m̄=dot(z, model.params
     # _ζ_X = zero(V + T + first(z) + one(eltype(model)))
     _ζ_X = zero(V + T + first(z))
     kρS = ρS * π / 6 / 8
+    # @show kρS
     σ3_x = _ζ_X
 
     for i ∈ comps
         x_Si = z[i] * m[i] * m̄inv
         σ3_x += x_Si * x_Si * (σ[i, i]^3)
         di = _d[i]
+        # @show di
         r1 = kρS * x_Si * x_Si * (2 * di)^3
+        # @show r1
         _ζ_X += r1
         for j ∈ 1:(i-1)
             x_Sj = z[j] * m[j] * m̄inv
@@ -407,10 +440,16 @@ end
 function f123456(model::SAFTVRMieNN, V, T, z, α)
     ϕ = SAFTVRMieconsts.ϕ
     _0 = zero(α)
-    
+
     add_tuples(a, b) = map(+, a, b)
-    fa = reduce(add_tuples, (ϕ[i] .* α^(i-1) for i in 1:4))
-    fb = reduce(add_tuples, (ϕ[i] .* α^(i-4) for i in 5:7))
+    in_1 = collect(ϕ[i] .* α^(i - 1) for i in 1:4)
+    # @show in_1
+    fa = reduce(add_tuples, in_1)
+    fb = reduce(add_tuples, (ϕ[i] .* α^(i - 4) for i in 5:7))
+    
+    # @show α
+    # @show fa
+    # @show fb
     return fa ./ (one(_0) .+ fb)
 end
 
@@ -468,6 +507,8 @@ function aS_1_fdf(model::SAFTVRMieNN, V, T, z, λ, ζ_X_=@f(ζ_X), ρ_S_=@f(ρ_S
     λf = -1 / (λ - 3)
     _f = λf * ζf
     _df = λf * (ζf + ρ_S_ * ∂ζeff_ * ((3 * ζeffm1 * (1 - ζeff_)^2 - 0.5 * ζeff3) / ζeff3^2))
+    # @show _f
+    # @show _df
     return _f, _df
 end
 
@@ -476,9 +517,12 @@ function B_fdf(model::SAFTVRMieNN, V, T, z, λ, x_0, ζ_X_=@f(ζ_X), ρ_S_=@f(ρ
     x_0_λ = x_0^(3 - λ)
     I = (1 - x_0_λ) / (λ - 3)
     J = (1 - (λ - 3) * x_0^(4 - λ) + (λ - 4) * x_0_λ) / ((λ - 3) * (λ - 4))
+    # @show I
+    # @show J
     ζX2 = (1 - ζ_X_)^2
     ζX3 = (1 - ζ_X_)^3
     ζX6 = ζX3 * ζX3
+    # @show ζ_X_
 
     _f = I * (1 - ζ_X_ / 2) / ζX3 - 9 * J * ζ_X_ * (ζ_X_ + 1) / (2 * ζX3)
     _df = (((1 - ζ_X_ / 2) * I / ζX3 - 9 * ζ_X_ * (1 + ζ_X_) * J / (2 * ζX3))
@@ -490,7 +534,7 @@ function B_fdf(model::SAFTVRMieNN, V, T, z, λ, x_0, ζ_X_=@f(ζ_X), ρ_S_=@f(ρ
                    9 * J * ((1 + 2 * ζ_X_) * ζX3
                             +
                             ζ_X_ * (1 + ζ_X_) * 3 * ζX2) / (2 * ζX6)))
-
+    # @show _df
     return _f, _df
 end
 
@@ -573,6 +617,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     _ζst5 = _ζst^5
     _ζst8 = _ζst^8
     _KHS, _∂KHS = @f(KHS_fdf, ζₓ, ρS)
+    # @show _KHS, _∂KHS
     for i ∈ comps
         j = i
         mi = m[i]
@@ -612,6 +657,15 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
         α = _C * (1 / (λa - 3) - 1 / (λr - 3))
         f1, f2, f3, f4, f5, f6 = @f(f123456, α)
         _χ = f1 * _ζst + f2 * _ζst5 + f3 * _ζst8
+        # @show x_0ij_2λa
+        # @show aS₁_2a
+        # @show B_2a
+        # @show x_0ij_λaλr
+        # @show aS₁_ar
+        # @show B_ar
+        # @show x_0ij_2λr
+        # @show aS₁_2r
+        # @show B_2r
         a2_ij = T1(π) * _KHS * (1 + _χ) * ρS * ϵ^2 * dij3 * _C^2 *
                 (x_0ij_2λa * (aS₁_2a + B_2a)
                  -
@@ -621,11 +675,20 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
                 )
 
         #calculations for a3 - diagonal
+        # @show ϵ
+        # @show f4
+        # @show _ζst
+        # @show f5
+        # @show f6
         a3_ij = -ϵ^3 * f4 * _ζst * exp(_ζst * (f5 + f6 * _ζst))
         #adding - diagonal
         a₁ += a1_ij * x_Si * x_Sj
         a₂ += a2_ij * x_Si * x_Sj
         a₃ += a3_ij * x_Si * x_Sj
+        
+        # @show a₁
+        # @show a₂
+        # @show a₃
 
         g_HSi = @f(g_HS, x_0ij, ζₓ)
 
@@ -637,7 +700,24 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
         g_1_ = 3 * ∂a_1∂ρ_S - _C * (λa * x_0ij_λa * (aS₁_a + B_a) - λr * x_0ij_λr * (aS₁_r + B_r))
         θ = expm1(τ)
         γc = 10 * (-tanh(10 * (0.57 - α)) + 1) * _ζst * θ * exp(_ζst * (-6.7 - 8 * _ζst))
-
+        # @show _C
+        # @show _∂KHS
+        # @show x_0ij_2λa
+        # @show aS₁_2a
+        # @show B_2a
+        # @show x_0ij_λaλr
+        # @show aS₁_ar
+        # @show B_ar
+        # @show x_0ij_2λr
+        # @show aS₁_2r
+        # @show B_2r
+        #* 
+        # @show ∂aS₁∂ρS_2a
+        # @show ∂B∂ρS_2a
+        # @show ∂aS₁∂ρS_ar
+        # @show ∂B∂ρS_ar
+        # @show ∂aS₁∂ρS_2r
+        # @show ∂B∂ρS_2r
         ∂a_2∂ρ_S = 0.5 * _C^2 *
                    (ρS * _∂KHS * (x_0ij_2λa * (aS₁_2a + B_2a)
                                   -
@@ -653,12 +733,14 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
                             x_0ij_2λr * (∂aS₁∂ρS_2r + ∂B∂ρS_2r)
                    )
                    )
+        # @show ∂a_2∂ρ_S
 
         gMCA2 = 3 * ∂a_2∂ρ_S - _KHS * _C^2 *
                                (λr * x_0ij_2λr * (aS₁_2r + B_2r) -
                                 (λa + λr) * x_0ij_λaλr * (aS₁_ar + B_ar) +
                                 λa * x_0ij_2λa * (aS₁_2a + B_2a)
                                )
+        # @show gMCA2
 
         g_2_ = (1 + γc) * gMCA2
         g_Mie_ = g_HSi * exp(τ * g_1_ / g_HSi + τ^2 * g_2_ / g_HSi)
@@ -700,6 +782,8 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     a₂ = a₂ * m̄ / (T * T) / ∑z
     a₃ = a₃ * m̄ / (T * T * T) / ∑z
     adisp = a₁ + a₂ + a₃
+    # @show adisp
+    # @show achain
     return adisp + achain / ∑z
 end
 
@@ -803,7 +887,7 @@ function a_disp(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     a₁ = a₁ * m̄ / T #/sum(z)
     a₂ = a₂ * m̄ / (T * T)  #/sum(z)
     a₃ = a₃ * m̄ / (T * T * T)  #/sum(z)
-    adisp::Float32 = a₁ + a₂ + a₃
+    adisp = a₁ + a₂ + a₃
     return adisp
 end
 
@@ -939,3 +1023,15 @@ function d(model::SAFTVRMieNN, V, T, z::SingleComp)
     # return SA[d_vrmie(T, λa[1], λr[1], σ[1], ϵ[1])]
     return [d_vrmie(T, λa[1], λr[1], σ[1], ϵ[1])]
 end
+
+# function a_ideal(model::BasicIdeal, V, T, z=[1.0])
+#     # N = ∑(z)
+#     #x = z/∑(z)
+#     res = ∑(xlogx,z) 
+#     res /= 1.0
+#     res -= log(V) 
+#     res -= 1.5*log(T)
+#     res -= one(res)
+#     # ∑(x .* log.(z/V)) - 1 original formulation, prone no NaN when passing pure Fractions
+#     return res
+# end

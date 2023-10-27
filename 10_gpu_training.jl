@@ -1,3 +1,4 @@
+#! GPU training is too hard and is never going to work
 # using Revise
 using Clapeyron
 include("./saftvrmienn.jl")
