@@ -25,11 +25,11 @@ laguerre5_w = torch.tensor(
 
 def laguerre5(f, r, a, u=laguerre5_u, w=laguerre5_w):
     k = torch.exp(-r * a) / r
-    u1, w1 = u[0], w[0]
+    # u1, w1 = u[0], w[0]
     rinv = 1 / r
-    x1 = u1 * rinv + a
+    x1 = u[0] * rinv + a
     f1 = f(x1)
-    res = w1 * f1
+    res = w[0] * f1
     for i in range(1, len(u)):
         xi = u[i] * rinv + a
         res += w[i] * f(xi)
@@ -78,9 +78,10 @@ class SAFTVRMieNNParams(nn.Module):
     def __init__(self, Mw, V, T, segment, sigma, lambda_a, lambda_r, epsilon):
         super(SAFTVRMieNNParams, self).__init__()
         # Constants
-        self.N_A = torch.tensor(6.02214076e23)
+        self.N_A = torch.tensor(6.02214076e23) 
         self.pi = torch.tensor(math.pi)
-        self.R = torch.tensor(8.314)
+        k_B = 1.380649e-23
+        self.R = torch.tensor(self.N_A * k_B)
         # Unpack parameters
         self.Mw = Mw
         self.segment = segment
@@ -178,13 +179,21 @@ class SAFTVRMieNN(nn.Module):
         #! This is wrong
         # a₀ = A₀/nRT =  ∑(xᵢlog(nxᵢ/V)) - 1 - 1.5log(T)
         # ∑(x .* log.(z/V)) - 1
-        return -torch.log(data.V) - 1.0 - 1.5 * torch.log(data.T)
+        a_ideal = -torch.log(data.V) - 1.0 - 1.5 * torch.log(data.T)
+        print(f"a_ideal = {a_ideal[0]}")
+        return a_ideal
 
     def a_res(self, data: SAFTVRMieNNParams):
         a_hs = self._a_hs(data)  # * a_hs is correct
+        a_disp = self.a_disp(data)
+        print(f"a_disp_simple = {a_disp[0]}")
+        a_chain = self.a_chain(data)
+        print(f"a_chain_simple = {a_chain[0]}")
+
         a_dispchain = self._a_dispchain(data)
-        print(f"a_res = {(a_hs + a_dispchain)[0]}")
-        return a_hs + a_dispchain
+        # print(f"a_res = {(a_hs + a_dispchain)[0]}")
+        # return a_hs + a_dispchain
+        return a_hs + a_disp + a_chain
 
     def _a_hs(self, data: SAFTVRMieNNParams):
         return data.segment * self._bmcs_hs(data.zetai)
@@ -351,11 +360,10 @@ class SAFTVRMieNN(nn.Module):
         a3 = a3 * data.segment / T**3
         adisp = a1 + a2 + a3
 
-        # print(f"adisp = {adisp[0]}")
-        # print(f"achain = {achain[0]}")
+        print(f"adisp = {adisp[0]}")
+        print(f"achain = {achain[0]}")
         return adisp + achain
 
-    # a_chain
     def _aS_1_fdf(self, data: SAFTVRMieNNParams, lambda_i):
         zeta_eff, dzeta_eff = self._zeta_eff_fdf(data, lambda_i)
         # print(f"zeta_eff = {zeta_eff}")
@@ -377,7 +385,6 @@ class SAFTVRMieNN(nn.Module):
         # print(f"_df = {_df}")
         return _f, _df
 
-    # a_chain
     def _zeta_eff_fdf(self, data: SAFTVRMieNNParams, lambda_i):
         A = self.consts.A
         lambda_inv = torch.ones_like(lambda_i) / lambda_i
@@ -395,32 +402,6 @@ class SAFTVRMieNN(nn.Module):
             ),
             dim=1,
         )
-
-        # lambda_inv_list = torch.split(lambda_inv, 1, dim=0)
-        # zeta_X_list = torch.split(data.zeta_X, 1, dim=0)
-        # rho_S_list = torch.split(data.rho_S, 1, dim=0)
-
-        # f_list = []
-        # df_list = []
-
-        # # Evaluate A_lambda_inv
-        # for lambda_inv_scalar, zeta_X, rho_S in zip(
-        #     lambda_inv_list, zeta_X_list, rho_S_list
-        # ):
-        #     lambda_inv_scalar = lambda_inv_scalar.squeeze()
-
-        #     # Original code for calculating A_lambda_inv for a scalar lambda_inv
-        #     lambda_inv_powers = torch.tensor(
-        #         [
-        #             torch.ones_like(lambda_inv_scalar),
-        #             lambda_inv_scalar,
-        #             lambda_inv_scalar**2,
-        #             lambda_inv_scalar**3,
-        #         ],
-        #         dtype=torch.float64,
-        #     )
-
-        #     A_lambda_inv = torch.sum(A * lambda_inv_powers, dim=1)
 
         zeta_X = data.zeta_X
         rho_S = data.rho_S
@@ -444,9 +425,6 @@ class SAFTVRMieNN(nn.Module):
             * zeta_X
             / rho_S
         )
-
-        # print(f"f = {f}")
-        # print(f"df = {df}")
 
         return f, df
 
@@ -539,48 +517,241 @@ class SAFTVRMieNN(nn.Module):
 
         return torch.exp(evalpoly(x_0, k_0, k_1, k_2, k_3))
 
+    #! Implementing for validation
+    def a_disp(self, data: SAFTVRMieNNParams):
+        zeta_st5 = data.zeta_st**5
+        zeta_st8 = zeta_st5 * data.zeta_st**3
+        # KHS = self.KHS(data)
+        KHS = (1 - data.zeta_X) ** 4 / (
+            1
+            + 4 * data.zeta_X
+            + 4 * data.zeta_X**2
+            - 4 * data.zeta_X**3
+            + data.zeta_X**4
+        )
+        C = data.C
+        d3 = data.d**3
+        x0 = data.sigma / data.d
+
+        aS_1_a = self.aS_1(data, data.lambda_a)
+        aS_1_r = self.aS_1(data, data.lambda_r)
+
+        B_a = self.B(data, data.lambda_a, x0)
+        B_r = self.B(data, data.lambda_r, x0)
+
+        a1 = (
+            (2 * data.pi * data.epsilon * d3)
+            * C
+            * data.rho_S
+            * (
+                x0**data.lambda_a * (aS_1_a + B_a)
+                - x0**data.lambda_r * (aS_1_r + B_r)
+            )
+        )
+
+        alpha = C * (1 / (data.lambda_a - 3) - 1 / (data.lambda_r - 3))
+        f1, f2, f3, f4, f5, f6 = self.f123456(data, alpha)
+        chi = f1 * data.zeta_st + f2 * zeta_st5 + f3 * zeta_st8
+
+        f = lambda x: x0 ** (x) * self.aS_1(data, x) * self.B(data, x, x0)
+        a2 = (
+            data.pi
+            * KHS
+            * (1 + chi)
+            * data.rho_S
+            * data.epsilon**2
+            * d3
+            * C**2
+            * (
+                f(2 * data.lambda_a)
+                - 2 * f(data.lambda_a + data.lambda_r)
+                + f(2 * data.lambda_r)
+            )
+        )
+
+        a3 = (
+            -data.epsilon**3
+            * f4
+            * data.zeta_st
+            * torch.exp(f5 * data.zeta_st + f6 * data.zeta_st**2)
+        )
+
+        adisp = data.segment * (a1 / data.T + a2 / data.T**2 + a3 / data.T**3)
+
+        return adisp
+
+    def aS_1(self, data, lambda_i):
+        zeta_eff = self.zeta_eff(data, lambda_i)
+        return -1 / (lambda_i - 3) * (1 - zeta_eff * 0.5) / (1 - zeta_eff) ** 3
+
+    def B(self, data, lambda_i, x0):
+        x0_3lambda = x0 ** (3 - lambda_i)
+        zeta_X_m13 = (1 - data.zeta_X) ** 3
+        I = (1 - x0_3lambda) / (lambda_i - 3)
+        J = (
+            1 - (lambda_i - 3) * x0 ** (4 - lambda_i) + (lambda_i - 4) * x0_3lambda
+        ) / ((lambda_i - 3) * (lambda_i - 4))
+        return I * (1 - data.zeta_X / 2) / zeta_X_m13 - 9 * J * data.zeta_X * (
+            data.zeta_X + 1
+        ) / (2 * zeta_X_m13)
+
+    def zeta_eff(self, data, lambda_i):
+        A = self.consts.A
+        _1 = torch.ones_like(lambda_i)
+        lambda_inv = _1 / lambda_i
+        zeta_X = data.zeta_X
+        lambda_powers = torch.tensor([_1, lambda_inv, lambda_inv**2, lambda_inv**3])
+
+        A_lambda_inv = torch.mv(A, lambda_powers)
+
+        zeta_powers = torch.tensor([zeta_X, zeta_X**2, zeta_X**3, zeta_X**4])
+
+        return torch.dot(A_lambda_inv, zeta_powers)
+        # A_lambda_inv = A * torch.tensor(
+        #     [
+        #         torch.ones_like(lambda_inv),
+        #         lambda_inv,
+        #         lambda_inv**2,
+        #         lambda_inv**3,
+        #     ]
+        # )
+
+        # return torch.dot(
+        #     A_lambda_inv,
+        #     torch.tensor(
+        #         [data.zeta_X, data.zeta_X**2, data.zeta_X**3, data.zeta_X**4]
+        #     ),
+        # )
+
+    def a_chain(self, data):
+        # zeta_st5 = data.zeta_st**5
+        # zeta_st8 = zeta_st5 * data.zeta_st**3
+        KHS, dKHS = self.KHS_fdf(data)
+
+        C = data.C
+        x0 = data.sigma / data.d
+        # d3 = data.d**3
+
+        aS_1_a, daS_1drhoS_a = self._aS_1_fdf(data, data.lambda_a)
+        aS_1_r, daS_1drhoS_r = self._aS_1_fdf(data, data.lambda_r)
+
+        B_a, dBdrhoS_a = self.B_fdf(data, data.lambda_a, x0)
+        B_r, dBdrhoS_r = self.B_fdf(data, data.lambda_r, x0)
+
+        aS_1_2a, daS_1drhoS_2a = self._aS_1_fdf(data, 2 * data.lambda_a)
+        aS_1_2r, daS_1drhoS_2r = self._aS_1_fdf(data, 2 * data.lambda_r)
+        aS_1_ar, daS_1drhoS_ar = self._aS_1_fdf(data, data.lambda_a + data.lambda_r)
+
+        B_2a, dBdrhoS_2a = self.B_fdf(data, 2 * data.lambda_a, x0)
+        B_2r, dBdrhoS_2r = self.B_fdf(data, 2 * data.lambda_r, x0)
+        B_ar, dBdrhoS_ar = self.B_fdf(data, data.lambda_a + data.lambda_r, x0)
+
+        alpha = C * (1 / (data.lambda_a - 3) - 1 / (data.lambda_r - 3))
+
+        g_HSi = self.g_HS(data, x0)
+        da_1drho_S = C * (
+            x0**data.lambda_a * (daS_1drhoS_a + dBdrhoS_a)
+            - x0**data.lambda_r * (daS_1drhoS_r + dBdrhoS_r)
+        )
+
+        g_1 = 3 * da_1drho_S - C * (
+            data.lambda_a * x0**data.lambda_a * (aS_1_a + B_a)
+            - data.lambda_r * x0**data.lambda_r * (aS_1_r + B_r)
+        )
+        theta = torch.expm1(data.epsilon / data.T)
+        gamma_c = (
+            10
+            * (-torch.tanh(10 * (0.57 - alpha)) + 1)
+            * data.zeta_st
+            * theta
+            * torch.exp(data.zeta_st * (-6.7 - 8 * data.zeta_st))
+        )
+
+        da_2drho_S = (
+            0.5
+            * C**2
+            * (
+                data.rho_S
+                * dKHS
+                * (
+                    x0 ** (2 * data.lambda_a) * (aS_1_2a + B_2a)
+                    - 2 * x0 ** (data.lambda_a + data.lambda_r) * (aS_1_ar + B_ar)
+                    + x0 ** (2 * data.lambda_r) * (aS_1_2r + B_2r)
+                )
+                + KHS
+                * (
+                    x0 ** (2 * data.lambda_a) * (daS_1drhoS_2a + dBdrhoS_2a)
+                    - 2
+                    * x0 ** (data.lambda_a + data.lambda_r)
+                    * (daS_1drhoS_ar + dBdrhoS_ar)
+                    + x0 ** (2 * data.lambda_r) * (daS_1drhoS_2r + dBdrhoS_2r)
+                )
+            )
+        )
+
+        gMCA2 = 3 * da_2drho_S - KHS * C**2 * (
+            data.lambda_r * x0 ** (2 * data.lambda_r) * (aS_1_2r + B_2r)
+            - (data.lambda_a + data.lambda_r)
+            * x0 ** (data.lambda_a + data.lambda_r)
+            * (aS_1_ar + B_ar)
+            + data.lambda_a * x0 ** (2 * data.lambda_a) * (aS_1_2a + B_2a)
+        )
+
+        g_2 = (1 + gamma_c) * gMCA2
+        g_Mie = g_HSi * torch.exp(
+            data.epsilon / data.T * g_1 / g_HSi
+            + (data.epsilon / data.T) ** 2 * g_2 / g_HSi
+        )
+        achain = -torch.log(g_Mie) * (data.segment - 1)
+        print(f"achain = {achain[0]}")
+        return achain
+
 
 if __name__ == "__main__":
-    # * Correct for methane
-    Mw = torch.tensor([16.04], dtype=torch.float64)
-    segment = torch.tensor([1.0], dtype=torch.float64)
-    sigma = torch.tensor([3.737e-10], dtype=torch.float64)
-    lambda_a = torch.tensor([6.0], dtype=torch.float64)
-    lambda_r = torch.tensor([12.504], dtype=torch.float64)
-    epsilon = torch.tensor([152.58], dtype=torch.float64)
+    if True:
+        Mw = torch.tensor([16.04], dtype=torch.float64)
+        segment = torch.tensor([1.0], dtype=torch.float64)
+        sigma = torch.tensor([3.737e-10], dtype=torch.float64)
+        lambda_a = torch.tensor([6.0], dtype=torch.float64)
+        lambda_r = torch.tensor([12.504], dtype=torch.float64)
+        epsilon = torch.tensor([152.58], dtype=torch.float64)
 
-    V = torch.tensor([1e-2], dtype=torch.float64, requires_grad=True)
-    T = torch.tensor([400.0], dtype=torch.float64, requires_grad=True)
-    data = SAFTVRMieNNParams(Mw, segment, sigma, lambda_a, lambda_r, epsilon, V, T)
-    #! Very large & small numbers in data mean Float32s are not precise enough
-    #! Need to either re-work function or take training performance penalty
-    saft = SAFTVRMieNN()
-    # a_res = saft.a_res(data)
-    # print(f"methane a_res = {a_res}")
+        V = torch.tensor([1e-2], dtype=torch.float64, requires_grad=True)
+        T = torch.tensor([400.0], dtype=torch.float64, requires_grad=True)
+        data = SAFTVRMieNNParams(Mw, V, T, segment, sigma, lambda_a, lambda_r, epsilon)
+        #! Very large & small numbers in data mean Float32s are not precise enough
+        #! Need to either re-work function or take training performance penalty
+        saft = SAFTVRMieNN()
+        a_res = saft.a_res(data)
+        p = saft.pressure(data)
+        print(f"methane a_res = {a_res[0]}")
+        print(f"methane p = {p[0]}")
 
-    # * Test for decane -> need to check chain term
-    Mw = torch.tensor([142.29], dtype=torch.float64)
-    segment = torch.tensor([2.9976], dtype=torch.float64)
-    sigma = torch.tensor([4.589e-10], dtype=torch.float64)
-    lambda_a = torch.tensor([6.0], dtype=torch.float64)
-    lambda_r = torch.tensor([18.885], dtype=torch.float64)
-    epsilon = torch.tensor([400.79], dtype=torch.float64)
+    if False:
+        # * Test for decane -> need to check chain term
+        Mw = torch.tensor([142.29], dtype=torch.float64)
+        segment = torch.tensor([2.9976], dtype=torch.float64)
+        sigma = torch.tensor([4.589e-10], dtype=torch.float64)
+        lambda_a = torch.tensor([6.0], dtype=torch.float64)
+        lambda_r = torch.tensor([18.885], dtype=torch.float64)
+        epsilon = torch.tensor([400.79], dtype=torch.float64)
 
-    data = SAFTVRMieNNParams(Mw, V, T, segment, sigma, lambda_a, lambda_r, epsilon)
-    saft = SAFTVRMieNN()
+        data = SAFTVRMieNNParams(Mw, V, T, segment, sigma, lambda_a, lambda_r, epsilon)
+        saft = SAFTVRMieNN()
 
-    a_res = saft.a_res(data)
-    print(f"decane a_res = {a_res[0]}")
-    print(f"decane p = {saft.pressure(data)}")
+        a_res = saft.a_res(data)
+        p = saft.pressure(data)
+        print(f"decane a_res = {a_res[0]}")
+        print(f"decane p = {p[0]}")
 
     # * Test if differentiable
 
-    model = SAFTVRMieNN()
-    X = torch.tensor(
-        [2.9976, 4.589e-10, 6.0, 18.885, 400.79],
-        dtype=torch.float64,
-        requires_grad=True,
-    )  # .reshape(1, -1)
+    # model = SAFTVRMieNN()
+    # X = torch.tensor(
+        # [2.9976, 4.589e-10, 6.0, 18.885, 400.79],
+        # dtype=torch.float64,
+        # requires_grad=True,
+    # )  # .reshape(1, -1)
     # print(f"X = {X}")
     # output = model(Mw, V, T, X)
     # dadX = torch.autograd.grad(output, X, create_graph=True)
@@ -588,14 +759,14 @@ if __name__ == "__main__":
     # print(f"dadX = {dadX}")
 
     # * Evaluate both at the same time
-    Mw = torch.tensor([16.04, 142.29], dtype=torch.float64)
-    segment = torch.tensor([1.0, 2.9976], dtype=torch.float64)
-    sigma = torch.tensor([3.737e-10, 4.589e-10], dtype=torch.float64)
-    lambda_a = torch.tensor([6.0, 6.0], dtype=torch.float64)
-    lambda_r = torch.tensor([12.504, 18.885], dtype=torch.float64)
-    epsilon = torch.tensor([152.58, 400.79], dtype=torch.float64)
-    data = SAFTVRMieNNParams(Mw, segment, sigma, lambda_a, lambda_r, epsilon, V, T)
-    saft = SAFTVRMieNN()
+    # Mw = torch.tensor([16.04, 142.29], dtype=torch.float64)
+    # segment = torch.tensor([1.0, 2.9976], dtype=torch.float64)
+    # sigma = torch.tensor([3.737e-10, 4.589e-10], dtype=torch.float64)
+    # lambda_a = torch.tensor([6.0, 6.0], dtype=torch.float64)
+    # lambda_r = torch.tensor([12.504, 18.885], dtype=torch.float64)
+    # epsilon = torch.tensor([152.58, 400.79], dtype=torch.float64)
+    # data = SAFTVRMieNNParams(Mw, segment, sigma, lambda_a, lambda_r, epsilon, V, T)
+    # saft = SAFTVRMieNN()
 
     # a_res = saft.a_res(data)
     # print(f"methane a_res = {a_res[0]}, decane a_res = {a_res[1]}")
