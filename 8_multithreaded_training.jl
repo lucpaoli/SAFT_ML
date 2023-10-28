@@ -150,14 +150,12 @@ function eval_loss(X_batch, y_batch, metric, model)
     n = 0
     for (X, y_vec) in zip(X_batch, y_batch)
         y = y_vec[1]
-        # ŷ = model(X)
         ŷ = SAFT_head(model, X)
         if !isnothing(ŷ)
             batch_loss += metric(y, ŷ)
             n += 1
         end
     end
-    # @show batch_loss, n
     if n > 0 
         batch_loss /= n
     end
@@ -170,16 +168,12 @@ end
 function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
     n = length(X_batch)
     chunk_size = n ÷ n_chunks
-    last_chunk = n % n_chunks  # Remaining elements for the last chunk
 
     p = bufferfrom(zeros(n_chunks))
 
     # Creating views for each chunk
     X_chunks = vcat([view(X_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(X_batch, (n_chunks-1)*chunk_size+1:n)])
     y_chunks = vcat([view(y_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(y_batch, (n_chunks-1)*chunk_size+1:n)])
-
-    # append!(X_chunks, )
-    # append!(y_chunks, )
 
     @sync begin
         for i = 1:n_chunks
@@ -190,46 +184,6 @@ function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
     end
     return sum(p) / n_chunks # average partial losses
 end
-
-# function eval_loss_par(X_batch, y_batch, metric, model, n_batches)
-#     n_total = length(X_batch)
-#     chunk_size = div(n_total, n_batches)
-#     starts = 1:chunk_size:n_total
-
-#     batch_loss = 0.0
-#     n = 0
-#     # l = Threads.SpinLock()
-
-#     Threads.@sync begin
-#         for i = 1:n_batches
-#             Threads.@spawn begin
-#                 start_idx = starts[i]
-#                 end_idx = i == n_batches ? n_total : (start_idx + chunk_size - 1)
-
-#                 local_batch_loss = 0.0
-#                 local_n = 0
-#                 for j = start_idx:end_idx
-#                     y = y_batch[j][1]
-#                     ŷ = SAFT_head(model, X_batch[j])
-#                     if !isnothing(ŷ)
-#                         local_batch_loss += metric(y, ŷ)
-#                         local_n += 1
-#                     end
-#                 end
-
-#                 # lock(l)
-#                 # try
-#                 batch_loss += local_batch_loss
-#                 n += local_n
-#                 # finally
-#                     # unlock(l)
-#                 # end
-#             end
-#         end
-#     end
-
-#     return n > 0 ? batch_loss / n : 0.0
-# end
 
 function percent_error(y, ŷ)
     return 100 * abs(y - ŷ) / y
@@ -244,24 +198,14 @@ function train_model!(model, train_loader, test_loader; epochs=10)
 
     for epoch in 1:epochs
         batch_loss = 0.0
-        # Threads.@threads for batch_idx in 1:length(train_loader)
         for (X_batch, y_batch) in train_loader
-        # for batch_idx in 1:length(train_loader)
-            # X_batch, y_batch = get_idx_from_iterator(train_loader, batch_idx)
 
             loss, grads = Flux.withgradient(model) do m
                 loss = eval_loss_par(X_batch, y_batch, percent_error, m, Threads.nthreads())
-                # loss = eval_loss(X_batch, y_batch, percent_error, m)
                 loss
             end
             batch_loss += loss
 
-            # lock(l)
-            # try
-            #     Flux.update!(optim, model, grads[1])
-            # finally
-            #     unlock(l)
-            # end
             Flux.update!(optim, model, grads[1])
         end
         batch_loss /= length(train_loader)
@@ -271,7 +215,6 @@ end
 
 function main()
     train_loader, test_loader = create_data(n_points=10, batch_size=128)
-    # return train_loader
     n_features = length(first(train_loader)[1][1][1])
     @info "n_features = $n_features"
 
