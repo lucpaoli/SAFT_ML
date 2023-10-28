@@ -189,19 +189,22 @@ function percent_error(y, ŷ)
     return 100 * abs(y - ŷ) / y
 end
 
+function mse(y, ŷ)
+    return (y - ŷ)^2
+end
+
 function train_model!(model, train_loader, test_loader; epochs=10)
     optim = Flux.setup(Flux.Adam(0.01), model)  # will store optimiser momentum, etc.
 
     # @info "training on 1 thread"
     @info "training on $(Threads.nthreads()) threads"
-    l = Threads.SpinLock()
 
     for epoch in 1:epochs
         batch_loss = 0.0
         for (X_batch, y_batch) in train_loader
 
             loss, grads = Flux.withgradient(model) do m
-                loss = eval_loss_par(X_batch, y_batch, percent_error, m, Threads.nthreads())
+                loss = eval_loss_par(X_batch, y_batch, mse, m, Threads.nthreads())
                 loss
             end
             batch_loss += loss
