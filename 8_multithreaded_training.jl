@@ -7,7 +7,7 @@ import Clapeyron: a_res, saturation_pressure, pressure
 
 using Flux
 using Plots, Statistics
-# using ForwardDiff, DiffResults
+using ForwardDiff, DiffResults
 
 using Zygote#, ChainRulesCore
 using ImplicitDifferentiation
@@ -16,6 +16,10 @@ using CSV, DataFrames
 using MLUtils
 using RDKitMinimalLib
 using JLD2
+
+# Multithreaded loss
+using Zygote: bufferfrom
+using Base.Threads: @spawn
 
 function create_data(; batch_size=16, n_points=25)
     # Create training & validation data
@@ -153,16 +157,39 @@ function eval_loss(X_batch, y_batch, metric, model)
             n += 1
         end
     end
-    @show batch_loss, n
+    # @show batch_loss, n
     if n > 0 
         batch_loss /= n
     end
     # penalize batch_loss depending on how many failed
-    batch_loss += length(y_batch) - n
+    # batch_loss += length(y_batch) - n
 
     return batch_loss
 end
 
+function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
+    n = length(X_batch)
+    chunk_size = n ÷ n_chunks
+    last_chunk = n % n_chunks  # Remaining elements for the last chunk
+
+    p = bufferfrom(zeros(n_chunks))
+
+    # Creating views for each chunk
+    X_chunks = vcat([view(X_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(X_batch, (n_chunks-1)*chunk_size+1:n)])
+    y_chunks = vcat([view(y_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(y_batch, (n_chunks-1)*chunk_size+1:n)])
+
+    # append!(X_chunks, )
+    # append!(y_chunks, )
+
+    @sync begin
+        for i = 1:n_chunks
+            @spawn begin 
+                p[i] = eval_loss(X_chunks[i], y_chunks[i], metric, model)
+            end
+        end
+    end
+    return sum(p) / n_chunks # average partial losses
+end
 
 # function eval_loss_par(X_batch, y_batch, metric, model, n_batches)
 #     n_total = length(X_batch)
@@ -171,31 +198,33 @@ end
 
 #     batch_loss = 0.0
 #     n = 0
-#     l = Threads.SpinLock()
+#     # l = Threads.SpinLock()
 
-#     Threads.@sync for i = 1:n_batches
-#         Threads.@spawn begin
-#             start_idx = starts[i]
-#             end_idx = i == n_batches ? n_total : (start_idx + chunk_size - 1)
+#     Threads.@sync begin
+#         for i = 1:n_batches
+#             Threads.@spawn begin
+#                 start_idx = starts[i]
+#                 end_idx = i == n_batches ? n_total : (start_idx + chunk_size - 1)
 
-#             local_batch_loss = 0.0
-#             local_n = 0
-#             for j = start_idx:end_idx
-#                 y = y_batch[j][1]
-#                 ŷ = SAFT_head(model, X_batch[j])
-#                 if !isnothing(ŷ)
-#                     local_batch_loss += metric(y, ŷ)
-#                     local_n += 1
+#                 local_batch_loss = 0.0
+#                 local_n = 0
+#                 for j = start_idx:end_idx
+#                     y = y_batch[j][1]
+#                     ŷ = SAFT_head(model, X_batch[j])
+#                     if !isnothing(ŷ)
+#                         local_batch_loss += metric(y, ŷ)
+#                         local_n += 1
+#                     end
 #                 end
-#             end
 
-            # lock(l)
-            # try
-            #     batch_loss += local_batch_loss
-            #     n += local_n
-            # finally
-            #     unlock(l)
-            # end
+#                 # lock(l)
+#                 # try
+#                 batch_loss += local_batch_loss
+#                 n += local_n
+#                 # finally
+#                     # unlock(l)
+#                 # end
+#             end
 #         end
 #     end
 
@@ -215,25 +244,25 @@ function train_model!(model, train_loader, test_loader; epochs=10)
 
     for epoch in 1:epochs
         batch_loss = 0.0
-        Threads.@threads for batch_idx in 1:length(train_loader)
-        # for (X_batch, y_batch) in train_loader
+        # Threads.@threads for batch_idx in 1:length(train_loader)
+        for (X_batch, y_batch) in train_loader
         # for batch_idx in 1:length(train_loader)
-            X_batch, y_batch = get_idx_from_iterator(train_loader, batch_idx)
+            # X_batch, y_batch = get_idx_from_iterator(train_loader, batch_idx)
 
             loss, grads = Flux.withgradient(model) do m
-                # loss = eval_loss_par(X_batch, y_batch, percent_error, m, Threads.nthreads())
-                loss = eval_loss(X_batch, y_batch, percent_error, m)
+                loss = eval_loss_par(X_batch, y_batch, percent_error, m, Threads.nthreads())
+                # loss = eval_loss(X_batch, y_batch, percent_error, m)
                 loss
             end
             batch_loss += loss
 
-            lock(l)
-            try
-                Flux.update!(optim, model, grads[1])
-            finally
-                unlock(l)
-            end
-            # Flux.update!(optim, model, grads[1])
+            # lock(l)
+            # try
+            #     Flux.update!(optim, model, grads[1])
+            # finally
+            #     unlock(l)
+            # end
+            Flux.update!(optim, model, grads[1])
         end
         batch_loss /= length(train_loader)
         epoch % 1 == 0 && @info "epoch $epoch: batch_loss = $batch_loss"
