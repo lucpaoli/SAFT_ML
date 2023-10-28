@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -lselect=1:ncpus=1:mem=6gb
-#PBS -lwalltime=01:00:00
-#PBS -N ML_SAFT_1.9.3
+#PBS -lselect=1:ncpus=16:mem=32gb
+#PBS -lwalltime=10:00:00
+#PBS -N ML_SAFT
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables
 # better to copy scripts to and from TMPDIR
@@ -14,4 +14,4 @@ module load tools/prod
 
 # run the program
 # python myprog.py path/to/input.txt
-./julia job.jl
+./julia --threads 16 job.jl
