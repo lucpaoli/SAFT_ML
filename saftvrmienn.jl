@@ -232,34 +232,6 @@ function diagvalues(x::T) where {T<:Real}
 end
 
 
-# export SAFTVRMie
-
-# function recombine_impl!(model::SAFTVRMieModel)
-#     assoc_options = model.assoc_options
-#     sigma = model.params.sigma
-#     epsilon = model.params.epsilon
-#     lambda_a = model.params.lambda_a
-#     lambda_r = model.params.lambda_r
-
-#     epsilon_assoc = model.params.epsilon_assoc
-#     bondvol = model.params.bondvol
-#     bondvol, epsilon_assoc = assoc_mix(bondvol, epsilon_assoc, sigma, assoc_options) #combining rules for association
-
-#     model.params.epsilon_assoc.values.values[:] = epsilon_assoc.values.values
-#     model.params.bondvol.values.values[:] = bondvol.values.values
-
-#     sigma = sigma_LorentzBerthelot!(sigma)
-#     epsilon = epsilon_HudsenMcCoubrey!(epsilon, sigma)
-#     lambda_a = lambda_LorentzBerthelot!(lambda_a)
-#     lambda_r = lambda_LorentzBerthelot!(lambda_r)
-#     return model
-# end
-
-# function x0_volume_liquid(model::SAFTVRMieModel, T, z)
-#     v_lb = lb_volume(model::SAFTVRMieNN, z)
-#     return v_lb * 1.5
-# end
-
 function data(model::SAFTVRMieNN, V, T, z)
     m̄ = dot(z, model.params.segment)
     _d = @f(d)
@@ -270,28 +242,11 @@ function data(model::SAFTVRMieNN, V, T, z)
     return (_d, _ρ_S, ζi, _ζ_X, _ζst, σ3x, m̄)
 end
 
-# function a_res(model::SAFTVRMieNN, V, T, z)
-#     _data = @f(data)
-#     return @f(a_hs, _data) + @f(a_disp, _data) + @f(a_chain, _data) + @f(a_assoc, _data)
-# end
-
 #fused chain and disp calculation
 function Clapeyron.a_res(model::SAFTVRMieNN, V, T, z)
     _data = @f(data)
     return @f(a_hs, _data) + @f(a_dispchain, _data)# + @f(a_assoc, _data)
 end
-
-# function Clapeyron.a_res(model::SAFTVRMieNN, V, T, z=[1.0])
-#     _data = @f(data)
-#     # @show _data
-#     #! Data is the same
-#     hs = @f(a_hs, _data)
-#     dispchain = @f(a_dispchain, _data)
-#     # assoc = @f(a_assoc, _data)
-#     assoc = 0.0 # association not differentiable
-#     return hs + dispchain + assoc #! No association yet
-# end
-
 
 function a_mono(model::SAFTVRMieNN, V, T, z, _data=@f(data))
     return @f(a_hs, _data) + @f(a_disp, _data)
@@ -371,11 +326,9 @@ function d_vrmie(T, λa, λr, σ, ϵ)
     θ = C / Tx
     λrinv = 1 / λr
     λaλr = λa / λr
-    #? Is this the only part incompatible with Zygote?
-    #* If so, we should be able to use ImplicitDifferentiation.jl -- then can just use Zygote end-to-end
+
     f_laguerre(x) = x^(-λrinv) * exp(θ * x^(λaλr)) * λrinv / x
     ∑fi = laguerre5(f_laguerre, θ, one(θ))
-    #∑fi2 = Solvers.laguerre10(f_laguerre,θ,1.)
     di = σ * (1 - ∑fi)
     return di
 end
@@ -386,11 +339,6 @@ function d(model::SAFTVRMieNN, V, T, z)
     λa = diagvalues(model.params.lambda_a)
     λr = diagvalues(model.params.lambda_r)
     n = length(z)
-    # _d = fill(zero(V + T + first(z) + one(eltype(model))), n)
-    # _d = fill(zero(V + T + first(z)), n)
-    # for k ∈ 1:n
-    #     _d[k] = d_vrmie(T, λa[k], λr[k], σ[k], ϵ[k])
-    # end
     _d = [d_vrmie(T, λa[k], λr[k], σ[k], ϵ[k]) for k ∈ 1:n]
     return _d
 end
@@ -419,19 +367,15 @@ function ζ_X_σ3(model::SAFTVRMieNN, V, T, z, _d=@f(d), m̄=dot(z, model.params
     σ = model.params.sigma
     ρS = T1(N_A) / V * m̄
     comps = 1:length(z)
-    # _ζ_X = zero(V + T + first(z) + one(eltype(model)))
     _ζ_X = zero(V + T + first(z))
     kρS = ρS * π / 6 / 8
-    # @show kρS
     σ3_x = _ζ_X
 
     for i ∈ comps
         x_Si = z[i] * m[i] * m̄inv
         σ3_x += x_Si * x_Si * (σ[i, i]^3)
         di = _d[i]
-        # @show di
         r1 = kρS * x_Si * x_Si * (2 * di)^3
-        # @show r1
         _ζ_X += r1
         for j ∈ 1:(i-1)
             x_Sj = z[j] * m[j] * m̄inv
@@ -475,13 +419,9 @@ function f123456(model::SAFTVRMieNN, V, T, z, α)
 
     add_tuples(a, b) = map(+, a, b)
     in_1 = collect(ϕ[i] .* α^(i - 1) for i in 1:4)
-    # @show in_1
     fa = reduce(add_tuples, in_1)
     fb = reduce(add_tuples, (ϕ[i] .* α^(i - 4) for i in 5:7))
 
-    # @show α
-    # @show fa
-    # @show fb
     return fa ./ (one(_0) .+ fb)
 end
 
@@ -492,7 +432,6 @@ function ζst(model::SAFTVRMieNN, V, T, z, _σ=model.params.sigma)
     m̄inv = 1 / m̄
     ρS = T1(N_A) / V * m̄
     comps = @comps
-    # _ζst = zero(V + T + first(z) + one(eltype(model)))
     _ζst = zero(V + T + first(z))
     for i ∈ comps
         x_Si = z[i] * m[i] * m̄inv
@@ -503,18 +442,14 @@ function ζst(model::SAFTVRMieNN, V, T, z, _σ=model.params.sigma)
         end
     end
 
-    #return π/6*@f(ρ_S)*∑(@f(x_S,i)*@f(x_S,j)*(@f(d,i)+@f(d,j))^3/8 for i ∈ comps for j ∈ comps)
     return _ζst * ρS * π / 6
 end
 
 function g_HS(model::SAFTVRMieNN, V, T, z, x_0ij, ζ_X_=@f(ζ_X))
     ζX3 = (1 - ζ_X_)^3
-    # evalpoly(ζ_X_,(0,42,-39,9,-2)) = (42ζ_X_-39ζ_X_^2+9ζ_X_^3-2ζ_X_^4)
     k_0 = -log(1 - ζ_X_) + evalpoly(ζ_X_, (0, 42, -39, 9, -2)) / (6 * ζX3)
-    # evalpoly(ζ_X_,(0,-12,6,0,1)) = (ζ_X_^4+6*ζ_X_^2-12*ζ_X_)
     k_1 = evalpoly(ζ_X_, (0, -12, 6, 0, 1)) / (2 * ζX3)
     k_2 = -3 * ζ_X_^2 / (8 * (1 - ζ_X_)^2)
-    # (-ζ_X_^4+3*ζ_X_^2+3*ζ_X_) = evalpoly(ζ_X_,(0,3,3,0,-1))
     k_3 = evalpoly(ζ_X_, (0, 3, 3, 0, -1)) / (6 * ζX3)
     return exp(evalpoly(x_0ij, (k_0, k_1, k_2, k_3)))
 end
@@ -522,9 +457,6 @@ end
 function ζeff_fdf(model::SAFTVRMieNN, V, T, z, λ, ζ_X_, ρ_S_)
     A = SAFTγMieconsts.A
     λ⁻¹ = one(λ) / λ
-    # Aλ⁻¹ = A * SA[one(λ); λ⁻¹; λ⁻¹*λ⁻¹; λ⁻¹*λ⁻¹*λ⁻¹]
-    # _f =  dot(Aλ⁻¹,SA[ζ_X_; ζ_X_^2; ζ_X_^3; ζ_X_^4])
-    # _df = dot(Aλ⁻¹,SA[1; 2ζ_X_; 3ζ_X_^2; 4ζ_X_^3]) * ζ_X_/ρ_S_
     Aλ⁻¹ = A * [one(λ); λ⁻¹; λ⁻¹ * λ⁻¹; λ⁻¹ * λ⁻¹ * λ⁻¹]
     _f = dot(Aλ⁻¹, [ζ_X_; ζ_X_^2; ζ_X_^3; ζ_X_^4])
     _df = dot(Aλ⁻¹, [1; 2ζ_X_; 3ζ_X_^2; 4ζ_X_^3]) * ζ_X_ / ρ_S_
@@ -539,8 +471,6 @@ function aS_1_fdf(model::SAFTVRMieNN, V, T, z, λ, ζ_X_=@f(ζ_X), ρ_S_=@f(ρ_S
     λf = -1 / (λ - 3)
     _f = λf * ζf
     _df = λf * (ζf + ρ_S_ * ∂ζeff_ * ((3 * ζeffm1 * (1 - ζeff_)^2 - 0.5 * ζeff3) / ζeff3^2))
-    # @show _f
-    # @show _df
     return _f, _df
 end
 
@@ -549,12 +479,9 @@ function B_fdf(model::SAFTVRMieNN, V, T, z, λ, x_0, ζ_X_=@f(ζ_X), ρ_S_=@f(ρ
     x_0_λ = x_0^(3 - λ)
     I = (1 - x_0_λ) / (λ - 3)
     J = (1 - (λ - 3) * x_0^(4 - λ) + (λ - 4) * x_0_λ) / ((λ - 3) * (λ - 4))
-    # @show I
-    # @show J
     ζX2 = (1 - ζ_X_)^2
     ζX3 = (1 - ζ_X_)^3
     ζX6 = ζX3 * ζX3
-    # @show ζ_X_
 
     _f = I * (1 - ζ_X_ / 2) / ζX3 - 9 * J * ζ_X_ * (ζ_X_ + 1) / (2 * ζX3)
     _df = (((1 - ζ_X_ / 2) * I / ζX3 - 9 * ζ_X_ * (1 + ζ_X_) * J / (2 * ζX3))
