@@ -21,7 +21,6 @@ using JLD2
 using Zygote: bufferfrom
 using Base.Threads: @spawn
 
-#! Swap this out for creation of GNN dataset
 function create_data(; batch_size=16, n_points=25)
     # Create training & validation data
     df = CSV.read("./pcpsaft_params/SI_pcp-saft_parameters.csv", DataFrame, header=1)
@@ -35,11 +34,15 @@ function create_data(; batch_size=16, n_points=25)
         @assert !isnothing(mol)
 
         fp = []
-        for (nbits, rad) in [(256, 256), (1, 3)]
-            fp_details = Dict{String,Any}("nBits" => nbits, "radius" => rad)
-            fp_str = get_morgan_fp(mol, fp_details)
-            append!(fp, [parse(Float64, string(c)) for c in fp_str])
-        end
+        # for (nbits, rad) in [(256, 256), (1, 3)]
+        #* Approximately ECFP4 fingerprint
+        nbits = 4096
+        rad = 4
+
+        fp_details = Dict{String,Any}("nBits" => nbits, "radius" => rad)
+        fp_str = get_morgan_fp(mol, fp_details)
+        append!(fp, [parse(Float64, string(c)) for c in fp_str])
+        # end
 
         desc = get_descriptors(mol)
         relevant_keys = [
@@ -59,17 +62,21 @@ function create_data(; batch_size=16, n_points=25)
     Y_data = Vector{Vector{T}}()
 
     for (name, smiles, Mw) in mol_data
-        saft_model = PPCSAFT([name])
-        Tc, pc, Vc = crit_pure(saft_model)
+        try
+            saft_model = PPCSAFT([name])
+            Tc, pc, Vc = crit_pure(saft_model)
 
-        fp = make_fingerprint(smiles)
-        append!(fp, Mw)
+            fp = make_fingerprint(smiles)
+            append!(fp, Mw)
 
-        T_range = range(0.5 * Tc, 0.975 * Tc, n_points)
-        for T in T_range
-            (p₀, V_vec...) = saturation_pressure(saft_model, T)
-            push!(X_data, (fp, T, Mw))
-            push!(Y_data, [p₀])
+            T_range = range(0.5 * Tc, 0.975 * Tc, n_points)
+            for T in T_range
+                (p₀, V_vec...) = saturation_pressure(saft_model, T)
+                push!(X_data, (fp, T, Mw))
+                push!(Y_data, [p₀])
+            end
+        catch
+            println("Fingerprint generation failed for $name")
         end
     end
 
@@ -78,14 +85,18 @@ function create_data(; batch_size=16, n_points=25)
     num_cols = length(X_data[1][1])
     zero_cols = trues(num_cols)
     for (vec, _, _) in X_data
-        zero_cols .&= (vec .== 0 || vec .== 1)
+        zero_cols .&= (vec .== 0)
     end
+    keep_cols = .!zero_cols # Create a Mask
+    X_data = [(vec[keep_cols], val1, val2) for (vec, val1, val2) in X_data] # Apply Mask
 
-    # Create a Mask
-    keep_cols = .!zero_cols
-
-    # Apply Mask
-    X_data = [(vec[keep_cols], val1, val2) for (vec, val1, val2) in X_data]
+    num_cols = length(X_data[1][1])
+    one_cols = trues(num_cols)
+    for (vec, _, _) in X_data
+        one_cols .&= (vec .== 0)
+    end
+    keep_cols = .!one_cols # Create a Mask
+    X_data = [(vec[keep_cols], val1, val2) for (vec, val1, val2) in X_data] # Apply Mask
 
     train_data, test_data = splitobs((X_data, Y_data), at=0.8, shuffle=false)
 
@@ -97,17 +108,16 @@ function create_data(; batch_size=16, n_points=25)
 end
 
 
-#! Swap this out for creating GNN model
 function create_ff_model(nfeatures)
     # Base NN architecture from "Fitting Error vs Parameter Performance"
     nout = 5
     model = Chain(
-        Dense(nfeatures, 2048, relu),
-        Dense(2048, 1024, relu),
+        Dense(nfeatures, 1024, relu),
         Dense(1024, 512, relu),
-        Dense(512, 128, relu),
-        Dense(128, 32, relu),
-        Dense(32, nout, relu),
+        Dense(512, 256, relu),
+        Dense(256, 128, relu),
+        Dense(128, 64, relu),
+        Dense(64, nout, relu),
     )
     # model(x) = m, σ, λ_a, λ_r, ϵ
 
@@ -165,7 +175,9 @@ function eval_loss(X_batch, y_batch, metric, model)
         batch_loss /= n
     end
     # penalize batch_loss depending on how many failed
-    # batch_loss += length(y_batch) - n
+    #! This may introduce dependence on the critical point solver, which isn't differentiable
+    #! and is evaluated with ignore_derivatives()... Take a LOT of care
+    batch_loss += length(y_batch) - n
 
     return batch_loss
 end
@@ -223,11 +235,11 @@ function train_model!(model, train_loader, test_loader; epochs=10)
 end
 
 function main()
-    train_loader, test_loader = create_data(n_points=16, batch_size=256) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+    train_loader, test_loader = create_data(n_points=32, batch_size=512) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     n_features = length(first(train_loader)[1][1][1])
     println("n_features = $n_features")
     flush(stdout)
 
     model = create_ff_model(n_features)
-    train_model!(model, train_loader, test_loader; epochs=200)
+    train_model!(model, train_loader, test_loader; epochs=50)
 end

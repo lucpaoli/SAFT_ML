@@ -24,19 +24,21 @@ using Base.Threads: @spawn
 function create_data(; batch_size=16, n_points=25)
     # Create training & validation data
     df = CSV.read("./pcpsaft_params/SI_pcp-saft_parameters.csv", DataFrame, header=1)
-    filter!(row -> occursin("Alkane", row.family), df)
-    df = first(df, 1)
+    # filter!(row -> occursin("Alkane", row.family), df)
+    # df = first(df, 1) #* Take only first molecule in dataframe
     mol_data = zip(df.common_name, df.isomeric_smiles, df.molarweight)
     println("Generating data for $(length(mol_data)) molecules...")
 
-    function make_fingerprint(s::String)::Vector{Float32}
+    function make_fingerprint(s::String)::Vector{Float64}
         mol = get_mol(s)
         @assert !isnothing(mol)
 
         fp = []
-        fp_details = Dict{String,Any}("nBits" => 512, "radius" => 4)
-        fp_str = get_morgan_fp(mol, fp_details)
-        append!(fp, [parse(Float32, string(c)) for c in fp_str])
+        for (nbits, rad) in [(256, 256), (1, 3)]
+            fp_details = Dict{String,Any}("nBits" => nbits, "radius" => rad)
+            fp_str = get_morgan_fp(mol, fp_details)
+            append!(fp, [parse(Float64, string(c)) for c in fp_str])
+        end
 
         desc = get_descriptors(mol)
         relevant_keys = [
@@ -56,33 +58,41 @@ function create_data(; batch_size=16, n_points=25)
     Y_data = Vector{Vector{T}}()
 
     for (name, smiles, Mw) in mol_data
-        saft_model = PPCSAFT([name])
-        Tc, pc, Vc = crit_pure(saft_model)
+        try
+            saft_model = PPCSAFT([name])
+            Tc, pc, Vc = crit_pure(saft_model)
 
-        fp = make_fingerprint(smiles)
-        append!(fp, Mw)
+            fp = make_fingerprint(smiles)
+            append!(fp, Mw)
 
-        T_range = range(0.5 * Tc, 0.975 * Tc, n_points)
-        for T in T_range
-            (p₀, V_vec...) = saturation_pressure(saft_model, T)
-            push!(X_data, (fp, T, Mw))
-            push!(Y_data, [p₀])
+            T_range = range(0.5 * Tc, 0.975 * Tc, n_points)
+            for T in T_range
+                (p₀, V_vec...) = saturation_pressure(saft_model, T)
+                push!(X_data, (fp, T, Mw))
+                push!(Y_data, [p₀])
+            end
+        catch
+            println("Fingerprint generation failed for $name")
         end
     end
 
-    #* Remove zero columns from fingerprints
-    # Identify Zero Columns
+    #* Remove columns from fingerprints
+    # Identify zero & one columns
     num_cols = length(X_data[1][1])
     zero_cols = trues(num_cols)
     for (vec, _, _) in X_data
         zero_cols .&= (vec .== 0)
     end
+    keep_cols = .!zero_cols # Create a Mask
+    X_data = [(vec[keep_cols], val1, val2) for (vec, val1, val2) in X_data] # Apply Mask
 
-    # Create a Mask
-    keep_cols = .!zero_cols
-
-    # Apply Mask
-    X_data = [(vec[keep_cols], val1, val2) for (vec, val1, val2) in X_data]
+    num_cols = length(X_data[1][1])
+    one_cols = trues(num_cols)
+    for (vec, _, _) in X_data
+        one_cols .&= (vec .== 0)
+    end
+    keep_cols = .!one_cols # Create a Mask
+    X_data = [(vec[keep_cols], val1, val2) for (vec, val1, val2) in X_data] # Apply Mask
 
     train_data, test_data = splitobs((X_data, Y_data), at=0.8, shuffle=false)
 
@@ -98,13 +108,12 @@ function create_ff_model(nfeatures)
     # Base NN architecture from "Fitting Error vs Parameter Performance"
     nout = 5
     model = Chain(
-        Dense(nfeatures, 512, relu),
-        Dense(512, 512, relu),
-        Dense(512, nout, relu),
-        # Dense(1024, 512, relu),
-        # Dense(512, 128, relu),
-        # Dense(128, 32, relu),
-        # Dense(32, nout, relu),
+        Dense(nfeatures, 2048, selu),
+        Dense(2048, 1024, selu),
+        Dense(1024, 512, selu),
+        Dense(512, 128, selu),
+        Dense(128, 32, selu),
+        Dense(32, nout, selu),
     )
     # model(x) = m, σ, λ_a, λ_r, ϵ
 
@@ -121,7 +130,7 @@ function get_idx_from_iterator(iterator, idx)
 end
 
 
-function SAFT_head(model, X; b=[3.0, 3.5, 7.0, 12.5, 250.0], c=50.0)
+function SAFT_head(model, X; b=[3.0, 3.5, 7.0, 12.5, 250.0], c=10.0)
     fp, T, Mw = X
     pred_params = model(fp)
 
@@ -196,9 +205,8 @@ function mse(y, ŷ)
 end
 
 function train_model!(model, train_loader, test_loader; epochs=10)
-    optim = Flux.setup(Flux.Adam(0.01), model)  # will store optimiser momentum, etc.
+    optim = Flux.setup(Flux.Adam(0.001), model) # 1e-3 usually safe starting LR
 
-    # @info "training on 1 thread"
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
 
@@ -207,7 +215,7 @@ function train_model!(model, train_loader, test_loader; epochs=10)
         for (X_batch, y_batch) in train_loader
 
             loss, grads = Flux.withgradient(model) do m
-                loss = eval_loss_par(X_batch, y_batch, mse, m, Threads.nthreads())
+                loss = eval_loss_par(X_batch, y_batch, percent_error, m, Threads.nthreads())
                 loss
             end
             batch_loss += loss
@@ -221,11 +229,11 @@ function train_model!(model, train_loader, test_loader; epochs=10)
 end
 
 function main()
-    train_loader, test_loader = create_data(n_points=25, batch_size=25)
+    train_loader, test_loader = create_data(n_points=16, batch_size=256) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     n_features = length(first(train_loader)[1][1][1])
     println("n_features = $n_features")
     flush(stdout)
 
     model = create_ff_model(n_features)
-    train_model!(model, train_loader, test_loader; epochs=3)
+    train_model!(model, train_loader, test_loader; epochs=50)
 end
