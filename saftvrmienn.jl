@@ -1056,14 +1056,44 @@ function d(model::SAFTVRMieNN, V, T, z::SingleComp)
     return [d_vrmie(T, λa[1], λr[1], σ[1], ϵ[1])]
 end
 
-# function a_ideal(model::BasicIdeal, V, T, z=[1.0])
-#     # N = ∑(z)
-#     #x = z/∑(z)
-#     res = ∑(xlogx,z) 
-#     res /= 1.0
-#     res -= log(V) 
-#     res -= 1.5*log(T)
-#     res -= one(res)
-#     # ∑(x .* log.(z/V)) - 1 original formulation, prone no NaN when passing pure Fractions
-#     return res
+#* Association code
+#! This shit is gonna be hard I already know
+# function a_assoc(model::SAFTVRMieNN, V, T, z, data=nothing)
+#     _0 = zero(V + T + first(z)) # This needs to take into account model type?
+#     nn = assoc_pair_length(model)
+#     iszero(nn) && return _0
+#     X_ = @f(X, data)
+#     return @f(a_assoc_impl, X_)
+# end
+
+# function X(model::EoSModel, V, T, z, data=nothing)
+#     nn = assoc_pair_length(model)
+#     isone(nn) && return X_exact1(model, V, T, z, data)
+#     options = assoc_options(model)
+#     K = assoc_site_matrix(model, V, T, z, data)
+#     sitesparam = getsites(model)
+#     idxs = sitesparam.n_sites.p
+#     Xsol = assoc_matrix_solve(K, options)
+#     return PackedVofV(idxs, Xsol)
+# end
+
+# function a_assoc_impl(model::EoSModel, V, T, z, X_)
+#     _0 = zero(first(X_.v))
+#     sites = getsites(model)
+#     n = sites.n_sites
+#     res = _0
+#     resᵢₐ = _0
+#     for i ∈ @comps
+#         ni = n[i]
+#         iszero(length(ni)) && continue
+#         Xᵢ = X_[i]
+#         resᵢₐ = _0
+#         for (a, nᵢₐ) ∈ pairs(ni)
+#             Xᵢₐ = Xᵢ[a]
+#             nᵢₐ = ni[a]
+#             resᵢₐ += nᵢₐ * (log(Xᵢₐ) - Xᵢₐ / 2 + 0.5)
+#         end
+#         res += resᵢₐ * z[i]
+#     end
+#     return res / sum(z)
 # end
