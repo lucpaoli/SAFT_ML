@@ -164,7 +164,6 @@ end
 #     return Tc, f_pullback
 # end
 
-
 function saturation_pressure_NN(X, T)
     model = make_model(X...)
     p, Vₗ, Vᵥ = saturation_pressure(model, T)
@@ -189,6 +188,39 @@ function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
         ∂X = @thunk(ForwardDiff.gradient(X -> f_p(X, T), X) .* Δy)
         ∂T = @thunk(ForwardDiff.derivative(T -> f_p(X, T), T) .* Δy)
         return (NoTangent(), ∂X, ∂T)
+    end
+
+    return p, f_pullback
+end
+
+function pressure_NN(model, V, T)
+    return ForwardDiff.derivative(V -> eos(model, V, T), V)
+end
+
+function volume_NN(X, p, T)
+    model = make_model(X...)
+    V = volume(model, p, T; phase=:liquid)
+
+    return V
+end
+
+function ChainRulesCore.rrule(::typeof(volume_NN), X, p, T)
+    model = make_model(X...)
+    vL = volume(model, p, T, [1.0]; phase=:liquid)
+
+    function f_pullback(Δy)
+        #* Newton step from perfect initialisation
+        function f_V(X, p, T)
+            model = make_NN_model(X...)
+            ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(model, V, T), vL)
+            v2 = vL - (pressure_NN(model, vL, T) - p) / ∂p∂V
+            return v2
+        end
+
+        ∂X = @thunk(ForwardDiff.gradient(X -> f_V(X, p, T), X) .* Δy)
+        ∂p = @thunk(ForwardDiff.derivative(p -> f_V(X, p, T), p) .* Δy)
+        ∂T = @thunk(ForwardDiff.derivative(T -> f_V(X, p, T), T) .* Δy)
+        return (NoTangent(), ∂X, ∂p, ∂T)
     end
 
     return p, f_pullback
@@ -446,7 +478,7 @@ function f123456(model::SAFTVRMieNN, V, T, z, α)
     # @show in_1
     fa = reduce(add_tuples, in_1)
     fb = reduce(add_tuples, (ϕ[i] .* α^(i - 4) for i in 5:7))
-    
+
     # @show α
     # @show fa
     # @show fb
@@ -685,7 +717,7 @@ function a_dispchain(model::SAFTVRMieNN, V, T, z, _data=@f(data))
         a₁ += a1_ij * x_Si * x_Sj
         a₂ += a2_ij * x_Si * x_Sj
         a₃ += a3_ij * x_Si * x_Sj
-        
+
         # @show a₁
         # @show a₂
         # @show a₃
