@@ -25,7 +25,7 @@ function create_data(; batch_size=16, n_points=25)
     # Create training & validation data
     df = CSV.read("./pcpsaft_params/SI_pcp-saft_parameters.csv", DataFrame, header=1)
     filter!(row -> occursin("Alkane", row.family), df)
-    # df = first(df, 5)
+    df = first(df, 1)
     mol_data = zip(df.common_name, df.isomeric_smiles, df.molarweight)
     println("Generating data for $(length(mol_data)) molecules...")
 
@@ -98,12 +98,13 @@ function create_ff_model(nfeatures)
     # Base NN architecture from "Fitting Error vs Parameter Performance"
     nout = 5
     model = Chain(
-        Dense(nfeatures, 2048, relu),
-        Dense(2048, 1024, relu),
-        Dense(1024, 512, relu),
-        Dense(512, 128, relu),
-        Dense(128, 32, relu),
-        Dense(32, nout, relu),
+        Dense(nfeatures, 512, relu),
+        Dense(512, 512, relu),
+        Dense(512, nout, relu),
+        # Dense(1024, 512, relu),
+        # Dense(512, 128, relu),
+        # Dense(128, 32, relu),
+        # Dense(32, nout, relu),
     )
     # model(x) = m, σ, λ_a, λ_r, ϵ
 
@@ -198,7 +199,8 @@ function train_model!(model, train_loader, test_loader; epochs=10)
     optim = Flux.setup(Flux.Adam(0.01), model)  # will store optimiser momentum, etc.
 
     # @info "training on 1 thread"
-    @info "training on $(Threads.nthreads()) threads"
+    println("training on $(Threads.nthreads()) threads")
+    flush(stdout)
 
     for epoch in 1:epochs
         batch_loss = 0.0
@@ -219,7 +221,7 @@ function train_model!(model, train_loader, test_loader; epochs=10)
 end
 
 function main()
-    train_loader, test_loader = create_data(n_points=25, batch_size=128)
+    train_loader, test_loader = create_data(n_points=25, batch_size=25)
     n_features = length(first(train_loader)[1][1][1])
     println("n_features = $n_features")
     flush(stdout)
