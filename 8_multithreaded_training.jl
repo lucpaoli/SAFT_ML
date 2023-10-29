@@ -1,7 +1,7 @@
 # using Revise
 # using Base.Threads: @spawn, @sync, SpinLock
 using Clapeyron
-includet("./saftvrmienn.jl")
+include("./saftvrmienn.jl")
 # These are functions we're going to overload for SAFTVRMieNN
 import Clapeyron: a_res, saturation_pressure, pressure
 
@@ -27,7 +27,7 @@ function create_data(; batch_size=16, n_points=25)
     filter!(row -> occursin("Alkane", row.family), df)
     # df = first(df, 5)
     mol_data = zip(df.common_name, df.isomeric_smiles, df.molarweight)
-    @info "Generating data for $(length(mol_data)) molecules..."
+    println("Generating data for $(length(mol_data)) molecules...")
 
     function make_fingerprint(s::String)::Vector{Float32}
         mol = get_mol(s)
@@ -88,7 +88,8 @@ function create_data(; batch_size=16, n_points=25)
 
     train_loader = DataLoader(train_data, batchsize=batch_size, shuffle=false)
     test_loader = DataLoader(test_data, batchsize=batch_size, shuffle=false)
-    @info "n_batches = $(length(train_loader)), batch_size = $batch_size"
+    println("n_batches = $(length(train_loader)), batch_size = $batch_size")
+    flush(stdout)
     return train_loader, test_loader
 end
 
@@ -212,15 +213,17 @@ function train_model!(model, train_loader, test_loader; epochs=10)
             Flux.update!(optim, model, grads[1])
         end
         batch_loss /= length(train_loader)
-        epoch % 1 == 0 && @info "epoch $epoch: batch_loss = $batch_loss"
+        epoch % 1 == 0 && println("epoch $epoch: batch_loss = $batch_loss")
+        flush(stdout)
     end
 end
 
 function main()
-    train_loader, test_loader = create_data(n_points=10, batch_size=128)
+    train_loader, test_loader = create_data(n_points=25, batch_size=128)
     n_features = length(first(train_loader)[1][1][1])
-    @info "n_features = $n_features"
+    println("n_features = $n_features")
+    flush(stdout)
 
     model = create_ff_model(n_features)
-    train_model!(model, train_loader, test_loader; epochs=10)
+    train_model!(model, train_loader, test_loader; epochs=3)
 end
