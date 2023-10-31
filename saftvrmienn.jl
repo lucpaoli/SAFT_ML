@@ -217,13 +217,14 @@ function ChainRulesCore.rrule(::typeof(volume_NN), X, p, T)
             return v2
         end
 
-        ∂X = @thunk(ForwardDiff.gradient(X -> f_V(X, p, T), X) .* Δy)
+        # ∂X = @thunk(ForwardDiff.gradient(X -> f_V(X, p, T), X) .* Δy)
+        ∂X = ForwardDiff.gradient(X -> f_V(X, p, T), X) .* Δy
         ∂p = @thunk(ForwardDiff.derivative(p -> f_V(X, p, T), p) .* Δy)
         ∂T = @thunk(ForwardDiff.derivative(T -> f_V(X, p, T), T) .* Δy)
         return (NoTangent(), ∂X, ∂p, ∂T)
     end
 
-    return p, f_pullback
+    return vL, f_pullback
 end
 
 # diagvalues(x<:Rea) = x
