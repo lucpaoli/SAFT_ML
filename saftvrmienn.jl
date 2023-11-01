@@ -193,7 +193,13 @@ function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
     return p, f_pullback
 end
 
-function pressure_NN(model, V, T)
+# function pressure_NN(model, V, T)
+#     return ForwardDiff.derivative(V -> eos(model, V, T), V)
+# end
+
+function pressure_NN(X, V, T)
+    model = make_NN_model(X...)
+
     return ForwardDiff.derivative(V -> eos(model, V, T), V)
 end
 
@@ -205,15 +211,16 @@ function volume_NN(X, p, T)
 end
 
 function ChainRulesCore.rrule(::typeof(volume_NN), X, p, T)
-    model = make_model(X...)
-    vL = volume(model, p, T, [1.0]; phase=:liquid)
+    # model = make_model(X...)
+    # vL = volume(model, p, T, [1.0]; phase=:liquid)
+    vL = volume_NN(X, p, T)
 
     function f_pullback(Δy)
         #* Newton step from perfect initialisation
         function f_V(X, p, T)
-            model = make_NN_model(X...)
-            ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(model, V, T), vL)
-            v2 = vL - (pressure_NN(model, vL, T) - p) / ∂p∂V
+            # model = make_NN_model(X...)
+            ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(X, V, T), vL)
+            v2 = vL - (pressure_NN(X, vL, T) - p) / ∂p∂V
             return v2
         end
 
