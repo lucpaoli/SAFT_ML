@@ -27,7 +27,7 @@ function create_data(; batch_size=16, n_points=25)
     # Create training & validation data
     df = CSV.read("./pcpsaft_params/SI_pcp-saft_parameters.csv", DataFrame, header=1)
     filter!(row -> occursin("Alkane", row.family), df)
-    df = first(df, 2) #* Take only first molecule in dataframe
+    df = first(df, 5) #* Take only first molecule in dataframe
     @show df.common_name
     mol_data = zip(df.common_name, df.isomeric_smiles, df.molarweight)
     println("Generating data for $(length(mol_data)) molecules...")
@@ -62,7 +62,7 @@ function create_data(; batch_size=16, n_points=25)
 
     T = Float64
     # X_data = Vector{Tuple{Vector{T},T,T,T}}([])
-    X_data = Vector{Tuple{Vector{T},T,T}}([])
+    X_data = Vector{Tuple{Vector{T},T,T,T,String}}([])
     Y_data = Vector{Vector{T}}()
 
     # n = 0
@@ -79,11 +79,11 @@ function create_data(; batch_size=16, n_points=25)
         for T in T_range
             (p_sat, Vₗ_sat, Vᵥ_sat) = saturation_pressure(saft_model, T)
 
-            # p = p_sat * 5.0
-            # Vₗ = volume(saft_model, p, T; phase=:liquid)
+            p = p_sat * 5.0
+            Vₗ = volume(saft_model, p, T; phase=:liquid)
 
-            push!(X_data, (fp, T, Mw))
-            push!(Y_data, [Vₗ_sat, p_sat])
+            push!(X_data, (fp, p, T, Mw, name))
+            push!(Y_data, [Vₗ, p_sat])
         end
     end
 
@@ -121,7 +121,7 @@ function create_ff_model(nfeatures)
         Dense(nfeatures, nout * 8, tanh, init=Flux.glorot_normal),
         Dense(nout * 8, nout * 4, tanh, init=Flux.glorot_normal),
         Dense(nout * 4, nout * 2, tanh, init=Flux.glorot_normal),
-        Dense(nout * 2, nout, x -> x, init=Flux.glorot_normal), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+        Dense(nout * 2, nout, x -> x, init=Flux.zeros32), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
     )
     # model(x) = m, σ, λ_a, λ_r, ϵ
 
@@ -137,9 +137,9 @@ function get_idx_from_iterator(iterator, idx)
     return data_iterator[1]
 end
 
-
-function SAFT_head(model, X; b=[2.5, 3.5, 12.0, 250.0], c=Float64[1, 1, 10, 100])
-    fp, T, Mw = X
+# todo split into two functions; parameter generation and Vₗ, p_sat calculation
+# function get_SAFT_params(model, X; b=[2.5, 3.5, 12.0, 250.0], c=Float64[1, 1, 10, 100])
+function calculate_saft_parameters(model, fp, Mw; b=[2.5, 3.5, 12.0, 250.0], c=Float64[1, 1, 10, 100])
 
     # m = 1.8514
     # σ = 4.0887
@@ -153,10 +153,22 @@ function SAFT_head(model, X; b=[2.5, 3.5, 12.0, 250.0], c=Float64[1, 1, 10, 100]
     biased_params = @. pred_params * c + b
 
     m, σ, λ_r, ϵ = biased_params
-    m = max(1.0, m)
+    # m = max(1.0, m) # using a max function zeros derivatives, potentially erroneously 
+    α = 2
+    m = log(1 + exp(α * (m - 1))) / α + 1
 
     # saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])
     saft_input = [Mw, m, σ, λ_a, λ_r, ϵ]
+    return saft_input
+end
+
+function SAFT_head(model, X)
+    fp, p, T, Mw, name = X
+
+    saft_input = calculate_saft_parameters(model, fp, Mw)
+
+    Vₗ = volume_NN(saft_input, p, T)
+    ŷ_1 = !isnan(Vₗ) ? Vₗ : nothing
 
     Tc = ignore_derivatives() do
         critical_temperature_NN(saft_input)
@@ -165,17 +177,16 @@ function SAFT_head(model, X; b=[2.5, 3.5, 12.0, 250.0], c=Float64[1, 1, 10, 100]
     if T < Tc
         sat_p = saturation_pressure_NN(saft_input, T)
         #! This repeats the volume root calculation
-        Vₗ = volume_NN(saft_input, sat_p, T)
 
-        ŷ = [Vₗ, sat_p]
+        ŷ_2 = !isnan(sat_p) ? sat_p : nothing
     else
         #* Instead of ignoring, could:
         #* - compare to critical point
         #* - compare to sat_p, Vₗ at reduced T (T/Tc^exp vs T/Tc)
-        ŷ = [nothing, nothing]
+        ŷ_2 = nothing
     end
 
-    return ŷ
+    return [ŷ_1, ŷ_2]
 end
 
 function eval_loss(X_batch, y_batch, metric, model)
@@ -188,21 +199,27 @@ function eval_loss(X_batch, y_batch, metric, model)
             if !isnothing(ŷ)
                 batch_loss += metric(y, ŷ)
                 n += 1
+                #! This zeros the gradient, making improvement impossible
+                # else 
+                #     batch_loss += 1000.0 # penalise NaNs
             end
         end
 
     end
+    # @show length(y_batch) - n/2
     if n > 0
         batch_loss /= n
     end
     # penalize batch_loss depending on how many failed
     # n_failed = length(y_batch) - n
     # batch_loss += n_failed * 1000.0
-
+    n_failed = length(y_batch) * 2 - n
+    print(" $n_failed,")
     return batch_loss
 end
 
 function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
+    print("n_failed =")
     n = length(X_batch)
     chunk_size = n ÷ n_chunks
 
@@ -230,7 +247,7 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10)
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log.csv")
     optim = Flux.setup(Flux.Adam(0.01), model) # 1e-3 usually safe starting LR
     # optim = Flux.setup(Descent(0.001), model)
 
@@ -239,10 +256,25 @@ function train_model!(model, train_loader, test_loader; epochs=10)
 
     for epoch in 1:epochs
         batch_loss = 0.0
-        for (X_batch, y_batch) in train_loader
+        # unique_fps = Set({})
+        # unique_fps = Set{Tuple{String,Tuple{Float64...}}}()
+        unique_fps = Dict()
 
+        for (X_batch, y_batch) in train_loader
+            #! Extract unique fingerprints from X_batch
+            #* Do this with a set of (fp, name) tuples
+            #! Generate SAFT inputs for each unique fingerprint
+            #! Log to file as csv, formatted as:
+            #* epoch, molecule, m, σ, λ_a, λ_r, ϵ
+            for (fp, p, T, Mw, name) in X_batch
+                if !haskey(unique_fps, name)
+                    unique_fps[name] = (fp, Mw)
+                end
+            end
+
+            # n_failed = 0
             loss, grads = Flux.withgradient(model) do m
-                loss = eval_loss_par(X_batch, y_batch, percent_error, m, Threads.nthreads())
+                loss = eval_loss_par(X_batch, y_batch, mse, m, Threads.nthreads())
                 # loss = eval_loss(X_batch, y_batch, mse, m)
                 loss
             end
@@ -251,14 +283,27 @@ function train_model!(model, train_loader, test_loader; epochs=10)
 
             Flux.update!(optim, model, grads[1])
         end
+
+        # Now process unique fingerprints after all batches for the epoch are done
+        for (name, (fp, Mw)) in unique_fps
+            # Assuming a function calculate_saft_parameters exists
+            Mw, m, σ, λ_a, λ_r, ϵ = calculate_saft_parameters(model, fp, Mw)
+
+            # Log to file as csv, formatted as:
+            # epoch, molecule, m, σ, λ_a, λ_r, ϵ
+            open(log_filename, "a") do io
+                write(io, "$epoch;$name;$m;$σ;$λ_a;$λ_r;$ϵ\n")
+            end
+        end
+
         batch_loss /= length(train_loader)
-        epoch % 1 == 0 && println("epoch $epoch: batch_loss = $batch_loss")
+        epoch % 1 == 0 && println("\nepoch $epoch: batch_loss = $batch_loss")
         flush(stdout)
     end
 end
 
-function main(; epochs=1)
-    train_loader, test_loader = create_data(n_points=50, batch_size=100) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+function main(; epochs=100)
+    train_loader, test_loader = create_data(n_points=50, batch_size=250) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
