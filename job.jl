@@ -1,6 +1,6 @@
 import Pkg
 Pkg.activate(".")
-using Logging
+# using Logging
 
 println("Environment activated, loading script")
 flush(stdout)
@@ -27,7 +27,8 @@ println("Including training scripts")
 flush(stdout)
 # include("./8_multithreaded_training.jl")
 # include("./12_ML_SAFT_architecture.jl")
-include("./13_ML_SAFT_loss2.jl")
+# include("./13_ML_SAFT_loss2.jl")
+include("./15_NN_psat_vsat.jl")
 println("Running main")
 flush(stdout)
 @time main()

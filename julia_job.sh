@@ -1,6 +1,6 @@
 #!/bin/bash
-#PBS -lselect=1:ncpus=8:mem=32gb
-#PBS -lwalltime=01:00:00
+#PBS -lselect=1:ncpus=8:mem=64gb
+#PBS -lwalltime=20:00:00
 #PBS -N ML_SAFT_8_cpu_alkanes_cambridge_arch_loss2
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables

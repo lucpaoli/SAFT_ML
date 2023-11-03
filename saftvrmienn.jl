@@ -266,13 +266,13 @@ function pressure_NN(X, V, T)
     return ForwardDiff.derivative(V -> eos(model, V, T), V)
 end
 
-function volume_NN(X, p, T, Vₗ = nothing)
-    if isnothing(Vₗ)
-        model = make_model(X...)
-        V = volume(model, p, T; phase=:liquid)
-    else
-        V = Vₗ
-    end
+function volume_NN(X, p, T)#, Vₗ = nothing)
+    # if isnothing(Vₗ)
+    model = make_model(X...)
+    V = volume(model, p, T; phase=:liquid)
+    # else
+    #     V = Vₗ
+    # end
 
     return V
 end
@@ -280,7 +280,7 @@ end
 function ChainRulesCore.rrule(::typeof(volume_NN), X, p, T)
     # model = make_model(X...)
     # vL = volume(model, p, T, [1.0]; phase=:liquid)
-    vL = volume_NN(X, p, T) #* Is this cached
+    vL = volume_NN(X, p, T) #* Is this cached?
 
     function f_pullback(Δy)
         #* Newton step from perfect initialisation
