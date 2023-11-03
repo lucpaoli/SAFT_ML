@@ -164,6 +164,72 @@ end
 #     return Tc, f_pullback
 # end
 
+#! I don't know how to define the rrule for Rⁿ → Rᵐ functions 
+# function saturation_NN(X, T)
+#     model = make_model(X...)
+#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
+
+#     return p, Vₗ, Vᵥ
+# end
+
+# function ChainRulesCore.rrule(::typeof(saturation_NN), X, T)
+#     model = make_model(X...)
+#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
+
+#     function f_pullback(Δy)
+#         #* Newton step from perfect initialisation
+#         function f_p(X, T)
+#             model = make_NN_model(X...)
+#             p2 = -(eos(model, Vᵥ, T) - eos(model, Vₗ, T)) / (Vᵥ - Vₗ)
+#             return p2
+#         end
+
+#         ∂X = @thunk(ForwardDiff.gradient(X -> f_p(X, T), X) .* Δy)
+#         ∂T = @thunk(ForwardDiff.derivative(T -> f_p(X, T), T) .* Δy)
+#         return (NoTangent(), ∂X, ∂T)
+#     end
+
+#     return [p, Vₗ, Vᵥ], f_pullback
+# end
+
+# function saturation_pressure_NN(X, T)
+#     model = make_model(X...)
+#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
+
+#     return [p, Vₗ]
+# end
+
+# #! In the forward pass, use ForwardDiff to compute value + gradient
+# #! Then return cached value in pullback function
+# function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
+#     model = make_model(X...)
+#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
+
+#     function f_pullback(Δy)
+#         #* Newton step from perfect initialisation
+#         #! How do I define the gradients wrt Vₗ ?
+#         function f(X, T)
+#             NN_model = make_NN_model(X...)
+#             p2 = -(eos(NN_model, Vᵥ, T) - eos(NN_model, Vₗ, T)) / (Vᵥ - Vₗ)
+#             ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(X, V, T), Vₗ)
+#             v2 = Vₗ - (pressure_NN(X, Vₗ, T) - p) / ∂p∂V
+#             return p2, v2
+#         end
+
+#         ∂X = @thunk(ForwardDiff.jacobian(X -> f(X, T), X) .* Δy)
+#         ∂T = @thunk(ForwardDiff.jacobian(T -> f(X, T), T) .* Δy)
+#         # ∂X_p = @thunk(ForwardDiff.gradient(X -> f_p(X, T), X) .* Δy)
+#         # ∂T_p = @thunk(ForwardDiff.derivative(T -> f_p(X, T), T) .* Δy)
+
+#         # ∂X_v = @thunk(ForwardDiff.gradient(X -> f_v(X, T), X) .* Δy)
+#         # ∂T_v = @thunk(ForwardDiff.derivative(T -> f_v(X, T), T) .* Δy)
+#         # return (NoTangent(), [∂X_p, ∂X_v], [∂T_p, ∂T_v])
+#         return (NoTangent(), ∂X, ∂T)
+#     end
+
+#     return [p, Vₗ], f_pullback
+# end
+
 function saturation_pressure_NN(X, T)
     model = make_model(X...)
     p, Vₗ, Vᵥ = saturation_pressure(model, T)
@@ -179,23 +245,20 @@ function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
 
     function f_pullback(Δy)
         #* Newton step from perfect initialisation
-        function f_p(X, T)
-            model = make_NN_model(X...)
-            p2 = -(eos(model, Vᵥ, T) - eos(model, Vₗ, T)) / (Vᵥ - Vₗ)
+        #! How do I define the gradients wrt Vₗ ?
+        function f(X, T)
+            NN_model = make_NN_model(X...)
+            p2 = -(eos(NN_model, Vᵥ, T) - eos(NN_model, Vₗ, T)) / (Vᵥ - Vₗ)
             return p2
         end
 
-        ∂X = @thunk(ForwardDiff.gradient(X -> f_p(X, T), X) .* Δy)
-        ∂T = @thunk(ForwardDiff.derivative(T -> f_p(X, T), T) .* Δy)
+        ∂X = @thunk(ForwardDiff.gradient(X -> f(X, T), X) .* Δy)
+        ∂T = @thunk(ForwardDiff.derivative(T -> f(X, T), T) .* Δy)
         return (NoTangent(), ∂X, ∂T)
     end
 
     return p, f_pullback
 end
-
-# function pressure_NN(model, V, T)
-#     return ForwardDiff.derivative(V -> eos(model, V, T), V)
-# end
 
 function pressure_NN(X, V, T)
     model = make_NN_model(X...)
@@ -203,9 +266,13 @@ function pressure_NN(X, V, T)
     return ForwardDiff.derivative(V -> eos(model, V, T), V)
 end
 
-function volume_NN(X, p, T)
-    model = make_model(X...)
-    V = volume(model, p, T; phase=:liquid)
+function volume_NN(X, p, T, Vₗ = nothing)
+    if isnothing(Vₗ)
+        model = make_model(X...)
+        V = volume(model, p, T; phase=:liquid)
+    else
+        V = Vₗ
+    end
 
     return V
 end
@@ -213,7 +280,7 @@ end
 function ChainRulesCore.rrule(::typeof(volume_NN), X, p, T)
     # model = make_model(X...)
     # vL = volume(model, p, T, [1.0]; phase=:liquid)
-    vL = volume_NN(X, p, T)
+    vL = volume_NN(X, p, T) #* Is this cached
 
     function f_pullback(Δy)
         #* Newton step from perfect initialisation
