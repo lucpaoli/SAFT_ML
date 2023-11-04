@@ -27,7 +27,7 @@ function create_data(; batch_size=16, n_points=25)
     # Create training & validation data
     df = CSV.read("./pcpsaft_params/SI_pcp-saft_parameters.csv", DataFrame, header=1)
     filter!(row -> occursin("Alkane", row.family), df)
-    df = first(df, 5) #* Take only first molecule in dataframe
+    # df = first(df, 5) #* Take only first molecule in dataframe
     @show df.common_name
     mol_data = zip(df.common_name, df.isomeric_smiles, df.molarweight)
     println("Generating data for $(length(mol_data)) molecules...")
@@ -247,7 +247,7 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log.csv")
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_all_alkanes.csv")
     optim = Flux.setup(Flux.Adam(0.01), model) # 1e-3 usually safe starting LR
     # optim = Flux.setup(Descent(0.001), model)
 
@@ -303,7 +303,7 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
 end
 
 function main(; epochs=100)
-    train_loader, test_loader = create_data(n_points=50, batch_size=250) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+    train_loader, test_loader = create_data(n_points=50, batch_size=500) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
