@@ -1,0 +1,65 @@
+Rules imposed on parameter regression
+- If non-associating, lambda_a = 6
+- Small molecules (Ar, methane) have m = 1
+- m >= 1 in general
+
+Tests to run
+- Number of points for different species (e.g. associating vs non-associating)
+   - Plot training curves (loss against epoch)
+   - look at AADs
+- Vary objective function
+- Vary training data types (reproduce PC-SAFT table for SAFT-VR Mie)
+- Vary input re. associating vs. non-associating
+
+To Do (michael)
+-  regenerate PCP-SAFT data, considering temperature ranges in experimental data and 
+   procedures in 2015 Privat paper
+-  train SAFT-VR Mie on PCP-SAFT data
+-  use sat pressure and volumes for training
+
+Why we're doing this
+-  Regressing on parameters implictly considers the error observed in using those parameters
+   (this error may be very large - e.g. Winter amines ~30% - published parameters for millions 
+   of parameters or Cambridge ML SAFT paper)
+-  Using parameters requires there be enough data on a moleucle to generate those parameters
+-  May help with degeneracies? (Cambridge did not acknowledge this)
+
+How we're doing this
+-  Physics-Informed Neural Network
+   What we need:
+   -  Differnetiable equations of state - Clapeyron provides equations of state in a differentiable 
+      framework (meaning that Julia supports automatic diffentiation - explain this) & Julia has a lot
+      of rich ecosystem of scientific machine learning, specifically physics-informed neural networks
+-  Validate the PINN by performing parameter regression (fit parameters for alkanes & look at AADs for
+   different properties (validates properties) and parameter trends (plot m*sigma^3 and m*epsilon to 
+   validate parameters, pending degeracy findings))
+-  Reference Winter et al. (2023), explaining the Newton step
+-  Discussed reduced vs normal temperature as means of increasing computational efficiency (using reduced
+   temperatures may avoid computing saturation propertues unnecessarily - allows you to use beyond the
+   critical point) - could also compare experimental pressures beyond critical point with critical pressure
+-  Use of saturated properties to ensure continuous (and, therefore, differentiable) loss - for a given
+   pressure and temperature, SAFT has up to five roots. Using non-staturated conditons means two of
+   these are computed (using a liquid-like and vapour-like initial guess) and then compared (lowest 
+   gibbs energy chosen). Using saturated means there is only ever one root for a given temperature.
+   -  Luc initially always chose liquid root as was initially training on sub-cooled liquid data
+   -  But when training on saturated pressure data, then the gibbs energy must be used to choose the 
+      correct root (otherwise you compare the liquid root pressure with the dew curve data)
+   -  If wanted to train superheated vapour or similar, we'd have to deal with the discontinuities and 
+      non-differentiability of the loss
+-  Machine learning approaches in the field (Graph Neutal Network, Multi-Layer Perceptron, and Random 
+   Forest)
+-  Molecular featurisation (molecular fingerprints encoding molecular structure & other properties - 
+   e.g. hybridisation, bond order, polarity??) - mention Morgan and his fingerprints (where Winter 
+   et al. (2023) used natual language processing)
+
+Results
+-  Performance of NN on different molecular families (five-fold validation: split PCP-SAFT data into
+   five groups, and train & validate five times, each time training on four groups and validating on 
+   the fifth)
+   -  Different architectures (look at Winter for data representation ideas)
+   -  Performance on deuterated compounds (compare ethylene-d4, o-deuteromethanol, perdeuterobenzene)
+   -  Plot known trends in parameters and overlay with Winter (m*sigma^3, m*epsilon)
+   -  Different training data (e.g. just sat. liq densities, sat. vap. pressures, both, etc.)
+   -  Different loss functions (logs, mot-logs, etc.)
+   -  Different molecular features (electronegativities, presence of hydrogen bonds, sigma profiles?)
+
