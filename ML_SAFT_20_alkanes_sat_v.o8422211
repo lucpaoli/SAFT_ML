@@ -1,0 +1,64 @@
+Environment activated, loading script
+Running 'saftvrmienn.jl'
+Including training scripts
+Running main
+df.common_name = ["n-butane", "decane", "2,4-dimethylpentane", "dodecane", "hexane", "heptane", "2-methylbutane", "2,2,4-trimethylpentane", "2-methylpentane", "3-methylpentane", "octane", "pentane", "tetradecane", "2,2,5-trimethylhexane", "2,2,3-trimethylbutane", "propane", "2,3-dimethylpentane", "2-methylpropane", "2,3-dimethylbutane", "2,2-dimethylbutane"]
+Generating data for 20 molecules...
+n_batches = 4, batch_size = 250
+n_features = length((((first(train_loader))[1])[1])[1]) = 55
+training on 12 threads
+n_failed = 40, 40, 12, 12, 0, 2, 0, 0, 0, 0, 0, 8,
+n_failed = 8, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 20, 20, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
+epoch 1: batch_loss = 3574.894103950337, time = 242.7478289604187s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
+epoch 2: batch_loss = 6.081366449428555, time = 16.662495136260986s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
+epoch 3: batch_loss = 0.5033465751242815, time = 17.311227083206177s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
+epoch 4: batch_loss = 0.5481260073755235, time = 17.731035947799683s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
+epoch 5: batch_loss = 0.5532470386770242, time = 17.835044860839844s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+
+epoch 6: batch_loss = 0.2714848560307589, time = 5578.24972486496s
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+
+epoch 7: batch_loss = 0.0, time = 9321.006629943848s
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+
+epoch 8: batch_loss = 0.0, time = 7523.888028860092s
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 60,
+
+epoch 9: batch_loss = 0.0, time = 6857.4240119457245s
+n_failed = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40,
