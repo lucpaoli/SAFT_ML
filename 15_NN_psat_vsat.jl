@@ -27,7 +27,7 @@ function create_data(; batch_size=16, n_points=25)
     # Create training & validation data
     df = CSV.read("./pcpsaft_params/SI_pcp-saft_parameters.csv", DataFrame, header=1)
     filter!(row -> occursin("Alkane", row.family), df)
-    # df = first(df, 5) #* Take only first molecule in dataframe
+    # df = first(df, 20) #* Take only first molecule in dataframe
     @show df.common_name
     mol_data = zip(df.common_name, df.isomeric_smiles, df.molarweight)
     println("Generating data for $(length(mol_data)) molecules...")
@@ -80,10 +80,10 @@ function create_data(; batch_size=16, n_points=25)
             (p_sat, Vₗ_sat, Vᵥ_sat) = saturation_pressure(saft_model, T)
 
             p = p_sat * 5.0
-            Vₗ = volume(saft_model, p, T; phase=:liquid)
+            # Vₗ = volume(saft_model, p, T; phase=:liquid)
 
             push!(X_data, (fp, p, T, Mw, name))
-            push!(Y_data, [Vₗ, p_sat])
+            push!(Y_data, [Vₗ_sat, p_sat])
         end
     end
 
@@ -167,9 +167,6 @@ function SAFT_head(model, X)
 
     saft_input = calculate_saft_parameters(model, fp, Mw)
 
-    Vₗ = volume_NN(saft_input, p, T)
-    ŷ_1 = !isnan(Vₗ) ? Vₗ : nothing
-
     Tc = ignore_derivatives() do
         critical_temperature_NN(saft_input)
     end
@@ -177,12 +174,15 @@ function SAFT_head(model, X)
     if T < Tc
         sat_p = saturation_pressure_NN(saft_input, T)
         #! This repeats the volume root calculation
+        Vₗ = volume_NN(saft_input, sat_p, T)
+        ŷ_1 = !isnan(Vₗ) ? Vₗ : nothing
 
         ŷ_2 = !isnan(sat_p) ? sat_p : nothing
     else
         #* Instead of ignoring, could:
         #* - compare to critical point
         #* - compare to sat_p, Vₗ at reduced T (T/Tc^exp vs T/Tc)
+        ŷ_1 = nothing
         ŷ_2 = nothing
     end
 
@@ -215,11 +215,13 @@ function eval_loss(X_batch, y_batch, metric, model)
     # batch_loss += n_failed * 1000.0
     n_failed = length(y_batch) * 2 - n
     print(" $n_failed,")
+    flush(stdout)
     return batch_loss
 end
 
 function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
     print("n_failed =")
+    flush(stdout)
     n = length(X_batch)
     chunk_size = n ÷ n_chunks
 
@@ -236,6 +238,8 @@ function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
             end
         end
     end
+    print("\n")
+    flush(stdout)
     return sum(p) / n_chunks # average partial losses
 end
 
@@ -247,25 +251,23 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_all_alkanes.csv")
-    optim = Flux.setup(Flux.Adam(0.01), model) # 1e-3 usually safe starting LR
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_all_alkanes_sat_v_10k_epochs.csv")
+    optim = Flux.setup(Flux.Adam(0.001), model) # 1e-3 usually safe starting LR
     # optim = Flux.setup(Descent(0.001), model)
 
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
 
+    # todo report time for each epoch
     for epoch in 1:epochs
+        epoch_start_time = time() # Start timing the epoch
+
         batch_loss = 0.0
         # unique_fps = Set({})
         # unique_fps = Set{Tuple{String,Tuple{Float64...}}}()
         unique_fps = Dict()
 
         for (X_batch, y_batch) in train_loader
-            #! Extract unique fingerprints from X_batch
-            #* Do this with a set of (fp, name) tuples
-            #! Generate SAFT inputs for each unique fingerprint
-            #! Log to file as csv, formatted as:
-            #* epoch, molecule, m, σ, λ_a, λ_r, ϵ
             for (fp, p, T, Mw, name) in X_batch
                 if !haskey(unique_fps, name)
                     unique_fps[name] = (fp, Mw)
@@ -292,17 +294,19 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
             # Log to file as csv, formatted as:
             # epoch, molecule, m, σ, λ_a, λ_r, ϵ
             open(log_filename, "a") do io
-                write(io, "$epoch;$name;$m;$σ;$λ_a;$λ_r;$ϵ\n")
+                write(io, "$epoch;$name;$Mw;$m;$σ;$λ_a;$λ_r;$ϵ\n")
             end
         end
 
         batch_loss /= length(train_loader)
-        epoch % 1 == 0 && println("\nepoch $epoch: batch_loss = $batch_loss")
+        epoch_duration = time() - epoch_start_time
+
+        epoch % 1 == 0 && println("\nepoch $epoch: batch_loss = $batch_loss, time = $(epoch_duration)s")
         flush(stdout)
     end
 end
 
-function main(; epochs=100)
+function main(; epochs=500)
     train_loader, test_loader = create_data(n_points=50, batch_size=500) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
@@ -311,7 +315,7 @@ function main(; epochs=100)
     train_model!(model, train_loader, test_loader; epochs=epochs)
     # save_model(model, "model_state.jld2")
     model_state = Flux.state(model)
-    jldsave("model_state_all_alkanes.jld2"; model_state)
+    jldsave("model_state_all_alkanes_sat_v_500_epochs.jld2"; model_state)
 
     return model
 end

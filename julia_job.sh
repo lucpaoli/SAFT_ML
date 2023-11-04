@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -lselect=1:ncpus=25:mem=64gb
-#PBS -lwalltime=10:00:00
-#PBS -N ML_SAFT_all_alkanes
+#PBS -lwalltime=20:00:00
+#PBS -N ML_SAFT_80_alkanes_sat_v_10k_epochs
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables
 # better to copy scripts to and from TMPDIR
