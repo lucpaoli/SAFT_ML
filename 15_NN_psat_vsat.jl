@@ -251,7 +251,7 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_all_alkanes_sat_v_10k_epochs.csv")
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_all_alkanes_sat_v_1k_epochs.csv")
     optim = Flux.setup(Flux.Adam(0.001), model) # 1e-3 usually safe starting LR
     # optim = Flux.setup(Descent(0.001), model)
 
@@ -311,11 +311,14 @@ function main(; epochs=500)
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
-    # @show model.layers[1].weight, model([1.0])
+    model_state = load("model_state_all_alkanes_sat_v_500_epochs.jld2", "model_state")
+    Flux.loadmodel!(model, model_state)
+
+    # Load weights from "model_state_all_alkanes_sat_v_500_epochs.jld2"
+
     train_model!(model, train_loader, test_loader; epochs=epochs)
-    # save_model(model, "model_state.jld2")
     model_state = Flux.state(model)
-    jldsave("model_state_all_alkanes_sat_v_500_epochs.jld2"; model_state)
+    jldsave("model_state_all_alkanes_sat_v_1000_epochs.jld2"; model_state)
 
     return model
 end
