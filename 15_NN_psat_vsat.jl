@@ -260,8 +260,8 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_2k_faster.csv")
-    optim = Flux.setup(Flux.Adam(0.0025), model) # 1e-3 usually safe starting LR
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_2k_5x.csv")
+    optim = Flux.setup(Flux.Adam(0.005), model) # 1e-3 usually safe starting LR
     # optim = Flux.setup(Descent(0.001), model)
 
     println("training on $(Threads.nthreads()) threads")
@@ -327,7 +327,7 @@ function main(; epochs=2000)
 
     train_model!(model, train_loader, test_loader; epochs=epochs)
     model_state = Flux.state(model)
-    jldsave("model_state_linear_alkanes_2k_faster.jld2"; model_state)
+    jldsave("model_state_linear_alkanes_2k_5x.jld2"; model_state)
 
     return model
 end
