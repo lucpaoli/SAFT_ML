@@ -24,12 +24,20 @@ using Plots
 
 # Generate training set for liquid density and saturation pressure
 function create_data(; batch_size=16, n_points=25)
+    contains_only_c(name) = all(letter -> lowercase(letter) == 'c', name)
+
     # Create training & validation data
-    df = CSV.read("./pcpsaft_params/SI_pcp-saft_parameters.csv", DataFrame, header=1)
+    # df = CSV.read("./pcpsaft_params/SI_pcp-saft_parameters.csv", DataFrame, header=1)
+    df = CSV.read("./pcpsaft_params/training_data.csv", DataFrame, header=1)
+
+    # Take only linear alkanes
     filter!(row -> occursin("Alkane", row.family), df)
+    filter!(row -> contains_only_c(row.isomeric_SMILES), df) 
+    # sort!(df, :Mw)
+
     # df = first(df, 20) #* Take only first molecule in dataframe
-    @show df.common_name
-    mol_data = zip(df.common_name, df.isomeric_smiles, df.molarweight)
+    @show df.species
+    mol_data = zip(df.species, df.isomeric_SMILES, df.Mw)
     println("Generating data for $(length(mol_data)) molecules...")
 
     function make_fingerprint(s::String)::Vector{Float64}
@@ -120,6 +128,7 @@ function create_ff_model(nfeatures)
     model = Chain(
         Dense(nfeatures, nout * 8, tanh, init=Flux.glorot_normal),
         Dense(nout * 8, nout * 4, tanh, init=Flux.glorot_normal),
+        # MultiHeadAttention(nout * 4; nheads=4, init=Flux.glorot_uniform),
         Dense(nout * 4, nout * 2, tanh, init=Flux.glorot_normal),
         Dense(nout * 2, nout, x -> x, init=Flux.zeros32), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
     )
@@ -139,7 +148,7 @@ end
 
 # todo split into two functions; parameter generation and Vₗ, p_sat calculation
 # function get_SAFT_params(model, X; b=[2.5, 3.5, 12.0, 250.0], c=Float64[1, 1, 10, 100])
-function calculate_saft_parameters(model, fp, Mw; b=[2.5, 3.5, 12.0, 250.0], c=Float64[1, 1, 10, 100])
+function calculate_saft_parameters(model, fp, Mw; b=[2.5, 3.5, 12.0, 250.0], c=[1.0, 1, 10, 100])
 
     # m = 1.8514
     # σ = 4.0887
@@ -251,8 +260,8 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_all_alkanes_sat_v_1k_epochs.csv")
-    optim = Flux.setup(Flux.Adam(0.001), model) # 1e-3 usually safe starting LR
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_2k_5x.csv")
+    optim = Flux.setup(Flux.Adam(0.005), model) # 1e-3 usually safe starting LR
     # optim = Flux.setup(Descent(0.001), model)
 
     println("training on $(Threads.nthreads()) threads")
@@ -306,19 +315,19 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
     end
 end
 
-function main(; epochs=500)
+function main(; epochs=2000)
     train_loader, test_loader = create_data(n_points=50, batch_size=500) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
-    model_state = load("model_state_all_alkanes_sat_v_500_epochs.jld2", "model_state")
-    Flux.loadmodel!(model, model_state)
+    # model_state = load("model_state_all_alkanes_attention.jld2", "model_state")
+    # Flux.loadmodel!(model, model_state)
 
     # Load weights from "model_state_all_alkanes_sat_v_500_epochs.jld2"
 
     train_model!(model, train_loader, test_loader; epochs=epochs)
     model_state = Flux.state(model)
-    jldsave("model_state_all_alkanes_sat_v_1000_epochs.jld2"; model_state)
+    jldsave("model_state_linear_alkanes_2k_5x.jld2"; model_state)
 
     return model
 end
