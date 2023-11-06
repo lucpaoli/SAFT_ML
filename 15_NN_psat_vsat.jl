@@ -112,7 +112,7 @@ function create_data(; batch_size=16, n_points=25)
     train_loader = DataLoader(train_data, batchsize=batch_size, shuffle=false)
     test_loader = DataLoader(test_data, batchsize=batch_size, shuffle=false)
     println("n_batches = $(length(train_loader)), batch_size = $batch_size")
-    flush(stdout)
+    # flush(stdout)
     return train_loader, test_loader
 end
 
@@ -203,6 +203,7 @@ function eval_loss(X_batch, y_batch, metric, model)
     n = 0
     for (X, y_vec) in zip(X_batch, y_batch)
         ŷ_vec = SAFT_head(model, X)
+        # ŷ_vec = model(X)
 
         for (ŷ, y) in zip(ŷ_vec, y_vec)
             if !isnothing(ŷ)
@@ -224,13 +225,13 @@ function eval_loss(X_batch, y_batch, metric, model)
     # batch_loss += n_failed * 1000.0
     n_failed = length(y_batch) * 2 - n
     print(" $n_failed,")
-    flush(stdout)
+    # flush(stdout)
     return batch_loss
 end
 
 function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
     print("n_failed =")
-    flush(stdout)
+    # flush(stdout)
     n = length(X_batch)
     chunk_size = n ÷ n_chunks
 
@@ -248,7 +249,7 @@ function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
         end
     end
     print("\n")
-    flush(stdout)
+    # flush(stdout)
     return sum(p) / n_chunks # average partial losses
 end
 
@@ -260,8 +261,8 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_2k_5x.csv")
-    optim = Flux.setup(Flux.Adam(0.005), model) # 1e-3 usually safe starting LR
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_10k.csv")
+    optim = Flux.setup(Flux.Adam(0.001), model) # 1e-3 usually safe starting LR
     # optim = Flux.setup(Descent(0.001), model)
 
     println("training on $(Threads.nthreads()) threads")
@@ -315,8 +316,8 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
     end
 end
 
-function main(; epochs=2000)
-    train_loader, test_loader = create_data(n_points=50, batch_size=500) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+function main(; epochs=10000)
+    train_loader, test_loader = create_data(n_points=64, batch_size=368) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
@@ -327,8 +328,7 @@ function main(; epochs=2000)
 
     train_model!(model, train_loader, test_loader; epochs=epochs)
     model_state = Flux.state(model)
-    jldsave("model_state_linear_alkanes_2k_5x.jld2"; model_state)
+    jldsave("model_state_linear_alkanes_10k.jld2"; model_state)
 
     return model
 end
-

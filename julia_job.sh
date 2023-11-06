@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -lselect=1:ncpus=25:mem=64gb
-#PBS -lwalltime=20:00:00
-#PBS -N linear_alkanes_2k_5x
+#PBS -lselect=1:ncpus=20:mem=64gb
+#PBS -lwalltime=35:00:00
+#PBS -N ppcsaft_params_training
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables
 # better to copy scripts to and from TMPDIR
@@ -14,4 +14,4 @@ module load tools/prod
 
 # run the program
 # python myprog.py path/to/input.txt
-./julia --threads 25 job.jl
+./julia --threads 20 job.jl
