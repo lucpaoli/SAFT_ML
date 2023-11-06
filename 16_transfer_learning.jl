@@ -88,7 +88,7 @@ function create_data(; batch_size=16)
     for num = [0, 1]
         num_cols = length(X_data[1][1])
         zero_cols = trues(num_cols)
-        for (vec, _, _) in X_data
+        for (vec, _...) in X_data
             zero_cols .&= (vec .== num)
         end
         keep_cols = .!zero_cols # Create a Mask
@@ -107,14 +107,15 @@ end
 
 function create_ff_model(nfeatures)
     # Base NN architecture from "Fitting Error vs Parameter Performance"
-    nout = 3
+    nout = 4
+    nout_ppcsaft = 3
     #* glorot_uniform default initialisation
     #* zeros32 is probably _really bad_ as an initialisation, but glorot_uniform can lead to invalid SAFT inputs
     model = Chain(
         Dense(nfeatures, nout * 8, tanh, init=Flux.glorot_normal),
         Dense(nout * 8, nout * 4, tanh, init=Flux.glorot_normal),
         Dense(nout * 4, nout * 2, tanh, init=Flux.glorot_normal),
-        Dense(nout * 2, nout, x -> x, init=Flux.zeros32), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+        Dense(nout * 2, nout_ppcsaft, x -> x, init=Flux.zeros32), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
     )
     # model(x) = m, σ, ϵ
     return model
@@ -134,7 +135,7 @@ function eval_loss(X_batch, y_batch, metric, model)
     for (X, y_vec) in zip(X_batch, y_batch)
         fp, name = X
         ŷ_vec = model(fp)
-        batch_loss += sum(metric(y, ŷ))
+        batch_loss += sum(metric(y_vec, ŷ_vec))
     end
     return batch_loss / n
 end
@@ -156,7 +157,6 @@ function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
             end
         end
     end
-    print("\n")
     return sum(p) / n_chunks # average partial losses
 end
 

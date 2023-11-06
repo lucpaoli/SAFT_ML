@@ -1,0 +1,11 @@
+Environment activated, loading script
+Running 'saftvrmienn.jl'
+Including training scripts
+Running main
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 3, batch_size = 10
+n_features = length((((first(train_loader))[1])[1])[1]) = 24
+training on 10 threads
+
+
