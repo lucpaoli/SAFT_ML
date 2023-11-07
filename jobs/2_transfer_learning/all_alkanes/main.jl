@@ -332,7 +332,7 @@ function main(; epochs=5000)
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model_ppcsaft(n_features)
-    model_state = load("model_state_ppcsaft.jld2", "model_state")
+    model_state = load("model_state_pcpsaft.jld2", "model_state")
     Flux.loadmodel!(model, model_state)
     model = Chain(model.layers[1:end-1]..., Dense(256, 4, x -> x, init=Flux.zeros32))
 

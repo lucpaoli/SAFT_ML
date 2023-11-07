@@ -1,0 +1,93 @@
+Environment activated, loading script
+Pre-training network
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 1, batch_size = 23
+n_features = length((((first(train_loader))[1])[1])[1]) = 24
+training on 23 threads
+
+epoch 25: batch_loss = 0.7291134276386396, time = 0.23403692245483398s
+
+epoch 50: batch_loss = 0.548921805785708, time = 0.1384718418121338s
+
+epoch 75: batch_loss = 0.4572624082854254, time = 0.12651395797729492s
+
+epoch 100: batch_loss = 0.41891953280671146, time = 0.19748497009277344s
+
+epoch 125: batch_loss = 0.36904833531209, time = 0.12717413902282715s
+
+epoch 150: batch_loss = 0.28047184618976545, time = 0.15238595008850098s
+
+epoch 175: batch_loss = 0.21541060453872488, time = 0.13364791870117188s
+
+epoch 200: batch_loss = 0.14171919912359981, time = 0.12808704376220703s
+
+epoch 225: batch_loss = 0.10058328902954643, time = 0.14430809020996094s
+
+epoch 250: batch_loss = 0.053960701654899294, time = 0.14656496047973633s
+
+epoch 275: batch_loss = 0.031952005717166235, time = 0.22015595436096191s
+
+epoch 300: batch_loss = 0.02586678805969529, time = 0.18544793128967285s
+
+epoch 325: batch_loss = 0.02139500363276114, time = 0.22352099418640137s
+
+epoch 350: batch_loss = 0.08631451577746468, time = 0.19677281379699707s
+
+epoch 375: batch_loss = 0.017393893852062407, time = 0.16976690292358398s
+
+epoch 400: batch_loss = 0.012394135994192923, time = 0.16920185089111328s
+
+epoch 425: batch_loss = 0.009392140101532996, time = 0.157271146774292s
+
+epoch 450: batch_loss = 0.0067230745061887, time = 0.2346329689025879s
+
+epoch 475: batch_loss = 0.020248211339752586, time = 0.17973017692565918s
+
+epoch 500: batch_loss = 0.039596957926589245, time = 0.182542085647583s
+
+epoch 525: batch_loss = 0.005617749535213021, time = 0.20152997970581055s
+
+epoch 550: batch_loss = 0.0023794650621809794, time = 0.21331000328063965s
+
+epoch 575: batch_loss = 0.0014405100991137156, time = 0.1455850601196289s
+
+epoch 600: batch_loss = 0.0010842576851288475, time = 0.15071892738342285s
+
+epoch 625: batch_loss = 2.782604536795412, time = 0.17693591117858887s
+
+epoch 650: batch_loss = 0.14851599800345192, time = 0.21794700622558594s
+
+epoch 675: batch_loss = 0.06958409569875874, time = 0.16779184341430664s
+
+epoch 700: batch_loss = 0.005916924898870477, time = 0.15982985496520996s
+
+epoch 725: batch_loss = 0.0019062888334278384, time = 0.1449570655822754s
+
+epoch 750: batch_loss = 0.00125248381801474, time = 0.15945816040039062s
+
+epoch 775: batch_loss = 0.0009127176530878224, time = 0.12443184852600098s
+
+epoch 800: batch_loss = 0.0006627227721148201, time = 0.16854286193847656s
+
+epoch 825: batch_loss = 0.000535585478657484, time = 0.15878891944885254s
+
+epoch 850: batch_loss = 0.00045231521498529276, time = 0.16703200340270996s
+
+epoch 875: batch_loss = 0.00039847044435648287, time = 0.217972993850708s
+
+epoch 900: batch_loss = 0.00036306921727162196, time = 0.16170907020568848s
+
+epoch 925: batch_loss = 0.0003370835376570211, time = 0.18585801124572754s
+
+epoch 950: batch_loss = 0.0003112794878651883, time = 0.2023630142211914s
+
+epoch 975: batch_loss = 0.0002879287153873856, time = 0.19640779495239258s
+
+epoch 1000: batch_loss = 0.0002723221854680078, time = 0.15996408462524414s
+287.171326 seconds (125.58 M allocations: 478.727 GiB, 7.29% gc time, 260.73% compilation time: <1% of which was recompilation)
+Running main
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 5, batch_size = 230
+n_features = length((((first(train_loader))[1])[1])[1]) = 24

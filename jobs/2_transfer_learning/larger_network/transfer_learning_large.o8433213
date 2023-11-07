@@ -1,0 +1,15 @@
+Environment activated, loading script
+Running 'saftvrmienn.jl'
+Running main
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 5, batch_size = 230
+n_features = length((((first(train_loader))[1])[1])[1]) = 24
+training on 43 threads
+n_failed = 8, 8, 8, 8, 6, 6, 6, 8, 4, 4, 4, 4, 8, 4, 2, 2, 6, 4, 2, 2, 2, 6, 4, 4, 0, 6, 4, 4, 0, 6, 6, 4, 2, 4, 0, 0, 0, 2, 0, 4, 0, 4, 16,
+n_failed = 8, 6, 6, 4, 6, 2, 6, 4, 4, 2, 2, 2, 4, 6, 2, 4, 4, 4, 2, 4, 4, 4, 0, 4, 4, 4, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 16,
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+n_failed = 2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 4, 2, 2, 2, 2, 4, 2, 2, 4, 4, 4, 8,
+n_failed = 4, 2, 0, 0, 0, 2, 6, 2, 2, 2, 2, 4, 4, 4, 2, 8, 6, 10, 10, 6, 4, 4, 4, 4, 4, 4, 4, 6, 4, 8, 6, 8, 8, 6, 6, 8, 6, 6, 6, 10, 8, 10, 24,
+
+epoch 1: batch_loss = 1.6260168309698775e8, time = 1274.1275699138641s

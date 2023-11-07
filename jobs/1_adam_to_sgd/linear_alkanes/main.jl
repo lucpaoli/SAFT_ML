@@ -106,7 +106,7 @@ function create_data(; batch_size=16, n_points=25)
 
     train_data, test_data = splitobs((X_data, Y_data), at=1.0, shuffle=false)
 
-    train_loader = DataLoader(train_data, batchsize=batch_size, shuffle=true)
+    train_loader = DataLoader(train_data, batchsize=batch_size, shuffle=false)
     test_loader = DataLoader(test_data, batchsize=batch_size, shuffle=false)
     println("n_batches = $(length(train_loader)), batch_size = $batch_size")
     # flush(stdout)
@@ -311,9 +311,9 @@ function main(; epochs=5000)
 
     model = create_ff_model(n_features)
 
-    optim = Flux.setup(Flux.Adam(1e-3), model) # 1e-3 usually safe starting LR
+    optim = Flux.setup(Flux.Adam(1e-5), model) # 1e-3 usually safe starting LR
     train_model!(model, train_loader, test_loader, optim; epochs=100)
-    optim = Flux.setup(Descent(1e-3), model)
+    optim = Flux.setup(Descent(1e-5), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs-100)
 
     model_state = Flux.state(model)
