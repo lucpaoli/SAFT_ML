@@ -1,0 +1,57 @@
+Environment activated, loading script
+Pre-training network
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 1, batch_size = 23
+n_features = length((((first(train_loader))[1])[1])[1]) = 24
+training on 23 threads
+
+epoch 25: batch_loss = 0.6321537989752548, time = 0.16428685188293457s
+
+epoch 50: batch_loss = 0.4982665764782331, time = 0.31064510345458984s
+
+epoch 75: batch_loss = 0.46161343219179035, time = 0.36733102798461914s
+
+epoch 100: batch_loss = 0.42407538866145283, time = 0.18574213981628418s
+
+epoch 125: batch_loss = 0.37141950045709643, time = 0.16884589195251465s
+
+epoch 150: batch_loss = 0.2946446187771865, time = 0.2181379795074463s
+
+epoch 175: batch_loss = 0.15369958893238755, time = 0.32420897483825684s
+
+epoch 200: batch_loss = 0.4838473461929805, time = 0.23790192604064941s
+
+epoch 225: batch_loss = 0.06883325097101238, time = 0.19572997093200684s
+
+epoch 250: batch_loss = 0.07412170189927698, time = 0.24110794067382812s
+
+epoch 275: batch_loss = 0.032201360967003136, time = 0.14206600189208984s
+
+epoch 300: batch_loss = 0.024998774456284435, time = 0.13713693618774414s
+
+epoch 325: batch_loss = 0.020775689033797118, time = 0.20508408546447754s
+
+epoch 350: batch_loss = 0.016738750832922117, time = 0.1473391056060791s
+
+epoch 375: batch_loss = 0.015166240390568237, time = 0.32013797760009766s
+
+epoch 400: batch_loss = 0.011787182066639682, time = 0.21282696723937988s
+
+epoch 425: batch_loss = 0.034833225202528795, time = 0.150068998336792s
+
+epoch 450: batch_loss = 0.014892340425407534, time = 0.2806401252746582s
+
+epoch 475: batch_loss = 0.00436520964766271, time = 0.1162109375s
+
+epoch 500: batch_loss = 0.002795733656158938, time = 0.28856897354125977s
+
+epoch 525: batch_loss = 0.02049320209218162, time = 0.13952398300170898s
+
+epoch 550: batch_loss = 0.05032972992888543, time = 0.15918993949890137s
+
+epoch 575: batch_loss = 0.0052065227307209585, time = 0.1499629020690918s
+
+epoch 600: batch_loss = 0.0008899737881441902, time = 0.16881704330444336s
+
+epoch 625: batch_loss = 0.0005912477802736661, time = 0.1403670310974121s
