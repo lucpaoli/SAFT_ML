@@ -1,7 +1,6 @@
 import Pkg;
 Pkg.activate(".");
 using Clapeyron
-include("./saftvrmienn.jl")
 # These are functions we're going to overload for SAFTVRMieNN
 import Clapeyron: a_res, saturation_pressure, pressure
 
@@ -23,7 +22,7 @@ using Base.Threads: @spawn
 using Plots
 
 # Generate training set for liquid density and saturation pressure
-function create_data(; batch_size=16)
+function create_param_data(; batch_size=16)
     contains_only_c(name) = all(letter -> lowercase(letter) == 'c', name)
 
     # Create training & validation data
@@ -32,7 +31,7 @@ function create_data(; batch_size=16)
 
     # Take only linear alkanes
     filter!(row -> occursin("Alkane", row.family), df)
-    filter!(row -> contains_only_c(row.isomeric_SMILES), df) 
+    filter!(row -> contains_only_c(row.isomeric_SMILES), df)
     # sort!(df, :Mw)
 
     # df = first(df, 20) #* Take only first molecule in dataframe
@@ -71,14 +70,13 @@ function create_data(; batch_size=16)
 
     for (name, smiles, Mw) in mol_data
         saft_model = PPCSAFT([name])
-        Tc, pc, Vc = crit_pure(saft_model)
 
         fp = make_fingerprint(smiles)
         append!(fp, Mw)
 
         m = saft_model.params.segment.values[1]
-        sigma = saft_model.params.sigma.values[1]
-        epsilon = saft_model.params.epsilon.values[1]
+        sigma = saft_model.params.sigma.values[1] * 1e10
+        epsilon = saft_model.params.epsilon.values[1] / 100
         push!(X_data, (fp, name))
         push!(Y_data, [m, sigma, epsilon])
     end
@@ -115,8 +113,15 @@ function create_ff_model(nfeatures)
         Dense(nfeatures, nout * 8, tanh, init=Flux.glorot_normal),
         Dense(nout * 8, nout * 4, tanh, init=Flux.glorot_normal),
         Dense(nout * 4, nout * 2, tanh, init=Flux.glorot_normal),
-        Dense(nout * 2, nout_ppcsaft, x -> x, init=Flux.zeros32), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+        Dense(nout * 2, nout_ppcsaft, x -> x, init=Flux.glorot_normal), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
     )
+    # model = Chain(
+    #     Dense(nfeatures, 2048, tanh, init=Flux.glorot_normal),
+    #     Dense(2048, 1024, tanh, init=Flux.glorot_normal),
+    #     Dense(1024, 512, tanh, init=Flux.glorot_normal),
+    #     Dense(512, 256, tanh, init=Flux.glorot_normal),
+    #     Dense(256, nout_ppcsaft, x -> x, init=Flux.glorot_normal), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+    # )
     # model(x) = m, σ, ϵ
     return model
 end
@@ -131,13 +136,12 @@ end
 
 function eval_loss(X_batch, y_batch, metric, model)
     batch_loss = 0.0
-    n = 0
     for (X, y_vec) in zip(X_batch, y_batch)
         fp, name = X
         ŷ_vec = model(fp)
         batch_loss += sum(metric(y_vec, ŷ_vec))
     end
-    return batch_loss / n
+    return batch_loss / length(X_batch)
 end
 
 function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
@@ -174,6 +178,7 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
 
+    epoch_loss_vec = Float64[]
     # todo report time for each epoch
     for epoch in 1:epochs
         epoch_start_time = time() # Start timing the epoch
@@ -187,8 +192,8 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
                 # loss = eval_loss(X_batch, y_batch, mse, m)
                 loss
             end
-            batch_loss += loss
             @assert !isnan(loss)
+            batch_loss += loss
 
             Flux.update!(optim, model, grads[1])
         end
@@ -196,22 +201,29 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
         batch_loss /= length(train_loader)
         epoch_duration = time() - epoch_start_time
 
-        epoch % 1 == 0 && println("\nepoch $epoch: batch_loss = $batch_loss, time = $(epoch_duration)s")
+        epoch % 25 == 0 && println("\nepoch $epoch: batch_loss = $batch_loss, time = $(epoch_duration)s")
+        push!(epoch_loss_vec, batch_loss)
         flush(stdout)
     end
+    return epoch_loss_vec
 end
 
 function main(; epochs=1000)
     #! 23 datapoints total
-    train_loader, test_loader = create_data(batch_size=10) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+    train_loader, test_loader = create_param_data(batch_size=23) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
 
     #! Train for 1k epochs directly on PPCSAFT data
-    train_model!(model, train_loader, test_loader; epochs=epochs)
+    epoch_loss_vec = train_model!(model, train_loader, test_loader; epochs=epochs)
     model_state = Flux.state(model)
     jldsave("model_state_ppcsaft.jld2"; model_state)
+
+    # Plot epoch loss vec
+    # plot(box=:on, dpi=400)
+    # plot(1:epochs, epoch_loss_vec, label="epoch loss")
+    # savefig("epoch_loss.png")
 
     return model
 end
