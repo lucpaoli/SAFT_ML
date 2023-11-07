@@ -32,7 +32,7 @@ function create_data(; batch_size=16, n_points=25)
 
     # Take only linear alkanes
     filter!(row -> occursin("Alkane", row.family), df)
-    filter!(row -> contains_only_c(row.isomeric_SMILES), df) 
+    filter!(row -> contains_only_c(row.isomeric_SMILES), df)
     # sort!(df, :Mw)
 
     # df = first(df, 20) #* Take only first molecule in dataframe
@@ -261,9 +261,9 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_10k_sgd.csv")
-    # optim = Flux.setup(Flux.Adam(10e-3), model) # 1e-3 usually safe starting LR
-    optim = Flux.setup(Descent(1e-3), model) # 0.1 default?
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_10x.csv")
+    optim = Flux.setup(Flux.Adam(1e-3), model) # 1e-3 usually safe starting LR
+    # optim = Flux.setup(Descent(1e-3), model)
 
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
@@ -316,19 +316,44 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
     end
 end
 
-function main(; epochs=10000)
+function create_ff_model_ppcsaft(nfeatures)
+    # Base NN architecture from "Fitting Error vs Parameter Performance"
+    nout = 4
+    nout_ppcsaft = 3
+    #* glorot_uniform default initialisation
+    #* zeros32 is probably _really bad_ as an initialisation, but glorot_uniform can lead to invalid SAFT inputs
+    # model = Chain(
+    #     Dense(nfeatures, nout * 8, tanh, init=Flux.glorot_normal),
+    #     Dense(nout * 8, nout * 4, tanh, init=Flux.glorot_normal),
+    #     Dense(nout * 4, nout * 2, tanh, init=Flux.glorot_normal),
+    #     Dense(nout * 2, nout_ppcsaft, x -> x, init=Flux.glorot_normal), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+    # )
+    model = Chain(
+        Dense(nfeatures, nout * 8, tanh, init=Flux.glorot_normal),
+        Dense(nout * 8, nout * 4, tanh, init=Flux.glorot_normal),
+        Dense(nout * 4, nout * 2, tanh, init=Flux.glorot_normal),
+        Dense(nout * 2, nout_ppcsaft, x -> x, init=Flux.glorot_normal), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+    )
+    # model(x) = m, σ, ϵ
+    return model
+end
+
+function main(; epochs=5)
     train_loader, test_loader = create_data(n_points=50, batch_size=230) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
-    model = create_ff_model(n_features)
-    # model_state = load("model_state_all_alkanes_attention.jld2", "model_state")
-    # Flux.loadmodel!(model, model_state)
+    model = create_ff_model_ppcsaft(n_features)
+    model_state = load("model_state_ppcsaft.jld2", "model_state")
+    Flux.loadmodel!(model, model_state)
+    model = Chain(model.layers[1:end-1]..., Dense(8, 4, x -> x, init=Flux.zeros32))
+    # return model, new_model
 
+    # println("Weights loaded, training new model")
     # Load weights from "model_state_all_alkanes_sat_v_500_epochs.jld2"
 
     train_model!(model, train_loader, test_loader; epochs=epochs)
-    model_state = Flux.state(model)
-    jldsave("model_state_linear_alkanes_10k_sgd.jld2"; model_state)
+    # model_state = Flux.state(model)
+    # jldsave("model_state_linear_alkanes_10x.jld2"; model_state)
 
-    return model
+    # return model
 end
