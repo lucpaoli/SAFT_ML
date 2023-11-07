@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -lselect=1:ncpus=46:mem=64gb
+#PBS -lselect=1:ncpus=23:mem=64gb
 #PBS -lwalltime=20:00:00
 #PBS -N adam_to_sgd
 
@@ -14,4 +14,4 @@ module load tools/prod
 
 # run the program
 # python myprog.py path/to/input.txt
-./julia --threads 46 job.jl
+../../../julia --threads 23 job.jl

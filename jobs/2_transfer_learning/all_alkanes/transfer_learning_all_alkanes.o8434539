@@ -1,0 +1,94 @@
+Environment activated, loading script
+Pre-training network
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 1, batch_size = 23
+n_features = length((((first(train_loader))[1])[1])[1]) = 24
+training on 23 threads
+
+epoch 25: batch_loss = 1.3770323981847716, time = 0.11690807342529297s
+
+epoch 50: batch_loss = 0.5115351272775729, time = 0.08445286750793457s
+
+epoch 75: batch_loss = 0.47321517009710334, time = 0.1303420066833496s
+
+epoch 100: batch_loss = 0.4340660878150592, time = 0.10273909568786621s
+
+epoch 125: batch_loss = 0.3913979129679869, time = 0.10661983489990234s
+
+epoch 150: batch_loss = 0.39177092016842013, time = 0.10500001907348633s
+
+epoch 175: batch_loss = 0.23791468698962728, time = 0.08558201789855957s
+
+epoch 200: batch_loss = 0.19029320443589642, time = 0.10823917388916016s
+
+epoch 225: batch_loss = 0.07281319657305985, time = 0.0868520736694336s
+
+epoch 250: batch_loss = 0.3665333090308861, time = 0.11773681640625s
+
+epoch 275: batch_loss = 0.038155663961462506, time = 0.09496712684631348s
+
+epoch 300: batch_loss = 0.024598641083768632, time = 0.09148502349853516s
+
+epoch 325: batch_loss = 0.01933104561421081, time = 0.10615801811218262s
+
+epoch 350: batch_loss = 0.21465228742837292, time = 0.09567809104919434s
+
+epoch 375: batch_loss = 0.020396899592048028, time = 0.11454319953918457s
+
+epoch 400: batch_loss = 0.016534278254110517, time = 0.09935903549194336s
+
+epoch 425: batch_loss = 0.03040997983245931, time = 0.151533842086792s
+
+epoch 450: batch_loss = 0.010336325503697188, time = 0.1026759147644043s
+
+epoch 475: batch_loss = 0.00674484341659005, time = 0.08874011039733887s
+
+epoch 500: batch_loss = 0.00506169639776403, time = 0.09821200370788574s
+
+epoch 525: batch_loss = 0.006999848148255788, time = 0.0960381031036377s
+
+epoch 550: batch_loss = 0.018835171588803566, time = 0.1099541187286377s
+
+epoch 575: batch_loss = 0.0042124277576774056, time = 0.10326886177062988s
+
+epoch 600: batch_loss = 0.0027194069495119146, time = 0.10178899765014648s
+
+epoch 625: batch_loss = 0.0019547020074693255, time = 0.10087108612060547s
+
+epoch 650: batch_loss = 0.0014737700809904135, time = 0.12227511405944824s
+
+epoch 675: batch_loss = 0.0642525670468109, time = 0.10797882080078125s
+
+epoch 700: batch_loss = 0.010845180391487, time = 0.08691811561584473s
+
+epoch 725: batch_loss = 0.0023384363902386788, time = 0.12544488906860352s
+
+epoch 750: batch_loss = 0.00227727836645469, time = 0.11995100975036621s
+
+epoch 775: batch_loss = 0.018137330851925985, time = 0.10756802558898926s
+
+epoch 800: batch_loss = 0.006557797258379383, time = 0.12019896507263184s
+
+epoch 825: batch_loss = 0.007270102701008632, time = 0.08964395523071289s
+
+epoch 850: batch_loss = 0.0014275892332576217, time = 0.13125991821289062s
+
+epoch 875: batch_loss = 0.000893187793358957, time = 0.0866708755493164s
+
+epoch 900: batch_loss = 0.0007655307042253066, time = 0.15084314346313477s
+
+epoch 925: batch_loss = 0.0014169846370069292, time = 0.10276412963867188s
+
+epoch 950: batch_loss = 0.10659926641901256, time = 0.11070609092712402s
+
+epoch 975: batch_loss = 0.0071971446011921125, time = 0.10604691505432129s
+
+epoch 1000: batch_loss = 0.0036998582544230697, time = 0.09249401092529297s
+177.927513 seconds (125.93 M allocations: 478.745 GiB, 8.10% gc time, 299.54% compilation time: <1% of which was recompilation)
+Running main
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 5, batch_size = 230
+n_features = length((((first(train_loader))[1])[1])[1]) = 24
+training on 23 threads
