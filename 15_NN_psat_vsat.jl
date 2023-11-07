@@ -261,7 +261,7 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_10x.csv")
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_TL.csv")
     optim = Flux.setup(Flux.Adam(1e-3), model) # 1e-3 usually safe starting LR
     # optim = Flux.setup(Descent(1e-3), model)
 
@@ -338,7 +338,7 @@ function create_ff_model_ppcsaft(nfeatures)
     return model
 end
 
-function main(; epochs=5)
+function main(; epochs=5000)
     train_loader, test_loader = create_data(n_points=50, batch_size=230) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
