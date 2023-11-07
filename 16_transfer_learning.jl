@@ -109,19 +109,19 @@ function create_ff_model(nfeatures)
     nout_ppcsaft = 3
     #* glorot_uniform default initialisation
     #* zeros32 is probably _really bad_ as an initialisation, but glorot_uniform can lead to invalid SAFT inputs
-    model = Chain(
-        Dense(nfeatures, nout * 8, tanh, init=Flux.glorot_normal),
-        Dense(nout * 8, nout * 4, tanh, init=Flux.glorot_normal),
-        Dense(nout * 4, nout * 2, tanh, init=Flux.glorot_normal),
-        Dense(nout * 2, nout_ppcsaft, x -> x, init=Flux.glorot_normal), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
-    )
     # model = Chain(
-    #     Dense(nfeatures, 2048, tanh, init=Flux.glorot_normal),
-    #     Dense(2048, 1024, tanh, init=Flux.glorot_normal),
-    #     Dense(1024, 512, tanh, init=Flux.glorot_normal),
-    #     Dense(512, 256, tanh, init=Flux.glorot_normal),
-    #     Dense(256, nout_ppcsaft, x -> x, init=Flux.glorot_normal), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+    #     Dense(nfeatures, nout * 8, tanh, init=Flux.glorot_normal),
+    #     Dense(nout * 8, nout * 4, tanh, init=Flux.glorot_normal),
+    #     Dense(nout * 4, nout * 2, tanh, init=Flux.glorot_normal),
+    #     Dense(nout * 2, nout_ppcsaft, x -> x, init=Flux.glorot_normal), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
     # )
+    model = Chain(
+        Dense(nfeatures, 2048, relu),
+        Dense(2048, 1024, relu),
+        Dense(1024, 512, relu),
+        Dense(512, 256, relu),
+        Dense(256, nout_ppcsaft, x -> x), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+    )
     # model(x) = m, σ, ϵ
     return model
 end
@@ -208,7 +208,7 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
     return epoch_loss_vec
 end
 
-function main(; epochs=1000)
+function main(; epochs=10000)
     #! 23 datapoints total
     train_loader, test_loader = create_param_data(batch_size=23) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
@@ -219,11 +219,12 @@ function main(; epochs=1000)
     epoch_loss_vec = train_model!(model, train_loader, test_loader; epochs=epochs)
     model_state = Flux.state(model)
     jldsave("model_state_ppcsaft.jld2"; model_state)
+    jldsave("ppcsaft_epoch_loss_vec.jld2"; epoch_loss_vec)
 
     # Plot epoch loss vec
     # plot(box=:on, dpi=400)
     # plot(1:epochs, epoch_loss_vec, label="epoch loss")
     # savefig("epoch_loss.png")
 
-    return model
+    # return epoch_loss_vec
 end
