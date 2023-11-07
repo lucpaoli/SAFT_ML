@@ -317,7 +317,7 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
 end
 
 function main(; epochs=10000)
-    train_loader, test_loader = create_data(n_points=50, batch_size=115) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+    train_loader, test_loader = create_data(n_points=50, batch_size=230) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
