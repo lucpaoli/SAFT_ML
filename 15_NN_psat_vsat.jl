@@ -109,7 +109,7 @@ function create_data(; batch_size=16, n_points=25)
 
     train_data, test_data = splitobs((X_data, Y_data), at=1.0, shuffle=false)
 
-    train_loader = DataLoader(train_data, batchsize=batch_size, shuffle=false)
+    train_loader = DataLoader(train_data, batchsize=batch_size, shuffle=true)
     test_loader = DataLoader(test_data, batchsize=batch_size, shuffle=false)
     println("n_batches = $(length(train_loader)), batch_size = $batch_size")
     # flush(stdout)
@@ -261,9 +261,9 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_10x.csv")
-    optim = Flux.setup(Flux.Adam(10e-3), model) # 1e-3 usually safe starting LR
-    # optim = Flux.setup(Descent(0.001), model)
+function train_model!(model, train_loader, test_loader; epochs=10, log_filename="params_log_linear_alkanes_10k_sgd.csv")
+    # optim = Flux.setup(Flux.Adam(10e-3), model) # 1e-3 usually safe starting LR
+    optim = Flux.setup(Descent(1e-3), model) # 0.1 default?
 
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
@@ -316,8 +316,8 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
     end
 end
 
-function main(; epochs=5000)
-    train_loader, test_loader = create_data(n_points=50, batch_size=230) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+function main(; epochs=10000)
+    train_loader, test_loader = create_data(n_points=50, batch_size=115) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
@@ -328,7 +328,7 @@ function main(; epochs=5000)
 
     train_model!(model, train_loader, test_loader; epochs=epochs)
     model_state = Flux.state(model)
-    jldsave("model_state_linear_alkanes_10x.jld2"; model_state)
+    jldsave("model_state_linear_alkanes_10k_sgd.jld2"; model_state)
 
     return model
 end
