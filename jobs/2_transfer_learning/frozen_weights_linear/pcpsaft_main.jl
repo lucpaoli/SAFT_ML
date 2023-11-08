@@ -162,7 +162,6 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
 
-    epoch_loss_vec = Float64[]
     # todo report time for each epoch
     for epoch in 1:epochs
         epoch_start_time = time() # Start timing the epoch
@@ -186,10 +185,8 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
         epoch_duration = time() - epoch_start_time
 
         epoch % 25 == 0 && println("\nepoch $epoch: batch_loss = $batch_loss, time = $(epoch_duration)s")
-        push!(epoch_loss_vec, batch_loss)
         flush(stdout)
     end
-    return epoch_loss_vec
 end
 
 function main(; epochs=1000)
@@ -200,7 +197,7 @@ function main(; epochs=1000)
     model = create_ff_model(n_features)
 
     #! Train for 1k epochs directly on PPCSAFT data
-    epoch_loss_vec = train_model!(model, train_loader, test_loader; epochs=epochs)
+    train_model!(model, train_loader, test_loader; epochs=epochs)
     model_state = Flux.state(model)
     jldsave("model_state_pcpsaft.jld2"; model_state)
 end
