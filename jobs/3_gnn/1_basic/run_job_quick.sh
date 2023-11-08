@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -lselect=1:ncpus=23:mem=64gb
-#PBS -lwalltime=20:00:00
-#PBS -N gnn_linear
+#PBS -lselect=1:ncpus=4:mem=32gb
+#PBS -lwalltime=01:00:00
+#PBS -N gnn_linear_quick_nodict
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables
 # better to copy scripts to and from TMPDIR
@@ -14,4 +14,4 @@ module load tools/prod
 
 # run the program
 # python myprog.py path/to/input.txt
-../../../julia --threads 23 job.jl
+../../../julia --threads 4 job.jl

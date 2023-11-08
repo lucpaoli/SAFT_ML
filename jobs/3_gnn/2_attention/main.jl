@@ -61,7 +61,7 @@ function create_data(; batch_size=16, n_points=25)
 
     # Take only linear alkanes
     filter!(row -> occursin("Alkane", row.family), df)
-    filter!(row -> contains_only_c(row.isomeric_SMILES), df)
+    # filter!(row -> contains_only_c(row.isomeric_SMILES), df)
     # sort!(df, :Mw)
 
     # df = first(df, 20) #* Take only first molecule in dataframe
@@ -248,25 +248,26 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, log_fi
 end
 
 # model(g) = m, σ, λ_r, ϵ
-function create_graphconv_model(nin, nh; nout=4, ngclayers=3, nhlayers=2, afunc=relu)
+function create_graphattention_model(nin, nh; nout=4, ngclayers=3, nhlayers=3, afunc=relu)
     GNNChain(
-        GraphConv(nin => nh, afunc),
-        [GraphConv(nh => nh, afunc) for _ in 1:ngclayers]...,
-        GlobalPool(mean), # Average the node features
-        # Dropout(0.2), #* No dropout for now, let's overfit
-        [Dense(nh, nh) for _ in 1:nhlayers]...,
+        GATv2Conv(nin => nh, afunc),
+        [GATv2Conv(nh => nh, afunc) for _ in 1:ngclayers]...,
+        GlobalPool(mean),
+        # Dropout(0.2),
+        [Dense(nh => nh, afunc) for _ in 1:nhlayers]...,
         Dense(nh, nout, x -> x),
     )
 end
 
-function main(; epochs=5000)
-    train_loader, test_loader = create_data(n_points=50, batch_size=230) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+function main(; epochs=1000)
+    train_loader, test_loader = create_data(n_points=50, batch_size=230)
 
     # How to determine nin? I think it's 11
     nin = 11
-    nh = 128
+    nh = 512
 
-    model = create_graphconv_model(nin, nh)
+    # model = create_graphconv_model(nin, nh)
+    model = create_graphattention_model(nin, nh)
 
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
