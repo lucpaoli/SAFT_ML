@@ -1,0 +1,6 @@
+- big network 
+- more points
+- 3:2 P:rho
+- adam 100 epochs; sgd 100 epochs
+    - recreate dataloader with shuffle=True @ 100 epoch
+

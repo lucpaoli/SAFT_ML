@@ -1,0 +1,93 @@
+Environment activated, loading script
+Pre-training network
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 1, batch_size = 23
+n_features = length((((first(train_loader))[1])[1])[1]) = 24
+training on 23 threads
+
+epoch 25: batch_loss = 0.874817969063844, time = 0.024607181549072266s
+
+epoch 50: batch_loss = 0.46116151953887574, time = 0.014872074127197266s
+
+epoch 75: batch_loss = 0.3740258738234057, time = 0.02507185935974121s
+
+epoch 100: batch_loss = 0.2810898222643581, time = 0.014638900756835938s
+
+epoch 125: batch_loss = 0.1805397716707193, time = 0.03234076499938965s
+
+epoch 150: batch_loss = 0.10799802482448655, time = 0.016438961029052734s
+
+epoch 175: batch_loss = 0.07586691210358867, time = 0.02937912940979004s
+
+epoch 200: batch_loss = 0.04350953795906278, time = 0.016395092010498047s
+
+epoch 225: batch_loss = 0.030627722321176904, time = 0.014154911041259766s
+
+epoch 250: batch_loss = 0.03472988238630531, time = 0.02641010284423828s
+
+epoch 275: batch_loss = 0.01735271213558242, time = 0.013774871826171875s
+
+epoch 300: batch_loss = 0.01880900625794959, time = 0.025658130645751953s
+
+epoch 325: batch_loss = 0.034298951918980386, time = 0.01541900634765625s
+
+epoch 350: batch_loss = 0.010510785651716266, time = 0.029900074005126953s
+
+epoch 375: batch_loss = 0.007664227827976759, time = 0.02182483673095703s
+
+epoch 400: batch_loss = 0.02680594306984089, time = 0.029431819915771484s
+
+epoch 425: batch_loss = 0.00798990233000652, time = 0.017637968063354492s
+
+epoch 450: batch_loss = 0.002774164701143463, time = 0.015729904174804688s
+
+epoch 475: batch_loss = 0.0015002482250885435, time = 0.02968311309814453s
+
+epoch 500: batch_loss = 0.0009675629061509195, time = 0.015258073806762695s
+
+epoch 525: batch_loss = 0.0007907630767448025, time = 0.02567577362060547s
+
+epoch 550: batch_loss = 0.0007063117531814777, time = 0.023080110549926758s
+
+epoch 575: batch_loss = 0.015261826264683752, time = 0.029712915420532227s
+
+epoch 600: batch_loss = 0.0017626552560693304, time = 0.016724824905395508s
+
+epoch 625: batch_loss = 0.0015027743143515107, time = 0.013668060302734375s
+
+epoch 650: batch_loss = 0.0006244945457314091, time = 0.0354158878326416s
+
+epoch 675: batch_loss = 0.00048778801421117, time = 0.014522075653076172s
+
+epoch 700: batch_loss = 0.00043816495958228624, time = 0.033614158630371094s
+
+epoch 725: batch_loss = 0.0004061416243792835, time = 0.01782393455505371s
+
+epoch 750: batch_loss = 0.00038109324037892064, time = 0.03555011749267578s
+
+epoch 775: batch_loss = 0.00036122835243194447, time = 0.016430139541625977s
+
+epoch 800: batch_loss = 0.050010320476930506, time = 0.032257080078125s
+
+epoch 825: batch_loss = 0.014307019361056033, time = 0.01776909828186035s
+
+epoch 850: batch_loss = 0.002262646983826951, time = 0.01847219467163086s
+
+epoch 875: batch_loss = 0.00038979470981584987, time = 0.03800797462463379s
+
+epoch 900: batch_loss = 0.0003267736340132638, time = 0.020672082901000977s
+
+epoch 925: batch_loss = 0.00029856266591528536, time = 0.03404808044433594s
+
+epoch 950: batch_loss = 0.00027899963734838494, time = 0.018157005310058594s
+
+epoch 975: batch_loss = 0.00026695890935363723, time = 0.024837017059326172s
+
+epoch 1000: batch_loss = 0.0003273615411517227, time = 0.016711950302124023s
+126.872635 seconds (124.66 M allocations: 41.492 GiB, 9.23% gc time, 648.86% compilation time: <1% of which was recompilation)
+Running main
+df.species = ["methane", "ethane", "propane", "n-butane", "2-methylpropane", "2-methylbutane", "pentane", "2,2-dimethylpropane", "hexane", "2-methylpentane", "3-methylpentane", "2,3-dimethylbutane", "2,2-dimethylbutane", "2,4-dimethylpentane", "heptane", "2,2,3-trimethylbutane", "2,3-dimethylpentane", "3-methylhexane", "2-methylhexane", "2,2-dimethylpentane", "3,3-dimethylpentane", "3-ethylpentane", "2,2,4-trimethylpentane", "octane", "3-methylheptane", "2,3,4-trimethyl pentane", "2,4-dimethylhexane", "4-methylheptane", "3,4-dimethylhexane", "2-methylheptane", "2,2-dimethylhexane", "2,5-dimethylhexane", "2,3-dimethylhexane", "2,2,3-trimethylpentane", "3,3-dimethylhexane", "2-methyl-3-ethyl-pentane", "3-methyl-3-ethylpentane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2,5-trimethylhexane", "nonane", "2-methyloctane", "3,3-diethylpentane", "2,4,4-trimethylhexane", "2,2,3,4-tetramethylpentane", "2,3,3,4-tetramethylpentane", "2,2,3,3-tetramethylpentane", "2,2,4,4-tetramethylpentane", "2,3-dimethylheptane", "decane", "2,7-dimethyloctane", "2,6-dimethyloctane", "2,2,5,5-tetramethylhexane", "n-undecane", "2-methyldecane", "3-methyldecane", "2,3-dimethylnonane", "dodecane", "2-methylundecane", "3-methylundecane", "2,3-dimethyldecane", "tridecane", "2-methyldodecane", "3-methyldodecane", "2,3-dimethylundecane", "tetradecane", "2-methyltridecane", "3-methyltridecane", "2,3-dimethyldodecane", "pentadecane", "hexadecane", "2,2,4,4,6,8,8-heptamethylnonane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane", "squalane"]
+Generating data for 80 molecules...
+n_batches = 18, batch_size = 230
+n_features = length((((first(train_loader))[1])[1])[1]) = 144

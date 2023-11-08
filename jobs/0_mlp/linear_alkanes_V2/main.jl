@@ -61,7 +61,7 @@ function create_data(; batch_size=16, n_points=25, shuffle_train=false)
             "FractionCSP3",
         ]
         relevant_desc = [desc[k] for k in relevant_keys]
-        append!(fp, last.(relevant_desc))
+        append!(fp, relevant_desc)
 
         return fp
     end
@@ -95,7 +95,7 @@ function create_data(; batch_size=16, n_points=25, shuffle_train=false)
     for num = [0, 1]
         num_cols = length(X_data[1][1])
         zero_cols = trues(num_cols)
-        for (vec, _, _) in X_data
+        for (vec, _...) in X_data
             zero_cols .&= (vec .== num)
         end
         keep_cols = .!zero_cols # Create a Mask
@@ -131,14 +131,6 @@ function create_ff_model(nfeatures)
 
     # return nn_model, unbounded_model
     return model
-end
-
-function get_idx_from_iterator(iterator, idx)
-    data_iterator = iterate(iterator)
-    for _ in 1:idx-1
-        data_iterator = iterate(iterator, data_iterator[2])
-    end
-    return data_iterator[1]
 end
 
 # todo split into two functions; parameter generation and Vₗ, p_sat calculation
@@ -196,9 +188,6 @@ function eval_loss(X_batch, y_batch, metric, model)
             if !isnothing(ŷ)
                 batch_loss += metric(y, ŷ)
                 n += 1
-                #! This zeros the gradient, making improvement impossible
-                # else 
-                #     batch_loss += 1000.0 # penalise NaNs
             end
         end
 
@@ -263,7 +252,7 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, log_fi
         unique_fps = Dict()
 
         for (X_batch, y_batch) in train_loader
-            for (fp, p, T, Mw, name) in X_batch
+            for (fp, T, Mw, name) in X_batch
                 if !haskey(unique_fps, name)
                     unique_fps[name] = (fp, Mw)
                 end
@@ -302,7 +291,7 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, log_fi
 end
 
 function main(; epochs=5000)
-    train_loader, test_loader = create_data(n_points=50, batch_size=230, shuffle_train=false)
+    train_loader, test_loader = create_data(n_points=60, batch_size=230, shuffle_train=false)
     @show n_features = length(first(train_loader)[1][1][1])
 
     model = create_ff_model(n_features)
