@@ -1,0 +1,11 @@
+Environment activated, loading script
+Pre-training network
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 1, batch_size = 23
+n_features = length((((first(train_loader))[1])[1])[1]) = 24
+training on 23 threads
+
+epoch 25: batch_loss = 0.907451932958133, time = 0.009005069732666016s
+
+epoch 50: batch_loss = 0.5020209872966557, time = 0.01738595962524414s
