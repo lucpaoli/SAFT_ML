@@ -106,7 +106,7 @@ end
 # todo split into two functions; parameter generation and Vₗ, p_sat calculation
 function calculate_saft_parameters(model, g, Mw)
     λ_a = 6.0
-    pred_params = model(g)
+    pred_params = model(g, g.ndata.x)
 
     # Add parameter bounding w tanh
     #   1 < m < 10
@@ -117,6 +117,7 @@ function calculate_saft_parameters(model, g, Mw)
     u = [10.0, 10, 30, 500]
     c = [1.0, 1, 10, 100]
     biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
+    @show biased_params
 
     saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])
     return saft_input
@@ -240,17 +241,27 @@ function train_model!(model, graph_dict, train_loader, test_loader, optim; epoch
     end
 end
 
+# model(g) = m, σ, λ_r, ϵ
 function create_graphconv_model(nin, nh; nout=4, ngclayers=3, nhlayers=2, afunc=relu)
-    model = GNNChain(
+    GNNChain(
         GraphConv(nin => nh, afunc),
-        [GraphConv(nh => nh, afunc) for _ in 1:nhlayers]...,
+        [GraphConv(nh => nh, afunc) for _ in 1:ngclayers]...,
         GlobalPool(mean), # Average the node features
         # Dropout(0.2), #* No dropout for now, let's overfit
         [Dense(nh, nh) for _ in 1:nhlayers]...,
-        Dense(nh, nout, x -> x),
+        Dense(nh, nout),
     )
-    # model(g) = m, σ, λ_r, ϵ
-    return model
+end
+
+function create_graphattention_model(nin, nh; nout=4, nhlayers=1, afunc=relu)
+    GNNChain(
+        GATv2Conv(nin => nh, afunc),
+        [GATv2Conv(nh => nh, afunc) for _ in 1:nhlayers]...,
+        GlobalPool(mean),
+        Dropout(0.2),
+        Dense(nh, nh),
+        Dense(nh, nout),
+    )
 end
 
 function main(; epochs=5000)
@@ -261,6 +272,7 @@ function main(; epochs=5000)
     nh = 128
 
     model = create_graphconv_model(nin, nh)
+    # model = create_graphattention_model(nin, nh)
 
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
