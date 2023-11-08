@@ -71,9 +71,10 @@ function create_param_data(; batch_size=16)
 
         m = saft_model.params.segment.values[1]
         sigma = saft_model.params.sigma.values[1] * 1e10
-        epsilon = saft_model.params.epsilon.values[1] / 100
+        epsilon = saft_model.params.epsilon.values[1]
+        lambda_r = 13.0
         push!(X_data, (fp, name))
-        push!(Y_data, [m, sigma, epsilon])
+        push!(Y_data, [m, sigma, lambda_r, epsilon])
     end
 
     #* Remove columns from fingerprints
@@ -99,13 +100,12 @@ end
 
 
 function create_ff_model(nfeatures)
-    nout_ppcsaft = 3 # model(x) = m, σ, ϵ
+    nout = 4 # model(x) = m, σ, lambda_r, ϵ
     model = Chain(
-        Dense(nfeatures, 256, relu),
-        Dense(256, 256, relu),
-        Dense(256, 256, relu),
-        Dense(256, 256, relu),
-        Dense(256, nout_ppcsaft, x -> x), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+        Dense(nfeatures, nout * 8, relu),
+        Dense(nout * 8, nout * 4, relu),
+        Dense(nout * 4, nout * 2, relu),
+        Dense(nout * 2, nout, x -> x),
     )
     return model
 end
@@ -122,7 +122,18 @@ function eval_loss(X_batch, y_batch, metric, model)
     batch_loss = 0.0
     for (X, y_vec) in zip(X_batch, y_batch)
         fp, name = X
-        ŷ_vec = model(fp)
+        # ŷ_vec = model(fp)
+
+        λ_a = 6.0
+        pred_params = model(fp)
+
+        l = [1.0, 2, 10, 0]
+        u = [10.0, 10, 20, 500]
+        c = [1.0, 1, 1, 100]
+        biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
+
+        ŷ_vec = biased_params
+
         batch_loss += sum(metric(y_vec, ŷ_vec))
     end
     return batch_loss / length(X_batch)

@@ -156,9 +156,9 @@ function calculate_saft_parameters(model, fp, Mw)
     biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 
     m, σ, λ_r, ϵ = biased_params
-    # m = max(1.0, m) # using a max function zeros derivatives, potentially erroneously 
-    α = 2
-    m = log(1 + exp(α * (m - 1))) / α + 1
+    # # m = max(1.0, m) # using a max function zeros derivatives, potentially erroneously 
+    # α = 2
+    # m = log(1 + exp(α * (m - 1))) / α + 1
 
     # saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])
     saft_input = [Mw, m, σ, λ_a, λ_r, ϵ]
@@ -339,5 +339,5 @@ function main(; epochs=5000)
     Flux.thaw!(optim.layers[1:end-1]) #? Not sure if this is necessary
 
     optim = Flux.setup(Flux.Adam(1e-3), model)
-    train_model!(model, train_loader, test_loader, optim; epochs=2000)
+    train_model!(model, train_loader, test_loader, optim; epochs=5000)
 end

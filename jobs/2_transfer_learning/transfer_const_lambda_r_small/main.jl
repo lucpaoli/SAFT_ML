@@ -150,15 +150,14 @@ function calculate_saft_parameters(model, fp, Mw)
     λ_a = 6.0
     pred_params = model(fp)
 
+    biased_params = pred_params .* [1.0, 1, 1, 100]
+
     l = [1.0, 2, 10, 0]
     u = [10.0, 10, 20, 500]
     c = [1.0, 1, 1, 100]
     biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 
     m, σ, λ_r, ϵ = biased_params
-    # m = max(1.0, m) # using a max function zeros derivatives, potentially erroneously 
-    # α = 2
-    # m = log(1 + exp(α * (m - 1))) / α + 1
 
     # saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])
     saft_input = [Mw, m, σ, λ_a, λ_r, ϵ]
@@ -309,15 +308,13 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, log_fi
 end
 
 function create_ff_model_ppcsaft(nfeatures)
-    nout_ppcsaft = 3
+    nout = 4
     model = Chain(
-        Dense(nfeatures, 256, relu),
-        Dense(256, 256, relu),
-        Dense(256, 256, relu),
-        Dense(256, 256, relu),
-        Dense(256, nout_ppcsaft, x -> x), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+        Dense(nfeatures, nout * 8, relu),
+        Dense(nout * 8, nout * 4, relu),
+        Dense(nout * 4, nout * 2, relu),
+        Dense(nout * 2, nout, x -> x),
     )
-    # model(x) = m, σ, ϵ
     return model
 end
 
@@ -328,16 +325,7 @@ function main(; epochs=5000)
     model = create_ff_model_ppcsaft(n_features)
     model_state = load("model_state_pcpsaft.jld2", "model_state")
     Flux.loadmodel!(model, model_state)
-    model = Chain(model.layers[1:end-1]..., Dense(256, 4, x -> x, init=Flux.glorot_normal))
-
-    # Freeze weights in 1:end-1 layers
-
-    # optim = Flux.setup(Descent(1e-3), model)
-    optim = Flux.setup(Flux.Adam(1e-3), model) # 1e-3 usually safe starting LR
-    Flux.freeze!(optim.layers[1:end-1])
-    train_model!(model, train_loader, test_loader, optim; epochs=500)
-    Flux.thaw!(optim.layers[1:end-1]) #? Not sure if this is necessary
 
     optim = Flux.setup(Flux.Adam(1e-3), model)
-    train_model!(model, train_loader, test_loader, optim; epochs=5000)
+    train_model!(model, train_loader, test_loader, optim; epochs=epochs)
 end
