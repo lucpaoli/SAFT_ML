@@ -128,7 +128,7 @@ function create_ff_model(nfeatures)
 end
 
 # todo split into two functions; parameter generation and Vₗ, p_sat calculation
-function calculate_saft_parameters(model, fp, Mw)#; b=[2.5, 3.5, 12.0, 250.0], c=[1.0, 1, 10, 100])
+function calculate_saft_parameters(model, fp, Mw)
     λ_a = 6.0
     pred_params = model(fp)
     # Add bias and scale
@@ -138,13 +138,22 @@ function calculate_saft_parameters(model, fp, Mw)#; b=[2.5, 3.5, 12.0, 250.0], c
     # α = 2
     # m = log(1 + exp(α * (m - 1))) / α + 1
 
-    l = [1.0, 2, 5, 0]
-    u = [10.0, 10, 60, 500]
-    c = [1.0, 1, 10, 100]
-    biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
+    # l = [1.0, 2, 5, 0]
+    # u = [10.0, 10, 60, 500]
+    # c = [1.0, 1, 10, 100]
+    # biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 
-    saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])
-    # saft_input = [Mw, m, σ, λ_a, λ_r, ϵ]
+    # saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])
+
+    b = [2.5, 3.5, 12.0, 250.0]
+    c = [1.0, 1, 10, 100]
+    biased_params = @. pred_params * c + b
+
+    m, σ, λ_r, ϵ = biased_params
+    α = 2
+    m = log(1 + exp(α * (m - 1))) / α + 1
+
+    saft_input = [Mw, m, σ, λ_a, λ_r, ϵ]
     return saft_input
 end
 
