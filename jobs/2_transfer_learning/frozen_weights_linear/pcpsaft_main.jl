@@ -189,7 +189,7 @@ function train_model!(model, train_loader, test_loader; epochs=10, log_filename=
     end
 end
 
-function main(; epochs=1000)
+function main(; epochs=2)
     #! 23 datapoints total
     train_loader, test_loader = create_param_data(batch_size=23) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
     @show n_features = length(first(train_loader)[1][1][1])

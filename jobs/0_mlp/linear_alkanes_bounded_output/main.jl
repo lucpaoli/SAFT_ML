@@ -121,11 +121,11 @@ function create_ff_model(nfeatures)
     #* glorot_uniform default initialisation
     #! zeros32 is probably _really bad_ as an initialisation, but glorot_uniform can lead to invalid SAFT inputs
     model = Chain(
-        Dense(nfeatures, 2048, relu),
-        Dense(2048, 1024, relu),
-        Dense(1024, 512, relu),
-        Dense(512, 256, relu),
-        Dense(256, nout, x -> x), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
+        Dense(nfeatures, 16, relu),
+        # Dense(256, 256, relu),
+        # Dense(256, 256, relu),
+        # Dense(256, 256, relu),
+        Dense(16, nout, x -> x), # Allow unbounded negative outputs; parameter values physically bounded in SAFT layer
     )
     # model(x) = m, σ, λ_a, λ_r, ϵ
 
