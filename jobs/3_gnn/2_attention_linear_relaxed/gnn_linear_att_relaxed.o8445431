@@ -1,0 +1,20 @@
+Environment activated, loading script
+Running main
+df.species = ["methane", "ethane", "propane", "n-butane", "pentane", "hexane", "heptane", "octane", "nonane", "decane", "n-undecane", "dodecane", "tridecane", "tetradecane", "pentadecane", "hexadecane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane"]
+Generating data for 23 molecules...
+n_batches = 5, batch_size = 240
+training on 12 threads
+n_failed = 40, 40, 40, 40, 40, 38, 38, 36, 38, 36, 38, 36,
+n_failed = 38, 40, 40, 40, 38, 38, 38, 32, 38, 38, 38, 34,
+n_failed = 30, 32, 30, 26, 30, 26, 30, 24, 24, 22, 28, 24,
+n_failed = 12, 12, 10, 10, 12, 12, 12, 10, 8, 14, 4, 8,
+n_failed = 14, 6, 12, 10, 6, 10, 8, 10, 2, 4, 4, 18,
+
+epoch 1: batch_loss = 150525.49001195538, time = 203.65040111541748s
+n_failed = 16, 16, 12, 14, 4, 4, 4, 10, 8, 6, 8, 8,
+n_failed = 14, 22, 26, 18, 12, 8, 20, 20, 16, 16, 20, 18,
+n_failed = 30, 26, 34, 32, 30, 28, 30, 26, 28, 34, 26, 28,
+n_failed = 4, 0, 0, 6, 0, 4, 0, 4, 2, 4, 4, 4,
+n_failed = 24, 30, 30, 30, 26, 24, 28, 26, 26, 28, 46, 30,
+
+epoch 2: batch_loss = 33540.908478065045, time = 87.2605459690094s

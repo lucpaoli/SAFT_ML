@@ -110,12 +110,12 @@ function calculate_saft_parameters(model, g, Mw)
     pred_params = model(g, g.ndata.x)
 
     # Add parameter bounding w tanh
-    #   1 < m < 10
-    #   2 < σ < 10
+    #   1 < m   < 10
+    #   2 < σ   < 10
     #   5 < λ_r < 30
-    # 100 < ϵ < 500
+    # 100 < ϵ   < 500
     l = [1.0, 2, 10, 100]
-    u = [5.0, 6, 25, 500]
+    u = [10.0, 10, 30, 500]
     c = [1.0, 1, 10, 100]
     biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 
@@ -260,11 +260,11 @@ function create_graphattention_model(nin, nh; nout=4, ngclayers=3, nhlayers=3, a
 end
 
 function main(; epochs=1000)
-    train_loader, test_loader = create_data(n_points=50, batch_size=230)
+    train_loader, test_loader = create_data(n_points=50, batch_size=240)
 
     # How to determine nin? I think it's 11
     nin = 11
-    nh = 512
+    nh = 256
 
     model = create_graphattention_model(nin, nh)
 

@@ -204,7 +204,7 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader, optim; epochs=10, log_filename="params_log_nodict.csv")
+function train_model!(model, train_loader, test_loader, optim; epochs=10, log_filename="params_log.csv")
     for epoch in 1:epochs
         epoch_start_time = time()
 
