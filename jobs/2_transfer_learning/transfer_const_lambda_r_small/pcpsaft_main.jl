@@ -127,8 +127,8 @@ function eval_loss(X_batch, y_batch, metric, model)
         λ_a = 6.0
         pred_params = model(fp)
 
-        l = [1.0, 2, 10, 0]
-        u = [10.0, 10, 20, 500]
+        l = [1.0, 2, 5, 0]
+        u = [5.0, 5, 20, 500]
         c = [1.0, 1, 1, 100]
         biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 

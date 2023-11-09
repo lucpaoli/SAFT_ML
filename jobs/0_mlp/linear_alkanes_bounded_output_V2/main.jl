@@ -145,8 +145,8 @@ function calculate_saft_parameters(model, fp, Mw)#; b=[2.5, 3.5, 12.0, 250.0], c
     # m = log(1 + exp(α * (m - 1))) / α + 1
 
     l = [1.0, 2, 5, 0]
-    u = [10.0, 10, 60, 500]
-    c = [1.0, 1, 10, 100]
+    u = [5.0, 5, 20, 500]
+    c = [1.0, 1, 1, 100]
     biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 
     saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])

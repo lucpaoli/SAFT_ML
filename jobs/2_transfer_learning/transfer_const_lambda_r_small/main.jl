@@ -152,8 +152,8 @@ function calculate_saft_parameters(model, fp, Mw)
 
     biased_params = pred_params .* [1.0, 1, 1, 100]
 
-    l = [1.0, 2, 10, 0]
-    u = [10.0, 10, 20, 500]
+    l = [1.0, 2, 5, 0]
+    u = [5.0, 5, 20, 500]
     c = [1.0, 1, 1, 100]
     biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 
