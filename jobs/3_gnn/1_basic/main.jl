@@ -109,8 +109,12 @@ function calculate_saft_parameters(model, g, Mw)
     pred_params = model(g)
 
     # Add parameter bounding w tanh
+    #   1 < m < 10
+    #   2 < σ < 10
+    #   5 < λ_r < 30
+    # 100 < ϵ < 500
     l = [1.0, 2, 5, 100]
-    u = [10.0, 10, 60, 500]
+    u = [10.0, 10, 30, 500]
     c = [1.0, 1, 10, 100]
     biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 
@@ -206,7 +210,8 @@ function train_model!(model, graph_dict, train_loader, test_loader, optim; epoch
 
         for (X_batch, y_batch) in train_loader
             loss, grads = Flux.withgradient(model) do m
-                loss = eval_loss_par(X_batch, y_batch, graph_dict, mse, m, Threads.nthreads())
+                # loss = eval_loss_par(X_batch, y_batch, graph_dict, mse, m, Threads.nthreads())
+                loss = eval_loss(X_batch, y_batch, graph_dict, mse, m)
                 loss
             end
             batch_loss += loss
