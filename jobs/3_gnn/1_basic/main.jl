@@ -3,8 +3,7 @@ include("../../../saftvrmienn.jl")
 # These are functions we're going to overload for SAFTVRMieNN
 import Clapeyron: a_res, saturation_pressure, pressure
 
-using MolecularGraphs, Graphs
-using Flux: DataLoad
+using MolecularGraph, Graphs
 using GraphNeuralNetworks
 using MLUtils
 using OneHotArrays
@@ -70,11 +69,11 @@ function create_data(; batch_size=16, n_points=25)
     mol_data = zip(df.species, df.isomeric_SMILES, df.Mw)
     println("Generating data for $(length(mol_data)) molecules...")
 
-    T = GNNGraph{Tuple{Vector{Int64}, Vector{Int64}, Nothing}}
     X_data = Tuple{Float64, String}[]
-    Y_data = Vector{Vector{T}}()
+    Y_data = Vector{Vector{Float64}}()
 
-    graph_dict = Dict{String, Tuple{T, Float64}}()
+    T1 = GNNGraph{Tuple{Vector{Int64}, Vector{Int64}, Nothing}}
+    graph_dict = Dict{String, Tuple{T1, Float64}}()
 
     for (name, smiles, Mw) in mol_data
         saft_model = PPCSAFT([name])
@@ -217,6 +216,17 @@ function train_model!(model, graph_dict, train_loader, test_loader, optim; epoch
             Flux.update!(optim, model, grads[1])
         end
 
+        # graph_dict = Dict{String, Tuple{T, Float64}}()
+        for (name, (g, Mw)) in graph_dict
+            Mw, m, σ, λ_a, λ_r, ϵ = calculate_saft_parameters(model, g, Mw)
+
+            # Log to file as csv, formatted as:
+            # epoch, molecule, m, σ, λ_a, λ_r, ϵ
+            open(log_filename, "a") do io
+                write(io, "$epoch;$name;$Mw;$m;$σ;$λ_a;$λ_r;$ϵ\n")
+            end
+        end
+
         batch_loss /= length(train_loader)
         epoch_duration = time() - epoch_start_time
 
@@ -225,14 +235,14 @@ function train_model!(model, graph_dict, train_loader, test_loader, optim; epoch
     end
 end
 
-function create_graphconv_model(nin, nh; nout=4, ngclayers=3, nhlayers, afunc=relu)
+function create_graphconv_model(nin, nh; nout=4, ngclayers=3, nhlayers=2, afunc=relu)
     model = GNNChain(
         GraphConv(nin => nh, afunc),
         [GraphConv(nh => nh, afunc) for _ in 1:nhlayers]...,
         GlobalPool(mean), # Average the node features
         # Dropout(0.2), #* No dropout for now, let's overfit
         [Dense(nh, nh) for _ in 1:nhlayers]...,
-        Dense(nh, nout),
+        Dense(nh, nout, x -> x),
     )
     # model(g) = m, σ, λ_r, ϵ
     return model
