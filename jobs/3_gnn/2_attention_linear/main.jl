@@ -266,7 +266,6 @@ function main(; epochs=1000)
     nin = 11
     nh = 512
 
-    # model = create_graphconv_model(nin, nh)
     model = create_graphattention_model(nin, nh)
 
     println("training on $(Threads.nthreads()) threads")
