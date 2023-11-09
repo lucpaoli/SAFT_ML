@@ -162,7 +162,6 @@ function calculate_saft_parameters(model, fp, Mw; b=[2.5, 3.5, 12.0, 250.0], c=[
     biased_params = @. pred_params * c + b
 
     m, σ, λ_r, ϵ = biased_params
-    # m = max(1.0, m) # using a max function zeros derivatives, potentially erroneously 
     α = 2
     m = log(1 + exp(α * (m - 1))) / α + 1
 
