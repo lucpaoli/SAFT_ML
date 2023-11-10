@@ -204,7 +204,7 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader, optim; epochs=10, log_filename="params_log.csv")
+function train_model!(model, train_loader, test_loader, optim; epochs=10, log_filename="params_log_lr_1e-4.csv")
     for epoch in 1:epochs
         epoch_start_time = time()
 
@@ -271,6 +271,6 @@ function main(; epochs=1000)
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
 
-    optim = Flux.setup(Flux.Adam(1e-3), model)
+    optim = Flux.setup(Flux.Adam(1e-4), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs)
 end

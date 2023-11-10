@@ -137,6 +137,7 @@ function SAFT_head(model, X)
     end
     # todo include saturation volumes in loss
     if T < Tc
+        #! Make an issue, @ andres to ask how to combine these
         sat_p = saturation_pressure_NN(saft_input, T)
         #! This repeats the volume root calculation
         Vₗ = volume_NN(saft_input, sat_p, T)
@@ -173,6 +174,7 @@ function eval_loss(X_batch, y_batch, metric, model)
     return batch_loss
 end
 
+#! There seems to be a problem with this :(
 function eval_loss_par(X_batch, y_batch, metric, model, n_chunks)
     print("n_failed =")
     n = length(X_batch)

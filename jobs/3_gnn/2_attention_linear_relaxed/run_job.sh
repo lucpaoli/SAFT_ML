@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -lselect=1:ncpus=12:mem=64gb
 #PBS -lwalltime=20:00:00
-#PBS -N gnn_linear_att_relaxed
+#PBS -N gnn_linear_att_relaxed_1e-4
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables
 # better to copy scripts to and from TMPDIR
