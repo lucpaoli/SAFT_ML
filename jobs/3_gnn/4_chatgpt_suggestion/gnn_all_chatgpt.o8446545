@@ -1,0 +1,62 @@
+Environment activated, loading script
+Running main
+df.species = ["methane", "ethane", "propane", "n-butane", "2-methylpropane", "2-methylbutane", "pentane", "2,2-dimethylpropane", "hexane", "2-methylpentane", "3-methylpentane", "2,3-dimethylbutane", "2,2-dimethylbutane", "2,4-dimethylpentane", "heptane", "2,2,3-trimethylbutane", "2,3-dimethylpentane", "3-methylhexane", "2-methylhexane", "2,2-dimethylpentane", "3,3-dimethylpentane", "3-ethylpentane", "2,2,4-trimethylpentane", "octane", "3-methylheptane", "2,3,4-trimethyl pentane", "2,4-dimethylhexane", "4-methylheptane", "3,4-dimethylhexane", "2-methylheptane", "2,2-dimethylhexane", "2,5-dimethylhexane", "2,3-dimethylhexane", "2,2,3-trimethylpentane", "3,3-dimethylhexane", "2-methyl-3-ethyl-pentane", "3-methyl-3-ethylpentane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2,5-trimethylhexane", "nonane", "2-methyloctane", "3,3-diethylpentane", "2,4,4-trimethylhexane", "2,2,3,4-tetramethylpentane", "2,3,3,4-tetramethylpentane", "2,2,3,3-tetramethylpentane", "2,2,4,4-tetramethylpentane", "2,3-dimethylheptane", "decane", "2,7-dimethyloctane", "2,6-dimethyloctane", "2,2,5,5-tetramethylhexane", "n-undecane", "2-methyldecane", "3-methyldecane", "2,3-dimethylnonane", "dodecane", "2-methylundecane", "3-methylundecane", "2,3-dimethyldecane", "tridecane", "2-methyldodecane", "3-methyldodecane", "2,3-dimethylundecane", "tetradecane", "2-methyltridecane", "3-methyltridecane", "2,3-dimethyldodecane", "pentadecane", "hexadecane", "2,2,4,4,6,8,8-heptamethylnonane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane", "squalane"]
+Generating data for 80 molecules...
+n_batches = 10, batch_size = 400
+training on 20 threads
+n_failed = 10, 4, 8, 12, 6, 6, 6, 8, 6, 4, 8, 2, 4, 12, 10, 8, 4, 6, 8, 2,
+n_failed = 12, 10, 8, 14, 12, 10, 10, 6, 2, 8, 6, 12, 8, 12, 6, 8, 4, 10, 10, 8,
+n_failed = 8, 6, 12, 6, 10, 12, 12, 6, 16, 12, 12, 10, 14, 12, 14, 10, 8, 16, 14, 20,
+n_failed = 24, 18, 16, 20, 14, 14, 22, 14, 14, 16, 16, 12, 12, 14, 20, 12, 10, 16, 12, 14,
+n_failed = 16, 16, 12, 10, 10, 6, 10, 8, 8, 10, 8, 12, 12, 6, 8, 8, 6, 8, 6, 4,
+n_failed = 14, 18, 8, 12, 2, 8, 12, 10, 12, 12, 8, 6, 8, 4, 6, 10, 8, 14, 10, 4,
+n_failed = 16, 8, 8, 6, 12, 8, 10, 12, 10, 6, 8, 4, 6, 2, 0, 4, 16, 6, 8, 8,
+n_failed = 0, 10, 0, 8, 6, 4, 0, 4, 2, 4, 2, 4, 4, 6, 6, 8, 6, 8, 4, 10,
+n_failed = 4, 10, 8, 8, 2, 0, 6, 6, 6, 8, 4, 4, 10, 6, 0, 6, 10, 10, 4, 4,
+n_failed = 8, 16, 10, 10, 12, 4, 6, 10, 8, 10, 10, 8, 10, 6, 10, 14, 8, 12, 8, 8,
+
+epoch 1: batch_loss = 2.1026864028126785e12, time = 520.0081069469452s
+n_failed = 22, 18, 20, 24, 14, 18, 18, 16, 14, 18, 16, 10, 14, 14, 22, 14, 12, 14, 24, 14,
+n_failed = 14, 18, 16, 10, 10, 12, 18, 12, 18, 14, 16, 10, 12, 14, 14, 14, 8, 6, 14, 16,
+n_failed = 10, 8, 4, 14, 12, 10, 16, 14, 6, 4, 10, 6, 6, 14, 6, 12, 4, 10, 12, 4,
+n_failed = 4, 2, 8, 8, 6, 12, 4, 0, 12, 10, 6, 2, 8, 6, 8, 8, 0, 0, 6, 6,
+n_failed = 2, 4, 8, 2, 10, 8, 10, 4, 6, 4, 4, 6, 2, 8, 8, 8, 4, 6, 10, 6,
+n_failed = 10, 10, 12, 8, 12, 4, 8, 10, 4, 8, 2, 8, 8, 6, 12, 6, 10, 0, 8, 4,
+n_failed = 6, 4, 4, 4, 8, 8, 2, 8, 4, 4, 6, 8, 4, 6, 6, 6, 12, 12, 2, 6,
+n_failed = 10, 10, 12, 10, 8, 12, 12, 10, 6, 8, 14, 6, 6, 8, 4, 20, 12, 12, 12, 14,
+n_failed = 26, 28, 26, 26, 24, 20, 18, 18, 22, 22, 18, 24, 18, 18, 20, 22, 20, 16, 12, 22,
+n_failed = 10, 8, 8, 8, 8, 10, 6, 12, 10, 10, 8, 10, 8, 8, 12, 8, 6, 6, 2, 4,
+
+epoch 2: batch_loss = 10103.9137990074, time = 274.08262491226196s
+n_failed = 12, 16, 10, 12, 12, 12, 10, 6, 12, 6, 12, 8, 2, 6, 8, 10, 6, 6, 14, 4,
+n_failed = 22, 14, 18, 12, 16, 14, 12, 18, 16, 22, 16, 12, 12, 10, 8, 8, 10, 14, 16, 12,
+n_failed = 20, 18, 18, 20, 14, 16, 20, 10, 16, 14, 18, 14, 18, 14, 8, 16, 10, 14, 20, 12,
+n_failed = 18, 24, 18, 14, 14, 16, 14, 12, 16, 14, 18, 8, 8, 8, 14, 12, 12, 10, 20, 20,
+n_failed = 22, 16, 16, 12, 10, 16, 8, 10, 12, 14, 12, 16, 10, 18, 14, 10, 18, 10, 16, 16,
+n_failed = 18, 12, 14, 14, 22, 14, 14, 14, 14, 14, 20, 12, 12, 16, 18, 18, 22, 18, 24, 20,
+n_failed = 16, 18, 20, 18, 22, 16, 20, 18, 20, 18, 22, 18, 18, 16, 18, 22, 20, 18, 24, 28,
+n_failed = 12, 12, 10, 12, 16, 22, 18, 16, 20, 18, 16, 22, 20, 14, 14, 20, 20, 22, 24, 18,
+n_failed = 6, 20, 16, 10, 16, 12, 10, 12, 10, 18, 10, 18, 8, 16, 10, 14, 20, 16, 6, 16,
+n_failed = 18, 18, 14, 20, 26, 16, 22, 16, 26, 14, 20, 20, 20, 16, 22, 20, 22, 20, 22, 24,
+
+epoch 3: batch_loss = 9.768688499794238e11, time = 663.3637619018555s
+n_failed = 14, 12, 14, 10, 24, 18, 14, 20, 20, 16, 22, 14, 18, 16, 14, 12, 8, 10, 16, 20,
+n_failed = 20, 16, 18, 16, 16, 16, 14, 16, 14, 12, 12, 12, 10, 20, 18, 14, 10, 16, 6, 12,
+n_failed = 18, 18, 16, 12, 16, 12, 20, 16, 16, 10, 18, 18, 16, 12, 10, 20, 20, 16, 12, 12,
+n_failed = 16, 12, 12, 8, 14, 18, 14, 10, 14, 12, 14, 12, 8, 14, 8, 10, 6, 10, 12, 12,
+n_failed = 12, 10, 14, 8, 8, 16, 14, 12, 6, 6, 16, 14, 4, 4, 10, 8, 14, 10, 12, 2,
+n_failed = 14, 18, 12, 20, 18, 12, 16, 20, 16, 14, 14, 18, 4, 16, 14, 18, 12, 16, 8, 8,
+n_failed = 18, 14, 8, 14, 6, 8, 10, 8, 8, 12, 16, 14, 10, 14, 6, 10, 10, 8, 10, 2,
+n_failed = 20, 18, 14, 24, 16, 14, 16, 16, 16, 20, 18, 18, 16, 20, 20, 24, 10, 14, 18, 14,
+n_failed = 22, 22, 18, 30, 18, 26, 22, 24, 26, 8, 18, 20, 14, 18, 20, 18, 20, 10, 10, 18,
+n_failed = 30, 22, 26, 20, 30, 22, 28, 20, 14, 26, 30, 22, 18, 20, 20, 20, 24, 22, 24, 18,
+
+epoch 4: batch_loss = 9539.224643790169, time = 108.94200110435486s
+n_failed = 26, 22, 28, 22, 22, 26, 18, 22, 18, 18, 26, 20, 26, 28, 20, 24, 26, 18, 10, 20,
+n_failed = 26, 24, 26, 20, 26, 20, 28, 20, 18, 16, 26, 18, 18, 16, 16, 12, 12, 18, 14, 16,
+n_failed = 26, 22, 14, 24, 18, 18, 22, 18, 8, 20, 10, 6, 14, 12, 16, 20, 12, 12, 10, 14,
+n_failed = 18, 18, 18, 16, 20, 22, 12, 18, 14, 10, 8, 14, 20, 12, 14, 10, 12, 8, 12, 16,
+n_failed = 20, 10, 14, 14, 12, 20, 10, 10, 8, 10, 12, 10, 14, 14, 10, 14, 10, 8, 10, 8,
+n_failed = 20, 18, 22, 14, 12, 12, 14, 8, 14, 14, 14, 12, 4, 10, 16, 10, 8, 12, 14, 12,
+n_failed = 14, 16, 16, 12, 14, 12, 14, 10, 8, 10, 8, 14, 12, 8, 10, 10, 12, 12, 8, 4,
+n_failed = 16, 12, 12, 8, 12, 4, 10, 4, 8, 10, 14, 6, 6, 6, 12, 8, 6, 4, 8, 10,

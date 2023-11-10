@@ -108,17 +108,19 @@ end
 function calculate_saft_parameters(model, g, Mw)
     λ_a = 6.0
     pred_params = model(g, g.ndata.x)
-
-    # Add parameter bounding w tanh
     #   1 < m < 10
     #   2 < σ < 10
     #   5 < λ_r < 30
     # 100 < ϵ < 500
     l = [1.0, 2, 10, 100]
-    u = [10.0, 10, 25, 500]
+    u = [5.0, 6, 25, 500]
     params = @. (u - l) * pred_params + l
 
-    saft_input = vcat(Mw, params[1:2], [λ_a], params[3:4])
+    # Add parameter bounding w tanh
+    # c = [1.0, 1, 10, 100]
+    # biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
+
+    saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])
     return saft_input
 end
 
@@ -203,7 +205,7 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function train_model!(model, train_loader, test_loader, optim; epochs=10, log_filename="params_log.csv")
+function train_model!(model, train_loader, test_loader, optim; epochs=10, log_filename="params_log_nodict.csv")
     for epoch in 1:epochs
         epoch_start_time = time()
 

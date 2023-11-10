@@ -1,0 +1,38 @@
+Environment activated, loading script
+Running main
+df.species = ["methane", "ethane", "propane", "n-butane", "2-methylpropane", "2-methylbutane", "pentane", "2,2-dimethylpropane", "hexane", "2-methylpentane", "3-methylpentane", "2,3-dimethylbutane", "2,2-dimethylbutane", "2,4-dimethylpentane", "heptane", "2,2,3-trimethylbutane", "2,3-dimethylpentane", "3-methylhexane", "2-methylhexane", "2,2-dimethylpentane", "3,3-dimethylpentane", "3-ethylpentane", "2,2,4-trimethylpentane", "octane", "3-methylheptane", "2,3,4-trimethyl pentane", "2,4-dimethylhexane", "4-methylheptane", "3,4-dimethylhexane", "2-methylheptane", "2,2-dimethylhexane", "2,5-dimethylhexane", "2,3-dimethylhexane", "2,2,3-trimethylpentane", "3,3-dimethylhexane", "2-methyl-3-ethyl-pentane", "3-methyl-3-ethylpentane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2,5-trimethylhexane", "nonane", "2-methyloctane", "3,3-diethylpentane", "2,4,4-trimethylhexane", "2,2,3,4-tetramethylpentane", "2,3,3,4-tetramethylpentane", "2,2,3,3-tetramethylpentane", "2,2,4,4-tetramethylpentane", "2,3-dimethylheptane", "decane", "2,7-dimethyloctane", "2,6-dimethyloctane", "2,2,5,5-tetramethylhexane", "n-undecane", "2-methyldecane", "3-methyldecane", "2,3-dimethylnonane", "dodecane", "2-methylundecane", "3-methylundecane", "2,3-dimethyldecane", "tridecane", "2-methyldodecane", "3-methyldodecane", "2,3-dimethylundecane", "tetradecane", "2-methyltridecane", "3-methyltridecane", "2,3-dimethyldodecane", "pentadecane", "hexadecane", "2,2,4,4,6,8,8-heptamethylnonane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane", "squalane"]
+Generating data for 80 molecules...
+n_batches = 10, batch_size = 400
+training on 20 threads
+n_failed = 4, 12, 6, 8, 6, 8, 6, 12, 10, 10, 8, 6, 4, 8, 2, 6, 4, 2, 8, 4,
+n_failed = 8, 4, 8, 10, 8, 10, 10, 8, 8, 8, 2, 4, 6, 4, 12, 4, 2, 6, 4, 4,
+n_failed = 10, 10, 8, 6, 8, 8, 10, 6, 14, 4, 4, 10, 4, 4, 6, 8, 6, 10, 8, 8,
+n_failed = 16, 8, 8, 8, 16, 10, 4, 6, 4, 8, 8, 8, 10, 10, 6, 6, 6, 6, 6, 2,
+n_failed = 6, 8, 6, 12, 4, 8, 8, 6, 6, 6, 4, 2, 6, 6, 4, 6, 4, 6, 4, 6,
+n_failed = 8, 6, 0, 10, 10, 2, 2, 6, 4, 8, 4, 2, 4, 0, 2, 6, 6, 4, 4, 2,
+n_failed = 8, 10, 14, 6, 4, 8, 4, 4, 4, 6, 8, 6, 6, 8, 8, 6, 4, 2, 14, 4,
+n_failed = 16, 8, 12, 4, 4, 4, 4, 8, 2, 2, 0, 6, 2, 4, 2, 0, 6, 12, 6, 4,
+n_failed = 6, 12, 8, 6, 6, 0, 8, 4, 6, 6, 6, 6, 8, 4, 6, 4, 8, 2, 4, 2,
+n_failed = 10, 8, 10, 6, 4, 10, 6, 12, 6, 2, 4, 4, 8, 6, 4, 4, 6, 4, 8, 2,
+
+epoch 1: batch_loss = 18279.641456113568, time = 321.7526640892029s
+n_failed = 8, 8, 4, 6, 8, 8, 4, 14, 6, 6, 8, 10, 6, 8, 4, 0, 4, 8, 8, 0,
+n_failed = 12, 6, 4, 8, 6, 2, 10, 10, 8, 10, 6, 8, 10, 4, 6, 6, 0, 8, 4, 4,
+n_failed = 12, 8, 14, 10, 4, 6, 8, 10, 4, 4, 2, 8, 12, 12, 6, 6, 10, 6, 4, 6,
+n_failed = 14, 10, 12, 6, 10, 2, 6, 14, 6, 12, 4, 6, 12, 2, 6, 4, 8, 8, 6, 0,
+n_failed = 10, 8, 8, 8, 12, 0, 6, 10, 6, 6, 8, 2, 8, 4, 8, 8, 8, 4, 6, 0,
+n_failed = 6, 10, 2, 12, 2, 10, 12, 8, 6, 8, 8, 6, 6, 4, 4, 4, 8, 2, 8, 6,
+n_failed = 10, 4, 12, 10, 16, 4, 6, 2, 4, 8, 10, 4, 4, 8, 14, 6, 8, 2, 6, 8,
+n_failed = 8, 8, 10, 2, 10, 12, 4, 4, 6, 8, 4, 2, 6, 10, 10, 6, 12, 8, 6, 4,
+n_failed = 6, 6, 6, 4, 8, 4, 4, 4, 2, 2, 6, 0, 8, 8, 4, 2, 4, 2, 2, 0,
+n_failed = 2, 8, 4, 2, 0, 4, 6, 6, 6, 4, 4, 4, 4, 10, 0, 8, 2, 2, 2, 2,
+
+epoch 2: batch_loss = 15222.38640787302, time = 70.36370301246643s
+n_failed = 8, 12, 8, 8, 4, 6, 0, 12, 10, 8, 18, 6, 4, 2, 8, 2, 6, 6, 2, 0,
+n_failed = 14, 2, 8, 4, 2, 4, 8, 4, 6, 4, 2, 2, 10, 6, 6, 2, 6, 2, 4, 0,
+n_failed = 8, 6, 2, 2, 8, 2, 8, 8, 6, 8, 0, 0, 6, 10, 0, 2, 6, 10, 2, 2,
+n_failed = 6, 4, 6, 10, 4, 6, 6, 10, 2, 4, 6, 8, 0, 6, 0, 0, 2, 6, 6, 2,
+n_failed = 4, 10, 6, 10, 4, 6, 2, 2, 4, 0, 6, 4, 4, 4, 2, 6, 12, 0, 2, 4,
+n_failed = 4, 6, 6, 0, 6, 4, 4, 2, 2, 4, 8, 4, 10, 2, 2, 4, 2, 2, 4, 4,
+n_failed = 8, 2, 0, 0, 6, 0, 4, 4, 8, 6, 4, 4, 2, 4, 2, 4, 4, 4, 2, 2,
+n_failed = 4, 4, 6, 6, 2, 4, 4, 6, 2, 2, 2, 4, 6, 2, 6, 2, 0, 0, 4, 4,

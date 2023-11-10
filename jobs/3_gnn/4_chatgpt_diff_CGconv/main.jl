@@ -61,7 +61,7 @@ function create_data(; batch_size=16, n_points=25)
 
     # Take only linear alkanes
     filter!(row -> occursin("Alkane", row.family), df)
-    filter!(row -> contains_only_c(row.isomeric_SMILES), df)
+    # filter!(row -> contains_only_c(row.isomeric_SMILES), df)
     # sort!(df, :Mw)
 
     # df = first(df, 20) #* Take only first molecule in dataframe
@@ -110,15 +110,16 @@ function calculate_saft_parameters(model, g, Mw)
     pred_params = model(g, g.ndata.x)
 
     # Add parameter bounding w tanh
-    #   1 < m < 10
-    #   2 < σ < 10
+    #   1 < m   < 10
+    #   2 < σ   < 10
     #   5 < λ_r < 30
-    # 100 < ϵ < 500
+    # 100 < ϵ   < 500
     l = [1.0, 2, 10, 100]
-    u = [10.0, 10, 25, 500]
-    params = @. (u - l) * pred_params + l
+    u = [10.0, 10, 30, 500]
+    c = [1.0, 1, 10, 100]
+    biased_params = @. (u - l)/2.0 * (tanh(c * pred_params / u) + 1) + l
 
-    saft_input = vcat(Mw, params[1:2], [λ_a], params[3:4])
+    saft_input = vcat(Mw, biased_params[1:2], [λ_a], biased_params[3:4])
     return saft_input
 end
 
@@ -247,25 +248,46 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, log_fi
 end
 
 # model(g) = m, σ, λ_r, ϵ
-function create_graphconv_model(nin, nh; nout=4, ngclayers=3, nhlayers=2, afunc=relu)
+function create_graphconv_model(nin, nh; nout=4, ngclayers=3, nhlayers=3, afunc=relu)
     GNNChain(
         GraphConv(nin => nh, afunc),
         [GraphConv(nh => nh, afunc) for _ in 1:ngclayers]...,
         GlobalPool(mean), # Average the node features
         # Dropout(0.2), #* No dropout for now, let's overfit
         [Dense(nh, nh) for _ in 1:nhlayers]...,
-        Dense(nh, nout, sigmoid),
+        Dense(nh, nout, x -> x),
     )
 end
 
-function main(; epochs=5000)
-    train_loader, test_loader = create_data(n_points=50, batch_size=230) # Should make 5 batches / epoch. 256 / 8 gives 32 evaluations per thread
+function create_saft_prediction_model(nin, nh; nout=4, ngclayers=2, nhlayers=2)
+    GNNChain(
+        # Input graph convolution layer
+        CGConv(nin => nh, sigmoid),
+
+        # Stacked graph convolution layers
+        [CGConv(nh => nh, sigmoid; residual=true) for _ in 1:ngclayers]...,
+        
+        # Pooling layer to create graph-level representation
+        # TopKPool(nh, 0.5),  # TopKPool to select the most informative nodes
+        GlobalPool(mean), # Can be max, mean, sum
+        
+        # Dense layers for prediction
+        [Dense(nh, nh, relu) for _ in 1:nhlayers]...,
+        
+        # Output layer
+        Dense(nh, nout, sigmoid),  # No activation function, assuming SAFT parameters are continuous values
+    )
+end
+
+function main(; epochs=1000)
+    train_loader, test_loader = create_data(n_points=50, batch_size=400)
 
     # How to determine nin? I think it's 11
     nin = 11
     nh = 128
 
-    model = create_graphconv_model(nin, nh)
+    # model = create_graphconv_model(nin, nh)
+    model = create_saft_prediction_model(nin, nh)
 
     println("training on $(Threads.nthreads()) threads")
     flush(stdout)
