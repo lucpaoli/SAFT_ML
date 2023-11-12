@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -lselect=1:ncpus=10:mem=128gb
 #PBS -lwalltime=20:00:00
-#PBS -N GNN_TL_const_lambda_r
+#PBS -N GNN_TL_1e-6
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables
 # better to copy scripts to and from TMPDIR
