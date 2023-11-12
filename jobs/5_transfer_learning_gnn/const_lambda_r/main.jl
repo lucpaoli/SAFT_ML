@@ -3,6 +3,12 @@ include("../../../saftvrmienn.jl")
 # These are functions we're going to overload for SAFTVRMieNN
 import Clapeyron: a_res, saturation_pressure, pressure
 
+using MolecularGraph, Graphs
+using GraphNeuralNetworks
+using MLUtils
+using OneHotArrays
+using Statistics, Random
+
 using Flux
 using Plots, Statistics
 using ForwardDiff, DiffResults
@@ -20,31 +26,29 @@ using Zygote: bufferfrom
 using Base.Threads: @spawn
 using Plots
 
-function make_fingerprint(s::String)::Vector{Float64}
-    mol = get_mol(s)
-    @assert !isnothing(mol)
+function make_graph_from_smiles(smiles::String)
+    molgraph = smilestomol(smiles)
 
-    fp = []
+    g = SimpleGraph(nv(molgraph))
+    for e in edges(molgraph)
+        add_edge!(g, e.src, e.dst)
+    end
 
-    fp_str_morgan = get_morgan_fp(mol, Dict{String,Any}("radius"=> 5, "nbits" => 1024))
-    fp_str_atom_pair = get_atom_pair_fp(mol, Dict{String,Any}("radius"=> 6, "nbits" => 1024))
-    fp_str_pattern = get_pattern_fp(mol, Dict{String,Any}("radius"=> 7, "nbits" => 1024))
+    # Should number of hydrogens be one-hot encoded?
+    f(vec, enc) = hcat(map(x -> onehot(x, enc), vec)...)
+    num_h = f(implicit_hydrogens(molgraph), [0, 1, 2, 3, 4])
+    hybrid = f(hybridization(molgraph), [:sp, :sp2, :sp3])
+    atoms = f(atom_symbol(molgraph), [:C, :O, :N])
 
-    fp_str = fp_str_morgan * fp_str_atom_pair * fp_str_pattern
+    # Node data should be matrix (num_features, num_nodes)
+    # Matrix has num_nodes columns, num_features rows
+    ndata = Float32.(vcat(num_h, hybrid, atoms))
 
-    append!(fp, [parse(Float64, string(c)) for c in fp_str])
-
-    desc = get_descriptors(mol)
-    relevant_keys = [
-        "CrippenClogP",
-        "NumHeavyAtoms",
-        "amw",
-        "FractionCSP3",
-    ]
-    relevant_desc = [desc[k] for k in relevant_keys]
-    append!(fp, relevant_desc)
-
-    return fp
+    b_order = Float32.(f(bond_order(molgraph), [1, 2, 3]))
+    edata = nothing #! Can use bond order later
+    
+    g = GNNGraph(g, ndata = ndata, edata = edata)
+    return g
 end
 
 # Generate training set for liquid density and saturation pressure
@@ -56,8 +60,6 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
 
     #* Only alkanes
     filter!(row -> occursin("Alkane", row.family), df)
-    #* Only linear alkanes
-    # filter!(row -> contains_only_c(row.isomeric_SMILES), df)
 
     @show df.species
     mol_data = zip(df.species, df.isomeric_SMILES, df.Mw)
@@ -69,8 +71,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
         Y_data = Vector{Vector{T}}()
 
         for (name, smiles, Mw) in mol_data
-            fp = make_fingerprint(smiles)
-            append!(fp, Mw)
+            g = make_graph_from_smiles(smiles)
 
             saft_model = PPCSAFT([name])
             m = saft_model.params.segment.values[1]
@@ -78,26 +79,26 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
             λ_r = 15.0
             epsilon = saft_model.params.epsilon.values[1]
 
-            push!(X_data, (fp, Mw))
+            push!(X_data, (g, Mw))
             push!(Y_data, [m, sigma, λ_r, epsilon])
         end
     else
-        T = Float64
-        X_data = Vector{Tuple{Vector{T},T,T,String}}([])
-        Y_data = Vector{Vector{T}}()
+        T1 = Float64
+        T2 = GNNGraph{Tuple{Vector{Int64}, Vector{Int64}, Nothing}}
+        X_data = Vector{Tuple{T2,T1,T1,String}}([])
+        Y_data = Vector{Vector{T1}}()
 
         for (name, smiles, Mw) in mol_data
             saft_model = PPCSAFT([name])
             Tc, pc, Vc = crit_pure(saft_model)
 
-            fp = make_fingerprint(smiles)
-            append!(fp, Mw)
+            g = make_graph_from_smiles(smiles)
 
             T_range = range(0.5 * Tc, 0.975 * Tc, n_points)
             for T in T_range
                 (p_sat, Vₗ_sat, Vᵥ_sat) = saturation_pressure(saft_model, T)
 
-                push!(X_data, (fp, T, Mw, name))
+                push!(X_data, (g, T, Mw, name))
                 push!(Y_data, [Vₗ_sat, p_sat])
             end
         end
@@ -126,15 +127,6 @@ end
 function calculate_saft_parameters(model, fp, Mw)
     λ_a = 6.0
     pred_params = model(fp)
-
-    # f(x, u, l, c) = (u - l)/2.0 * (tanh(c * x / u) + 1) + l
-    # σ = f(σ, 10, 2, 1)
-    # λ_r = f(λ_r, 100, 10, 10)
-    # ϵ = f(ϵ, 0, 500, 100)
-
-    # b = [2.5, 3.5, 12.0, 250.0]
-    # c = [1.0, 1, 10, 100]
-    # biased_params = @. pred_params * c + b
 
     m, σ, λ_r, ϵ = pred_params
 
@@ -284,31 +276,34 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, pretra
     end
 end
 
-function create_ff_model(nfeatures)
-    nout = 4
-    return Chain(
-        Dense(nfeatures, nout*8, relu),
-        Dense(nout*8, nout*4, relu),
-        Dense(nout*4, nout*2, relu),
-        Dense(nout*2, nout, x -> x),
+function create_model(nin, nh; nout=4, ngclayers=2, nhlayers=2)
+    GNNChain(
+        CGConv(nin => nh, relu),
+        [CGConv(nh => nh, relu; residual=true) for _ in 1:ngclayers]...,
+        GlobalPool(mean),
+        [Dense(nh, nh, relu) for _ in 1:nhlayers]...,
+        Dense(nh, nout, x -> x),
     )
 end
 
 function main(; epochs=5000)
+    Random.seed!(622)
     model = main_pcpsaft()
 
     train_loader, test_loader = create_data(n_points=50, batch_size=400)
     @show n_features = length(first(train_loader)[1][1][1])
 
-    optim = Flux.setup(Flux.Adam(1e-3), model)
+    optim = Flux.setup(Flux.Adam(1e-5), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs)
 end
 
 function main_pcpsaft(; epochs=1000)
     train_loader, test_loader = create_data(n_points=50, batch_size=8, pretraining=true)
     @show n_features = length(first(train_loader)[1][1][1])
+    nin = 11
+    nh = 30
 
-    model = create_ff_model(n_features)
+    model = create_model(nin, nh)
     optim = Flux.setup(Flux.Adam(1e-3), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs, pretraining=true)
 
