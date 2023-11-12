@@ -284,7 +284,7 @@ function main(; epochs=5000)
     train_loader, test_loader = create_data(n_points=50, batch_size=400)
     @show n_features = length(first(train_loader)[1][1][1])
 
-    optim = Flux.setup(Flux.Adam(1e-5), model)
+    optim = Flux.setup(Flux.Adam(1e-7), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs)
 end
 
