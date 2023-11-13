@@ -66,7 +66,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
 
     if pretraining
         T = Float64
-        X_data = Vector{Tuple{Vector{T}, T}}()
+        X_data = Vector{Tuple{Vector{T},Nothing,T,String}}()
         Y_data = Vector{Vector{T}}()
 
         for (name, smiles, Mw) in mol_data
@@ -79,7 +79,9 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
             λ_r = 15.0
             epsilon = saft_model.params.epsilon.values[1]
 
-            push!(X_data, (fp, Mw))
+            println("name = $name, y_data = $([m, sigma, λ_r, epsilon])")
+
+            push!(X_data, (fp, nothing, Mw, name))
             push!(Y_data, [m, sigma, λ_r, epsilon])
         end
     else
@@ -139,12 +141,13 @@ function calculate_saft_parameters(model, fp, Mw)
 
     m, σ, λ_r, ϵ = pred_params
 
-    f(x, c) = elu(x-c, 1e-3) + c
+    # f(x, c) = elu(x-c, 1e-3) + c
+    f(x, c) = elu(x, 0.05) + c
 
     m = f(m, 1.0)
     σ = f(σ, 2.0)
-    λ_r = 10 * f(λ_r, 1.0)
-    ϵ = 100 * f(ϵ, 1.0)
+    λ_r = 10.0 * f(λ_r, 1.0)
+    ϵ = 100.0 * f(ϵ, 1.0)
 
     saft_input = [Mw, m, σ, λ_a, λ_r, ϵ]
 
@@ -176,8 +179,8 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
         else
             # ŷ_vec = model(X[1])
             # (fp, Mw), [m, sigma, λ_r, epsilon]
-            fp, Mw = X
-            ŷ = calculate_saft_parameters(model, X...)
+            fp, T, Mw, name = X
+            ŷ = calculate_saft_parameters(model, fp, Mw)
             ŷ_vec = [ŷ[2], ŷ[3], ŷ[5] + 4*randn(), ŷ[6]]
         end
 
@@ -231,6 +234,9 @@ end
 function train_model!(model, train_loader, test_loader, optim; epochs=10, pretraining=false)
     nthreads = pretraining ? min(10, Threads.nthreads()) : Threads.nthreads()
     log_filename = pretraining ? "params_log_pretraining.csv" : "params_log.csv" 
+    open(log_filename, "a") do io
+        write(io, "epoch;name;Mw;m;σ;λ_a;λ_r;ϵ\n")
+    end
 
     println("training on $nthreads threads")
     flush(stdout)
@@ -241,20 +247,23 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, pretra
         unique_fps = Dict()
 
         for (X_batch, y_batch) in train_loader
-            if !pretraining
-                Tc_dict = Dict{String, Float64}()
-                for (fp, T, Mw, name) in X_batch
-                    if !haskey(unique_fps, name)
-                        unique_fps[name] = (fp, Mw)
-                    end
-                    if !haskey(Tc_dict, name)
-                        saft_input = calculate_saft_parameters(model, fp, Mw)
-                        Tc = critical_temperature_NN(saft_input)
-                        Tc_dict[name] = Tc
-                    end
+            Tc_dict = Dict{String, Float64}()
+            for (fp, T, Mw, name) in X_batch
+                if !haskey(unique_fps, name)
+                    unique_fps[name] = (fp, Mw)
                 end
+                if !haskey(Tc_dict, name) && !pretraining
+                    saft_input = calculate_saft_parameters(model, fp, Mw)
+                    Tc = critical_temperature_NN(saft_input)
+                    Tc_dict[name] = Tc
+                end
+            end
+            if !pretraining
+                original_size = length(X_batch)
                 indices = findall(entry -> entry[2] < Tc_dict[entry[4]], X_batch)
                 X_batch, y_batch = X_batch[indices], y_batch[indices]
+                n_masked = original_size - length(X_batch)
+                println("n_masked = $n_masked")
             end
 
             loss, grads = Flux.withgradient(model) do m
