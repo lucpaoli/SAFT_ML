@@ -12005,3 +12005,93 @@ n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, -16,
 n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, -16,
 
 epoch 1000: batch_loss = 0.00015387924816757486, time = 0.33452606201171875s
+df.species = ["methane", "ethane", "propane", "n-butane", "2-methylpropane", "2-methylbutane", "pentane", "2,2-dimethylpropane", "hexane", "2-methylpentane", "3-methylpentane", "2,3-dimethylbutane", "2,2-dimethylbutane", "2,4-dimethylpentane", "heptane", "2,2,3-trimethylbutane", "2,3-dimethylpentane", "3-methylhexane", "2-methylhexane", "2,2-dimethylpentane", "3,3-dimethylpentane", "3-ethylpentane", "2,2,4-trimethylpentane", "octane", "3-methylheptane", "2,3,4-trimethyl pentane", "2,4-dimethylhexane", "4-methylheptane", "3,4-dimethylhexane", "2-methylheptane", "2,2-dimethylhexane", "2,5-dimethylhexane", "2,3-dimethylhexane", "2,2,3-trimethylpentane", "3,3-dimethylhexane", "2-methyl-3-ethyl-pentane", "3-methyl-3-ethylpentane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2,5-trimethylhexane", "nonane", "2-methyloctane", "3,3-diethylpentane", "2,4,4-trimethylhexane", "2,2,3,4-tetramethylpentane", "2,3,3,4-tetramethylpentane", "2,2,3,3-tetramethylpentane", "2,2,4,4-tetramethylpentane", "2,3-dimethylheptane", "decane", "2,7-dimethyloctane", "2,6-dimethyloctane", "2,2,5,5-tetramethylhexane", "n-undecane", "2-methyldecane", "3-methyldecane", "2,3-dimethylnonane", "dodecane", "2-methylundecane", "3-methylundecane", "2,3-dimethyldecane", "tridecane", "2-methyldodecane", "3-methyldodecane", "2,3-dimethylundecane", "tetradecane", "2-methyltridecane", "3-methyltridecane", "2,3-dimethyldodecane", "pentadecane", "hexadecane", "2,2,4,4,6,8,8-heptamethylnonane", "heptadecane", "octadecane", "nonadecane", "eicosane", "tetracosane", "heptacosane", "octacosane", "squalane"]
+Generating data for 80 molecules...
+n_batches = 10, batch_size = 400
+n_features = length((((first(train_loader))[1])[1])[1]) = 169
+training on 10 threads
+n_failed = 0, 0, 2, 0, 0, 0, 2, 2, 4, 4,
+n_failed = 2, 2, 0, 2, 0, 0, 0, 0, 0, 0,
+n_failed = 2, 2, 2, 0, 0, 0, 0, 0, 2, 2,
+n_failed = 2, 2, 4, 0, 2, 0, 4, 8, 4, 4,
+n_failed = 0, 2, 2, 0, 2, 2, 0, 2, 2, 2,
+n_failed = 4, 0, 0, 2, 0, 0, 2, 0, 0, 0,
+n_failed = 0, 2, 4, 4, 0, 0, 4, 0, 2, 2,
+n_failed = 0, 2, 4, 0, 4, 2, 0, 0, 2, 4,
+n_failed = 0, 0, 0, 4, 0, 0, 0, 2, 2, 0,
+n_failed = 0, 0, 0, 4, 4, 0, 2, 0, 2, 0,
+
+epoch 1: batch_loss = 608.2447485666396, time = 614.9916181564331s
+n_failed = 4, 2, 0, 0, 4, 0, 0, 2, 2, 0,
+n_failed = 4, 0, 4, 0, 0, 0, 0, 2, 4, 0,
+n_failed = 2, 0, 2, 0, 0, 0, 4, 2, 6, 2,
+n_failed = 4, 0, 4, 4, 2, 0, 2, 4, 2, 2,
+n_failed = 0, 0, 0, 0, 2, 0, 0, 0, 0, 2,
+n_failed = 0, 0, 0, 2, 2, 0, 0, 4, 2, 0,
+n_failed = 0, 0, 0, 0, 4, 2, 0, 0, 0, 2,
+n_failed = 0, 2, 0, 2, 0, 2, 0, 0, 0, 2,
+n_failed = 2, 2, 0, 4, 4, 2, 6, 2, 4, 2,
+n_failed = 0, 0, 2, 2, 2, 2, 2, 0, 0, 0,
+
+epoch 2: batch_loss = 621.374003821777, time = 493.3339698314667s
+n_failed = 0, 0, 6, 0, 2, 0, 0, 4, 4, 6,
+n_failed = 0, 2, 0, 0, 2, 0, 2, 0, 0, 4,
+n_failed = 0, 0, 2, 0, 4, 2, 6, 0, 2, 2,
+n_failed = 0, 2, 2, 2, 4, 4, 0, 6, 0, 2,
+n_failed = 0, 0, 0, 2, 4, 0, 0, 0, 2, 2,
+n_failed = 2, 0, 0, 0, 0, 0, 2, 2, 0, 2,
+n_failed = 0, 0, 2, 0, 0, 2, 0, 4, 2, 2,
+n_failed = 4, 0, 0, 2, 0, 2, 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0, 0, 2, 2, 4, 2, 2,
+n_failed = 2, 2, 2, 0, 0, 0, 2, 4, 2, 2,
+
+epoch 3: batch_loss = 617.6234278591958, time = 396.65686798095703s
+n_failed = 0, 4, 4, 2, 2, 0, 0, 4, 0, 2,
+n_failed = 0, 2, 2, 6, 0, 0, 0, 0, 2, 0,
+n_failed = 0, 2, 4, 0, 2, 0, 2, 0, 2, 4,
+n_failed = 2, 2, 0, 0, 0, 0, 4, 2, 0, 2,
+n_failed = 0, 2, 0, 0, 2, 4, 2, 0, 6, 0,
+n_failed = 2, 0, 2, 0, 0, 0, 2, 4, 2, 0,
+n_failed = 0, 2, 2, 4, 2, 4, 0, 2, 0, 2,
+n_failed = 2, 0, 2, 0, 0, 0, 0, 0, 0, 4,
+n_failed = 2, 2, 2, 4, 0, 2, 0, 2, 2, 4,
+n_failed = 0, 0, 0, 0, 0, 2, 0, 0, 2, 2,
+
+epoch 4: batch_loss = 613.4575646925506, time = 430.17653799057007s
+n_failed = 0, 4, 2, 2, 0, 0, 4, 0, 0, 0,
+n_failed = 0, 0, 4, 2, 4, 0, 2, 0, 0, 0,
+n_failed = 0, 2, 0, 0, 4, 0, 2, 0, 0, 2,
+n_failed = 2, 0, 4, 0, 0, 2, 4, 2, 2, 4,
+n_failed = 2, 0, 2, 0, 4, 0, 2, 0, 0, 0,
+n_failed = 0, 0, 4, 0, 0, 0, 4, 0, 4, 2,
+n_failed = 0, 2, 2, 0, 2, 0, 0, 2, 0, 0,
+n_failed = 0, 2, 0, 2, 4, 0, 4, 4, 0, 2,
+n_failed = 2, 2, 2, 2, 0, 4, 6, 2, 0, 4,
+n_failed = 0, 0, 0, 0, 0, 2, 4, 2, 0, 2,
+
+epoch 5: batch_loss = 627.8769952203854, time = 437.9643521308899s
+n_failed = 4, 0, 2, 0, 0, 0, 0, 0, 2, 0,
+n_failed = 2, 2, 0, 2, 2, 2, 0, 2, 0, 4,
+n_failed = 6, 2, 0, 0, 0, 4, 6, 2, 2, 2,
+n_failed = 2, 0, 0, 2, 4, 4, 2, 2, 2, 0,
+n_failed = 0, 2, 2, 2, 2, 0, 2, 2, 0, 0,
+n_failed = 0, 2, 0, 0, 2, 2, 0, 0, 2, 0,
+n_failed = 4, 0, 2, 0, 2, 0, 0, 0, 2, 4,
+n_failed = 0, 0, 0, 0, 0, 4, 0, 4, 0, 0,
+n_failed = 4, 0, 2, 0, 2, 2, 0, 0, 0, 0,
+n_failed = 0, 2, 2, 2, 2, 2, 2, 2, 2, 0,
+
+epoch 6: batch_loss = 591.907135289679, time = 383.4977159500122s
+n_failed = 6, 2, 0, 0, 0, 2, 2, 2, 2, 6,
+n_failed = 4, 0, 0, 2, 2, 0, 4, 0, 4, 2,
+n_failed = 2, 0, 0, 2, 2, 0, 2, 0, 4, 2,
+n_failed = 2, 2, 0, 2, 0, 2, 0, 0, 0, 2,
+n_failed = 2, 0, 0, 2, 0, 0, 2, 2, 0, 0,
+n_failed = 4, 2, 0, 2, 0, 2, 2, 4, 2, 4,
+n_failed = 2, 2, 0, 4, 2, 2, 0, 0, 2, 4,
+n_failed = 0, 2, 0, 0, 0, 2, 0, 0, 0, 2,
+n_failed = 0, 0, 2, 2, 0, 0, 0, 2, 0, 4,
+n_failed = 0, 0, 0, 0, 2, 0, 2, 0, 2, 0,
+
+epoch 7: batch_loss = 618.1415379915052, time = 427.96191811561584s
+n_failed = 0, 0, 2, 2, 0, 2, 2, 0, 2, 2,
