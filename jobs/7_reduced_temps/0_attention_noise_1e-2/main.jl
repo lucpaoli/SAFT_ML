@@ -27,11 +27,10 @@ function make_fingerprint(s::String)::Vector{Float64}
 
     fp = []
 
-    fp_str_morgan = get_morgan_fp(mol, Dict{String,Any}("radius"=> 5, "nbits" => 1024))
-    fp_str_atom_pair = get_atom_pair_fp(mol, Dict{String,Any}("radius"=> 6, "nbits" => 1024))
-    fp_str_pattern = get_pattern_fp(mol, Dict{String,Any}("radius"=> 7, "nbits" => 1024))
+    fp_str_atom_pair = get_atom_pair_fp(mol, Dict{String,Any}("radius"=> 6, "nbits" => 2048))
+    fp_str_pattern = get_pattern_fp(mol, Dict{String,Any}("radius"=> 6, "nbits" => 2048))
 
-    fp_str = fp_str_morgan * fp_str_atom_pair * fp_str_pattern
+    fp_str = fp_str_atom_pair * fp_str_pattern
 
     append!(fp, [parse(Float64, string(c)) for c in fp_str])
 
@@ -326,7 +325,7 @@ function main(; epochs=5000)
     train_loader, test_loader = create_data(n_points=50, batch_size=400)
     @show n_features = length(first(train_loader)[1][1][1])
 
-    optim = Flux.setup(Flux.Adam(1e-3), model)
+    optim = Flux.setup(Flux.Adam(1e-2), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs)
 end
 
