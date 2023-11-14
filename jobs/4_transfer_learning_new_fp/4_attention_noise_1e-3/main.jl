@@ -139,7 +139,7 @@ function calculate_saft_parameters(model, fp, Mw)
     # c = [1.0, 1, 10, 100]
     # biased_params = @. pred_params * c + b
 
-    m, σ, λ_r, ϵ = pred_params
+    m, σ, λ_r, ϵ = pred_params .+ 1.0
 
     # f(x, c) = elu(x-c, 1e-3) + c
     f(x, c) = elu(x, 0.05) + c
@@ -294,22 +294,27 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, pretra
     end
 end
 
-function create_ff_model(nfeatures)
-    nout = 4
-    return Chain(
-        Dense(nfeatures, nout*8, relu),
-        Dense(nout*8, nout*4, relu),
-        Dense(nout*4, nout*2, relu),
-        Dense(nout*2, nout, x -> x),
-    )
-end
+# function create_ff_model(nfeatures)
+#     nout = 4
+#     return Chain(
+#         Dense(nfeatures, nout*8, relu),
+#         Dense(nout*8, nout*4, relu),
+#         Dense(nout*4, nout*2, relu),
+#         Dense(nout*2, nout, x -> x),
+#     )
+# end
 
 function create_ff_model_with_attention(nfeatures)
     nout = 4
     attention_dim = nout * 8  # Assuming the attention layer follows the first Dense layer
 
     mha = MultiHeadAttention(attention_dim; nheads=8, dropout_prob=0.0)
-    attention_wrapper(x) = mha(x, x, x)[1]  # Wrapper for the self-attention layer
+    function attention_wrapper(x)
+        x_reshape = reshape(x, attention_dim, 1, 1)
+        y, α = mha(x_reshape, x_reshape, x_reshape)
+        y_flat = reshape(y, :)
+        return y_flat
+    end
 
     return Chain(
         Dense(nfeatures, attention_dim, relu),
@@ -335,7 +340,8 @@ function main_pcpsaft(; epochs=50)
     train_loader, test_loader = create_data(n_points=50, batch_size=8, pretraining=true)
     @show n_features = length(first(train_loader)[1][1][1])
 
-    model = create_ff_model(n_features)
+    model = create_ff_model_with_attention(n_features)
+    println("Beginning pretraining")
     optim = Flux.setup(Flux.Adam(1e-3), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs, pretraining=true)
 
