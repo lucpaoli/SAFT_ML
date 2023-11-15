@@ -143,6 +143,9 @@ function calculate_saft_parameters(model, fp, Mw)
 
     saft_input = [Mw, m, σ, λ_a, λ_r, ϵ]
 
+    # todo assert parameters are not nan
+    @assert !any(isnan.(saft_input)), "One of the parameters in saft_input is NaN"
+
     return saft_input
 end
 
