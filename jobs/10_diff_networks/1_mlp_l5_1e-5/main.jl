@@ -187,7 +187,7 @@ function eval_loss(X_batch, Tc_batch, y_batch, metric, model, use_saft_head)
     if n > 0
         batch_loss /= n
     end
-    n_failed = length(y_batch) * 2 - n
+    n_failed = length(y_batch) * length(first(y_batch)) - n
     print(" $n_failed,")
     return batch_loss
 end
