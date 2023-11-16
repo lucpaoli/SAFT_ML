@@ -115,6 +115,7 @@ function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
 
     function f_pullback(Δy)
         #* Newton step from perfect initialisation
+        # todo calculate both these derivatives in one pass
         function f(X)
             Tc2 = Tc - ∂²A∂V²(X, Vc, Tc)/∂³A∂V²∂T(X, Vc, Tc)
             return Tc2
