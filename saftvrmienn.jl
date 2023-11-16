@@ -89,29 +89,31 @@ end
 # obj func T -> -∂²A∂V²
 # Tc is T at ∂²A∂V² = 0
 # ∂²A∂V² = f(T, Vc)
-# Newton step therefore defined by
+# Newton step is defined by
 # Tc2 = Tc - (∂²A∂V²(X, vc, Tc) - ∂²A∂V²(X, vc, T)) / ∂²A∂V²(X, vc, Tc)
 
-# function pressure_NN(X, V, T)
-#     model = make_NN_model(X...)
-#     return ForwardDiff.derivative(V -> eos(model, V, T), V)
-# end
-function ∂²A∂V²(NN_model, V, T)
+function ∂²A∂V²(X, V, T)
+    return ForwardDiff.derivative(V -> pressure_NN(X, V, T))
+end
 
+function ∂³A∂V³(X, V, T)
+    return ForwardDiff.derivative(V -> pressure_NN(X, V, T))
 end
 
 function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
     saft_model = make_model(X...)
     Tc, pc, Vc = crit_pure(saft_model)
+    ∂²A∂V²_const = ∂²A∂V²(X, Vc, Tc) #* Could get this from modifying crit_pure
 
     function f_pullback(Δy)
-        ∂²A∂V²_const = 
         #* Newton step from perfect initialisation
         function f(X)
-            NN_model = make_NN_model(X...)
             # todo define ∂²³f for NN_model
+            #* Right now computing these separately is a waste of time
+            #* See DiffResults.jl
+            # NN_model = make_NN_model(X...)
             # ∂²A∂V², ∂³A∂V³ = ∂²³f(NN_model, Vc, Tc)
-            Tc2 = Tc - (temperature_NN(X, vc, pc) - Tc) / ∂T∂V²
+            Tc2 = Tc - (∂²A∂V²(X, Vc, Tc) - ∂²A∂V²_const)/∂³A∂V³(X, Vc, Tc)
             return Tc2
         end
 
