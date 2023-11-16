@@ -71,7 +71,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
 
         for (name, smiles, Mw) in mol_data
             fp = make_fingerprint(smiles)
-            append!(fp, Mw)
+            # append!(fp, Mw)
 
             saft_model = PPCSAFT([name])
             m = saft_model.params.segment.values[1]
@@ -94,7 +94,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
             Tc, pc, Vc = crit_pure(saft_model)
 
             fp = make_fingerprint(smiles)
-            append!(fp, Mw)
+            # append!(fp, Mw)
 
             # T_range = range(0.5 * Tc, 0.975 * Tc, n_points)
             Tr_range = range(0.5, 0.975, n_points)
@@ -147,11 +147,11 @@ function calculate_saft_parameters(model, fp, Mw)
     return saft_input
 end
 
-function SAFT_head(model, X, Tc)
+function SAFT_head(model, X)
     fp, Tr, Mw, name = X
 
     saft_input = calculate_saft_parameters(model, fp, Mw)
-    # Tc = critical_temperature_NN(saft_input)
+    Tc = critical_temperature_NN(saft_input)
 
     T = Tr * Tc
     sat_p = saturation_pressure_NN(saft_input, T)
@@ -164,47 +164,19 @@ function SAFT_head(model, X, Tc)
     return [ŷ_1, ŷ_2]
 end
 
-function extract_unique_by_name(X)
-    unique_names = unique([name for (_, _, _, name) in X])
-    unique_entries = [first(filter(entry -> entry[4] == name, X)) for name in unique_names]
-    return unique_entries
-end
-
-function calculate_Tc(model, fp, Mw, name)
-    saft_input = calculate_saft_parameters(model, fp, Mw)
-    return critical_temperature_NN(saft_input)
-end
-
-function create_Tc_batch(X_batch, model)
-    # Extract unique molecules by name and calculate Tc
-    unique_entries = extract_unique_by_name(X_batch)
-    Tc_values = [calculate_Tc(model, fp, Mw, name) for (fp, _, Mw, name) in unique_entries]
-
-    # Create a mapping from names to Tc_values
-    name_to_index = Dict(name => i for (i, (_, _, _, name)) in enumerate(unique_entries))
-    Tc_batch = [Tc_values[name_to_index[name]] for (_, _, _, name) in X_batch]
-    return Tc_batch
-end
-
 function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
     batch_loss = 0.0
     n = 0
-
-    if use_saft_head
-        Tc_batch = create_Tc_batch(X_batch, model)
-    else
-        Tc_batch = zeros(length(X_batch))
-    end
     
-    for (X, y_vec, Tc) in zip(X_batch, y_batch, Tc_batch)
+    for (X, y_vec) in zip(X_batch, y_batch)
         if use_saft_head
-            ŷ_vec = SAFT_head(model, X, Tc)
+            ŷ_vec = SAFT_head(model, X)
         else
             # ŷ_vec = model(X[1])
             # (fp, Mw), [m, sigma, λ_r, epsilon]
             fp, Tr, Mw, name = X
             ŷ = calculate_saft_parameters(model, fp, Mw)
-            ŷ_vec = [ŷ[2], ŷ[3], ŷ[5] + 4*randn(), ŷ[6]]
+            ŷ_vec = [ŷ[2], ŷ[3], ŷ[5], ŷ[6]]
         end
 
         for (ŷ, y) in zip(ŷ_vec, y_vec)
@@ -224,20 +196,13 @@ end
 
 function eval_loss_par(X_batch, y_batch, metric, model, n_chunks, use_saft_head)
     print("n_failed =")
-    # flush(stdout)
     n = length(X_batch)
     chunk_size = n ÷ n_chunks
 
     p = bufferfrom(zeros(n_chunks))
 
-    # Evaluate Tc_batch
-    # Tc_dict = Dict{String, Float64}()
-    # for 
-
     # Creating views for each chunk
-    # chunk_vector(v) = vcat([view(v, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(v, (n_chunks-1)*chunk_size+1:n)])
     X_chunks = vcat([view(X_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(X_batch, (n_chunks-1)*chunk_size+1:n)])
-    # Tc_chunks = vcat([view(Tc_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(Tc_batch, (n_chunks-1)*chunk_size+1:n)])
     y_chunks = vcat([view(y_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(y_batch, (n_chunks-1)*chunk_size+1:n)])
 
     @sync begin
@@ -258,7 +223,6 @@ end
 
 function mse(y, ŷ)
     return ((y - ŷ) / y)^2
-    # return ((y - ŷ + noise) / y)^2
 end
 
 function train_model!(model, train_loader, test_loader, optim; epochs=10, pretraining=false)
@@ -278,7 +242,6 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, pretra
 
         for (X_batch, y_batch) in train_loader
             Tc_dict = Dict{String, Float64}()
-            # Tc_batch = zeros(Float64, size(X_batch))
             for (fp, T, Mw, name) in X_batch
                 if !haskey(unique_fps, name)
                     unique_fps[name] = (fp, Mw)
@@ -289,19 +252,26 @@ function train_model!(model, train_loader, test_loader, optim; epochs=10, pretra
                 loss = eval_loss_par(X_batch, y_batch, mse, m, nthreads, !pretraining)
                 loss
             end
-            batch_loss += loss
             @assert !isnan(loss)
+            batch_loss += loss
 
             Flux.update!(optim, model, grads[1])
         end
 
         # Log params to file
         for (name, (fp, Mw)) in unique_fps
+            model_output = model(fp)
+
             Mw, m, σ, λ_a, λ_r, ϵ = calculate_saft_parameters(model, fp, Mw)
 
             # epoch, molecule, m, σ, λ_a, λ_r, ϵ
             open(log_filename, "a") do io
                 write(io, "$epoch;$name;$Mw;$m;$σ;$λ_a;$λ_r;$ϵ\n")
+            end
+            if !pretraining 
+                open("model_output.csv", "a") do io
+                    write(io, "$epoch;$name;$model_output\n")
+                end
             end
         end
 
@@ -316,10 +286,7 @@ end
 function create_ff_model(nfeatures)
     nout = 4
     return Chain(
-        Dense(nfeatures, nout*8, relu),
-        Dense(nout*8, nout*4, relu),
-        Dense(nout*4, nout*2, relu),
-        Dense(nout*2, nout, x -> x),
+        Dense(nfeatures, nout, x -> x),
     )
 end
 
@@ -351,7 +318,7 @@ function main(; epochs=5000)
     train_loader, test_loader = create_data(n_points=50, batch_size=400)
     @show n_features = length(first(train_loader)[1][1][1])
 
-    optim = Flux.setup(Flux.Adam(1e-4), model)
+    optim = Flux.setup(Flux.Adam(1e-5), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs)
 end
 
@@ -359,8 +326,8 @@ function main_pcpsaft(; epochs=50)
     train_loader, test_loader = create_data(n_points=50, batch_size=8, pretraining=true)
     @show n_features = length(first(train_loader)[1][1][1])
 
-    # model = create_ff_model(n_features)
-    model = create_ff_model_with_attention(n_features)
+    model = create_ff_model(n_features)
+    # model = create_ff_model_with_attention(n_features)
     println("Beginning pretraining")
     optim = Flux.setup(Flux.Adam(1e-3), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs, pretraining=true)
