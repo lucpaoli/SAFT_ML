@@ -101,10 +101,6 @@ function ∂²A∂V²(X, V, T)
     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
 end
 
-# function ∂³A∂V³(X, V, T)
-#     return ForwardDiff.derivative(V -> ∂²A∂V²(X, V, T), V)
-# end
-
 function ∂³A∂V²∂T(X, V, T)
     return ForwardDiff.derivative(T -> ∂²A∂V²(X, V, T), T)
 end
