@@ -191,7 +191,7 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
     n = 0
 
     if use_saft_head
-        Tc_batch = create_Tc_batch(X_batch, use_saft_head)
+        Tc_batch = create_Tc_batch(X_batch, model)
     else
         Tc_batch = zeros(length(X_batch))
     end
