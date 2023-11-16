@@ -694,3 +694,6 @@ training on 10 threads
 n_failed = 0, 0, 26, 0, 0, 0, 0, 0, 142, 100,
 
 epoch 1: batch_loss = 3.559027056033529e8, time = 1546.3305180072784s
+n_failed = 800, 800, 800, 800, 800, 800, 800, 800, 800, 800,
+
+epoch 2: batch_loss = 0.0, time = 39121.010941028595s

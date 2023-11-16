@@ -93,11 +93,11 @@ end
 # Tc2 = Tc - (∂²A∂V²(X, vc, Tc) - ∂²A∂V²(X, vc, T)) / ∂²A∂V²(X, vc, Tc)
 
 function ∂²A∂V²(X, V, T)
-    return ForwardDiff.derivative(V -> pressure_NN(X, V, T))
+    return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
 end
 
 function ∂³A∂V³(X, V, T)
-    return ForwardDiff.derivative(V -> pressure_NN(X, V, T))
+    return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
 end
 
 function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
@@ -117,7 +117,7 @@ function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
             return Tc2
         end
 
-        ∂X = @thunk(ForwardDiff.gradient(X -> f(X)))
+        ∂X = @thunk(ForwardDiff.gradient(X -> f(X), X) .* Δy)
         return (NoTangent(), ∂X)
     end
 
