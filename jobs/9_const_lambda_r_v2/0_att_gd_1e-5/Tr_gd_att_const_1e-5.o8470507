@@ -691,3 +691,6 @@ Generating data for 80 molecules...
 n_batches = 1, batch_size = 4000
 n_features = length((((first(train_loader))[1])[1])[1]) = 854
 training on 10 threads
+n_failed = 0, 0, 26, 0, 0, 0, 0, 0, 142, 100,
+
+epoch 1: batch_loss = 3.559027056033529e8, time = 1546.3305180072784s

@@ -12,90 +12,6 @@ function bmcs_hs(ζ0, ζ1, ζ2, ζ3)
     return res
 end
 
-# struct SAFTVRMieParam{T} <: EoSParam
-#     Mw::SingleParam{T}
-#     segment::SingleParam{T}
-#     sigma::PairParam{T}
-#     lambda_a::PairParam{T}
-#     lambda_r::PairParam{T}
-#     epsilon::PairParam{T}
-#     epsilon_assoc::AssocParam{T}
-#     bondvol::AssocParam{T}
-# end
-
-# function SAFTVRMieParam(Mw, segment, sigma, lambda_a, lambda_r, epsilon, epsilon_assoc, bondvol)
-#     el(x) = eltype(x.values)
-#     el(x::AssocParam) = eltype(x.values.values)
-#     T = mapreduce(el, promote_type, (Mw, segment, sigma, epsilon, epsilon_assoc, bondvol))
-#     Mw = convert(SingleParam{T}, Mw)
-#     segment = convert(SingleParam{T}, segment)
-#     sigma = convert(PairParam{T}, sigma)
-#     epsilon = convert(PairParam{T}, epsilon)
-#     lambda_a = convert(PairParam{T}, lambda_a)
-#     lambda_r = convert(PairParam{T}, lambda_r)
-#     epsilon_assoc = convert(AssocParam{T}, epsilon_assoc)
-#     bondvol = convert(AssocParam{T}, bondvol)
-#     return SAFTVRMieParam{T}(Mw, segment, sigma, lambda_a, lambda_r, epsilon, epsilon_assoc, bondvol)
-# end
-
-# Base.eltype(p::SAFTVRMieParam{T}) where {T} = T
-
-# function transform_params(::Type{SAFTVRMie}, params)
-#     sigma = params["sigma"]
-#     sigma.values .*= 1E-10
-#     sigma = sigma_LorentzBerthelot(sigma)
-#     epsilon = epsilon_HudsenMcCoubrey(params["epsilon"], sigma)
-#     lambda_a = lambda_LorentzBerthelot(params["lambda_a"])
-#     lambda_r = lambda_LorentzBerthelot(params["lambda_r"])
-#     params["sigma"] = sigma
-#     params["epsilon"] = epsilon
-#     params["lambda_a"] = lambda_a
-#     params["lambda_r"] = lambda_r
-#     return params
-# end
-# """
-#     SAFTVRMieModel <: SAFTModel
-
-#     SAFTVRMie(components;
-#     idealmodel=BasicIdeal,
-#     userlocations=String[],
-#     ideal_userlocations=String[],
-#     verbose=false,
-#     assoc_options = AssocOptions())
-
-# ## Input parameters
-# - `Mw`: Single Parameter (`Float64`) - Molecular Weight `[g/mol]`
-# - `segment`: Single Parameter (`Float64`) - Number of segments (no units)
-# - `sigma`: Single Parameter (`Float64`) - Segment Diameter [`A°`]
-# - `epsilon`: Single Parameter (`Float64`) - Reduced dispersion energy  `[K]`
-# - `lambda_a`: Pair Parameter (`Float64`) - Atractive range parameter (no units)
-# - `lambda_r`: Pair Parameter (`Float64`) - Repulsive range parameter (no units)
-# - `k`: Pair Parameter (`Float64`) (optional) - Binary Interaction Paramater (no units)
-# - `epsilon_assoc`: Association Parameter (`Float64`) - Reduced association energy `[K]`
-# - `bondvol`: Association Parameter (`Float64`) - Association Volume
-
-# ## Model Parameters
-# - `Mw`: Single Parameter (`Float64`) - Molecular Weight `[g/mol]`
-# - `segment`: Single Parameter (`Float64`) - Number of segments (no units)
-# - `sigma`: Pair Parameter (`Float64`) - Mixed segment Diameter `[m]`
-# - `lambda_a`: Pair Parameter (`Float64`) - Atractive range parameter (no units)
-# - `lambda_r`: Pair Parameter (`Float64`) - Repulsive range parameter (no units)
-# - `epsilon`: Pair Parameter (`Float64`) - Mixed reduced dispersion energy`[K]`
-# - `epsilon_assoc`: Association Parameter (`Float64`) - Reduced association energy `[K]`
-# - `bondvol`: Association Parameter (`Float64`) - Association Volume
-
-# ## Input models
-# - `idealmodel`: Ideal Model
-
-# ## Description
-
-# SAFT-VR with Mie potential
-
-# ## References
-# 1. Lafitte, T., Apostolakou, A., Avendaño, C., Galindo, A., Adjiman, C. S., Müller, E. A., & Jackson, G. (2013). Accurate statistical associating fluid theory for chain molecules formed from Mie segments. The Journal of Chemical Physics, 139(15), 154504. [doi:10.1063/1.4819786](https://doi.org/10.1063/1.4819786)
-# 2. Dufal, S., Lafitte, T., Haslam, A. J., Galindo, A., Clark, G. N. I., Vega, C., & Jackson, G. (2015). The A in SAFT: developing the contribution of association to the Helmholtz free energy within a Wertheim TPT1 treatment of generic Mie fluids. Molecular Physics, 113(9–10), 948–984. [doi:10.1080/00268976.2015.1029027](https://doi.org/10.1080/00268976.2015.1029027)
-# """
-# SAFTVRMie
 
 # This could likely be done instead by constructing SingleParam{T1} etc
 @kwdef struct SAFTVRMieNNParams{T1<:Real,T2<:Real,T3<:Real,T4<:Real,T5<:Real,T6<:Real,T7<:Real,T8<:Real}
@@ -153,82 +69,60 @@ function critical_temperature_NN(X)
     return Tc
 end
 
-# function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
-#     saft_model = make_model(X...)
-#     Tc, pc, Vc = crit_pure(saft_model)
+# Critical point solver obj. func defined by:
+    # function f!(F,x)
+    #     T_c = x[1]*T̄
+    #     V_c = exp10(x[2])
+    #     ∂²A∂V², ∂³A∂V³ = ∂²³f(model, V_c, T_c, SA[1.0])
+    #     F[1] = -∂²A∂V²
+    #     F[2] = -∂³A∂V³
+    #     return F
+    # end
+# ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(X, V, T), vL)
+# v2 = vL - (pressure_NN(X, vL, T) - p) / ∂p∂V
+# Define our Newton step as:
+    # Tc2 = Tc - (∂²A∂V²(X, vc, Tc) - ∂²A∂V²) / ∂³A∂V³(X, vc, Tc)
+#? This isn't right I don't think, and this is weird to define as a Newton iteration
+#? How is Tc determined from ∂²A∂V²? Defining derivative of Tc
+#* Temperature is marched within the critical point solver
 
-#     function f_pullback(Δy)
-#         return (NoTangent(), NoTangent())
-#     end
+# obj func T -> -∂²A∂V²
+# Tc is T at ∂²A∂V² = 0
+# ∂²A∂V² = f(T, Vc)
+# Newton step is defined by
+# Tc2 = Tc - (∂²A∂V²(X, vc, Tc) - ∂²A∂V²(X, vc, T)) / ∂²A∂V²(X, vc, Tc)
 
-#     return Tc, f_pullback
-# end
+function ∂²A∂V²(X, V, T)
+    return ForwardDiff.derivative(V -> pressure_NN(X, V, T))
+end
 
-#! I don't know how to define the rrule for Rⁿ → Rᵐ functions 
-# function saturation_NN(X, T)
-#     model = make_model(X...)
-#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
+function ∂³A∂V³(X, V, T)
+    return ForwardDiff.derivative(V -> pressure_NN(X, V, T))
+end
 
-#     return p, Vₗ, Vᵥ
-# end
+function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
+    saft_model = make_model(X...)
+    Tc, pc, Vc = crit_pure(saft_model)
+    ∂²A∂V²_const = ∂²A∂V²(X, Vc, Tc) #* Could get this from modifying crit_pure
 
-# function ChainRulesCore.rrule(::typeof(saturation_NN), X, T)
-#     model = make_model(X...)
-#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
+    function f_pullback(Δy)
+        #* Newton step from perfect initialisation
+        function f(X)
+            # todo define ∂²³f for NN_model
+            #* Right now computing these separately is a waste of time
+            #* See DiffResults.jl
+            # NN_model = make_NN_model(X...)
+            # ∂²A∂V², ∂³A∂V³ = ∂²³f(NN_model, Vc, Tc)
+            Tc2 = Tc - (∂²A∂V²(X, Vc, Tc) - ∂²A∂V²_const)/∂³A∂V³(X, Vc, Tc)
+            return Tc2
+        end
 
-#     function f_pullback(Δy)
-#         #* Newton step from perfect initialisation
-#         function f_p(X, T)
-#             model = make_NN_model(X...)
-#             p2 = -(eos(model, Vᵥ, T) - eos(model, Vₗ, T)) / (Vᵥ - Vₗ)
-#             return p2
-#         end
+        ∂X = @thunk(ForwardDiff.gradient(X -> f(X)))
+        return (NoTangent(), ∂X)
+    end
 
-#         ∂X = @thunk(ForwardDiff.gradient(X -> f_p(X, T), X) .* Δy)
-#         ∂T = @thunk(ForwardDiff.derivative(T -> f_p(X, T), T) .* Δy)
-#         return (NoTangent(), ∂X, ∂T)
-#     end
-
-#     return [p, Vₗ, Vᵥ], f_pullback
-# end
-
-# function saturation_pressure_NN(X, T)
-#     model = make_model(X...)
-#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
-
-#     return [p, Vₗ]
-# end
-
-# #! In the forward pass, use ForwardDiff to compute value + gradient
-# #! Then return cached value in pullback function
-# function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
-#     model = make_model(X...)
-#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
-
-#     function f_pullback(Δy)
-#         #* Newton step from perfect initialisation
-#         #! How do I define the gradients wrt Vₗ ?
-#         function f(X, T)
-#             NN_model = make_NN_model(X...)
-#             p2 = -(eos(NN_model, Vᵥ, T) - eos(NN_model, Vₗ, T)) / (Vᵥ - Vₗ)
-#             ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(X, V, T), Vₗ)
-#             v2 = Vₗ - (pressure_NN(X, Vₗ, T) - p) / ∂p∂V
-#             return p2, v2
-#         end
-
-#         ∂X = @thunk(ForwardDiff.jacobian(X -> f(X, T), X) .* Δy)
-#         ∂T = @thunk(ForwardDiff.jacobian(T -> f(X, T), T) .* Δy)
-#         # ∂X_p = @thunk(ForwardDiff.gradient(X -> f_p(X, T), X) .* Δy)
-#         # ∂T_p = @thunk(ForwardDiff.derivative(T -> f_p(X, T), T) .* Δy)
-
-#         # ∂X_v = @thunk(ForwardDiff.gradient(X -> f_v(X, T), X) .* Δy)
-#         # ∂T_v = @thunk(ForwardDiff.derivative(T -> f_v(X, T), T) .* Δy)
-#         # return (NoTangent(), [∂X_p, ∂X_v], [∂T_p, ∂T_v])
-#         return (NoTangent(), ∂X, ∂T)
-#     end
-
-#     return [p, Vₗ], f_pullback
-# end
+    return Tc, f_pullback
+end
 
 function saturation_pressure_NN(X, T)
     model = make_model(X...)
@@ -262,17 +156,12 @@ end
 
 function pressure_NN(X, V, T)
     model = make_NN_model(X...)
-
     return ForwardDiff.derivative(V -> eos(model, V, T), V)
 end
 
 function volume_NN(X, p, T)#, Vₗ = nothing)
-    # if isnothing(Vₗ)
     model = make_model(X...)
     V = volume(model, p, T; phase=:liquid)
-    # else
-    #     V = Vₗ
-    # end
 
     return V
 end
