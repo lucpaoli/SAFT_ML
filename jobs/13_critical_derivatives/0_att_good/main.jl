@@ -202,6 +202,10 @@ function eval_loss_par(X_batch, y_batch, metric, model, n_chunks, use_saft_head)
 
     p = bufferfrom(zeros(n_chunks))
 
+    # Evaluate Tc_batch
+    # Tc_dict = Dict{String, Float64}()
+    # for 
+
     # Creating views for each chunk
     # chunk_vector(v) = vcat([view(v, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(v, (n_chunks-1)*chunk_size+1:n)])
     X_chunks = vcat([view(X_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(X_batch, (n_chunks-1)*chunk_size+1:n)])

@@ -117,7 +117,7 @@ function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
             return Tc2
         end
 
-        ∂X = @thunk(ForwardDiff.gradient(X -> f(X)))
+        ∂X = @thunk(ForwardDiff.gradient(X -> f(X), X) .* Δy)
         return (NoTangent(), ∂X)
     end
 
