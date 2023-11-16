@@ -92,28 +92,31 @@ end
 # Newton step is defined by
 # Tc2 = Tc - (∂²A∂V²(X, vc, Tc) - ∂²A∂V²(X, vc, T)) / ∂²A∂V²(X, vc, Tc)
 
+function pressure_NN(X, V, T)
+    model = make_NN_model(X...)
+    return ForwardDiff.derivative(V -> eos(model, V, T), V)
+end
+
 function ∂²A∂V²(X, V, T)
     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
 end
 
-function ∂³A∂V³(X, V, T)
-    return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
+# function ∂³A∂V³(X, V, T)
+#     return ForwardDiff.derivative(V -> ∂²A∂V²(X, V, T), V)
+# end
+
+function ∂³A∂V²∂T(X, V, T)
+    return ForwardDiff.derivative(T -> ∂²A∂V²(X, V, T), T)
 end
 
 function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
     saft_model = make_model(X...)
     Tc, pc, Vc = crit_pure(saft_model)
-    ∂²A∂V²_const = ∂²A∂V²(X, Vc, Tc) #* Could get this from modifying crit_pure
 
     function f_pullback(Δy)
         #* Newton step from perfect initialisation
         function f(X)
-            # todo define ∂²³f for NN_model
-            #* Right now computing these separately is a waste of time
-            #* See DiffResults.jl
-            # NN_model = make_NN_model(X...)
-            # ∂²A∂V², ∂³A∂V³ = ∂²³f(NN_model, Vc, Tc)
-            Tc2 = Tc - (∂²A∂V²(X, Vc, Tc) - ∂²A∂V²_const)/∂³A∂V³(X, Vc, Tc)
+            Tc2 = Tc - ∂²A∂V²(X, Vc, Tc)/∂³A∂V²∂T(X, Vc, Tc)
             return Tc2
         end
 
@@ -131,8 +134,6 @@ function saturation_pressure_NN(X, T)
     return p
 end
 
-#! In the forward pass, use ForwardDiff to compute value + gradient
-#! Then return cached value in pullback function
 function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
     model = make_model(X...)
     p, Vₗ, Vᵥ = saturation_pressure(model, T)
@@ -154,10 +155,6 @@ function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
     return p, f_pullback
 end
 
-function pressure_NN(X, V, T)
-    model = make_NN_model(X...)
-    return ForwardDiff.derivative(V -> eos(model, V, T), V)
-end
 
 function volume_NN(X, p, T)#, Vₗ = nothing)
     model = make_model(X...)
