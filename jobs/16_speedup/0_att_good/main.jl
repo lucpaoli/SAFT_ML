@@ -127,18 +127,21 @@ function calculate_saft_parameters(model, fp, Mw)
 end
 
 function SAFT_head(model, X)
-    fp, Tr, Mw, name = X
+    (fp, Mw, name, Tr, Tc, Vc, sat_p, sat_Vl, sat_Vv) = X
 
     saft_input = calculate_saft_parameters(model, fp, Mw)
-    Tc = critical_temperature_NN(saft_input)
+    # Tc = critical_temperature_NN(saft_input)
+    Tc2 = Tc - ∂²A∂V²(X, Vc, Tc)/∂³A∂V²∂T(X, Vc, Tc)
 
-    T = Tr * Tc
-    sat_p = saturation_pressure_NN(saft_input, T)
-    #! This repeats the volume root calculation
-    Vₗ = volume_NN(saft_input, sat_p, T)
+    T = Tr * Tc2
+    # sat_p = saturation_pressure_NN(saft_input, T)
+    sat_p2 = -(eos(NN_model, sat_Vv, T) - eos(NN_model, sat_Vl, T)) / (sat_Vv - sat_Vl)
 
-    ŷ_1 = !isnan(Vₗ) ? Vₗ : nothing
-    ŷ_2 = !isnan(sat_p) ? sat_p : nothing
+    # Vₗ = volume_NN(saft_input, sat_p, T)
+    sat_Vl2 = sat_Vl - (pressure_NN(X, sat_Vl, T) - sat_p) / ∂p∂V(X, sat_Vl, T)
+
+    ŷ_1 = !isnan(sat_Vl2) ? sat_Vl2 : nothing
+    ŷ_2 = !isnan(sat_p2) ? sat_p2 : nothing
 
     return [ŷ_1, ŷ_2]
 end
@@ -260,7 +263,6 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretr
     for epoch in 1:epochs
         epoch_start_time = time() # Start timing the epoch
         batch_loss = 0.0
-        unique_fps = Dict()
 
         # Objective: process mol_data into X_train, Y_train
 
@@ -299,7 +301,6 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretr
         #       Vl    = vL - (pressure_NN(X, vL, T) - p) / ∂p∂V
         #! Where all of these functions are defined as they are in ChainRulesCore.rrule
 
-        # for (X_batch, y_batch) in train_loader #! Split by molecule into n_epochs
         for batch_mols in mol_loader
             # Create X_data, Y_data from batch_mol
             Y_batch = create_Y_data(mol_dict, batch_mols)
@@ -313,18 +314,17 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretr
             @assert !isnan(loss)
             @assert !iszero(loss)
 
+            for mol in training_molecules
+                fp, Mw, _... = mol_dict[mol]
+                Mw, m, σ, λ_a, λ_r, ϵ = calculate_saft_parameters(model, fp, Mw)
+
+                open(log_filename, "a") do io
+                    write(io, "$epoch;$name;$Mw;$m;$σ;$λ_a;$λ_r;$ϵ\n")
+                end
+            end
             Flux.update!(optim, model, grads[1])
         end
 
-        # Log params to file
-        for (name, (fp, Mw)) in unique_fps
-            Mw, m, σ, λ_a, λ_r, ϵ = calculate_saft_parameters(model, fp, Mw)
-
-            # epoch, molecule, m, σ, λ_a, λ_r, ϵ
-            open(log_filename, "a") do io
-                write(io, "$epoch;$name;$Mw;$m;$σ;$λ_a;$λ_r;$ϵ\n")
-            end
-        end
 
         batch_loss /= length(train_loader)
         epoch_duration = time() - epoch_start_time
@@ -347,14 +347,11 @@ end
 function main(; epochs=5000)
     Random.seed!(1234)
     # model = main_pcpsaft()
-    train_data = create_data(n_points = 50)
+    mol_dict = create_data(n_points = 50)
     # train_data = Dict{String, Tuple{Vector{T}, T, Vector{T}, Vector{Vector{T}}}}()
     @show n_features = length()
     model = create_ff_model(n_features)
 
-    train_loader, test_loader = create_data(n_points=50, batch_size=400)
-    @show n_features = length(first(train_loader)[1][1][1])
-
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, train_loader, test_loader, optim; epochs=epochs)
+    train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretraining=false)
 end
