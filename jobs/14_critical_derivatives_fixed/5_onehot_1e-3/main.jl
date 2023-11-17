@@ -163,8 +163,6 @@ function SAFT_head(model, X)
     #! This repeats the volume root calculation
     Vₗ = volume_NN(saft_input, sat_p, T)
 
-    # if !isnan(Vₗ)
-    # end
     ŷ_1 = !isnan(Vₗ) ? Vₗ : nothing
     ŷ_2 = !isnan(sat_p) ? sat_p : nothing
 
@@ -362,7 +360,7 @@ function main(; epochs=5000)
     train_loader, test_loader = create_data(n_points=50, batch_size=400)
     @show n_features = length(first(train_loader)[1][1][1])
 
-    optim = Flux.setup(Flux.Adam(1e-4), model)
+    optim = Flux.setup(Flux.Adam(1e-3), model)
     train_model!(model, train_loader, test_loader, optim; epochs=epochs)
 end
 
