@@ -105,6 +105,10 @@ function ∂³A∂V²∂T(X, V, T)
     return ForwardDiff.derivative(T -> ∂²A∂V²(X, V, T), T)
 end
 
+function ∂p∂V(X, V, T)
+    return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
+end
+
 function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
     saft_model = make_model(X...)
     Tc, pc, Vc = crit_pure(saft_model)

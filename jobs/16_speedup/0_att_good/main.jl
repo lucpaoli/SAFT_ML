@@ -218,9 +218,12 @@ function create_Y_data(mol_dict, batch_mols)
 end
 
 function create_X_data(mol_dict, batch_mols)
-    X_data = Vector{Tuple}()  # Initialize an empty vector for X data
+    X_temp::Vector{Any} = zeros(length(batch_mols))  # Initialize an empty vector for X data
 
-    for mol in batch_mols
+    # todo: make this multithreaded
+    #? Can use @Threads.threads, not being differentiated
+    @Threads.threads for (i, mol) in enumerate(batch_mols)
+        mol_data = Vector{Tuple}()
         # Extract data for the molecule
         fp, Mw, X_vec, _ = mol_dict[mol]
 
@@ -240,9 +243,13 @@ function create_X_data(mol_dict, batch_mols)
 
             x0 = [Vₗ, Vᵥ]
 
-            push!(X_data, (fp, Mw, mol, Tr, Tc, p_sat, Vₗ, Vᵥ))
+            push!(mol_data, (fp, Mw, mol, Tr, Tc, p_sat, Vₗ, Vᵥ))
         end
+        # I think this is automagically safe under @Threads.threads
+        X_temp[i] = mol_data
     end
+    # Concatenate all vectors into a single vector
+    X_data = vcat(X_temp...)
     return X_data
 end
 
@@ -334,11 +341,22 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretr
     end
 end
 
-function create_ff_model(nfeatures)
+function create_ff_model_with_attention(nfeatures)
     nout = 4
+    attention_dim = nout * 8  # Assuming the attention layer follows the first Dense layer
+
+    mha = MultiHeadAttention(attention_dim; nheads=2, dropout_prob=0.0)
+    function attention_wrapper(x)
+        x_reshape = reshape(x, attention_dim, 1, 1)
+        y, α = mha(x_reshape, x_reshape, x_reshape)
+        y_flat = reshape(y, :)
+        return y_flat
+    end
+
     return Chain(
-        Dense(nfeatures, nout*8, relu),
-        Dense(nout*8, nout*4, relu),
+        Dense(nfeatures, attention_dim, relu),
+        attention_wrapper,
+        Dense(attention_dim, nout*4, relu),
         Dense(nout*4, nout*2, relu),
         Dense(nout*2, nout, x -> x),
     )
@@ -350,7 +368,7 @@ function main(; epochs=5000)
     mol_dict = create_data(n_points = 50)
     # train_data = Dict{String, Tuple{Vector{T}, T, Vector{T}, Vector{Vector{T}}}}()
     @show n_features = length()
-    model = create_ff_model(n_features)
+    model = create_ff_model_with_attention(n_features)
 
     optim = Flux.setup(Flux.Adam(1e-4), model)
     train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretraining=false)
