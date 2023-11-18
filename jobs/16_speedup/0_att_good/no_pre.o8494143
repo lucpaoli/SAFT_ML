@@ -1,0 +1,56 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+n_features = length((first(collect(values(mol_dict))))[1]) = 850
+training on 4 threads
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 100,
+n_failed = 0, 0, 0, 0,
+
+epoch 1: batch_loss = 1.892925550997893e16, time = 263.333701133728s
+n_failed = 0, 0, 0, 0,
+n_failed = 100, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+
+epoch 2: batch_loss = 1.9156215852622492e16, time = 51.951905965805054s
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+
+epoch 3: batch_loss = 1.964783178846384e16, time = 54.584895849227905s
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+
+epoch 4: batch_loss = 1.9784891747111148e16, time = 54.734445095062256s
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+
+epoch 5: batch_loss = 1.992737128756065e16, time = 53.11589002609253s
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+
+epoch 6: batch_loss = 1.9877414778420696e16, time = 52.81167793273926s
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+n_failed = 0, 0, 0, 0,
+
+epoch 7: batch_loss = 1.976940915810613e16, time = 51.37784719467163s
+n_failed = 0, 0, 0, 86,
+n_failed = 400, 400, 400, 400,

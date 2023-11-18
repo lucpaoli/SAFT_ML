@@ -343,7 +343,7 @@ function main()
     @show n_features = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(n_features)
 
-    optim = Flux.setup(Flux.Adam(1e-4), model)
+    optim = Flux.setup(Flux.Adam(5e-4), model)
     #* batch_size is in terms of molecules, each having n_points 
     train_model!(model, mol_dict, optim; epochs=1000, batch_size=16, pretraining=false)
 end
