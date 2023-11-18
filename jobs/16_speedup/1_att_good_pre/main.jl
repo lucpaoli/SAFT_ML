@@ -147,16 +147,19 @@ function SAFT_head(model, X)
     saft_model = make_NN_model(saft_params...)
 
     Tc2 = Tc - ∂²A∂V²(saft_params, Vc, Tc)/∂³A∂V²∂T(saft_params, Vc, Tc)
-    @show Tc, Tc2
 
     T = Tr * Tc2
     # sat_p = saturation_pressure_NN(saft_input, T)
     sat_p2 = -(eos(saft_model, sat_Vv, T) - eos(saft_model, sat_Vl, T)) / (sat_Vv - sat_Vl)
-    @show sat_p, sat_p2
 
     # Vₗ = volume_NN(saft_input, sat_p, T)
-    sat_Vl2 = sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / ∂p∂V(saft_params, sat_Vl, T)
+    num = (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl)
+    denom = ∂p∂V(saft_params, sat_Vl, T)
+    sat_Vl2 = sat_Vl - num / denom
     @show sat_Vl, sat_Vl2
+    @show pressure_NN(saft_params, sat_Vl, T)
+    @show sat_p_Vl, sat_p
+    @show num, denom
 
     ŷ_1 = !isnan(sat_p2) ? sat_p2 : nothing
     ŷ_2 = !isnan(sat_Vl2) ? sat_Vl2 : nothing
@@ -341,8 +344,8 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=8, pretrai
             end
         end
 
-        n_points = length(mol_loader) * batch_size
-        batch_loss /= n_points
+        # n_points = length(mol_loader)
+        batch_loss /= length(mol_loader)
         epoch_duration = time() - epoch_start_time
 
         epoch % 1 == 0 && println("\nepoch $epoch: batch_loss = $batch_loss, time = $(epoch_duration)s")
@@ -388,7 +391,7 @@ function main_pcpsaft()
     @show n_features = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(n_features)
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, mol_dict, optim; epochs=20, batch_size=16, pretraining=true)
+    train_model!(model, mol_dict, optim; epochs=1, batch_size=16, pretraining=true)
 
     return model
 end

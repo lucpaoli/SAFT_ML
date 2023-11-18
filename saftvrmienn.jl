@@ -95,7 +95,7 @@ end
 #! Zygote is not happy with the creation of a closure "model" over X
 function pressure_NN(X::Vector, V, T)
     model = make_NN_model(X...)
-    return ForwardDiff.derivative(V -> eos(model, V, T), V)
+    return -ForwardDiff.derivative(V -> eos(model, V, T), V)
 end
 
 function ∂²A∂V²(X::Vector, V, T)
