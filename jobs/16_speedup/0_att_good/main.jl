@@ -1,5 +1,5 @@
 using Clapeyron
-include("../../../saftvrmienn.jl")
+includet("../../../saftvrmienn.jl")
 # These are functions we're going to overload for SAFTVRMieNN
 import Clapeyron: a_res, saturation_pressure, pressure
 
@@ -66,21 +66,24 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
 
     # if pretraining
     T = Float64
-    # X_data should be a datastructure of (name -> (fp, Mw, [Tr_vec, Vₗ_sat_vec, p_sat_vec]))
+    # X_data should be a datastructure of (name -> (fp, Mw, [Tr], [p_sat, Vl_sat]))
     train_data = Dict{String, Tuple{Vector{T}, T, Vector{T}, Vector{Vector{T}}}}()
 
     for (name, smiles, Mw) in mol_data
         X_vec = Vector{Float64}()
         Y_vec = Vector{Vector{Float64}}()
         fp = make_fingerprint(smiles)
+        saft_model = PPCSAFT([name])
+
+        Tc, pc, Vc = crit_pure(saft_model)
 
         Tr_range = range(0.5, 0.975, n_points)
         for Tr in Tr_range
             T = Tr*Tc
-            (p_sat, Vₗ_sat, Vᵥ_sat) = saturation_pressure(saft_model, T)
+            (p_sat, Vl_sat, Vv_sat) = saturation_pressure(saft_model, T)
 
             push!(X_vec, Tr)
-            push!(Y_vec, [p_sat, Vₗ_sat])
+            push!(Y_vec, [p_sat, Vl_sat])
         end
         train_data[name] = (fp, Mw, X_vec, Y_vec)
     end
@@ -88,22 +91,19 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
     #* Remove columns from fingerprints
     #! How the f*ck do I mask out columns for this new datastructure :(
     # Identify zero & one columns
-    # for num = [0, 1]
-    #     num_cols = length(X_data[1][1])
-    #     zero_cols = trues(num_cols)
-    #     for (vec, _...) in X_data
-    #         zero_cols .&= (vec .== num)
-    #     end
-    #     keep_cols = .!zero_cols # Create a Mask
-    #     X_data = [(vec[keep_cols], vals...) for (vec, vals...) in X_data] # Apply Mask
-    # end
+    for num in [0, 1]
+        first_fp = first(collect(values(train_data)))[1]
+        zero_cols = (first_fp .== num)
 
-    # train_data, test_data = splitobs((X_data, Y_data), at=1.0, shuffle=false)
+        for (name, (fp, _...)) in train_data
+            zero_cols .&= (fp .== num)
+        end
 
-    # train_loader = DataLoader(train_data, batchsize=batch_size, shuffle=false)
-    # test_loader = DataLoader(test_data, batchsize=batch_size, shuffle=false)
-    # println("n_batches = $(length(train_loader)), batch_size = $batch_size")
-    # return train_loader, test_loader
+        keep_cols = .!zero_cols # Create a Mask
+
+        # Apply the Mask to the fingerprints in the data structure
+        train_data = Dict(name => (fp[keep_cols], Mw, Tr, psat_Vlsat) for (name, (fp, Mw, Tr, psat_Vlsat)) in train_data)
+    end
     return train_data
 end
 
@@ -127,18 +127,23 @@ function calculate_saft_parameters(model, fp, Mw)
 end
 
 function SAFT_head(model, X)
-    (fp, Mw, name, Tr, Tc, Vc, sat_p, sat_Vl, sat_Vv) = X
+    # (fp, Mw, Tr, Tc, Vc, sat_p, sat_Vl, sat_Vv) = X
+    (fp, Mw, Tr, Tc, Vc, sat_p, sat_Vl, sat_Vv) = X
+    # (fp, Mw, mol, Tr, Tc, p_sat, Vₗ, Vᵥ)
 
-    saft_input = calculate_saft_parameters(model, fp, Mw)
+    saft_params = calculate_saft_parameters(model, fp, Mw)
+    saft_model = make_NN_model(saft_params...)
     # Tc = critical_temperature_NN(saft_input)
-    Tc2 = Tc - ∂²A∂V²(X, Vc, Tc)/∂³A∂V²∂T(X, Vc, Tc)
+    # todo make ∂²A∂V² use model
+    Tc2 = Tc - ∂²A∂V²(saft_params, Vc, Tc)/∂³A∂V²∂T(saft_params, Vc, Tc)
 
     T = Tr * Tc2
     # sat_p = saturation_pressure_NN(saft_input, T)
-    sat_p2 = -(eos(NN_model, sat_Vv, T) - eos(NN_model, sat_Vl, T)) / (sat_Vv - sat_Vl)
+    sat_p2 = -(eos(saft_model, sat_Vv, T) - eos(saft_model, sat_Vl, T)) / (sat_Vv - sat_Vl)
 
     # Vₗ = volume_NN(saft_input, sat_p, T)
-    sat_Vl2 = sat_Vl - (pressure_NN(X, sat_Vl, T) - sat_p) / ∂p∂V(X, sat_Vl, T)
+    # todo make pressure_NN use model
+    sat_Vl2 = sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p) / ∂p∂V(saft_params, sat_Vl, T)
 
     ŷ_1 = !isnan(sat_Vl2) ? sat_Vl2 : nothing
     ŷ_2 = !isnan(sat_p2) ? sat_p2 : nothing
@@ -154,8 +159,6 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
         if use_saft_head
             ŷ_vec = SAFT_head(model, X)
         else
-            # ŷ_vec = model(X[1])
-            # (fp, Mw), [m, sigma, λ_r, epsilon]
             fp, Tr, Mw, name = X
             ŷ = calculate_saft_parameters(model, fp, Mw)
             ŷ_vec = [ŷ[2], ŷ[3], ŷ[5] + 4*randn(), ŷ[6]]
@@ -212,38 +215,41 @@ function create_Y_data(mol_dict, batch_mols)
     Y_data = Vector{Vector{Float64}}()
     for mol in batch_mols
         Y_vec = last(mol_dict[mol])
-        push!(Y_data, Y_vec)
+        append!(Y_data, Y_vec)
     end
     return Y_data
 end
 
-function create_X_data(mol_dict, batch_mols)
+function create_X_data(model, mol_dict, batch_mols)
     X_temp::Vector{Any} = zeros(length(batch_mols))  # Initialize an empty vector for X data
 
     # todo: make this multithreaded
     #? Can use @Threads.threads, not being differentiated
-    @Threads.threads for (i, mol) in enumerate(batch_mols)
+    # @Threads.threads for (i, mol) in enumerate(batch_mols)
+    for (i, mol) in enumerate(batch_mols)
         mol_data = Vector{Tuple}()
         # Extract data for the molecule
         fp, Mw, X_vec, _ = mol_dict[mol]
 
         saft_params = calculate_saft_parameters(model, fp, Mw)
-        model = make_model(saft_params...)
+        saft_model = make_model(saft_params...)
 
-        (Tc, pc, Vc) = crit_pure(model)
+        (Tc, pc, Vc) = crit_pure(saft_model)
+
+        x0 = nothing
 
         # Iterate through Tr in X_vec
-        for (i, Tr) in enumerate(X_vec)
+        for Tr in X_vec
             T = Tc * Tr
-            if i == 1
-                (p_sat, Vₗ, Vᵥ) = saturation_pressure(model, T)
+            if isnothing(x0)
+                (p_sat, Vₗ, Vᵥ) = saturation_pressure(saft_model, T)
             else
-                (p_sat, Vₗ, Vᵥ) = saturation_pressure(model, T, x0)
+                (p_sat, Vₗ, Vᵥ) = saturation_pressure(saft_model, T, x0)
             end
 
             x0 = [Vₗ, Vᵥ]
 
-            push!(mol_data, (fp, Mw, mol, Tr, Tc, p_sat, Vₗ, Vᵥ))
+            push!(mol_data, (fp, Mw, Tr, Tc, Vc, p_sat, Vₗ, Vᵥ))
         end
         # I think this is automagically safe under @Threads.threads
         X_temp[i] = mol_data
@@ -265,53 +271,19 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretr
     flush(stdout)
 
     training_molecules = collect(keys(mol_dict))
-    mol_loader = DataLoader(training_molecules, batch_size = batch_size)
+    mol_loader = DataLoader(training_molecules; batchsize = batch_size)
 
+    # how many points?
     for epoch in 1:epochs
+        n_points = 0
         epoch_start_time = time() # Start timing the epoch
         batch_loss = 0.0
 
-        # Objective: process mol_data into X_train, Y_train
-
-        # We have a dictionary
-        # where
-        #       train_data = Dict(name => (fp, Mw, X_vec, Y_vec))
-        #       X_vec      = [Tr, ]
-        #       Y_vec      = [[sat_p, Vl], ]
-        # and we return
-        #       X_iter    = [(fp, Mw, name, Tr, Tc_pred, sat_p_pred, Vl_pred, Vv_pred), ]
-        #       Y_iter    = [(sat_p_target, Vl_target)]
-        #! Y_train can be evaluated all at once, as this won't change during training
-        #! X_train needs to be evaluated after every gradient update, as the "pred" values
-        #! depend on the current state of the model
-
-        # We begin by splitting our molecules into batches,
-        # Within the training data creation loop:
-            # First, we evaluate SAFT parameters with
-            #       saft_params = calculate_saft_parameters(model, fp, Mw)
-            # Then create the model with 
-            #       model = make_model(saft_params...)
-            # Then evaluate critical temperature using
-            #       (Tc, pc, Vc) = crit_pure(model)
-            # Then iterate through Tr in X_vec, evaluating sat_p from
-            #       (p_sat, Vₗ, Vᵥ) = saturation_pressure(model, T, x0)
-            # where x0 is the result from the previous step and T is given by
-            #       T = Tc * Tr
-
-        # The problem with this is how to split datapoints into batches such that
-        # marching up the saturation envelope is well defined
-        # b/c this needs to be re-evaluated after every gradient update
-
-        #! Within the training loop, we evaluate Tc, sat_p, Vl using:
-        #       sat_p = -(eos(NN_model, Vᵥ, T) - eos(NN_model, Vₗ, T)) / (Vᵥ - Vₗ)
-        #       Tc    = Tc - ∂²A∂V²(X, Vc, Tc)/∂³A∂V²∂T(X, Vc, Tc)
-        #       Vl    = vL - (pressure_NN(X, vL, T) - p) / ∂p∂V
-        #! Where all of these functions are defined as they are in ChainRulesCore.rrule
-
         for batch_mols in mol_loader
             # Create X_data, Y_data from batch_mol
-            Y_batch = create_Y_data(mol_dict, batch_mols)
-            X_batch = create_X_data(mol_dict, batch_mols)
+            Y_batch = create_Y_data(mol_dict, batch_mols) #! This can be created outside of epoch loop
+            X_batch = create_X_data(model, mol_dict, batch_mols)
+            n_points += length(Y_batch) # There's a better way to get this
 
             loss, grads = Flux.withgradient(model) do m
                 loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
@@ -321,8 +293,8 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretr
             @assert !isnan(loss)
             @assert !iszero(loss)
 
-            for mol in training_molecules
-                fp, Mw, _... = mol_dict[mol]
+            for name in training_molecules
+                fp, Mw, _... = mol_dict[name]
                 Mw, m, σ, λ_a, λ_r, ϵ = calculate_saft_parameters(model, fp, Mw)
 
                 open(log_filename, "a") do io
@@ -333,7 +305,7 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretr
         end
 
 
-        batch_loss /= length(train_loader)
+        batch_loss /= n_points
         epoch_duration = time() - epoch_start_time
 
         epoch % 1 == 0 && println("\nepoch $epoch: batch_loss = $batch_loss, time = $(epoch_duration)s")
@@ -362,14 +334,21 @@ function create_ff_model_with_attention(nfeatures)
     )
 end
 
-function main(; epochs=5000)
+function main()
     Random.seed!(1234)
     # model = main_pcpsaft()
     mol_dict = create_data(n_points = 50)
     # train_data = Dict{String, Tuple{Vector{T}, T, Vector{T}, Vector{Vector{T}}}}()
-    @show n_features = length()
+    # @show mol_dict
+    # @show values(mol_dict)
+    # @show collect(values(mol_dict))
+    # @show first(collect(values(mol_dict)))
+    # @show length(first(collect(values(mol_dict))))
+
+    @show n_features = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(n_features)
 
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, mol_dict, optim; epochs=1000, batch_size=400, pretraining=false)
+    #* batch_size is in terms of molecules
+    train_model!(model, mol_dict, optim; epochs=1000, batch_size=8, pretraining=false)
 end

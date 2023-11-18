@@ -92,20 +92,21 @@ end
 # Newton step is defined by
 # Tc2 = Tc - (∂²A∂V²(X, vc, Tc) - ∂²A∂V²(X, vc, T)) / ∂²A∂V²(X, vc, Tc)
 
-function pressure_NN(X, V, T)
+#! Zygote is not happy with the creation of a closure "model" over X
+function pressure_NN(X::Vector, V, T)
     model = make_NN_model(X...)
     return ForwardDiff.derivative(V -> eos(model, V, T), V)
 end
 
-function ∂²A∂V²(X, V, T)
+function ∂²A∂V²(X::Vector, V, T)
     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
 end
 
-function ∂³A∂V²∂T(X, V, T)
+function ∂³A∂V²∂T(X::Vector, V, T)
     return ForwardDiff.derivative(T -> ∂²A∂V²(X, V, T), T)
 end
 
-function ∂p∂V(X, V, T)
+function ∂p∂V(X::Vector, V, T)
     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
 end
 
