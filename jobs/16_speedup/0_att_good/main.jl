@@ -17,7 +17,7 @@ using JLD2
 
 # Multithreaded loss
 using Zygote: bufferfrom
-using Base.Threads: @spawn
+using Base.Threads: @spawn, @threads
 using Plots
 using Random
 
@@ -60,8 +60,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
     #* Only linear alkanes
     # filter!(row -> contains_only_c(row.isomeric_SMILES), df)
 
-    @show df.species
-    mol_data = zip(df.species, df.isomeric_SMILES, df.Mw)
+    mol_data = zip(df.common_name, df.isomeric_SMILES, df.Mw, df.expt_T_min_liberal, df.expt_T_max_liberal)
     println("Generating data for $(length(mol_data)) molecules...")
 
     # if pretraining
@@ -69,7 +68,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
     # X_data should be a datastructure of (name -> (fp, Mw, [Tr], [p_sat, Vl_sat]))
     train_data = Dict{String, Tuple{Vector{T}, T, Vector{T}, Vector{Vector{T}}}}()
 
-    for (name, smiles, Mw) in mol_data
+    for (name, smiles, Mw, T_exp_min, T_exp_max) in mol_data
         X_vec = Vector{Float64}()
         Y_vec = Vector{Vector{Float64}}()
         fp = make_fingerprint(smiles)
@@ -77,9 +76,13 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
 
         Tc, pc, Vc = crit_pure(saft_model)
 
-        Tr_range = range(0.5, 0.975, n_points)
-        for Tr in Tr_range
-            T = Tr*Tc
+        T_min = T_exp_min
+        T_max = min(T_exp_max, 0.975 * Tc)
+        @assert T_min < T_max
+        # Tr_range = range(0.5, 0.975, n_points)
+        # for Tr in Tr_range
+        for T in range(T_min, T_max, n_points)
+            Tr = T / Tc
             (p_sat, Vl_sat, Vv_sat) = saturation_pressure(saft_model, T)
 
             push!(X_vec, Tr)
@@ -89,7 +92,6 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
     end
 
     #* Remove columns from fingerprints
-    #! How the f*ck do I mask out columns for this new datastructure :(
     # Identify zero & one columns
     for num in [0, 1]
         first_fp = first(collect(values(train_data)))[1]
@@ -221,12 +223,12 @@ function create_Y_data(mol_dict, batch_mols)
 end
 
 function create_X_data(model, mol_dict, batch_mols)
-    X_temp::Vector{Any} = zeros(length(batch_mols))  # Initialize an empty vector for X data
+    # X_temp::Vector{Any} = zeros(length(batch_mols))  # Initialize an empty vector for X data
+    X_temp = Vector{Vector{Tuple}}(undef, length(batch_mols))
 
-    # todo: make this multithreaded
-    #? Can use @Threads.threads, not being differentiated
-    # @Threads.threads for (i, mol) in enumerate(batch_mols)
-    for (i, mol) in enumerate(batch_mols)
+    @Threads.threads for i in 1:length(batch_mols)
+    # for i in 1:length(batch_mols)
+        mol = batch_mols[i]
         mol_data = Vector{Tuple}()
         # Extract data for the molecule
         fp, Mw, X_vec, _ = mol_dict[mol]
@@ -336,19 +338,12 @@ end
 
 function main()
     Random.seed!(1234)
-    # model = main_pcpsaft()
     mol_dict = create_data(n_points = 50)
-    # train_data = Dict{String, Tuple{Vector{T}, T, Vector{T}, Vector{Vector{T}}}}()
-    # @show mol_dict
-    # @show values(mol_dict)
-    # @show collect(values(mol_dict))
-    # @show first(collect(values(mol_dict)))
-    # @show length(first(collect(values(mol_dict))))
 
     @show n_features = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(n_features)
 
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    #* batch_size is in terms of molecules
-    train_model!(model, mol_dict, optim; epochs=1000, batch_size=8, pretraining=false)
+    #* batch_size is in terms of molecules, each having n_points 
+    train_model!(model, mol_dict, optim; epochs=1000, batch_size=16, pretraining=false)
 end
