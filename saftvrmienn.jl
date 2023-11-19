@@ -62,12 +62,12 @@ function make_model(Mw, m, σ, λ_a, λ_r, ϵ)
 end
 
 #! Not differentiable! 
-function critical_temperature_NN(X)
-    saft_model = make_model(X...)
-    Tc, pc, Vc = crit_pure(saft_model)
+# function critical_temperature_NN(X)
+#     saft_model = make_model(X...)
+#     Tc, pc, Vc = crit_pure(saft_model)
 
-    return Tc
-end
+#     return Tc
+# end
 
 # Critical point solver obj. func defined by:
     # function f!(F,x)
@@ -109,84 +109,84 @@ end
 #     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
 # end
 
-function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
-    saft_model = make_model(X...)
-    Tc, pc, Vc = crit_pure(saft_model)
+# function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
+#     saft_model = make_model(X...)
+#     Tc, pc, Vc = crit_pure(saft_model)
 
-    function f_pullback(Δy)
-        #* Newton step from perfect initialisation
-        # todo calculate both these derivatives in one pass
-        function f(X)
-            Tc2 = Tc - ∂²A∂V²(X, Vc, Tc)/∂³A∂V²∂T(X, Vc, Tc)
-            return Tc2
-        end
+#     function f_pullback(Δy)
+#         #* Newton step from perfect initialisation
+#         # todo calculate both these derivatives in one pass
+#         function f(X)
+#             Tc2 = Tc - ∂²A∂V²(X, Vc, Tc)/∂³A∂V²∂T(X, Vc, Tc)
+#             return Tc2
+#         end
 
-        ∂X = @thunk(ForwardDiff.gradient(X -> f(X), X) .* Δy)
-        return (NoTangent(), ∂X)
-    end
+#         ∂X = @thunk(ForwardDiff.gradient(X -> f(X), X) .* Δy)
+#         return (NoTangent(), ∂X)
+#     end
 
-    return Tc, f_pullback
-end
+#     return Tc, f_pullback
+# end
 
-function saturation_pressure_NN(X, T)
-    model = make_model(X...)
-    p, Vₗ, Vᵥ = saturation_pressure(model, T)
+# function saturation_pressure_NN(X, T)
+#     model = make_model(X...)
+#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
 
-    return p
-end
+#     return p
+# end
 
-function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
-    model = make_model(X...)
-    p, Vₗ, Vᵥ = saturation_pressure(model, T)
+# function ChainRulesCore.rrule(::typeof(saturation_pressure_NN), X, T)
+#     model = make_model(X...)
+#     p, Vₗ, Vᵥ = saturation_pressure(model, T)
 
-    function f_pullback(Δy)
-        #* Newton step from perfect initialisation
-        #! How do I define the gradients wrt Vₗ ?
-        function f(X, T)
-            NN_model = make_NN_model(X...)
-            p2 = -(eos(NN_model, Vᵥ, T) - eos(NN_model, Vₗ, T)) / (Vᵥ - Vₗ)
-            return p2
-        end
+#     function f_pullback(Δy)
+#         #* Newton step from perfect initialisation
+#         #! How do I define the gradients wrt Vₗ ?
+#         function f(X, T)
+#             NN_model = make_NN_model(X...)
+#             p2 = -(eos(NN_model, Vᵥ, T) - eos(NN_model, Vₗ, T)) / (Vᵥ - Vₗ)
+#             return p2
+#         end
 
-        ∂X = @thunk(ForwardDiff.gradient(X -> f(X, T), X) .* Δy)
-        ∂T = @thunk(ForwardDiff.derivative(T -> f(X, T), T) .* Δy)
-        return (NoTangent(), ∂X, ∂T)
-    end
+#         ∂X = @thunk(ForwardDiff.gradient(X -> f(X, T), X) .* Δy)
+#         ∂T = @thunk(ForwardDiff.derivative(T -> f(X, T), T) .* Δy)
+#         return (NoTangent(), ∂X, ∂T)
+#     end
 
-    return p, f_pullback
-end
+#     return p, f_pullback
+# end
 
 
-function volume_NN(X, p, T)#, Vₗ = nothing)
-    model = make_model(X...)
-    V = volume(model, p, T; phase=:liquid)
+# function volume_NN(X, p, T)#, Vₗ = nothing)
+#     model = make_model(X...)
+#     V = volume(model, p, T; phase=:liquid)
 
-    return V
-end
+#     return V
+# end
 
-function ChainRulesCore.rrule(::typeof(volume_NN), X, p, T)
-    # model = make_model(X...)
-    # vL = volume(model, p, T, [1.0]; phase=:liquid)
-    vL = volume_NN(X, p, T) #* Is this cached?
+# function ChainRulesCore.rrule(::typeof(volume_NN), X, p, T)
+#     # model = make_model(X...)
+#     # vL = volume(model, p, T, [1.0]; phase=:liquid)
+#     vL = volume_NN(X, p, T) #* Is this cached?
 
-    function f_pullback(Δy)
-        #* Newton step from perfect initialisation
-        function f_V(X, p, T)
-            # model = make_NN_model(X...)
-            ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(X, V, T), vL)
-            v2 = vL - (pressure_NN(X, vL, T) - p) / ∂p∂V
-            return v2
-        end
+#     function f_pullback(Δy)
+#         #* Newton step from perfect initialisation
+#         function f_V(X, p, T)
+#             # model = make_NN_model(X...)
+#             ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(X, V, T), vL)
+#             v2 = vL - (pressure_NN(X, vL, T) - p) / ∂p∂V
+#             return v2
+#         end
 
-        # ∂X = @thunk(ForwardDiff.gradient(X -> f_V(X, p, T), X) .* Δy)
-        ∂X = ForwardDiff.gradient(X -> f_V(X, p, T), X) .* Δy
-        ∂p = @thunk(ForwardDiff.derivative(p -> f_V(X, p, T), p) .* Δy)
-        ∂T = @thunk(ForwardDiff.derivative(T -> f_V(X, p, T), T) .* Δy)
-        return (NoTangent(), ∂X, ∂p, ∂T)
-    end
+#         # ∂X = @thunk(ForwardDiff.gradient(X -> f_V(X, p, T), X) .* Δy)
+#         ∂X = ForwardDiff.gradient(X -> f_V(X, p, T), X) .* Δy
+#         ∂p = @thunk(ForwardDiff.derivative(p -> f_V(X, p, T), p) .* Δy)
+#         ∂T = @thunk(ForwardDiff.derivative(T -> f_V(X, p, T), T) .* Δy)
+#         return (NoTangent(), ∂X, ∂p, ∂T)
+#     end
 
-    return vL, f_pullback
-end
+#     return vL, f_pullback
+# end
 
 # diagvalues(x<:Rea) = x
 function diagvalues(x::T) where {T<:Real}
