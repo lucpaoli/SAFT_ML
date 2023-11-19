@@ -24,6 +24,7 @@ end
     epsilon_assoc::Vector{T7} = Float64[]
     bondvol::Vector{T8} = Float64[]
 end
+# Base.eltype(::Type{SAFTVRMieNNParams{T1,T2,T3,T4,T5,T6,T7,T8}}) where {T1,T2,T3,T4,T5,T6,T7,T8} = T2
 
 @kwdef struct SAFTVRMieNN <: SAFTModel
     params::SAFTVRMieNNParams
@@ -92,9 +93,8 @@ end
 # Newton step is defined by
 # Tc2 = Tc - (∂²A∂V²(X, vc, Tc) - ∂²A∂V²(X, vc, T)) / ∂²A∂V²(X, vc, Tc)
 
-function pressure_NN(X::Vector, V, T)
+function pressure_NN(X, V, T)
     model = make_NN_model(X...)
-    # return -Zygote.gradient(V -> eos(model, V, T), V)[1]
     return -ForwardDiff.derivative(V -> eos(model, V, T), V)
 end
 
@@ -106,9 +106,9 @@ function ∂³A∂V²∂T(X::Vector, V, T)
     return ForwardDiff.derivative(T -> ∂²A∂V²(X, V, T), T)
 end
 
-function ∂p∂V(X::Vector, V, T)
-    return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
-end
+# function ∂p∂V(X::Vector, V, T)
+#     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
+# end
 
 function ChainRulesCore.rrule(::typeof(critical_temperature_NN), X)
     saft_model = make_model(X...)
