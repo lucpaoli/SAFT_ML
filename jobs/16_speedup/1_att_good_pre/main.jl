@@ -1,5 +1,5 @@
 using Clapeyron
-include("../../../saftvrmienn.jl")
+includet("../../../saftvrmienn.jl")
 # These are functions we're going to overload for SAFTVRMieNN
 import Clapeyron: a_res, saturation_pressure, pressure
 
@@ -166,6 +166,9 @@ function ChainRulesCore.rrule(::typeof(f_sat_Vl), saft_params, sat_Vl, T, sat_p_
     y = f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
 
     function f_pullback(Δy)
+        # f1 = X -> f_sat_Vl(X, sat_Vl, T, sat_p_Vl)
+        # cfg = ForwardDiff.GradientConfig(f1, saft_params)
+        # ∂X1 = @thunk(ForwardDiff.gradient(f1, saft_params, cfg, Val{false}()) .* Δy)
         ∂X1 = @thunk(ForwardDiff.gradient(X -> f_sat_Vl(X, sat_Vl, T, sat_p_Vl), saft_params) .* Δy)
         ∂X2 = @thunk(ForwardDiff.derivative(X -> f_sat_Vl(saft_params, X, T, sat_p_Vl), sat_Vl) .* Δy)
         ∂X3 = @thunk(ForwardDiff.derivative(X -> f_sat_Vl(saft_params, sat_Vl, X, sat_p_Vl), T) .* Δy)
@@ -185,7 +188,9 @@ function ChainRulesCore.rrule(::typeof(f_Tc), saft_params, Vc, Tc)
     y = f_Tc(saft_params, Vc, Tc)
 
     function f_pullback(Δy)
-        ∂X1 = @thunk(ForwardDiff.gradient(X -> f_Tc(X, Vc, Tc), saft_params) .* Δy)
+        f1 = X -> f_Tc(X, Vc, Tc)
+        cfg = ForwardDiff.GradientConfig(f1, saft_params)
+        ∂X1 = @thunk(ForwardDiff.gradient(f1, saft_params, cfg, Val{false}()) .* Δy)
         ∂X2 = @thunk(ForwardDiff.derivative(X -> f_Tc(saft_params, X, Tc), Vc) .* Δy)
         ∂X3 = @thunk(ForwardDiff.derivative(X -> f_Tc(saft_params, Vc, X), Tc) .* Δy)
 
@@ -425,6 +430,7 @@ function create_ff_model_with_attention(nfeatures)
 end
 
 function create_ff_model(nfeatures)
+    nout = 4
     return Chain(
         Dense(nfeatures, nout, x -> x),
     )
@@ -438,7 +444,7 @@ function main()
     mol_dict = create_data(n_points = 50; pretraining=false)
 
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, mol_dict, optim; epochs=1000, batch_size=16, pretraining=false)
+    train_model!(model, mol_dict, optim; epochs=2, batch_size=16, pretraining=false)
 end
 
 function main_pcpsaft()
@@ -448,7 +454,7 @@ function main_pcpsaft()
     model = create_ff_model_with_attention(nfeatures)
     # model = create_ff_model(nfeatures)
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, mol_dict, optim; epochs=100, batch_size=16, pretraining=true)
+    train_model!(model, mol_dict, optim; epochs=2, batch_size=16, pretraining=true)
 
     return model
 end
