@@ -12,7 +12,6 @@ function bmcs_hs(ζ0, ζ1, ζ2, ζ3)
     return res
 end
 
-
 # This could likely be done instead by constructing SingleParam{T1} etc
 @kwdef struct SAFTVRMieNNParams{T1<:Real,T2<:Real,T3<:Real,T4<:Real,T5<:Real,T6<:Real,T7<:Real,T8<:Real}
     Mw::Vector{T1}
@@ -41,8 +40,8 @@ function make_NN_model(Mw, m, σ, λ_a, λ_r, ϵ)
             lambda_a=[λ_a],
             lambda_r=[λ_r],
             epsilon=[ϵ],
-            epsilon_assoc=Float32[],
-            bondvol=Float32[],
+            epsilon_assoc=Float64[],
+            bondvol=Float64[],
         )
     )
     return model
@@ -98,13 +97,13 @@ function pressure_NN(X, V, T)
     return -ForwardDiff.derivative(V -> eos(model, V, T), V)
 end
 
-function ∂²A∂V²(X::Vector, V, T)
-    return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
-end
+# function ∂²A∂V²(X::Vector, V, T)
+#     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
+# end
 
-function ∂³A∂V²∂T(X::Vector, V, T)
-    return ForwardDiff.derivative(T -> ∂²A∂V²(X, V, T), T)
-end
+# function ∂³A∂V²∂T(X::Vector, V, T)
+#     return ForwardDiff.derivative(T -> ∂²A∂V²(X, V, T), T)
+# end
 
 # function ∂p∂V(X::Vector, V, T)
 #     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
