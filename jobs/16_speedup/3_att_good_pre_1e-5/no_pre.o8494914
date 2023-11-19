@@ -1,0 +1,1692 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 850
+training on 4 threads
+
+epoch 1: batch_loss = 0.13835045116243364, time = 85.55519604682922s
+
+epoch 2: batch_loss = 0.09666146326541247, time = 0.11696910858154297s
+
+epoch 3: batch_loss = 0.08863437545220856, time = 0.057376861572265625s
+
+epoch 4: batch_loss = 0.08427726252235279, time = 0.0679929256439209s
+
+epoch 5: batch_loss = 0.0809183572444655, time = 0.06536412239074707s
+
+epoch 6: batch_loss = 0.07904074498055594, time = 0.12460494041442871s
+
+epoch 7: batch_loss = 0.07755143444005044, time = 0.05705690383911133s
+
+epoch 8: batch_loss = 0.07581095169145677, time = 0.05867409706115723s
+
+epoch 9: batch_loss = 0.0744124597788016, time = 0.1096200942993164s
+
+epoch 10: batch_loss = 0.07310580585874989, time = 0.056459903717041016s
+
+epoch 11: batch_loss = 0.07198451910832944, time = 0.05681610107421875s
+
+epoch 12: batch_loss = 0.0708873939147276, time = 0.08076715469360352s
+
+epoch 13: batch_loss = 0.06982355910158963, time = 0.056131839752197266s
+
+epoch 14: batch_loss = 0.06877832424820025, time = 0.05559206008911133s
+
+epoch 15: batch_loss = 0.06774997428843674, time = 0.06661605834960938s
+
+epoch 16: batch_loss = 0.06671122725299174, time = 0.09454202651977539s
+
+epoch 17: batch_loss = 0.06565368333237878, time = 0.0550379753112793s
+
+epoch 18: batch_loss = 0.06458075939011085, time = 0.05604386329650879s
+
+epoch 19: batch_loss = 0.06348440029666959, time = 0.0812380313873291s
+
+epoch 20: batch_loss = 0.06235489804035479, time = 0.06431889533996582s
+
+epoch 21: batch_loss = 0.06118657258787136, time = 0.06188201904296875s
+
+epoch 22: batch_loss = 0.05997113065339952, time = 0.06208610534667969s
+
+epoch 23: batch_loss = 0.05870168424992922, time = 0.08809518814086914s
+
+epoch 24: batch_loss = 0.05737544871835869, time = 0.06095004081726074s
+
+epoch 25: batch_loss = 0.0559841271267969, time = 0.07034492492675781s
+Generating data for 80 molecules...
+training on 4 threads
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 1: batch_loss = 2.349366772636169e12, time = 142.02416110038757s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 2: batch_loss = 2.0729293230492488e12, time = 16.58085608482361s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 3: batch_loss = 1.8841461131142988e12, time = 16.883813858032227s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 4: batch_loss = 1.7232470143894187e12, time = 15.946738004684448s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 5: batch_loss = 1.5822934484409312e12, time = 15.805804967880249s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 6: batch_loss = 1.4578170066859878e12, time = 15.68547010421753s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 7: batch_loss = 1.347481493612275e12, time = 16.185531854629517s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 8: batch_loss = 1.2494330336687644e12, time = 16.02301812171936s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 9: batch_loss = 1.1620587511878696e12, time = 18.450970888137817s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 10: batch_loss = 1.0839924013607789e12, time = 17.029124975204468s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 11: batch_loss = 1.0140227784631703e12, time = 18.97416090965271s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 12: batch_loss = 9.510871139385559e11, time = 16.36717414855957s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 13: batch_loss = 8.942857643870486e11, time = 15.969073057174683s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 14: batch_loss = 8.42848708096656e11, time = 18.412333011627197s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 15: batch_loss = 7.961002788229514e11, time = 17.026342153549194s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 16: batch_loss = 7.674345850054353e11, time = 25.15492010116577s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 17: batch_loss = 7.194440232921927e11, time = 16.27016592025757s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 18: batch_loss = 6.862620465149386e11, time = 18.054428100585938s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 19: batch_loss = 6.545344238282174e11, time = 15.61923599243164s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 20: batch_loss = 6.245485365039457e11, time = 16.30568289756775s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 21: batch_loss = 5.963876344014276e11, time = 20.53317904472351s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 22: batch_loss = 5.700330014158795e11, time = 19.004337072372437s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 23: batch_loss = 5.4540518024943976e11, time = 17.833275079727173s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 24: batch_loss = 5.223985589228353e11, time = 19.280579090118408s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 25: batch_loss = 5.0089219462136346e11, time = 20.35831880569458s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 26: batch_loss = 4.815362889982658e11, time = 22.207429885864258s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 27: batch_loss = 4.6432408731311804e11, time = 24.23560094833374s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 28: batch_loss = 4.479172186396865e11, time = 22.852626085281372s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 29: batch_loss = 4.3191320466950085e11, time = 22.76803183555603s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 30: batch_loss = 4.1650864909848987e11, time = 23.25486993789673s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 31: batch_loss = 4.017933467136895e11, time = 23.975188970565796s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 32: batch_loss = 3.8779390733294055e11, time = 23.34917688369751s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 33: batch_loss = 3.745041963479306e11, time = 25.375534057617188s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 34: batch_loss = 3.619035389089955e11, time = 25.477323055267334s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 35: batch_loss = 3.499558440445918e11, time = 25.98390507698059s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 36: batch_loss = 3.3862308587992194e11, time = 26.712023973464966s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 37: batch_loss = 3.309365616276449e11, time = 26.749080896377563s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 38: batch_loss = 3.1893589702138666e11, time = 28.587270975112915s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 39: batch_loss = 3.099186501539261e11, time = 30.837114095687866s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 40: batch_loss = 3.010245935217992e11, time = 31.46824884414673s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 41: batch_loss = 2.9236573405848254e11, time = 31.443881034851074s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 42: batch_loss = 2.840030238603148e11, time = 31.425682067871094s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 43: batch_loss = 2.7596227447314734e11, time = 29.651304960250854s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 44: batch_loss = 2.669768834185607e11, time = 36.72483205795288s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 45: batch_loss = 2.554828084711587e11, time = 33.768887996673584s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 46: batch_loss = 2.4610661470779834e11, time = 35.911190032958984s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 47: batch_loss = 2.3397436129982065e11, time = 34.61358904838562s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 48: batch_loss = 2.240634383167011e11, time = 35.804980993270874s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 49: batch_loss = 2.144291012994975e11, time = 37.45690393447876s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 50: batch_loss = 2.054639595587165e11, time = 41.213884115219116s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 51: batch_loss = 1.978058432332283e11, time = 45.57509994506836s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 52: batch_loss = 1.903556033639341e11, time = 49.80887699127197s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 53: batch_loss = 1.831286574135876e11, time = 50.52682304382324s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 54: batch_loss = 1.7622914988452313e11, time = 42.25186085700989s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 55: batch_loss = 1.696992252944468e11, time = 44.896496057510376s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 56: batch_loss = 1.651145028988178e11, time = 46.7787868976593s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 57: batch_loss = 1.5851738467190164e11, time = 50.381633043289185s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 58: batch_loss = 1.534796651985911e11, time = 46.38379216194153s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 59: batch_loss = 1.485577890041963e11, time = 40.841187953948975s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 60: batch_loss = 1.444501580262436e11, time = 51.65610098838806s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 61: batch_loss = 1.398917401843144e11, time = 46.412418842315674s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 62: batch_loss = 1.3590253721243149e11, time = 40.090296030044556s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 63: batch_loss = 1.3196020418387126e11, time = 41.520164012908936s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 64: batch_loss = 1.2812849050420728e11, time = 50.253255128860474s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 65: batch_loss = 1.2485186819591374e11, time = 54.84339094161987s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 66: batch_loss = 1.2137266847552365e11, time = 54.64173698425293s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 67: batch_loss = 1.1825541607912659e11, time = 53.810603857040405s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 68: batch_loss = 1.1515852202884895e11, time = 46.48768901824951s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 69: batch_loss = 1.1213604568721237e11, time = 46.50149583816528s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 70: batch_loss = 1.0970252960851683e11, time = 49.90396308898926s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 71: batch_loss = 1.0676399143874269e11, time = 52.46259593963623s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 72: batch_loss = 1.042617206903982e11, time = 67.46402597427368s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 73: batch_loss = 1.0176582194209758e11, time = 55.974103927612305s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 74: batch_loss = 9.931745846993594e10, time = 53.599863052368164s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 75: batch_loss = 9.749934869191743e10, time = 54.67236304283142s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 76: batch_loss = 9.480924099594403e10, time = 53.842329025268555s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 77: batch_loss = 9.20156536357903e10, time = 57.9375638961792s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 78: batch_loss = 8.946975347890796e10, time = 60.90535807609558s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 79: batch_loss = 8.682541276560118e10, time = 61.152780055999756s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 80: batch_loss = 8.465155467944197e10, time = 57.6003360748291s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 81: batch_loss = 8.23437674133724e10, time = 58.142351150512695s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 82: batch_loss = 8.022577342719778e10, time = 56.79641604423523s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 83: batch_loss = 7.82124480519902e10, time = 57.24299216270447s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 84: batch_loss = 7.626938463660709e10, time = 57.371180057525635s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 85: batch_loss = 7.447395572462912e10, time = 52.7389600276947s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 86: batch_loss = 7.274154668112448e10, time = 54.683879137039185s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 87: batch_loss = 7.119747672246188e10, time = 47.71842002868652s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 88: batch_loss = 6.959495397573781e10, time = 57.01828598976135s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 89: batch_loss = 6.815127135646893e10, time = 53.47968006134033s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 90: batch_loss = 6.661598911294281e10, time = 61.442448139190674s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 91: batch_loss = 6.532952455444891e10, time = 59.2276451587677s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 92: batch_loss = 6.398691855935222e10, time = 56.03746700286865s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 93: batch_loss = 6.268935358407208e10, time = 52.90374708175659s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 94: batch_loss = 6.157434935973826e10, time = 57.829801082611084s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 95: batch_loss = 6.0287037157914795e10, time = 61.48374700546265s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 96: batch_loss = 5.929331377884196e10, time = 64.55573511123657s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 97: batch_loss = 5.820947619672247e10, time = 64.89818906784058s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 98: batch_loss = 5.7077349594437035e10, time = 56.98379611968994s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 99: batch_loss = 5.598950726749203e10, time = 55.026978969573975s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 100: batch_loss = 5.499249874901788e10, time = 63.46393013000488s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 101: batch_loss = 5.40343820768941e10, time = 52.89127802848816s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 102: batch_loss = 5.3139037551881584e10, time = 59.59936785697937s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 103: batch_loss = 5.2218649639619354e10, time = 57.892059087753296s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 104: batch_loss = 5.135033023658378e10, time = 65.13100099563599s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 105: batch_loss = 5.047630966063073e10, time = 70.21093797683716s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 106: batch_loss = 4.9635969665430466e10, time = 67.69210004806519s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 107: batch_loss = 4.889715199907347e10, time = 62.685632944107056s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 108: batch_loss = 4.810913674754081e10, time = 61.249561071395874s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 109: batch_loss = 4.7300314246759445e10, time = 63.56932711601257s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 110: batch_loss = 4.6603525169457596e10, time = 62.17382502555847s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 111: batch_loss = 4.586151164003698e10, time = 62.61547899246216s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 112: batch_loss = 4.520573861584757e10, time = 65.41759991645813s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 113: batch_loss = 4.446237691347688e10, time = 66.88262796401978s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 114: batch_loss = 4.382929004846432e10, time = 64.66095995903015s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 115: batch_loss = 4.319212746289533e10, time = 63.963711977005005s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 116: batch_loss = 4.2555544177710434e10, time = 55.43494987487793s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 100, 
+
+epoch 117: batch_loss = 4.174417218396034e10, time = 78.60902285575867s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 100, 
+
+epoch 118: batch_loss = 4.112287612781564e10, time = 59.85027289390564s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+Sat solver failed for squalane = [422.485, 2.6788021326065063, 4.861172199249268, 6.0, 19.837262965738773, 254.1383981704712] at T=48.132642846562284, Tr=0.3298275004597768, Tc=145.93277631327217
+n_failed = 0, 0, 0, 49, 
+
+epoch 119: batch_loss = Inf, time = 97.07469296455383s
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3967667025633645, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.40259902864999964, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4084313547366347, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41426368082326986, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42009600690990495, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42592833299654015, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4317606590831753, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4375929851698104, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4434253112564455, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4492576373430806, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45508996342971575, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46092228951635084, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.466754615602986, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4725869416896212, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47841926777625626, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4842515938628914, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4900839199495265, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49591624603616163, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5017485721227968, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5075808982094319, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.513413224296067, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5192455503827021, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5250778764693372, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5309102025559724, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5367425286426075, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5425748547292426, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5484071808158777, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5542395069025129, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.560071832989148, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5659041590757832, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5717364851624183, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5775688112490533, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5834011373356885, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5892334634223236, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5950657895089587, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6008981155955938, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.606730441682229, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6125627677688642, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6183950938554993, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6242274199421344, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6300597460287695, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6358920721154047, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6417243982020397, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6475567242886748, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6533890503753099, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6592213764619451, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6650537025485803, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6708860286352154, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6767183547218505, Tc=NaN
+Sat solver failed for hexadecane = [226.266, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6825506808084856, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3291618316033004, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.334740762602145, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.34031969360098957, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.34589862459983417, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3514775555986787, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3570564865975233, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.36263541759636786, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.36821434859521246, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.373793279594057, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3793722105929016, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.38495114159174626, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.39053007259059075, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3961090035894354, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4016879345882799, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.40726686558712455, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4128457965859691, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4184247275848137, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42400365858365824, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42958258958250284, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4351615205813474, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.440740451580192, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4463193825790366, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45189831357788113, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45747724457672573, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4630561755755703, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4686351065744149, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4742140375732594, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.479792968572104, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48537189957094856, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49095083056979316, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49652976156863776, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5021086925674824, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5076876235663269, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5132665545651715, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5188454855640161, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5244244165628607, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5300033475617052, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5355822785605497, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5411612095593944, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5467401405582389, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5523190715570835, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5578980025559281, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5634769335547727, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5690558645536172, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5746347955524618, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5802137265513064, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.585792657550151, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5913715885489955, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5969505195478401, Tc=NaN
+Sat solver failed for octacosane = [394.454, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6025294505466847, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.493187471693378, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49371142019167585, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49423536868997364, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4947593171882716, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4952832656865694, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4958072141848672, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.496331162683165, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4968551111814629, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4973790596797607, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49790300817805855, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49842695667635634, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4989509051746542, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4994748536729521, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49999880217124987, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5005227506695477, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5010466991678455, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5015706476661435, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5020945961644412, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.502618544662739, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5031424931610369, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5036664416593347, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5041903901576326, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5047143386559304, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5052382871542282, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.505762235652526, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5062861841508239, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5068101326491218, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5073340811474195, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5078580296457174, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5083819781440153, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.508905926642313, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5094298751406109, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5099538236389087, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5104777721372066, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5110017206355044, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5115256691338023, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5120496176321001, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5125735661303978, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5130975146286958, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5136214631269936, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5141454116252914, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5146693601235892, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5151933086218871, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5157172571201849, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5162412056184827, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5167651541167806, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5172891026150784, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5178130511133763, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5183369996116741, Tc=NaN
+Sat solver failed for 2,2,4,4-tetramethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.518860948109972, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4606348963697804, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4610980671358208, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46156123790186127, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4620244086679017, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4624875794339422, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4629507501999826, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.463413920966023, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4638770917320635, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4643402624981039, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4648034332641443, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4652666040301847, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46572977479622524, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46619294556226565, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4666561163283061, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4671192870943465, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46758245786038694, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4680456286264274, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4685087993924678, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46897197015850833, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46943514092454874, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46989831169058915, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47036148245662956, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47082465322267003, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47128782398871044, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47175099475475085, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4722141655207914, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4726773362868318, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47314050705287225, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47360367781891266, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47406684858495307, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4745300193509935, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47499319011703395, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47545636088307447, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4759195316491149, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4763827024151553, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4768458731811957, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47730904394723617, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4777722147132766, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.478235385479317, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4786985562453575, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4791617270113979, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4796248977774384, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4800880685434788, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4805512393095192, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4810144100755596, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4814775808416001, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48194075160764055, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.482403922373681, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4828670931397214, Tc=NaN
+Sat solver failed for 2,6-dimethyloctane = [142.172, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48333026390576184, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.437391420086518, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44220148879531107, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4470115575041042, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4518216262128973, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4566316949216903, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41177250340377286, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4614417636304834, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4662518323392765, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41349248051241577, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4152124576210587, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4710619010480696, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41693243472970154, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4758719697568626, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41865241183834445, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4203723889469874, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4806820384656557, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42209236605563033, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4854921071744488, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4238123431642732, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4903021758832418, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4255323202729161, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4951122445920349, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42725229738155895, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.499922313300828, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42897227449020187, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4306922515988448, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5047323820096211, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5095424507184141, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43241222870748763, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5143525194272072, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4341322058161306, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5191625881360004, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4358521829247735, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5239726568447934, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4375721600334164, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5287827255535864, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4392921371420593, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5335927942623795, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4410121142507022, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5384028629711726, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4427320913593451, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5432129316799658, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5480230003887587, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44445206846798796, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44617204557663087, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5528330690975518, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5576431378063449, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44789202268527384, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.562453206515138, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44961199979391675, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.567263275223931, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4513319769025596, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5720733439327241, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4530519540112025, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5768834126415172, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45477193111984543, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5816934813503102, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4564919082284883, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5865035500591034, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5913136187678965, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4582118853371312, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5961236874766895, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45993186244577405, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6009337561854825, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4616518395544171, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6057438248942756, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46337181666305993, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6105538936030688, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46509179377170284, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6153639623118619, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4668117708803457, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6201740310206548, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4685317479889886, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6249840997294479, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4702517250976315, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.629794168438241, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6346042371470342, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4719717022062744, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6394143058558271, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4736916793149173, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6442243745646202, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6490344432734133, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47541165642356026, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6538445119822064, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47713163353220317, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.478851610640846, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6586545806909995, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6634646493997925, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48057158774948894, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6682747181085856, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48229156485813185, Tc=NaN
+Sat solver failed for 3,3-diethylpentane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6730847868173786, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4840115419667747, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4857315190754176, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4874514961840605, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4891714732927035, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49089145040134635, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49261142750998926, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4943314046186321, Tc=NaN
+Sat solver failed for 3-methyltridecane = [198.235, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49605138172727503, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3114565141624372, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.324127548563559, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.33679858296468096, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.34946961736580284, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3621406517669247, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3748116861680466, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3874827205691685, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.40015375497029043, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41282478937141226, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4254958237725342, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4381668581736561, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.450837892574778, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46350892697589985, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47617996137702173, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48885099577814367, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5015220301792656, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5141930645803874, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5268640989815093, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5395351333826313, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5522061677837531, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5648772021848749, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5775482365859969, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5902192709871188, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6028903053882407, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6155613397893626, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6282323741904844, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6409034085916063, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6535744429927282, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6662454773938501, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.678916511794972, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.691587546196094, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7042585805972158, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7169296149983376, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7296006493994595, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7422716838005814, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7549427182017033, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7676137526028253, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7802847870039471, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.792955821405069, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.805626855806191, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8182978902073127, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8309689246084346, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8436399590095566, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8563109934106785, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8689820278118003, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8816530622129223, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8943240966140442, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.9069951310151659, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.9196661654162879, Tc=NaN
+Sat solver failed for n-butane = [58.078, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.9323371998174098, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4675002764230623, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4754238915187952, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.483347506614528, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4912711217102608, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4991947368059937, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5071183519017265, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5150419669974593, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5229655820931922, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.530889197188925, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5388128122846578, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5467364273803907, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5546600424761235, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5625836575718562, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5705072726675892, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.578430887763322, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5863545028590548, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5942781179547876, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6022017330505205, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6101253481462533, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6180489632419861, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.625972578337719, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6338961934334518, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6418198085291845, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6497434236249174, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6576670387206502, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.665590653816383, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.673514268912116, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6814378840078488, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6893614991035816, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6972851141993145, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7052087292950473, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7131323443907801, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7210559594865129, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7289795745822457, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7369031896779785, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7448268047737114, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7527504198694442, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.760674034965177, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7685976500609099, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7765212651566428, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7844448802523756, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7923684953481084, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8002921104438412, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.808215725539574, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8161393406353068, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8240629557310397, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8319865708267725, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8399101859225053, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8478338010182382, Tc=NaN
+Sat solver failed for 2,3,3-trimethylpentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.855757416113971, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4212321604335202, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4229916506068099, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4247511407800996, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4265106309533893, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42827012112667906, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4300296112999688, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43178910147325855, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43354859164654824, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.435308081819838, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4370675719931277, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4388270621664174, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4405865523397071, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44234604251299686, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44410553268628666, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44586502285957635, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4476245130328661, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4493840032061558, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4511434933794455, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4529029835527352, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4546624737260249, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45642196389931466, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45818145407260447, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45994094424589416, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4617004344191839, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4634599245924736, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46521941476576334, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46697890493905303, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4687383951123428, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47049788528563247, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47225737545892227, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47401686563221196, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4757763558055017, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4775358459787914, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47929533615208114, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48105482632537083, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4828143164986606, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48457380667195027, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48633329684524007, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41252739555590484, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4880927870185298, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4898522771918195, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42178414967871064, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49161176736510925, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43104090380151644, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44029765792432224, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49337125753839894, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44955441204712804, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49513074771168863, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45881116616993384, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4968902378849784, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4680679202927396, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49864972805826807, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47732467441554544, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5004092182315579, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4865814285383512, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5021687084048476, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49583818266115703, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5039281985781373, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5050949367839628, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.505687688751427, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5143516909067686, Tc=NaN
+Sat solver failed for 3-methyldodecane = [184.219, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5074471789247168, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5236084450295744, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5328651991523802, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.542121953275186, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5513787073979918, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5606354615207976, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5698922156436034, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5791489697664091, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.588405723889215, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5976624780120207, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6069192321348266, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6161759862576323, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6254327403804381, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6346894945032439, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6439462486260497, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6532030027488555, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6624597568716613, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.671716510994467, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6809732651172729, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6902300192400787, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6994867733628845, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7087435274856903, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7180002816084959, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7272570357313018, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7365137898541075, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7457705439769134, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7550272980997191, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.764284052222525, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7735408063453307, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7827975604681365, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7920543145909423, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8013110687137481, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.810567822836554, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8198245769593597, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8290813310821655, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8383380852049713, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8475948393277771, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8568515934505829, Tc=NaN
+Sat solver failed for 3-methylheptane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8661083475733887, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3933418758297225, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4005669804510878, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4077920850724532, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41501718969381846, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42224229431518373, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4294673989365491, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4366925035579144, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4439176081792798, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45114271280064505, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4583678174220103, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46559292204337566, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47281802666474093, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48004313128610626, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4872682359074716, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49449334052883687, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5017184451502023, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5089435497715675, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5161686543929328, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5233937590142982, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5306188636356635, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5378439682570287, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5450690728783941, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5522941774997594, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5595192821211247, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5667443867424901, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5739694913638553, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5811945959852207, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.588419700606586, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5956448052279513, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6028699098493165, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6100950144706818, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6173201190920472, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6245452237134125, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6317703283347778, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.638995432956143, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6462205375775084, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6534456421988737, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6606707468202391, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6678958514416043, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6751209560629696, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.682346060684335, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6895711653057003, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6967962699270656, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.704021374548431, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7112464791697962, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7184715837911616, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7256966884125269, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7329217930338922, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7401468976552575, Tc=NaN
+Sat solver failed for dodecane = [170.203, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7473720022766228, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3545432891784035, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3564931804312873, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.35844307168417117, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.360392962937055, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.36234285418993883, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.36429274544282264, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3662426366957065, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3681925279485903, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3701424192014742, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.37209231045435803, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.37404220170724184, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3759920929601257, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3779419842130095, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.37989187546589337, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3818417667187772, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.38379165797166104, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.38574154922454484, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3876914404774287, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3896413317303125, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3915912229831964, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3935411142360802, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.395491005488964, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.39744089674184785, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.39939078799473166, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4013406792476155, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4032905705004993, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.40524046175338324, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.40719035300626705, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4091402442591509, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4110901355120347, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4130400267649185, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4149899180178024, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4169398092706862, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41888970052357005, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42083959177645386, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4227894830293377, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4247393742822215, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4266892655351054, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4286391567879892, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43058904804087306, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43253893929375686, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43448883054664067, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43643872179952453, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43838861305240834, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44033850430529226, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.442288395558176, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4442382868110599, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44618817806394373, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4481380693168276, Tc=NaN
+Sat solver failed for heptacosane = [380.438, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4500879605697114, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3850456249578372, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.39482236667237885, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.40459910838692054, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47061975132109357, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4143758501014623, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42415259181600395, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47163735523326294, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43392933353054564, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4726549591454325, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4437060752450874, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4736725630576019, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4746901669697714, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.453482816959629, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47570777088194083, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47672537479411037, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.46325955867417073, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47774297870627974, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.47303630038871247, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4787605826184493, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4828130421032541, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4797781865306187, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48079579044278814, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49258978381779583, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4818133943549576, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48283099826712705, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5023665255323374, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48384860217929654, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5121432672468792, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48486620609146597, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5219200089614209, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4858838100036355, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5316967506759626, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4869014139158049, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4879190178279744, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5414734923905042, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48893662174014385, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5512502341050459, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.48995422565231334, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5610269758195876, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49097182956448276, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4919894334766522, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5708037175341294, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4930070373888217, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.580580459248671, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4940246413009911, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5903572009632128, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49504224521316065, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4960598491253301, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6001339426777543, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49707745303749956, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6099106843922961, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.498095056949669, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4991126608618385, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6196874261068378, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5001302647740079, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6294641678213795, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5011478686861773, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6392409095359212, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5021654725983469, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5031830765105163, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6490176512504628, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5042006804226857, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5052182843348552, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6587943929650045, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5062358882470247, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6685711346795462, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5072534921591941, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6783478763940879, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5082710960713637, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6881246181086296, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5092886999835331, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6979013598231714, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5103063038957025, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7076781015377129, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.511323907807872, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5123415117200414, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7174548432522547, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5133591156322109, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7272315849667963, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5143767195443804, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7370083266813381, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5153943234565499, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5164119273687192, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7467850683958798, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5174295312808888, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7565618101104215, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5184471351930582, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7663385518249631, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5194647391052277, Tc=NaN
+Sat solver failed for 2,3-dimethylheptane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5204823430173972, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7761152935395048, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7858920352540465, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7956687769685883, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8054455186831299, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8152222603976716, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8249990021122133, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.834775743826755, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8445524855412967, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8543292272558384, Tc=NaN
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8641059689703801, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.367607260149998, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3769148161468878, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.38622237214377764, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.39552992814066745, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4048374841375572, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.41414504013444703, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.42345259613133684, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4327601521282266, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4420677081251164, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.45137526412200624, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.460682820118896, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4699903761157858, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4792979321126757, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4886054881095654, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.49791304410645526, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.507220600103345, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5165281561002348, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5258357120971247, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5351432680940144, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5444508240909042, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5537583800877941, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5630659360846838, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5723734920815736, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5816810480784634, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5909886040753533, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6002961600722431, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6096037160691328, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6189112720660226, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6282188280629124, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6375263840598022, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.646833940056692, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6561414960535819, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6654490520504716, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6747566080473615, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6840641640442513, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.693371720041141, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7026792760380308, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7119868320349206, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7212943880318105, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7306019440287003, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.73990950002559, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7492170560224798, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7585246120193697, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7678321680162594, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7771397240131492, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7864472800100389, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7957548360069289, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8050623920038187, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8143699480007084, Tc=NaN
+Sat solver failed for nonane = [128.157, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8236775039975982, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3822392493913942, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.3933750229869436, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.40451079658249306, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4156465701780424, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4267823437735918, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.43791811736914127, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.44905389096469067, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4601896645602401, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4713254381557894, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4824612117513389, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.4935969853468883, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5047327589424377, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5158685325379871, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5270043061335365, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.538140079729086, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5492758533246352, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5604116269201846, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5715474005157342, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.5826831741112836, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.593818947706833, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6049547213023824, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6160904948979318, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6272262684934812, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6383620420890306, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6494978156845801, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6606335892801294, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6717693628756788, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6829051364712282, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.6940409100667776, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.705176683662327, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7163124572578764, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7274482308534259, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7385840044489753, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7497197780445247, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7608555516400741, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7719913252356234, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7831270988311728, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.7942628724267222, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8053986460222717, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8165344196178211, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8276701932133705, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.83880596680892, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8499417404044693, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8610775140000188, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8722132875955683, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.8833490611911176, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.894484834786667, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.9056206083822164, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.9167563819777658, Tc=NaN
+Sat solver failed for 2,2-dimethylpentane = [100.125, NaN, NaN, 6.0, NaN, NaN] at T=NaN, Tr=0.9278921555733152, Tc=NaN
+n_failed = 0, 0, 0, 0, 
