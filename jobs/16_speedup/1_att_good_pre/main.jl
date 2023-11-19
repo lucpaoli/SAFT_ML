@@ -21,15 +21,17 @@ using Base.Threads: @spawn, @threads
 using Plots
 using Random
 
+using FiniteDiff
+
 function make_fingerprint(s::String)::Vector{Float64}
     mol = get_mol(s)
     @assert !isnothing(mol)
 
     fp = []
 
-    fp_str_morgan = get_morgan_fp(mol, Dict{String,Any}("radius"=> 5, "nbits" => 1024))
-    fp_str_atom_pair = get_atom_pair_fp(mol, Dict{String,Any}("radius"=> 6, "nbits" => 1024))
-    fp_str_pattern = get_pattern_fp(mol, Dict{String,Any}("radius"=> 7, "nbits" => 1024))
+    fp_str_morgan = get_morgan_fp(mol, Dict{String,Any}("radius" => 5, "nbits" => 1024))
+    fp_str_atom_pair = get_atom_pair_fp(mol, Dict{String,Any}("radius" => 6, "nbits" => 1024))
+    fp_str_pattern = get_pattern_fp(mol, Dict{String,Any}("radius" => 7, "nbits" => 1024))
 
     fp_str = fp_str_morgan * fp_str_atom_pair * fp_str_pattern
 
@@ -60,13 +62,13 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
     #* Only linear alkanes
     # filter!(row -> contains_only_c(row.isomeric_SMILES), df)
 
-    mol_data = zip(df.common_name, df.isomeric_SMILES, df.Mw, df.expt_T_min_liberal, df.expt_T_max_liberal)
+    mol_data = zip(df.common_name, df.isomeric_SMILES, df.Mw, df.expt_T_min_liberal, df.expt_T_max_conservative)
     println("Generating data for $(length(mol_data)) molecules...")
 
     # if pretraining
     T = Float64
     # X_data should be a datastructure of (name -> (fp, Mw, [Tr], [p_sat, Vl_sat]))
-    train_data = Dict{String, Tuple{Vector{T}, T, Vector{T}, Vector{Vector{T}}}}()
+    train_data = Dict{String,Tuple{Vector{T},T,Vector{T},Vector{Vector{T}}}}()
 
     for (name, smiles, Mw, T_exp_min, T_exp_max) in mol_data
         X_vec = Vector{Float64}()
@@ -74,12 +76,19 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
         fp = make_fingerprint(smiles)
         saft_model = PPCSAFT([name])
 
-        if !pretraining
-            Tc, pc, Vc = crit_pure(saft_model)
+        Tc, pc, Vc = crit_pure(saft_model)
 
-            T_min = T_exp_min
-            T_max = min(T_exp_max, 0.975 * Tc)
-            @assert T_min < T_max
+        # T_max = min(T_exp_max, 0.975 * Tc, 500.0)
+        # T_min = T_exp_min < 500.0 ? T_exp_min : 400.0
+        T_max = min(T_exp_max, 500.0)
+        T_min = T_exp_min
+        if T_max < T_min
+            println("Data skipped for $name: T_min ($T_min) > T_max ($T_max)")
+            continue
+        end
+        if !pretraining
+            # @assert T_min < T_max "Tmin ($T_min) < Tmax ($T_max) for $name"
+            # @assert T_max < 501.0 "Tmax ($T_max) > 500 for $name"
             for T in range(T_min, T_max, n_points)
                 Tr = T / Tc
                 (p_sat, Vl_sat, Vv_sat) = saturation_pressure(saft_model, T)
@@ -159,17 +168,16 @@ function ChainRulesCore.rrule(::typeof(f_sat_p), saft_params, sat_Vv, sat_Vl, T)
 end
 
 function f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
-    return sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / ∂p∂V(saft_params, sat_Vl, T)
+    ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(saft_params, V, T), sat_Vl)
+    return sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / ∂p∂V
 end
 
 function ChainRulesCore.rrule(::typeof(f_sat_Vl), saft_params, sat_Vl, T, sat_p_Vl)
     y = f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
 
     function f_pullback(Δy)
-        # f1 = X -> f_sat_Vl(X, sat_Vl, T, sat_p_Vl)
-        # cfg = ForwardDiff.GradientConfig(f1, saft_params)
-        # ∂X1 = @thunk(ForwardDiff.gradient(f1, saft_params, cfg, Val{false}()) .* Δy)
-        ∂X1 = @thunk(ForwardDiff.gradient(X -> f_sat_Vl(X, sat_Vl, T, sat_p_Vl), saft_params) .* Δy)
+        # ∂X1 = ForwardDiff.gradient(X -> f_sat_Vl(X, sat_Vl, T, sat_p_Vl), saft_params) .* Δy
+        ∂X1 = @thunk(FiniteDiff.finite_difference_gradient(X -> f_sat_Vl(X, sat_Vl, T, sat_p_Vl), saft_params) .* Δy)
         ∂X2 = @thunk(ForwardDiff.derivative(X -> f_sat_Vl(saft_params, X, T, sat_p_Vl), sat_Vl) .* Δy)
         ∂X3 = @thunk(ForwardDiff.derivative(X -> f_sat_Vl(saft_params, sat_Vl, X, sat_p_Vl), T) .* Δy)
         ∂X4 = @thunk(ForwardDiff.derivative(X -> f_sat_Vl(saft_params, sat_Vl, T, X), sat_p_Vl) .* Δy)
@@ -181,16 +189,16 @@ function ChainRulesCore.rrule(::typeof(f_sat_Vl), saft_params, sat_Vl, T, sat_p_
 end
 
 function f_Tc(saft_params, Vc, Tc)
-    return Tc - ∂²A∂V²(saft_params, Vc, Tc)/∂³A∂V²∂T(saft_params, Vc, Tc)
+    return Tc - ∂²A∂V²(saft_params, Vc, Tc) / ∂³A∂V²∂T(saft_params, Vc, Tc)
 end
 
 function ChainRulesCore.rrule(::typeof(f_Tc), saft_params, Vc, Tc)
     y = f_Tc(saft_params, Vc, Tc)
 
     function f_pullback(Δy)
-        f1 = X -> f_Tc(X, Vc, Tc)
-        cfg = ForwardDiff.GradientConfig(f1, saft_params)
-        ∂X1 = @thunk(ForwardDiff.gradient(f1, saft_params, cfg, Val{false}()) .* Δy)
+        # f1 = X -> f_Tc(X, Vc, Tc)
+        # cfg = ForwardDiff.GradientConfig(f1, saft_params)
+        ∂X1 = @thunk(ForwardDiff.gradient(X -> f_Tc(X, Vc, Tc), saft_params) .* Δy)
         ∂X2 = @thunk(ForwardDiff.derivative(X -> f_Tc(saft_params, X, Tc), Vc) .* Δy)
         ∂X3 = @thunk(ForwardDiff.derivative(X -> f_Tc(saft_params, Vc, X), Tc) .* Δy)
 
@@ -204,7 +212,7 @@ function SAFT_head(model, X)
     # (fp, Mw, Tr, Tc, Vc, sat_p, sat_Vl, sat_Vv) = X
     (fp, Mw, Tr, Tc, Vc, sat_p, sat_p_Vl, sat_Vl, sat_Vv) = X
 
-    saft_params = calculate_saft_parameters(model, fp, Mw)
+    saft_params::Vector{Float64} = calculate_saft_parameters(model, fp, Mw)
 
     # Tc2 = Tc - ∂²A∂V²(saft_params, Vc, Tc)/∂³A∂V²∂T(saft_params, Vc, Tc)
     Tc2 = f_Tc(saft_params, Vc, Tc)
@@ -215,7 +223,7 @@ function SAFT_head(model, X)
 
     # sat_Vl2 = sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / ∂p∂V(saft_params, sat_Vl, T)
     sat_Vl2 = f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
-    
+
 
     ŷ_1 = !isnan(sat_p2) ? sat_p2 : nothing
     ŷ_2 = !isnan(sat_Vl2) ? sat_Vl2 : nothing
@@ -227,7 +235,7 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
     batch_loss = 0.0
     n = 0
     n_failed = 0
-    
+
     for (X, y_vec) in zip(X_batch, y_batch)
         if use_saft_head
             ŷ_vec = SAFT_head(model, X)
@@ -237,25 +245,22 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
             ŷ_vec = [ŷ[2], ŷ[3], ŷ[5], ŷ[6]]
         end
 
-        for (ŷ, y) in zip(ŷ_vec, y_vec)
-            if !isnothing(ŷ)
-                batch_loss += metric(y, ŷ)
-                n += 1
-            else
+        # batch_loss += mean(metric(y_vec, ŷ_vec))
+        for (y, ŷ) in zip(y_vec, ŷ_vec)
+            if isnothing(ŷ)
                 n_failed += 1
+                continue
             end
+            batch_loss += metric(y, ŷ)
+            n += 1
         end
     end
-    if n > 0
-        batch_loss /= n
-    end
-    print(" $n_failed,")
+    batch_loss /= n
+    use_saft_head && print("$n_failed, ")
     return batch_loss
 end
 
 function eval_loss_par(X_batch, y_batch, metric, model, n_chunks, use_saft_head)
-    print("n_failed =")
-    # flush(stdout)
     n = length(X_batch)
     chunk_size = n ÷ n_chunks
 
@@ -265,6 +270,7 @@ function eval_loss_par(X_batch, y_batch, metric, model, n_chunks, use_saft_head)
     X_chunks = vcat([view(X_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(X_batch, (n_chunks-1)*chunk_size+1:n)])
     y_chunks = vcat([view(y_batch, (i-1)*chunk_size+1:i*chunk_size) for i in 1:n_chunks-1], [view(y_batch, (n_chunks-1)*chunk_size+1:n)])
 
+    use_saft_head && print("n_failed = ")
     @sync begin
         for i = 1:n_chunks
             @spawn begin
@@ -272,8 +278,8 @@ function eval_loss_par(X_batch, y_batch, metric, model, n_chunks, use_saft_head)
             end
         end
     end
-    print("\n")
-    flush(stdout)
+    use_saft_head && print("\n")
+    use_saft_head && flush(stdout)
     return sum(p) / n_chunks # average partial losses
 end
 
@@ -303,12 +309,12 @@ function create_pretraining_X_data(mol_dict, batch_mols)
     return X_data
 end
 
-function create_X_data(model, mol_dict, batch_mols)
+function create_X_data(model, mol_dict, batch_mols, x0_cache)
     # X_temp::Vector{Any} = zeros(length(batch_mols))  # Initialize an empty vector for X data
     X_temp = Vector{Vector{Tuple}}(undef, length(batch_mols))
 
-    # @Threads.threads for i in 1:length(batch_mols)
-    for i in 1:length(batch_mols)
+    Threads.@threads for i in 1:length(batch_mols)
+        # for i in 1:length(batch_mols)
         mol = batch_mols[i]
         mol_data = Vector{Tuple}()
         # Extract data for the molecule
@@ -319,10 +325,10 @@ function create_X_data(model, mol_dict, batch_mols)
 
         (Tc, pc, Vc) = crit_pure(saft_model)
 
-        x0 = nothing
+        x0 = x0_cache[mol]
 
         # Iterate through Tr in X_vec
-        for Tr in X_vec
+        for (j, Tr) in enumerate(X_vec)
             T = Tc * Tr
             if isnothing(x0)
                 (p_sat, Vₗ, Vᵥ) = saturation_pressure(saft_model, T)
@@ -330,16 +336,17 @@ function create_X_data(model, mol_dict, batch_mols)
                 (p_sat, Vₗ, Vᵥ) = saturation_pressure(saft_model, T, x0)
             end
 
-            @assert Vₗ != Vᵥ "volumes equal for $saft_params at T=$T"
-            @assert !isnan(p_sat) "sat solver failed for $saft_params at T=$T"
-            @assert !isnan(Vₗ) "sat solver failed for $saft_params at T=$T"
-            @assert !isnan(Vᵥ) "sat solver failed for $saft_params at T=$T"
+            if Vₗ == Vᵥ
+                println("Volumes equal for $mol = $saft_params at T=$T, Tr=$Tr, Tc=$Tc")
+            elseif isnan(p_sat)
+                println("Sat solver failed for $mol = $saft_params at T=$T, Tr=$Tr, Tc=$Tc")
+            else
+                p_sat_Vl = pressure(saft_model, Vₗ, T)
+                x0 = [Vₗ, Vᵥ]
+                push!(mol_data, (fp, Mw, Tr, Tc, Vc, p_sat, p_sat_Vl, Vₗ, Vᵥ))
 
-            p_sat_Vl = pressure(saft_model, Vₗ, T)
-
-            x0 = [Vₗ, Vᵥ]
-
-            push!(mol_data, (fp, Mw, Tr, Tc, Vc, p_sat, p_sat_Vl, Vₗ, Vᵥ))
+                j == 1 && (x0_cache[mol] = x0)
+            end
         end
         # I think this is automagically safe under @Threads.threads
         X_temp[i] = mol_data
@@ -352,7 +359,7 @@ end
 function train_model!(model, mol_dict, optim; epochs=1000, batch_size=8, pretraining=false)
     nthreads = pretraining ? min(10, Threads.nthreads()) : Threads.nthreads()
 
-    log_filename = pretraining ? "params_log_pretraining.csv" : "params_log.csv" 
+    log_filename = pretraining ? "params_log_pretraining.csv" : "params_log.csv"
     open(log_filename, "a") do io
         write(io, "epoch;name;Mw;m;σ;λ_a;λ_r;ϵ\n")
     end
@@ -361,7 +368,9 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=8, pretrai
     flush(stdout)
 
     training_molecules = collect(keys(mol_dict))
-    mol_loader = DataLoader(training_molecules; batchsize = batch_size)
+    shuffle!(training_molecules)
+    mol_loader = DataLoader(training_molecules; batchsize=batch_size)
+    x0_cache = Dict{String, Union{Nothing,Vector{Float64}}}(mol => nothing for mol in training_molecules)
 
     # how many points?
     for epoch in 1:epochs
@@ -374,7 +383,7 @@ function train_model!(model, mol_dict, optim; epochs=1000, batch_size=8, pretrai
 
             if !pretraining
                 #* Should I cache x0 between iterations?
-                X_batch = create_X_data(model, mol_dict, batch_mols)
+                X_batch = create_X_data(model, mol_dict, batch_mols, x0_cache)
             else
                 X_batch = create_pretraining_X_data(mol_dict, batch_mols)
             end
@@ -423,9 +432,9 @@ function create_ff_model_with_attention(nfeatures)
     return Chain(
         Dense(nfeatures, attention_dim, relu),
         attention_wrapper,
-        Dense(attention_dim, nout*4, relu),
-        Dense(nout*4, nout*2, relu),
-        Dense(nout*2, nout, x -> x),
+        Dense(attention_dim, nout * 4, relu),
+        Dense(nout * 4, nout * 2, relu),
+        Dense(nout * 2, nout, x -> x),
     )
 end
 
@@ -441,20 +450,20 @@ function main()
 
     model = main_pcpsaft()
 
-    mol_dict = create_data(n_points = 50; pretraining=false)
+    mol_dict = create_data(n_points=50; pretraining=false)
 
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, mol_dict, optim; epochs=2, batch_size=16, pretraining=false)
+    train_model!(model, mol_dict, optim; epochs=500, batch_size=16, pretraining=false)
 end
 
 function main_pcpsaft()
-    mol_dict = create_data(n_points = 50; pretraining=true)
+    mol_dict = create_data(n_points=50; pretraining=true)
 
     @show nfeatures = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(nfeatures)
     # model = create_ff_model(nfeatures)
-    optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, mol_dict, optim; epochs=2, batch_size=16, pretraining=true)
+    optim = Flux.setup(Flux.Adam(5e-4), model)
+    train_model!(model, mol_dict, optim; epochs=25, batch_size=16, pretraining=true)
 
     return model
 end
