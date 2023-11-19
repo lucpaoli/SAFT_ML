@@ -138,28 +138,79 @@ function calculate_saft_parameters(model, fp, Mw)
     return saft_input
 end
 
+function f_sat_p(saft_params, sat_Vv, sat_Vl, T)
+    saft_model = make_NN_model(saft_params...)
+    return -(eos(saft_model, sat_Vv, T) - eos(saft_model, sat_Vl, T)) / (sat_Vv - sat_Vl)
+end
+
+function ChainRulesCore.rrule(::typeof(f_sat_p), saft_params, sat_Vv, sat_Vl, T)
+    y = f_sat_p(saft_params, sat_Vv, sat_Vl, T)
+
+    function f_pullback(Δy)
+        ∂X1 = @thunk(ForwardDiff.gradient(X -> f_sat_p(X, sat_Vv, sat_Vl, T), saft_params) .* Δy)
+        ∂X2 = @thunk(ForwardDiff.derivative(X -> f_sat_p(saft_params, X, sat_Vl, T), sat_Vv) .* Δy)
+        ∂X3 = @thunk(ForwardDiff.derivative(X -> f_sat_p(saft_params, sat_Vv, X, T), sat_Vl) .* Δy)
+        ∂X4 = @thunk(ForwardDiff.derivative(X -> f_sat_p(saft_params, sat_Vv, sat_Vl, X), T) .* Δy)
+
+        return (NoTangent(), ∂X1, ∂X2, ∂X3, ∂X4)
+    end
+
+    return y, f_pullback
+end
+
+function f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
+    return sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / ∂p∂V(saft_params, sat_Vl, T)
+end
+
+function ChainRulesCore.rrule(::typeof(f_sat_Vl), saft_params, sat_Vl, T, sat_p_Vl)
+    y = f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
+
+    function f_pullback(Δy)
+        ∂X1 = @thunk(ForwardDiff.gradient(X -> f_sat_Vl(X, sat_Vl, T, sat_p_Vl), saft_params) .* Δy)
+        ∂X2 = @thunk(ForwardDiff.derivative(X -> f_sat_Vl(saft_params, X, T, sat_p_Vl), sat_Vl) .* Δy)
+        ∂X3 = @thunk(ForwardDiff.derivative(X -> f_sat_Vl(saft_params, sat_Vl, X, sat_p_Vl), T) .* Δy)
+        ∂X4 = @thunk(ForwardDiff.derivative(X -> f_sat_Vl(saft_params, sat_Vl, T, X), sat_p_Vl) .* Δy)
+
+        return (NoTangent(), ∂X1, ∂X2, ∂X3, ∂X4)
+    end
+
+    return y, f_pullback
+end
+
+function f_Tc(saft_params, Vc, Tc)
+    return Tc - ∂²A∂V²(saft_params, Vc, Tc)/∂³A∂V²∂T(saft_params, Vc, Tc)
+end
+
+function ChainRulesCore.rrule(::typeof(f_Tc), saft_params, Vc, Tc)
+    y = f_Tc(saft_params, Vc, Tc)
+
+    function f_pullback(Δy)
+        ∂X1 = @thunk(ForwardDiff.gradient(X -> f_Tc(X, Vc, Tc), saft_params) .* Δy)
+        ∂X2 = @thunk(ForwardDiff.derivative(X -> f_Tc(saft_params, X, Tc), Vc) .* Δy)
+        ∂X3 = @thunk(ForwardDiff.derivative(X -> f_Tc(saft_params, Vc, X), Tc) .* Δy)
+
+        return (NoTangent(), ∂X1, ∂X2, ∂X3)
+    end
+
+    return y, f_pullback
+end
+
 function SAFT_head(model, X)
     # (fp, Mw, Tr, Tc, Vc, sat_p, sat_Vl, sat_Vv) = X
     (fp, Mw, Tr, Tc, Vc, sat_p, sat_p_Vl, sat_Vl, sat_Vv) = X
-    # (fp, Mw, mol, Tr, Tc, p_sat, Vₗ, Vᵥ)
 
     saft_params = calculate_saft_parameters(model, fp, Mw)
-    saft_model = make_NN_model(saft_params...)
 
-    Tc2 = Tc - ∂²A∂V²(saft_params, Vc, Tc)/∂³A∂V²∂T(saft_params, Vc, Tc)
+    # Tc2 = Tc - ∂²A∂V²(saft_params, Vc, Tc)/∂³A∂V²∂T(saft_params, Vc, Tc)
+    Tc2 = f_Tc(saft_params, Vc, Tc)
 
     T = Tr * Tc2
     # sat_p = saturation_pressure_NN(saft_input, T)
-    sat_p2 = -(eos(saft_model, sat_Vv, T) - eos(saft_model, sat_Vl, T)) / (sat_Vv - sat_Vl)
+    sat_p2 = f_sat_p(saft_params, sat_Vv, sat_Vl, T)
 
-    # Vₗ = volume_NN(saft_input, sat_p, T)
-    num = (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl)
-    denom = ∂p∂V(saft_params, sat_Vl, T)
-    sat_Vl2 = sat_Vl - num / denom
-    @show sat_Vl, sat_Vl2
-    @show pressure_NN(saft_params, sat_Vl, T)
-    @show sat_p_Vl, sat_p
-    @show num, denom
+    # sat_Vl2 = sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / ∂p∂V(saft_params, sat_Vl, T)
+    sat_Vl2 = f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
+    
 
     ŷ_1 = !isnan(sat_p2) ? sat_p2 : nothing
     ŷ_2 = !isnan(sat_Vl2) ? sat_Vl2 : nothing
@@ -178,7 +229,7 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
         else
             fp, Mw = X
             ŷ = calculate_saft_parameters(model, fp, Mw)
-            ŷ_vec = [ŷ[2], ŷ[3], ŷ[5] + 4*randn(), ŷ[6]]
+            ŷ_vec = [ŷ[2], ŷ[3], ŷ[5], ŷ[6]]
         end
 
         for (ŷ, y) in zip(ŷ_vec, y_vec)
@@ -251,8 +302,8 @@ function create_X_data(model, mol_dict, batch_mols)
     # X_temp::Vector{Any} = zeros(length(batch_mols))  # Initialize an empty vector for X data
     X_temp = Vector{Vector{Tuple}}(undef, length(batch_mols))
 
-    @Threads.threads for i in 1:length(batch_mols)
-    # for i in 1:length(batch_mols)
+    # @Threads.threads for i in 1:length(batch_mols)
+    for i in 1:length(batch_mols)
         mol = batch_mols[i]
         mol_data = Vector{Tuple}()
         # Extract data for the molecule
@@ -283,7 +334,6 @@ function create_X_data(model, mol_dict, batch_mols)
 
             x0 = [Vₗ, Vᵥ]
 
-            # (fp, Mw, Tr, Tc, Vc, sat_p, sat_p_Vl, sat_Vl, sat_Vv) = X
             push!(mol_data, (fp, Mw, Tr, Tc, Vc, p_sat, p_sat_Vl, Vₗ, Vᵥ))
         end
         # I think this is automagically safe under @Threads.threads
@@ -374,6 +424,12 @@ function create_ff_model_with_attention(nfeatures)
     )
 end
 
+function create_ff_model(nfeatures)
+    return Chain(
+        Dense(nfeatures, nout, x -> x),
+    )
+end
+
 function main()
     Random.seed!(1234)
 
@@ -382,16 +438,17 @@ function main()
     mol_dict = create_data(n_points = 50; pretraining=false)
 
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, mol_dict, optim; epochs=1, batch_size=16, pretraining=false)
+    train_model!(model, mol_dict, optim; epochs=1000, batch_size=16, pretraining=false)
 end
 
 function main_pcpsaft()
     mol_dict = create_data(n_points = 50; pretraining=true)
 
-    @show n_features = length(first(collect(values(mol_dict)))[1])
-    model = create_ff_model_with_attention(n_features)
+    @show nfeatures = length(first(collect(values(mol_dict)))[1])
+    model = create_ff_model_with_attention(nfeatures)
+    # model = create_ff_model(nfeatures)
     optim = Flux.setup(Flux.Adam(1e-4), model)
-    train_model!(model, mol_dict, optim; epochs=1, batch_size=16, pretraining=true)
+    train_model!(model, mol_dict, optim; epochs=100, batch_size=16, pretraining=true)
 
     return model
 end
