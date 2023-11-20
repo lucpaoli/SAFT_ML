@@ -484,12 +484,14 @@ function train_model!(model, mol_dict, optim; epochs=1000, n_batches=5, pretrain
             println("\nepoch $epoch: batch_loss = $batch_loss, time = $(epoch_duration)s")
             flush(stdout)
         end
+
+        epoch % 10 == 0 && GC.gc()
     end
 end
 
 function create_ff_model_with_attention(nfeatures)
     nout = 4
-    attention_dim = nout * 8  # Assuming the attention layer follows the first Dense layer
+    attention_dim = nout * 8
 
     mha = MultiHeadAttention(attention_dim; nheads=2, dropout_prob=0.0)
     function attention_wrapper(x)
