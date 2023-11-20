@@ -1,0 +1,5 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 850
+training on 4 threads
