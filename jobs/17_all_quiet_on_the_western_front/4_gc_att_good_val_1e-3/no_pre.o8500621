@@ -1,0 +1,120 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+Data skipped for 2,4,4-trimethylhexane: T_min (323.8) > T_max (323.149994)
+Data skipped for 2,2,3,4-tetramethylpentane: T_min (325.18) > T_max (298.15)
+Data skipped for 2,3,3,4-tetramethylpentane: T_min (332.16) > T_max (323.149994)
+Data skipped for 2,2,3,3-tetramethylpentane: T_min (330.98) > T_max (298.15)
+Data skipped for 2,2,4,4-tetramethylpentane: T_min (316.11) > T_max (303.149994)
+Data skipped for 2,6-dimethyloctane: T_min (317.649994) > T_max (298.149994)
+Data skipped for 2,2,5,5-tetramethylhexane: T_min (318.559998) > T_max (303.149994)
+Data skipped for 2-methylundecane: T_min (356.95) > T_max (353.15)
+Data skipped for 2,3-dimethyldecane: T_min (354.149994) > T_max (353.15)
+Data skipped for 2-methyldodecane: T_min (373.45) > T_max (353.15)
+Data skipped for 3-methyldodecane: T_min (372.95) > T_max (353.15)
+Data skipped for 2,3-dimethylundecane: T_min (369.549988) > T_max (353.15)
+Data skipped for 2-methyltridecane: T_min (388.350006) > T_max (353.15)
+Data skipped for 3-methyltridecane: T_min (379.149994) > T_max (353.15)
+Data skipped for 2,3-dimethyldodecane: T_min (385.149994) > T_max (353.15)
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 792
+training on 4 threads
+
+epoch 1: batch_loss = 0.14849593294232477, val_loss = 0.16397239092790933, time = 93.61624908447266s
+
+epoch 2: batch_loss = 0.1384735668837143, val_loss = 0.15478193335482845, time = 0.04506683349609375s
+
+epoch 3: batch_loss = 0.12930057327962996, val_loss = 0.14633307567681197, time = 0.05149984359741211s
+
+epoch 4: batch_loss = 0.12097168130873243, val_loss = 0.13864316572009813, time = 0.03925681114196777s
+
+epoch 5: batch_loss = 0.11345733410683753, val_loss = 0.1316996134335066, time = 0.041090965270996094s
+
+epoch 6: batch_loss = 0.10669425224011121, val_loss = 0.12523836747820857, time = 0.03789520263671875s
+
+epoch 7: batch_loss = 0.10059595184352059, val_loss = 0.11936850348196416, time = 0.040101051330566406s
+
+epoch 8: batch_loss = 0.09506929130732736, val_loss = 0.11407378171165068, time = 0.04238009452819824s
+
+epoch 9: batch_loss = 0.09002915674169729, val_loss = 0.1092848128592848, time = 0.03834199905395508s
+
+epoch 10: batch_loss = 0.08535072151470843, val_loss = 0.10493185418830155, time = 0.096527099609375s
+
+epoch 11: batch_loss = 0.08102817812236388, val_loss = 0.10094770922231791, time = 0.09482097625732422s
+
+epoch 12: batch_loss = 0.07702404262360879, val_loss = 0.09729845783882855, time = 0.05621194839477539s
+
+epoch 13: batch_loss = 0.0733138698532206, val_loss = 0.09395233055292586, time = 0.03778886795043945s
+
+epoch 14: batch_loss = 0.06987637958579311, val_loss = 0.09087979378608066, time = 0.03799891471862793s
+
+epoch 15: batch_loss = 0.06669235099212983, val_loss = 0.08805349722962348, time = 0.0372920036315918s
+
+epoch 16: batch_loss = 0.06374378556155952, val_loss = 0.08544818700686527, time = 0.03712797164916992s
+
+epoch 17: batch_loss = 0.06101344421912303, val_loss = 0.08304074512568319, time = 0.04077720642089844s
+
+epoch 18: batch_loss = 0.058484660248844786, val_loss = 0.08081018713854946, time = 0.03911113739013672s
+
+epoch 19: batch_loss = 0.056141356857238776, val_loss = 0.07873768934253572, time = 0.03708696365356445s
+
+epoch 20: batch_loss = 0.05396814399500342, val_loss = 0.0768065600763529, time = 0.03548908233642578s
+
+epoch 21: batch_loss = 0.05195045479918298, val_loss = 0.0750021597918356, time = 0.04091310501098633s
+
+epoch 22: batch_loss = 0.05006151345984082, val_loss = 0.07329872563374258, time = 0.04672718048095703s
+
+epoch 23: batch_loss = 0.04828230274709144, val_loss = 0.07169185429660457, time = 0.04337191581726074s
+
+epoch 24: batch_loss = 0.04661942556377306, val_loss = 0.07017661309525504, time = 0.03923177719116211s
+
+epoch 25: batch_loss = 0.04506503656220803, val_loss = 0.06874772192822111, time = 0.0416560173034668s
+Generating data for 80 molecules...
+Data skipped for 2,4,4-trimethylhexane: T_min (323.8) > T_max (323.149994)
+Data skipped for 2,2,3,4-tetramethylpentane: T_min (325.18) > T_max (298.15)
+Data skipped for 2,3,3,4-tetramethylpentane: T_min (332.16) > T_max (323.149994)
+Data skipped for 2,2,3,3-tetramethylpentane: T_min (330.98) > T_max (298.15)
+Data skipped for 2,2,4,4-tetramethylpentane: T_min (316.11) > T_max (303.149994)
+Data skipped for 2,6-dimethyloctane: T_min (317.649994) > T_max (298.149994)
+Data skipped for 2,2,5,5-tetramethylhexane: T_min (318.559998) > T_max (303.149994)
+Data skipped for 2-methylundecane: T_min (356.95) > T_max (353.15)
+Data skipped for 2,3-dimethyldecane: T_min (354.149994) > T_max (353.15)
+Data skipped for 2-methyldodecane: T_min (373.45) > T_max (353.15)
+Data skipped for 3-methyldodecane: T_min (372.95) > T_max (353.15)
+Data skipped for 2,3-dimethylundecane: T_min (369.549988) > T_max (353.15)
+Data skipped for 2-methyltridecane: T_min (388.350006) > T_max (353.15)
+Data skipped for 3-methyltridecane: T_min (379.149994) > T_max (353.15)
+Data skipped for 2,3-dimethyldodecane: T_min (385.149994) > T_max (353.15)
+training on 4 threads
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 1: batch_loss = 6664.238260777962, val_loss = 7.277162578627301, time = 218.0209448337555s
+
+Sat solver failed for nonadecane = [268.313, 3.1757194995880127, 4.593749046325684, 6.0, 21.649958193302155, 225.45119524002075] at T=134.7354582776598, Tr=0.40076604050502496, Tc=336.1947986108629, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+Sat solver failed for squalane = [422.485, 5.964904069900513, 5.949039459228516, 6.0, 29.70731794834137, 126.24220252037048] at T=88.23388952245938, Tr=0.4445396191158871, Tc=198.4837475182559, muting for this molecule...
+
+Sat solver failed for heptadecane = [240.282, 3.330754280090332, 4.584348440170288, 6.0, 21.146636083722115, 185.14597415924072] at T=113.8984379761407, Tr=0.40217628605862193, Tc=283.2052558154527, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 2: batch_loss = 6.605565494752363, val_loss = 0.45916737471060226, time = 160.92928194999695s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+Sat solver failed for squalane = [422.485, 6.453649997711182, 6.399766206741333, 6.0, 34.6320641040802, 99.03743499117626] at T=66.97039139095429, Tr=0.4445396191158871, Tc=150.65111974529265, muting for this molecule...
+
+Sat solver failed for heptadecane = [240.282, 3.5185712575912476, 4.768432855606079, 6.0, 23.004053831100464, 167.05625653266907] at T=100.7075867383413, Tr=0.40217628605862193, Tc=250.4065759950401, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 3: batch_loss = 0.36713577549731885, val_loss = 0.3387964965308631, time = 98.94746804237366s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
