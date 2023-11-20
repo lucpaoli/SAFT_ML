@@ -1,0 +1,214 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+Data skipped for 2,4,4-trimethylhexane: T_min (323.8) > T_max (323.149994)
+Data skipped for 2,2,3,4-tetramethylpentane: T_min (325.18) > T_max (298.15)
+Data skipped for 2,3,3,4-tetramethylpentane: T_min (332.16) > T_max (323.149994)
+Data skipped for 2,2,3,3-tetramethylpentane: T_min (330.98) > T_max (298.15)
+Data skipped for 2,2,4,4-tetramethylpentane: T_min (316.11) > T_max (303.149994)
+Data skipped for 2,6-dimethyloctane: T_min (317.649994) > T_max (298.149994)
+Data skipped for 2,2,5,5-tetramethylhexane: T_min (318.559998) > T_max (303.149994)
+Data skipped for 2-methylundecane: T_min (356.95) > T_max (353.15)
+Data skipped for 2,3-dimethyldecane: T_min (354.149994) > T_max (353.15)
+Data skipped for 2-methyldodecane: T_min (373.45) > T_max (353.15)
+Data skipped for 3-methyldodecane: T_min (372.95) > T_max (353.15)
+Data skipped for 2,3-dimethylundecane: T_min (369.549988) > T_max (353.15)
+Data skipped for 2-methyltridecane: T_min (388.350006) > T_max (353.15)
+Data skipped for 3-methyltridecane: T_min (379.149994) > T_max (353.15)
+Data skipped for 2,3-dimethyldodecane: T_min (385.149994) > T_max (353.15)
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 792
+training on 2 threads
+
+epoch 1: batch_loss = 0.14764096728392997, time = 52.8332200050354s
+
+epoch 2: batch_loss = 0.13482774950521076, time = 0.03668212890625s
+
+epoch 3: batch_loss = 0.12329088746372607, time = 0.03477597236633301s
+
+epoch 4: batch_loss = 0.11293741630244784, time = 0.03538703918457031s
+
+epoch 5: batch_loss = 0.10376075213548004, time = 0.11119294166564941s
+
+epoch 6: batch_loss = 0.09565795016556389, time = 0.03517007827758789s
+
+epoch 7: batch_loss = 0.08850593301713691, time = 0.035080909729003906s
+
+epoch 8: batch_loss = 0.08218718398161166, time = 0.037056922912597656s
+
+epoch 9: batch_loss = 0.07640767115712446, time = 0.03631711006164551s
+
+epoch 10: batch_loss = 0.07123429855855892, time = 0.03611278533935547s
+
+epoch 11: batch_loss = 0.06663148428528992, time = 0.04624795913696289s
+
+epoch 12: batch_loss = 0.06254934872364133, time = 0.03995990753173828s
+
+epoch 13: batch_loss = 0.05892644345429843, time = 0.09244894981384277s
+
+epoch 14: batch_loss = 0.05570101652722033, time = 0.03864693641662598s
+
+epoch 15: batch_loss = 0.05281656841589823, time = 0.044126033782958984s
+
+epoch 16: batch_loss = 0.050224215161947625, time = 0.03839707374572754s
+
+epoch 17: batch_loss = 0.047883080949464765, time = 0.04404187202453613s
+
+epoch 18: batch_loss = 0.04574773317146428, time = 0.04381704330444336s
+
+epoch 19: batch_loss = 0.043738134234605194, time = 0.03581500053405762s
+
+epoch 20: batch_loss = 0.04189467090822868, time = 0.04412698745727539s
+
+epoch 21: batch_loss = 0.04021116692309083, time = 0.09972882270812988s
+
+epoch 22: batch_loss = 0.038674508031341884, time = 0.03615999221801758s
+
+epoch 23: batch_loss = 0.037268978190430034, time = 0.03549003601074219s
+
+epoch 24: batch_loss = 0.03597916085737845, time = 0.036653995513916016s
+
+epoch 25: batch_loss = 0.03479129817390586, time = 0.03756999969482422s
+Generating data for 80 molecules...
+Data skipped for 2,4,4-trimethylhexane: T_min (323.8) > T_max (323.149994)
+Data skipped for 2,2,3,4-tetramethylpentane: T_min (325.18) > T_max (298.15)
+Data skipped for 2,3,3,4-tetramethylpentane: T_min (332.16) > T_max (323.149994)
+Data skipped for 2,2,3,3-tetramethylpentane: T_min (330.98) > T_max (298.15)
+Data skipped for 2,2,4,4-tetramethylpentane: T_min (316.11) > T_max (303.149994)
+Data skipped for 2,6-dimethyloctane: T_min (317.649994) > T_max (298.149994)
+Data skipped for 2,2,5,5-tetramethylhexane: T_min (318.559998) > T_max (303.149994)
+Data skipped for 2-methylundecane: T_min (356.95) > T_max (353.15)
+Data skipped for 2,3-dimethyldecane: T_min (354.149994) > T_max (353.15)
+Data skipped for 2-methyldodecane: T_min (373.45) > T_max (353.15)
+Data skipped for 3-methyldodecane: T_min (372.95) > T_max (353.15)
+Data skipped for 2,3-dimethylundecane: T_min (369.549988) > T_max (353.15)
+Data skipped for 2-methyltridecane: T_min (388.350006) > T_max (353.15)
+Data skipped for 3-methyltridecane: T_min (379.149994) > T_max (353.15)
+Data skipped for 2,3-dimethyldodecane: T_min (385.149994) > T_max (353.15)
+training on 2 threads
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 1: batch_loss = 12458.087105268516, time = 144.79206490516663s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 2: batch_loss = 11743.999706281505, time = 27.751816987991333s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 3: batch_loss = 11114.80039902912, time = 28.623376846313477s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 4: batch_loss = 10531.581616008256, time = 27.463907957077026s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 5: batch_loss = 9990.626000409198, time = 28.247143983840942s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 6: batch_loss = 9489.242896898491, time = 31.694709062576294s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 7: batch_loss = 9024.881393459278, time = 30.452303886413574s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 8: batch_loss = 8594.854232198628, time = 28.889834880828857s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 9: batch_loss = 8196.381735452826, time = 27.51750898361206s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 10: batch_loss = 7826.823144249487, time = 27.249752044677734s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 11: batch_loss = 7483.642832213666, time = 27.412930011749268s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 12: batch_loss = 7164.523528935468, time = 27.4146888256073s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 13: batch_loss = 6867.288663214837, time = 28.587655067443848s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 14: batch_loss = 6589.940592163975, time = 27.349467039108276s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 15: batch_loss = 6330.718464579955, time = 28.12541103363037s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 16: batch_loss = 6088.026711521821, time = 27.374247074127197s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 17: batch_loss = 5860.4325926513475, time = 28.26829481124878s
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+n_failed = 0, 0, 
+
+epoch 18: batch_loss = 5646.642690563412, time = 27.67568016052246s
+n_failed = 0, 0, 

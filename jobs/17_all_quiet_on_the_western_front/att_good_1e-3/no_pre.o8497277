@@ -1,0 +1,292 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+Data skipped for 2,4,4-trimethylhexane: T_min (323.8) > T_max (323.149994)
+Data skipped for 2,2,3,4-tetramethylpentane: T_min (325.18) > T_max (298.15)
+Data skipped for 2,3,3,4-tetramethylpentane: T_min (332.16) > T_max (323.149994)
+Data skipped for 2,2,3,3-tetramethylpentane: T_min (330.98) > T_max (298.15)
+Data skipped for 2,2,4,4-tetramethylpentane: T_min (316.11) > T_max (303.149994)
+Data skipped for 2,6-dimethyloctane: T_min (317.649994) > T_max (298.149994)
+Data skipped for 2,2,5,5-tetramethylhexane: T_min (318.559998) > T_max (303.149994)
+Data skipped for 2-methylundecane: T_min (356.95) > T_max (353.15)
+Data skipped for 2,3-dimethyldecane: T_min (354.149994) > T_max (353.15)
+Data skipped for 2-methyldodecane: T_min (373.45) > T_max (353.15)
+Data skipped for 3-methyldodecane: T_min (372.95) > T_max (353.15)
+Data skipped for 2,3-dimethylundecane: T_min (369.549988) > T_max (353.15)
+Data skipped for 2-methyltridecane: T_min (388.350006) > T_max (353.15)
+Data skipped for 3-methyltridecane: T_min (379.149994) > T_max (353.15)
+Data skipped for 2,3-dimethyldodecane: T_min (385.149994) > T_max (353.15)
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 792
+training on 4 threads
+
+epoch 1: batch_loss = 0.1364547262349872, time = 74.84475207328796s
+
+epoch 2: batch_loss = 0.12732535304029366, time = 0.03822207450866699s
+
+epoch 3: batch_loss = 0.1191683539153408, time = 0.04235100746154785s
+
+epoch 4: batch_loss = 0.11185049506055167, time = 0.04478001594543457s
+
+epoch 5: batch_loss = 0.10502375999796773, time = 0.0438840389251709s
+
+epoch 6: batch_loss = 0.09884407542919635, time = 0.04709792137145996s
+
+epoch 7: batch_loss = 0.09316017344528196, time = 0.04228091239929199s
+
+epoch 8: batch_loss = 0.08793150172935287, time = 0.04297780990600586s
+
+epoch 9: batch_loss = 0.08304078191865916, time = 0.09348297119140625s
+
+epoch 10: batch_loss = 0.07838581062113706, time = 0.03827810287475586s
+
+epoch 11: batch_loss = 0.07400913545881065, time = 0.04046010971069336s
+
+epoch 12: batch_loss = 0.06987827737048366, time = 0.04022979736328125s
+
+epoch 13: batch_loss = 0.06606179614479216, time = 0.03749799728393555s
+
+epoch 14: batch_loss = 0.06256328004835947, time = 0.036540985107421875s
+
+epoch 15: batch_loss = 0.0593660277826781, time = 0.03714919090270996s
+
+epoch 16: batch_loss = 0.05644396357220934, time = 0.038600921630859375s
+
+epoch 17: batch_loss = 0.05377027090412321, time = 0.03618621826171875s
+
+epoch 18: batch_loss = 0.051264844438455005, time = 0.03762507438659668s
+
+epoch 19: batch_loss = 0.04886657061400969, time = 0.03766894340515137s
+
+epoch 20: batch_loss = 0.04667242396858208, time = 0.0976099967956543s
+
+epoch 21: batch_loss = 0.04468278956425511, time = 0.03719305992126465s
+
+epoch 22: batch_loss = 0.04287121312677901, time = 0.03778505325317383s
+
+epoch 23: batch_loss = 0.04120654806655689, time = 0.03573489189147949s
+
+epoch 24: batch_loss = 0.03966383268859665, time = 0.03820300102233887s
+
+epoch 25: batch_loss = 0.03822590714913897, time = 0.0394139289855957s
+Generating data for 80 molecules...
+Data skipped for 2,4,4-trimethylhexane: T_min (323.8) > T_max (323.149994)
+Data skipped for 2,2,3,4-tetramethylpentane: T_min (325.18) > T_max (298.15)
+Data skipped for 2,3,3,4-tetramethylpentane: T_min (332.16) > T_max (323.149994)
+Data skipped for 2,2,3,3-tetramethylpentane: T_min (330.98) > T_max (298.15)
+Data skipped for 2,2,4,4-tetramethylpentane: T_min (316.11) > T_max (303.149994)
+Data skipped for 2,6-dimethyloctane: T_min (317.649994) > T_max (298.149994)
+Data skipped for 2,2,5,5-tetramethylhexane: T_min (318.559998) > T_max (303.149994)
+Data skipped for 2-methylundecane: T_min (356.95) > T_max (353.15)
+Data skipped for 2,3-dimethyldecane: T_min (354.149994) > T_max (353.15)
+Data skipped for 2-methyldodecane: T_min (373.45) > T_max (353.15)
+Data skipped for 3-methyldodecane: T_min (372.95) > T_max (353.15)
+Data skipped for 2,3-dimethylundecane: T_min (369.549988) > T_max (353.15)
+Data skipped for 2-methyltridecane: T_min (388.350006) > T_max (353.15)
+Data skipped for 3-methyltridecane: T_min (379.149994) > T_max (353.15)
+Data skipped for 2,3-dimethyldodecane: T_min (385.149994) > T_max (353.15)
+training on 4 threads
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 1: batch_loss = 41.148804268167176, time = 190.41322898864746s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.4572107791900635, 3.779478907585144, 6.0, 11.957380771636963, 241.09631180763245] at T=225.61198721363567, Tr=0.4231973896045507, Tc=533.1128989818552, muting for this molecule...
+
+Sat solver failed for 3-ethylhexane = [114.141, 3.1590585708618164, 3.2684671580791473, 6.0, 19.598730504512787, 186.4865243434906] at T=147.29685539133254, Tr=0.506306570882814, Tc=290.92424207432373, muting for this molecule...
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.5500102043151855, 3.4620723724365234, 6.0, 16.543700397014618, 215.85186421871185] at T=181.41109927201597, Tr=0.4720610908485186, Tc=384.2958099891983, muting for this molecule...
+
+Sat solver failed for heptadecane = [240.282, 4.772931814193726, 4.142287015914917, 6.0, 20.566283278167248, 198.48451456055045] at T=138.08938025142513, Tr=0.40217628605862193, Tc=343.35535196447904, muting for this molecule...
+
+Sat solver failed for heptacosane = [380.438, 6.654447078704834, 4.58370053768158, 6.0, 24.835066199302673, 180.0087794661522] at T=132.8177497833814, Tr=0.4248109598252771, Tc=312.65141991159726, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+
+Sat solver failed for 2,2,3-trimethylpentane = [114.141, 4.096569776535034, 3.669379413127899, 6.0, 15.638532042503357, 238.38656842708588] at T=245.5228605662264, Tr=0.5327732430909395, Tc=460.8393228267244, muting for this molecule...
+
+Sat solver failed for 4-methylheptane = [114.141, 3.5656633377075195, 2.8339674025774, 6.0, 19.25866812467575, 223.35531413555145] at T=195.88938869961834, Tr=0.536011023045284, Tc=365.4577616458252, muting for this molecule...
+
+Sat solver failed for 2,4-dimethylhexane = [114.141, 3.5992164611816406, 3.3108519315719604, 6.0, 19.820017497986555, 219.77659314870834] at T=193.40871019359315, Tr=0.5442237855560936, Tc=355.38452255622394, muting for this molecule...
+
+Sat solver failed for 3-methylundecane = [170.203, 4.3225908279418945, 3.968346655368805, 6.0, 17.740931510925293, 225.6801575422287] at T=215.26465211832, Tr=0.5242329323782816, Tc=410.6278694505728, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 2: batch_loss = 0.39712318667754287, time = 111.71557283401489s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.6230509281158447, 3.9454041719436646, 6.0, 13.940841555595398, 224.39154833555222] at T=190.387643056012, Tr=0.4231973896045507, Tc=449.8790581716876, muting for this molecule...
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.6564918756484985, 3.597793221473694, 6.0, 17.326469123363495, 207.6643168926239] at T=171.44643139016853, Tr=0.4720610908485186, Tc=363.18695760753684, muting for this molecule...
+
+Sat solver failed for heptacosane = [380.438, 6.998995304107666, 4.927825450897217, 6.0, 28.275641798973083, 145.43870091438293] at T=103.0602604218101, Tr=0.4248109598252771, Tc=242.60264015833852, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+
+Sat solver failed for 2,4-dimethylhexane = [114.141, 3.7000778913497925, 3.4428847432136536, 6.0, 20.430509857833385, 212.31811568140984] at T=185.6385955724443, Tr=0.5442237855560936, Tc=341.10709693211373, muting for this molecule...
+
+Sat solver failed for 2,2,3-trimethylpentane = [114.141, 4.1523284912109375, 3.766270399093628, 6.0, 15.989568531513214, 235.90798676013947] at T=240.5790409272836, Tr=0.5327732430909395, Tc=451.5599160564806, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 3: batch_loss = 0.2720650384157045, time = 68.96662402153015s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.6716803312301636, 3.6443417072296143, 6.0, 17.133609652519226, 209.37760472297668] at T=174.23701163090692, Tr=0.4720610908485186, Tc=369.0984387586785, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7173973321914673, 4.0398101806640625, 6.0, 15.066142976284027, 214.94942605495453] at T=174.5101390302854, Tr=0.4231973896045507, Tc=412.361095122428, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+
+Sat solver failed for 2,4-dimethylhexane = [114.141, 3.730723261833191, 3.511827051639557, 6.0, 20.384264290332794, 212.04244419932365] at T=186.07996534816075, Tr=0.5442237855560936, Tc=341.91810480687144, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 4: batch_loss = 0.2777856537061107, time = 94.863450050354s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.6383466720581055, 3.646587371826172, 6.0, 16.39766275882721, 216.37637615203857] at T=184.3335121857045, Tr=0.4720610908485186, Tc=390.4865615049302, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.774415612220764, 4.096851706504822, 6.0, 15.730491280555725, 209.31641906499863] at T=166.0799855755696, Tr=0.4231973896045507, Tc=392.44094990935577, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 5: batch_loss = 0.2799145612129637, time = 58.823034048080444s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.588111996650696, 3.633312165737152, 6.0, 15.47625482082367, 225.6066918373108] at T=198.3903568634051, Tr=0.4720610908485186, Tc=420.26415798599953, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.809491276741028, 4.131962776184082, 6.0, 16.12272322177887, 205.9274461120367] at T=161.35650914179294, Tr=0.4231973896045507, Tc=381.2795473350383, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 6: batch_loss = 0.2662698019720334, time = 57.4211049079895s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.5577688217163086, 3.6313127875328064, 6.0, 14.886469841003418, 233.9801847934723] at T=210.43737173117933, Tr=0.4720610908485186, Tc=445.7841915183544, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.831137776374817, 4.1537253856658936, 6.0, 16.352364718914032, 203.911467269063] at T=158.66986428378723, Tr=0.4231973896045507, Tc=374.93110350244234, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 7: batch_loss = 0.2603393631156494, time = 63.14288115501404s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.5110656023025513, 3.625308334827423, 6.0, 14.016581177711487, 243.7354475259781] at T=227.32535130891603, Tr=0.4720610908485186, Tc=481.5591789196269, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.84424889087677, 4.167021751403809, 6.0, 16.469999253749847, 202.7720034122467] at T=157.26166086847138, Tr=0.4231973896045507, Tc=371.6035701813325, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 8: batch_loss = 0.2532211328501015, time = 68.52343797683716s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.4639757871627808, 3.6299596428871155, 6.0, 13.149853944778442, 253.11330556869507] at T=245.89956762534123, Tr=0.4720610908485186, Tc=520.9062394516409, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.852015733718872, 4.1751134395599365, 6.0, 16.520841419696808, 202.1759571507573] at T=156.60543488418242, Tr=0.4231973896045507, Tc=370.0529321093393, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 9: batch_loss = 0.2465534797691246, time = 68.01200985908508s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.4316083192825317, 3.6577272415161133, 6.0, 12.523345351219177, 260.4738712310791] at T=261.5666441108974, Tr=0.4720610908485186, Tc=554.0949025066599, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8564711809158325, 4.180091142654419, 6.0, 16.53350442647934, 201.9090311601758] at T=156.38396125509837, Tr=0.4231973896045507, Tc=369.52959799971495, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 10: batch_loss = 0.23865116407820547, time = 64.11813306808472s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.4144835472106934, 3.705079674720764, 6.0, 12.134090065956116, 265.7164752483368] at T=272.927730861239, Tr=0.4720610908485186, Tc=578.1618865699309, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.858864665031433, 4.183172345161438, 6.0, 16.523070335388184, 201.8425665795803] at T=156.42469335305884, Tr=0.4231973896045507, Tc=369.62584646192437, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 11: batch_loss = 0.23150257473445496, time = 65.62264204025269s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.4025014638900757, 3.757854998111725, 6.0, 11.812074184417725, 269.8386251926422] at T=282.7737663561485, Tr=0.4720610908485186, Tc=599.0194316753989, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8599367141723633, 4.185001373291016, 6.0, 16.495213508605957, 201.90393552184105] at T=156.64881524489243, Tr=0.4231973896045507, Tc=370.15543831985855, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 12: batch_loss = 0.22582841059111933, time = 63.28816199302673s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.86016309261322, 4.185991406440735, 6.0, 16.454956233501434, 202.0454440265894] at T=156.99768789265286, Tr=0.4231973896045507, Tc=370.9798116650874, muting for this molecule...
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.3907583951950073, 3.8076651096343994, 6.0, 11.504321098327637, 273.28073382377625] at T=292.2175630345146, Tr=0.4720610908485186, Tc=619.0248861842447, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 13: batch_loss = 0.22116171069907403, time = 64.63917994499207s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.3825680017471313, 3.8546656370162964, 6.0, 11.294776797294617, 275.72872042655945] at T=299.09726157391225, Tr=0.4720610908485186, Tc=633.5986324064371, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8598729372024536, 4.186458349227905, 6.0, 16.408499479293823, 202.23167650401592] at T=157.4130265418353, Tr=0.4231973896045507, Tc=371.9612417480342, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 14: batch_loss = 0.2163814250244526, time = 65.9202630519867s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.85926616191864, 4.186594247817993, 6.0, 16.359335482120514, 202.4417694658041] at T=157.86134505811228, Tr=0.4231973896045507, Tc=373.0206020543345, muting for this molecule...
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.3796695470809937, 3.8990980982780457, 6.0, 11.234654784202576, 277.0311772823334] at T=301.7622119418933, Tr=0.4720610908485186, Tc=639.2439830181363, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 15: batch_loss = 0.21161075997960976, time = 72.35256910324097s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.3756346702575684, 3.936635732650757, 6.0, 11.23678207397461, 277.71122455596924] at T=302.3196901439116, Tr=0.4720610908485186, Tc=640.4249280543311, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8584234714508057, 4.186466217041016, 6.0, 16.305942237377167, 202.6694292202592] at T=158.3484787483804, Tr=0.4231973896045507, Tc=374.17168120140417, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 16: batch_loss = 0.2067618247442772, time = 71.92280292510986s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.3679579496383667, 3.9669881463050842, 6.0, 11.254128813743591, 278.04067730903625] at T=302.0289561562086, Tr=0.4720610908485186, Tc=639.8090459294552, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8574070930480957, 4.1861454248428345, 6.0, 16.24764859676361, 202.90996823459864] at T=158.8764587888679, Tr=0.4231973896045507, Tc=375.4192787846049, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 17: batch_loss = 0.20180819447678155, time = 72.81390690803528s
