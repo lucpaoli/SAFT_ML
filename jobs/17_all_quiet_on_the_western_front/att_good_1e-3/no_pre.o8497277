@@ -290,3 +290,936 @@ n_failed = 0, 0, 0, 0,
 n_failed = 0, 0, 0, 0, 
 
 epoch 17: batch_loss = 0.20180819447678155, time = 72.81390690803528s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8562862873077393, 4.185733199119568, 6.0, 16.186417043209076, 203.15622873604298] at T=159.42948463078125, Tr=0.4231973896045507, Tc=376.72605868329504, muting for this molecule...
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.3603557348251343, 3.994589149951935, 6.0, 11.320900321006775, 277.8661787509918] at T=300.0952032546049, Tr=0.4720610908485186, Tc=635.7126420124795, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 18: batch_loss = 0.19695451758824153, time = 76.92782998085022s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.3533190488815308, 4.020589351654053, 6.0, 11.475955247879028, 277.31760144233704] at T=295.9136913316665, Tr=0.4720610908485186, Tc=626.854653069942, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8551045656204224, 4.185281872749329, 6.0, 16.126611828804016, 203.40508706867695] at T=159.97915794989274, Tr=0.4231973896045507, Tc=378.02491669285206, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 19: batch_loss = 0.19255542553206373, time = 67.23885202407837s
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.141, 3.3417389392852783, 4.04136848449707, 6.0, 11.593688130378723, 276.9676089286804] at T=292.7029291584917, Tr=0.4720610908485186, Tc=620.0530711657789, muting for this molecule...
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8538572788238525, 4.184773564338684, 6.0, 16.06425315141678, 203.66030596196651] at T=160.55318324711126, Tr=0.4231973896045507, Tc=379.3813175386959, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 20: batch_loss = 0.18839915981141758, time = 60.10427713394165s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8525657653808594, 4.184234380722046, 6.0, 15.99882036447525, 203.92009690403938] at T=161.15434560322805, Tr=0.4231973896045507, Tc=380.80184226518, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 21: batch_loss = 0.18534605999666445, time = 70.00896883010864s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.851290702819824, 4.18375027179718, 6.0, 15.933259427547455, 204.18033190071583] at T=161.76200263021397, Tr=0.4231973896045507, Tc=382.23771366210366, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 22: batch_loss = 0.18231614889371453, time = 48.50567102432251s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8501046895980835, 4.183408856391907, 6.0, 15.873764157295227, 204.42946515977383] at T=162.32782891894925, Tr=0.4231973896045507, Tc=383.5747405498734, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 23: batch_loss = 0.1795131573155792, time = 55.60543394088745s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.849000096321106, 4.183183789253235, 6.0, 15.821009874343872, 204.66670207679272] at T=162.84545637931802, Tr=0.4231973896045507, Tc=384.7978753637542, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 24: batch_loss = 0.17649219201473648, time = 59.21282505989075s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.847915291786194, 4.182974457740784, 6.0, 15.770346820354462, 204.8999633640051] at T=163.34987247741938, Tr=0.4231973896045507, Tc=385.9897922103413, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 25: batch_loss = 0.17352231581041086, time = 55.74868988990784s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8468059301376343, 4.182717800140381, 6.0, 15.718055367469788, 205.13483621180058] at T=163.86940496835763, Tr=0.4231973896045507, Tc=387.2174285419919, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 26: batch_loss = 0.17066655110301204, time = 59.68173599243164s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8456594944000244, 4.182398200035095, 6.0, 15.663024485111237, 205.3726628422737] at T=164.41278712745805, Tr=0.4231973896045507, Tc=388.5014207698461, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 27: batch_loss = 0.16781036951149758, time = 62.549766063690186s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.844475269317627, 4.182016134262085, 6.0, 15.60554414987564, 205.61312772333622] at T=164.9783705717383, Tr=0.4231973896045507, Tc=389.83787382502385, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 28: batch_loss = 0.16480870623274552, time = 66.41521787643433s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.843262195587158, 4.181591868400574, 6.0, 15.546989440917969, 205.85427172482014] at T=165.55580715944348, Tr=0.4231973896045507, Tc=391.202335425897, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 29: batch_loss = 0.16144934403025732, time = 66.46732306480408s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8420403003692627, 4.181159257888794, 6.0, 15.489134788513184, 206.0926727950573] at T=166.13056934670135, Tr=0.4231973896045507, Tc=392.56047751603364, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 30: batch_loss = 0.1580105747892453, time = 61.130452156066895s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.840856671333313, 4.180758118629456, 6.0, 15.433186292648315, 206.32284954190254] at T=166.6903269390574, Tr=0.4231973896045507, Tc=393.8831642955506, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 31: batch_loss = 0.157373722034683, time = 66.04105186462402s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.839880585670471, 4.180467128753662, 6.0, 15.381369590759277, 206.53235837817192] at T=167.21129027731877, Tr=0.4231973896045507, Tc=395.11418166725076, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 32: batch_loss = 0.15473359908615295, time = 69.82910108566284s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.838775873184204, 4.179976940155029, 6.0, 15.323103666305542, 206.75479918718338] at T=167.79072550624662, Tr=0.4231973896045507, Tc=396.4833659844539, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 33: batch_loss = 0.15344014982114976, time = 72.32609415054321s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8375918865203857, 4.179397225379944, 6.0, 15.262839198112488, 206.98179304599762] at T=168.3918422132625, Tr=0.4231973896045507, Tc=397.90378284377715, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 34: batch_loss = 0.15171760901579434, time = 60.13251304626465s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.836455464363098, 4.178877592086792, 6.0, 15.2059605717659, 207.19920247793198] at T=168.96612126645002, Tr=0.4231973896045507, Tc=399.26078330572267, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 35: batch_loss = 0.15030706208760866, time = 59.00345492362976s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8353317975997925, 4.178328514099121, 6.0, 15.148622989654541, 207.41490870714188] at T=169.547151605928, Tr=0.4231973896045507, Tc=400.633736810991, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 36: batch_loss = 0.14900611000620234, time = 61.47286891937256s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8341842889785767, 4.177696466445923, 6.0, 15.088856220245361, 207.6344057917595] at T=170.15376265461538, Tr=0.4231973896045507, Tc=402.06713659933615, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 37: batch_loss = 0.14770981824051682, time = 54.48419690132141s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8330453634262085, 4.177057504653931, 6.0, 15.029531717300415, 207.8521378338337] at T=170.76086645281086, Tr=0.4231973896045507, Tc=403.5017007368011, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 38: batch_loss = 0.14649414146787787, time = 67.99169898033142s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.831930160522461, 4.176448702812195, 6.0, 14.971848726272583, 208.06564018130302] at T=171.35747086432895, Tr=0.4231973896045507, Tc=404.9114552064012, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 39: batch_loss = 0.14532563240877047, time = 64.1458101272583s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.830810785293579, 4.175819158554077, 6.0, 14.913759231567383, 208.2796111702919] at T=171.96247539299412, Tr=0.4231973896045507, Tc=406.3410588465146, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 40: batch_loss = 0.1442276675103295, time = 66.0557029247284s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8296966552734375, 4.1751697063446045, 6.0, 14.855207204818726, 208.49398374557495] at T=172.57657465192673, Tr=0.4231973896045507, Tc=407.7921530026162, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 41: batch_loss = 0.14316108222344598, time = 61.87880897521973s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.828605890274048, 4.174532413482666, 6.0, 14.797436594963074, 208.70623216032982] at T=173.18834741172012, Tr=0.4231973896045507, Tc=409.2377497260862, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 42: batch_loss = 0.1421385409006111, time = 57.833187103271484s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.827528476715088, 4.1739078760147095, 6.0, 14.740565419197083, 208.9168168604374] at T=173.79695754303245, Tr=0.4231973896045507, Tc=410.67587327377873, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 43: batch_loss = 0.14115557751417057, time = 58.33401894569397s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.826464056968689, 4.1732951402664185, 6.0, 14.68443751335144, 209.1262809932232] at T=174.4039491441267, Tr=0.4231973896045507, Tc=412.1101722935847, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 44: batch_loss = 0.1402084289870435, time = 62.36017608642578s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8254213333129883, 4.172700047492981, 6.0, 14.629260301589966, 209.33412536978722] at T=175.00723635728758, Tr=0.4231973896045507, Tc=413.5357179797824, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 45: batch_loss = 0.1392899389570048, time = 64.79788398742676s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8243966102600098, 4.172122359275818, 6.0, 14.574909210205078, 209.54081118106842] at T=175.60799827051378, Tr=0.4231973896045507, Tc=414.95529647431795, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 46: batch_loss = 0.13839530557580842, time = 50.1067008972168s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.82338547706604, 4.171561002731323, 6.0, 14.521331787109375, 209.74670499563217] at T=176.206768294844, Tr=0.4231973896045507, Tc=416.3701682080253, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 47: batch_loss = 0.13751955002047367, time = 59.28251004219055s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.822391629219055, 4.1710240840911865, 6.0, 14.468711614608765, 209.95130389928818] at T=176.8015164502195, Tr=0.4231973896045507, Tc=417.7755364120477, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 48: batch_loss = 0.13666082866374824, time = 55.74749398231506s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8214138746261597, 4.170509099960327, 6.0, 14.416900873184204, 210.1548708975315] at T=177.39351798561697, Tr=0.4231973896045507, Tc=419.1744144532158, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 49: batch_loss = 0.13581648682387615, time = 66.10582613945007s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8204487562179565, 4.170011758804321, 6.0, 14.3656724691391, 210.3578343987465] at T=177.9848780414944, Tr=0.4231973896045507, Tc=420.5717767016692, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 50: batch_loss = 0.13498442209910289, time = 55.78690791130066s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.81949520111084, 4.169535160064697, 6.0, 14.315069913864136, 210.56001633405685] at T=178.57497002255099, Tr=0.4231973896045507, Tc=421.9661425355605, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 51: batch_loss = 0.13416427941987163, time = 63.50382995605469s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8185542821884155, 4.169080138206482, 6.0, 14.265080094337463, 210.76126247644424] at T=179.16369669608042, Tr=0.4231973896045507, Tc=423.3572821975503, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 52: batch_loss = 0.1333565076655387, time = 66.99507713317871s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8176244497299194, 4.168643593788147, 6.0, 14.21558141708374, 210.96170470118523] at T=179.7521176447878, Tr=0.4231973896045507, Tc=424.74769944293365, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 53: batch_loss = 0.13256075130045047, time = 65.73583889007568s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8167062997817993, 4.168227672576904, 6.0, 14.166628122329712, 211.1611656844616] at T=180.33954395965893, Tr=0.4231973896045507, Tc=426.13576640483063, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 54: batch_loss = 0.13177680164466823, time = 64.5506420135498s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8158003091812134, 4.167833685874939, 6.0, 14.118307828903198, 211.35932356119156] at T=180.92484187959045, Tr=0.4231973896045507, Tc=427.51880404709595, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 55: batch_loss = 0.13100494158491716, time = 61.37169408798218s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.814908504486084, 4.1674617528915405, 6.0, 14.070677161216736, 211.55602559447289] at T=181.5072947281703, Tr=0.4231973896045507, Tc=428.89511888950113, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 56: batch_loss = 0.13024523832173457, time = 61.25466799736023s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8140316009521484, 4.167112827301025, 6.0, 14.02383267879486, 211.7510423064232] at T=182.08571374739734, Tr=0.4231973896045507, Tc=430.26190194023667, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 57: batch_loss = 0.12949758608361536, time = 50.60734510421753s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.813170552253723, 4.166788220405579, 6.0, 13.977901339530945, 211.9440883398056] at T=182.6585513007312, Tr=0.4231973896045507, Tc=431.61549619059144, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 58: batch_loss = 0.1287617508805314, time = 71.28754210472107s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8123267889022827, 4.166489124298096, 6.0, 13.932995200157166, 212.1353380382061] at T=183.22475798609764, Tr=0.4231973896045507, Tc=432.95342194172974, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 59: batch_loss = 0.12803752972345508, time = 55.460538148880005s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8115012645721436, 4.1662163734436035, 6.0, 13.88925313949585, 212.3244158923626] at T=183.78251397627974, Tr=0.4231973896045507, Tc=434.27137900829695, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 60: batch_loss = 0.12732494716472095, time = 59.321176052093506s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.810696244239807, 4.165970087051392, 6.0, 13.846787810325623, 212.51104474067688] at T=184.33030677541643, Tr=0.4231973896045507, Tc=435.5657934177255, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 61: batch_loss = 0.1266236783016106, time = 63.95562219619751s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8099112510681152, 4.1657514572143555, 6.0, 13.80570650100708, 212.6950353384018] at T=184.86667017508836, Tr=0.4231973896045507, Tc=436.83320057298494, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 62: batch_loss = 0.12593344698023043, time = 57.972452878952026s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8091483116149902, 4.165560364723206, 6.0, 13.766111135482788, 212.87622451782227] at T=185.39022140590475, Tr=0.4231973896045507, Tc=438.0703330404267, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 63: batch_loss = 0.12525382699288207, time = 66.70098400115967s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.808406949043274, 4.165397524833679, 6.0, 13.72809648513794, 213.05452436208725] at T=185.89964333419684, Tr=0.4231973896045507, Tc=439.27407848122, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 64: batch_loss = 0.12458443871905608, time = 70.05543684959412s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8076884746551514, 4.165262460708618, 6.0, 13.691716194152832, 213.2298842072487] at T=186.39405909765577, Tr=0.4231973896045507, Tc=440.4423649017032, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 65: batch_loss = 0.12392477895521532, time = 70.41782903671265s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8069920539855957, 4.165154218673706, 6.0, 13.657037615776062, 213.4022980928421] at T=186.87245236349727, Tr=0.4231973896045507, Tc=441.572790744567, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 66: batch_loss = 0.12327434743270445, time = 65.39185309410095s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.806317687034607, 4.165073394775391, 6.0, 13.62410306930542, 213.57175409793854] at T=187.33405298031607, Tr=0.4231973896045507, Tc=442.66353617012396, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 67: batch_loss = 0.12263266097857395, time = 61.58327317237854s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.805665612220764, 4.165018916130066, 6.0, 13.592933416366577, 213.73833119869232] at T=187.77838719387438, Tr=0.4231973896045507, Tc=443.71348171438524, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 68: batch_loss = 0.12199923215027317, time = 66.65685200691223s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8050354719161987, 4.164989709854126, 6.0, 13.563540577888489, 213.90210837125778] at T=188.2050674526787, Tr=0.4231973896045507, Tc=444.7217116073036, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 69: batch_loss = 0.12137356588078041, time = 68.09171915054321s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.804425835609436, 4.164984703063965, 6.0, 13.535926938056946, 214.063161611557] at T=188.61379145621373, Tr=0.4231973896045507, Tc=445.68751152378456, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 70: batch_loss = 0.12075519134196291, time = 63.864997148513794s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8038371801376343, 4.165002226829529, 6.0, 13.510075807571411, 214.2215996980667] at T=189.00452443909901, Tr=0.4231973896045507, Tc=446.6107993145018, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 71: batch_loss = 0.12014315748845991, time = 62.63347506523132s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8032673597335815, 4.165042400360107, 6.0, 13.485968708992004, 214.378023147583] at T=189.3776577758309, Tr=0.4231973896045507, Tc=447.4924997831189, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 72: batch_loss = 0.11953710628472984, time = 62.3463089466095s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.802717089653015, 4.16510283946991, 6.0, 13.463571071624756, 214.53294306993484] at T=189.7337376324893, Tr=0.4231973896045507, Tc=448.3339035001672, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 73: batch_loss = 0.11893683558421446, time = 65.43043899536133s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8021838665008545, 4.1651822328567505, 6.0, 13.44283640384674, 214.68614637851715] at T=190.07275943166658, Tr=0.4231973896045507, Tc=449.1349996493993, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 74: batch_loss = 0.11834204554038441, time = 62.75051498413086s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.80166757106781, 4.165280222892761, 6.0, 13.42372477054596, 214.83757942914963] at T=190.39485453650607, Tr=0.4231973896045507, Tc=449.8960986371328, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 75: batch_loss = 0.11775241960279319, time = 74.15645503997803s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8011672496795654, 4.165395498275757, 6.0, 13.406184911727905, 214.98727351427078] at T=190.7003530708788, Tr=0.4231973896045507, Tc=450.61798053403726, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 76: batch_loss = 0.11716762409499215, time = 60.3969361782074s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8006807565689087, 4.165525794029236, 6.0, 13.390153646469116, 215.13527184724808] at T=190.98972078785542, Tr=0.4231973896045507, Tc=451.30174589763504, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 77: batch_loss = 0.11658739670824388, time = 71.32668399810791s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.8002078533172607, 4.16567063331604, 6.0, 13.375574350357056, 215.28170704841614] at T=191.263489552275, Tr=0.4231973896045507, Tc=451.9486515051469, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 78: batch_loss = 0.11601136098684788, time = 56.68678307533264s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7997477054595947, 4.165829300880432, 6.0, 13.362385034561157, 215.4266819357872] at T=191.52223086313276, Tr=0.4231973896045507, Tc=452.5600477878593, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 79: batch_loss = 0.1154392676294034, time = 61.580296993255615s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7992987632751465, 4.16599977016449, 6.0, 13.350510597229004, 215.57028889656067] at T=191.76665168368345, Tr=0.4231973896045507, Tc=453.1376052741639, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 80: batch_loss = 0.11487079403516842, time = 72.14522790908813s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.798860192298889, 4.166182041168213, 6.0, 13.339900374412537, 215.7126784324646] at T=191.99728527121366, Tr=0.4231973896045507, Tc=453.6825840315842, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 81: batch_loss = 0.11430570914899485, time = 54.844582080841064s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7984306812286377, 4.166374087333679, 6.0, 13.330479860305786, 215.85395336151123] at T=192.21488108379455, Tr=0.4231973896045507, Tc=454.1967550022138, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 82: batch_loss = 0.1137437636545666, time = 53.542850971221924s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.798010230064392, 4.166576147079468, 6.0, 13.322179317474365, 215.99423587322235] at T=192.4201945740267, Tr=0.4231973896045507, Tc=454.6819032930008, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 83: batch_loss = 0.11318468825782606, time = 70.3416759967804s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7975960969924927, 4.166786313056946, 6.0, 13.314940929412842, 216.13361984491348] at T=192.61379624653904, Tr=0.4231973896045507, Tc=455.13937698558016, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 84: batch_loss = 0.112628270095174, time = 61.19870400428772s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7971889972686768, 4.167004585266113, 6.0, 13.308693170547485, 216.2722498178482] at T=192.79651948723355, Tr=0.4231973896045507, Tc=455.57114534044933, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 85: batch_loss = 0.11207430817969036, time = 65.03664588928223s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.796786904335022, 4.167229890823364, 6.0, 13.303378224372864, 216.4102092385292] at T=192.9689614130054, Tr=0.4231973896045507, Tc=455.97861932305824, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 86: batch_loss = 0.11152259436968251, time = 75.1192479133606s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7963902950286865, 4.167462229728699, 6.0, 13.298935294151306, 216.54757857322693] at T=193.13180147570853, Tr=0.4231973896045507, Tc=456.36340445336185, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 87: batch_loss = 0.11097293877425878, time = 55.55436301231384s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.795996904373169, 4.167699933052063, 6.0, 13.295300602912903, 216.68448895215988] at T=193.28575679403377, Tr=0.4231973896045507, Tc=456.7271952566773, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 88: batch_loss = 0.1104251697516883, time = 66.19383096694946s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.795606851577759, 4.1679428815841675, 6.0, 13.292425870895386, 216.82098507881165] at T=193.4313514579483, Tr=0.4231973896045507, Tc=457.0712301384864, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 89: batch_loss = 0.10987912142243525, time = 66.26401996612549s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.79521906375885, 4.168191075325012, 6.0, 13.29025149345398, 216.95716828107834] at T=193.56926628135608, Tr=0.4231973896045507, Tc=457.3971178372188, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 90: batch_loss = 0.1093346436822474, time = 60.523624897003174s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7948330640792847, 4.168442964553833, 6.0, 13.288726806640625, 217.09310859441757] at T=193.70007477045374, Tr=0.4231973896045507, Tc=457.7062135271045, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 91: batch_loss = 0.10879158465445368, time = 58.781065940856934s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7944486141204834, 4.168699622154236, 6.0, 13.28780472278595, 217.2288790345192] at T=193.82432366937417, Tr=0.4231973896045507, Tc=457.9998091445929, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 92: batch_loss = 0.108249825778031, time = 66.1025161743164s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.794064521789551, 4.168960452079773, 6.0, 13.287442326545715, 217.36454218626022] at T=193.9424928626217, Tr=0.4231973896045507, Tc=458.279038639269, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 93: batch_loss = 0.10770921305867916, time = 72.26154708862305s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7936803102493286, 4.169224143028259, 6.0, 13.287593126296997, 217.50013381242752] at T=194.0550924127488, Tr=0.4231973896045507, Tc=458.5451072703452, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 94: batch_loss = 0.10716963621382254, time = 65.91596698760986s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.793295383453369, 4.169490814208984, 6.0, 13.288220763206482, 217.63574928045273] at T=194.16257765055713, Tr=0.4231973896045507, Tc=458.7990909679025, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 95: batch_loss = 0.1066309688688489, time = 60.85649490356445s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7929095029830933, 4.1697609424591064, 6.0, 13.28927993774414, 217.77138859033585] at T=194.265423177897, Tr=0.4231973896045507, Tc=459.04211119880694, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 96: batch_loss = 0.10609311068695582, time = 66.94555497169495s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.792522668838501, 4.170032739639282, 6.0, 13.290749788284302, 217.90711730718613] at T=194.36390609037437, Tr=0.4231973896045507, Tc=459.27482272987146, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 97: batch_loss = 0.1055559546531677, time = 68.90783882141113s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.792133927345276, 4.170307993888855, 6.0, 13.29258680343628, 218.0429607629776] at T=194.45849511521237, Tr=0.4231973896045507, Tc=459.49833314643234, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 98: batch_loss = 0.10501940154322502, time = 74.95731210708618s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.791742444038391, 4.1705851554870605, 6.0, 13.294766545295715, 218.1790053844452] at T=194.54951214671962, Tr=0.4231973896045507, Tc=459.71340307300324, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 99: batch_loss = 0.10448335743910564, time = 66.75388288497925s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7913492918014526, 4.170864820480347, 6.0, 13.29725980758667, 218.3152124285698] at T=194.6372532135857, Tr=0.4231973896045507, Tc=459.9207320145831, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 100: batch_loss = 0.10394770522851982, time = 66.54810190200806s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.790953040122986, 4.171147108078003, 6.0, 13.300043940544128, 218.4516504406929] at T=194.72199617089493, Tr=0.4231973896045507, Tc=460.1209765326044, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 101: batch_loss = 0.10341236928933961, time = 67.25867486000061s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7905534505844116, 4.171431183815002, 6.0, 13.303093314170837, 218.5883328318596] at T=194.80402329939787, Tr=0.4231973896045507, Tc=460.3148036461875, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 102: batch_loss = 0.10287729296374282, time = 65.45604395866394s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7901512384414673, 4.1717177629470825, 6.0, 13.30638587474823, 218.7252700328827] at T=194.88359314937384, Tr=0.4231973896045507, Tc=460.5028243002145, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 103: batch_loss = 0.10234233712935789, time = 71.51550507545471s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7897450923919678, 4.172005653381348, 6.0, 13.309906125068665, 218.8624933362007] at T=194.96087695199304, Tr=0.4231973896045507, Tc=460.6854431076968, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 104: batch_loss = 0.101807445647209, time = 55.709473848342896s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7893353700637817, 4.1722962856292725, 6.0, 13.313632011413574, 219.00001615285873] at T=195.03613011664925, Tr=0.4231973896045507, Tc=460.86326359171846, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 105: batch_loss = 0.1012725464679212, time = 59.19716811180115s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.78892183303833, 4.172589063644409, 6.0, 13.317553400993347, 219.1378578543663] at T=195.10947505114143, Tr=0.4231973896045507, Tc=461.0365749974451, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 106: batch_loss = 0.10073755805420523, time = 64.30182600021362s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.788503885269165, 4.172883749008179, 6.0, 13.32165002822876, 219.27602291107178] at T=195.1811233649383, Tr=0.4231973896045507, Tc=461.20587735033484, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 107: batch_loss = 0.10020240995088117, time = 61.953328132629395s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7880823612213135, 4.173180937767029, 6.0, 13.32590937614441, 219.41451281309128] at T=195.2512262942634, Tr=0.4231973896045507, Tc=461.37152801606936, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 108: batch_loss = 0.09966699647647428, time = 73.54387402534485s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7876564264297485, 4.173480033874512, 6.0, 13.33031952381134, 219.55336779356003] at T=195.31993359027987, Tr=0.4231973896045507, Tc=461.53388085118655, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 109: batch_loss = 0.09913128006499086, time = 66.96366691589355s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7872262001037598, 4.1737812757492065, 6.0, 13.334872722625732, 219.69257593154907] at T=195.3873207722312, Tr=0.4231973896045507, Tc=461.69311430490484, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 110: batch_loss = 0.09859518250170603, time = 73.50806403160095s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.78679096698761, 4.174085378646851, 6.0, 13.33955466747284, 219.8321282863617] at T=195.45352146520807, Tr=0.4231973896045507, Tc=461.8495441284412, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 111: batch_loss = 0.09805864788611565, time = 67.53729295730591s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.786351799964905, 4.174391031265259, 6.0, 13.34435522556305, 219.97204571962357] at T=195.5186827640731, Tr=0.4231973896045507, Tc=462.00351790159215, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 112: batch_loss = 0.09752157373573868, time = 57.69741106033325s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.785907506942749, 4.174699664115906, 6.0, 13.349263668060303, 220.112344622612] at T=195.5829138543427, Tr=0.4231973896045507, Tc=462.15529362575154, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 113: batch_loss = 0.09698390526126151, time = 66.39224410057068s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7854578495025635, 4.175010681152344, 6.0, 13.354277610778809, 220.25299966335297] at T=195.64621436721993, Tr=0.4231973896045507, Tc=462.30487042946567, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 114: batch_loss = 0.09644557811405957, time = 70.90375709533691s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.785004496574402, 4.175324440002441, 6.0, 13.359389901161194, 220.39401829242706] at T=195.70869802329815, Tr=0.4231973896045507, Tc=462.45251703035, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 115: batch_loss = 0.0959065383357657, time = 80.72267508506775s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7845462560653687, 4.175641059875488, 6.0, 13.364589810371399, 220.53541839122772] at T=195.77047509953908, Tr=0.4231973896045507, Tc=462.5984940088438, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 116: batch_loss = 0.09536670261288022, time = 74.72465109825134s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7840828895568848, 4.175960183143616, 6.0, 13.36987555027008, 220.67720592021942] at T=195.83156651136156, Tr=0.4231973896045507, Tc=462.74285078731907, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 117: batch_loss = 0.0948260047134036, time = 62.730877161026s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.78361439704895, 4.176281929016113, 6.0, 13.375237584114075, 220.81934958696365] at T=195.8920471440658, Tr=0.4231973896045507, Tc=462.8857643170097, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 118: batch_loss = 0.09428440469915003, time = 62.227858781814575s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.7831408977508545, 4.176606893539429, 6.0, 13.38066816329956, 220.96190005540848] at T=195.95204747963353, Tr=0.4231973896045507, Tc=463.0275429220805, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 119: batch_loss = 0.09374181056133732, time = 71.32096290588379s
+
+Sat solver failed for 2-methyldecane = [156.188, 3.782662868499756, 4.176934719085693, 6.0, 13.386169672012329, 221.10481411218643] at T=196.0115128128848, Tr=0.4231973896045507, Tc=463.16805733618605, muting for this molecule...
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 120: batch_loss = 0.09319816611758965, time = 70.18480205535889s
