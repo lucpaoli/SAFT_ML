@@ -1,0 +1,943 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 850
+training on 4 threads
+
+epoch 1: batch_loss = 0.11106340163387005, val_loss = 0.13046517367800817, time = 75.83686995506287s
+
+epoch 2: batch_loss = 0.10803624640865078, val_loss = 0.12795409864309945, time = 0.921165943145752s
+
+epoch 3: batch_loss = 0.10559503011325012, val_loss = 0.12519755175488861, time = 0.7650330066680908s
+
+epoch 4: batch_loss = 0.10279871159597916, val_loss = 0.12181481675822611, time = 0.8389959335327148s
+
+epoch 5: batch_loss = 0.09932297256956688, val_loss = 0.11750380110571904, time = 0.8191170692443848s
+
+epoch 6: batch_loss = 0.09486870933910448, val_loss = 0.1119364533837287, time = 0.7438690662384033s
+
+epoch 7: batch_loss = 0.08917350967964316, val_loss = 0.10499704486376937, time = 0.8157708644866943s
+
+epoch 8: batch_loss = 0.08225034447148749, val_loss = 0.09710087603360623, time = 0.7945079803466797s
+
+epoch 9: batch_loss = 0.07472049261495875, val_loss = 0.08951191558578478, time = 0.7783620357513428s
+
+epoch 10: batch_loss = 0.06779042804130364, val_loss = 0.08310955986269525, time = 0.8100490570068359s
+
+epoch 11: batch_loss = 0.0617071177846272, val_loss = 0.07565653040706866, time = 0.8491580486297607s
+
+epoch 12: batch_loss = 0.05449508184377531, val_loss = 0.06589516177488021, time = 0.7956540584564209s
+
+epoch 13: batch_loss = 0.046404481878123446, val_loss = 0.055873666859691015, time = 0.8420751094818115s
+
+epoch 14: batch_loss = 0.0385161608020689, val_loss = 0.04530761742638467, time = 0.7684981822967529s
+
+epoch 15: batch_loss = 0.030879904389117988, val_loss = 0.0344194844191131, time = 0.8045940399169922s
+
+epoch 16: batch_loss = 0.025050361889593465, val_loss = 0.0257444133859784, time = 0.8064060211181641s
+
+epoch 17: batch_loss = 0.023339668277853297, val_loss = 0.021768851192704136, time = 0.7573630809783936s
+
+epoch 18: batch_loss = 0.024036136681176108, val_loss = 0.02035327791983351, time = 0.7851331233978271s
+
+epoch 19: batch_loss = 0.023028597806151865, val_loss = 0.01983615013234063, time = 0.7848560810089111s
+
+epoch 20: batch_loss = 0.021394955514078884, val_loss = 0.020415607542219924, time = 0.7905111312866211s
+
+epoch 21: batch_loss = 0.020860835750170417, val_loss = 0.020840219968890628, time = 0.7667860984802246s
+
+epoch 22: batch_loss = 0.02066777600482304, val_loss = 0.020081838590251005, time = 0.8452210426330566s
+
+epoch 23: batch_loss = 0.020189037597032406, val_loss = 0.018430584479629166, time = 0.7425289154052734s
+
+epoch 24: batch_loss = 0.01958559774481354, val_loss = 0.016739437063107876, time = 0.7372400760650635s
+
+epoch 25: batch_loss = 0.019111145650932557, val_loss = 0.015590794394835416, time = 0.7503418922424316s
+Generating data for 80 molecules...
+training on 4 threads
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 1: batch_loss = 3.2170214056887243e7, val_loss = 0.1894183142403339, time = 178.60834503173828s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 2: batch_loss = 3.0427131166899912e7, val_loss = 0.18979328668406892, time = 38.64726901054382s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 3: batch_loss = 2.9092844987252124e7, val_loss = 0.19016157886576623, time = 36.64867091178894s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 4: batch_loss = 2.7894624040626235e7, val_loss = 0.19052972327518758, time = 39.054404973983765s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 5: batch_loss = 2.678402094736945e7, val_loss = 0.19089890473245125, time = 37.73639488220215s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 6: batch_loss = 2.5743129913155068e7, val_loss = 0.19126901100642307, time = 37.834625005722046s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 7: batch_loss = 2.47621591219449e7, val_loss = 0.19163983145837388, time = 37.07145285606384s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 8: batch_loss = 2.383618279196752e7, val_loss = 0.192010738795936, time = 37.089661836624146s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 9: batch_loss = 2.296008847091155e7, val_loss = 0.1923815823582138, time = 38.337337017059326s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 10: batch_loss = 2.2131625281846244e7, val_loss = 0.19275219116886846, time = 37.24444317817688s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 11: batch_loss = 2.134681813357286e7, val_loss = 0.19312199594352022, time = 37.81374001502991s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 12: batch_loss = 2.060353584779033e7, val_loss = 0.19349079981213324, time = 36.62322378158569s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 13: batch_loss = 1.9898942165795162e7, val_loss = 0.19385812450402584, time = 37.167680978775024s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 14: batch_loss = 1.9230683197162323e7, val_loss = 0.19422387413923597, time = 40.2329740524292s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 15: batch_loss = 1.8596403712818272e7, val_loss = 0.19458791046155974, time = 38.17827081680298s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 16: batch_loss = 1.7993980279036377e7, val_loss = 0.19495000400496584, time = 37.79038095474243s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 17: batch_loss = 1.742151673238764e7, val_loss = 0.19531000610504506, time = 39.7249231338501s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 18: batch_loss = 1.6876840547694046e7, val_loss = 0.19566791897406144, time = 39.04671096801758s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 19: batch_loss = 1.635840839960578e7, val_loss = 0.19602369845877157, time = 38.94732689857483s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 20: batch_loss = 1.5864301625972819e7, val_loss = 0.19637705500989192, time = 42.411450147628784s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 21: batch_loss = 1.5393379318748254e7, val_loss = 0.19672814410910133, time = 35.40299701690674s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 22: batch_loss = 1.494379158127342e7, val_loss = 0.19707667100756537, time = 35.34382605552673s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 23: batch_loss = 1.4514576870522905e7, val_loss = 0.19742270086272362, time = 38.27880883216858s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 24: batch_loss = 1.4104298471347108e7, val_loss = 0.19776633766861418, time = 37.30441999435425s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 25: batch_loss = 1.371200056558966e7, val_loss = 0.19810729002020494, time = 38.702635049819946s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 26: batch_loss = 1.3336348548842998e7, val_loss = 0.19844569853328892, time = 36.0324649810791s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 27: batch_loss = 1.2975703895500017e7, val_loss = 0.1987807959310068, time = 36.637113094329834s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 28: batch_loss = 1.262822686359917e7, val_loss = 0.19911310455530276, time = 39.39320397377014s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 29: batch_loss = 1.229663375797368e7, val_loss = 0.19944299379643665, time = 37.966099977493286s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 30: batch_loss = 1.197967967572385e7, val_loss = 0.19977075163498154, time = 40.15316700935364s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 31: batch_loss = 1.167613728217981e7, val_loss = 0.20009632238413358, time = 35.3105890750885s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 32: batch_loss = 1.1385142919289017e7, val_loss = 0.2004187037729617, time = 38.02314615249634s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 33: batch_loss = 1.1105997493968481e7, val_loss = 0.20073811451149987, time = 35.85155200958252s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 34: batch_loss = 1.0837583219309805e7, val_loss = 0.2010546606048338, time = 40.541898012161255s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 35: batch_loss = 1.0579260738752132e7, val_loss = 0.20136822296588275, time = 39.20237398147583s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 36: batch_loss = 1.033063677077577e7, val_loss = 0.20167922187485854, time = 38.58127212524414s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 37: batch_loss = 1.0091048413540473e7, val_loss = 0.20198777715110638, time = 38.44267797470093s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 38: batch_loss = 9.86000548250556e6, val_loss = 0.20229366437378413, time = 35.89922785758972s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 39: batch_loss = 9.636985656615904e6, val_loss = 0.2025968829357597, time = 38.45578598976135s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 40: batch_loss = 9.421720597983344e6, val_loss = 0.20289768679046732, time = 36.17464208602905s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 41: batch_loss = 9.213609829648783e6, val_loss = 0.20319596124927702, time = 35.429275035858154s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 42: batch_loss = 9.013469758803379e6, val_loss = 0.20349163825875113, time = 35.06125783920288s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 43: batch_loss = 8.820089740383575e6, val_loss = 0.2037848315890735, time = 35.2759530544281s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 44: batch_loss = 8.633243642459199e6, val_loss = 0.2040755236737149, time = 36.50148916244507s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 45: batch_loss = 8.45264499557016e6, val_loss = 0.20436392387487026, time = 36.58784580230713s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 46: batch_loss = 8.27785501024584e6, val_loss = 0.20464989745106898, time = 39.21336388587952s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 47: batch_loss = 8.108836061593238e6, val_loss = 0.2049335779090069, time = 37.23534393310547s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 48: batch_loss = 7.945072740243718e6, val_loss = 0.20521496292420754, time = 37.842227935791016s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 49: batch_loss = 7.786569731054914e6, val_loss = 0.20549415421188352, time = 40.95296597480774s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 50: batch_loss = 7.632948209779323e6, val_loss = 0.2057710803782164, time = 39.09578204154968s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 51: batch_loss = 7.484002968098876e6, val_loss = 0.20604578940976787, time = 36.89267301559448s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 52: batch_loss = 7.33961818821047e6, val_loss = 0.20631831424856115, time = 40.558233976364136s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 53: batch_loss = 7.19960468552904e6, val_loss = 0.20658868445895823, time = 37.44539403915405s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 54: batch_loss = 7.063686228574697e6, val_loss = 0.20685704848799819, time = 36.23492980003357s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 55: batch_loss = 6.93178943294042e6, val_loss = 0.20712327684311493, time = 39.036700963974s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 56: batch_loss = 6.803689784588593e6, val_loss = 0.20738746169424382, time = 38.94459080696106s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 57: batch_loss = 6.679247064126437e6, val_loss = 0.20764954353966697, time = 39.87768197059631s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 58: batch_loss = 6.558381312036877e6, val_loss = 0.20790959743160523, time = 37.74469184875488s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 59: batch_loss = 6.440855405327769e6, val_loss = 0.20816763881566636, time = 37.6137330532074s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 60: batch_loss = 6.326638275589051e6, val_loss = 0.2084237953311332, time = 40.154157876968384s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 61: batch_loss = 6.2155262977126e6, val_loss = 0.20867805520316815, time = 36.908621072769165s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 62: batch_loss = 6.10742575688665e6, val_loss = 0.20893042546512983, time = 37.34826898574829s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 63: batch_loss = 6.002275534903321e6, val_loss = 0.20918093842410496, time = 36.031371116638184s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 64: batch_loss = 5.899838540818435e6, val_loss = 0.20942968312937393, time = 37.57020688056946s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 65: batch_loss = 5.800119109263533e6, val_loss = 0.20967661914808863, time = 37.961251974105835s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 66: batch_loss = 5.702979719441341e6, val_loss = 0.20992174239470024, time = 37.27879190444946s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 67: batch_loss = 5.608351904061134e6, val_loss = 0.21016516688737275, time = 39.040722131729126s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 68: batch_loss = 5.516107347920145e6, val_loss = 0.21040674645953167, time = 37.044780015945435s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 69: batch_loss = 5.426218142461319e6, val_loss = 0.2106466460836102, time = 37.28645181655884s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 70: batch_loss = 5.338533504182991e6, val_loss = 0.21088482859497776, time = 34.62296915054321s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 71: batch_loss = 5.25296084011736e6, val_loss = 0.21112140216706635, time = 35.118587017059326s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 72: batch_loss = 5.169506993359725e6, val_loss = 0.21135642857146056, time = 36.729026079177856s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 73: batch_loss = 5.087980821985123e6, val_loss = 0.2115898499926683, time = 38.204904079437256s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 74: batch_loss = 5.008331460956557e6, val_loss = 0.21182177089558513, time = 37.766263008117676s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 75: batch_loss = 4.930508373183678e6, val_loss = 0.21205217449761368, time = 39.319445848464966s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 76: batch_loss = 4.854380400288525e6, val_loss = 0.21228117993423468, time = 36.65529823303223s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 77: batch_loss = 4.779906238484803e6, val_loss = 0.2125087227494284, time = 37.611217975616455s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 78: batch_loss = 4.70698795569737e6, val_loss = 0.21273492874265243, time = 38.076541900634766s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 79: batch_loss = 4.6355002585412e6, val_loss = 0.21295991524301439, time = 36.68645691871643s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 80: batch_loss = 4.565599889077994e6, val_loss = 0.2131835920567679, time = 38.60393786430359s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 81: batch_loss = 4.497422467020843e6, val_loss = 0.2134060016738261, time = 35.52400493621826s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 82: batch_loss = 4.431041925694721e6, val_loss = 0.21362724627520457, time = 37.804627895355225s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 83: batch_loss = 4.3661335179863805e6, val_loss = 0.21384739865577176, time = 38.64418411254883s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 84: batch_loss = 4.302711484841064e6, val_loss = 0.21406631834316736, time = 38.563798904418945s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 85: batch_loss = 4.240660783868839e6, val_loss = 0.2142839670995202, time = 37.46216607093811s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 86: batch_loss = 4.1799847976027443e6, val_loss = 0.21450069214976675, time = 37.24775791168213s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 87: batch_loss = 4.1204826623920845e6, val_loss = 0.2147166117060611, time = 40.8438618183136s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 88: batch_loss = 4.062217108744277e6, val_loss = 0.21493185998867992, time = 38.49440598487854s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 89: batch_loss = 4.0050830756231924e6, val_loss = 0.21514642862967404, time = 40.641457080841064s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 90: batch_loss = 3.949215676320758e6, val_loss = 0.2153606187725824, time = 39.06382608413696s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 91: batch_loss = 3.8944090774480333e6, val_loss = 0.21557467315348755, time = 34.76435303688049s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 92: batch_loss = 3.840472709612438e6, val_loss = 0.2157890329114322, time = 37.81179714202881s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 93: batch_loss = 3.7873291098965933e6, val_loss = 0.21600421744284104, time = 36.03287220001221s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 94: batch_loss = 3.7347650112109333e6, val_loss = 0.21622094854301274, time = 39.451399087905884s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 95: batch_loss = 3.6828386714570746e6, val_loss = 0.2164360048100793, time = 37.54577398300171s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 96: batch_loss = 3.632643340636359e6, val_loss = 0.2166506099976271, time = 37.05835819244385s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 97: batch_loss = 3.5835766658090753e6, val_loss = 0.2168644092791193, time = 38.53543496131897s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 98: batch_loss = 3.535611997250502e6, val_loss = 0.21707589919536224, time = 36.503803968429565s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 99: batch_loss = 3.4887141215167255e6, val_loss = 0.21728452261917136, time = 39.554818868637085s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 100: batch_loss = 3.4427957371703507e6, val_loss = 0.21749070697205736, time = 37.34717011451721s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 101: batch_loss = 3.3978757040542616e6, val_loss = 0.2176952491622251, time = 39.328437089920044s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 102: batch_loss = 3.3538764898756086e6, val_loss = 0.21789824514437126, time = 37.80157685279846s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 103: batch_loss = 3.310778068219422e6, val_loss = 0.21809980500473983, time = 37.84155797958374s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 104: batch_loss = 3.268551645531833e6, val_loss = 0.21829998970905468, time = 37.418753147125244s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 105: batch_loss = 3.2271987629770827e6, val_loss = 0.21849897629015647, time = 37.45032000541687s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 106: batch_loss = 3.1865882492163433e6, val_loss = 0.21869680567547903, time = 38.536470890045166s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 107: batch_loss = 3.1467457139052637e6, val_loss = 0.21889355399645133, time = 36.7923538684845s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 108: batch_loss = 3.107628050759809e6, val_loss = 0.219089288094602, time = 39.66809296607971s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 109: batch_loss = 3.0691967586188675e6, val_loss = 0.21928404342735455, time = 37.19173312187195s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 110: batch_loss = 3.031428378353561e6, val_loss = 0.21947780314446416, time = 38.579216957092285s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 111: batch_loss = 2.9942629534944464e6, val_loss = 0.21967053592098734, time = 36.72811007499695s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 112: batch_loss = 2.957713663069445e6, val_loss = 0.2198622285381444, time = 37.40034294128418s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 113: batch_loss = 2.9216883403208544e6, val_loss = 0.22005251715676333, time = 35.83131194114685s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 114: batch_loss = 2.88617735924691e6, val_loss = 0.2202416422914548, time = 37.233994007110596s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 115: batch_loss = 2.8513666622483768e6, val_loss = 0.220429714690692, time = 38.26274108886719s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 116: batch_loss = 2.817067143813263e6, val_loss = 0.2206168738782738, time = 37.86418294906616s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 117: batch_loss = 2.7832121543714604e6, val_loss = 0.22080307314967237, time = 38.2334041595459s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 118: batch_loss = 2.7497737701323032e6, val_loss = 0.22098863584381703, time = 39.019421100616455s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 119: batch_loss = 2.7166592318951944e6, val_loss = 0.2211735753950717, time = 38.17621111869812s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 120: batch_loss = 2.683769676250875e6, val_loss = 0.2213579728964209, time = 39.85897397994995s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 121: batch_loss = 2.6514090465010246e6, val_loss = 0.22154176680536866, time = 37.80388379096985s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 122: batch_loss = 2.619538871377235e6, val_loss = 0.22172508390665044, time = 37.76220083236694s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 123: batch_loss = 2.5881512734458344e6, val_loss = 0.2219078556171652, time = 39.14323091506958s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 124: batch_loss = 2.5571928597040977e6, val_loss = 0.22208981765827945, time = 38.66243004798889s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 125: batch_loss = 2.5265187509281375e6, val_loss = 0.22227131715479875, time = 38.55854797363281s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+
+epoch 126: batch_loss = 2.49595091769684e6, val_loss = 0.22245247877258462, time = 38.58863306045532s
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 

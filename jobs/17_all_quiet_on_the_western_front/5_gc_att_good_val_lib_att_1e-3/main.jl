@@ -545,8 +545,8 @@ function create_ff_model_with_attention(nfeatures)
         Dense(nfeatures, attention_dim, relu),
         attention_wrapper,
         Dense(attention_dim, nfeatures * 4, relu),
-        Dense(nout * 4, nout * 2, relu),
-        Dense(nout * 2, nout, x -> x),
+        Dense(nfeatures * 4, nfeatures * 2, relu),
+        Dense(nfeatures * 2, nfeatures, x -> x),
     )
 end
 
