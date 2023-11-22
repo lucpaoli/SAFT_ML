@@ -1,0 +1,5 @@
+msimga^3 perfect
+lambda_r virtually converged
+epsilon very slow to evolve, but everything moving in right direction
+lr too high - gets confused for large compounds (223 trimentyl pentane included) - reflected in batch and 
+validation losses (nonmonotonic decline - there're jumps)

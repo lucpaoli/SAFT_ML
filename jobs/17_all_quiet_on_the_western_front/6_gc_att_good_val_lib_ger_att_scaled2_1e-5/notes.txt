@@ -1,0 +1,3 @@
+lr looks better than 1e-4 case of the same name, but the validation loss is consistently a lot lower
+than the training loss
+lambda_r converges extremely quickly, causing all other variables to move in the wrong direction

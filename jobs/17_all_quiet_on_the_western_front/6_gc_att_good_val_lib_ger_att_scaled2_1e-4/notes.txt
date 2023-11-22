@@ -1,0 +1,4 @@
+I like this a lot - lr is too high (paramter convergence is jumpy)
+Everyhting moves "purposefully" in the direction they're supposed to (m, simga, lambda_r are
+basically converged after just ~350 epochs)
+batch and validation losses are great - very similar and already <1e-1
