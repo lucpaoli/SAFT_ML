@@ -375,6 +375,7 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
         end
 
         #? How bad is it to predict inside the metastable region?
+        #! might be better to land inside the metastable region, derivatives zero'd above critical point
         Tc0_cache[mol] = BigFloat.([1.1*Tc/T̄, 1.1*log10(Vc)])
         (Tc, pc, Vc) = Float64.([Tc, pc, Vc])
         # n > 1 && @assert false
