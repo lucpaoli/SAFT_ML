@@ -1,0 +1,72 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+all_mols = ["2,5-dimethylhexane", "2-methylheptane", "3-methyldecane", "hexadecane", "3,3-dimethylhexane", "3-methyltridecane", "2-methylbutane", "nonane", "heptacosane", "2,2-dimethylpropane", "2,4,4-trimethylhexane", "octadecane", "heptadecane", "n-undecane", "nonadecane", "2,2,4,4,6,8,8-heptamethylnonane", "3-methyldodecane", "3,4-dimethylhexane", "3-methylheptane", "n-butane", "2,2,5,5-tetramethylhexane", "tridecane", "2,2,3-trimethylpentane", "decane", "3-ethylpentane", "2,3-dimethyldodecane", "3-methylundecane", "2-methyldecane", "3-methylpentane", "octane", "2-methyldodecane", "2,6-dimethyloctane", "2,2,3,4-tetramethylpentane", "3,3-diethylpentane", "2,3,4-trimethyl pentane", "2-methylhexane", "2,2,3-trimethylbutane", "3-methyl-3-ethylpentane", "pentadecane", "hexane", "2-methyloctane", "octacosane", "2,2,4,4-tetramethylpentane", "2-methyl-3-ethyl-pentane", "2-methylpentane", "2,3,3,4-tetramethylpentane", "2,3-dimethyldecane", "ethane", "2,3-dimethylpentane", "2,3-dimethylundecane", "pentane", "tetradecane", "2-methylundecane", "squalane", "2,2-dimethylbutane", "2-methylpropane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2-dimethylhexane", "2,2,4-trimethylpentane", "2,4-dimethylhexane", "2,2,5-trimethylhexane", "3-methylhexane", "dodecane", "eicosane", "2,3-dimethylheptane", "2,7-dimethyloctane", "4-methylheptane", "tetracosane", "methane", "3,3-dimethylpentane", "2,2,3,3-tetramethylpentane", "2,2-dimethylpentane", "2-methyltridecane", "2,3-dimethylbutane", "2,3-dimethylhexane", "2,3-dimethylnonane", "propane", "heptane", "2,4-dimethylpentane"]
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 1024
+training on 10 threads
+
+epoch 1: batch_loss = 0.11651561255151797, val_loss = 0.08451766423929467, time = 80.63825106620789s
+
+epoch 2: batch_loss = 0.11352631307579339, val_loss = 0.08217319184898685, time = 1.5370471477508545s
+
+epoch 3: batch_loss = 0.11097398266220632, val_loss = 0.07956681418985571, time = 1.4585199356079102s
+
+epoch 4: batch_loss = 0.1080680763961983, val_loss = 0.07641442135514184, time = 1.4354760646820068s
+
+epoch 5: batch_loss = 0.10454001827213764, val_loss = 0.07254046020569188, time = 1.4903311729431152s
+
+epoch 6: batch_loss = 0.10014409052832207, val_loss = 0.06770464967110415, time = 1.2818598747253418s
+
+epoch 7: batch_loss = 0.09458658574636883, val_loss = 0.061598979012484414, time = 1.3186280727386475s
+
+epoch 8: batch_loss = 0.08762316610455845, val_loss = 0.05400282920625528, time = 1.415309190750122s
+
+epoch 9: batch_loss = 0.07928478562934901, val_loss = 0.04497573296610318, time = 1.2246501445770264s
+
+epoch 10: batch_loss = 0.07028951108318265, val_loss = 0.035288794038609454, time = 1.416916847229004s
+
+epoch 11: batch_loss = 0.06260904165009522, val_loss = 0.026833330850179204, time = 1.4116449356079102s
+
+epoch 12: batch_loss = 0.05801068046594717, val_loss = 0.021244743432169574, time = 1.3158621788024902s
+
+epoch 13: batch_loss = 0.054503136384547235, val_loss = 0.017435604616083147, time = 1.3577868938446045s
+
+epoch 14: batch_loss = 0.04979155151728272, val_loss = 0.014330129188552396, time = 1.2547399997711182s
+
+epoch 15: batch_loss = 0.045019017807710476, val_loss = 0.01167780277602618, time = 1.3952178955078125s
+
+epoch 16: batch_loss = 0.041227181454829384, val_loss = 0.009295117621485934, time = 1.496100902557373s
+
+epoch 17: batch_loss = 0.03793645610505099, val_loss = 0.006712425095246703, time = 1.4386961460113525s
+
+epoch 18: batch_loss = 0.034460834430193585, val_loss = 0.004386282958344644, time = 1.2841877937316895s
+
+epoch 19: batch_loss = 0.031137270623737785, val_loss = 0.002770689575546328, time = 1.4136178493499756s
+
+epoch 20: batch_loss = 0.02799142648144782, val_loss = 0.0021867467652387715, time = 1.5017259120941162s
+
+epoch 21: batch_loss = 0.025758193825616033, val_loss = 0.0026366259829361774, time = 1.2357850074768066s
+
+epoch 22: batch_loss = 0.02435968745893574, val_loss = 0.0035355946256340753, time = 1.284972906112671s
+
+epoch 23: batch_loss = 0.023378339540245062, val_loss = 0.004311047945747217, time = 1.285506010055542s
+
+epoch 24: batch_loss = 0.02278166706557382, val_loss = 0.004651003022832861, time = 1.304123878479004s
+
+epoch 25: batch_loss = 0.022040587754533915, val_loss = 0.004946809003425636, time = 1.452808141708374s
+Generating data for 80 molecules...
+all_mols = ["2,5-dimethylhexane", "2-methylheptane", "3-methyldecane", "hexadecane", "3,3-dimethylhexane", "3-methyltridecane", "2-methylbutane", "nonane", "heptacosane", "2,2-dimethylpropane", "2,4,4-trimethylhexane", "octadecane", "heptadecane", "n-undecane", "nonadecane", "2,2,4,4,6,8,8-heptamethylnonane", "3-methyldodecane", "3,4-dimethylhexane", "3-methylheptane", "n-butane", "2,2,5,5-tetramethylhexane", "tridecane", "2,2,3-trimethylpentane", "decane", "3-ethylpentane", "2,3-dimethyldodecane", "3-methylundecane", "2-methyldecane", "3-methylpentane", "octane", "2-methyldodecane", "2,6-dimethyloctane", "2,2,3,4-tetramethylpentane", "3,3-diethylpentane", "2,3,4-trimethyl pentane", "2-methylhexane", "2,2,3-trimethylbutane", "3-methyl-3-ethylpentane", "pentadecane", "hexane", "2-methyloctane", "octacosane", "2,2,4,4-tetramethylpentane", "2-methyl-3-ethyl-pentane", "2-methylpentane", "2,3,3,4-tetramethylpentane", "2,3-dimethyldecane", "ethane", "2,3-dimethylpentane", "2,3-dimethylundecane", "pentane", "tetradecane", "2-methylundecane", "squalane", "2,2-dimethylbutane", "2-methylpropane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2-dimethylhexane", "2,2,4-trimethylpentane", "2,4-dimethylhexane", "2,2,5-trimethylhexane", "3-methylhexane", "dodecane", "eicosane", "2,3-dimethylheptane", "2,7-dimethyloctane", "4-methylheptane", "tetracosane", "methane", "3,3-dimethylpentane", "2,2,3,3-tetramethylpentane", "2,2-dimethylpentane", "2-methyltridecane", "2,3-dimethylbutane", "2,3-dimethylhexane", "2,3-dimethylnonane", "propane", "heptane", "2,4-dimethylpentane"]
+training on 10 threads
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 1: batch_loss = 6.718697163920299e8, val_loss = 0.15744592599215917, time = 174.42944312095642s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
