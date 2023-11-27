@@ -114,7 +114,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
     @show all_mols
     sort!(all_mols, by = mol -> mol_data[mol][2])
     # todo interlace all_mols so kfolds takes molecules [1, 6, 11, 16, etc] when sorted by molar weight, given mol_data = Dict(mol => (fp, Mw, [1.0], Y_vec))
-    interlaced_mols = [all_mols[i: k: end] for i in 1:k]
+    interlaced_mols = [all_mols[i:5:end] for i in 1:5]
     all_mols_interlaced = vcat(interlaced_mols...)
 
     folds = collect(kfolds(all_mols_interlaced, k=5)) # split all_mols into 5 folds
