@@ -1,0 +1,178 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+all_mols = ["2,5-dimethylhexane", "2-methylheptane", "3-methyldecane", "hexadecane", "3,3-dimethylhexane", "3-methyltridecane", "2-methylbutane", "nonane", "heptacosane", "2,2-dimethylpropane", "2,4,4-trimethylhexane", "octadecane", "heptadecane", "n-undecane", "nonadecane", "2,2,4,4,6,8,8-heptamethylnonane", "3-methyldodecane", "3,4-dimethylhexane", "3-methylheptane", "n-butane", "2,2,5,5-tetramethylhexane", "tridecane", "2,2,3-trimethylpentane", "decane", "3-ethylpentane", "2,3-dimethyldodecane", "3-methylundecane", "2-methyldecane", "3-methylpentane", "octane", "2-methyldodecane", "2,6-dimethyloctane", "2,2,3,4-tetramethylpentane", "3,3-diethylpentane", "2,3,4-trimethyl pentane", "2-methylhexane", "2,2,3-trimethylbutane", "3-methyl-3-ethylpentane", "pentadecane", "hexane", "2-methyloctane", "octacosane", "2,2,4,4-tetramethylpentane", "2-methyl-3-ethyl-pentane", "2-methylpentane", "2,3,3,4-tetramethylpentane", "2,3-dimethyldecane", "ethane", "2,3-dimethylpentane", "2,3-dimethylundecane", "pentane", "tetradecane", "2-methylundecane", "squalane", "2,2-dimethylbutane", "2-methylpropane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2-dimethylhexane", "2,2,4-trimethylpentane", "2,4-dimethylhexane", "2,2,5-trimethylhexane", "3-methylhexane", "dodecane", "eicosane", "2,3-dimethylheptane", "2,7-dimethyloctane", "4-methylheptane", "tetracosane", "methane", "3,3-dimethylpentane", "2,2,3,3-tetramethylpentane", "2,2-dimethylpentane", "2-methyltridecane", "2,3-dimethylbutane", "2,3-dimethylhexane", "2,3-dimethylnonane", "propane", "heptane", "2,4-dimethylpentane"]
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 5120
+training on 4 threads
+
+epoch 1: batch_loss = 0.1155209128034173, val_loss = 0.12631106093596653, time = 114.45346879959106s
+
+epoch 2: batch_loss = 0.11457728914330931, val_loss = 0.12562101495538402, time = 6.64864182472229s
+
+epoch 3: batch_loss = 0.11394220857262609, val_loss = 0.12513730057745426, time = 6.650068044662476s
+
+epoch 4: batch_loss = 0.11347272216880236, val_loss = 0.12473617073983438, time = 5.986567974090576s
+
+epoch 5: batch_loss = 0.1130729723211191, val_loss = 0.12437584881068027, time = 6.502923965454102s
+
+epoch 6: batch_loss = 0.11270783138807676, val_loss = 0.12403583061011428, time = 6.20632004737854s
+
+epoch 7: batch_loss = 0.11235589625737682, val_loss = 0.1237044119709508, time = 6.033908843994141s
+
+epoch 8: batch_loss = 0.11200970401326919, val_loss = 0.12337605259913839, time = 6.092858076095581s
+
+epoch 9: batch_loss = 0.11166551839503551, val_loss = 0.12304841485739276, time = 6.1081202030181885s
+
+epoch 10: batch_loss = 0.11131955975977417, val_loss = 0.12271700234939312, time = 6.211625099182129s
+
+epoch 11: batch_loss = 0.11096873444504551, val_loss = 0.12237875313265677, time = 6.461463212966919s
+
+epoch 12: batch_loss = 0.11061081097530959, val_loss = 0.12203195660475002, time = 6.382006883621216s
+
+epoch 13: batch_loss = 0.11024372127941443, val_loss = 0.1216748272113875, time = 6.157397985458374s
+
+epoch 14: batch_loss = 0.109865026149736, val_loss = 0.12130479383001591, time = 6.819988012313843s
+
+epoch 15: batch_loss = 0.10947244210383747, val_loss = 0.12092086457594245, time = 6.0240490436553955s
+
+epoch 16: batch_loss = 0.10906461130924583, val_loss = 0.12052232739617477, time = 6.246906995773315s
+
+epoch 17: batch_loss = 0.10864032297364141, val_loss = 0.12010702230755341, time = 5.922423839569092s
+
+epoch 18: batch_loss = 0.10819671489476332, val_loss = 0.11967221316286986, time = 5.590579986572266s
+
+epoch 19: batch_loss = 0.10773152477686838, val_loss = 0.11921583999590782, time = 6.4017510414123535s
+
+epoch 20: batch_loss = 0.10724224625883108, val_loss = 0.11873651218487219, time = 5.914323091506958s
+
+epoch 21: batch_loss = 0.1067268942579036, val_loss = 0.1182315059934646, time = 6.3369269371032715s
+
+epoch 22: batch_loss = 0.10618311623533531, val_loss = 0.1176986661318116, time = 5.727039098739624s
+
+epoch 23: batch_loss = 0.1056085421828834, val_loss = 0.1171351691264177, time = 6.087000846862793s
+
+epoch 24: batch_loss = 0.10500075995470123, val_loss = 0.11653923711233806, time = 6.103101968765259s
+
+epoch 25: batch_loss = 0.10435740148024944, val_loss = 0.11590843935046266, time = 6.0220770835876465s
+
+epoch 26: batch_loss = 0.10367525399851614, val_loss = 0.11524021060555992, time = 6.512261867523193s
+
+epoch 27: batch_loss = 0.1029517757107985, val_loss = 0.11453184643713177, time = 6.034625053405762s
+
+epoch 28: batch_loss = 0.10218454265364282, val_loss = 0.11378139797015713, time = 6.804049015045166s
+
+epoch 29: batch_loss = 0.10137081379068821, val_loss = 0.11298568954064811, time = 6.439252138137817s
+
+epoch 30: batch_loss = 0.1005074358911036, val_loss = 0.11214220723711527, time = 6.166490793228149s
+
+epoch 31: batch_loss = 0.09959163930409043, val_loss = 0.11124886399810334, time = 5.485820055007935s
+
+epoch 32: batch_loss = 0.0986213206456339, val_loss = 0.11030417063863444, time = 5.840177059173584s
+
+epoch 33: batch_loss = 0.0975949472636605, val_loss = 0.10930645307401964, time = 5.974952936172485s
+
+epoch 34: batch_loss = 0.09651077770350833, val_loss = 0.10825373216305745, time = 6.02331018447876s
+
+epoch 35: batch_loss = 0.09536716980669199, val_loss = 0.10714302617010318, time = 6.340095043182373s
+
+epoch 36: batch_loss = 0.09416348920610396, val_loss = 0.10597625238120918, time = 6.196899890899658s
+
+epoch 37: batch_loss = 0.0928998651195897, val_loss = 0.10475267178125598, time = 7.454676866531372s
+
+epoch 38: batch_loss = 0.0915767455668938, val_loss = 0.10347294157596068, time = 6.3754730224609375s
+
+epoch 39: batch_loss = 0.09019513496271589, val_loss = 0.10213854156777041, time = 6.802555084228516s
+
+epoch 40: batch_loss = 0.08875803268437679, val_loss = 0.10075326585395086, time = 6.595585107803345s
+
+epoch 41: batch_loss = 0.08726951205653466, val_loss = 0.09932084821685809, time = 6.723514080047607s
+
+epoch 42: batch_loss = 0.0857337285484957, val_loss = 0.09784519138590853, time = 5.924365043640137s
+
+epoch 43: batch_loss = 0.08415574891899569, val_loss = 0.09633218330109085, time = 7.155504941940308s
+
+epoch 44: batch_loss = 0.08253960087405114, val_loss = 0.09478674162269915, time = 6.338129997253418s
+
+epoch 45: batch_loss = 0.08089961860421069, val_loss = 0.09322853117285224, time = 6.791420936584473s
+
+epoch 46: batch_loss = 0.07924903765393934, val_loss = 0.09166063558331572, time = 6.195333957672119s
+
+epoch 47: batch_loss = 0.07759222260727713, val_loss = 0.09008867609743137, time = 7.120589017868042s
+
+epoch 48: batch_loss = 0.07593502134404309, val_loss = 0.08851771939928181, time = 7.167551040649414s
+
+epoch 49: batch_loss = 0.07428130701424795, val_loss = 0.08695368783287163, time = 7.299450874328613s
+
+epoch 50: batch_loss = 0.07263581891901777, val_loss = 0.08540140692142678, time = 6.62988805770874s
+
+epoch 51: batch_loss = 0.07100004926646225, val_loss = 0.08386175054261419, time = 7.345463991165161s
+
+epoch 52: batch_loss = 0.06937137444214274, val_loss = 0.08233398277977784, time = 7.255127906799316s
+
+epoch 53: batch_loss = 0.06775504659592968, val_loss = 0.08082525756402381, time = 8.16259503364563s
+
+epoch 54: batch_loss = 0.06614817870521789, val_loss = 0.07933107929671067, time = 8.276286840438843s
+
+epoch 55: batch_loss = 0.0645450898648515, val_loss = 0.07784500001901792, time = 10.048524856567383s
+
+epoch 56: batch_loss = 0.06293218057252105, val_loss = 0.07635315468679452, time = 9.17192006111145s
+
+epoch 57: batch_loss = 0.06130412706191031, val_loss = 0.07485598239723154, time = 8.445787906646729s
+
+epoch 58: batch_loss = 0.05965614772248471, val_loss = 0.07335165190642415, time = 8.968688011169434s
+
+epoch 59: batch_loss = 0.05798809631922399, val_loss = 0.07183614849889931, time = 8.095587015151978s
+
+epoch 60: batch_loss = 0.056292965908958256, val_loss = 0.07030087709372806, time = 9.490653991699219s
+
+epoch 61: batch_loss = 0.05454636350479973, val_loss = 0.06871341808331426, time = 8.780841827392578s
+
+epoch 62: batch_loss = 0.05273172578934515, val_loss = 0.0670907954195624, time = 8.487812995910645s
+
+epoch 63: batch_loss = 0.05087565608299207, val_loss = 0.06544402193882633, time = 15.568780183792114s
+
+epoch 64: batch_loss = 0.04899894116006466, val_loss = 0.06379533270274323, time = 21.678874015808105s
+
+epoch 65: batch_loss = 0.047112685647892935, val_loss = 0.0621403770883884, time = 28.596482038497925s
+
+epoch 66: batch_loss = 0.0452050604021346, val_loss = 0.06047765425019862, time = 83.52152991294861s
+
+epoch 67: batch_loss = 0.0432858682496425, val_loss = 0.05882320550525778, time = 27.553194999694824s
+
+epoch 68: batch_loss = 0.04138264119984049, val_loss = 0.05718077839053273, time = 7.676612854003906s
+
+epoch 69: batch_loss = 0.03948443755861675, val_loss = 0.05555475620388113, time = 9.1872718334198s
+
+epoch 70: batch_loss = 0.0376148789265611, val_loss = 0.05396687627945372, time = 8.981835126876831s
+
+epoch 71: batch_loss = 0.03581037025948304, val_loss = 0.05246709991615389, time = 8.845118999481201s
+
+epoch 72: batch_loss = 0.034072831753221886, val_loss = 0.05102064743738259, time = 9.522910118103027s
+
+epoch 73: batch_loss = 0.032380943257446226, val_loss = 0.04964130815172598, time = 8.677120208740234s
+
+epoch 74: batch_loss = 0.030759638981478838, val_loss = 0.04834428792112855, time = 9.827443838119507s
+
+epoch 75: batch_loss = 0.02921785657220068, val_loss = 0.047134199860755406, time = 8.483190059661865s
+
+epoch 76: batch_loss = 0.027765594505305545, val_loss = 0.04602318657430548, time = 8.267078876495361s
+
+epoch 77: batch_loss = 0.026416752007789562, val_loss = 0.045017884173766586, time = 8.126124858856201s
+
+epoch 78: batch_loss = 0.02518102682328958, val_loss = 0.044124224912903624, time = 8.474567174911499s
+
+epoch 79: batch_loss = 0.024068990745905, val_loss = 0.04334444211904007, time = 9.041999101638794s
+
+epoch 80: batch_loss = 0.023082478677672644, val_loss = 0.042675833863018264, time = 9.208878993988037s
+
+epoch 81: batch_loss = 0.022220040547578458, val_loss = 0.042114101972333326, time = 8.426433086395264s
+
+epoch 82: batch_loss = 0.02147862392059258, val_loss = 0.041652549379039575, time = 7.938225984573364s
+
+epoch 83: batch_loss = 0.02085087535994189, val_loss = 0.0412783948306548, time = 8.662245035171509s
+
+epoch 84: batch_loss = 0.020324643432179774, val_loss = 0.04097641307283624, time = 11.801854848861694s
+
+epoch 85: batch_loss = 0.019885988585418544, val_loss = 0.04073074174580193, time = 7.888957977294922s
+
+epoch 86: batch_loss = 0.019523007181424225, val_loss = 0.0405378511598135, time = 9.291855096817017s

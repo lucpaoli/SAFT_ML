@@ -30,6 +30,8 @@ function make_fingerprint(s::String)::Vector{Float64}
     fp = []
 
     fp_str_atom_pair = get_atom_pair_fp(mol, Dict{String,Any}("radius" => 4, "nBits" => 1024))
+    fp_str_morgan = get_morgan_fp(mol, Dict{String,Any}("radius" => 5, "nbits" => 1024))
+    fp_str_pattern = get_pattern_fp(mol, Dict{String,Any}("radius" => 7, "nbits" => 1024))
 
     fp_str = fp_str_morgan * fp_str_atom_pair * fp_str_pattern
 
