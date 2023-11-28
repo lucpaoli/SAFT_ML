@@ -379,12 +379,16 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
         (Tc, pc, Vc) = crit_pure(saft_model, Tc0; options=options)
 
         deriv = ∂²A∂V²(saft_params, Vc, Tc)
+        deriv2 = ∂³A∂V²∂T(saft_params, Vc, Tc)
 
         if Tc < 0
             println("Tc < 0, = $Tc for $mol, skipping...")
             continue
         elseif abs(deriv) > 1e1
             println("abs(∂²A∂V²(Tc)) > 10, = $deriv, Tc=$Tc for $mol, skipping...")
+            continue
+        elseif abs(deriv/deriv2) > 1e-1
+            println("abs(∂²A∂V²(Tc)/∂³A∂V²∂T) > , = $deriv, Tc=$Tc for $mol, skipping...")
             continue
         end
 
