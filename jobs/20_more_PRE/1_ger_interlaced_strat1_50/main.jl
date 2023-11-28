@@ -510,6 +510,7 @@ function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000
                 #* Should I cache x0 between iterations?
                 X_batch = create_X_data(model, mol_dict, val_mols, x0_val_cache, Tc0_val_cache)
             else
+                create_X_data(model, mol_dict, val_mols, x0_val_cache, Tc0_val_cache; pretraining=true)
                 X_batch = create_pretraining_X_data(mol_dict, val_mols)
             end
 
@@ -580,8 +581,8 @@ function main_pcpsaft()
 
     @show nfeatures = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(nfeatures)
-    optim = Flux.setup(Flux.Adam(5e-5), model)
-    train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=500, pretraining=true)
+    optim = Flux.setup(Flux.Adam(1e-5), model)
+    train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=50, pretraining=true)
 
     return model
 end

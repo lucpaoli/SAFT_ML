@@ -1,0 +1,537 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+all_mols = ["2,5-dimethylhexane", "2-methylheptane", "3-methyldecane", "hexadecane", "3,3-dimethylhexane", "3-methyltridecane", "2-methylbutane", "nonane", "heptacosane", "2,2-dimethylpropane", "2,4,4-trimethylhexane", "octadecane", "heptadecane", "n-undecane", "nonadecane", "2,2,4,4,6,8,8-heptamethylnonane", "3-methyldodecane", "3,4-dimethylhexane", "3-methylheptane", "n-butane", "2,2,5,5-tetramethylhexane", "tridecane", "2,2,3-trimethylpentane", "decane", "3-ethylpentane", "2,3-dimethyldodecane", "3-methylundecane", "2-methyldecane", "3-methylpentane", "octane", "2-methyldodecane", "2,6-dimethyloctane", "2,2,3,4-tetramethylpentane", "3,3-diethylpentane", "2,3,4-trimethyl pentane", "2-methylhexane", "2,2,3-trimethylbutane", "3-methyl-3-ethylpentane", "pentadecane", "hexane", "2-methyloctane", "octacosane", "2,2,4,4-tetramethylpentane", "2-methyl-3-ethyl-pentane", "2-methylpentane", "2,3,3,4-tetramethylpentane", "2,3-dimethyldecane", "ethane", "2,3-dimethylpentane", "2,3-dimethylundecane", "pentane", "tetradecane", "2-methylundecane", "squalane", "2,2-dimethylbutane", "2-methylpropane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2-dimethylhexane", "2,2,4-trimethylpentane", "2,4-dimethylhexane", "2,2,5-trimethylhexane", "3-methylhexane", "dodecane", "eicosane", "2,3-dimethylheptane", "2,7-dimethyloctane", "4-methylheptane", "tetracosane", "methane", "3,3-dimethylpentane", "2,2,3,3-tetramethylpentane", "2,2-dimethylpentane", "2-methyltridecane", "2,3-dimethylbutane", "2,3-dimethylhexane", "2,3-dimethylnonane", "propane", "heptane", "2,4-dimethylpentane"]
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 5120
+training on 10 threads
+
+epoch 1: batch_loss = 0.09335170185322611, val_loss = 0.08833808408584969, time = 53.843222856521606s
+
+epoch 2: batch_loss = 0.08934884711726845, val_loss = 0.08486983218574314, time = 2.344480037689209s
+
+epoch 3: batch_loss = 0.08586539284410294, val_loss = 0.08097110652340048, time = 2.1265580654144287s
+
+epoch 4: batch_loss = 0.08177955202544043, val_loss = 0.07602878419524359, time = 2.317183017730713s
+
+epoch 5: batch_loss = 0.07650096470300621, val_loss = 0.06948397556347442, time = 2.1798861026763916s
+
+epoch 6: batch_loss = 0.06957925870013396, val_loss = 0.060968482487916274, time = 2.2517709732055664s
+
+epoch 7: batch_loss = 0.06071228473572332, val_loss = 0.05042091738444281, time = 2.1360819339752197s
+
+epoch 8: batch_loss = 0.05021225408713656, val_loss = 0.039044036571049975, time = 2.1675970554351807s
+
+epoch 9: batch_loss = 0.04010136547187265, val_loss = 0.030620903290292312, time = 2.1374268531799316s
+
+epoch 10: batch_loss = 0.0342609183755691, val_loss = 0.027132458008261317, time = 2.1150949001312256s
+
+epoch 11: batch_loss = 0.03162952947729846, val_loss = 0.02299330321148016, time = 2.264146089553833s
+
+epoch 12: batch_loss = 0.027047275450095137, val_loss = 0.01771609853051865, time = 2.1002249717712402s
+
+epoch 13: batch_loss = 0.022497128569931017, val_loss = 0.01450083255611313, time = 2.18564510345459s
+
+epoch 14: batch_loss = 0.02016597065578086, val_loss = 0.012270796248920562, time = 2.3149631023406982s
+
+epoch 15: batch_loss = 0.01821410797234808, val_loss = 0.010174524279635604, time = 2.2416579723358154s
+
+epoch 16: batch_loss = 0.01708071007615837, val_loss = 0.009380553799195848, time = 2.0667128562927246s
+
+epoch 17: batch_loss = 0.017096531204106678, val_loss = 0.009047426479139187, time = 1.9837579727172852s
+
+epoch 18: batch_loss = 0.016831461687362388, val_loss = 0.008661630770360824, time = 2.194277048110962s
+
+epoch 19: batch_loss = 0.016341123539228893, val_loss = 0.008458804432981856, time = 2.252213954925537s
+
+epoch 20: batch_loss = 0.01599353801681944, val_loss = 0.008365171059053687, time = 2.2029800415039062s
+
+epoch 21: batch_loss = 0.015768903119388947, val_loss = 0.008292465198063748, time = 2.2079291343688965s
+
+epoch 22: batch_loss = 0.015558927263313652, val_loss = 0.00815337586035482, time = 2.1825690269470215s
+
+epoch 23: batch_loss = 0.015293607953737217, val_loss = 0.007975747710690614, time = 2.129218101501465s
+
+epoch 24: batch_loss = 0.015032531340701004, val_loss = 0.007750614431724314, time = 2.109534978866577s
+
+epoch 25: batch_loss = 0.014796690396725815, val_loss = 0.007541173257066944, time = 2.1120190620422363s
+Generating data for 80 molecules...
+all_mols = ["2,5-dimethylhexane", "2-methylheptane", "3-methyldecane", "hexadecane", "3,3-dimethylhexane", "3-methyltridecane", "2-methylbutane", "nonane", "heptacosane", "2,2-dimethylpropane", "2,4,4-trimethylhexane", "octadecane", "heptadecane", "n-undecane", "nonadecane", "2,2,4,4,6,8,8-heptamethylnonane", "3-methyldodecane", "3,4-dimethylhexane", "3-methylheptane", "n-butane", "2,2,5,5-tetramethylhexane", "tridecane", "2,2,3-trimethylpentane", "decane", "3-ethylpentane", "2,3-dimethyldodecane", "3-methylundecane", "2-methyldecane", "3-methylpentane", "octane", "2-methyldodecane", "2,6-dimethyloctane", "2,2,3,4-tetramethylpentane", "3,3-diethylpentane", "2,3,4-trimethyl pentane", "2-methylhexane", "2,2,3-trimethylbutane", "3-methyl-3-ethylpentane", "pentadecane", "hexane", "2-methyloctane", "octacosane", "2,2,4,4-tetramethylpentane", "2-methyl-3-ethyl-pentane", "2-methylpentane", "2,3,3,4-tetramethylpentane", "2,3-dimethyldecane", "ethane", "2,3-dimethylpentane", "2,3-dimethylundecane", "pentane", "tetradecane", "2-methylundecane", "squalane", "2,2-dimethylbutane", "2-methylpropane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2-dimethylhexane", "2,2,4-trimethylpentane", "2,4-dimethylhexane", "2,2,5-trimethylhexane", "3-methylhexane", "dodecane", "eicosane", "2,3-dimethylheptane", "2,7-dimethyloctane", "4-methylheptane", "tetracosane", "methane", "3,3-dimethylpentane", "2,2,3,3-tetramethylpentane", "2,2-dimethylpentane", "2-methyltridecane", "2,3-dimethylbutane", "2,3-dimethylhexane", "2,3-dimethylnonane", "propane", "heptane", "2,4-dimethylpentane"]
+training on 10 threads
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 1: batch_loss = 1.503194693247836e8, val_loss = 1.3663710879596954e6, time = 142.44363594055176s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 2: batch_loss = 1.4784173406518871e7, val_loss = 161305.24162178332, time = 32.56167197227478s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 3: batch_loss = 3.0000697211850747e6, val_loss = 44930.10588051284, time = 32.46337699890137s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 4: batch_loss = 982235.407063143, val_loss = 21236.899372520384, time = 30.609392881393433s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 5: batch_loss = 448057.1120566044, val_loss = 14359.846388797563, time = 28.340306043624878s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 6: batch_loss = 257549.68401965935, val_loss = 12487.85450101421, time = 26.66531991958618s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 7: batch_loss = 172941.06953924877, val_loss = 12685.89997775405, time = 26.3644118309021s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 8: batch_loss = 127756.27182539017, val_loss = 14404.37096981451, time = 27.716837167739868s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 9: batch_loss = 100600.10047883296, val_loss = 17728.103066300017, time = 43.991323947906494s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 10: batch_loss = 83202.84154502596, val_loss = 23466.897513370128, time = 58.875848054885864s
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 11: batch_loss = 69314.06293577116, val_loss = 31670.77794169391, time = 70.91096115112305s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.3089874572753906, 3.2751940002441406, 6.0, 19.122908935546874, 213.17523651123045] at T=4.008250725221963, Tr=0.45837020004456625, Tc=8.744570927237962, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 12: batch_loss = 58979.30960552637, val_loss = 41124.11279226684, time = 1522.9358491897583s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.010007652282715, 3.070729835510254, 6.0, 19.366042251586915, 205.1650573730469] at T=3.722907685961732, Tr=0.45837020004456625, Tc=8.122054369153497, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 13: batch_loss = 51246.04017681378, val_loss = 45652.51388172832, time = 1505.0745451450348s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9078258285522463, 2.991100748062134, 6.0, 19.65740047454834, 199.88179783821107] at T=3.6270381076767366, Tr=0.45837020004456625, Tc=7.912901203708461, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 14: batch_loss = 45051.81817109538, val_loss = 45220.48253888345, time = 1589.3098340034485s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9495974235534668, 3.0315559310913085, 6.0, 19.421044540405276, 203.14418697357178] at T=3.686237143526922, Tr=0.45837020004456625, Tc=8.042052348011538, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 15: batch_loss = 39993.705784192425, val_loss = 45972.94807687049, time = 1477.6580801010132s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.008948475837707, 3.0748784103393554, 6.0, 19.326661071777345, 205.02019805908205] at T=3.7202790811678748, Tr=0.45837020004456625, Tc=8.116319692698523, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 16: batch_loss = 35721.699926305184, val_loss = 49793.18564648277, time = 1474.4017810821533s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9894067745208739, 3.0629447364807127, 6.0, 19.33082763671875, 204.44684257507328] at T=3.709875021307314, Tr=0.45837020004456625, Tc=8.093621751472089, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 17: batch_loss = 31792.49506253821, val_loss = 56521.03111112634, time = 1492.1298611164093s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9333605728149414, 3.0192536849975586, 6.0, 19.444466972351076, 202.40071029663085] at T=3.6727460789647735, Tr=0.45837020004456625, Tc=8.012619665518573, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 18: batch_loss = 28427.348841893556, val_loss = 65104.56031185171, time = 1518.3662989139557s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9146737747192382, 2.998302526116371, 6.0, 19.567273406982423, 200.83344001770024] at T=3.6443065257478686, Tr=0.45837020004456625, Tc=7.950574721902823, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 19: batch_loss = 25488.01862916718, val_loss = 74601.18275621408, time = 1532.1315319538116s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9149233932495118, 2.999657939791679, 6.0, 19.54814163208008, 201.02125539779664] at T=3.647714607665207, Tr=0.45837020004456625, Tc=7.958009938932654, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 20: batch_loss = 23049.3226326346, val_loss = 86455.18913731126, time = 1540.7853088378906s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9165600204467772, 3.003179591178894, 6.0, 19.515598754882813, 201.35159540176392] at T=3.6537089292884755, Tr=0.45837020004456625, Tc=7.971087406932724, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 21: batch_loss = 21039.205844116994, val_loss = 101192.62280061303, time = 1563.3383300304413s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.913776008605957, 3.001014254808426, 6.0, 19.519932098388672, 201.23951930999758] at T=3.6516752060570834, Tr=0.45837020004456625, Tc=7.966650549494797, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 22: batch_loss = 19375.526526878217, val_loss = 118384.94676350414, time = 1557.0317389965057s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9100516738891602, 2.997990503787994, 6.0, 19.531078872680663, 201.0370274543762] at T=3.648000806062806, Tr=0.45837020004456625, Tc=7.958634321577012, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 23: batch_loss = 17931.558407787274, val_loss = 136882.7545989456, time = 1542.3988790512085s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9090289688110351, 2.99876078915596, 6.0, 19.51454246520996, 201.1616332054138] at T=3.650261891425941, Tr=0.45837020004456625, Tc=7.9635672019495045, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 24: batch_loss = 16698.15654936669, val_loss = 155836.22179190203, time = 1559.8293418884277s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.911502975463867, 3.004360796451569, 6.0, 19.468888931274414, 201.63618602752686] at T=3.6588730865849057, Tr=0.45837020004456625, Tc=7.98235375299084, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 25: batch_loss = 15622.556182273398, val_loss = 173947.4210113822, time = 1545.6185541152954s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9170167541503906, 3.0135209589004517, 6.0, 19.407118453979493, 202.2881164550781] at T=3.6707029606897823, Tr=0.45837020004456625, Tc=8.008162311452377, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 26: batch_loss = 14708.852757054021, val_loss = 189225.95254504483, time = 1551.7556779384613s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9231732101440429, 3.021741458892822, 6.0, 19.352131423950194, 202.88061428070066] at T=3.681454375853598, Tr=0.45837020004456625, Tc=8.03161805783984, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 27: batch_loss = 13723.700153559796, val_loss = 199074.2972297052, time = 1530.256366968155s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9303591995239258, 3.0297789268493656, 6.0, 19.31250862121582, 203.35774879455565] at T=3.690112418171392, Tr=0.45837020004456625, Tc=8.050506812643167, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 28: batch_loss = 12817.189918057138, val_loss = 201100.7603167727, time = 1527.0203490257263s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9367458992004396, 3.037448352813721, 6.0, 19.286974563598633, 203.64180488586427] at T=3.6952668758510647, Tr=0.45837020004456625, Tc=8.06175199760321, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 29: batch_loss = 11978.213797446544, val_loss = 196062.0481390662, time = 1531.280800819397s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9433409996032713, 3.045334571838379, 6.0, 19.265674209594724, 203.97805175781247] at T=3.7013683829984556, Tr=0.45837020004456625, Tc=8.075063306119334, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 30: batch_loss = 11266.243825373049, val_loss = 186792.15134808206, time = 1496.8254001140594s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9498487586975097, 3.0528369331359864, 6.0, 19.245189666748047, 204.27230339050294] at T=3.7067078481051197, Tr=0.45837020004456625, Tc=8.086712111181585, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 31: batch_loss = 10645.556731111641, val_loss = 176984.47785333855, time = 1514.5479600429535s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.954431297302246, 3.0582903671264647, 6.0, 19.23065002441406, 204.46899757385256] at T=3.7102770440313293, Tr=0.45837020004456625, Tc=8.094498821412447, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 32: batch_loss = 10091.674984057427, val_loss = 168100.30958869247, time = 1521.3321061134338s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9563089561462403, 3.061232467651367, 6.0, 19.220376892089842, 204.57787895202637] at T=3.712252796261517, Tr=0.45837020004456625, Tc=8.09880920683889, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 33: batch_loss = 9591.76371216454, val_loss = 160710.81840939974, time = 1482.4766969680786s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9572254943847658, 3.063379379272461, 6.0, 19.210825576782227, 204.6661876678467] at T=3.713855238709926, Tr=0.45837020004456625, Tc=8.102305163705749, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 34: batch_loss = 9138.523373677304, val_loss = 154658.71409400005, time = 1483.5630280971527s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.959467700958252, 3.066702239990234, 6.0, 19.200204010009763, 204.79596061706542] at T=3.71621008761189, Tr=0.45837020004456625, Tc=8.107442602618084, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 35: batch_loss = 8724.685039595988, val_loss = 149461.44899109815, time = 1583.8664059638977s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9638794898986816, 3.071696952819824, 6.0, 19.189271545410158, 204.99836120605468] at T=3.7198828314896213, Tr=0.45837020004456625, Tc=8.115455217481298, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 36: batch_loss = 8344.905032618002, val_loss = 144770.7204507176, time = 1651.8353190422058s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9691979961395263, 3.0773445739746093, 6.0, 19.17804542541504, 205.21800003051757] at T=3.723868378922495, Tr=0.45837020004456625, Tc=8.12415025793656, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 37: batch_loss = 7995.0830705817625, val_loss = 140398.82999075897, time = 1607.669261932373s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9750345058441163, 3.0832658233642576, 6.0, 19.166531829833986, 205.45314559936526] at T=3.728135310420441, Tr=0.45837020004456625, Tc=8.133459177882775, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 38: batch_loss = 7671.541640476798, val_loss = 136272.31187220564, time = 1678.580377817154s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9814049396514892, 3.089565956115723, 6.0, 19.15508460998535, 205.6984806060791] at T=3.7325871385915006, Tr=0.45837020004456625, Tc=8.143171476305811, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 39: batch_loss = 7371.2770503352995, val_loss = 132274.83427967742, time = 1655.0516200065613s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9885951128005983, 3.0963778076171877, 6.0, 19.14506996154785, 205.97335243225095] at T=3.737574939376938, Tr=0.45837020004456625, Tc=8.15405307546944, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 40: batch_loss = 7091.643222654378, val_loss = 128396.3040868539, time = 1653.0576310157776s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 1.9953195104599, 3.103610809326172, 6.0, 19.130307083129882, 206.26657218933104] at T=3.742895680156516, Tr=0.45837020004456625, Tc=8.165661030740225, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 41: batch_loss = 6830.534123996205, val_loss = 124618.04347752365, time = 1735.0050899982452s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.0013178720474243, 3.1107775039672854, 6.0, 19.112321319580076, 206.53998107910158] at T=3.7478569346224084, Tr=0.45837020004456625, Tc=8.176484715319654, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 42: batch_loss = 6585.916388875111, val_loss = 120852.5412212264, time = 1597.3954288959503s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.007419753074646, 3.117916793823242, 6.0, 19.09379898071289, 206.81928100585938] at T=3.7529250873445577, Tr=0.45837020004456625, Tc=8.187541613699297, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 43: batch_loss = 6356.585067056735, val_loss = 117279.7102269615, time = 1560.7137019634247s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.0115315160751344, 3.1234151916503907, 6.0, 19.077351455688476, 207.0617950439453] at T=3.757325726458761, Tr=0.45837020004456625, Tc=8.197142235890215, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 44: batch_loss = 6141.153580012104, val_loss = 113678.46728750777, time = 1567.0419631004333s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.0155180549621585, 3.129204376220703, 6.0, 19.058193817138672, 207.33037033081052] at T=3.762199270777333, Tr=0.45837020004456625, Tc=8.207774568267185, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 45: batch_loss = 5938.276460068043, val_loss = 109846.3492144092, time = 1496.2304511070251s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.02122869682312, 3.136756851196289, 6.0, 19.038652725219727, 207.64446105957032] at T=3.767898734434358, Tr=0.45837020004456625, Tc=8.220208761538194, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 46: batch_loss = 5736.925727301231, val_loss = 105566.90180908333, time = 1498.0957679748535s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.028648723602295, 3.145467010498047, 6.0, 19.02356719970703, 207.9905921936035] at T=3.7741796005610877, Tr=0.45837020004456625, Tc=8.23391136726195, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 47: batch_loss = 5530.846538577758, val_loss = 101498.78180090507, time = 1536.5427470207214s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.0342051239013674, 3.1521947021484378, 6.0, 19.01017822265625, 208.3266540527344] at T=3.7802777504816274, Tr=0.45837020004456625, Tc=8.247215351508627, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 48: batch_loss = 5334.039716875205, val_loss = 97749.92264633425, time = 1502.167051076889s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.037776893615723, 3.157100494384766, 6.0, 18.99563850402832, 208.64522705078124] at T=3.7860585490160092, Tr=0.45837020004456625, Tc=8.259826988420931, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 49: batch_loss = 5148.3063961261705, val_loss = 93992.88351178139, time = 1544.7832579612732s
+
+Sat solver failed for 2,3,3,4-tetramethylpentane = [128.157, 2.0431062355041503, 3.163474227905273, 6.0, 18.97846939086914, 209.02261047363285] at T=3.7929065165182636, Tr=0.45837020004456625, Tc=8.27476680671974, muting for this molecule...
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+n_failed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+epoch 50: batch_loss = 4973.455034378339, val_loss = 90197.54858050248, time = 1542.6323339939117s
