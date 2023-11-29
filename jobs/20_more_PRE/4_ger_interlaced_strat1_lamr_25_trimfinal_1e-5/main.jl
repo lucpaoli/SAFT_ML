@@ -576,13 +576,12 @@ function main()
     Random.seed!(1234)
 
     model = main_pcpsaft()
+
+    mol_dict, train_mols, val_mols = create_data(n_points=50; pretraining=false)
+
+    optim = Flux.setup(Flux.Adam(1e-5), model)
+    train_model!(model, optim, mol_dict, train_mols, val_mols)
 end
-
-#     mol_dict, train_mols, val_mols = create_data(n_points=50; pretraining=false)
-
-#     optim = Flux.setup(Flux.Adam(1e-5), model)
-#     train_model!(model, optim, mol_dict, train_mols, val_mols)
-# end
 
 function main_pcpsaft()
     mol_dict, train_mols, val_mols = create_data(n_points=50; pretraining=true)
@@ -590,7 +589,7 @@ function main_pcpsaft()
     @show nfeatures = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(nfeatures)
     optim = Flux.setup(Flux.Adam(2.5e-5), model)
-    train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=1, pretraining=true)
+    train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=500, pretraining=true)
 
     # Extract all layers except the last one
     layers = model.layers[1:end-1]
