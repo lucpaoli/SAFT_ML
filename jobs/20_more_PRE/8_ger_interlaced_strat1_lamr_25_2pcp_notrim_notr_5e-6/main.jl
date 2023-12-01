@@ -77,7 +77,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
         fp = make_fingerprint(smiles)
         saft_model = PPCSAFT([name])
 
-        Tc, pc, Vc = crit_pure(saft_model)
+        # Tc, pc, Vc = crit_pure(saft_model)
 
         # T_max = min(T_exp_max, 0.975 * Tc, 500.0)
         # T_min = T_exp_min < 500.0 ? T_exp_min : 400.0
@@ -240,42 +240,42 @@ end
 # Fixed variables: X, T
 # Newton step: V2 = V - f(x) / f'(x) = V - ∂²A∂V²(X, T, V) / ∂³A∂V³(X, T, V)
 # Gradient descent: V2 = V - f'(x) = V - ∂³A∂V³(X, T, V)
-function f_Vc(saft_params, Vc, Tc)
-    Vc2 = Vc - ∂²A∂V²(saft_params, Vc, Tc) / (∂³A∂V³(saft_params, Vc, Tc) + 1e-8)
-    # Vc2 = Vc - 1e-20 * ∂³A∂V³(saft_params, Vc, Tc)
-    # @show Vc, Vc2, ∂³A∂V³(saft_params, Vc, Tc)
-    # Vc2 = Vc #* ? ∂Vc2/∂saft_params
-    return Vc2
-end
+# function f_Vc(saft_params, Vc, Tc)
+#     Vc2 = Vc - ∂²A∂V²(saft_params, Vc, Tc) / (∂³A∂V³(saft_params, Vc, Tc) + 1e-2)
+#     # Vc2 = Vc - 1e-20 * ∂³A∂V³(saft_params, Vc, Tc)
+#     # @show Vc, Vc2, ∂³A∂V³(saft_params, Vc, Tc)
+#     # Vc2 = Vc #* ? ∂Vc2/∂saft_params
+#     return Vc2
+# end
 
-function ChainRulesCore.rrule(::typeof(f_Vc), saft_params, Vc, Tc)
-    y = f_Vc(saft_params, Vc, Tc)
+# function ChainRulesCore.rrule(::typeof(f_Vc), saft_params, Vc, Tc)
+#     y = f_Vc(saft_params, Vc, Tc)
 
-    function f_pullback(Δy)
-        ∂X1 = @thunk(FiniteDiff.finite_difference_gradient(X -> f_Vc(X, Vc, Tc), saft_params) .* Δy)
-        ∂X2 = @thunk(ForwardDiff.derivative(X -> f_Vc(saft_params, X, Tc), Vc) .* Δy)
-        ∂X3 = @thunk(ForwardDiff.derivative(X -> f_Vc(saft_params, Vc, X), Tc) .* Δy)
+#     function f_pullback(Δy)
+#         ∂X1 = @thunk(FiniteDiff.finite_difference_gradient(X -> f_Vc(X, Vc, Tc), saft_params) .* Δy)
+#         ∂X2 = @thunk(ForwardDiff.derivative(X -> f_Vc(saft_params, X, Tc), Vc) .* Δy)
+#         ∂X3 = @thunk(ForwardDiff.derivative(X -> f_Vc(saft_params, Vc, X), Tc) .* Δy)
 
-        return (NoTangent(), ∂X1, ∂X2, ∂X3)
-    end
+#         return (NoTangent(), ∂X1, ∂X2, ∂X3)
+#     end
 
-    return y, f_pullback
-end
+#     return y, f_pullback
+# end
 
-function ChainRulesCore.rrule(::typeof(pressure_NN), saft_params, V, T)
-    y = pressure_NN(saft_params, V, T)
+# function ChainRulesCore.rrule(::typeof(pressure_NN), saft_params, V, T)
+#     y = pressure_NN(saft_params, V, T)
 
-    function f_pullback(Δy)
-        ∂X1 = @thunk(FiniteDiff.finite_difference_gradient(X -> pressure_NN(X, V, T), saft_params) .* Δy)
-        # ∂X1 = @thunk(ForwardDiff.derivative(X -> pressure_NN(X, V, T), saft_params) .* Δy)
-        ∂X2 = @thunk(ForwardDiff.derivative(X -> pressure_NN(saft_params, X, T), V) .* Δy)
-        ∂X3 = @thunk(ForwardDiff.derivative(X -> pressure_NN(saft_params, V, X), T) .* Δy)
+#     function f_pullback(Δy)
+#         # ∂X1 = @thunk(FiniteDiff.finite_difference_gradient(X -> pressure_NN(X, V, T), saft_params) .* Δy)
+#         ∂X1 = @thunk(ForwardDiff.derivative(X -> pressure_NN(X, V, T), saft_params) .* Δy)
+#         ∂X2 = @thunk(ForwardDiff.derivative(X -> pressure_NN(saft_params, X, T), V) .* Δy)
+#         ∂X3 = @thunk(ForwardDiff.derivative(X -> pressure_NN(saft_params, V, X), T) .* Δy)
 
-        return (NoTangent(), ∂X1, ∂X2, ∂X3)
-    end
+#         return (NoTangent(), ∂X1, ∂X2, ∂X3)
+#     end
 
-    return y, f_pullback
-end
+#     return y, f_pullback
+# end
 
 function ∂²A∂V²(X::Vector, V, T)
     return ForwardDiff.derivative(V -> pressure_NN(X, V, T), V)
@@ -291,7 +291,7 @@ function ∂³A∂V³(X::Vector, V, T)
     return ForwardDiff.derivative(V -> ∂²A∂V²(X, V, T), V)
 end
 
-@noinline function SAFT_head(model, X)
+function SAFT_head(model, X)
     # (fp, Mw, Tr, Tc, Vc, sat_p, sat_Vl, sat_Vv) = X
     (fp, Mw, T, Tc, Vc, sat_p, sat_p_Vl, sat_Vl, sat_Vv) = X
 
@@ -304,28 +304,16 @@ end
         return [nothing, nothing]
     end
 
-    if T < Tc2
-        sat_p2 = f_sat_p(saft_params, sat_Vv, sat_Vl, T)
-        # @assert !isnan(sat_p2) "sat_p is NaN at Tc=$Tc, Tc2=$Tc2, T=$T, sat_p=$sat_p, $(∂²A∂V²(saft_params, Vc, Tc)) $(∂³A∂V²∂T(saft_params, Vc, Tc))"
+    # if T < Tc2
+    sat_p2 = f_sat_p(saft_params, sat_Vv, sat_Vl, T)
+    # @assert !isnan(sat_p2) "sat_p is NaN at Tc=$Tc, Tc2=$Tc2, T=$T, sat_p=$sat_p, $(∂²A∂V²(saft_params, Vc, Tc)) $(∂³A∂V²∂T(saft_params, Vc, Tc))"
 
-        # sat_Vl2 = sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / ∂p∂V(saft_params, sat_Vl, T)
-        sat_Vl2 = f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
-        # @show sat_Vl, sat_Vl2
+    # sat_Vl2 = sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / ∂p∂V(saft_params, sat_Vl, T)
+    sat_Vl2 = f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
+    # @show sat_Vl, sat_Vl2
 
-        ŷ_1 = !isnan(sat_p2) ? sat_p2 : nothing
-        ŷ_2 = !isnan(sat_Vl2) ? sat_Vl2 : nothing
-    else
-        # print("Vc, Vc2, Tc, Tc2, pc2 =  $Vc, ")
-        # Vc2 = f_Vc(saft_params, Vc, Tc)
-        # @show Vc, Vc2, ∂³A∂V³(saft_params, Vc, Tc)
-        # print("$Vc2, $Tc, $Tc2, ")
-        # pc2 = pressure_NN(saft_params, Vc2, Tc2)
-        # print("$pc2\n")
-        # ŷ_1 = !isnan(pc2) ? pc2 : nothing
-        # ŷ_2 = !isnan(Vc2) ? Vc2 : nothing
-        ŷ_1 = nothing
-        ŷ_2 = nothing
-    end
+    ŷ_1 = !isnan(sat_p2) ? sat_p2 : nothing
+    ŷ_2 = !isnan(sat_Vl2) ? sat_Vl2 : nothing
 
     return [ŷ_1, ŷ_2]
 end
@@ -460,37 +448,42 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
         x0 = x0_cache[mol]
         sat_solves_failed = 0
         # Iterate through Tr in X_vec
-        for (j, T) in enumerate(X_vec)
+        for (j, T_val) in enumerate(X_vec)
             # T = Tc * Tr
-
-            # (p_sat, Vₗ, Vᵥ) = saturation_pressure(saft_model, T)
-            if T < Tc
-                if isnothing(x0)
-                    method = ChemPotVSaturation()
-                else
-                    method = ChemPotVSaturation(vl=x0[1], vv=x0[2])
-                end
-                (p_sat, Vₗ, Vᵥ) = saturation_pressure(saft_model, T, method)
-
-
-                if Vₗ == Vᵥ
-                    println("Volumes equal for $mol = $saft_params at T=$T, Tc=$Tc")
-                    sat_solves_failed += 1
-                    x0 = nothing
-                elseif isnan(p_sat)
-                    sat_solves_failed == 0 && println("\nSat solver failed for $mol = $saft_params at T=$T, Tc=$Tc, muting for this molecule...")
-                    sat_solves_failed += 1
-                    x0 = nothing
-                else
-                    p_sat_Vl = pressure(saft_model, Vₗ, T)
-                    x0 = [Vₗ, Vᵥ]
-                    push!(mol_data, (fp, Mw, T, Tc, Vc, p_sat, p_sat_Vl, Vₗ, Vᵥ))
-
-                    j == 1 && (x0_cache[mol] = x0)
-                end
+            # T_val = min
+            if T_val > Tc
+                T = 0.999 * Tc
             else
-                push!(mol_data, (fp, Mw, T, Tc, Vc, 1.0, 1.0, 1.0, 1.0))
+                T = T_val
             end
+            # (p_sat, Vₗ, Vᵥ) = saturation_pressure(saft_model, T)
+            # if T < Tc
+
+            if isnothing(x0)
+                method = ChemPotVSaturation()
+            else
+                method = ChemPotVSaturation(vl=x0[1], vv=x0[2])
+            end
+            (p_sat, Vₗ, Vᵥ) = saturation_pressure(saft_model, T, method)
+
+            if Vₗ == Vᵥ
+                println("Volumes equal for $mol = $saft_params at T=$T, Tc=$Tc")
+                sat_solves_failed += 1
+                x0 = nothing
+            elseif isnan(p_sat)
+                sat_solves_failed == 0 && println("\nSat solver failed for $mol = $saft_params at T=$T, Tc=$Tc, muting for this molecule...")
+                sat_solves_failed += 1
+                x0 = nothing
+            else
+                p_sat_Vl = pressure(saft_model, Vₗ, T)
+                x0 = [Vₗ, Vᵥ]
+                push!(mol_data, (fp, Mw, T, Tc, Vc, p_sat, p_sat_Vl, Vₗ, Vᵥ))
+
+                j == 1 && (x0_cache[mol] = x0)
+            end
+            # else
+                # push!(mol_data, (fp, Mw, T, Tc, Vc, 1.0, 1.0, 1.0, 1.0))
+            # end
         end
         # I think this is automagically safe under @Threads.threads
         X_temp[i] = mol_data
@@ -544,8 +537,8 @@ function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000
             end
 
             loss, grads = Flux.withgradient(model) do m
-                # loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
-                loss = eval_loss(X_batch, Y_batch, mse, m, !pretraining)
+                loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
+                # loss = eval_loss(X_batch, Y_batch, mse, m, !pretraining)
                 loss
             end
             @assert !isnan(loss)
@@ -653,7 +646,7 @@ function main_pcpsaft()
     @show nfeatures = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(nfeatures)
     optim = Flux.setup(Flux.Adam(2.5e-5), model)
-    train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=1, pretraining=true)
+    train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=50, pretraining=true)
 
     return model
 end
