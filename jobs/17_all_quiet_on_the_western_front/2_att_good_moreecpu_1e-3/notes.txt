@@ -1,2 +1,3 @@
-Epsilon breaks for large compounds (tends to ~100, like jobs/17_all_quiet_on_the_western_front/2_att_good_morecpu_1e-3)
 batch loss is tending to ~0.1
+Methane not really moving, squalane moving by a lot
+it seems to fit liquid densities "more easily" - maybe introduce that slight weighting for pressure?
