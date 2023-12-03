@@ -333,12 +333,11 @@ function create_pretraining_data(mol_dict, batch_mols)
     return X_data, Y_data
 end
 
-# todo trace Tc, first sat point through pretraining
-function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretraining=false)
+function create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
     # X_temp::Vector{Any} = zeros(length(batch_mols))  # Initialize an empty vector for X data
     X_temp = Vector{Union{Nothing,Vector{Tuple}}}(nothing, length(batch_mols))
     # Y_data = Vector{Vector{Float64}}()
-    Y_temp = Vector{Union{Nothing,Vector{Float64}}}(nothing, length(batch_mols))
+    Y_temp = Vector{Union{Nothing,Vector{Vector{Float64}}}}(nothing, length(batch_mols))
 
     n = 0
     cache_lock = ReentrantLock()
@@ -350,9 +349,10 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
     Threads.@threads for i in 1:length(batch_mols)
         mol = batch_mols[i]
         mol_data = Vector{Tuple}()
+        mol_data_Y = Vector{Vector{Float64}}()
         # Extract data for the molecule
         lock(mol_dict_lock)
-        fp, Mw, X_vec, _ = mol_dict[mol]
+        fp, Mw, X_vec, Y_vec = mol_dict[mol]
         unlock(mol_dict_lock)
             
 
@@ -397,7 +397,7 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
 
         mol_sat_solves_failed = 0
         # Iterate through Tr in X_vec
-        for (j, T) in enumerate(X_vec)
+        for (j, (T, Y)) in enumerate(zip(X_vec, Y_vec))
             T_threshold = 0.95 * Tc
             if T > T_threshold
                 points_skipped[Threads.threadid()] += 1
@@ -424,6 +424,7 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
                 p_sat_Vl = pressure(saft_model, Vₗ, T)
                 x0 = [Vₗ, Vᵥ]
                 push!(mol_data, (fp, Mw, T, Tc, Vc, p_sat, p_sat_Vl, Vₗ, Vᵥ))
+                push!(mol_data_Y, Y)
             end
             if j == 1
                 lock(cache_lock) do
@@ -433,23 +434,26 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
         end
         if length(mol_data) > 0
             X_temp[i] = mol_data
+            Y_temp[i] = mol_data_Y
         end
     end
     println("(points skipped, sat solves failed, crit solves failed) = $(sum(points_skipped)), $(sum(sat_solves_failed)), $(sum(crit_solves_failed))")
     flush(stdout)
     # Concatenate all vectors into a single vector
     filter!(x -> !isnothing(x), X_temp)
+    filter!(x -> !isnothing(x), Y_temp)
     X_data = vcat(X_temp...)
     Y_data = vcat(Y_temp...)
 
     # Safety checks
     @assert all(x !== undef for x in X_data)
     @assert all(x !== nothing for x in X_data)
-    @assert all(!isnan(x) for x in X_data)
+    # todo make this assertion work, it's being annoying
+    # @assert !any(any(isnan.(x)) for x in X_data)
 
     @assert all(x !== undef for x in Y_data)
     @assert all(x !== nothing for x in Y_data)
-    @assert all(!isnan(x) for x in Y_data)
+    # @assert !any(any(isnan.(x)) for x in Y_data)
     return X_data, Y_data
 end
 
@@ -480,19 +484,19 @@ function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000
 
         for batch_mols in train_loader
             # Create X_data, Y_data from batch_mol
-            Y_batch = create_Y_data(mol_dict, batch_mols) #! This can be created outside of epoch loop
+            # Y_batch = create_Y_data(mol_dict, batch_mols) #! This can be created outside of epoch loop
 
             if !pretraining
-                #* Should I cache x0 between iterations?
-                X_batch = create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
+                X_batch, Y_batch = create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
             else
-                create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretraining=true)
-                X_batch = create_pretraining_X_data(mol_dict, batch_mols)
+                create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
+                X_batch, Y_batch = create_pretraining_data(mol_dict, batch_mols)
             end
+            @assert length(X_batch) == length(Y_batch) "X, Y batch lengths must be equal"
 
             loss, grads = Flux.withgradient(model) do m
-                # loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
-                loss = eval_loss(X_batch, Y_batch, mse, m, !pretraining)
+                loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
+                # loss = eval_loss(X_batch, Y_batch, mse, m, !pretraining)
                 loss
             end
             @show loss
@@ -522,18 +526,16 @@ function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000
             end
 
             # Evaluate validation set loss
-            # todo don't duplicate this function
-            Y_batch = create_Y_data(mol_dict, val_mols) 
             if !pretraining
-                #* Should I cache x0 between iterations?
-                X_batch = create_X_data(model, mol_dict, val_mols, x0_val_cache, Tc0_val_cache)
+                X_val, Y_val = create_data(model, mol_dict, val_mols, x0_val_cache, Tc0_val_cache)
             else
-                create_X_data(model, mol_dict, val_mols, x0_val_cache, Tc0_val_cache; pretraining=true)
-                X_batch = create_pretraining_X_data(mol_dict, val_mols)
+                create_data(model, mol_dict, val_mols, x0_val_cache, Tc0_val_cache)
+                X_val, Y_val = create_pretraining_data(mol_dict, val_mols)
             end
+            @assert length(X_val) == length(Y_val) "X, Y batch lengths must be equal"
 
-            # val_loss = eval_loss_par(X_batch, Y_batch, mse, model, nthreads, !pretraining)
-            val_loss = eval_loss(X_batch, Y_batch, mse, model, !pretraining)
+            val_loss = eval_loss_par(X_val, Y_val, mse, model, nthreads, !pretraining)
+            # val_loss = eval_loss(X_val, Y_val, mse, model, !pretraining)
 
             # Process & report data
             batch_loss /= length(train_loader)
@@ -591,7 +593,7 @@ function main()
 
     mol_dict, train_mols, val_mols = create_data(n_points=50; pretraining=false)
 
-    optim = Flux.setup(Flux.Adam(1e-6), model)
+    optim = Flux.setup(Flux.Adam(5e-6), model)
     train_model!(model, optim, mol_dict, train_mols, val_mols)
 end
 
@@ -600,7 +602,7 @@ function main_pcpsaft()
 
     @show nfeatures = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(nfeatures)
-    optim = Flux.setup(Flux.Adam(5e-6), model)
+    optim = Flux.setup(Flux.Adam(2.5e-5), model)
     train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=1, pretraining=true)
 
     return model

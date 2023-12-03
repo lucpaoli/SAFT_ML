@@ -1,6 +1,6 @@
 #!/bin/bash
 #PBS -lselect=1:ncpus=20:mem=150gb
-#PBS -lwalltime=30:30:00
+#PBS -lwalltime=00:30:00
 #PBS -N no_pre
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables
