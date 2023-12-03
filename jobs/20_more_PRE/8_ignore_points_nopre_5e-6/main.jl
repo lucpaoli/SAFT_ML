@@ -257,8 +257,8 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
             ŷ_vec = [ŷ[2], ŷ[3], ŷ[5], ŷ[6]]
         end
         # @show y_vec, ŷ_vec
-        @assert !any(isnan.(y_vec)) "NaN in y"
-        @assert !any(isnan.(ŷ_vec)) "NaN in y_hat"
+        @assert !any(isnan.(y_vec)) "NaN in y, y_vec = $y_vec"
+        @assert !any(isnan.(ŷ_vec)) "NaN in y_hat, y_hat_vec = $ŷ_vec"
 
         # batch_loss += mean(metric(y_vec, ŷ_vec))
         for (y, ŷ) in zip(y_vec, ŷ_vec)
@@ -308,28 +308,37 @@ function mse(y, ŷ)
     return ((y - ŷ) / y)^2
 end
 
-function create_Y_data(mol_dict, batch_mols)
-    Y_data = Vector{Vector{Float64}}()
-    for mol in batch_mols
-        Y_vec = last(mol_dict[mol])
-        append!(Y_data, Y_vec)
-    end
-    return Y_data
-end
+# function create_Y_data(mol_dict, batch_mols)
+#     Y_data = Vector{Vector{Float64}}()
+#     for mol in batch_mols
+#         Y_vec = last(mol_dict[mol])
+#         append!(Y_data, Y_vec)
+#     end
+#     return Y_data
+# end
 
-function create_pretraining_X_data(mol_dict, batch_mols)
+function create_pretraining_data(mol_dict, batch_mols)
     X_data = Vector{Tuple}()
     for mol in batch_mols
         fp, Mw, _... = mol_dict[mol]
         push!(X_data, (fp, Mw))
     end
-    return X_data
+
+    Y_data = Vector{Vector{Float64}}()
+    for mol in batch_mols
+        Y_vec = last(mol_dict[mol])
+        append!(Y_data, Y_vec)
+    end
+
+    return X_data, Y_data
 end
 
 # todo trace Tc, first sat point through pretraining
 function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretraining=false)
     # X_temp::Vector{Any} = zeros(length(batch_mols))  # Initialize an empty vector for X data
     X_temp = Vector{Union{Nothing,Vector{Tuple}}}(nothing, length(batch_mols))
+    # Y_data = Vector{Vector{Float64}}()
+    Y_temp = Vector{Union{Nothing,Vector{Float64}}}(nothing, length(batch_mols))
 
     n = 0
     cache_lock = ReentrantLock()
@@ -422,16 +431,26 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
                 end
             end
         end
-        X_temp[i] = mol_data
+        if length(mol_data) > 0
+            X_temp[i] = mol_data
+        end
     end
     println("(points skipped, sat solves failed, crit solves failed) = $(sum(points_skipped)), $(sum(sat_solves_failed)), $(sum(crit_solves_failed))")
     flush(stdout)
     # Concatenate all vectors into a single vector
     filter!(x -> !isnothing(x), X_temp)
     X_data = vcat(X_temp...)
+    Y_data = vcat(Y_temp...)
+
+    # Safety checks
     @assert all(x !== undef for x in X_data)
     @assert all(x !== nothing for x in X_data)
-    return X_data
+    @assert all(!isnan(x) for x in X_data)
+
+    @assert all(x !== undef for x in Y_data)
+    @assert all(x !== nothing for x in Y_data)
+    @assert all(!isnan(x) for x in Y_data)
+    return X_data, Y_data
 end
 
 function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000, n_batches=5, pretraining=false)

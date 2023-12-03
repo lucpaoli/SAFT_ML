@@ -37,16 +37,6 @@ function make_fingerprint(s::String)::Vector{Float64}
 
     append!(fp, [parse(Float64, string(c)) for c in fp_str])
 
-    # desc = get_descriptors(mol)
-    # relevant_keys = [
-    #     "CrippenClogP",
-    #     "NumHeavyAtoms",
-    #     "amw",
-    #     "FractionCSP3",
-    # ]
-    # relevant_desc = [desc[k] for k in relevant_keys]
-    # append!(fp, relevant_desc)
-
     return fp
 end
 
@@ -59,28 +49,20 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
 
     #* Only alkanes
     filter!(row -> occursin("Alkane", row.family), df)
-    #* Only linear alkanes
-    # filter!(row -> contains_only_c(row.isomeric_SMILES), df)
 
     mol_df = zip(df.common_name, df.isomeric_SMILES, df.Mw, df.expt_T_min_liberal, df.expt_T_max_conservative)
     # mol_data = zip(df.common_name, df.isomeric_SMILES, df.Mw, df.expt_T_min_liberal, df.expt_T_max_liberal)
     println("Generating data for $(length(mol_df)) molecules...")
 
-    # if pretraining
     T = Float64
-    # X_data should be a datastructure of (name -> (fp, Mw, [Tr], [p_sat, Vl_sat]))
     mol_data = Dict{String,Tuple{Vector{T},T,Vector{T},Vector{Vector{T}}}}()
 
     for (name, smiles, Mw, T_exp_min, T_exp_max) in mol_df
-        X_vec = Vector{Float64}()
-        Y_vec = Vector{Vector{Float64}}()
         fp = make_fingerprint(smiles)
         saft_model = PPCSAFT([name])
 
         Tc, pc, Vc = crit_pure(saft_model)
 
-        # T_max = min(T_exp_max, 0.975 * Tc, 500.0)
-        # T_min = T_exp_min < 500.0 ? T_exp_min : 400.0
         T_max = min(T_exp_max, 500.0, 0.95*Tc)
         T_min = T_exp_min
         if T_max < T_min
@@ -88,10 +70,9 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
             continue
         end
         if !pretraining
-            # @assert T_min < T_max "Tmin ($T_min) < Tmax ($T_max) for $name"
-            # @assert T_max < 501.0 "Tmax ($T_max) > 500 for $name"
+            X_vec = Vector{Float64}()
+            Y_vec = Vector{Vector{Float64}}()
             for T in range(T_min, T_max, n_points)
-                # Tr = T / Tc
                 (p_sat, Vl_sat, Vv_sat) = saturation_pressure(saft_model, T)
 
                 push!(X_vec, T)
@@ -103,15 +84,10 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
             sigma = saft_model.params.sigma.values[1] * 1e10
             λ_r = 25.0 + 5*randn()
             epsilon = 2*saft_model.params.epsilon.values[1]
-            # epsilon = 350.0 + 25*randn()
 
             T_min = T_exp_min
-            # Tr = T_min / Tc
 
-            # push!(X_data, (fp, nothing, Mw, name))
-            push!(Y_vec, [m, sigma, λ_r, epsilon])
-
-            mol_data[name] = (fp, Mw, [T_min], Y_vec)
+            mol_data[name] = (fp, Mw, [T_min], [[m, sigma, λ_r, epsilon]])
         end
     end
 
@@ -151,7 +127,6 @@ function calculate_saft_parameters(model, fp, Mw)
 
     m, σ, λ_r, ϵ = pred_params ./ 500.0 .+ 1.0
 
-    # f(x, c) = elu(x-c, 1e-3) + c
     f(x, c) = elu(x, 0.05) + c
 
     m = f(m, 1.0)
@@ -167,7 +142,7 @@ end
 
 function f_sat_p(saft_params, sat_Vv, sat_Vl, T)
     saft_model = make_NN_model(saft_params...)
-    sat_p2 = -(eos(saft_model, sat_Vv, T) - eos(saft_model, sat_Vl, T)) / (sat_Vv - sat_Vl + eps())
+    sat_p2 = -(eos(saft_model, sat_Vv, T) - eos(saft_model, sat_Vl, T)) / (sat_Vv - sat_Vl + 1e-8)
     # @assert !isnan(sat_p2) "sat_p2=$sat_p2, T=$T, denom=$(sat_Vv - sat_Vl), num=$(eos(saft_model, sat_Vv, T) - eos(saft_model, sat_Vl, T)), $(eos(saft_model, sat_Vl, T)), $(eos(saft_model, sat_Vv, T)), $sat_Vl, $sat_Vv"
     return sat_p2
 end
@@ -189,7 +164,7 @@ end
 
 function f_sat_Vl(saft_params, sat_Vl, T, sat_p_Vl)
     ∂p∂V = ForwardDiff.derivative(V -> pressure_NN(saft_params, V, T), sat_Vl)
-    sat_Vl2 = sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / (∂p∂V + eps())
+    sat_Vl2 = sat_Vl - (pressure_NN(saft_params, sat_Vl, T) - sat_p_Vl) / (∂p∂V + 1e-8)
     # @assert !isnan(sat_Vl2) "∂p∂V = $∂p∂V"
     return sat_Vl2
 end
@@ -281,10 +256,13 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
             ŷ = calculate_saft_parameters(model, fp, Mw)
             ŷ_vec = [ŷ[2], ŷ[3], ŷ[5], ŷ[6]]
         end
+        # @show y_vec, ŷ_vec
+        @assert !any(isnan.(y_vec)) "NaN in y"
+        @assert !any(isnan.(ŷ_vec)) "NaN in y_hat"
 
         # batch_loss += mean(metric(y_vec, ŷ_vec))
         for (y, ŷ) in zip(y_vec, ŷ_vec)
-            if isnothing(ŷ)
+            if !isnothing(ŷ)
                 batch_loss += metric(y, ŷ)
                 n += 1
             else
@@ -412,9 +390,9 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
         # Iterate through Tr in X_vec
         for (j, T) in enumerate(X_vec)
             T_threshold = 0.95 * Tc
-            # T = min(T_threshold, T_val)
             if T > T_threshold
                 points_skipped[Threads.threadid()] += 1
+                # continue
                 T = T_threshold
             end
 
@@ -447,7 +425,7 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache; pretrai
         end
         X_temp[i] = mol_data
     end
-    println("(points skipped, sat solves failed, crit solves failed) = $(sum(points_skipped)), $(sum(sat_solves_failed)), $(sum(crit_solves_failed))")
+    println("(points clipped, sat solves failed, crit solves failed) = $(sum(points_skipped)), $(sum(sat_solves_failed)), $(sum(crit_solves_failed))")
     flush(stdout)
     # Concatenate all vectors into a single vector
     filter!(x -> !isnothing(x), X_temp)
@@ -495,8 +473,8 @@ function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000
             end
 
             loss, grads = Flux.withgradient(model) do m
-                loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
-                # loss = eval_loss(X_batch, Y_batch, mse, m, !pretraining)
+                # loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
+                loss = eval_loss(X_batch, Y_batch, mse, m, !pretraining)
                 loss
             end
             @show loss
@@ -536,8 +514,8 @@ function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000
                 X_batch = create_pretraining_X_data(mol_dict, val_mols)
             end
 
-            val_loss = eval_loss_par(X_batch, Y_batch, mse, model, nthreads, !pretraining)
-            # val_loss = eval_loss(X_batch, Y_batch, mse, model, !pretraining)
+            # val_loss = eval_loss_par(X_batch, Y_batch, mse, model, nthreads, !pretraining)
+            val_loss = eval_loss(X_batch, Y_batch, mse, model, !pretraining)
 
             # Process & report data
             batch_loss /= length(train_loader)

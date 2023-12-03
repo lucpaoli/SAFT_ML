@@ -1,6 +1,6 @@
 #!/bin/bash
-#PBS -lselect=1:ncpus=10:mem=100gb
-#PBS -lwalltime=00:30:00
+#PBS -lselect=1:ncpus=20:mem=150gb
+#PBS -lwalltime=30:30:00
 #PBS -N no_pre
 
 # PBS_O_WORKDIR and TMPDIR are both loaded as env variables
@@ -12,4 +12,4 @@ module load tools/prod
 
 # run the program
 # python myprog.py path/to/input.txt
-../../../julia --threads 10 job.jl
+../../../julia --threads 20 job.jl
