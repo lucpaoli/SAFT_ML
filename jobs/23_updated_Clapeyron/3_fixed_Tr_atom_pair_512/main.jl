@@ -29,9 +29,9 @@ function make_fingerprint(s::String)::Vector{Float64}
 
     fp = []
 
-    fp_str_atom_pair = get_atom_pair_fp(mol, Dict{String,Any}("radius" => 4, "nBits" => 16384))
+    fp_str_atom_pair = get_atom_pair_fp(mol, Dict{String,Any}("radius" => 4, "nBits" => 512))
 
-    fp_str = fp_str_atom_pair
+    fp_str =fp_str_atom_pair
 
     append!(fp, [parse(Float64, string(c)) for c in fp_str])
 
@@ -104,15 +104,16 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
     train_data = Dict(name => mol_data[name] for name in train_mols)
 
     #* Remove zero & one columns from fps based on train data
-    first_fp = first(collect(values(train_data)))[1]
-    zero_cols = (first_fp .== 0)
+    first_fp_length = length(first(collect(values(train_data)))[1])
+    one_cols = trues(first_fp_length)
+    zero_cols = trues(first_fp_length)
 
     for (name, (fp, _...)) in train_data
-        zero_cols .&= (fp .== 1)
+        one_cols .&= (fp .== 1)
         zero_cols .&= (fp .== 0)
     end
 
-    keep_cols = .!zero_cols # Create a Mask
+    keep_cols = @. !zero_cols && !one_cols  # Create a Mask
 
     # Apply the Mask to the fingerprints in the data structure
     mol_data = Dict(name => (fp[keep_cols], vals...) for (name, (fp, vals...)) in mol_data)
