@@ -273,7 +273,8 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
     if n > 0
         batch_loss /= n
     end
-    use_saft_head && print("$n_failed, ")
+    # use_saft_head && print("$n_failed, ")
+    use_saft_head && println("n_failed = $n_failed")
     return batch_loss
 end
 
@@ -352,10 +353,12 @@ function create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
     n = 0
     cache_lock = ReentrantLock()
     mol_dict_lock = ReentrantLock()
+    temp_lock = ReentrantLock()
 
     points_skipped = [0 for _ in 1:Threads.nthreads()]
     sat_solves_failed = [0 for _ in 1:Threads.nthreads()]
     crit_solves_failed = [0 for _ in 1:Threads.nthreads()]
+
     Threads.@threads for i in 1:length(batch_mols)
         mol = batch_mols[i]
         mol_data = Vector{Tuple}()
@@ -364,7 +367,6 @@ function create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
         lock(mol_dict_lock)
         fp, Mw, X_vec, Y_vec = mol_dict[mol]
         unlock(mol_dict_lock)
-            
 
         saft_params = calculate_saft_parameters(model, fp, Mw)
         saft_model = make_model(saft_params...)
@@ -375,7 +377,6 @@ function create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
         if isnothing(Tc0)
             #* Must be a BigFloat to converge correctly
             Tc0 = BigFloat.(Clapeyron.x0_crit_pure(saft_model))
-            # Tc0 = Float64.(Clapeyron.x0_crit_pure(saft_model))
         end
         (Tc, pc, Vc) = crit_pure(saft_model, Tc0; options=options)
 
@@ -396,9 +397,10 @@ function create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
             continue
         end
 
-        lock(cache_lock) do
-            Tc0_cache[mol] = BigFloat.([Tc/T̄, log10(Vc)])
-        end
+        lock(cache_lock)
+        Tc0_cache[mol] = BigFloat.([Tc/T̄, log10(Vc)])
+        unlock(cache_lock)
+
         (Tc, pc, Vc) = Float64.([Tc, pc, Vc])
 
         lock(cache_lock)
@@ -439,15 +441,17 @@ function create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
                 push!(mol_data_Y, Y) 
             end
             if j == 1
-                lock(cache_lock) do
-                    x0_cache[mol] = x0
-                end
+                lock(cache_lock)
+                x0_cache[mol] = x0
+                unlock(cache_lock)
             end
         end
         #! I have no freaking clue why Y_data appears to go NaN suddenly
         if length(mol_data) > 0 && all(!contains_nan(x) for x in mol_data) && all(!contains_nan(x) for x in mol_data_Y)
+            lock(temp_lock)
             X_temp[i] = mol_data
             Y_temp[i] = mol_data_Y
+            unlock(temp_lock)
         end
     end
     println("(points skipped, sat solves failed, crit solves failed) = $(sum(points_skipped)), $(sum(sat_solves_failed)), $(sum(crit_solves_failed))")
@@ -510,8 +514,8 @@ function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000
             @assert length(X_batch) == length(Y_batch) "X, Y batch lengths must be equal"
 
             loss, grads = Flux.withgradient(model) do m
-                loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
-                # loss = eval_loss(X_batch, Y_batch, mse, m, !pretraining)
+                # loss = eval_loss_par(X_batch, Y_batch, mse, m, nthreads, !pretraining)
+                loss = eval_loss(X_batch, Y_batch, mse, m, !pretraining)
                 loss
             end
             @show loss
@@ -549,8 +553,9 @@ function train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=10000
             end
             @assert length(X_val) == length(Y_val) "X, Y batch lengths must be equal"
 
-            val_loss = eval_loss_par(X_val, Y_val, mse, model, nthreads, !pretraining)
-            # val_loss = eval_loss(X_val, Y_val, mse, model, !pretraining)
+            # val_loss = eval_loss_par(X_val, Y_val, mse, model, nthreads, !pretraining)
+            val_loss = eval_loss(X_val, Y_val, mse, model, !pretraining)
+            @show val_loss
 
             # Process & report data
             batch_loss /= length(train_loader)
@@ -608,7 +613,7 @@ function main()
 
     mol_dict, train_mols, val_mols = create_data(n_points=50; pretraining=false)
 
-    optim = Flux.setup(Flux.Adam(5e-6), model)
+    optim = Flux.setup(Flux.Adam(1e-5), model)
     train_model!(model, optim, mol_dict, train_mols, val_mols)
 end
 
@@ -618,7 +623,7 @@ function main_pcpsaft()
     @show nfeatures = length(first(collect(values(mol_dict)))[1])
     model = create_ff_model_with_attention(nfeatures)
     optim = Flux.setup(Flux.Adam(5e-6), model)
-    train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=500, pretraining=true)
+    train_model!(model, optim, mol_dict, train_mols, val_mols; epochs=25, pretraining=true)
 
     return model
 end

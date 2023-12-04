@@ -60,8 +60,6 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
     mol_data = Dict{String,Tuple{Vector{T},T,Vector{T},Vector{Vector{T}}}}()
 
     for (name, smiles, Mw, T_exp_min, T_exp_max) in mol_df
-        X_vec = Vector{Float64}()
-        Y_vec = Vector{Vector{Float64}}()
         fp = make_fingerprint(smiles)
         saft_model = PPCSAFT([name])
 
@@ -76,8 +74,9 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
             continue
         end
         if !pretraining
-            # @assert T_min < T_max "Tmin ($T_min) < Tmax ($T_max) for $name"
-            # @assert T_max < 501.0 "Tmax ($T_max) > 500 for $name"
+            X_vec = Vector{Float64}()
+            Y_vec = Vector{Vector{Float64}}()
+
             for T in range(T_min, T_max, n_points)
                 Tr = T / Tc
                 (p_sat, Vl_sat, Vv_sat) = saturation_pressure(saft_model, T)
@@ -89,17 +88,14 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
         else
             m = saft_model.params.segment.values[1]
             sigma = saft_model.params.sigma.values[1] * 1e10
-            λ_r = 25.0 + 5*randn()
+            λ_r = 25.0
             epsilon = 2*saft_model.params.epsilon.values[1]
             # epsilon = 350.0 + 25*randn()
 
             T_min = T_exp_min
             Tr = T_min / Tc
 
-            # push!(X_data, (fp, nothing, Mw, name))
-            push!(Y_vec, [m, sigma, λ_r, epsilon])
-
-            mol_data[name] = (fp, Mw, [Tr], Y_vec)
+            mol_data[name] = (fp, Mw, [Tr], [[m, sigma, λ_r, epsilon]])
         end
     end
 
