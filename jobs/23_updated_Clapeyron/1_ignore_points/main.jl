@@ -601,8 +601,6 @@ function create_ff_model_with_attention(nfeatures)
     return Chain(
         Dense(nfeatures, 2048, selu),
         Dense(2048, 1024, selu),
-        # attention_wrapper,
-        # Dense(1024, 1024, selu),
         Dense(1024, 512, selu),
         Dense(512, 128, selu),
         Dense(128, 32, selu),
