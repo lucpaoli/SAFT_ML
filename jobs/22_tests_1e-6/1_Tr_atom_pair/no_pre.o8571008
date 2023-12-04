@@ -42902,3 +42902,1663 @@ val_loss = 1.4079125258381717e13
 
 epoch 738: batch_loss = 1.5051528481190527e13, val_loss = 1.4079125258381717e13, time = 52.27571392059326s
 (points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322936e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.83, 3.68, 6.0, 23.53, 301.5] at T=175.54, Tc=419.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3802997166437067e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045581211e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.79748324844448e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800268326e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.92, 3.75, 6.0, 23.84, 311.5] at T=179.95, Tc=435.2, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+val_loss = 1.4097998080443906e13
+
+epoch 739: batch_loss = 1.505140893242139e13, val_loss = 1.4097998080443906e13, time = 51.36976504325867s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.86, 3.7, 6.0, 23.62, 304.23] at T=182.1, Tc=423.45, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.035115433220172e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.83, 3.68, 6.0, 23.52, 301.21] at T=176.06, Tc=418.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3802997166368858e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455811962e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483222980264e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800268683e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.92, 3.74, 6.0, 23.83, 311.18] at T=181.24, Tc=434.7, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+val_loss = 1.4097998080443934e13
+
+epoch 740: batch_loss = 1.50515330897681e13, val_loss = 1.4097998080443934e13, time = 50.83870577812195s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.85, 3.7, 6.0, 23.62, 303.93] at T=181.16, Tc=422.99, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.0351154332201697e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987175748833e10
+
+Sat solver failed for tetradecane = [198.24, 2.91, 3.73, 6.0, 23.77, 309.14] at T=169.33, Tc=431.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277941762e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483197637611e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800269125e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.92, 3.74, 6.0, 23.83, 310.86] at T=181.04, Tc=434.21, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+val_loss = 1.4079125258381695e13
+
+epoch 741: batch_loss = 1.507642953197889e13, val_loss = 1.4079125258381695e13, time = 50.28991079330444s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633228864e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.83, 3.68, 6.0, 23.51, 300.61] at T=172.81, Tc=417.81, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3802997166233362e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455811733e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483172376504e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180026944e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.92, 3.74, 6.0, 23.82, 310.54] at T=179.34, Tc=433.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+val_loss = 1.4116921567800195e13
+
+epoch 742: batch_loss = 1.5051408932268459e13, val_loss = 1.4116921567800195e13, time = 50.64510107040405s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.85, 3.7, 6.0, 23.61, 303.33] at T=178.54, Tc=422.08, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.035115433220137e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.82, 3.68, 6.0, 23.51, 300.32] at T=173.34, Tc=417.36, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3802997166166025e10
+
+Sat solver failed for tetradecane = [198.24, 2.9, 3.73, 6.0, 23.76, 308.51] at T=168.95, Tc=430.55, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277941536e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483147212511e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180026972e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.92, 3.74, 6.0, 23.82, 310.22] at T=179.14, Tc=433.23, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+val_loss = 1.409799808044395e13
+
+epoch 743: batch_loss = 1.5076438733875672e13, val_loss = 1.409799808044395e13, time = 50.85934591293335s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322877e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.82, 3.68, 6.0, 23.5, 300.02] at T=174.59, Tc=416.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953765154741e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455811545e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483122145712e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180027007e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348205e13
+
+epoch 744: batch_loss = 1.505140432348741e13, val_loss = 1.4022808757348205e13, time = 51.494469165802s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633228595e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.82, 3.67, 6.0, 23.5, 299.73] at T=172.25, Tc=416.46, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3802997166032045e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455811458e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483097134803e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180027041e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.91, 3.74, 6.0, 23.81, 309.59] at T=182.45, Tc=432.25, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.4060302898410625e13
+
+epoch 745: batch_loss = 1.5051408932117387e13, val_loss = 1.4060302898410625e13, time = 52.686978816986084s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633228564e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.82, 3.67, 6.0, 23.49, 299.44] at T=171.35, Tc=416.01, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.380299716596542e10
+
+Sat solver failed for tetradecane = [198.24, 2.9, 3.73, 6.0, 23.75, 307.58] at T=168.39, Tc=429.12, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277941255e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483072261561e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800270673e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.91, 3.74, 6.0, 23.8, 309.27] at T=177.79, Tc=431.77, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+val_loss = 1.4097998080443865e13
+
+epoch 746: batch_loss = 1.5076314576327223e13, val_loss = 1.4097998080443865e13, time = 50.43731904029846s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322832e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987175348223e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455811212e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483047463066e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800271088e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.91, 3.74, 6.0, 23.8, 308.96] at T=178.33, Tc=431.28, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.406030289841061e13
+
+epoch 747: batch_loss = 1.5051399730019416e13, val_loss = 1.406030289841061e13, time = 49.94597506523132s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322841e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.82, 3.67, 6.0, 23.48, 298.85] at T=171.69, Tc=415.12, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953764889187e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455811089e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797483022770465e10
+
+Sat solver failed for 2,3-dimethylundecane = [184.22, 2.77, 3.64, 6.0, 23.32, 293.31] at T=172.91, Tc=406.23, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.8033218236744833e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.91, 3.74, 6.0, 23.79, 308.64] at T=179.61, Tc=430.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412719e13
+
+epoch 748: batch_loss = 1.5051476456160645e13, val_loss = 1.4041530798412719e13, time = 55.43109393119812s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322838e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987175216368e10
+
+Sat solver failed for tetradecane = [198.24, 2.89, 3.73, 6.0, 23.73, 306.66] at T=167.83, Tc=427.7, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277940881e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974829981456184e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180027173e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.91, 3.74, 6.0, 23.79, 308.33] at T=177.93, Tc=430.32, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412805e13
+
+epoch 749: batch_loss = 1.5076305374180098e13, val_loss = 1.4041530798412805e13, time = 58.98901915550232s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322825e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.375698717515114e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455810923e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482973666594e10
+
+Sat solver failed for 2,3-dimethylundecane = [184.22, 2.76, 3.64, 6.0, 23.31, 292.76] at T=171.12, Tc=405.39, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.803321823674551e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.9, 3.74, 6.0, 23.78, 308.01] at T=177.73, Tc=429.84, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412791e13
+
+epoch 750: batch_loss = 1.505147186274416e13, val_loss = 1.4041530798412791e13, time = 58.858644008636475s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322809e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987175085957e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.77, 3.64, 6.0, 23.34, 293.14] at T=172.93, Tc=405.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.47169327794074e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482949224302e10
+
+Sat solver failed for pentadecane = [212.25, 2.92, 3.75, 6.0, 23.84, 309.78] at T=169.54, Tc=432.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.8033218236741608e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.9, 3.74, 6.0, 23.78, 307.7] at T=176.8, Tc=429.36, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.404153079841275e13
+
+epoch 751: batch_loss = 1.5076377506954887e13, val_loss = 1.404153079841275e13, time = 58.77012610435486s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322803e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987175020819e10
+
+Sat solver failed for tetradecane = [198.24, 2.89, 3.73, 6.0, 23.72, 305.74] at T=167.28, Tc=426.29, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277940622e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482924841111e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800272806e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348195e13
+
+epoch 752: batch_loss = 1.5076305374032932e13, val_loss = 1.4022808757348195e13, time = 55.584259033203125s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.83, 3.69, 6.0, 23.56, 300.39] at T=179.57, Tc=417.57, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.03511543322006e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174956081e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455810558e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482900631425e10
+
+Sat solver failed for 2,3-dimethylundecane = [184.22, 2.76, 3.63, 6.0, 23.3, 291.94] at T=170.59, Tc=404.13, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.8033218236746625e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734821e13
+
+epoch 753: batch_loss = 1.5051596019995266e13, val_loss = 1.402280875734821e13, time = 51.98330903053284s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.83, 3.69, 6.0, 23.56, 300.1] at T=179.38, Tc=417.13, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.035115433220051e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174891586e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045581045e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482876452771e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800273575e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348188e13
+
+epoch 754: batch_loss = 1.505152388707373e13, val_loss = 1.4022808757348188e13, time = 53.358901023864746s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633227747e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174827297e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455810397e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974828523991875e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800273953e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348184e13
+
+epoch 755: batch_loss = 1.5051399729627559e13, val_loss = 1.4022808757348184e13, time = 53.57814002037048s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322788e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174763323e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.76, 3.64, 6.0, 23.31, 291.79] at T=170.97, Tc=403.86, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277940175e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482828394305e10
+
+Sat solver failed for 2,3-dimethylundecane = [184.22, 2.75, 3.63, 6.0, 23.29, 291.12] at T=170.77, Tc=402.89, muting...
+
+Sat solver failed for pentadecane = [212.25, 2.92, 3.75, 6.0, 23.81, 308.2] at T=168.59, Tc=430.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.8069429518343176e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348229e13
+
+epoch 756: batch_loss = 1.5076449929275234e13, val_loss = 1.4022808757348229e13, time = 51.90408992767334s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.83, 3.69, 6.0, 23.54, 299.23] at T=175.88, Tc=415.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 4.041342463209545e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174699469e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.76, 3.64, 6.0, 23.31, 291.53] at T=170.8, Tc=403.45, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277940083e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974828044521614e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800274753e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734821e13
+
+epoch 757: batch_loss = 1.507655407178875e13, val_loss = 1.402280875734821e13, time = 50.64865517616272s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.83, 3.69, 6.0, 23.54, 298.94] at T=174.96, Tc=415.36, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.0351154332200323e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174635923e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.76, 3.64, 6.0, 23.31, 291.26] at T=168.45, Tc=403.04, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277939983e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482780609275e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800275055e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734821e13
+
+epoch 758: batch_loss = 1.5076429531141062e13, val_loss = 1.402280875734821e13, time = 50.69305109977722s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.83, 3.69, 6.0, 23.53, 298.65] at T=175.51, Tc=414.92, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.035115433220011e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174572401e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.75, 3.64, 6.0, 23.3, 290.99] at T=171.54, Tc=402.63, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277939861e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.86, 3.71, 6.0, 23.63, 301.76] at T=179.73, Tc=420.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830808178349e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800275504e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734821e13
+
+epoch 759: batch_loss = 1.5076452227195943e13, val_loss = 1.402280875734821e13, time = 53.764711141586304s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322721e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174509195e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.75, 3.64, 6.0, 23.3, 290.72] at T=168.11, Tc=402.23, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277939755e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.86, 3.71, 6.0, 23.62, 301.47] at T=178.08, Tc=419.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.8088307845186676e10
+
+Sat solver failed for 2,3-dimethylundecane = [184.22, 2.75, 3.63, 6.0, 23.27, 290.04] at T=170.78, Tc=401.24, muting...
+
+Sat solver failed for pentadecane = [212.25, 2.91, 3.75, 6.0, 23.79, 306.94] at T=167.83, Tc=428.44, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.8069429518344412e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.40228087573482e13
+
+epoch 760: batch_loss = 1.507647262518659e13, val_loss = 1.40228087573482e13, time = 54.00342297554016s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322747e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174446075e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.75, 3.63, 6.0, 23.29, 290.46] at T=169.03, Tc=401.82, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277939652e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.85, 3.71, 6.0, 23.62, 301.17] at T=176.43, Tc=419.15, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830760858026e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800276215e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348227e13
+
+epoch 761: batch_loss = 1.5076328069702916e13, val_loss = 1.4022808757348227e13, time = 49.845715045928955s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322736e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174383251e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455809652e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482686141283e10
+
+Sat solver failed for pentadecane = [212.25, 2.91, 3.75, 6.0, 23.78, 306.32] at T=167.46, Tc=427.49, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.803321823674522e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348268e13
+
+epoch 762: batch_loss = 1.5051471862166406e13, val_loss = 1.4022808757348268e13, time = 50.796852827072144s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322717e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.375698717432052e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455809569e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974826627480156e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180027706e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348234e13
+
+epoch 763: batch_loss = 1.5051399729246506e13, val_loss = 1.4022808757348234e13, time = 52.74417591094971s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633227203e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174258146e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.75, 3.63, 6.0, 23.28, 289.66] at T=167.44, Tc=400.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.47169327793934e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.85, 3.71, 6.0, 23.6, 300.28] at T=177.31, Tc=417.79, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.80883069066186e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180027741e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348242e13
+
+epoch 764: batch_loss = 1.507632806956187e13, val_loss = 1.4022808757348242e13, time = 52.65892195701599s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322703e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.375698717419603e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455809328e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482616278297e10
+
+Sat solver failed for pentadecane = [212.25, 2.9, 3.74, 6.0, 23.77, 305.39] at T=166.9, Tc=426.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.8033218236746307e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348283e13
+
+epoch 765: batch_loss = 1.5051471862026e13, val_loss = 1.4022808757348283e13, time = 53.878945112228394s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.02890756332271e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174134022e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455809217e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.85, 3.71, 6.0, 23.59, 299.69] at T=173.31, Tc=416.89, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830644289223e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180027824e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734822e13
+
+epoch 766: batch_loss = 1.505142242520885e13, val_loss = 1.402280875734822e13, time = 50.662972927093506s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322696e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174072048e10
+
+Sat solver failed for 3-methylundecane = [170.2, 2.74, 3.63, 6.0, 23.27, 288.87] at T=166.94, Tc=399.41, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277939058e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.84, 3.71, 6.0, 23.59, 299.4] at T=173.85, Tc=416.45, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.80883062117891e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180027866e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348234e13
+
+epoch 767: batch_loss = 1.50763280694223e13, val_loss = 1.4022808757348234e13, time = 49.24568200111389s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322702e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987174010437e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580906e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.84, 3.71, 6.0, 23.58, 299.11] at T=173.66, Tc=416.0, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.8088305981699814e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800279025e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348238e13
+
+epoch 768: batch_loss = 1.5051422425116275e13, val_loss = 1.4022808757348238e13, time = 48.250977993011475s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322694e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173948877e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455808958e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482524290625e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800279507e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348254e13
+
+epoch 769: batch_loss = 1.50513997289683e13, val_loss = 1.4022808757348254e13, time = 49.0726580619812s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322688e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.375698717388739e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455808828e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482501519102e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180027987e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734824e13
+
+epoch 770: batch_loss = 1.5051399728922484e13, val_loss = 1.402280875734824e13, time = 49.286511182785034s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322686e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.37569871738262e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455808752e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974824787708916e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800280334e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348248e13
+
+epoch 771: batch_loss = 1.5051399728876822e13, val_loss = 1.4022808757348248e13, time = 49.60729098320007s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322671e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173765165e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580866e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.84, 3.7, 6.0, 23.57, 297.94] at T=177.23, Tc=414.22, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830507035915e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800280713e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348207e13
+
+epoch 772: batch_loss = 1.505142242493316e13, val_loss = 1.4022808757348207e13, time = 50.55374002456665s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322699e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173704016e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455808577e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.83, 3.7, 6.0, 23.56, 297.65] at T=177.04, Tc=413.77, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830484375846e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180028119e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734828e13
+
+epoch 773: batch_loss = 1.5051422424887662e13, val_loss = 1.402280875734828e13, time = 50.73575401306152s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226666e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173643473e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580843e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.83, 3.7, 6.0, 23.56, 297.36] at T=174.7, Tc=413.33, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 6.8202164659663475e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800281595e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734827e13
+
+epoch 774: batch_loss = 1.5051445196850535e13, val_loss = 1.402280875734827e13, time = 48.47267007827759s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226843e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.375698717358274e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455808366e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482388673203e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180028204e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348264e13
+
+epoch 775: batch_loss = 1.5051399728695812e13, val_loss = 1.4022808757348264e13, time = 48.37678098678589s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322662e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173522623e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455808294e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.83, 3.7, 6.0, 23.55, 296.78] at T=174.33, Tc=412.44, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830416993921e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800282434e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348293e13
+
+epoch 776: batch_loss = 1.5051422424752297e13, val_loss = 1.4022808757348293e13, time = 49.7926549911499s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322651e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173462435e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455808148e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.83, 3.7, 6.0, 23.54, 296.49] at T=172.71, Tc=412.0, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 6.820216398749604e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180028292e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.86, 3.72, 6.0, 23.65, 299.79] at T=178.98, Tc=417.24, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412867e13
+
+epoch 777: batch_loss = 1.505144519671551e13, val_loss = 1.4041530798412867e13, time = 48.40753197669983s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226416e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173402626e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580805e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.83, 3.7, 6.0, 23.54, 296.21] at T=173.95, Tc=411.56, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830372427537e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180028331e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734824e13
+
+epoch 778: batch_loss = 1.5051422424662656e13, val_loss = 1.402280875734824e13, time = 49.715893030166626s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322651e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.375698717334273e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455807953e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482299644185e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180028377e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.86, 3.72, 6.0, 23.64, 299.19] at T=179.31, Tc=416.33, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412857e13
+
+epoch 779: batch_loss = 1.5051399728516885e13, val_loss = 1.4041530798412857e13, time = 51.15005302429199s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322636e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173283464e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580789e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482277587209e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180028425e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348299e13
+
+epoch 780: batch_loss = 1.5051399728472635e13, val_loss = 1.4022808757348299e13, time = 50.876055002212524s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226404e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173224167e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580776e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.82, 3.7, 6.0, 23.53, 295.34] at T=174.82, Tc=410.24, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830306102835e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800284695e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.85, 3.72, 6.0, 23.63, 298.6] at T=173.92, Tc=415.42, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+val_loss = 1.4079125258381814e13
+
+epoch 781: batch_loss = 1.505142242452939e13, val_loss = 1.4079125258381814e13, time = 50.47211194038391s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226263e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987173164925e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455807705e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.82, 3.7, 6.0, 23.52, 295.06] at T=170.36, Tc=409.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830284054537e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180028515e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.85, 3.72, 6.0, 23.63, 298.31] at T=173.73, Tc=414.97, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.4060302898410695e13
+
+epoch 782: batch_loss = 1.5051422424485172e13, val_loss = 1.4060302898410695e13, time = 51.27666902542114s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226184e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.37569871731061e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455807614e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482211689954e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800285617e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734824e13
+
+epoch 783: batch_loss = 1.5051399728340256e13, val_loss = 1.402280875734824e13, time = 52.13828992843628s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226056e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.76, 3.65, 6.0, 23.32, 288.73] at T=167.36, Tc=399.66, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953762650238e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455807481e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482189895412e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800286142e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.85, 3.72, 6.0, 23.62, 297.72] at T=171.93, Tc=414.07, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.40415307984128e13
+
+epoch 784: batch_loss = 1.5051404321614307e13, val_loss = 1.40415307984128e13, time = 49.07140302658081s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322619e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987172989109e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580741e13
+
+Sat solver failed for 2-methyltridecane = [198.24, 2.82, 3.7, 6.0, 23.51, 294.2] at T=169.82, Tc=408.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.808830218445798e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800286575e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348309e13
+
+epoch 785: batch_loss = 1.5051422424353332e13, val_loss = 1.4022808757348309e13, time = 50.17232918739319s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226294e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.76, 3.65, 6.0, 23.31, 288.19] at T=164.96, Tc=398.83, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3802997163472343e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455807311e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482146376297e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800287054e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.85, 3.72, 6.0, 23.61, 297.13] at T=172.98, Tc=413.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412836e13
+
+epoch 786: batch_loss = 1.5051408930207098e13, val_loss = 1.4041530798412836e13, time = 50.99386119842529s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633226044e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.76, 3.65, 6.0, 23.31, 287.92] at T=166.84, Tc=398.42, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953762475384e10
+
+Sat solver failed for tetradecane = [198.24, 2.83, 3.71, 6.0, 23.56, 295.41] at T=161.09, Tc=410.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277937131e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482124732464e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800287524e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.84, 3.72, 6.0, 23.61, 296.84] at T=171.37, Tc=412.73, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.4060302898410672e13
+
+epoch 787: batch_loss = 1.507630996574325e13, val_loss = 1.4060302898410672e13, time = 50.426239013671875s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322587e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.75, 3.65, 6.0, 23.31, 287.65] at T=168.73, Tc=398.01, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953762417444e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455807127e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974821031642746e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800288e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.84, 3.72, 6.0, 23.6, 296.55] at T=169.77, Tc=412.28, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412828e13
+
+epoch 788: batch_loss = 1.505140432144009e13, val_loss = 1.4041530798412828e13, time = 48.07438015937805s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322607e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.75, 3.65, 6.0, 23.3, 287.38] at T=163.76, Tc=397.6, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 1.3826117761559874e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455807064e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482081669203e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800288528e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.84, 3.72, 6.0, 23.6, 296.26] at T=173.83, Tc=411.84, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.404153079841286e13
+
+epoch 789: batch_loss = 1.5051413554196809e13, val_loss = 1.404153079841286e13, time = 49.78850698471069s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322592e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.75, 3.65, 6.0, 23.3, 287.11] at T=164.28, Tc=397.19, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953762302195e10
+
+Sat solver failed for tetradecane = [198.24, 2.83, 3.71, 6.0, 23.54, 294.56] at T=160.57, Tc=409.2, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277936848e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482060295574e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800289032e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348291e13
+
+epoch 790: batch_loss = 1.5076309965613777e13, val_loss = 1.4022808757348291e13, time = 61.83192205429077s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322585e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.75, 3.65, 6.0, 23.29, 286.85] at T=168.89, Tc=396.79, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953762244844e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580685e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974820389481e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180028946e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348283e13
+
+epoch 791: batch_loss = 1.5051404321311074e13, val_loss = 1.4022808757348283e13, time = 62.25131106376648s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322567e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.75, 3.65, 6.0, 23.29, 286.58] at T=163.94, Tc=396.38, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.38029971631259e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455806727e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797482017688603e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800290067e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348299e13
+
+epoch 792: batch_loss = 1.5051408929948488e13, val_loss = 1.4022808757348299e13, time = 58.12384390830994s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633225604e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.75, 3.65, 6.0, 23.28, 286.31] at T=163.09, Tc=395.97, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.377995376213076e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455806652e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481996509288e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800290558e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.83, 3.72, 6.0, 23.58, 295.11] at T=169.56, Tc=410.08, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412828e13
+
+epoch 793: batch_loss = 1.5051404321225781e13, val_loss = 1.4041530798412828e13, time = 52.47568416595459s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322567e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.75, 3.65, 6.0, 23.28, 286.05] at T=163.61, Tc=395.57, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953762073929e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455806544e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481975354398e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800291058e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.402280875734828e13
+
+epoch 794: batch_loss = 1.5051404321183244e13, val_loss = 1.402280875734828e13, time = 51.34742093086243s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633225665e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.74, 3.65, 6.0, 23.28, 285.78] at T=164.8, Tc=395.17, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953762017221e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455806473e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481954362901e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800291586e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.40228087573483e13
+
+epoch 795: batch_loss = 1.5051404321141113e13, val_loss = 1.40228087573483e13, time = 48.85057592391968s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633225665e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.74, 3.65, 6.0, 23.27, 285.52] at T=164.63, Tc=394.76, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953761961021e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455806395e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481933424353e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800292117e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348299e13
+
+epoch 796: batch_loss = 1.5051404321099068e13, val_loss = 1.4022808757348299e13, time = 50.261085987091064s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322554e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987172303398e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455806311e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974819124559235e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.79971518002926e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348287e13
+
+epoch 797: batch_loss = 1.5051399727739031e13, val_loss = 1.4022808757348287e13, time = 50.1903932094574s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633225354e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.74, 3.65, 6.0, 23.26, 284.99] at T=162.26, Tc=393.96, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3802997162786234e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455806219e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481891629391e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180029317e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.83, 3.71, 6.0, 23.56, 293.68] at T=168.66, Tc=407.89, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+val_loss = 1.407912525838176e13
+
+epoch 798: batch_loss = 1.5051408929695293e13, val_loss = 1.407912525838176e13, time = 50.463804960250854s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322553e11
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.74, 3.65, 6.0, 23.26, 284.73] at T=162.77, Tc=393.56, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3779953761792667e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455806105e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481870859307e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800293692e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.82, 3.71, 6.0, 23.55, 293.39] at T=170.58, Tc=407.45, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.40415307984128e13
+
+epoch 799: batch_loss = 1.5051404320973324e13, val_loss = 1.40415307984128e13, time = 51.56093096733093s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.76, 3.67, 6.0, 23.36, 287.31] at T=168.89, Tc=397.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.0351154332197943e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987172136091e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805992e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481850148017e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800294232e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348283e13
+
+epoch 800: batch_loss = 1.5051523885011691e13, val_loss = 1.4022808757348283e13, time = 57.25282001495361s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.76, 3.67, 6.0, 23.35, 287.05] at T=168.02, Tc=397.21, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.035115433219798e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987172080421e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805953e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481829503504e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.79971518002948e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.82, 3.71, 6.0, 23.54, 292.82] at T=168.12, Tc=406.59, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.4060302898410676e13
+
+epoch 801: batch_loss = 1.5051523884970316e13, val_loss = 1.4060302898410676e13, time = 56.04895901679993s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.02890756332251e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987172024532e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805898e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481808943091e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800295322e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.82, 3.71, 6.0, 23.54, 292.54] at T=169.34, Tc=406.16, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.404153079841282e13
+
+epoch 802: batch_loss = 1.505139972753113e13, val_loss = 1.404153079841282e13, time = 57.22378587722778s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633225305e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171968895e10
+
+Sat solver failed for tetradecane = [198.24, 2.81, 3.7, 6.0, 23.49, 290.93] at T=158.4, Tc=403.65, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.471693277935664e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.7974817884294464e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.799715180029586e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.82, 3.71, 6.0, 23.54, 292.26] at T=167.07, Tc=405.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.4060302898410717e13
+
+epoch 803: batch_loss = 1.5076305371749621e13, val_loss = 1.4060302898410717e13, time = 57.8740611076355s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322501e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171913446e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805669e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481767819758e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800296405e11
+
+Sat solver failed for 3-methyltridecane = [198.24, 2.82, 3.71, 6.0, 23.53, 291.97] at T=168.28, Tc=405.29, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.4041530798412805e13
+
+epoch 804: batch_loss = 1.5051399727448402e13, val_loss = 1.4041530798412805e13, time = 57.95731806755066s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633225195e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171858515e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.45924045580557e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481747317033e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800296942e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348297e13
+
+epoch 805: batch_loss = 1.5051399727407191e13, val_loss = 1.4022808757348297e13, time = 57.573326110839844s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.75, 3.66, 6.0, 23.33, 285.72] at T=167.85, Tc=395.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.0351154332197546e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171804281e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805506e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481726936525e10
+
+Sat solver failed for pentadecane = [212.25, 2.83, 3.72, 6.0, 23.58, 293.2] at T=159.59, Tc=407.41, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.8033218236763193e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348297e13
+
+epoch 806: batch_loss = 1.5051596017637166e13, val_loss = 1.4022808757348297e13, time = 56.661638021469116s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322499e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171750526e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805417e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481706705657e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800298093e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348264e13
+
+epoch 807: batch_loss = 1.5051399727325645e13, val_loss = 1.4022808757348264e13, time = 54.369850873947144s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.028907563322505e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171697237e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805305e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481686644259e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.79971518002987e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348314e13
+
+epoch 808: batch_loss = 1.5051399727285285e13, val_loss = 1.4022808757348314e13, time = 51.33879613876343s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633224756e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171644032e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805223e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.79748166669159e10
+
+Sat solver failed for pentadecane = [212.25, 2.83, 3.72, 6.0, 23.56, 292.35] at T=159.08, Tc=406.11, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.8033218236764783e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348271e13
+
+epoch 809: batch_loss = 1.5051471860118137e13, val_loss = 1.4022808757348271e13, time = 51.45314598083496s
+
+Sat solver failed for 3-methyldodecane = [184.22, 2.75, 3.66, 6.0, 23.32, 284.68] at T=165.8, Tc=393.6, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 4.0351154332197424e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171591269e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.459240455805153e13
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 6.797481646864735e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.7997151800299875e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 1.4022808757348346e13
+
+epoch 810: batch_loss = 1.5051523884603348e13, val_loss = 1.4022808757348346e13, time = 52.30057120323181s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 4.0289075633224854e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3756987171538559e10
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0

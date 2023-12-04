@@ -1,0 +1,1623 @@
+Environment activated, loading script
+Running main
+Generating data for 80 molecules...
+all_mols = ["2,5-dimethylhexane", "2-methylheptane", "3-methyldecane", "hexadecane", "3,3-dimethylhexane", "3-methyltridecane", "2-methylbutane", "nonane", "heptacosane", "2,2-dimethylpropane", "2,4,4-trimethylhexane", "octadecane", "heptadecane", "n-undecane", "nonadecane", "2,2,4,4,6,8,8-heptamethylnonane", "3-methyldodecane", "3,4-dimethylhexane", "3-methylheptane", "n-butane", "2,2,5,5-tetramethylhexane", "tridecane", "2,2,3-trimethylpentane", "decane", "3-ethylpentane", "2,3-dimethyldodecane", "3-methylundecane", "2-methyldecane", "3-methylpentane", "octane", "2-methyldodecane", "2,6-dimethyloctane", "2,2,3,4-tetramethylpentane", "3,3-diethylpentane", "2,3,4-trimethyl pentane", "2-methylhexane", "2,2,3-trimethylbutane", "3-methyl-3-ethylpentane", "pentadecane", "hexane", "2-methyloctane", "octacosane", "2,2,4,4-tetramethylpentane", "2-methyl-3-ethyl-pentane", "2-methylpentane", "2,3,3,4-tetramethylpentane", "2,3-dimethyldecane", "ethane", "2,3-dimethylpentane", "2,3-dimethylundecane", "pentane", "tetradecane", "2-methylundecane", "squalane", "2,2-dimethylbutane", "2-methylpropane", "2,3,3-trimethylpentane", "3-ethylhexane", "2,2-dimethylhexane", "2,2,4-trimethylpentane", "2,4-dimethylhexane", "2,2,5-trimethylhexane", "3-methylhexane", "dodecane", "eicosane", "2,3-dimethylheptane", "2,7-dimethyloctane", "4-methylheptane", "tetracosane", "methane", "3,3-dimethylpentane", "2,2,3,3-tetramethylpentane", "2,2-dimethylpentane", "2-methyltridecane", "2,3-dimethylbutane", "2,3-dimethylhexane", "2,3-dimethylnonane", "propane", "heptane", "2,4-dimethylpentane"]
+nfeatures = length((first(collect(values(mol_dict))))[1]) = 5120
+training on 10 threads
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15493815441489917
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1714191501153883
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18564627959831806
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19132455309612595
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21988821809202766
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19535594456771985
+
+epoch 1: batch_loss = 0.18464327106335182, val_loss = 0.19535594456771985, time = 214.76540422439575s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15464680195936978
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17108256658110327
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1853126780034025
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1909593313192284
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21944516432432584
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1950601023048258
+
+epoch 2: batch_loss = 0.18428930843748598, val_loss = 0.1950601023048258, time = 21.81278085708618s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15436797486558562
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1707691240361261
+Sat solver failed for octane = [114.14, 2.0, 3.0, 6.0, 20.04, 200.48] at T=98.68, Tc=265.87, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18499709699585581
+Sat solver failed for octadecane = [254.3, 2.0, 3.0, 6.0, 20.05, 200.59] at T=96.5, Tc=265.98, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1906176913257969
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21901852398804547
+Sat solver failed for eicosane = [282.33, 2.0, 3.0, 6.0, 20.06, 200.86] at T=93.77, Tc=266.24, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19478092860526622
+
+epoch 3: batch_loss = 0.183954082242282, val_loss = 0.19478092860526622, time = 19.44951581954956s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.01, 3.0, 6.0, 20.08, 200.53] at T=87.19, Tc=265.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15409916520486563
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17047922280043906
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18470100089792618
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19029720550464402
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21861876651544523
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.0, 3.01, 6.0, 20.09, 200.67] at T=93.39, Tc=265.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19451633442542
+
+epoch 4: batch_loss = 0.18363907218466402, val_loss = 0.19451633442542, time = 18.31962490081787s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15384616704695586
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17020370505974783
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18442103473805077
+Sat solver failed for octadecane = [254.3, 2.01, 3.01, 6.0, 20.11, 200.98] at T=96.63, Tc=266.33, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18999456987192948
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21824705579760584
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19426654103992247
+
+epoch 5: batch_loss = 0.18334250650285794, val_loss = 0.19426654103992247, time = 18.64583110809326s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15361036922079999
+Sat solver failed for tetracosane = [338.39, 2.01, 3.01, 6.0, 20.13, 201.37] at T=90.13, Tc=266.81, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16993618921228887
+Sat solver failed for heptacosane = [380.44, 2.01, 3.01, 6.0, 20.14, 201.38] at T=94.59, Tc=266.79, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18415633407875404
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1897096159282632
+Sat solver failed for nonane = [128.16, 2.01, 3.01, 6.0, 20.13, 200.95] at T=97.84, Tc=266.14, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21790048013926677
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.01, 3.01, 6.0, 20.13, 201.04] at T=93.52, Tc=266.27, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19403064691908722
+
+epoch 6: batch_loss = 0.18306259771587458, val_loss = 0.19403064691908722, time = 27.454206943511963s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15339224337394286
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16968637613835688
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1839064983078882
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18944257896184896
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21757484168256494
+Sat solver failed for heptane = [100.12, 2.01, 3.01, 6.0, 20.12, 200.93] at T=88.3, Tc=266.19, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19380919162176513
+
+epoch 7: batch_loss = 0.18280050769292036, val_loss = 0.19380919162176513, time = 18.17947483062744s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.01, 3.01, 6.0, 20.17, 201.29] at T=87.45, Tc=266.57, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15318764850023764
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16945098656858246
+Sat solver failed for heptadecane = [240.28, 2.01, 3.01, 6.0, 20.17, 201.47] at T=98.3, Tc=266.79, muting...
+Sat solver failed for tridecane = [184.22, 2.01, 3.01, 6.0, 20.17, 201.37] at T=101.06, Tc=266.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.18367277236008656
+Sat solver failed for octadecane = [254.3, 2.01, 3.01, 6.0, 20.18, 201.5] at T=96.81, Tc=266.82, muting...
+Sat solver failed for octacosane = [394.45, 2.01, 3.01, 6.0, 20.19, 201.75] at T=87.94, Tc=267.16, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.18919376202850818
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21727269729265486
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19360393462822292
+
+epoch 8: batch_loss = 0.18255557335001393, val_loss = 0.19360393462822292, time = 14.376743078231812s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15299383101843567
+Sat solver failed for tetracosane = [338.39, 2.01, 3.01, 6.0, 20.2, 201.83] at T=90.27, Tc=267.24, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16922800851932857
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18345305834458894
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18895971991036387
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.2169890748560688
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19340946183023022
+
+epoch 9: batch_loss = 0.18232473852975717, val_loss = 0.19340946183023022, time = 31.50168800354004s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.01, 3.01, 6.0, 20.2, 201.62] at T=87.56, Tc=266.92, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15281071670525329
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1690147470554652
+Sat solver failed for heptacosane = [380.44, 2.02, 3.01, 6.0, 20.23, 202.0] at T=94.81, Tc=267.4, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18324336513968315
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18873543164342282
+Sat solver failed for nonane = [128.16, 2.01, 3.01, 6.0, 20.19, 201.46] at T=98.03, Tc=266.66, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.2167185111837492
+Sat solver failed for heptane = [100.12, 2.01, 3.01, 6.0, 20.16, 201.25] at T=88.41, Tc=266.52, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19322146538878274
+
+epoch 10: batch_loss = 0.18210455434551476, val_loss = 0.19322146538878274, time = 16.894994974136353s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15263371361796285
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16880915917753755
+Sat solver failed for heptadecane = [240.28, 2.02, 3.01, 6.0, 20.23, 201.89] at T=98.45, Tc=267.2, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1830416700367861
+Sat solver failed for hexane = [86.11, 2.01, 3.01, 6.0, 20.14, 201.1] at T=91.15, Tc=266.41, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18851842839478838
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21645792993810734
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19303950821821753
+
+epoch 11: batch_loss = 0.18189218023303644, val_loss = 0.19303950821821753, time = 16.272923946380615s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.02, 3.01, 6.0, 20.23, 201.9] at T=87.66, Tc=267.23, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15246140211921064
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1686095197277115
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18284553842341553
+Sat solver failed for octacosane = [394.45, 2.02, 3.01, 6.0, 20.27, 202.33] at T=88.13, Tc=267.74, muting...
+Sat solver failed for hexane = [86.11, 2.01, 3.01, 6.0, 20.15, 201.19] at T=91.18, Tc=266.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.18830648479033263
+Sat solver failed for squalane = [422.48, 2.02, 3.02, 6.0, 20.35, 202.6] at T=88.3, Tc=267.71, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21620479380976498
+Sat solver failed for heptane = [100.12, 2.01, 3.01, 6.0, 20.18, 201.44] at T=88.47, Tc=266.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19286185189040778
+
+epoch 12: batch_loss = 0.18168554777408705, val_loss = 0.19286185189040778, time = 19.473937034606934s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1522923255589768
+Sat solver failed for tetracosane = [338.39, 2.02, 3.01, 6.0, 20.28, 202.38] at T=90.45, Tc=267.78, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16841395044701402
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18265310236903712
+Sat solver failed for octadecane = [254.3, 2.02, 3.02, 6.0, 20.27, 202.17] at T=97.05, Tc=267.48, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18809827276178545
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21595686173034048
+Sat solver failed for eicosane = [282.33, 2.02, 3.02, 6.0, 20.28, 202.36] at T=94.27, Tc=267.67, muting...
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.02, 3.01, 6.0, 20.24, 201.95] at T=93.86, Tc=267.22, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.19268706337152217
+
+epoch 13: batch_loss = 0.18148290257343075, val_loss = 0.19268706337152217, time = 18.87415385246277s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.02, 3.02, 6.0, 20.26, 202.14] at T=87.75, Tc=267.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15212542480994531
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16822111906966924
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18246299274431307
+Sat solver failed for octacosane = [394.45, 2.02, 3.02, 6.0, 20.31, 202.6] at T=88.22, Tc=268.03, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18789224262083898
+Sat solver failed for n-undecane = [156.19, 2.02, 3.02, 6.0, 20.26, 201.99] at T=97.79, Tc=267.26, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21571130119352763
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.02, 3.02, 6.0, 20.25, 202.06] at T=93.9, Tc=267.35, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19251397580832827
+
+epoch 14: batch_loss = 0.1812826160876589, val_loss = 0.19251397580832827, time = 22.975341796875s
+Sat solver failed for 2,3-dimethylpentane = [100.12, 2.02, 3.01, 6.0, 20.22, 201.94] at T=101.45, Tc=267.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15195983137159103
+Sat solver failed for tetracosane = [338.39, 2.02, 3.02, 6.0, 20.31, 202.65] at T=90.55, Tc=268.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1680297758516533
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18227424016369434
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1876874051468295
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21546686868861134
+Sat solver failed for eicosane = [282.33, 2.02, 3.02, 6.0, 20.31, 202.62] at T=94.37, Tc=267.96, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19234096193236574
+
+epoch 15: batch_loss = 0.18108362424447588, val_loss = 0.19234096193236574, time = 12.711966037750244s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15179454826359368
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 2.02, 3.02, 6.0, 20.31, 202.66] at T=97.31, Tc=268.14, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1678396748301062
+Sat solver failed for heptadecane = [240.28, 2.02, 3.02, 6.0, 20.31, 202.51] at T=98.69, Tc=267.86, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18208626133509173
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18748338973899162
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.215222418234607
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19216751784142438
+
+epoch 16: batch_loss = 0.18088525848047804, val_loss = 0.19216751784142438, time = 25.26379108428955s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.02, 3.02, 6.0, 20.3, 202.5] at T=87.89, Tc=267.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15162874672282317
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16764974426979162
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18189825969301837
+Sat solver failed for octacosane = [394.45, 2.03, 3.02, 6.0, 20.36, 203.02] at T=88.38, Tc=268.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18727965687095388
+Sat solver failed for nonadecane = [268.31, 2.02, 3.02, 6.0, 20.34, 202.77] at T=95.89, Tc=268.16, muting...
+Sat solver failed for squalane = [422.48, 2.03, 3.02, 6.0, 20.44, 203.41] at T=88.62, Tc=268.69, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.21497773850315727
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19199363957235102
+
+epoch 17: batch_loss = 0.18068682921194887, val_loss = 0.19199363957235102, time = 21.412024974822998s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15146238731868095
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 2.03, 3.02, 6.0, 20.34, 202.93] at T=97.43, Tc=268.48, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1674593813683728
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1817090209395875
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.02, 3.02, 6.0, 20.28, 202.35] at T=102.37, Tc=267.81, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18707547939395588
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.2147319828045596
+Sat solver failed for heptane = [100.12, 2.02, 3.02, 6.0, 20.25, 201.99] at T=88.68, Tc=267.34, muting...
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.02, 3.02, 6.0, 20.3, 202.52] at T=94.09, Tc=267.89, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.19181859032655235
+
+epoch 18: batch_loss = 0.18048765036503134, val_loss = 0.19181859032655235, time = 22.2027108669281s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.02, 3.02, 6.0, 20.32, 202.74] at T=87.98, Tc=268.2, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1512952121795527
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16726785630902985
+Sat solver failed for heptacosane = [380.44, 2.03, 3.02, 6.0, 20.38, 203.26] at T=95.3, Tc=268.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1815180410331266
+Sat solver failed for hexane = [86.11, 2.02, 3.01, 6.0, 20.22, 201.8] at T=91.41, Tc=267.16, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18686941945822372
+Sat solver failed for nonadecane = [268.31, 2.03, 3.02, 6.0, 20.37, 203.04] at T=96.0, Tc=268.47, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21448472459285664
+Sat solver failed for eicosane = [282.33, 2.03, 3.02, 6.0, 20.37, 203.15] at T=94.59, Tc=268.58, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.1916420165380617
+
+epoch 19: batch_loss = 0.18028705071455792, val_loss = 0.1916420165380617, time = 16.003220081329346s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1511266643271426
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.167074789454396
+Sat solver failed for tridecane = [184.22, 2.03, 3.02, 6.0, 20.35, 202.77] at T=101.65, Tc=268.15, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18132501945662777
+Sat solver failed for octacosane = [394.45, 2.03, 3.02, 6.0, 20.4, 203.44] at T=88.55, Tc=269.01, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18666136225996602
+Sat solver failed for squalane = [422.48, 2.04, 3.03, 6.0, 20.49, 203.9] at T=88.83, Tc=269.31, muting...
+Sat solver failed for nonane = [128.16, 2.02, 3.02, 6.0, 20.31, 202.53] at T=98.49, Tc=267.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.2142348720021026
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1914635365119113
+
+epoch 20: batch_loss = 0.180084541500047, val_loss = 0.1914635365119113, time = 15.001487016677856s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15095648538191841
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16687947953082813
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18112976631789865
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18645080743162218
+Sat solver failed for n-undecane = [156.19, 2.03, 3.02, 6.0, 20.35, 202.77] at T=98.13, Tc=268.19, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21398193187238967
+Sat solver failed for eicosane = [282.33, 2.03, 3.02, 6.0, 20.4, 203.41] at T=94.7, Tc=268.89, muting...
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.02, 3.02, 6.0, 20.34, 202.86] at T=94.24, Tc=268.31, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.19128309966958534
+
+epoch 21: batch_loss = 0.17987969410693144, val_loss = 0.19128309966958534, time = 15.809167861938477s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.03, 3.02, 6.0, 20.36, 203.11] at T=88.13, Tc=268.65, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1507841633625275
+Sat solver failed for tetracosane = [338.39, 2.03, 3.03, 6.0, 20.42, 203.6] at T=90.93, Tc=269.18, muting...
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 2.03, 3.03, 6.0, 20.39, 203.5] at T=97.69, Tc=269.19, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.16668199000466974
+Sat solver failed for tridecane = [184.22, 2.03, 3.02, 6.0, 20.38, 203.01] at T=101.76, Tc=268.45, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18093203322084372
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18623734744940545
+Sat solver failed for nonane = [128.16, 2.02, 3.02, 6.0, 20.33, 202.75] at T=98.58, Tc=268.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21372598114049002
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19110042058363896
+
+epoch 22: batch_loss = 0.1796723030355873, val_loss = 0.19110042058363896, time = 17.532968044281006s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1506093385086427
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1664821379907411
+Sat solver failed for octane = [114.14, 2.02, 3.02, 6.0, 20.32, 202.65] at T=99.52, Tc=268.12, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18073164077361997
+Sat solver failed for hexane = [86.11, 2.02, 3.02, 6.0, 20.26, 202.14] at T=91.55, Tc=267.56, muting...
+Sat solver failed for octacosane = [394.45, 2.04, 3.03, 6.0, 20.45, 203.87] at T=88.72, Tc=269.53, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.18602077045216195
+Sat solver failed for squalane = [422.48, 2.04, 3.03, 6.0, 20.55, 204.39] at T=89.03, Tc=269.93, muting...
+Sat solver failed for nonadecane = [268.31, 2.03, 3.03, 6.0, 20.43, 203.57] at T=96.23, Tc=269.12, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.2134660925383187
+Sat solver failed for eicosane = [282.33, 2.03, 3.03, 6.0, 20.44, 203.69] at T=94.82, Tc=269.23, muting...
+Sat solver failed for heptane = [100.12, 2.02, 3.02, 6.0, 20.3, 202.47] at T=88.87, Tc=267.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.1909150910413919
+
+epoch 23: batch_loss = 0.1794619960526969, val_loss = 0.1909150910413919, time = 15.980082035064697s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15043208293705826
+Sat solver failed for tetracosane = [338.39, 2.04, 3.03, 6.0, 20.45, 203.88] at T=91.04, Tc=269.52, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16627935389707413
+Sat solver failed for tridecane = [184.22, 2.03, 3.03, 6.0, 20.4, 203.26] at T=101.88, Tc=268.75, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18052833006579674
+Sat solver failed for octadecane = [254.3, 2.03, 3.03, 6.0, 20.43, 203.63] at T=97.67, Tc=269.19, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18580082689179192
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21320174836151498
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.19072693514527156
+
+epoch 24: batch_loss = 0.17924846843064718, val_loss = 0.19072693514527156, time = 17.83302593231201s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15025188571432832
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16607301689474888
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18032161450056466
+Sat solver failed for octacosane = [394.45, 2.04, 3.03, 6.0, 20.48, 204.17] at T=88.84, Tc=269.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18557738761009718
+Sat solver failed for n-undecane = [156.19, 2.03, 3.03, 6.0, 20.4, 203.25] at T=98.35, Tc=268.78, muting...
+Sat solver failed for nonadecane = [268.31, 2.04, 3.03, 6.0, 20.46, 203.85] at T=96.35, Tc=269.46, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.2129327851593071
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.03, 3.03, 6.0, 20.39, 203.34] at T=94.44, Tc=268.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19053587332352304
+
+epoch 25: batch_loss = 0.17903133797580922, val_loss = 0.19053587332352304, time = 13.237450122833252s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15006921663035508
+Sat solver failed for tetracosane = [338.39, 2.04, 3.03, 6.0, 20.48, 204.17] at T=91.17, Tc=269.89, muting...
+Sat solver failed for pentane = [72.09, 2.02, 3.02, 6.0, 20.25, 202.12] at T=79.71, Tc=267.55, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.16586309177726594
+Sat solver failed for heptadecane = [240.28, 2.04, 3.03, 6.0, 20.46, 203.82] at T=99.27, Tc=269.42, muting...
+Sat solver failed for octane = [114.14, 2.03, 3.02, 6.0, 20.35, 202.97] at T=99.66, Tc=268.51, muting...
+Sat solver failed for heptacosane = [380.44, 2.04, 3.03, 6.0, 20.5, 204.27] at T=95.74, Tc=270.04, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+loss = 0.18011138086853593
+Sat solver failed for octadecane = [254.3, 2.04, 3.03, 6.0, 20.46, 203.91] at T=97.79, Tc=269.54, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1853502413350525
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21265935417599854
+Sat solver failed for heptane = [100.12, 2.03, 3.02, 6.0, 20.33, 202.77] at T=88.99, Tc=268.27, muting...
+Sat solver failed for eicosane = [282.33, 2.04, 3.03, 6.0, 20.48, 204.11] at T=95.0, Tc=269.75, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.19034146787477915
+
+epoch 26: batch_loss = 0.1788106569574416, val_loss = 0.19034146787477915, time = 13.277175188064575s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14988345478151827
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1656494819273993
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17989751640128235
+Sat solver failed for hexane = [86.11, 2.02, 3.02, 6.0, 20.3, 202.51] at T=91.69, Tc=267.99, muting...
+Sat solver failed for octacosane = [394.45, 2.04, 3.03, 6.0, 20.52, 204.49] at T=88.97, Tc=270.29, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.18511914225891019
+Sat solver failed for nonane = [128.16, 2.03, 3.03, 6.0, 20.39, 203.33] at T=98.85, Tc=268.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21238070918762744
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.03, 3.03, 6.0, 20.42, 203.59] at T=94.55, Tc=269.21, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.19014343663185745
+
+epoch 27: batch_loss = 0.1785860609113475, val_loss = 0.19014343663185745, time = 15.271321058273315s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.04, 3.03, 6.0, 20.44, 203.87] at T=88.44, Tc=269.59, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.14969440580245358
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1654320015738177
+Sat solver failed for octane = [114.14, 2.03, 3.03, 6.0, 20.38, 203.2] at T=99.76, Tc=268.78, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17967983945709096
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.03, 3.03, 6.0, 20.41, 203.51] at T=102.9, Tc=269.2, muting...
+Sat solver failed for 2-methylpropane = [58.08, 2.02, 3.02, 6.0, 20.26, 202.1] at T=74.25, Tc=267.44, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.18488418734272888
+Sat solver failed for n-undecane = [156.19, 2.04, 3.03, 6.0, 20.44, 203.63] at T=98.52, Tc=269.25, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21209674913579982
+Sat solver failed for heptane = [100.12, 2.03, 3.02, 6.0, 20.36, 202.98] at T=89.07, Tc=268.52, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18994184273749123
+
+epoch 28: batch_loss = 0.1783574366623782, val_loss = 0.18994184273749123, time = 14.531233072280884s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14950219860445008
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 2.04, 3.04, 6.0, 20.51, 204.57] at T=98.18, Tc=270.54, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1652104753150473
+Sat solver failed for tridecane = [184.22, 2.04, 3.03, 6.0, 20.48, 203.93] at T=102.19, Tc=269.57, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1794580935053528
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1846446869515647
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21180724338686738
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18973680018293568
+
+epoch 29: batch_loss = 0.17812453955265645, val_loss = 0.18973680018293568, time = 13.658828973770142s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14930624877599324
+Sat solver failed for tetracosane = [338.39, 2.05, 3.04, 6.0, 20.55, 204.8] at T=91.43, Tc=270.65, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1649844615948751
+Sat solver failed for heptadecane = [240.28, 2.04, 3.03, 6.0, 20.52, 204.4] at T=99.54, Tc=270.15, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17923196379783846
+Sat solver failed for 2-methylpropane = [58.08, 2.02, 3.02, 6.0, 20.28, 202.26] at T=74.3, Tc=267.63, muting...
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.04, 3.03, 6.0, 20.43, 203.76] at T=103.01, Tc=269.5, muting...
+Sat solver failed for octadecane = [254.3, 2.04, 3.04, 6.0, 20.53, 204.5] at T=98.06, Tc=270.27, muting...
+Sat solver failed for octacosane = [394.45, 2.05, 3.04, 6.0, 20.57, 204.98] at T=89.17, Tc=270.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+loss = 0.18440039878631362
+Sat solver failed for n-undecane = [156.19, 2.04, 3.03, 6.0, 20.47, 203.9] at T=98.64, Tc=269.58, muting...
+Sat solver failed for nonadecane = [268.31, 2.04, 3.04, 6.0, 20.54, 204.6] at T=96.68, Tc=270.39, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.21151113360501497
+Sat solver failed for heptane = [100.12, 2.03, 3.02, 6.0, 20.38, 203.2] at T=89.16, Tc=268.78, muting...
+Sat solver failed for eicosane = [282.33, 2.04, 3.04, 6.0, 20.55, 204.73] at T=95.27, Tc=270.52, muting...
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.04, 3.03, 6.0, 20.46, 203.98] at T=94.73, Tc=269.7, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+val_loss = 0.18952757385426408
+
+epoch 30: batch_loss = 0.17788684131200708, val_loss = 0.18952757385426408, time = 13.355165004730225s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14910669472671015
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 2.05, 3.04, 6.0, 20.54, 204.91] at T=98.34, Tc=270.97, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16475361940064281
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17900131406424097
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1841511616622844
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.21120862435803925
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18931397828010782
+
+epoch 31: batch_loss = 0.17764428284238348, val_loss = 0.18931397828010782, time = 12.991795063018799s
+Sat solver failed for 2,3-dimethylpentane = [100.12, 2.04, 3.03, 6.0, 20.43, 203.88] at T=102.33, Tc=269.7, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.14890348874089113
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1645180959338543
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17876590961391428
+Sat solver failed for hexane = [86.11, 2.03, 3.02, 6.0, 20.35, 203.01] at T=91.9, Tc=268.59, muting...
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.04, 3.03, 6.0, 20.46, 204.02] at T=103.13, Tc=269.82, muting...
+Sat solver failed for octadecane = [254.3, 2.05, 3.04, 6.0, 20.57, 204.83] at T=98.21, Tc=270.67, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+loss = 0.18389689510401488
+Sat solver failed for n-undecane = [156.19, 2.04, 3.03, 6.0, 20.5, 204.17] at T=98.77, Tc=269.92, muting...
+Sat solver failed for nonane = [128.16, 2.04, 3.03, 6.0, 20.46, 203.96] at T=99.13, Tc=269.67, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.21089959226334612
+Sat solver failed for eicosane = [282.33, 2.05, 3.04, 6.0, 20.59, 205.06] at T=95.42, Tc=270.92, muting...
+Sat solver failed for heptane = [100.12, 2.03, 3.03, 6.0, 20.41, 203.43] at T=89.25, Tc=269.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.18909616721619663
+
+epoch 32: batch_loss = 0.17739679633120414, val_loss = 0.18909616721619663, time = 16.461238145828247s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14869613676896185
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16427778964095507
+Sat solver failed for octane = [114.14, 2.04, 3.03, 6.0, 20.44, 203.8] at T=100.03, Tc=269.51, muting...
+Sat solver failed for heptacosane = [380.44, 2.05, 3.04, 6.0, 20.63, 205.45] at T=96.25, Tc=271.48, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.1785254794647354
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18363721191665572
+Sat solver failed for nonadecane = [268.31, 2.05, 3.04, 6.0, 20.6, 205.1] at T=96.9, Tc=270.99, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21058416181747255
+Sat solver failed for 2-methylpentane = [86.11, 2.04, 3.03, 6.0, 20.42, 203.65] at T=61.3, Tc=269.42, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18887397698374547
+
+epoch 33: batch_loss = 0.1771441559217561, val_loss = 0.18887397698374547, time = 14.678753852844238s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.05, 3.04, 6.0, 20.54, 204.72] at T=88.78, Tc=270.63, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1484846869193725
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 2.05, 3.04, 6.0, 20.6, 205.44] at T=98.58, Tc=271.63, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1640322650641407
+Sat solver failed for tridecane = [184.22, 2.05, 3.04, 6.0, 20.55, 204.67] at T=102.53, Tc=270.49, muting...
+Sat solver failed for heptadecane = [240.28, 2.05, 3.04, 6.0, 20.59, 205.04] at T=99.83, Tc=270.94, muting...
+Sat solver failed for n-butane = [58.08, 2.02, 3.02, 6.0, 20.28, 202.26] at T=83.36, Tc=267.65, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+loss = 0.17827977941506565
+Sat solver failed for hexane = [86.11, 2.03, 3.03, 6.0, 20.38, 203.22] at T=91.99, Tc=268.84, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18337218890722184
+Sat solver failed for nonane = [128.16, 2.04, 3.03, 6.0, 20.49, 204.23] at T=99.25, Tc=270.0, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.21026210845871152
+Sat solver failed for eicosane = [282.33, 2.05, 3.04, 6.0, 20.63, 205.4] at T=95.57, Tc=271.35, muting...
+Sat solver failed for heptane = [100.12, 2.04, 3.03, 6.0, 20.43, 203.68] at T=89.35, Tc=269.35, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.18864703500323757
+
+epoch 34: batch_loss = 0.17688620575290243, val_loss = 0.18864703500323757, time = 16.332015991210938s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14826887294905877
+Sat solver failed for pentane = [72.09, 2.03, 3.02, 6.0, 20.34, 202.95] at T=80.0, Tc=268.52, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16378139922338963
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17802860401131582
+Sat solver failed for 2-methylpropane = [58.08, 2.02, 3.02, 6.0, 20.33, 202.71] at T=74.45, Tc=268.17, muting...
+Sat solver failed for octadecane = [254.3, 2.05, 3.04, 6.0, 20.62, 205.34] at T=98.44, Tc=271.31, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.18310160018010135
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20993271051440632
+Sat solver failed for 2-methylbutane = [72.09, 2.03, 3.03, 6.0, 20.4, 203.48] at T=65.95, Tc=269.17, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18841488624989217
+
+epoch 35: batch_loss = 0.17662263737565437, val_loss = 0.18841488624989217, time = 14.921993017196655s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.05, 3.04, 6.0, 20.57, 205.03] at T=88.9, Tc=271.02, muting...
+Sat solver failed for 2,3-dimethylpentane = [100.12, 2.04, 3.04, 6.0, 20.49, 204.41] at T=102.57, Tc=270.35, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.14804860044875218
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1635249461436915
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1777720716576212
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1828250162996843
+Sat solver failed for n-undecane = [156.19, 2.05, 3.04, 6.0, 20.56, 204.77] at T=99.04, Tc=270.65, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.2095955976155738
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.05, 3.04, 6.0, 20.55, 204.84] at T=95.1, Tc=270.77, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18817749390463342
+
+epoch 36: batch_loss = 0.1763532464330646, val_loss = 0.18817749390463342, time = 11.850894927978516s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1478234399055299
+Sat solver failed for pentane = [72.09, 2.03, 3.02, 6.0, 20.37, 203.15] at T=80.07, Tc=268.76, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1632626950394712
+Sat solver failed for n-butane = [58.08, 2.02, 3.02, 6.0, 20.31, 202.52] at T=83.46, Tc=267.95, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17750981187960904
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1825421779254723
+Sat solver failed for nonane = [128.16, 2.04, 3.04, 6.0, 20.53, 204.65] at T=99.45, Tc=270.53, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.20925077015316904
+Sat solver failed for heptane = [100.12, 2.04, 3.03, 6.0, 20.47, 204.06] at T=89.5, Tc=269.82, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18793485103441446
+
+epoch 37: batch_loss = 0.1760777789806503, val_loss = 0.18793485103441446, time = 13.601292133331299s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14759327423297472
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1629944784220973
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1772416967802739
+Sat solver failed for hexane = [86.11, 2.04, 3.03, 6.0, 20.43, 203.68] at T=92.18, Tc=269.4, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1822530923278003
+Sat solver failed for n-undecane = [156.19, 2.05, 3.04, 6.0, 20.59, 205.08] at T=99.18, Tc=271.05, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.20889772570165624
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18768679214953754
+
+epoch 38: batch_loss = 0.17579605349296049, val_loss = 0.18768679214953754, time = 11.752043008804321s
+Sat solver failed for 2,2,5-trimethylhexane = [128.16, 2.06, 3.05, 6.0, 20.62, 205.52] at T=89.1, Tc=271.62, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.14735793896118057
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16272034285343498
+Sat solver failed for octane = [114.14, 2.04, 3.04, 6.0, 20.53, 204.61] at T=100.4, Tc=270.5, muting...
+Sat solver failed for tridecane = [184.22, 2.06, 3.04, 6.0, 20.64, 205.49] at T=102.93, Tc=271.52, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.17696739065027509
+Sat solver failed for 2-methylpropane = [58.08, 2.03, 3.02, 6.0, 20.37, 203.1] at T=74.58, Tc=268.64, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18195714086868728
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20853656105523508
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1874331573080621
+
+epoch 39: batch_loss = 0.1755078748777626, val_loss = 0.1874331573080621, time = 15.163074016571045s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14711719321603234
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16244032403242498
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17668688253482395
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18165417427280356
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20816677656710914
+Sat solver failed for 2-methylpentane = [86.11, 2.05, 3.04, 6.0, 20.51, 204.56] at T=61.55, Tc=270.53, muting...
+Sat solver failed for heptane = [100.12, 2.04, 3.04, 6.0, 20.51, 204.47] at T=89.67, Tc=270.33, muting...
+Sat solver failed for 2-methylbutane = [72.09, 2.04, 3.03, 6.0, 20.46, 204.08] at T=66.13, Tc=269.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+val_loss = 0.1871737112955081
+
+epoch 40: batch_loss = 0.17521307012463877, val_loss = 0.1871737112955081, time = 11.740834951400757s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14687083692395997
+Sat solver failed for pentane = [72.09, 2.03, 3.03, 6.0, 20.41, 203.59] at T=80.23, Tc=269.29, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16215376510235224
+Sat solver failed for n-butane = [58.08, 2.03, 3.02, 6.0, 20.35, 202.89] at T=83.59, Tc=268.4, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1763997774407595
+Sat solver failed for 2-methylpropane = [58.08, 2.03, 3.03, 6.0, 20.39, 203.3] at T=74.65, Tc=268.89, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.18134421794288774
+Sat solver failed for n-undecane = [156.19, 2.06, 3.05, 6.0, 20.65, 205.59] at T=99.41, Tc=271.69, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.20778785370232203
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1869082315393344
+
+epoch 41: batch_loss = 0.1749112902224563, val_loss = 0.1869082315393344, time = 13.17102313041687s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14661872772325452
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16186044079125883
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17610591787230517
+Sat solver failed for hexane = [86.11, 2.04, 3.03, 6.0, 20.48, 204.19] at T=92.39, Tc=270.02, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1810270963938361
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.2073996303968498
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.06, 3.05, 6.0, 20.65, 205.82] at T=95.54, Tc=272.02, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.186636447427525
+
+epoch 42: batch_loss = 0.17460236263550089, val_loss = 0.186636447427525, time = 12.917584896087646s
+Sat solver failed for 2,3-dimethylpentane = [100.12, 2.05, 3.05, 6.0, 20.6, 205.48] at T=103.07, Tc=271.67, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.146360561527124
+Sat solver failed for pentane = [72.09, 2.04, 3.03, 6.0, 20.44, 203.82] at T=80.31, Tc=269.58, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16156034755592105
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17580535159752586
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1807023556582936
+Sat solver failed for n-undecane = [156.19, 2.06, 3.05, 6.0, 20.68, 205.95] at T=99.58, Tc=272.14, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.20700196894003273
+Sat solver failed for heptane = [100.12, 2.05, 3.04, 6.0, 20.56, 204.9] at T=89.85, Tc=270.87, muting...
+Sat solver failed for 2-methylbutane = [72.09, 2.04, 3.04, 6.0, 20.51, 204.48] at T=66.25, Tc=270.39, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.18635830088654473
+
+epoch 43: batch_loss = 0.17428611705577945, val_loss = 0.18635830088654473, time = 15.00905990600586s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1460964198284425
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16125318505081854
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17549777564393537
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18036978333612458
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20659455621266917
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18607370450020072
+
+epoch 44: batch_loss = 0.17396234401439803, val_loss = 0.18607370450020072, time = 13.72508716583252s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1458263154003193
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16093887454346545
+Sat solver failed for n-butane = [58.08, 2.03, 3.03, 6.0, 20.39, 203.3] at T=83.75, Tc=268.89, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17518308050047368
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18002930181848195
+Sat solver failed for n-undecane = [156.19, 2.07, 3.05, 6.0, 20.72, 206.33] at T=99.75, Tc=272.61, muting...
+Sat solver failed for nonane = [128.16, 2.06, 3.05, 6.0, 20.66, 205.93] at T=100.04, Tc=272.13, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.20617698007092247
+Sat solver failed for 2-methylpentane = [86.11, 2.05, 3.04, 6.0, 20.59, 205.31] at T=61.76, Tc=271.45, muting...
+Sat solver failed for 2,2,4-trimethylpentane = [114.14, 2.06, 3.05, 6.0, 20.71, 206.38] at T=95.79, Tc=272.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.18578243022485658
+
+epoch 45: batch_loss = 0.17363091046673257, val_loss = 0.18578243022485658, time = 15.897655010223389s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14555009452133005
+Sat solver failed for pentane = [72.09, 2.04, 3.03, 6.0, 20.48, 204.19] at T=80.45, Tc=270.03, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1606170242614922
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17486091389310837
+Sat solver failed for hexane = [86.11, 2.05, 3.04, 6.0, 20.53, 204.74] at T=92.62, Tc=270.71, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17968080927486751
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20574925041348238
+Sat solver failed for heptane = [100.12, 2.05, 3.04, 6.0, 20.6, 205.37] at T=90.04, Tc=271.45, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18548419927651777
+
+epoch 46: batch_loss = 0.17329161847285607, val_loss = 0.18548419927651777, time = 10.718836784362793s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14526721244969093
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16028768832121815
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17453121570478008
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17932404134775654
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20531093730314218
+Sat solver failed for 2-methylbutane = [72.09, 2.05, 3.04, 6.0, 20.57, 205.05] at T=66.42, Tc=271.1, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18517920063223003
+
+epoch 47: batch_loss = 0.1729442190253176, val_loss = 0.18517920063223003, time = 11.648015975952148s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14497763728544197
+Sat solver failed for pentane = [72.09, 2.04, 3.04, 6.0, 20.5, 204.45] at T=80.54, Tc=270.36, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1599503999157923
+Sat solver failed for n-butane = [58.08, 2.03, 3.03, 6.0, 20.42, 203.64] at T=83.88, Tc=269.3, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17419387279018528
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.07, 3.06, 6.0, 20.73, 206.62] at T=104.37, Tc=273.05, muting...
+Sat solver failed for hexane = [86.11, 2.05, 3.04, 6.0, 20.56, 205.04] at T=92.75, Tc=271.08, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.17895875009558865
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20486189478565087
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18486733638894823
+
+epoch 48: batch_loss = 0.17258851097453182, val_loss = 0.18486733638894823, time = 10.738430976867676s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14468131624025762
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15960552987245433
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1738489249237391
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17858478362807031
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.2044020045312069
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18454845104092657
+
+epoch 49: batch_loss = 0.17222451183914567, val_loss = 0.18454845104092657, time = 11.0056631565094s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14437849017567236
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15925278681726002
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17349598746887512
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1782018590131851
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.203930781423743
+Sat solver failed for 2-methylbutane = [72.09, 2.06, 3.05, 6.0, 20.62, 205.52] at T=66.57, Tc=271.69, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18422226524374238
+
+epoch 50: batch_loss = 0.17185198097974713, val_loss = 0.18422226524374238, time = 10.270595788955688s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14406906643121808
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15889213848045008
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17313481537435516
+Sat solver failed for hexane = [86.11, 2.06, 3.05, 6.0, 20.61, 205.51] at T=92.95, Tc=271.67, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17781004597890424
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20344807711725718
+Sat solver failed for 2-methylpentane = [86.11, 2.06, 3.05, 6.0, 20.7, 206.34] at T=62.06, Tc=272.74, muting...
+Sat solver failed for heptane = [100.12, 2.06, 3.05, 6.0, 20.69, 206.22] at T=90.4, Tc=272.54, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.183888618398807
+
+epoch 51: batch_loss = 0.17147082867643695, val_loss = 0.183888618398807, time = 11.25578498840332s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1437529224095089
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15852341093871702
+Sat solver failed for n-butane = [58.08, 2.04, 3.03, 6.0, 20.47, 204.11] at T=84.06, Tc=269.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17276528030478627
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17740913342968487
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20295357755258725
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18354756819865622
+
+epoch 52: batch_loss = 0.17108086492705685, val_loss = 0.18354756819865622, time = 10.594149827957153s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14342986507013336
+Sat solver failed for pentane = [72.09, 2.05, 3.04, 6.0, 20.58, 205.17] at T=80.81, Tc=271.25, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15814636772279747
+Sat solver failed for octane = [114.14, 2.07, 3.06, 6.0, 20.77, 206.99] at T=101.52, Tc=273.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1723872445416622
+Sat solver failed for 2-methylpropane = [58.08, 2.05, 3.04, 6.0, 20.54, 204.76] at T=75.15, Tc=270.7, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1769987820627039
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20244697424095925
+Sat solver failed for 2-methylpentane = [86.11, 2.07, 3.06, 6.0, 20.74, 206.72] at T=62.17, Tc=273.22, muting...
+Sat solver failed for 2-methylbutane = [72.09, 2.06, 3.05, 6.0, 20.67, 206.03] at T=66.73, Tc=272.32, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+val_loss = 0.18319906616143836
+
+epoch 53: batch_loss = 0.17068184672765124, val_loss = 0.18319906616143836, time = 10.319022178649902s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14309973230644657
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15776064408105303
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17200075067624665
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17657876956452678
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.2019280026613991
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18284256655844108
+
+epoch 54: batch_loss = 0.17027357985793443, val_loss = 0.18284256655844108, time = 13.09542989730835s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14276222803012148
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15736626256549135
+Sat solver failed for n-butane = [58.08, 2.04, 3.04, 6.0, 20.51, 204.5] at T=84.21, Tc=270.38, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17160540126858234
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1761488449015411
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.2013963072207121
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18247802766944998
+
+epoch 55: batch_loss = 0.16985580879728968, val_loss = 0.18247802766944998, time = 7.716482877731323s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14241697698629197
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1569630078593619
+Sat solver failed for octane = [114.14, 2.08, 3.06, 6.0, 20.83, 207.62] at T=101.81, Tc=274.29, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1712009918141534
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17570904821104893
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20085141526361383
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18210515671732821
+
+epoch 56: batch_loss = 0.169428288026894, val_loss = 0.18210515671732821, time = 7.123531103134155s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14206402261227083
+Sat solver failed for pentane = [72.09, 2.06, 3.05, 6.0, 20.64, 205.81] at T=81.05, Tc=272.05, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15655071186175087
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1707872654446686
+Sat solver failed for hexane = [86.11, 2.07, 3.05, 6.0, 20.72, 206.56] at T=93.41, Tc=273.0, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17525883678231208
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.20029287596282308
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18172341999139596
+
+epoch 57: batch_loss = 0.16899074253276508, val_loss = 0.18172341999139596, time = 9.916906833648682s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14170336550447143
+Sat solver failed for propane = [44.06, 2.04, 3.03, 6.0, 20.45, 203.97] at T=61.4, Tc=269.71, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15612905478191796
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17036386656129604
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17479798632393156
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1997202401942936
+Sat solver failed for heptane = [100.12, 2.08, 3.06, 6.0, 20.83, 207.61] at T=90.98, Tc=274.29, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+val_loss = 0.18133297468852566
+
+epoch 58: batch_loss = 0.16854290267318212, val_loss = 0.18133297468852566, time = 11.764986991882324s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14133458553634268
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15569768016442384
+Sat solver failed for n-butane = [58.08, 2.05, 3.04, 6.0, 20.57, 205.07] at T=84.43, Tc=271.09, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1699305313951468
+Sat solver failed for hexane = [86.11, 2.07, 3.06, 6.0, 20.76, 206.94] at T=93.57, Tc=273.49, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17432616167859402
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1991334585373076
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18093371681566392
+
+epoch 59: batch_loss = 0.168084483462363, val_loss = 0.18093371681566392, time = 8.796596050262451s
+Sat solver failed for ethane = [30.05, 2.02, 3.02, 6.0, 20.29, 202.45] at T=76.9, Tc=267.88, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1409575121910709
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15525640784612932
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16948707648510478
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17384307464035806
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.198532052732743
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.18052543637673815
+
+epoch 60: batch_loss = 0.16761522477908122, val_loss = 0.18052543637673815, time = 8.655647993087769s
+Sat solver failed for ethane = [30.05, 2.02, 3.02, 6.0, 20.3, 202.53] at T=76.93, Tc=267.97, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.14057193097992263
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15480487562823167
+Sat solver failed for n-butane = [58.08, 2.05, 3.04, 6.0, 20.6, 205.37] at T=84.55, Tc=271.47, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16903341710658906
+Sat solver failed for hexane = [86.11, 2.08, 3.06, 6.0, 20.79, 207.34] at T=93.75, Tc=274.0, muting...
+Sat solver failed for 2-methylpropane = [58.08, 2.06, 3.05, 6.0, 20.66, 206.0] at T=75.58, Tc=272.25, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+loss = 0.1733484278734541
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19791572692715143
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1801078907651159
+
+epoch 61: batch_loss = 0.16713487570306979, val_loss = 0.1801078907651159, time = 7.411880970001221s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14017758698986824
+Sat solver failed for propane = [44.06, 2.04, 3.04, 6.0, 20.5, 204.46] at T=61.54, Tc=270.32, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1543428027731171
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16856897362304266
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1728419889928406
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19728396490882816
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17968074640104365
+
+epoch 62: batch_loss = 0.16664306345753935, val_loss = 0.17968074640104365, time = 8.6887948513031s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13977437742064136
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15386998491983514
+Sat solver failed for n-butane = [58.08, 2.06, 3.05, 6.0, 20.63, 205.68] at T=84.67, Tc=271.87, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16809357183843404
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17232313829380258
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19663634109093353
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17924381187170796
+
+epoch 63: batch_loss = 0.16613948271272932, val_loss = 0.17924381187170796, time = 8.556736946105957s
+Sat solver failed for ethane = [30.05, 2.02, 3.02, 6.0, 20.33, 202.78] at T=77.01, Tc=268.27, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.13936218451777432
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15338627646584463
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16760715155949793
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17179197081314165
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19597252919449604
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17879679230108184
+
+epoch 64: batch_loss = 0.1656240225101509, val_loss = 0.17879679230108184, time = 7.216590881347656s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13894081304273176
+Sat solver failed for pentane = [72.09, 2.07, 3.06, 6.0, 20.79, 207.28] at T=81.6, Tc=273.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15289138248215248
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1671093006805491
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17124812149375687
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19529211645416397
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17833941133992715
+
+epoch 65: batch_loss = 0.16509634683067084, val_loss = 0.17833941133992715, time = 7.179520130157471s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13851008683967783
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15238507764597123
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16659981199124815
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17069139453986845
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19459452048633682
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17787153058355473
+
+epoch 66: batch_loss = 0.1645561783006205, val_loss = 0.17787153058355473, time = 9.959880828857422s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1380697319112036
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1518670741780091
+Sat solver failed for n-butane = [58.08, 2.06, 3.05, 6.0, 20.69, 206.36] at T=84.94, Tc=272.73, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16607849816599024
+Sat solver failed for 2-methylpropane = [58.08, 2.07, 3.06, 6.0, 20.77, 207.09] at T=75.97, Tc=273.65, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.17012148383118764
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19387945756094963
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17739288839877468
+
+epoch 67: batch_loss = 0.16400324912946804, val_loss = 0.17739288839877468, time = 8.331237077713013s
+Sat solver failed for ethane = [30.05, 2.03, 3.03, 6.0, 20.36, 203.13] at T=77.14, Tc=268.71, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.13761969405991772
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15133701841939712
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16554509342817877
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16953799211489531
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1931466636122493
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.176903253525293
+
+epoch 68: batch_loss = 0.16343729232692766, val_loss = 0.176903253525293, time = 8.484694004058838s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13715966254693254
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.150794629704631
+Sat solver failed for n-butane = [58.08, 2.07, 3.06, 6.0, 20.73, 206.72] at T=85.09, Tc=273.2, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16499938329550995
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16894064343030316
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1923955840705627
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17640232013075988
+
+epoch 69: batch_loss = 0.16285798060958787, val_loss = 0.17640232013075988, time = 17.3155779838562s
+Sat solver failed for ethane = [30.05, 2.03, 3.03, 6.0, 20.38, 203.32] at T=77.21, Tc=268.94, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.13668923691329612
+Sat solver failed for propane = [44.06, 2.05, 3.05, 6.0, 20.61, 205.58] at T=61.86, Tc=271.73, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.15023973950342834
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16444106675868297
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1683291398726161
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19162573637001992
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17588975934199713
+
+epoch 70: batch_loss = 0.1622649838836087, val_loss = 0.17588975934199713, time = 8.687571048736572s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1362083411033429
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1496720947012142
+Sat solver failed for n-butane = [58.08, 2.07, 3.06, 6.0, 20.76, 207.11] at T=85.24, Tc=273.69, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16386984836608143
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16770313398967898
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19083673839410945
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17536548239256552
+
+epoch 71: batch_loss = 0.16165803131088538, val_loss = 0.17536548239256552, time = 9.785434007644653s
+Sat solver failed for ethane = [30.05, 2.03, 3.03, 6.0, 20.4, 203.51] at T=77.28, Tc=269.19, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.13571669115272986
+Sat solver failed for propane = [44.06, 2.06, 3.05, 6.0, 20.64, 205.89] at T=61.96, Tc=272.13, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.14909134721616932
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1632855026228387
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16706233123681535
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.19002807516768624
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17482917071996282
+
+epoch 72: batch_loss = 0.1610367894792479, val_loss = 0.17482917071996282, time = 8.557982206344604s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13521419304542662
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1484973177076985
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16268774940215977
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16640641292765473
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18919917132403444
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17428045327276698
+
+epoch 73: batch_loss = 0.16040096888139482, val_loss = 0.17428045327276698, time = 6.612268924713135s
+Sat solver failed for ethane = [30.05, 2.03, 3.03, 6.0, 20.42, 203.72] at T=77.35, Tc=269.45, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.13470055583121499
+Sat solver failed for propane = [44.06, 2.06, 3.05, 6.0, 20.67, 206.22] at T=62.05, Tc=272.55, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.14788973177331816
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16207616289863502
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16573509307687573
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1883496486330811
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17371915536184876
+
+epoch 74: batch_loss = 0.15975023844262498, val_loss = 0.17371915536184876, time = 6.724726915359497s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13417557391139304
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14726842324462044
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16145049851123078
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16504803597839987
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1874790663860216
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17314505106189784
+
+epoch 75: batch_loss = 0.15908431960633315, val_loss = 0.17314505106189784, time = 8.387495040893555s
+Sat solver failed for ethane = [30.05, 2.04, 3.03, 6.0, 20.44, 203.93] at T=77.43, Tc=269.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.13363913787300757
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14663314228868563
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1608105254325965
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16434497741678752
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18658705689294044
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17255794031427607
+
+epoch 76: batch_loss = 0.15840296798080353, val_loss = 0.17255794031427607, time = 6.992218017578125s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13309116281957
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14598368463333222
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16015613259348732
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1636257671659728
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1856732415123387
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1719576643381132
+
+epoch 77: batch_loss = 0.1577059977449402, val_loss = 0.1719576643381132, time = 6.745719909667969s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13253153131747025
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1453200494232507
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15948694649810133
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16289010321731656
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1847372101164743
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17134415690563304
+
+epoch 78: batch_loss = 0.15699316811452263, val_loss = 0.17134415690563304, time = 10.579103946685791s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13195986396896603
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14464198673270245
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15880270992746828
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1621379335074685
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1837785427797254
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17071699628322284
+
+epoch 79: batch_loss = 0.15626420738326613, val_loss = 0.17071699628322284, time = 9.158534049987793s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13137607645646482
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14394908977464135
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15810320022016155
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1613688751312807
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18279695881144298
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.17007631323090835
+
+epoch 80: batch_loss = 0.1555188400787983, val_loss = 0.17007631323090835, time = 15.434513092041016s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13078000507536408
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14324127784007826
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15738828046962455
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16058249366073196
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18179203899147575
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.16942178232316038
+
+epoch 81: batch_loss = 0.15475681920745493, val_loss = 0.16942178232316038, time = 10.110209941864014s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13017149333683026
+Sat solver failed for propane = [44.06, 2.08, 3.06, 6.0, 20.8, 207.69] at T=62.49, Tc=274.47, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.14251838320960408
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15665802779422663
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1597787032482672
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.18076353889416719
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.168753333590183
+
+epoch 82: batch_loss = 0.15397802929661905, val_loss = 0.168753333590183, time = 7.463192939758301s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12955080215588952
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1417803032467342
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15591211521676882
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15895727152279068
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1797110677747817
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.16807070694168336
+
+epoch 83: batch_loss = 0.153182311983393, val_loss = 0.16807070694168336, time = 10.226011037826538s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12891809527709713
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1410269540821599
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15515037289364939
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1581183202275495
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17863445019015153
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1673740055878965
+
+epoch 84: batch_loss = 0.1523696385341215, val_loss = 0.1673740055878965, time = 7.5471131801605225s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1282730112973047
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1402583898614868
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15437269453223365
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15726170777283713
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17753345799750234
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.16666312631489785
+
+epoch 85: batch_loss = 0.1515398522922729, val_loss = 0.16666312631489785, time = 9.744546890258789s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12761559366813557
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13947462327823734
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15357920070735467
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15638723308227118
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17640787336001543
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.16593799552389862
+
+epoch 86: batch_loss = 0.15069290481920283, val_loss = 0.16593799552389862, time = 8.548107147216797s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12694577680181396
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1386756563621661
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15276983251380716
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1554948442385427
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1752575344021848
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.16519859855355484
+
+epoch 87: batch_loss = 0.14982872886370296, val_loss = 0.16519859855355484, time = 7.753148794174194s
+Sat solver failed for ethane = [30.05, 2.05, 3.04, 6.0, 20.57, 205.44] at T=77.99, Tc=271.66, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.12626355770907652
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13786136784789985
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15194438974759844
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15458438382430859
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17408217261291095
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.16444496339218834
+
+epoch 88: batch_loss = 0.14894717434835886, val_loss = 0.16444496339218834, time = 10.376610040664673s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12556899135120933
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13703172524769036
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1511027272135522
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15365579992959683
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17288161654913958
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1636770191585802
+
+epoch 89: batch_loss = 0.14804817205823767, val_loss = 0.1636770191585802, time = 8.259105920791626s
+Sat solver failed for ethane = [30.05, 2.05, 3.05, 6.0, 20.6, 205.73] at T=78.1, Tc=272.04, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.12486210366417455
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13618662097480955
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15024479178347724
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.152709090637947
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17165578469349738
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.16289475804572764
+
+epoch 90: batch_loss = 0.14713167835078117, val_loss = 0.16289475804572764, time = 7.975029945373535s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12414283977543263
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13532612725148124
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14937057085217356
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15174418407306367
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.17040459404403716
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1620980995708239
+
+epoch 91: batch_loss = 0.14619766319923766, val_loss = 0.1620980995708239, time = 7.506574869155884s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12341121836745635
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13445034480108786
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.148480000690925
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.15076109700815873
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.169127893765047
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1612870170338581
+
+epoch 92: batch_loss = 0.145246110926535, val_loss = 0.1612870170338581, time = 8.246686935424805s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12266731842167504
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13355941288717751
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14757320353611925
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.149759996605855
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16782573721971183
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1604620527147737
+
+epoch 93: batch_loss = 0.14427713373410772, val_loss = 0.1604620527147737, time = 8.654668092727661s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1219115262877195
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13265364157933085
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1466504861939043
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14874100795663303
+Sat solver failed for squalane = [422.48, 2.48, 3.38, 6.0, 24.45, 245.84] at T=106.69, Tc=323.47, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16649833472717465
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.15962338121267702
+
+epoch 94: batch_loss = 0.14329099934895248, val_loss = 0.15962338121267702, time = 7.396075963973999s
+Sat solver failed for ethane = [30.05, 2.06, 3.05, 6.0, 20.66, 206.51] at T=78.39, Tc=273.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.121144430306221
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1317334970496302
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14571204032612367
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14770416359013133
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.165145924336135
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.15877102051611125
+
+epoch 95: batch_loss = 0.14228801112164824, val_loss = 0.15877102051611125, time = 7.648344039916992s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1203658006793371
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13079889328957292
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1447575485193851
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14664991461616828
+Sat solver failed for squalane = [422.48, 2.52, 3.41, 6.0, 24.71, 248.89] at T=108.03, Tc=327.54, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.1637690424428275
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1579040902532149
+
+epoch 96: batch_loss = 0.1412682399094582, val_loss = 0.1579040902532149, time = 7.418054103851318s
+Sat solver failed for ethane = [30.05, 2.07, 3.06, 6.0, 20.69, 206.84] at T=78.52, Tc=273.51, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.11957517151532551
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12985025175528606
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14378747028591612
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1455786273188864
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.16236762247660697
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.15702415011701684
+
+epoch 97: batch_loss = 0.1402318286704042, val_loss = 0.15702415011701684, time = 8.0834801197052s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1187734375004769
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12888785688129914
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14280254971967127
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14449080612930906
+Sat solver failed for squalane = [422.48, 2.55, 3.43, 6.0, 24.97, 252.13] at T=109.45, Tc=331.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.16094173076583787
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1561316020317584
+
+epoch 98: batch_loss = 0.13917927619931886, val_loss = 0.1561316020317584, time = 7.640230894088745s
+Sat solver failed for ethane = [30.05, 2.07, 3.06, 6.0, 20.72, 207.19] at T=78.65, Tc=273.97, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+loss = 0.11796123230053576
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12791185492063495
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14180282462287044
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1433864664082491
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1594907816218704
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.15522677449811978
+
+epoch 99: batch_loss = 0.13811063197483214, val_loss = 0.15522677449811978, time = 7.713721036911011s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11713943568920647
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.126922771389732
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0

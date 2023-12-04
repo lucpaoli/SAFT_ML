@@ -66300,3 +66300,4536 @@ epoch 3181: batch_loss = 3.202841584126367e27, val_loss = 4.3591489598267305e12,
 
 Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
 (points skipped, sat solves failed, crit solves failed) = 505, 1, 0
+n_failed = 0
+loss = 1.180794261301725e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1884823565815679e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.0010138512694336e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806374e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3574999275617085e12
+
+epoch 3182: batch_loss = 3.202841584126366e27, val_loss = 4.3574999275617085e12, time = 15.527288913726807s
+(points skipped, sat solves failed, crit solves failed) = 505, 0, 0
+n_failed = 0
+loss = 1.1722365899306173e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.187522302801683e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.000900854482306e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580637e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.35585476067795e12
+
+epoch 3183: batch_loss = 3.202841584126365e27, val_loss = 4.35585476067795e12, time = 15.809432983398438s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 505, 1, 0
+n_failed = 0
+loss = 1.1799602688136787e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1865641838276045e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.0007872131435786e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806363e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3542104298955454e12
+
+epoch 3184: batch_loss = 3.202841584126364e27, val_loss = 4.3542104298955454e12, time = 15.86241888999939s
+(points skipped, sat solves failed, crit solves failed) = 505, 0, 0
+n_failed = 0
+loss = 1.1714079827463514e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.185605960626167e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.0006738355289766e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806359e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3525681999607485e12
+
+epoch 3185: batch_loss = 3.202841584126363e27, val_loss = 4.3525681999607485e12, time = 16.436372995376587s
+(points skipped, sat solves failed, crit solves failed) = 505, 0, 0
+n_failed = 0
+loss = 1.1709939534693405e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1846479367112427e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.000560137193246e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806357e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3509304136920103e12
+
+epoch 3186: batch_loss = 3.2028415841263624e27, val_loss = 4.3509304136920103e12, time = 16.48348116874695s
+(points skipped, sat solves failed, crit solves failed) = 505, 0, 0
+n_failed = 0
+loss = 1.1705809049780712e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1836912205069192e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.000446625249796e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806352e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3492937298295615e12
+
+epoch 3187: batch_loss = 3.202841584126362e27, val_loss = 4.3492937298295615e12, time = 18.440144062042236s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 505, 1, 0
+n_failed = 0
+loss = 1.1782937218860878e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.182735054099103e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.0003330740835723e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806346e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3476609919074663e12
+
+epoch 3188: batch_loss = 3.20284158412636e27, val_loss = 4.3476609919074663e12, time = 18.196752071380615s
+(points skipped, sat solves failed, crit solves failed) = 505, 0, 0
+n_failed = 0
+loss = 1.1697537227710238e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1817790753210413e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.000219509566176e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806341e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 640, 1, 0
+n_failed = 0
+val_loss = 4.373362660935396e12
+
+epoch 3189: batch_loss = 3.2028415841263596e27, val_loss = 4.373362660935396e12, time = 19.32104206085205s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 505, 1, 0
+n_failed = 0
+loss = 1.1774608334581636e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1808248386722034e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 4.0001058746573003e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580634e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.344400793507282e12
+
+epoch 3190: batch_loss = 3.202841584126359e27, val_loss = 4.344400793507282e12, time = 18.86799907684326s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1609240180557825e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1798705543824866e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.999992460288516e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806332e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 640, 1, 0
+n_failed = 0
+val_loss = 4.3700864667546562e12
+
+epoch 3191: batch_loss = 3.202841584126358e27, val_loss = 4.3700864667546562e12, time = 17.078631162643433s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1605146645049814e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1789169816733423e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.999878548149474e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806328e28
+(points skipped, sat solves failed, crit solves failed) = 561, 0, 0
+n_failed = 0
+loss = 2.5240839482545146e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3411492842860444e12
+
+epoch 3192: batch_loss = 3.202841584126357e27, val_loss = 4.3411492842860444e12, time = 17.769749879837036s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.16010548862483e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1779650639724177e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9997645199169136e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806324e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.339528694223378e12
+
+epoch 3193: batch_loss = 3.2015795421522283e27, val_loss = 4.339528694223378e12, time = 17.106103897094727s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1596973981375196e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1770123189660718e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9996511965108506e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806317e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3379090335305e12
+
+epoch 3194: batch_loss = 3.201579542152227e27, val_loss = 4.3379090335305e12, time = 17.480896949768066s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1592892639328081e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.17606174999885e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.999537761313499e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806315e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.336292067838583e12
+
+epoch 3195: batch_loss = 3.2015795421522266e27, val_loss = 4.336292067838583e12, time = 15.62727689743042s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1588813034999735e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1751106713454045e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.999424326616692e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580631e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3346760809376523e12
+
+epoch 3196: batch_loss = 3.201579542152226e27, val_loss = 4.3346760809376523e12, time = 15.573153018951416s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1584730976226057e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.174160582763697e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.999310891694168e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806306e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 640, 1, 0
+n_failed = 0
+val_loss = 4.36031640162711e12
+
+epoch 3197: batch_loss = 3.201579542152225e27, val_loss = 4.36031640162711e12, time = 15.751990795135498s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1580656389533476e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.173211481202596e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.999197099216466e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.57617995258063e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3314546666257827e12
+
+epoch 3198: batch_loss = 3.201579542152224e27, val_loss = 4.3314546666257827e12, time = 15.848382949829102s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1576576086474806e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.172263451586005e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.999083727165652e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806297e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 640, 1, 0
+n_failed = 0
+val_loss = 4.3570754720045596e12
+
+epoch 3199: batch_loss = 3.2015795421522233e27, val_loss = 4.3570754720045596e12, time = 15.742480993270874s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1572500751847504e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1713143931760308e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.998969485801671e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806293e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.328236843843874e12
+
+epoch 3200: batch_loss = 3.201579542152222e27, val_loss = 4.328236843843874e12, time = 16.51110291481018s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1568423049146395e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1703674026312534e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9988565013133774e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806286e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3266332809233735e12
+
+epoch 3201: batch_loss = 3.201579542152221e27, val_loss = 4.3266332809233735e12, time = 17.258894205093384s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1564351709863443e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1694197031206772e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9987427407294297e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806284e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.325031234877968e12
+
+epoch 3202: batch_loss = 3.2015795421522206e27, val_loss = 4.325031234877968e12, time = 18.884809017181396s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1560276084964134e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1684741357301687e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9986288150832974e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580628e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 640, 1, 0
+n_failed = 0
+val_loss = 4.350623513811548e12
+
+epoch 3203: batch_loss = 3.2015795421522195e27, val_loss = 4.350623513811548e12, time = 16.62380313873291s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.155620298819049e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.167528234969075e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9985151771286685e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806275e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.3218366792902446e12
+
+epoch 3204: batch_loss = 3.201579542152219e27, val_loss = 4.3218366792902446e12, time = 17.183001041412354s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1552131296537401e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1665834879842124e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.998401448765439e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806269e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 640, 0, 0
+n_failed = 0
+val_loss = 4.320239873462221e12
+
+epoch 3205: batch_loss = 3.2015795421522173e27, val_loss = 4.320239873462221e12, time = 18.09596300125122s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1548064169058857e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1656393648304995e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9982874958705483e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806266e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.291820953194029e12
+
+epoch 3206: batch_loss = 3.2015795421522173e27, val_loss = 4.291820953194029e12, time = 17.530351877212524s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1543992573358202e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1646958681711377e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9981737837477295e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806262e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2902394212591353e12
+
+epoch 3207: batch_loss = 3.201579542152216e27, val_loss = 4.2902394212591353e12, time = 18.392086029052734s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.153992479505107e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1637525267848103e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9980602867801147e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806255e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2886618346976714e12
+
+epoch 3208: batch_loss = 3.201579542152215e27, val_loss = 4.2886618346976714e12, time = 16.597057104110718s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1535858267936321e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1628109764595955e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.997946683847341e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580625e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.313877333509173e12
+
+epoch 3209: batch_loss = 3.201579542152214e27, val_loss = 4.313877333509173e12, time = 16.06028413772583s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 504, 1, 0
+n_failed = 0
+loss = 1.1611322372489956e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.161869476720515e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9978330746278696e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806249e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2855087934476333e12
+
+epoch 3210: batch_loss = 3.2015795421522134e27, val_loss = 4.2855087934476333e12, time = 16.07637596130371s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1527719678398615e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.160928477078726e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.99771936026824e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806244e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.283932948038768e12
+
+epoch 3211: batch_loss = 3.201579542152213e27, val_loss = 4.283932948038768e12, time = 15.52861499786377s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 504, 1, 0
+n_failed = 0
+loss = 1.1603121238223888e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1599893201174375e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9976056057222417e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806238e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2823636215978057e12
+
+epoch 3212: batch_loss = 3.201579542152211e27, val_loss = 4.2823636215978057e12, time = 15.389760971069336s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1519574568641403e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1590484107367515e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.997492072555202e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806236e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2807937752562417e12
+
+epoch 3213: batch_loss = 3.2015795421522107e27, val_loss = 4.2807937752562417e12, time = 15.253500938415527s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1515503426800232e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1581099391015466e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9973783817490234e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806231e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.3059722659711943e12
+
+epoch 3214: batch_loss = 3.20157954215221e27, val_loss = 4.3059722659711943e12, time = 16.385298013687134s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 504, 1, 0
+n_failed = 0
+loss = 1.1590829282653385e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1571714114647185e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.997264839330137e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806225e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2776600493302905e12
+
+epoch 3215: batch_loss = 3.2015795421522085e27, val_loss = 4.2776600493302905e12, time = 17.16871690750122s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1507364228737097e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1562346812468574e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9971508467087275e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806222e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2760982073508105e12
+
+epoch 3216: batch_loss = 3.2015795421522085e27, val_loss = 4.2760982073508105e12, time = 16.715156078338623s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.150329759128668e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.155297254233493e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.997036719613779e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806218e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2745349985929185e12
+
+epoch 3217: batch_loss = 3.2015795421522074e27, val_loss = 4.2745349985929185e12, time = 17.5406551361084s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.149923647040275e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1543613147322332e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.996923402856791e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806214e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.2996827023827554e12
+
+epoch 3218: batch_loss = 3.2015795421522063e27, val_loss = 4.2996827023827554e12, time = 17.483734130859375s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1495176481898647e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.15342614091741e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9968092527371597e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806207e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2714168305478076e12
+
+epoch 3219: batch_loss = 3.201579542152205e27, val_loss = 4.2714168305478076e12, time = 19.33448886871338s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1491119835125252e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1524911398082046e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.996695758776983e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806205e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.269861587013518e12
+
+epoch 3220: batch_loss = 3.2015795421522047e27, val_loss = 4.269861587013518e12, time = 20.231749057769775s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1487063525066666e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1515574987004995e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.996582352212976e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.57617995258062e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2683087070037695e12
+
+epoch 3221: batch_loss = 3.201579542152204e27, val_loss = 4.2683087070037695e12, time = 17.419469118118286s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1483005295587679e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1506239622021777e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9964683552611445e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806196e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2667558701622656e12
+
+epoch 3222: batch_loss = 3.201579542152203e27, val_loss = 4.2667558701622656e12, time = 15.942877054214478s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1478951747245165e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1496924843547422e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.996354668520369e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806192e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.2918639846220728e12
+
+epoch 3223: batch_loss = 3.201579542152202e27, val_loss = 4.2918639846220728e12, time = 15.642420053482056s
+(points skipped, sat solves failed, crit solves failed) = 504, 0, 0
+n_failed = 0
+loss = 1.1474899730083801e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1487606794370117e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.996240802747145e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806187e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2636563502535947e12
+
+epoch 3224: batch_loss = 3.2015795421522014e27, val_loss = 4.2636563502535947e12, time = 16.03036594390869s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1392848665381407e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1478291300713838e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.996127232074328e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806183e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2621084730651733e12
+
+epoch 3225: batch_loss = 3.2015795421522e27, val_loss = 4.2621084730651733e12, time = 16.477242946624756s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1388831332016441e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1468987726369202e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9960132949389863e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580618e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.260564559711382e12
+
+epoch 3226: batch_loss = 3.2015795421521997e27, val_loss = 4.260564559711382e12, time = 15.987982034683228s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1384821009655716e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1459690541396594e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9958999644973506e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806174e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.285640876103689e12
+
+epoch 3227: batch_loss = 3.2015795421521986e27, val_loss = 4.285640876103689e12, time = 15.984745979309082s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 503, 1, 0
+n_failed = 0
+loss = 1.1458763995656567e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1450402240528706e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9957855970123184e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580617e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.257481159355895e12
+
+epoch 3228: batch_loss = 3.2015795421521975e27, val_loss = 4.257481159355895e12, time = 16.560269117355347s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1376799580988781e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.144111882122894e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.995671898280053e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806167e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.255940542173562e12
+
+epoch 3229: batch_loss = 3.2015795421521975e27, val_loss = 4.255940542173562e12, time = 19.5730619430542s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1372797774069574e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1431845594063035e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.995558188706432e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580616e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2544030263326436e12
+
+epoch 3230: batch_loss = 3.201579542152196e27, val_loss = 4.2544030263326436e12, time = 17.91497802734375s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1368794083192457e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1422572220536987e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.99544481740065e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806156e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2528644847780977e12
+
+epoch 3231: batch_loss = 3.2015795421521953e27, val_loss = 4.2528644847780977e12, time = 16.485286951065063s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.136479139116403e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.141331303260924e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.995331220625548e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806154e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2513303260149272e12
+
+epoch 3232: batch_loss = 3.201579542152195e27, val_loss = 4.2513303260149272e12, time = 17.642937898635864s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1360791433862621e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1404057999291228e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9952171239814556e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580615e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.249797008195158e12
+
+epoch 3233: batch_loss = 3.2015795421521937e27, val_loss = 4.249797008195158e12, time = 17.929792165756226s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1356794531570787e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1394808770530134e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.995103107599513e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806145e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.2748203631973525e12
+
+epoch 3234: batch_loss = 3.201579542152193e27, val_loss = 4.2748203631973525e12, time = 17.695667028427124s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1352800295692379e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1385565393632314e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.994989377142181e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580614e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2467375990603228e12
+
+epoch 3235: batch_loss = 3.201579542152192e27, val_loss = 4.2467375990603228e12, time = 18.51127815246582s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 503, 1, 0
+n_failed = 0
+loss = 1.142653204364422e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.137632851012436e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.994875537329031e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806137e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.271743022156161e12
+
+epoch 3236: batch_loss = 3.201579542152191e27, val_loss = 4.271743022156161e12, time = 16.17337989807129s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1344796465991394e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.136709846790613e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.994761975539296e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806134e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.243682325180662e12
+
+epoch 3237: batch_loss = 3.201579542152191e27, val_loss = 4.243682325180662e12, time = 15.671034097671509s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1340800715284782e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1357877697638857e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.994648240845613e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806128e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.2686716841524087e12
+
+epoch 3238: batch_loss = 3.201579542152189e27, val_loss = 4.2686716841524087e12, time = 15.53626012802124s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1336807379606747e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1348663322652048e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9945343733372e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806123e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2406358235133633e12
+
+epoch 3239: batch_loss = 3.2015795421521887e27, val_loss = 4.2406358235133633e12, time = 15.79847502708435s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1332814172876432e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1339457272150327e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9944205776618247e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806121e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2391135913246724e12
+
+epoch 3240: batch_loss = 3.201579542152188e27, val_loss = 4.2391135913246724e12, time = 16.649206161499023s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1328821687315346e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1330249221284595e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9943065274321567e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806115e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.264078911208439e12
+
+epoch 3241: batch_loss = 3.2015795421521865e27, val_loss = 4.264078911208439e12, time = 15.982041120529175s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 503, 1, 0
+n_failed = 0
+loss = 1.1402398721220684e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1321051466894253e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9941930019952163e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580611e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.236077414929146e12
+
+epoch 3242: batch_loss = 3.201579542152186e27, val_loss = 4.236077414929146e12, time = 16.7400221824646s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.132083206987118e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.131186099008436e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9940795071417896e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806108e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.2610242335355093e12
+
+epoch 3243: batch_loss = 3.2015795421521854e27, val_loss = 4.2610242335355093e12, time = 17.73519802093506s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1316842581977928e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1302684598283047e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9939647926446855e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806104e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2330451243149053e12
+
+epoch 3244: batch_loss = 3.2015795421521843e27, val_loss = 4.2330451243149053e12, time = 17.42136311531067s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1312855517055086e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1293510371975344e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9938514362790933e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.57617995258061e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.257977496046513e12
+
+epoch 3245: batch_loss = 3.201579542152184e27, val_loss = 4.257977496046513e12, time = 18.47070002555847s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1308866797633917e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1284346327069714e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.993738009853525e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806095e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2300192403205103e12
+
+epoch 3246: batch_loss = 3.2015795421521827e27, val_loss = 4.2300192403205103e12, time = 17.522284030914307s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1304878677335754e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1275179454259595e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.993624063856189e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580609e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.228510120530188e12
+
+epoch 3247: batch_loss = 3.201579542152182e27, val_loss = 4.228510120530188e12, time = 17.267044067382812s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.130089749402905e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1266024362952783e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.993510254650553e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806088e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2269989484087227e12
+
+epoch 3248: batch_loss = 3.2015795421521816e27, val_loss = 4.2269989484087227e12, time = 19.50389790534973s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1296914446406855e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1256873814032336e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.993395923876567e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806082e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.251900781277882e12
+
+epoch 3249: batch_loss = 3.20157954215218e27, val_loss = 4.251900781277882e12, time = 17.86438798904419s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.129293427997653e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1247735461301685e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9932823770438687e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580608e28
+(points skipped, sat solves failed, crit solves failed) = 560, 0, 0
+n_failed = 0
+loss = 2.4609818495481517e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.223986282681596e12
+
+epoch 3250: batch_loss = 3.20157954215218e27, val_loss = 4.223986282681596e12, time = 16.437270164489746s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1288951791745235e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1238605127801172e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.993168769575596e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806075e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.2488715760787617e12
+
+epoch 3251: batch_loss = 3.20037906320118e27, val_loss = 4.2488715760787617e12, time = 15.741568088531494s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.128497673650233e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.122947523653334e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.993054827660857e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580607e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2209782583001562e12
+
+epoch 3252: batch_loss = 3.200379063201179e27, val_loss = 4.2209782583001562e12, time = 15.932438135147095s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1280998299490168e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.122035930324156e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.992941439801345e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806066e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2194761574833223e12
+
+epoch 3253: batch_loss = 3.200379063201178e27, val_loss = 4.2194761574833223e12, time = 16.15869402885437s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1277016595018217e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1211241624578564e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9928276804999736e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806062e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 639, 1, 0
+n_failed = 0
+val_loss = 4.2443385943165674e12
+
+epoch 3254: batch_loss = 3.200379063201177e27, val_loss = 4.2443385943165674e12, time = 16.24571204185486s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 503, 1, 0
+n_failed = 0
+loss = 1.1350254473865881e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.120213781278353e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9927136640032583e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580606e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2164791693769634e12
+
+epoch 3255: batch_loss = 3.2003790632011765e27, val_loss = 4.2164791693769634e12, time = 16.093088150024414s
+(points skipped, sat solves failed, crit solves failed) = 503, 0, 0
+n_failed = 0
+loss = 1.1269057334439783e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1193040834200793e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9925999372458716e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806055e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2149810281884673e12
+
+epoch 3256: batch_loss = 3.200379063201176e27, val_loss = 4.2149810281884673e12, time = 16.345850944519043s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 503, 1, 0
+n_failed = 0
+loss = 1.1342236987267923e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1183945651953044e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.992486255355696e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806049e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.213485538816258e12
+
+epoch 3257: batch_loss = 3.2003790632011743e27, val_loss = 4.213485538816258e12, time = 17.53843116760254s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1185040898876226e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.117485924465486e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9923724562426655e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806047e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.211988567642429e12
+
+epoch 3258: batch_loss = 3.200379063201174e27, val_loss = 4.211988567642429e12, time = 18.64943814277649s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1181096380301733e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1165779358567563e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9922583040268657e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806042e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.210497207395118e12
+
+epoch 3259: batch_loss = 3.200379063201173e27, val_loss = 4.210497207395118e12, time = 17.809359073638916s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.117716312309607e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1156703109028884e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9921449739973867e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580604e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.209007498949071e12
+
+epoch 3260: batch_loss = 3.2003790632011727e27, val_loss = 4.209007498949071e12, time = 17.919304132461548s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1173229324443226e10
+(points skipped, sat solves failed, crit solves failed) = 555, 0, 0
+n_failed = 0
+loss = 1.1147640132404575e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9920308235239136e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806033e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2075171332777246e12
+
+epoch 3261: batch_loss = 3.2003790632011716e27, val_loss = 4.2075171332777246e12, time = 17.912025928497314s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 502, 1, 0
+n_failed = 0
+loss = 1.1245287070404287e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.1022552028349326e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.991916883246283e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580603e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2060332499773135e12
+
+epoch 3262: batch_loss = 3.2003790632011705e27, val_loss = 4.2060332499773135e12, time = 17.544338941574097s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1165375501407629e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.101363551660472e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.991803369113964e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806027e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.20455048297593e12
+
+epoch 3263: batch_loss = 3.20037906320117e27, val_loss = 4.20455048297593e12, time = 17.171660900115967s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1161441872506155e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.100474395410624e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.991689577135576e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580602e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2030724338865615e12
+
+epoch 3264: batch_loss = 3.200379063201169e27, val_loss = 4.2030724338865615e12, time = 16.938849210739136s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1157504223143267e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0995869250864084e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.991575629628059e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806018e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 639, 0, 0
+n_failed = 0
+val_loss = 4.2015979873686196e12
+
+epoch 3265: batch_loss = 3.2003790632011683e27, val_loss = 4.2015979873686196e12, time = 16.042006969451904s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1153567036883966e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0987010746563115e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9914614659561113e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806014e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1742003005880044e12
+
+epoch 3266: batch_loss = 3.200379063201167e27, val_loss = 4.1742003005880044e12, time = 15.110952854156494s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1149633954915579e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0978166601828531e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.991347794922368e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806011e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.172736891863716e12
+
+epoch 3267: batch_loss = 3.200379063201167e27, val_loss = 4.172736891863716e12, time = 15.427994012832642s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1145700756263044e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.096931771423416e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.991234112113199e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806005e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.171277766254604e12
+
+epoch 3268: batch_loss = 3.2003790632011655e27, val_loss = 4.171277766254604e12, time = 16.076992988586426s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1141767379278046e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0960475373883375e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.991120141944747e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525806e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.169820191096299e12
+
+epoch 3269: batch_loss = 3.200379063201165e27, val_loss = 4.169820191096299e12, time = 16.084645986557007s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1137840034326954e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0951637932738947e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.991006694978825e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805998e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.168363892418422e12
+
+epoch 3270: batch_loss = 3.2003790632011644e27, val_loss = 4.168363892418422e12, time = 16.740797996520996s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 502, 1, 0
+n_failed = 0
+loss = 1.1209646884872541e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0942807850284474e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9908928807535454e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805994e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.166908250085601e12
+
+epoch 3271: batch_loss = 3.2003790632011633e27, val_loss = 4.166908250085601e12, time = 18.242698907852173s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1129970226251854e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0933986912216249e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9907788183495073e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580599e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1654548793765947e12
+
+epoch 3272: batch_loss = 3.200379063201163e27, val_loss = 4.1654548793765947e12, time = 19.14594006538391s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.112603624418956e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.092517697938382e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.99066481481941e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805985e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1640033561961553e12
+
+epoch 3273: batch_loss = 3.2003790632011617e27, val_loss = 4.1640033561961553e12, time = 19.38746190071106s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.112210608987804e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0916360466040126e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.990551101046706e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805983e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 638, 1, 0
+n_failed = 0
+val_loss = 4.1884064644197944e12
+
+epoch 3274: batch_loss = 3.200379063201161e27, val_loss = 4.1884064644197944e12, time = 18.167678833007812s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.111818044565359e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0907556203583436e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9904371999975654e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805978e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.161101832780327e12
+
+epoch 3275: batch_loss = 3.2003790632011606e27, val_loss = 4.161101832780327e12, time = 17.663672924041748s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 502, 1, 0
+n_failed = 0
+loss = 1.1189862505230412e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0898756109300385e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9903234697137134e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805972e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 638, 1, 0
+n_failed = 0
+val_loss = 4.1854893397938804e12
+
+epoch 3276: batch_loss = 3.200379063201159e27, val_loss = 4.1854893397938804e12, time = 16.636285066604614s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1110321515583265e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0889964281838462e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.990209683113774e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580597e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1582070084169e12
+
+epoch 3277: batch_loss = 3.2003790632011584e27, val_loss = 4.1582070084169e12, time = 17.272541999816895s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1106393270620882e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0881181639071987e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9900957740472905e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805965e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.156762614201828e12
+
+epoch 3278: batch_loss = 3.200379063201158e27, val_loss = 4.156762614201828e12, time = 16.733874797821045s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 502, 1, 0
+n_failed = 0
+loss = 1.1177993681621218e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0872405746830228e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9899819722581934e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805963e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1553164192411646e12
+
+epoch 3279: batch_loss = 3.2003790632011573e27, val_loss = 4.1553164192411646e12, time = 15.871888875961304s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1098543282018793e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0863620936954609e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.989868096664547e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805956e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.153872562862953e12
+
+epoch 3280: batch_loss = 3.200379063201156e27, val_loss = 4.153872562862953e12, time = 16.400956869125366s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1094616898160004e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0854859154323595e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9897537985964062e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805954e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 638, 1, 0
+n_failed = 0
+val_loss = 4.178222660678504e12
+
+epoch 3281: batch_loss = 3.2003790632011556e27, val_loss = 4.178222660678504e12, time = 15.49547791481018s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1090695825715263e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0846094222232383e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9896399012890425e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580595e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1509896987517393e12
+
+epoch 3282: batch_loss = 3.2003790632011545e27, val_loss = 4.1509896987517393e12, time = 16.597944974899292s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1086772814725885e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0837336835374105e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9895266643021416e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805948e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1495499042277456e12
+
+epoch 3283: batch_loss = 3.200379063201154e27, val_loss = 4.1495499042277456e12, time = 16.243680000305176s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1082856979848005e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0828589298018854e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9894123177331523e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580594e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1481112171302803e12
+
+epoch 3284: batch_loss = 3.200379063201153e27, val_loss = 4.1481112171302803e12, time = 17.1756649017334s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1078943405771353e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0819847976572832e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9892989484902886e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805937e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.146673628156335e12
+
+epoch 3285: batch_loss = 3.200379063201152e27, val_loss = 4.146673628156335e12, time = 17.863541841506958s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 502, 1, 0
+n_failed = 0
+loss = 1.115037034841594e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0811107414459244e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.989185021932395e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805934e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.145236662585304e12
+
+epoch 3286: batch_loss = 3.200379063201152e27, val_loss = 4.145236662585304e12, time = 17.287169933319092s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1071110999880331e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0802376452770913e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.989070804494022e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580593e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.143801035284589e12
+
+epoch 3287: batch_loss = 3.2003790632011507e27, val_loss = 4.143801035284589e12, time = 18.074549913406372s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1067191019077766e10
+(points skipped, sat solves failed, crit solves failed) = 554, 0, 0
+n_failed = 0
+loss = 1.0793656978115742e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9889572641666855e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805926e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.142367418810375e12
+
+epoch 3288: batch_loss = 3.2003790632011496e27, val_loss = 4.142367418810375e12, time = 18.69011688232422s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 502, 1, 0
+n_failed = 0
+loss = 1.113854015064257e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0673754459105177e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.988843984820667e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805921e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1409382662062104e12
+
+epoch 3289: batch_loss = 3.200379063201149e27, val_loss = 4.1409382662062104e12, time = 19.214943170547485s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1059364620657513e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0665168189643413e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.988729366520909e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580592e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.139514506637753e12
+
+epoch 3290: batch_loss = 3.2003790632011485e27, val_loss = 4.139514506637753e12, time = 17.709385871887207s
+(points skipped, sat solves failed, crit solves failed) = 502, 0, 0
+n_failed = 0
+loss = 1.1055457641194416e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.065660734519346e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9886159667883184e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805915e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1380903401338926e12
+
+epoch 3291: batch_loss = 3.2003790632011474e27, val_loss = 4.1380903401338926e12, time = 16.125170946121216s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0977417099342485e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0648072473308829e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9885021781650103e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580591e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1366695449594375e12
+
+epoch 3292: batch_loss = 3.200379063201147e27, val_loss = 4.1366695449594375e12, time = 15.70732593536377s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0973551151688124e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0639547165006196e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9883878366800474e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805906e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 638, 0, 0
+n_failed = 0
+val_loss = 4.1352513774598154e12
+
+epoch 3293: batch_loss = 3.200379063201146e27, val_loss = 4.1352513774598154e12, time = 15.495630025863647s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0969694452044657e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.063102953114929e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.98827449322144e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805904e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.1084725856926455e12
+
+epoch 3294: batch_loss = 3.200379063201145e27, val_loss = 4.1084725856926455e12, time = 15.480049848556519s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.096584086617795e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0622525745670228e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.988160532826816e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.57617995258059e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.107064148713703e12
+
+epoch 3295: batch_loss = 3.2003790632011446e27, val_loss = 4.107064148713703e12, time = 15.614306926727295s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0961990747723011e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0614025979584629e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.988046174081691e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805895e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.1056581709471533e12
+
+epoch 3296: batch_loss = 3.2003790632011435e27, val_loss = 4.1056581709471533e12, time = 15.469223976135254s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.095814755563337e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0605528092525555e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9879325806498423e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580589e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.1042530436681006e12
+
+epoch 3297: batch_loss = 3.200379063201143e27, val_loss = 4.1042530436681006e12, time = 15.740768909454346s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0954292315839493e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0597040059199108e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9878185975914526e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805886e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.1028491934792217e12
+
+epoch 3298: batch_loss = 3.200379063201142e27, val_loss = 4.1028491934792217e12, time = 16.655184030532837s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 501, 1, 0
+n_failed = 0
+loss = 1.1024443564246157e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0588558720516183e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9877049935290127e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805884e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.1014465626135605e12
+
+epoch 3299: batch_loss = 3.2003790632011413e27, val_loss = 4.1014465626135605e12, time = 17.564051151275635s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0946600567495918e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0580079156804017e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9875909399180337e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805877e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.1000445974693564e12
+
+epoch 3300: batch_loss = 3.20037906320114e27, val_loss = 4.1000445974693564e12, time = 17.990610122680664s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0942755676137466e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0571615483757035e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9874766846199717e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805875e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.098643283876669e12
+
+epoch 3301: batch_loss = 3.2003790632011397e27, val_loss = 4.098643283876669e12, time = 16.908073902130127s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 501, 1, 0
+n_failed = 0
+loss = 1.1012818865391535e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0563150182657751e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9873629115842554e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580587e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.0972428418333115e12
+
+epoch 3302: batch_loss = 3.2003790632011386e27, val_loss = 4.0972428418333115e12, time = 16.729090213775635s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0935060123192572e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0554695486368795e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.98724914515259e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805868e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.0958448674949033e12
+
+epoch 3303: batch_loss = 3.2003790632011386e27, val_loss = 4.0958448674949033e12, time = 17.92690396308899s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 501, 1, 0
+n_failed = 0
+loss = 1.100507802481351e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0546242372379833e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.987135452448332e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805862e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 637, 1, 0
+n_failed = 0
+val_loss = 4.1197209640996406e12
+
+epoch 3304: batch_loss = 3.200379063201137e27, val_loss = 4.1197209640996406e12, time = 18.112515211105347s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0927364141078665e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0537799360200206e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.987021162687808e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580586e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.0930526202083345e12
+
+epoch 3305: batch_loss = 3.2003790632011364e27, val_loss = 4.0930526202083345e12, time = 18.611763954162598s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0923527457799307e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0529355163919409e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9869075259583345e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805855e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.091655579601019e12
+
+epoch 3306: batch_loss = 3.200379063201136e27, val_loss = 4.091655579601019e12, time = 16.384902000427246s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.091968155383692e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0520920749427838e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9867935019478315e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805853e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.090261535601407e12
+
+epoch 3307: batch_loss = 3.2003790632011353e27, val_loss = 4.090261535601407e12, time = 15.160979986190796s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0915846281945913e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.051249152868118e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9866796373242173e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805846e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.088866817793524e12
+
+epoch 3308: batch_loss = 3.200379063201134e27, val_loss = 4.088866817793524e12, time = 15.429047107696533s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0912008608511164e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0504069082871018e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9865662370958306e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805844e28
+(points skipped, sat solves failed, crit solves failed) = 559, 0, 0
+n_failed = 0
+loss = 2.4009579019981966e26
+(points skipped, sat solves failed, crit solves failed) = 637, 0, 0
+n_failed = 0
+val_loss = 4.087475061343492e12
+
+epoch 3309: batch_loss = 3.2003790632011336e27, val_loss = 4.087475061343492e12, time = 15.713012218475342s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0908176097819912e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0495653915408235e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.986451663565321e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580584e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0611691939346333e12
+
+epoch 3310: batch_loss = 3.199235749914467e27, val_loss = 4.0611691939346333e12, time = 16.26429796218872s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 501, 1, 0
+n_failed = 0
+loss = 1.0978023876112125e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0487232274826554e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9863384395856543e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805838e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.059786394681932e12
+
+epoch 3311: batch_loss = 3.1992357499144664e27, val_loss = 4.059786394681932e12, time = 16.94533395767212s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0900507149751846e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0478832852471018e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.986224069460301e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580583e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0584060813563223e12
+
+epoch 3312: batch_loss = 3.199235749914465e27, val_loss = 4.0584060813563223e12, time = 17.257487773895264s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0896668274802057e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0470439560918129e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.986110455938408e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805829e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.057025698851635e12
+
+epoch 3313: batch_loss = 3.1992357499144647e27, val_loss = 4.057025698851635e12, time = 17.748016119003296s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0892836460401537e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0462044518777174e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.985996313730362e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805824e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0556489943108164e12
+
+epoch 3314: batch_loss = 3.1992357499144636e27, val_loss = 4.0556489943108164e12, time = 18.024960041046143s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0889006750676315e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0453654361946466e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9858823222808965e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805822e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0542697396834644e12
+
+epoch 3315: batch_loss = 3.199235749914463e27, val_loss = 4.0542697396834644e12, time = 18.46589207649231s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.08851825891649e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0445267552975026e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.985768804180477e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805816e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.052893837099765e12
+
+epoch 3316: batch_loss = 3.199235749914462e27, val_loss = 4.052893837099765e12, time = 18.066473960876465s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0881354808263937e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0436892740913505e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.98565530481193e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805813e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.051516833338183e12
+
+epoch 3317: batch_loss = 3.1992357499144614e27, val_loss = 4.051516833338183e12, time = 18.001595973968506s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 501, 1, 0
+n_failed = 0
+loss = 1.0951023364662731e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.042852585116899e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.985541217249569e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.576179952580581e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.050143397276625e12
+
+epoch 3318: batch_loss = 3.199235749914461e27, val_loss = 4.050143397276625e12, time = 17.314712047576904s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.0873701396870333e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0420164897775856e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.985427171737803e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805807e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0487699195280435e12
+
+epoch 3319: batch_loss = 3.1992357499144603e27, val_loss = 4.0487699195280435e12, time = 17.6149640083313s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 501, 1, 0
+n_failed = 0
+loss = 1.094331365935603e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0411804557231239e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9853135929112188e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.57617995258058e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0473961209159253e12
+
+epoch 3320: batch_loss = 3.1992357499144587e27, val_loss = 4.0473961209159253e12, time = 17.425575971603394s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.086603690454449e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0403447120486495e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.985199255056182e12
+(points skipped, sat solves failed, crit solves failed) = 540, 0, 0
+n_failed = 0
+loss = 1.5761799525805798e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0460240455714526e12
+
+epoch 3321: batch_loss = 3.1992357499144587e27, val_loss = 4.0460240455714526e12, time = 16.187904834747314s
+(points skipped, sat solves failed, crit solves failed) = 501, 0, 0
+n_failed = 0
+loss = 1.086221024256017e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0395098485229081e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9850853448594014e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879615e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.044655120026593e12
+
+epoch 3322: batch_loss = 3.1708361111292217e27, val_loss = 4.044655120026593e12, time = 16.173887014389038s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 500, 1, 0
+n_failed = 0
+loss = 1.085844383056624e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0386761952812162e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9849715366246113e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879613e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.043286106155141e12
+
+epoch 3323: batch_loss = 3.1708361111292217e27, val_loss = 4.043286106155141e12, time = 15.957289934158325s
+(points skipped, sat solves failed, crit solves failed) = 500, 0, 0
+n_failed = 0
+loss = 1.0782258038945051e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0378420712362847e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9848582463917856e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879606e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.0667160674542866e12
+
+epoch 3324: batch_loss = 3.17083611112922e27, val_loss = 4.0667160674542866e12, time = 16.83907413482666s
+(points skipped, sat solves failed, crit solves failed) = 500, 0, 0
+n_failed = 0
+loss = 1.0778473418034616e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0370094475856139e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.984744108376664e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879604e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0405492562591465e12
+
+epoch 3325: batch_loss = 3.1708361111292195e27, val_loss = 4.0405492562591465e12, time = 16.903361797332764s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0703370606365568e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0361766493221904e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9846304894777163e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.56198013318796e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0391832994048726e12
+
+epoch 3326: batch_loss = 3.170836111129219e27, val_loss = 4.0391832994048726e12, time = 17.722593069076538s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 499, 1, 0
+n_failed = 0
+loss = 1.0770953719558311e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0353446085635211e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9845162671558784e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879598e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.037818298452049e12
+
+epoch 3327: batch_loss = 3.1708361111292184e27, val_loss = 4.037818298452049e12, time = 18.10010600090027s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.069587696587413e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0345127166472468e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.984402461404208e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879591e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.036454423985346e12
+
+epoch 3328: batch_loss = 3.170836111129217e27, val_loss = 4.036454423985346e12, time = 18.25696611404419s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.069214350745432e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0336823549575308e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.984287810606395e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187959e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.035092116901029e12
+
+epoch 3329: batch_loss = 3.1708361111292167e27, val_loss = 4.035092116901029e12, time = 18.506422996520996s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0688409367384909e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0328527561384945e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9841738144151567e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879585e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.033729693807337e12
+
+epoch 3330: batch_loss = 3.1708361111292156e27, val_loss = 4.033729693807337e12, time = 19.035152912139893s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0684681973470207e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0320221718846921e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.984058792757969e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879582e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.057107193104464e12
+
+epoch 3331: batch_loss = 3.170836111129215e27, val_loss = 4.057107193104464e12, time = 17.69861102104187s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0680953717859665e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0311936381179324e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9839442871008833e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187958e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.031006659174978e12
+
+epoch 3332: batch_loss = 3.170836111129215e27, val_loss = 4.031006659174978e12, time = 17.490434169769287s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0677226914214418e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0303649232239667e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9838297834787656e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879574e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.0543704852734985e12
+
+epoch 3333: batch_loss = 3.1708361111292134e27, val_loss = 4.0543704852734985e12, time = 18.496535062789917s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0673505252185837e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0295372067584219e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9837151357590693e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879571e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.028290795850182e12
+
+epoch 3334: batch_loss = 3.170836111129213e27, val_loss = 4.028290795850182e12, time = 17.554626941680908s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.066978306531829e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0287103031273138e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9836004949589883e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879567e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.051638040704419e12
+
+epoch 3335: batch_loss = 3.1708361111292123e27, val_loss = 4.051638040704419e12, time = 26.028970956802368s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0666060756482069e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.027883563776436e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9834858839474263e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879565e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.025577389821221e12
+
+epoch 3336: batch_loss = 3.170836111129212e27, val_loss = 4.025577389821221e12, time = 16.25723695755005s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0662339159395102e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0270573405101398e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9833709975586436e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879558e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.0489103662187017e12
+
+epoch 3337: batch_loss = 3.1708361111292107e27, val_loss = 4.0489103662187017e12, time = 23.821455001831055s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0658617666232353e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0262313754424669e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.98325684678214e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879556e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.022867993445397e12
+
+epoch 3338: batch_loss = 3.17083611112921e27, val_loss = 4.022867993445397e12, time = 25.127964973449707s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0654901279665268e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0254061710635913e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.983141593378515e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879552e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.0461853133838037e12
+
+epoch 3339: batch_loss = 3.170836111129209e27, val_loss = 4.0461853133838037e12, time = 17.91228199005127s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 499, 1, 0
+n_failed = 0
+loss = 1.0722187926077599e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0245816381491128e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.983027207015227e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187955e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0201607733201743e12
+
+epoch 3340: batch_loss = 3.1708361111292085e27, val_loss = 4.0201607733201743e12, time = 18.20897912979126s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0647462200786764e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0237576266213167e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.982913169738236e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879545e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0188092898808193e12
+
+epoch 3341: batch_loss = 3.170836111129208e27, val_loss = 4.0188092898808193e12, time = 18.077757835388184s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0643739132599615e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0229347886816677e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9827983545989043e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187954e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0174587927982246e12
+
+epoch 3342: batch_loss = 3.170836111129207e27, val_loss = 4.0174587927982246e12, time = 17.93555212020874s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0640017039483027e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0221116582563605e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.98268348058032e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879536e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0161110052961504e12
+
+epoch 3343: batch_loss = 3.170836111129206e27, val_loss = 4.0161110052961504e12, time = 18.3508780002594s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.063630545600829e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0212892206354897e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.982568878691072e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879534e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.014759402726493e12
+
+epoch 3344: batch_loss = 3.1708361111292057e27, val_loss = 4.014759402726493e12, time = 18.432424068450928s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 499, 1, 0
+n_failed = 0
+loss = 1.0703470941232439e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0204682252529391e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9824543621157515e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879532e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0134111675016885e12
+
+epoch 3345: batch_loss = 3.170836111129205e27, val_loss = 4.0134111675016885e12, time = 17.64022207260132s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0628870280210285e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0196466551930527e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.982339862356103e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879525e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0120647897939004e12
+
+epoch 3346: batch_loss = 3.170836111129204e27, val_loss = 4.0120647897939004e12, time = 16.02005100250244s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0625153436829979e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.018826253074851e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.982224942281194e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879523e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.010717880529738e12
+
+epoch 3347: batch_loss = 3.1708361111292035e27, val_loss = 4.010717880529738e12, time = 15.248820066452026s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0621436942042282e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0180061624050546e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.982110338180518e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879519e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.009371954440734e12
+
+epoch 3348: batch_loss = 3.1708361111292024e27, val_loss = 4.009371954440734e12, time = 15.935672998428345s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0617722703720558e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0171868291309718e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9819957297373223e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879516e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.032618219085781e12
+
+epoch 3349: batch_loss = 3.170836111129202e27, val_loss = 4.032618219085781e12, time = 16.894325971603394s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0614016715300564e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0163683259759357e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.981881581288527e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879512e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.006685547099607e12
+
+epoch 3350: batch_loss = 3.1708361111292013e27, val_loss = 4.006685547099607e12, time = 16.302867889404297s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.061031059152096e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0155500708303856e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.981767015655006e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879508e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0053415539538315e12
+
+epoch 3351: batch_loss = 3.1708361111292e27, val_loss = 4.0053415539538315e12, time = 16.534382104873657s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 499, 1, 0
+n_failed = 0
+loss = 1.0677311288260618e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0147317885497688e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.981651971108531e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879503e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.0285634325793833e12
+
+epoch 3352: batch_loss = 3.1708361111291997e27, val_loss = 4.0285634325793833e12, time = 17.22967505455017s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0602885325848942e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0139149250653502e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.981537580489835e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.56198013318795e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 4.0026593753564155e12
+
+epoch 3353: batch_loss = 3.170836111129199e27, val_loss = 4.0026593753564155e12, time = 18.051213026046753s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0599176514689198e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0130977394752844e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.981423752706735e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879497e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.02586852682939e12
+
+epoch 3354: batch_loss = 3.170836111129198e27, val_loss = 4.02586852682939e12, time = 18.409435033798218s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0595468538235596e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0122819339991317e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9813085334421187e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879492e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.999980535460137e12
+
+epoch 3355: batch_loss = 3.1708361111291975e27, val_loss = 3.999980535460137e12, time = 18.008689880371094s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.059176468044619e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0114666634306875e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9811942859210474e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187949e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.023174872326074e12
+
+epoch 3356: batch_loss = 3.170836111129197e27, val_loss = 4.023174872326074e12, time = 17.53101396560669s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0588060415338112e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0106511866634415e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.981079621241942e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879486e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9973071662296836e12
+
+epoch 3357: batch_loss = 3.170836111129196e27, val_loss = 3.9973071662296836e12, time = 17.292644023895264s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0584357174935688e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0098368574902239e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9809650661822393e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879483e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9959708292235405e12
+
+epoch 3358: batch_loss = 3.1708361111291953e27, val_loss = 3.9959708292235405e12, time = 18.990636110305786s
+(points skipped, sat solves failed, crit solves failed) = 499, 0, 0
+n_failed = 0
+loss = 1.0580654033603054e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0090229099024805e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.980850188690284e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187948e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.994636179350303e12
+
+epoch 3359: batch_loss = 3.170836111129195e27, val_loss = 3.994636179350303e12, time = 17.513405084609985s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 498, 1, 0
+n_failed = 0
+loss = 1.057698518592389e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0082094584148054e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9807359927748745e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879475e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.993300546179416e12
+
+epoch 3360: batch_loss = 3.1708361111291936e27, val_loss = 3.993300546179416e12, time = 16.680370092391968s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0503721728788612e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0073966799824073e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9806219855124614e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187947e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.991968283167507e12
+
+epoch 3361: batch_loss = 3.170836111129193e27, val_loss = 3.991968283167507e12, time = 15.942033052444458s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0500057412733799e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0065844484424209e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.980507146001212e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879468e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9906349208395947e12
+
+epoch 3362: batch_loss = 3.1708361111291925e27, val_loss = 3.9906349208395947e12, time = 16.57691788673401s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 498, 1, 0
+n_failed = 0
+loss = 1.0565911267886932e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0057725446212847e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.980392876650251e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879464e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.989304317568537e12
+
+epoch 3363: batch_loss = 3.1708361111291914e27, val_loss = 3.989304317568537e12, time = 16.49147391319275s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0492732117579815e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0049612683321809e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.980278055562902e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879461e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.987972281286038e12
+
+epoch 3364: batch_loss = 3.170836111129191e27, val_loss = 3.987972281286038e12, time = 16.82685899734497s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.048907290635442e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0041510395718185e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.980163979774493e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879457e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.986642493074382e12
+
+epoch 3365: batch_loss = 3.1708361111291903e27, val_loss = 3.986642493074382e12, time = 16.79957604408264s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0485412373617943e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0033413944525422e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9800494736084478e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879453e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9853139380544497e12
+
+epoch 3366: batch_loss = 3.170836111129189e27, val_loss = 3.9853139380544497e12, time = 17.380645036697388s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0481761282396395e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0025315740158187e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9799348576113843e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187945e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9839833719505747e12
+
+epoch 3367: batch_loss = 3.1708361111291887e27, val_loss = 3.9839833719505747e12, time = 17.451300144195557s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0478104020332699e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.001722824986938e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9798204779037803e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879446e28
+(points skipped, sat solves failed, crit solves failed) = 558, 0, 0
+n_failed = 0
+loss = 2.3437922376649063e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9826567752529453e12
+
+epoch 3368: batch_loss = 3.170836111129188e27, val_loss = 3.9826567752529453e12, time = 16.957424879074097s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0474454658505962e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.000914562284601e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.979706322186062e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879442e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9813302079509316e12
+
+epoch 3369: batch_loss = 3.169745975204692e27, val_loss = 3.9813302079509316e12, time = 17.058457851409912s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0470804604507975e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 1.0001067484106967e12
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.979591829331811e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879437e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.980004276586579e12
+
+epoch 3370: batch_loss = 3.169745975204691e27, val_loss = 3.980004276586579e12, time = 17.681753873825073s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0467156525015692e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.992997953695156e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9794771929524165e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879435e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9786794051995474e12
+
+epoch 3371: batch_loss = 3.1697459752046904e27, val_loss = 3.9786794051995474e12, time = 17.43280005455017s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0463509239006357e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.984931880656184e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.979362610665872e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879433e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 4.001756253231464e12
+
+epoch 3372: batch_loss = 3.16974597520469e27, val_loss = 4.001756253231464e12, time = 17.48366117477417s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0459860321497055e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.976875400477234e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9792480162676665e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879428e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9760318304870825e12
+
+epoch 3373: batch_loss = 3.1697459752046893e27, val_loss = 3.9760318304870825e12, time = 17.226172924041748s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0456213638150988e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.968817218093777e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9791341733018613e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879424e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9747089957824224e12
+
+epoch 3374: batch_loss = 3.169745975204688e27, val_loss = 3.9747089957824224e12, time = 16.499438047409058s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.045256876232939e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.960769021340973e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9790195686703228e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187942e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 3.9977624895382646e12
+
+epoch 3375: batch_loss = 3.1697459752046877e27, val_loss = 3.9977624895382646e12, time = 16.351490020751953s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.044892292610908e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.952724879220107e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9789049962159746e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879417e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.972065465762607e12
+
+epoch 3376: batch_loss = 3.169745975204687e27, val_loss = 3.972065465762607e12, time = 15.91984486579895s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0445280462500046e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.944696338324631e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.978790911049063e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879413e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.970743482550143e12
+
+epoch 3377: batch_loss = 3.169745975204686e27, val_loss = 3.970743482550143e12, time = 16.329843997955322s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 498, 1, 0
+n_failed = 0
+loss = 1.0510786032049725e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.936658870759246e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9786760141616035e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879409e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9694248620242407e12
+
+epoch 3378: batch_loss = 3.1697459752046855e27, val_loss = 3.9694248620242407e12, time = 16.757154941558838s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0437991623869148e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.928632693489531e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.978562062170097e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879406e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.968104886018292e12
+
+epoch 3379: batch_loss = 3.169745975204685e27, val_loss = 3.968104886018292e12, time = 17.09296989440918s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.043434127859192e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.920612500663069e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.978447434111869e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879402e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.966788426675546e12
+
+epoch 3380: batch_loss = 3.169745975204684e27, val_loss = 3.966788426675546e12, time = 18.36647891998291s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0430701598665434e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.912600798497393e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.978333495512095e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.56198013318794e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 3.9897995030599116e12
+
+epoch 3381: batch_loss = 3.169745975204683e27, val_loss = 3.9897995030599116e12, time = 17.166162967681885s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 498, 1, 0
+n_failed = 0
+loss = 1.0496108336834446e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.904593472029288e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.978218494671899e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879395e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9641561292007925e12
+
+epoch 3382: batch_loss = 3.1697459752046827e27, val_loss = 3.9641561292007925e12, time = 17.595582008361816s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0423413763602228e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.896583583121798e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9781040948699946e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187939e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.962839086669103e12
+
+epoch 3383: batch_loss = 3.1697459752046816e27, val_loss = 3.962839086669103e12, time = 18.02129292488098s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0419769931136333e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.88859103784127e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9779902809565117e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879387e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9615252801104604e12
+
+epoch 3384: batch_loss = 3.169745975204681e27, val_loss = 3.9615252801104604e12, time = 18.13732099533081s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 498, 1, 0
+n_failed = 0
+loss = 1.0485108748749582e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.880597555884736e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9778758982000176e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879384e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9602091423814263e12
+
+epoch 3385: batch_loss = 3.1697459752046805e27, val_loss = 3.9602091423814263e12, time = 18.6055109500885s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.041248763201865e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.872614587905105e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9777611092253843e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879382e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9588965674311274e12
+
+epoch 3386: batch_loss = 3.16974597520468e27, val_loss = 3.9588965674311274e12, time = 17.53553795814514s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0408845936586075e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.864632182560958e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.977646983870234e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879376e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9575851272171157e12
+
+epoch 3387: batch_loss = 3.169745975204679e27, val_loss = 3.9575851272171157e12, time = 17.466268062591553s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0405208852805363e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.856658173986675e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.977532668912959e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879373e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 636, 1, 0
+n_failed = 0
+val_loss = 3.9805445199820527e12
+
+epoch 3388: batch_loss = 3.1697459752046783e27, val_loss = 3.9805445199820527e12, time = 16.570072174072266s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.040157320650895e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.848690062496831e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9774185312053657e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187937e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9549605405207446e12
+
+epoch 3389: batch_loss = 3.169745975204677e27, val_loss = 3.9549605405207446e12, time = 16.70236301422119s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0397941569203747e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.840725881012231e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.977303952882465e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879367e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 636, 0, 0
+n_failed = 0
+val_loss = 3.9536510001527515e12
+
+epoch 3390: batch_loss = 3.1697459752046767e27, val_loss = 3.9536510001527515e12, time = 16.7391939163208s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0394306614899963e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.832775662569601e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9771901029308203e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879365e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 635, 0, 0
+n_failed = 0
+val_loss = 3.9283883128093135e12
+
+epoch 3391: batch_loss = 3.1697459752046767e27, val_loss = 3.9283883128093135e12, time = 15.847194194793701s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0390678852722168e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.824810720014462e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9770752901510967e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879358e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 635, 0, 0
+n_failed = 0
+val_loss = 3.9270860060903726e12
+
+epoch 3392: batch_loss = 3.169745975204675e27, val_loss = 3.9270860060903726e12, time = 16.278952836990356s
+(points skipped, sat solves failed, crit solves failed) = 498, 0, 0
+n_failed = 0
+loss = 1.0387047015493147e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.816874908919648e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9769605371474883e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879356e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 635, 0, 0
+n_failed = 0
+val_loss = 3.925789056669177e12
+
+epoch 3393: batch_loss = 3.1697459752046745e27, val_loss = 3.925789056669177e12, time = 17.190971851348877s
+(points skipped, sat solves failed, crit solves failed) = 497, 0, 0
+n_failed = 0
+loss = 1.031558251337947e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.808926703449883e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.976846912994855e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879351e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 635, 0, 0
+n_failed = 0
+val_loss = 3.9244880922309824e12
+
+epoch 3394: batch_loss = 3.169745975204674e27, val_loss = 3.9244880922309824e12, time = 18.104104042053223s
+(points skipped, sat solves failed, crit solves failed) = 497, 0, 0
+n_failed = 0
+loss = 1.0311984565333624e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.800994887054525e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9767324844976836e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187935e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 635, 1, 0
+n_failed = 0
+val_loss = 3.947113031275802e12
+
+epoch 3395: batch_loss = 3.1697459752046734e27, val_loss = 3.947113031275802e12, time = 18.58609700202942s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 497, 1, 0
+n_failed = 0
+loss = 1.0376209728315775e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.793067581576053e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9766177861672554e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879343e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 635, 0, 0
+n_failed = 0
+val_loss = 3.921894851873312e12
+
+epoch 3396: batch_loss = 3.1697459752046723e27, val_loss = 3.921894851873312e12, time = 17.66644310951233s
+(points skipped, sat solves failed, crit solves failed) = 497, 0, 0
+n_failed = 0
+loss = 1.0304796448458828e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.785144007952378e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9765038407071714e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.561980133187934e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+
+Sat solver failed for methane = [16.03, 2.01, 3.01, 6.0, 20.03, 201.58] at T=90.67, Tc=267.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 635, 1, 0
+n_failed = 0
+val_loss = 3.9445033815021235e12
+
+epoch 3397: batch_loss = 3.169745975204672e27, val_loss = 3.9445033815021235e12, time = 18.324827194213867s
+(points skipped, sat solves failed, crit solves failed) = 497, 0, 0
+n_failed = 0
+loss = 1.0301204145229937e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.777219758694205e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.97638949353963e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879338e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 635, 0, 0
+n_failed = 0
+val_loss = 3.919300792560941e12
+
+epoch 3398: batch_loss = 3.169745975204671e27, val_loss = 3.919300792560941e12, time = 17.294405221939087s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 497, 1, 0
+n_failed = 0
+loss = 1.0365366067652786e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.769312126522567e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.976275327752663e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879334e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 635, 0, 0
+n_failed = 0
+val_loss = 3.9180064450782607e12
+
+epoch 3399: batch_loss = 3.16974597520467e27, val_loss = 3.9180064450782607e12, time = 19.632736921310425s
+(points skipped, sat solves failed, crit solves failed) = 497, 0, 0
+n_failed = 0
+loss = 1.0294026043601185e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
+n_failed = 0
+loss = 9.76140314403932e11
+(points skipped, sat solves failed, crit solves failed) = 586, 0, 0
+n_failed = 0
+loss = 3.9761608604385947e12
+(points skipped, sat solves failed, crit solves failed) = 539, 0, 0
+n_failed = 0
+loss = 1.5619801331879332e28
+(points skipped, sat solves failed, crit solves failed) = 557, 0, 0
+n_failed = 0
+loss = 2.289285441440141e26
+(points skipped, sat solves failed, crit solves failed) = 635, 0, 0
+n_failed = 0
+val_loss = 3.9167127609659946e12
+
+epoch 3400: batch_loss = 3.16974597520467e27, val_loss = 3.9167127609659946e12, time = 18.023131847381592s
+
+Sat solver failed for ethane = [30.05, 2.02, 3.01, 6.0, 20.09, 203.89] at T=88.71, Tc=270.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 497, 1, 0
+n_failed = 0
+loss = 1.035813762503109e10
+(points skipped, sat solves failed, crit solves failed) = 553, 0, 0
