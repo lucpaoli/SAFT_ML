@@ -25282,3 +25282,1459 @@ val_loss = 1.0109164233005197e13
 
 epoch 296: batch_loss = 1.8548649092133756e14, val_loss = 1.0109164233005197e13, time = 156.9759910106659s
 (points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753212e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.55, 4.08, 6.0, 25.02, 431.86] at T=260.52, Tc=627.27, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 0.2183791199574698
+
+Sat solver failed for heptadecane = [240.28, 3.55, 4.08, 6.0, 25.04, 432.52] at T=231.48, Tc=628.26, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.81, 4.26, 6.0, 25.83, 470.71] at T=245.95, Tc=689.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 19, 0
+n_failed = 0
+loss = 1.02654261205511e14
+
+Sat solver failed for 2-methyltridecane = [198.24, 3.48, 4.04, 6.0, 24.83, 422.01] at T=254.13, Tc=611.29, muting...
+
+Sat solver failed for octadecane = [254.3, 3.61, 4.12, 6.0, 25.21, 440.81] at T=232.79, Tc=641.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 2.2115340451492545e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.148821920229485e14
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.52, 4.06, 6.0, 24.94, 427.63] at T=258.66, Tc=620.38, muting...
+
+Sat solver failed for eicosane = [282.33, 3.67, 4.17, 6.0, 25.41, 450.31] at T=270.58, Tc=656.94, muting...
+
+Sat solver failed for hexadecane = [226.27, 3.48, 4.04, 6.0, 24.85, 423.0] at T=243.18, Tc=612.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 11, 0
+n_failed = 0
+val_loss = 1.0177469396741754e13
+
+epoch 297: batch_loss = 1.8551260163810134e14, val_loss = 1.0177469396741754e13, time = 128.24263215065002s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753203e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.63, 4.14, 6.0, 25.31, 444.56] at T=234.94, Tc=647.39, muting...
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.54, 4.08, 6.0, 25.02, 431.28] at T=261.18, Tc=626.26, muting...
+
+Sat solver failed for pentane = [72.09, 2.53, 3.39, 6.0, 21.95, 283.65] at T=116.61, Tc=391.42, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 0.21742081339439018
+
+Sat solver failed for heptacosane = [380.44, 3.81, 4.26, 6.0, 25.82, 470.12] at T=244.24, Tc=688.89, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 18, 0
+n_failed = 0
+loss = 1.0248317077016822e14
+
+Sat solver failed for 2-methyltridecane = [198.24, 3.47, 4.03, 6.0, 24.82, 421.46] at T=254.8, Tc=610.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 3.937022894786778e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.148821920229428e14
+
+Sat solver failed for eicosane = [282.33, 3.67, 4.17, 6.0, 25.4, 449.75] at T=270.19, Tc=655.97, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.51, 4.06, 6.0, 24.94, 427.08] at T=255.06, Tc=619.42, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 11, 0
+n_failed = 0
+val_loss = 1.0183022753847152e13
+
+epoch 298: batch_loss = 1.8551289332802438e14, val_loss = 1.0183022753847152e13, time = 141.57535409927368s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753214e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.54, 4.08, 6.0, 25.01, 430.68] at T=258.61, Tc=625.26, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 0.21798211306283677
+
+Sat solver failed for heptadecane = [240.28, 3.54, 4.08, 6.0, 25.03, 431.44] at T=230.8, Tc=626.41, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.81, 4.26, 6.0, 25.82, 469.52] at T=243.88, Tc=687.86, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 19, 0
+n_failed = 0
+loss = 1.0282592384966666e14
+
+Sat solver failed for 2-methyltridecane = [198.24, 3.47, 4.03, 6.0, 24.82, 420.91] at T=253.35, Tc=609.43, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 3.725275855616138e11
+
+Sat solver failed for 2-methylundecane = [170.2, 3.31, 3.92, 6.0, 24.32, 396.92] at T=254.17, Tc=570.95, muting...
+
+Sat solver failed for nonadecane = [268.31, 3.64, 4.15, 6.0, 25.32, 445.41] at T=232.03, Tc=648.93, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 6.534572139149424e14
+
+Sat solver failed for decane = [142.17, 3.0, 3.71, 6.0, 23.4, 352.63] at T=192.6, Tc=500.28, muting...
+
+Sat solver failed for hexadecane = [226.27, 3.48, 4.04, 6.0, 24.84, 421.93] at T=242.46, Tc=611.09, muting...
+
+Sat solver failed for eicosane = [282.33, 3.67, 4.17, 6.0, 25.4, 449.19] at T=269.79, Tc=655.02, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.51, 4.06, 6.0, 24.93, 426.52] at T=255.73, Tc=618.48, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+val_loss = 1.0129781559636018e13
+
+epoch 299: batch_loss = 1.732922133815406e14, val_loss = 1.0129781559636018e13, time = 153.2583498954773s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753208e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.53, 4.08, 6.0, 25.01, 430.1] at T=258.19, Tc=624.26, muting...
+
+Sat solver failed for pentane = [72.09, 2.53, 3.39, 6.0, 21.95, 283.21] at T=116.39, Tc=390.7, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 0.2175631079019415
+
+Sat solver failed for heptacosane = [380.44, 3.8, 4.26, 6.0, 25.81, 468.94] at T=250.22, Tc=686.87, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 15, 0
+n_failed = 0
+loss = 1.024831707701686e14
+
+Sat solver failed for 2-methyltridecane = [198.24, 3.47, 4.03, 6.0, 24.81, 420.37] at T=254.03, Tc=608.51, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 2.187817905661574e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.14882192022946e14
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.51, 4.06, 6.0, 24.93, 425.97] at T=254.29, Tc=617.54, muting...
+
+Sat solver failed for eicosane = [282.33, 3.66, 4.16, 6.0, 25.4, 448.66] at T=269.42, Tc=654.11, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 10, 0
+n_failed = 0
+val_loss = 1.0173706431388494e13
+
+epoch 300: batch_loss = 1.854779092282426e14, val_loss = 1.0173706431388494e13, time = 144.50723695755005s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753122e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.62, 4.14, 6.0, 25.3, 442.84] at T=233.87, Tc=644.44, muting...
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.53, 4.08, 6.0, 25.0, 429.52] at T=258.86, Tc=623.28, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 0.21733777620283576
+
+Sat solver failed for heptadecane = [240.28, 3.54, 4.08, 6.0, 25.03, 430.4] at T=230.14, Tc=624.62, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.8, 4.26, 6.0, 25.81, 468.37] at T=245.85, Tc=685.87, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 20, 0
+n_failed = 0
+loss = 1.0265426120551064e14
+
+Sat solver failed for 2-methyltridecane = [198.24, 3.46, 4.03, 6.0, 24.81, 419.83] at T=256.81, Tc=607.59, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 2.191488741073896e11
+
+Sat solver failed for squalane = [422.48, 4.14, 4.49, 6.0, 26.85, 517.88] at T=252.54, Tc=765.66, muting...
+
+Sat solver failed for nonadecane = [268.31, 3.63, 4.15, 6.0, 25.31, 444.35] at T=231.39, Tc=647.11, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 6.510766776165309e14
+
+Sat solver failed for eicosane = [282.33, 3.66, 4.16, 6.0, 25.39, 448.12] at T=269.04, Tc=653.18, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.5, 4.06, 6.0, 24.92, 425.42] at T=261.33, Tc=616.61, muting...
+
+Sat solver failed for decane = [142.17, 3.0, 3.71, 6.0, 23.39, 351.92] at T=192.14, Tc=499.08, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+val_loss = 1.0122242600624367e13
+
+epoch 301: batch_loss = 1.7275109785073606e14, val_loss = 1.0122242600624367e13, time = 137.23257398605347s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753125e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.53, 4.07, 6.0, 25.0, 428.95] at T=256.32, Tc=622.31, muting...
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.62, 4.14, 6.0, 25.29, 442.27] at T=233.52, Tc=643.48, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 11, 0
+n_failed = 0
+loss = 0.21691843309298955
+
+Sat solver failed for heptadecane = [240.28, 3.53, 4.08, 6.0, 25.02, 429.88] at T=229.82, Tc=623.74, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.79, 4.26, 6.0, 25.8, 467.8] at T=242.83, Tc=684.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 21, 0
+n_failed = 0
+loss = 1.026542612055104e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778658364e11
+
+Sat solver failed for squalane = [422.48, 4.13, 4.49, 6.0, 26.85, 517.18] at T=252.14, Tc=764.46, muting...
+
+Sat solver failed for 2-methylundecane = [170.2, 3.3, 3.92, 6.0, 24.31, 395.5] at T=249.99, Tc=568.55, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 7.163148216662774e14
+
+Sat solver failed for eicosane = [282.33, 3.66, 4.16, 6.0, 25.39, 447.6] at T=268.67, Tc=652.29, muting...
+
+Sat solver failed for hexadecane = [226.27, 3.47, 4.04, 6.0, 24.83, 420.38] at T=241.41, Tc=608.45, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.5, 4.06, 6.0, 24.92, 424.88] at T=260.94, Tc=615.69, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+val_loss = 1.0125699839109723e13
+
+epoch 302: batch_loss = 1.8594482510143703e14, val_loss = 1.0125699839109723e13, time = 135.5756380558014s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753156e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.52, 4.07, 6.0, 24.99, 428.38] at T=256.98, Tc=621.34, muting...
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.61, 4.13, 6.0, 25.29, 441.71] at T=233.17, Tc=642.52, muting...
+
+Sat solver failed for pentane = [72.09, 2.52, 3.39, 6.0, 21.94, 282.54] at T=116.07, Tc=389.6, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 10, 0
+n_failed = 0
+loss = 0.21620365951412523
+
+Sat solver failed for heptacosane = [380.44, 3.79, 4.25, 6.0, 25.8, 467.23] at T=242.48, Tc=683.92, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 17, 0
+n_failed = 0
+loss = 1.0248317077016839e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778658541e11
+
+Sat solver failed for 2-methylundecane = [170.2, 3.29, 3.92, 6.0, 24.3, 395.02] at T=246.53, Tc=567.72, muting...
+
+Sat solver failed for nonadecane = [268.31, 3.63, 4.14, 6.0, 25.31, 443.31] at T=230.75, Tc=645.32, muting...
+
+Sat solver failed for squalane = [422.48, 4.13, 4.49, 6.0, 26.84, 516.46] at T=251.73, Tc=763.21, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 6.534572139149456e14
+
+Sat solver failed for eicosane = [282.33, 3.65, 4.16, 6.0, 25.39, 447.07] at T=268.29, Tc=651.37, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.5, 4.05, 6.0, 24.91, 424.33] at T=258.42, Tc=614.75, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+val_loss = 1.0114908858932143e13
+
+epoch 303: batch_loss = 1.733390854641023e14, val_loss = 1.0114908858932143e13, time = 143.4597361087799s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.098054015575308e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.52, 4.07, 6.0, 24.99, 427.8] at T=256.58, Tc=620.36, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 4.4252391841392666e8
+
+Sat solver failed for heptacosane = [380.44, 3.79, 4.25, 6.0, 25.8, 466.66] at T=243.46, Tc=682.94, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 19, 0
+n_failed = 0
+loss = 1.0248317077016836e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778658656e11
+
+Sat solver failed for nonadecane = [268.31, 3.62, 4.14, 6.0, 25.3, 442.79] at T=230.43, Tc=644.43, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 6.522647737435644e14
+
+Sat solver failed for eicosane = [282.33, 3.65, 4.16, 6.0, 25.38, 446.54] at T=267.92, Tc=650.47, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.49, 4.05, 6.0, 24.91, 423.78] at T=252.75, Tc=613.81, muting...
+
+Sat solver failed for hexadecane = [226.27, 3.46, 4.03, 6.0, 24.82, 419.35] at T=240.71, Tc=606.69, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+val_loss = 1.0126161226932514e13
+
+epoch 304: batch_loss = 1.7310068593460956e14, val_loss = 1.0126161226932514e13, time = 160.81859302520752s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753062e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.52, 4.07, 6.0, 24.98, 427.21] at T=262.56, Tc=619.36, muting...
+
+Sat solver failed for 2,3-dimethylbutane = [86.11, 2.74, 3.54, 6.0, 22.63, 314.58] at T=175.32, Tc=439.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 0.21705620245975654
+
+Sat solver failed for heptacosane = [380.44, 3.78, 4.25, 6.0, 25.79, 466.1] at T=241.79, Tc=681.97, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 22, 0
+n_failed = 0
+loss = 1.0248317077016844e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778658827e11
+
+Sat solver failed for nonadecane = [268.31, 3.62, 4.14, 6.0, 25.3, 442.28] at T=230.11, Tc=643.54, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.510766776165271e14
+
+Sat solver failed for 2-methylpentane = [86.11, 2.72, 3.53, 6.0, 22.57, 311.92] at T=99.12, Tc=435.63, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.49, 4.05, 6.0, 24.91, 423.22] at T=253.41, Tc=612.86, muting...
+
+Sat solver failed for eicosane = [282.33, 3.65, 4.16, 6.0, 25.38, 446.02] at T=267.55, Tc=649.56, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+val_loss = 1.0180011255028578e13
+
+epoch 305: batch_loss = 1.7286297820441844e14, val_loss = 1.0180011255028578e13, time = 143.73222994804382s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753048e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.51, 4.07, 6.0, 24.98, 426.62] at T=255.75, Tc=618.35, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 7.159231677271122e9
+
+Sat solver failed for heptacosane = [380.44, 3.78, 4.25, 6.0, 25.79, 465.53] at T=246.75, Tc=680.98, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 16, 0
+n_failed = 0
+loss = 1.0248317077016827e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778658944e11
+
+Sat solver failed for nonadecane = [268.31, 3.62, 4.14, 6.0, 25.3, 441.75] at T=229.78, Tc=642.63, muting...
+
+Sat solver failed for squalane = [422.48, 4.12, 4.48, 6.0, 26.83, 514.31] at T=250.5, Tc=759.47, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 6.522647737435672e14
+
+Sat solver failed for eicosane = [282.33, 3.64, 4.16, 6.0, 25.38, 445.48] at T=267.16, Tc=648.62, muting...
+
+Sat solver failed for 2-methylpentane = [86.11, 2.72, 3.53, 6.0, 22.57, 311.61] at T=99.0, Tc=435.11, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.48, 4.05, 6.0, 24.9, 422.63] at T=253.0, Tc=611.86, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+val_loss = 1.0166716246424645e13
+
+epoch 306: batch_loss = 1.731020292761618e14, val_loss = 1.0166716246424645e13, time = 142.2964391708374s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.098054015575304e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.51, 4.07, 6.0, 24.98, 425.98] at T=256.36, Tc=617.26, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 0.2169199731782521
+
+Sat solver failed for heptacosane = [380.44, 3.78, 4.25, 6.0, 25.79, 464.92] at T=241.06, Tc=679.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 15, 0
+n_failed = 0
+loss = 1.0248317077016817e14
+
+Sat solver failed for octadecane = [254.3, 3.57, 4.11, 6.0, 25.18, 435.5] at T=229.48, Tc=632.49, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552913093e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.148821920229444e14
+
+Sat solver failed for hexadecane = [226.27, 3.45, 4.03, 6.0, 24.81, 417.71] at T=239.6, Tc=603.88, muting...
+
+Sat solver failed for 2-methylpentane = [86.11, 2.72, 3.53, 6.0, 22.57, 311.31] at T=98.89, Tc=434.61, muting...
+
+Sat solver failed for eicosane = [282.33, 3.64, 4.16, 6.0, 25.38, 444.89] at T=266.74, Tc=647.6, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.48, 4.05, 6.0, 24.9, 422.03] at T=251.52, Tc=610.82, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+val_loss = 1.0189644154545314e13
+
+epoch 307: batch_loss = 1.856243981611869e14, val_loss = 1.0189644154545314e13, time = 141.7642810344696s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753034e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.51, 4.07, 6.0, 24.97, 425.36] at T=253.79, Tc=616.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 9.122671736106318e8
+
+Sat solver failed for heptacosane = [380.44, 3.77, 4.25, 6.0, 25.79, 464.29] at T=241.99, Tc=678.8, muting...
+
+Sat solver failed for heptadecane = [240.28, 3.51, 4.07, 6.0, 25.01, 426.68] at T=227.79, Tc=618.23, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 18, 0
+n_failed = 0
+loss = 1.0265426120551061e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778659207e11
+
+Sat solver failed for nonadecane = [268.31, 3.61, 4.14, 6.0, 25.3, 440.59] at T=229.07, Tc=640.63, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.510766776165272e14
+
+Sat solver failed for eicosane = [282.33, 3.64, 4.16, 6.0, 25.38, 444.3] at T=266.32, Tc=646.58, muting...
+
+Sat solver failed for 2-methylpentane = [86.11, 2.72, 3.53, 6.0, 22.57, 311.01] at T=98.77, Tc=434.1, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.48, 4.05, 6.0, 24.9, 421.42] at T=253.19, Tc=609.79, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+val_loss = 1.0176878376500877e13
+
+epoch 308: batch_loss = 1.7289737874492156e14, val_loss = 1.0176878376500877e13, time = 124.72614312171936s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753022e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.5, 4.07, 6.0, 24.97, 424.73] at T=254.41, Tc=615.11, muting...
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.59, 4.13, 6.0, 25.27, 438.12] at T=230.94, Tc=636.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.0007578670228725e10
+
+Sat solver failed for octane = [114.14, 2.82, 3.6, 6.0, 22.89, 325.78] at T=169.77, Tc=457.41, muting...
+
+Sat solver failed for 2-methylheptane = [114.14, 2.93, 3.67, 6.0, 23.23, 341.93] at T=196.49, Tc=482.92, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.77, 4.25, 6.0, 25.79, 463.66] at T=240.28, Tc=677.71, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 19, 0
+n_failed = 0
+loss = 1.0282592384966725e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778659307e11
+
+Sat solver failed for squalane = [422.48, 4.1, 4.48, 6.0, 26.83, 511.97] at T=249.15, Tc=755.39, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.148821920229481e14
+
+Sat solver failed for eicosane = [282.33, 3.63, 4.16, 6.0, 25.37, 443.72] at T=265.9, Tc=645.57, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.47, 4.05, 6.0, 24.89, 420.82] at T=250.67, Tc=608.76, muting...
+
+Sat solver failed for hexadecane = [226.27, 3.45, 4.03, 6.0, 24.81, 416.58] at T=238.83, Tc=601.94, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+val_loss = 1.0084448746807861e13
+
+epoch 309: batch_loss = 1.8569463321733634e14, val_loss = 1.0084448746807861e13, time = 135.27181196212769s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155753005e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.5, 4.07, 6.0, 24.97, 424.09] at T=257.13, Tc=614.02, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 1.431227436223724e9
+
+Sat solver failed for heptacosane = [380.44, 3.77, 4.25, 6.0, 25.79, 463.03] at T=242.52, Tc=676.61, muting...
+
+Sat solver failed for heptadecane = [240.28, 3.51, 4.07, 6.0, 25.0, 425.54] at T=227.07, Tc=616.27, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 15, 0
+n_failed = 0
+loss = 1.0265426120551036e14
+
+Sat solver failed for octadecane = [254.3, 3.56, 4.11, 6.0, 25.18, 433.77] at T=228.4, Tc=629.5, muting...
+
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.9, 3.66, 6.0, 23.15, 337.57] at T=181.92, Tc=475.94, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 9.528171349824701e11
+
+Sat solver failed for nonadecane = [268.31, 3.6, 4.14, 6.0, 25.29, 439.44] at T=228.35, Tc=638.62, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.510766776165256e14
+
+Sat solver failed for eicosane = [282.33, 3.63, 4.16, 6.0, 25.37, 443.13] at T=265.48, Tc=644.54, muting...
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.47, 4.05, 6.0, 24.89, 420.22] at T=251.29, Tc=607.73, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.006146808366522e13
+
+epoch 310: batch_loss = 1.7289811774839694e14, val_loss = 1.006146808366522e13, time = 136.80621004104614s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752938e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.49, 4.07, 6.0, 24.96, 423.46] at T=252.46, Tc=612.95, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 0.21628441909680274
+
+Sat solver failed for octane = [114.14, 2.82, 3.6, 6.0, 22.88, 325.11] at T=169.36, Tc=456.29, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.76, 4.25, 6.0, 25.79, 462.4] at T=243.45, Tc=675.52, muting...
+
+Sat solver failed for 2-methylheptane = [114.14, 2.93, 3.67, 6.0, 23.23, 341.16] at T=195.96, Tc=481.64, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 20, 0
+n_failed = 0
+loss = 1.0282592384966736e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778659631e11
+
+Sat solver failed for nonadecane = [268.31, 3.6, 4.14, 6.0, 25.29, 438.87] at T=228.0, Tc=637.64, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.510766776165318e14
+
+Sat solver failed for eicosane = [282.33, 3.63, 4.16, 6.0, 25.37, 442.55] at T=265.07, Tc=643.55, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0063024804305355e13
+
+epoch 311: batch_loss = 1.7293152882031894e14, val_loss = 1.0063024804305355e13, time = 127.48950505256653s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752936e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.49, 4.06, 6.0, 24.96, 422.85] at T=255.19, Tc=611.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 0.21660375652272087
+
+Sat solver failed for heptacosane = [380.44, 3.76, 4.25, 6.0, 25.78, 461.79] at T=241.76, Tc=674.46, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 21, 0
+n_failed = 0
+loss = 1.0248317077016866e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778659788e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.148821920229478e14
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.46, 4.05, 6.0, 24.89, 419.03] at T=249.41, Tc=605.71, muting...
+
+Sat solver failed for eicosane = [282.33, 3.62, 4.16, 6.0, 25.37, 441.98] at T=264.67, Tc=642.57, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.005934711381042e13
+
+epoch 312: batch_loss = 1.856240810857024e14, val_loss = 1.005934711381042e13, time = 125.94009590148926s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.098054015575297e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.49, 4.06, 6.0, 24.96, 422.23] at T=251.6, Tc=610.85, muting...
+
+Sat solver failed for 2,3-dimethylbutane = [86.11, 2.73, 3.54, 6.0, 22.62, 312.13] at T=173.7, Tc=435.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 6.520204994520713e9
+
+Sat solver failed for heptacosane = [380.44, 3.76, 4.25, 6.0, 25.78, 461.17] at T=240.06, Tc=673.39, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 17, 0
+n_failed = 0
+loss = 1.0248317077016834e14
+
+Sat solver failed for octadecane = [254.3, 3.55, 4.11, 6.0, 25.17, 432.07] at T=227.34, Tc=626.58, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552913867e11
+
+Sat solver failed for nonadecane = [268.31, 3.59, 4.14, 6.0, 25.29, 437.74] at T=227.3, Tc=635.68, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.510766776165301e14
+
+Sat solver failed for 3-methyltridecane = [198.24, 3.46, 4.05, 6.0, 24.88, 418.44] at T=250.04, Tc=604.69, muting...
+
+Sat solver failed for eicosane = [282.33, 3.62, 4.16, 6.0, 25.37, 441.4] at T=264.25, Tc=641.57, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.0480486466107773e13
+
+epoch 313: batch_loss = 1.728645993209028e14, val_loss = 1.0480486466107773e13, time = 128.00170493125916s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752895e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.48, 4.06, 6.0, 24.95, 421.61] at T=254.31, Tc=609.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 0.2160947005719861
+
+Sat solver failed for heptadecane = [240.28, 3.49, 4.07, 6.0, 24.99, 423.29] at T=225.65, Tc=612.42, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.75, 4.25, 6.0, 25.78, 460.56] at T=238.37, Tc=672.33, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 18, 0
+n_failed = 0
+loss = 1.026542612055104e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778660048e11
+
+Sat solver failed for nonadecane = [268.31, 3.59, 4.14, 6.0, 25.29, 437.17] at T=226.95, Tc=634.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.510766776165326e14
+
+Sat solver failed for eicosane = [282.33, 3.62, 4.16, 6.0, 25.37, 440.84] at T=263.85, Tc=640.59, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0557928759901639e13
+
+epoch 314: batch_loss = 1.7289719629148766e14, val_loss = 1.0557928759901639e13, time = 136.3061020374298s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752895e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.48, 4.06, 6.0, 24.95, 421.0] at T=251.79, Tc=608.77, muting...
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.57, 4.13, 6.0, 25.25, 434.43] at T=228.65, Tc=630.05, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 1.1397892620655562e11
+
+Sat solver failed for heptacosane = [380.44, 3.75, 4.25, 6.0, 25.78, 459.96] at T=238.0, Tc=671.3, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 18, 0
+n_failed = 0
+loss = 1.0248317077016839e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778660188e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.148821920229445e14
+
+Sat solver failed for eicosane = [282.33, 3.61, 4.16, 6.0, 25.37, 440.27] at T=263.45, Tc=639.62, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478641152e13
+
+epoch 315: batch_loss = 1.856468768709429e14, val_loss = 1.0559045478641152e13, time = 135.46436595916748s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752855e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.48, 4.06, 6.0, 24.95, 420.38] at T=251.35, Tc=607.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.4456754207142514e11
+
+Sat solver failed for heptadecane = [240.28, 3.49, 4.07, 6.0, 24.99, 422.19] at T=224.95, Tc=610.54, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.75, 4.25, 6.0, 25.78, 459.34] at T=238.94, Tc=670.24, muting...
+
+Sat solver failed for 2-methylheptane = [114.14, 2.92, 3.67, 6.0, 23.22, 339.27] at T=194.68, Tc=478.48, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 20, 0
+n_failed = 0
+loss = 1.0282592384966708e14
+
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.89, 3.65, 6.0, 23.14, 335.39] at T=180.53, Tc=472.29, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552915135e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.14882192022945e14
+
+Sat solver failed for eicosane = [282.33, 3.61, 4.16, 6.0, 25.36, 439.68] at T=266.85, Tc=638.62, muting...
+
+Sat solver failed for hexadecane = [226.27, 3.42, 4.03, 6.0, 24.79, 412.69] at T=263.97, Tc=595.3, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.0573143002644662e13
+
+epoch 316: batch_loss = 1.857218622855007e14, val_loss = 1.0573143002644662e13, time = 140.56830501556396s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752886e14
+
+Sat solver failed for pentane = [72.09, 2.5, 3.38, 6.0, 21.93, 279.3] at T=114.5, Tc=384.32, muting...
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.47, 4.06, 6.0, 24.94, 419.75] at T=251.95, Tc=606.65, muting...
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.56, 4.12, 6.0, 25.25, 433.2] at T=227.89, Tc=627.96, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 9.638188165505962e10
+
+Sat solver failed for heptacosane = [380.44, 3.74, 4.25, 6.0, 25.78, 458.71] at T=238.55, Tc=669.15, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 21, 0
+n_failed = 0
+loss = 1.0248317077016878e14
+
+Sat solver failed for octadecane = [254.3, 3.54, 4.11, 6.0, 25.16, 429.81] at T=225.93, Tc=622.71, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552914371e11
+
+Sat solver failed for 2-methylundecane = [170.2, 3.25, 3.91, 6.0, 24.27, 387.8] at T=244.25, Tc=555.49, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.163148216662809e14
+
+Sat solver failed for eicosane = [282.33, 3.61, 4.16, 6.0, 25.36, 439.08] at T=266.42, Tc=637.59, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478641062e13
+
+epoch 317: batch_loss = 1.85930200466185e14, val_loss = 1.0559045478641062e13, time = 139.63122701644897s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.09805401557529e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.47, 4.06, 6.0, 24.94, 419.11] at T=249.42, Tc=605.57, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 0.21542803728081145
+
+Sat solver failed for 2-methylheptane = [114.14, 2.91, 3.67, 6.0, 23.21, 338.49] at T=194.15, Tc=477.18, muting...
+
+Sat solver failed for heptadecane = [240.28, 3.48, 4.07, 6.0, 24.99, 421.04] at T=224.23, Tc=608.58, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.74, 4.25, 6.0, 25.77, 458.06] at T=238.15, Tc=668.04, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 18, 0
+n_failed = 0
+loss = 1.0282592384966756e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778660629e11
+
+Sat solver failed for 2-methylundecane = [170.2, 3.25, 3.91, 6.0, 24.27, 387.27] at T=241.84, Tc=554.6, muting...
+
+Sat solver failed for nonadecane = [268.31, 3.58, 4.14, 6.0, 25.28, 434.86] at T=225.54, Tc=630.76, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 6.53457213914941e14
+
+Sat solver failed for eicosane = [282.33, 3.6, 4.15, 6.0, 25.36, 438.49] at T=265.99, Tc=636.57, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478640945e13
+
+epoch 318: batch_loss = 1.7340763608000078e14, val_loss = 1.0559045478640945e13, time = 130.61891078948975s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752878e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.56, 4.12, 6.0, 25.24, 431.96] at T=227.12, Tc=625.84, muting...
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.46, 4.06, 6.0, 24.94, 418.49] at T=252.11, Tc=604.52, muting...
+
+Sat solver failed for pentane = [72.09, 2.5, 3.38, 6.0, 21.92, 278.82] at T=114.27, Tc=383.55, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 0.2147707748770631
+
+Sat solver failed for heptacosane = [380.44, 3.73, 4.25, 6.0, 25.77, 457.44] at T=236.47, Tc=666.96, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 21, 0
+n_failed = 0
+loss = 1.0248317077016888e14
+
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.88, 3.65, 6.0, 23.13, 334.27] at T=179.82, Tc=470.43, muting...
+
+Sat solver failed for octadecane = [254.3, 3.53, 4.11, 6.0, 25.16, 428.66] at T=225.22, Tc=620.74, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 9.544131435838092e11
+
+Sat solver failed for squalane = [422.48, 4.06, 4.48, 6.0, 26.8, 504.29] at T=244.76, Tc=742.08, muting...
+
+Sat solver failed for 2-methylundecane = [170.2, 3.24, 3.91, 6.0, 24.26, 386.76] at T=245.5, Tc=553.74, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 7.163148216662794e14
+
+Sat solver failed for eicosane = [282.33, 3.6, 4.15, 6.0, 25.36, 437.91] at T=265.58, Tc=635.58, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478640793e13
+
+epoch 319: batch_loss = 1.859115614275122e14, val_loss = 1.0559045478640793e13, time = 136.2445650100708s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752836e14
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 3.46, 4.06, 6.0, 24.93, 417.88] at T=249.6, Tc=603.49, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.495286911340853e11
+
+Sat solver failed for heptacosane = [380.44, 3.73, 4.25, 6.0, 25.77, 456.81] at T=236.09, Tc=665.89, muting...
+
+Sat solver failed for heptadecane = [240.28, 3.47, 4.07, 6.0, 24.98, 419.91] at T=223.53, Tc=606.67, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 23, 0
+n_failed = 0
+loss = 1.0265426120551094e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778661019e11
+
+Sat solver failed for squalane = [422.48, 4.05, 4.47, 6.0, 26.79, 503.51] at T=244.31, Tc=740.73, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.148821920229472e14
+
+Sat solver failed for eicosane = [282.33, 3.6, 4.15, 6.0, 25.35, 437.31] at T=265.15, Tc=634.56, muting...
+
+Sat solver failed for hexadecane = [226.27, 3.41, 4.02, 6.0, 24.78, 410.43] at T=262.28, Tc=591.49, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.057314300264425e13
+
+epoch 320: batch_loss = 1.8578820491099734e14, val_loss = 1.057314300264425e13, time = 132.31099390983582s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752795e14
+
+Sat solver failed for pentane = [72.09, 2.5, 3.38, 6.0, 21.92, 278.35] at T=114.04, Tc=382.79, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 6.875227902459957e11
+
+Sat solver failed for heptacosane = [380.44, 3.73, 4.25, 6.0, 25.77, 456.17] at T=235.7, Tc=664.8, muting...
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.91, 3.68, 6.0, 23.24, 338.78] at T=186.28, Tc=477.47, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 25, 0
+n_failed = 0
+loss = 1.026542612055109e14
+
+Sat solver failed for 2,2-dimethylpentane = [100.12, 2.88, 3.65, 6.0, 23.13, 333.52] at T=179.34, Tc=469.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552916018e11
+
+Sat solver failed for squalane = [422.48, 4.05, 4.47, 6.0, 26.79, 502.72] at T=243.87, Tc=739.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.148821920229475e14
+
+Sat solver failed for eicosane = [282.33, 3.59, 4.15, 6.0, 25.35, 436.71] at T=264.73, Tc=633.53, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.055904547864065e13
+
+epoch 321: batch_loss = 1.857961208063048e14, val_loss = 1.055904547864065e13, time = 138.5460560321808s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752781e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3280314992633289e12
+
+Sat solver failed for heptacosane = [380.44, 3.72, 4.25, 6.0, 25.76, 455.53] at T=239.19, Tc=663.7, muting...
+
+Sat solver failed for heptadecane = [240.28, 3.47, 4.07, 6.0, 24.98, 418.76] at T=222.81, Tc=604.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 15, 0
+n_failed = 0
+loss = 1.0265426120551086e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778661339e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.14882192022945e14
+
+Sat solver failed for eicosane = [282.33, 3.59, 4.15, 6.0, 25.35, 436.11] at T=264.3, Tc=632.51, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478640564e13
+
+epoch 322: batch_loss = 1.8592390547262262e14, val_loss = 1.0559045478640564e13, time = 142.66566514968872s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752798e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.54, 4.12, 6.0, 25.23, 429.47] at T=225.59, Tc=621.63, muting...
+
+Sat solver failed for pentane = [72.09, 2.5, 3.38, 6.0, 21.92, 277.87] at T=113.81, Tc=382.01, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.332473076183939e12
+
+Sat solver failed for heptacosane = [380.44, 3.72, 4.24, 6.0, 25.76, 454.89] at T=236.21, Tc=662.6, muting...
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.91, 3.68, 6.0, 23.24, 338.0] at T=185.77, Tc=476.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 21, 0
+n_failed = 0
+loss = 1.0265426120551108e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778661512e11
+
+Sat solver failed for squalane = [422.48, 4.04, 4.47, 6.0, 26.78, 501.11] at T=242.96, Tc=736.62, muting...
+
+Sat solver failed for nonadecane = [268.31, 3.56, 4.13, 6.0, 25.27, 431.92] at T=223.75, Tc=625.75, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 6.510766776165316e14
+
+Sat solver failed for eicosane = [282.33, 3.59, 4.15, 6.0, 25.35, 435.51] at T=263.87, Tc=631.5, muting...
+
+Sat solver failed for heptane = [100.12, 2.69, 3.52, 6.0, 22.55, 306.71] at T=141.65, Tc=427.02, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.0573143002643998e13
+
+epoch 323: batch_loss = 1.7316369090672416e14, val_loss = 1.0573143002643998e13, time = 134.86809587478638s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752744e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.328031499263335e12
+
+Sat solver failed for heptadecane = [240.28, 3.46, 4.07, 6.0, 24.97, 417.63] at T=222.11, Tc=602.81, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.72, 4.24, 6.0, 25.76, 454.27] at T=234.54, Tc=661.53, muting...
+
+Sat solver failed for 2-methylheptane = [114.14, 2.9, 3.67, 6.0, 23.2, 336.15] at T=192.57, Tc=473.3, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 21, 0
+n_failed = 0
+loss = 1.0282592384966702e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778661708e11
+
+Sat solver failed for nonadecane = [268.31, 3.56, 4.13, 6.0, 25.27, 431.36] at T=223.41, Tc=624.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.510766776165318e14
+
+Sat solver failed for eicosane = [282.33, 3.58, 4.15, 6.0, 25.35, 434.95] at T=263.47, Tc=630.53, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478640373e13
+
+epoch 324: batch_loss = 1.7319713512017116e14, val_loss = 1.0559045478640373e13, time = 135.51147389411926s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752675e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.53, 4.12, 6.0, 25.22, 428.24] at T=224.84, Tc=619.55, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3324730761839392e12
+
+Sat solver failed for heptacosane = [380.44, 3.71, 4.24, 6.0, 25.76, 453.67] at T=234.18, Tc=660.51, muting...
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.9, 3.67, 6.0, 23.23, 337.23] at T=185.28, Tc=474.92, muting...
+
+Sat solver failed for octane = [114.14, 2.79, 3.59, 6.0, 22.86, 320.38] at T=166.45, Tc=448.46, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 22, 0
+n_failed = 0
+loss = 1.0282592384966747e14
+
+Sat solver failed for octadecane = [254.3, 3.52, 4.11, 6.0, 25.14, 425.22] at T=223.1, Tc=614.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552915614e11
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.14, 2.92, 3.68, 6.0, 23.27, 338.91] at T=183.88, Tc=477.54, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.163148216662791e14
+
+Sat solver failed for heptane = [100.12, 2.69, 3.52, 6.0, 22.55, 306.1] at T=141.32, Tc=426.03, muting...
+
+Sat solver failed for eicosane = [282.33, 3.58, 4.15, 6.0, 25.34, 434.39] at T=263.07, Tc=629.58, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.0573143002643896e13
+
+epoch 325: batch_loss = 1.8624596932098978e14, val_loss = 1.0573143002643896e13, time = 151.28608512878418s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752719e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3280314992633337e12
+
+Sat solver failed for heptacosane = [380.44, 3.71, 4.24, 6.0, 25.75, 453.07] at T=233.81, Tc=659.47, muting...
+
+Sat solver failed for heptadecane = [240.28, 3.46, 4.06, 6.0, 24.96, 416.54] at T=221.43, Tc=600.96, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 18, 0
+n_failed = 0
+loss = 1.0265426120551114e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778662029e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.148821920229445e14
+
+Sat solver failed for eicosane = [282.33, 3.58, 4.15, 6.0, 25.34, 433.81] at T=262.66, Tc=628.6, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478640219e13
+
+epoch 326: batch_loss = 1.8592390547262247e14, val_loss = 1.0559045478640219e13, time = 132.96627116203308s
+
+Sat solver failed for 3-methylheptane = [114.14, 2.93, 3.69, 6.0, 23.32, 340.89] at T=198.31, Tc=480.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.0997459323943453e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.53, 4.12, 6.0, 25.21, 427.04] at T=224.1, Tc=617.51, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.3302485802303784e12
+
+Sat solver failed for heptacosane = [380.44, 3.71, 4.24, 6.0, 25.75, 452.45] at T=233.44, Tc=658.41, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 17, 0
+n_failed = 0
+loss = 1.0248317077016783e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778662231e11
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.14, 2.91, 3.68, 6.0, 23.27, 338.15] at T=183.39, Tc=476.28, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.163148216662806e14
+
+Sat solver failed for eicosane = [282.33, 3.57, 4.15, 6.0, 25.34, 433.23] at T=262.25, Tc=627.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478640166e13
+
+epoch 327: batch_loss = 1.8621049506679594e14, val_loss = 1.0559045478640166e13, time = 130.33749294281006s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752675e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3280314992633318e12
+
+Sat solver failed for heptacosane = [380.44, 3.7, 4.24, 6.0, 25.75, 451.82] at T=234.34, Tc=657.35, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 14, 0
+n_failed = 0
+loss = 1.0248317077016847e14
+
+Sat solver failed for octadecane = [254.3, 3.51, 4.1, 6.0, 25.14, 423.53] at T=222.06, Tc=612.03, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552916079e11
+
+Sat solver failed for squalane = [422.48, 4.02, 4.47, 6.0, 26.76, 497.29] at T=240.8, Tc=730.07, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 7.1488219202295e14
+
+Sat solver failed for eicosane = [282.33, 3.57, 4.15, 6.0, 25.34, 432.64] at T=261.83, Tc=626.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478640035e13
+
+epoch 328: batch_loss = 1.8589000446104003e14, val_loss = 1.0559045478640035e13, time = 123.75971794128418s
+
+Sat solver failed for 3-methylheptane = [114.14, 2.93, 3.69, 6.0, 23.32, 340.11] at T=197.78, Tc=479.42, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.0997459323943381e14
+
+Sat solver failed for pentane = [72.09, 2.49, 3.38, 6.0, 21.91, 276.45] at T=113.13, Tc=379.72, muting...
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.52, 4.12, 6.0, 25.21, 425.81] at T=223.35, Tc=615.44, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3324730761839465e12
+
+Sat solver failed for heptacosane = [380.44, 3.7, 4.24, 6.0, 25.75, 451.19] at T=232.68, Tc=656.27, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 19, 0
+n_failed = 0
+loss = 1.0248317077016838e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778662662e11
+
+Sat solver failed for squalane = [422.48, 4.01, 4.47, 6.0, 26.76, 496.52] at T=240.36, Tc=728.74, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.148821920229481e14
+
+Sat solver failed for eicosane = [282.33, 3.57, 4.15, 6.0, 25.33, 432.05] at T=261.41, Tc=625.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478639938e13
+
+epoch 329: batch_loss = 1.859244140373201e14, val_loss = 1.0559045478639938e13, time = 131.5332510471344s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752686e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.52, 4.11, 6.0, 25.2, 425.19] at T=222.97, Tc=614.41, muting...
+
+Sat solver failed for pentane = [72.09, 2.49, 3.38, 6.0, 21.91, 276.2] at T=113.01, Tc=379.34, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 1.3369444623456301e12
+
+Sat solver failed for heptadecane = [240.28, 3.44, 4.06, 6.0, 24.95, 414.3] at T=220.03, Tc=597.18, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.7, 4.24, 6.0, 25.74, 450.56] at T=232.3, Tc=655.2, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 20, 0
+n_failed = 0
+loss = 1.026542612055115e14
+
+Sat solver failed for octadecane = [254.3, 3.5, 4.1, 6.0, 25.13, 422.38] at T=221.35, Tc=610.09, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552916436e11
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.14, 2.9, 3.68, 6.0, 23.26, 336.99] at T=182.65, Tc=474.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.163148216662781e14
+
+Sat solver failed for eicosane = [282.33, 3.56, 4.15, 6.0, 25.33, 431.46] at T=261.0, Tc=624.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.055904547863987e13
+
+epoch 330: batch_loss = 1.8621253106939075e14, val_loss = 1.055904547863987e13, time = 140.75327610969543s
+
+Sat solver failed for 3-methylheptane = [114.14, 2.92, 3.69, 6.0, 23.31, 339.32] at T=197.24, Tc=478.13, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.0997459323943314e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.51, 4.11, 6.0, 25.2, 424.58] at T=222.6, Tc=613.38, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.332473076183937e12
+
+Sat solver failed for heptacosane = [380.44, 3.69, 4.24, 6.0, 25.74, 449.93] at T=234.47, Tc=654.13, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 15, 0
+n_failed = 0
+loss = 1.0248317077016848e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778663073e11
+
+Sat solver failed for nonadecane = [268.31, 3.53, 4.13, 6.0, 25.25, 427.35] at T=220.97, Tc=617.98, muting...
+
+Sat solver failed for squalane = [422.48, 4.0, 4.46, 6.0, 26.75, 494.97] at T=239.49, Tc=726.09, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 6.510766776165309e14
+
+Sat solver failed for eicosane = [282.33, 3.56, 4.15, 6.0, 25.33, 430.88] at T=260.58, Tc=623.62, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478639754e13
+
+epoch 331: batch_loss = 1.7316331115603656e14, val_loss = 1.0559045478639754e13, time = 127.60823392868042s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.098054015575263e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.51, 4.11, 6.0, 25.19, 423.98] at T=222.23, Tc=612.37, muting...
+
+Sat solver failed for pentane = [72.09, 2.48, 3.38, 6.0, 21.9, 275.73] at T=112.78, Tc=378.58, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.332473076183938e12
+
+Sat solver failed for heptacosane = [380.44, 3.69, 4.24, 6.0, 25.74, 449.32] at T=231.55, Tc=653.1, muting...
+
+Sat solver failed for heptadecane = [240.28, 3.44, 4.06, 6.0, 24.95, 413.19] at T=219.34, Tc=595.31, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 21, 0
+n_failed = 0
+loss = 1.0265426120551053e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778663231e11
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.14, 2.9, 3.68, 6.0, 23.26, 336.23] at T=182.17, Tc=473.12, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.163148216662798e14
+
+Sat solver failed for eicosane = [282.33, 3.56, 4.15, 6.0, 25.32, 430.31] at T=260.19, Tc=622.67, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478639662e13
+
+epoch 332: batch_loss = 1.8621131971667334e14, val_loss = 1.0559045478639662e13, time = 125.52122282981873s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752597e14
+
+Sat solver failed for pentane = [72.09, 2.48, 3.38, 6.0, 21.9, 275.5] at T=112.67, Tc=378.21, muting...
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.51, 4.11, 6.0, 25.19, 423.39] at T=221.87, Tc=611.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.33247307618394e12
+
+Sat solver failed for heptadecane = [240.28, 3.43, 4.06, 6.0, 24.94, 412.65] at T=219.01, Tc=594.4, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.68, 4.24, 6.0, 25.73, 448.72] at T=231.19, Tc=652.08, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 18, 0
+n_failed = 0
+loss = 1.0265426120551105e14
+
+Sat solver failed for octadecane = [254.3, 3.49, 4.1, 6.0, 25.12, 420.71] at T=220.33, Tc=607.26, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552917001e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.148821920229475e14
+
+Sat solver failed for eicosane = [282.33, 3.55, 4.15, 6.0, 25.32, 429.74] at T=259.78, Tc=621.71, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478639637e13
+
+epoch 333: batch_loss = 1.8592511086349203e14, val_loss = 1.0559045478639637e13, time = 145.47910499572754s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752581e14
+
+Sat solver failed for pentane = [72.09, 2.48, 3.38, 6.0, 21.9, 275.26] at T=112.56, Tc=377.84, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3324730761839375e12
+
+Sat solver failed for heptacosane = [380.44, 3.68, 4.24, 6.0, 25.73, 448.11] at T=234.63, Tc=651.04, muting...
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.88, 3.67, 6.0, 23.21, 333.81] at T=183.08, Tc=469.28, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 19, 0
+n_failed = 0
+loss = 1.0265426120551088e14
+
+Sat solver failed for octadecane = [254.3, 3.49, 4.1, 6.0, 25.12, 420.15] at T=219.99, Tc=606.32, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552917223e11
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 7.148821920229461e14
+
+Sat solver failed for eicosane = [282.33, 3.55, 4.15, 6.0, 25.32, 429.17] at T=259.38, Tc=620.73, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478639508e13
+
+epoch 334: batch_loss = 1.859251108634917e14, val_loss = 1.0559045478639508e13, time = 144.96766781806946s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752623e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.5, 4.11, 6.0, 25.18, 422.19] at T=221.14, Tc=609.36, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3324730761839495e12
+
+Sat solver failed for heptacosane = [380.44, 3.68, 4.24, 6.0, 25.73, 447.49] at T=231.72, Tc=649.99, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 15, 0
+n_failed = 0
+loss = 1.0248317077016872e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778663882e11
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.14, 2.89, 3.68, 6.0, 23.25, 335.09] at T=181.45, Tc=471.24, muting...
+
+Sat solver failed for squalane = [422.48, 3.99, 4.46, 6.0, 26.73, 491.97] at T=237.8, Tc=720.98, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 7.163148216662805e14
+
+Sat solver failed for eicosane = [282.33, 3.55, 4.14, 6.0, 25.32, 428.59] at T=258.97, Tc=619.75, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478639443e13
+
+epoch 335: batch_loss = 1.8617710162960516e14, val_loss = 1.0559045478639443e13, time = 137.87886881828308s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752589e14
+
+Sat solver failed for pentane = [72.09, 2.48, 3.38, 6.0, 21.9, 274.79] at T=112.34, Tc=377.09, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.332473076183947e12
+
+Sat solver failed for heptacosane = [380.44, 3.67, 4.24, 6.0, 25.72, 446.87] at T=231.34, Tc=648.94, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 19, 0
+n_failed = 0
+loss = 1.0248317077016883e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778664148e11
+
+Sat solver failed for 2-methylundecane = [170.2, 3.19, 3.89, 6.0, 24.21, 378.02] at T=237.07, Tc=539.16, muting...
+
+Sat solver failed for nonadecane = [268.31, 3.52, 4.13, 6.0, 25.23, 424.52] at T=219.26, Tc=613.21, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 6.522647737435684e14
+
+Sat solver failed for eicosane = [282.33, 3.54, 4.14, 6.0, 25.31, 428.01] at T=258.56, Tc=618.79, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.055904547863933e13
+
+epoch 336: batch_loss = 1.733670920450627e14, val_loss = 1.055904547863933e13, time = 129.00683307647705s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752528e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.328031499263336e12
+
+Sat solver failed for heptacosane = [380.44, 3.67, 4.24, 6.0, 25.72, 446.27] at T=229.72, Tc=647.93, muting...
+
+Sat solver failed for heptadecane = [240.28, 3.42, 4.06, 6.0, 24.93, 410.46] at T=217.65, Tc=590.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 23, 0
+n_failed = 0
+loss = 1.0265426120551106e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778664354e11
+
+Sat solver failed for 2-methylundecane = [170.2, 3.19, 3.89, 6.0, 24.2, 377.53] at T=237.69, Tc=538.34, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 7.1631482166628e14
+
+Sat solver failed for eicosane = [282.33, 3.54, 4.14, 6.0, 25.31, 427.46] at T=258.17, Tc=617.86, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478639293e13
+
+epoch 337: batch_loss = 1.8621043140128922e14, val_loss = 1.0559045478639293e13, time = 143.47647714614868s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.098054015575255e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.3280314992633318e12
+
+Sat solver failed for heptacosane = [380.44, 3.67, 4.23, 6.0, 25.72, 445.68] at T=230.62, Tc=646.93, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 17, 0
+n_failed = 0
+loss = 1.0248317077016856e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.49641077866457e11
+
+Sat solver failed for 2-methylundecane = [170.2, 3.19, 3.89, 6.0, 24.2, 377.03] at T=234.39, Tc=537.52, muting...
+
+Sat solver failed for nonadecane = [268.31, 3.51, 4.12, 6.0, 25.23, 423.42] at T=218.61, Tc=611.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 6.534572139149488e14
+
+Sat solver failed for eicosane = [282.33, 3.54, 4.14, 6.0, 25.31, 426.91] at T=257.78, Tc=616.92, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+val_loss = 1.0559045478639227e13
+
+epoch 338: batch_loss = 1.7360469176395453e14, val_loss = 1.0559045478639227e13, time = 131.39450001716614s
+
+Sat solver failed for 3-methylheptane = [114.14, 2.9, 3.69, 6.0, 23.29, 336.24] at T=195.15, Tc=473.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 1.0997459323943162e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.49, 4.11, 6.0, 25.17, 419.85] at T=219.72, Tc=605.43, muting...
+
+Sat solver failed for pentane = [72.09, 2.48, 3.38, 6.0, 21.89, 274.1] at T=112.01, Tc=375.99, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 1.3369444623456326e12
+
+Sat solver failed for heptacosane = [380.44, 3.66, 4.23, 6.0, 25.72, 445.1] at T=229.01, Tc=645.94, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 17, 0
+n_failed = 0
+loss = 1.0248317077016866e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 9.496410778664756e11
+
+Sat solver failed for 2,3,4-trimethyl pentane = [114.14, 2.89, 3.67, 6.0, 23.24, 333.59] at T=180.5, Tc=468.78, muting...
+
+Sat solver failed for nonadecane = [268.31, 3.51, 4.12, 6.0, 25.23, 422.9] at T=218.29, Tc=610.48, muting...
+
+Sat solver failed for squalane = [422.48, 3.97, 4.46, 6.0, 26.72, 489.05] at T=236.16, Tc=716.02, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+loss = 6.522647737435686e14
+
+Sat solver failed for eicosane = [282.33, 3.53, 4.14, 6.0, 25.3, 426.38] at T=257.41, Tc=616.03, muting...
+
+Sat solver failed for 2-methylpentane = [86.11, 2.66, 3.51, 6.0, 22.51, 301.47] at T=95.23, Tc=418.52, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+val_loss = 1.0573143002642633e13
+
+epoch 339: batch_loss = 1.734018246586762e14, val_loss = 1.0573143002642633e13, time = 124.47823715209961s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752506e14
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.32803149926334e12
+
+Sat solver failed for heptadecane = [240.28, 3.41, 4.05, 6.0, 24.92, 408.88] at T=216.68, Tc=588.08, muting...
+
+Sat solver failed for heptacosane = [380.44, 3.66, 4.23, 6.0, 25.71, 444.54] at T=228.68, Tc=644.99, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 22, 0
+n_failed = 0
+loss = 1.0265426120551134e14
+
+Sat solver failed for octadecane = [254.3, 3.47, 4.1, 6.0, 25.1, 416.89] at T=218.0, Tc=600.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 9.512264552918289e11
+
+Sat solver failed for nonadecane = [268.31, 3.51, 4.12, 6.0, 25.22, 422.38] at T=217.98, Tc=609.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 1, 0
+n_failed = 0
+loss = 6.510766776165319e14
+
+Sat solver failed for eicosane = [282.33, 3.53, 4.14, 6.0, 25.3, 425.86] at T=257.04, Tc=615.15, muting...
+
+Sat solver failed for 2-methylpentane = [86.11, 2.66, 3.51, 6.0, 22.51, 301.18] at T=95.12, Tc=418.05, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 3, 0
+n_failed = 0
+val_loss = 1.058727822056054e13
+
+epoch 340: batch_loss = 1.731631196668247e14, val_loss = 1.058727822056054e13, time = 147.66055488586426s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1.0980540155752514e14
+
+Sat solver failed for 2,2,4,4,6,8,8-heptamethylnonane = [226.27, 3.48, 4.1, 6.0, 25.16, 418.73] at T=219.04, Tc=603.56, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 2, 0
+n_failed = 0
+loss = 1.3324730761839456e12
+
+Sat solver failed for heptacosane = [380.44, 3.66, 4.23, 6.0, 25.71, 443.99] at T=229.6, Tc=644.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 19, 0

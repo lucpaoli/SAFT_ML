@@ -13316,3 +13316,978 @@ val_loss = 26.218647808041815
 
 epoch 277: batch_loss = 338.9741577642773, val_loss = 26.218647808041815, time = 145.44577813148499s
 (points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5830397040341695
+
+Sat solver failed for tetracosane = [338.39, 2.52, 3.39, 6.0, 23.0, 261.53] at T=120.59, Tc=353.81, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.329227756692396
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.09, 263.39] at T=129.17, Tc=356.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 10, 0
+n_failed = 0
+loss = 359.0881919074656
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1311.884232907829
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.997917304512823
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 26.12291126429702
+
+epoch 278: batch_loss = 337.3765219161068, val_loss = 26.12291126429702, time = 151.8726360797882s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5813877899462205
+
+Sat solver failed for tetracosane = [338.39, 2.52, 3.39, 6.0, 23.0, 261.56] at T=120.61, Tc=353.87, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.323547197576408
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.09, 263.43] at T=129.89, Tc=356.56, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 357.4887841979816
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1305.5974536223946
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.947951513812251
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 26.027601706361423
+
+epoch 279: batch_loss = 335.7878248643422, val_loss = 26.027601706361423, time = 159.68200397491455s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5797437200895843
+
+Sat solver failed for tetracosane = [338.39, 2.52, 3.39, 6.0, 23.0, 261.6] at T=121.7, Tc=353.93, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.3178998310914598
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.09, 263.47] at T=127.13, Tc=356.62, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 355.89630366036295
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1299.3473396421045
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.898143588014083
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.93272185477803
+
+epoch 280: batch_loss = 334.20788608833254, val_loss = 25.93272185477803, time = 152.0286180973053s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5781074441289297
+
+Sat solver failed for tetracosane = [338.39, 2.52, 3.39, 6.0, 23.0, 261.64] at T=120.65, Tc=354.0, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.3122823866650473
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.1, 263.5] at T=129.94, Tc=356.69, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 354.3117337696839
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1293.1230227348467
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.8485262622673
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.83821851075139
+
+epoch 281: batch_loss = 332.63473451951836, val_loss = 25.83821851075139, time = 138.123272895813s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5764782867967778
+
+Sat solver failed for tetracosane = [338.39, 2.52, 3.39, 6.0, 23.01, 261.68] at T=120.67, Tc=354.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.3066939123009185
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.1, 263.54] at T=127.18, Tc=356.75, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 11, 0
+n_failed = 0
+loss = 352.7345246369603
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1286.929287599014
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.799092962251216
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.744054710631307
+
+epoch 282: batch_loss = 331.0692154794647, val_loss = 25.744054710631307, time = 139.37225103378296s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5748554993423439
+
+Sat solver failed for tetracosane = [338.39, 2.52, 3.39, 6.0, 23.01, 261.71] at T=122.84, Tc=354.12, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 1.3011333650332437
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.1, 263.58] at T=127.2, Tc=356.81, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 10, 0
+n_failed = 0
+loss = 351.1649946294533
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1280.7684817767336
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.74986621814394
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.650306568478754
+
+epoch 283: batch_loss = 329.5118662977413, val_loss = 25.650306568478754, time = 142.31168413162231s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5732415606139655
+
+Sat solver failed for tetracosane = [338.39, 2.52, 3.39, 6.0, 23.01, 261.75] at T=121.79, Tc=354.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.2956049862302959
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.1, 263.62] at T=130.01, Tc=356.87, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 349.6039519176324
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1274.6417045959317
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.700890489077743
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.557044936036835
+
+epoch 284: batch_loss = 327.9630787098972, val_loss = 25.557044936036835, time = 143.3433117866516s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5716358035302153
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.01, 261.79] at T=122.88, Tc=354.24, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 1.290108748725582
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.11, 263.66] at T=128.64, Tc=356.93, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 348.0512107855283
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1268.5494288620173
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.65213452299788
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.464228653778594
+
+epoch 285: batch_loss = 326.42290374455985, val_loss = 25.464228653778594, time = 165.2745440006256s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5700378761041985
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.02, 261.82] at T=125.05, Tc=354.3, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.284643108853995
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.11, 263.69] at T=127.27, Tc=357.0, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 346.50722072139354
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1262.492080976262
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.603608650316746
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.37183362627821
+
+epoch 286: batch_loss = 324.8915182665861, val_loss = 25.37183362627821, time = 137.25313997268677s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5684482892699176
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.02, 261.86] at T=121.85, Tc=354.36, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.279210133191061
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.11, 263.73] at T=127.99, Tc=357.06, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 344.9714884526955
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1256.4697109848885
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.555301190857168
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.279873970258098
+
+epoch 287: batch_loss = 323.36883181018044, val_loss = 25.279873970258098, time = 137.40080285072327s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5668680024415641
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.02, 261.9] at T=120.79, Tc=354.42, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.2738089726842716
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.11, 263.77] at T=129.4, Tc=357.12, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 343.44445726934055
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1250.4812148827223
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.50722684211316
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.188367553939713
+
+epoch 288: batch_loss = 321.8547151938604, val_loss = 25.188367553939713, time = 147.17199110984802s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5652959664783048
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.02, 261.93] at T=125.11, Tc=354.48, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.268440561936268
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.12, 263.81] at T=128.03, Tc=357.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 341.92547644162596
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1244.5252556389862
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.459367230272987
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.097274374188675
+
+epoch 289: batch_loss = 320.34876716786, val_loss = 25.097274374188675, time = 147.34921002388s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5637324622676942
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.03, 261.97] at T=121.91, Tc=354.54, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 1.2631036897974262
+
+Sat solver failed for heptacosane = [380.44, 2.54, 3.4, 6.0, 23.12, 263.85] at T=128.75, Tc=357.25, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 340.41435768868575
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1238.6039568452109
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.411726445004652
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 25.00660995111866
+
+epoch 290: batch_loss = 318.8513754261933, val_loss = 25.00660995111866, time = 158.75019097328186s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5621769912698285
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.03, 262.01] at T=120.86, Tc=354.6, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 1.2577984773513158
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.4, 6.0, 23.12, 263.88] at T=128.07, Tc=357.31, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 338.9114473652185
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1232.714514969967
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.364302399227235
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.916359859065103
+
+epoch 291: batch_loss = 317.36204804060674, val_loss = 24.916359859065103, time = 148.6075620651245s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5606294348322758
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.03, 262.05] at T=120.88, Tc=354.66, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.252523739258109
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.4, 6.0, 23.13, 263.92] at T=128.1, Tc=357.37, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 337.41655364047574
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1226.8584923696767
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.317097770472026
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.82652299119084
+
+epoch 292: batch_loss = 315.88105939094294, val_loss = 24.82652299119084, time = 143.19733905792236s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5590900179894933
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.03, 262.08] at T=124.12, Tc=354.72, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 1.247279590193009
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.4, 6.0, 23.13, 263.96] at T=127.42, Tc=357.43, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 335.9300916787139
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1221.0369794504445
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.270098739283728
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.737111588786476
+
+epoch 293: batch_loss = 314.40870789532494, val_loss = 24.737111588786476, time = 163.19926500320435s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5575581918685474
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.04, 262.12] at T=123.07, Tc=354.78, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.242065297778233
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.13, 264.0] at T=127.44, Tc=357.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 334.4516346134747
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1215.2480710382908
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.223322650373243
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.64811260007487
+
+epoch 294: batch_loss = 312.94453035835716, val_loss = 24.64811260007487, time = 173.51730585098267s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5560344262564619
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.04, 262.16] at T=120.94, Tc=354.84, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.2368820052462888
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.13, 264.04] at T=127.47, Tc=357.56, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 332.9812895509792
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1209.4924283223536
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.176755358276695
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.559527571512632
+
+epoch 295: batch_loss = 311.48867793262247, val_loss = 24.559527571512632, time = 167.0680570602417s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5545180954591449
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.04, 262.2] at T=120.96, Tc=354.9, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 1.2317286838580983
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.14, 264.08] at T=133.07, Tc=357.62, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 331.5189185203194
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1203.768722042545
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.13040104844466
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.471337587889913
+
+epoch 296: batch_loss = 310.04085767812523, val_loss = 24.471337587889913, time = 150.9349021911621s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5530090002622917
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.39, 6.0, 23.05, 262.23] at T=126.36, Tc=354.96, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 1.2266039264834825
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.14, 264.12] at T=129.6, Tc=357.68, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 330.06403087964316
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1198.0769511616463
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.084247348274245
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.38354984602561
+
+epoch 297: batch_loss = 308.6009684632619, val_loss = 24.38354984602561, time = 154.68152403831482s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5515074738672058
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.4, 6.0, 23.05, 262.27] at T=121.0, Tc=355.02, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.221509284979014
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.14, 264.16] at T=131.02, Tc=357.74, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 328.6168656088
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1192.4174330653207
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 13.03830327536902
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.296167221618262
+
+epoch 298: batch_loss = 307.1691237416672, val_loss = 24.296167221618262, time = 154.18596982955933s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5500129759422597
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.4, 6.0, 23.05, 262.31] at T=121.02, Tc=355.08, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.2164427442917372
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.14, 264.19] at T=127.56, Tc=357.81, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 327.17763311555467
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1186.7886485567096
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.99256178986352
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.209189854918336
+
+epoch 299: batch_loss = 305.7450598364723, val_loss = 24.209189854918336, time = 161.2290699481964s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5485260795895996
+
+Sat solver failed for 2,3-dimethyldodecane = [198.24, 2.52, 3.39, 6.0, 22.99, 261.07] at T=146.14, Tc=353.33, muting...
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.4, 6.0, 23.05, 262.35] at T=124.27, Tc=355.14, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 1.2001467528149161
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.15, 264.23] at T=127.58, Tc=357.87, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 325.74564521876516
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1181.191436161754
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.947021864217229
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.1225982486459
+
+epoch 300: batch_loss = 304.3265552154282, val_loss = 24.1225982486459, time = 149.98735308647156s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.547046356186406
+
+Sat solver failed for tetracosane = [338.39, 2.53, 3.4, 6.0, 23.06, 262.38] at T=121.06, Tc=355.2, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.2063960557671216
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.15, 264.27] at T=128.3, Tc=357.93, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 324.3211880130356
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1175.6254964646962
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.90168097449199
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 24.036406888325438
+
+epoch 301: batch_loss = 302.9203615728355, val_loss = 24.036406888325438, time = 144.14482498168945s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5455741134882093
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.06, 262.42] at T=121.08, Tc=355.26, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 1.2014154429269026
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.15, 264.31] at T=131.11, Tc=357.99, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 322.9043125386565
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1170.091016829324
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.856541378553997
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.950594609922444
+
+epoch 302: batch_loss = 301.5197720605899, val_loss = 23.950594609922444, time = 140.8269820213318s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5441089781116237
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.06, 262.46] at T=126.48, Tc=355.32, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.196461662815149
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.16, 264.35] at T=128.34, Tc=358.05, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 321.49482118707766
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1164.5866848822668
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.811600331475123
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.86516137323283
+
+epoch 303: batch_loss = 300.12673540834925, val_loss = 23.86516137323283, time = 145.4451448917389s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.54265085257406
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.06, 262.5] at T=122.2, Tc=355.38, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.1915349987125623
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.16, 264.39] at T=127.67, Tc=358.11, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 320.09242192321165
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1159.1133458568113
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.766855076677885
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.780113846054874
+
+epoch 304: batch_loss = 298.7413617415975, val_loss = 23.780113846054874, time = 152.29297614097595s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5411999237613775
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.07, 262.53] at T=121.14, Tc=355.44, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 1.186636117787268
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.16, 264.43] at T=128.39, Tc=358.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 318.6973436865988
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1153.6702310792411
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.722304033649454
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.69544420224957
+
+epoch 305: batch_loss = 297.3635429682076, val_loss = 23.69544420224957, time = 153.3685598373413s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5397560125388962
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.07, 262.57] at T=121.16, Tc=355.5, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 1.1817641888224926
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.16, 264.46] at T=129.11, Tc=358.24, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 317.3094560970686
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1148.2569051315497
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.677949974222736
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.61113655815618
+
+epoch 306: batch_loss = 295.99316628084046, val_loss = 23.61113655815618, time = 138.66447186470032s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5383190357847036
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.07, 262.61] at T=128.72, Tc=355.56, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 1.1769196198202005
+
+Sat solver failed for heptacosane = [380.44, 2.55, 3.41, 6.0, 23.17, 264.5] at T=130.53, Tc=358.3, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 315.92875836754195
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1142.8733814488646
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.633782995561033
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.527208593891736
+
+epoch 307: batch_loss = 294.6302322935145, val_loss = 23.527208593891736, time = 137.0930998325348s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.536888301031635
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.07, 262.64] at T=121.21, Tc=355.62, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 1.1721010722844392
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.41, 6.0, 23.17, 264.54] at T=128.45, Tc=358.36, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 314.55495213348917
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1137.5186122753219
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.589811311124016
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.443636320434674
+
+epoch 308: batch_loss = 293.2744730186502, val_loss = 23.443636320434674, time = 152.8645339012146s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.535463967204756
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.08, 262.68] at T=124.46, Tc=355.68, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 1.1673099228707178
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.41, 6.0, 23.17, 264.58] at T=127.77, Tc=358.42, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 10, 0
+n_failed = 0
+loss = 313.1882540286824
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1132.193318301066
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.54603173818578
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.360433790608344
+
+epoch 309: batch_loss = 291.92607559160194, val_loss = 23.360433790608344, time = 147.05500888824463s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5340465000333238
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.08, 262.72] at T=121.25, Tc=355.74, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.1625446377199269
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.41, 6.0, 23.17, 264.62] at T=127.8, Tc=358.48, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 11, 0
+n_failed = 0
+loss = 311.82874094221154
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1126.8979825371614
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.502446623472169
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.27759336655381
+
+epoch 310: batch_loss = 290.5851522481197, val_loss = 23.27759336655381, time = 154.34495782852173s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5326359256826017
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.08, 262.76] at T=121.27, Tc=355.8, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 1.1578051830358256
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.41, 6.0, 23.18, 264.66] at T=129.92, Tc=358.54, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 5, 0
+n_failed = 0
+loss = 310.4759507382955
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1121.6305759407564
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.459044867249634
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.195087623491457
+
+epoch 311: batch_loss = 289.25120253100397, val_loss = 23.195087623491457, time = 137.67944502830505s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5312319433708204
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.09, 262.79] at T=122.36, Tc=355.86, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.153090760544464
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.41, 6.0, 23.18, 264.69] at T=132.04, Tc=358.6, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 309.1303260783738
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1116.3920376563685
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.415831156979142
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.112937066074828
+
+epoch 312: batch_loss = 287.9245035191273, val_loss = 23.112937066074828, time = 142.0650990009308s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5298344733575763
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.09, 262.83] at T=121.31, Tc=355.92, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 8, 0
+n_failed = 0
+loss = 1.1484014762463366
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.41, 6.0, 23.18, 264.73] at T=129.26, Tc=358.67, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 307.7913923260358
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1111.1815129476522
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.372799461854148
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 23.03115160891678
+
+epoch 313: batch_loss = 286.60478813702923, val_loss = 23.03115160891678, time = 150.28638696670532s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5284437347048773
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.09, 262.87] at T=125.64, Tc=355.98, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.143737370184854
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.41, 6.0, 23.19, 264.77] at T=127.88, Tc=358.73, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 11, 0
+n_failed = 0
+loss = 306.45935549216216
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1105.9989442065928
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.329947547496838
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 22.9497172264376
+
+epoch 314: batch_loss = 285.29208567022835, val_loss = 22.9497172264376, time = 166.2426950931549s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5270595852385983
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.09, 262.91] at T=125.66, Tc=356.04, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 1.1390992890102274
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.42, 6.0, 23.19, 264.81] at T=127.91, Tc=358.79, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 305.1339724996279
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1100.8449543856639
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.287279417602019
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 22.868621827344032
+
+epoch 315: batch_loss = 283.9864730354285, val_loss = 22.868621827344032, time = 166.2924621105194s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.525682342072008
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.1, 262.94] at T=121.37, Tc=356.1, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 1.13448651010579
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.42, 6.0, 23.19, 264.85] at T=134.92, Tc=358.85, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 303.8153010450341
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1095.7181785334558
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.244791532580775
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 22.787886081649404
+
+epoch 316: batch_loss = 282.6876879926497, val_loss = 22.787886081649404, time = 162.55084013938904s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5243114307868741
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.1, 262.98] at T=121.39, Tc=356.15, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 9, 0
+n_failed = 0
+loss = 1.1298968391848354
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.42, 6.0, 23.19, 264.89] at T=133.55, Tc=358.91, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 7, 0
+n_failed = 0
+loss = 302.50322167819155
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 1090.61958298381
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 12.202482317172903
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+val_loss = 22.70749140102303
+
+epoch 317: batch_loss = 281.39589904982927, val_loss = 22.70749140102303, time = 135.5214560031891s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.5229472226571827
+
+Sat solver failed for tetracosane = [338.39, 2.54, 3.4, 6.0, 23.1, 263.02] at T=123.56, Tc=356.21, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 4, 0
+n_failed = 0
+loss = 1.1253319646154474
+
+Sat solver failed for heptacosane = [380.44, 2.56, 3.42, 6.0, 23.2, 264.92] at T=132.87, Tc=358.97, muting...
+(points skipped, sat solves failed, crit solves failed) = 0, 6, 0
+n_failed = 0
+loss = 301.19766053040354
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0

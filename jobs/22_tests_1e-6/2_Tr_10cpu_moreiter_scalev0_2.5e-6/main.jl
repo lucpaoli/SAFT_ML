@@ -439,7 +439,7 @@ function create_data(model, mol_dict, batch_mols, x0_cache, Tc0_cache)
                 x0 = nothing
             else
                 p_sat_Vl = pressure(saft_model, Vₗ, T)
-                x0 = [0.75*Vₗ, 1.25*Vᵥ]
+                x0 = [1.25*Vₗ, 0.75*Vᵥ]
                 push!(mol_data, (fp, Mw, Tr, Tc, Vc, p_sat, p_sat_Vl, Vₗ, Vᵥ))
                 # what is Y?
                 #* Y_vec is [[p_sat, vl_sat], etc]
