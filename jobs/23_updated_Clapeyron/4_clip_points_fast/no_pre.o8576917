@@ -7124,3 +7124,319 @@ n_failed = 0
 val_loss = 0.2941093103272952
 
 epoch 5: batch_loss = 0.30919989983026847, val_loss = 0.2941093103272952, time = 4736.882403850555s
+
+Sat solver failed for 2,2,3,4-tetramethylpentane = [128.16, 2.49, 4.41, 6.0, 27.1, 484.0] at T=18.92, Tc=19.92, muting...
+(points skipped, sat solves failed, crit solves failed) = 50, 50, 0
+n_failed = 0
+loss = 0.2784300825043028
+
+Sat solver failed for 2,3,3-trimethylpentane = [114.14, 2.35, 4.24, 6.0, 25.91, 450.45] at T=17.68, Tc=18.61, muting...
+
+Sat solver failed for 2,2,3-trimethylpentane = [114.14, 2.42, 4.2, 6.0, 25.66, 443.02] at T=17.17, Tc=18.08, muting...
+
+Sat solver failed for 3,3-diethylpentane = [128.16, 2.52, 4.39, 6.0, 26.77, 479.39] at T=18.61, Tc=19.59, muting...
+(points skipped, sat solves failed, crit solves failed) = 150, 150, 0
+n_failed = 0
+loss = 0.32650958208939085
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.2, 4.18, 6.0, 26.1, 443.21] at T=16.92, Tc=17.81, muting...
+(points skipped, sat solves failed, crit solves failed) = 50, 50, 0
+n_failed = 0
+loss = 0.28706499756780696
+
+Sat solver failed for 2,2,3,3-tetramethylpentane = [128.16, 2.46, 4.31, 6.0, 26.17, 461.83] at T=17.72, Tc=18.65, muting...
+(points skipped, sat solves failed, crit solves failed) = 50, 50, 0
+n_failed = 0
+loss = 0.29789234546754706
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.30178275605086563
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+n_failed = 0
+val_loss = 0.263696889043014
+
+epoch 6: batch_loss = 0.2983359527359827, val_loss = 0.263696889043014, time = 6599.4414439201355s
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -6.278830260668026451260625409383876886114152402520611349603519718147196430029982e-07, Tc=19.27000000000000000000000000000000000000000000000000000000000000000000000000001 for 2,2,3,4-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.21852747652016546
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.34924792297518521069449368994230719764754328419122585995352157544200127945217e-06, Tc=18.02000000000000000000000000000000000000000000000000000000000000000000000000001 for 2,2,3-trimethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.924255947546551666490116613663671622502507688771975827388158433790611036596663e-06, Tc=19.56000000000000000000000000000000000000000000000000000000000000000000000000003 for 3,3-diethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.369205224902146927313071018077658995741813210667917022358123248280209962436979e-06, Tc=17.89999999999999999999999999999999999999999999999999999999999999999999999999994 for 2,3,3-trimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 3
+n_failed = 0
+loss = 0.2727776566759816
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.633226399814934763637780305655229246788967886278102214368247125415563151118599e-06, Tc=17.72999999999999999999999999999999999999999999999999999999999999999999999999999 for 3,3-dimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.2410788467201387
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.830348924380410223113770241781581048475748976659882346448714290476157692089537e-06, Tc=18.54999999999999999999999999999999999999999999999999999999999999999999999999989 for 2,2,3,3-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.2642107805494553
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.2438876990438044
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+n_failed = 0
+val_loss = 0.34242856892501783
+
+epoch 7: batch_loss = 0.24809649190190908, val_loss = 0.34242856892501783, time = 208.30726289749146s
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.547551221493236232106115224871183070856573316990197338319916406946903171374861e-06, Tc=19.02000000000000000000000000000000000000000000000000000000000000000000000000001 for 2,2,3,4-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.15884414522077808
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -3.297858171103036342881511569431450485608122305963534154136270328966591243291097e-06, Tc=19.43999999999999999999999999999999999999999999999999999999999999999999999999997 for 3,3-diethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.276789490412859743078020989682121359457783018698790740001037163627643939634448e-06, Tc=17.72000000000000000000000000000000000000000000000000000000000000000000000000012 for 2,3,3-trimethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.397595649711561929771976635315268413358385058582579273661409243255232896753009e-06, Tc=17.22999999999999999999999999999999999999999999999999999999999999999999999999999 for 2,2,3-trimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 3
+n_failed = 0
+loss = 0.19622112374307557
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.449337908317005808556121001156957920994231792193573312137656493337120845323337e-06, Tc=16.95999999999999999999999999999999999999999999999999999999999999999999999999998 for 3,3-dimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.18510355222103503
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.730843061989733775470134397514796525772188542676029159874407140881179431399353e-06, Tc=18.37999999999999999999999999999999999999999999999999999999999999999999999999993 for 2,2,3,3-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 1
+n_failed = 0
+loss = 0.3032726372097921
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.28356043227904676
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+n_failed = 0
+val_loss = 0.6460046858421901
+
+epoch 8: batch_loss = 0.2254003781347455, val_loss = 0.6460046858421901, time = 193.02347993850708s
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.851102617180172981862427573235921797337979742145107645723264319627502957913335e-06, Tc=18.83999999999999999999999999999999999999999999999999999999999999999999999999991 for 2,2,3,4-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 1
+n_failed = 0
+loss = 0.19993536093133138
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -3.381022082165079011394123735777382780887624853841295523313082773456003483005705e-06, Tc=19.29000000000000000000000000000000000000000000000000000000000000000000000000002 for 3,3-diethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.435918613200883137674668062233142165606051689538562207946512957827024489279204e-06, Tc=17.10000000000000000000000000000000000000000000000000000000000000000000000000006 for 2,2,3-trimethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.330714863255785517611792150483543524936085171451274867295677601396178200369264e-06, Tc=17.58000000000000000000000000000000000000000000000000000000000000000000000000004 for 2,3,3-trimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 3
+n_failed = 0
+loss = 0.16779377936548825
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.310683708521186445480073830940577563905404398322713799455734490885905618762276e-06, Tc=16.83999999999999999999999999999999999999999999999999999999999999999999999999991 for 3,3-dimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.1725410429387794
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.22740247488172961842906606189995953778224435788026476112791518444273184423178e-06, Tc=18.24000000000000000000000000000000000000000000000000000000000000000000000000013 for 2,2,3,3-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 1
+n_failed = 0
+loss = 0.27431236012860144
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.21455949908806374
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+n_failed = 0
+val_loss = 0.3535520467585126
+
+epoch 9: batch_loss = 0.20582840849045284, val_loss = 0.3535520467585126, time = 303.7957489490509s
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.244616972950516024532594719883350037759909974878922501819256209530706077493855e-06, Tc=18.74000000000000000000000000000000000000000000000000000000000000000000000000013 for 2,2,3,4-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.13948864951432868
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.644630044191279630876225359963074364251153020621637791117299291056087698397272e-06, Tc=17.49000000000000000000000000000000000000000000000000000000000000000000000000013 for 2,3,3-trimethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.293542789136405339857608062713592638384104139663054354658360494904119576325115e-06, Tc=19.14000000000000000000000000000000000000000000000000000000000000000000000000008 for 3,3-diethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.779689745914388241262389742243662603214823257472941063125654775131547686122243e-06, Tc=17.64999999999999999999999999999999999999999999999999999999999999999999999999994 for 2,2,3-trimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 3
+n_failed = 0
+loss = 0.17271685223924124
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -2.427327784367954197410944789365729489283472294491567706526488298602445415894459e-06, Tc=17.37000000000000000000000000000000000000000000000000000000000000000000000000007 for 3,3-dimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.17712237330980418
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.370187313156449426668003848936203096836480784399389212237980110837072159911799e-06, Tc=18.10000000000000000000000000000000000000000000000000000000000000000000000000006 for 2,2,3,3-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.24373191175330458
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.19919924638622313
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+n_failed = 0
+val_loss = 0.26151261815702287
+
+epoch 10: batch_loss = 0.18645180664058036, val_loss = 0.26151261815702287, time = 474.9595699310303s
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -6.697639289791912403954265782232816889551650721300173628516731266903784103423473e-07, Tc=18.64999999999999999999999999999999999999999999999999999999999999999999999999994 for 2,2,3,4-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.12583403419656042
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.41305256475276089019801293339869864349935286709988638895436481945282317185076e-06, Tc=18.97000000000000000000000000000000000000000000000000000000000000000000000000012 for 3,3-diethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.719932877042790283605710804783412241187198805036852763539403700421554197120477e-06, Tc=17.50999999999999999999999999999999999999999999999999999999999999999999999999987 for 2,2,3-trimethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.098991442110035453685253355939934458209201073647060331516535164970421983187397e-06, Tc=17.41000000000000000000000000000000000000000000000000000000000000000000000000009 for 2,3,3-trimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 3
+n_failed = 0
+loss = 0.16912316538089728
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.5374438789765986150542163914538906546932513521480299265896151106956523344667e-06, Tc=17.25 for 3,3-dimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.1680719037958699
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -9.036883471673609502782379670922473266503714923167693478932055277163262251897822e-07, Tc=17.9300000000000000000000000000000000000000000000000000000000000000000000000001 for 2,2,3,3-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 1
+n_failed = 0
+loss = 0.23317491536263601
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.17702170903441933
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+n_failed = 0
+val_loss = 0.2555473866331957
+
+epoch 11: batch_loss = 0.1746451455540766, val_loss = 0.2555473866331957, time = 349.34439492225647s
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.555734895411551424686066292464542418424816171407607214301118266578568419730205e-06, Tc=19.04999999999999999999999999999999999999999999999999999999999999999999999999989 for 2,2,3,4-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 1
+n_failed = 0
+loss = 0.11430675424453025
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.320626565855999993288550953893548396025158788922525046011106003080011536906962e-06, Tc=17.35000000000000000000000000000000000000000000000000000000000000000000000000006 for 2,2,3-trimethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.109880567469912142705861997748092788754544516782264796530556918143967891454754e-06, Tc=18.77000000000000000000000000000000000000000000000000000000000000000000000000001 for 3,3-diethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -9.048470630016332859566745918518026624826822857032767465699218493369598593029147e-07, Tc=17.27000000000000000000000000000000000000000000000000000000000000000000000000001 for 2,3,3-trimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 3
+n_failed = 0
+loss = 0.14860498209631468
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.241986562405808203047322133577857784813934569422384354849420531102307966148679e-06, Tc=17.08999999999999999999999999999999999999999999999999999999999999999999999999991 for 3,3-dimethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 1
+n_failed = 0
+loss = 0.1447074707008257
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -7.841856555082959094050705288447783895643536324388853250862230605785315723662614e-07, Tc=17.74000000000000000000000000000000000000000000000000000000000000000000000000013 for 2,2,3,3-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 1
+n_failed = 0
+loss = 0.23723152775390802
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.14951041895721112
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+n_failed = 0
+val_loss = 0.2715594221249428
+
+epoch 12: batch_loss = 0.15887223075055795, val_loss = 0.2715594221249428, time = 238.25358891487122s
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -1.25752524050731581245724180246157479203575480588004922443255248803331405993399e-06, Tc=18.87999999999999999999999999999999999999999999999999999999999999999999999999993 for 2,2,3,4-tetramethylpentane, skipping...
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 1
+n_failed = 0
+loss = 0.11188048106022878
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -8.511779734439080555914012473788519205645680182054781679563622913369624217177249e-07, Tc=18.60000000000000000000000000000000000000000000000000000000000000000000000000006 for 3,3-diethylpentane, skipping...
+abs(∂²A∂V²/∂³A∂V²∂T) > 0.1, = -7.365004830518092203872441947702209767143337620342584940456608511012492662268044e-07, Tc=17.14999999999999999999999999999999999999999999999999999999999999999999999999994 for 2,3,3-trimethylpentane, skipping...
+
+Sat solver failed for 2,2,3-trimethylpentane = [114.14, 2.28, 4.33, 6.0, 26.02, 421.84] at T=16.35, Tc=17.21, muting...
+(points skipped, sat solves failed, crit solves failed) = 51, 50, 2
+n_failed = 0
+loss = 0.14439613758803793
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.09, 4.32, 6.0, 26.34, 422.24] at T=16.12, Tc=16.96, muting...
+(points skipped, sat solves failed, crit solves failed) = 50, 50, 0
+n_failed = 0
+loss = 0.13183277465799625
+
+Sat solver failed for 2,2,3,3-tetramethylpentane = [128.16, 2.35, 4.45, 6.0, 26.35, 436.41] at T=16.74, Tc=17.62, muting...
+(points skipped, sat solves failed, crit solves failed) = 52, 50, 0
+n_failed = 0
+loss = 0.22978691310608204
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.1356980202663646
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+n_failed = 0
+val_loss = 0.23432064384727447
+
+epoch 13: batch_loss = 0.15071886533574191, val_loss = 0.23432064384727447, time = 4607.880751132965s
+
+Sat solver failed for 2,2,3,4-tetramethylpentane = [128.16, 2.31, 4.59, 6.0, 27.45, 455.76] at T=17.82, Tc=18.75, muting...
+(points skipped, sat solves failed, crit solves failed) = 54, 50, 0
+n_failed = 0
+loss = 0.10044226215542061
+
+Sat solver failed for 2,2,3-trimethylpentane = [114.14, 2.32, 4.36, 6.0, 25.87, 419.95] at T=16.28, Tc=17.14, muting...
+
+Sat solver failed for 3,3-diethylpentane = [128.16, 2.39, 4.58, 6.0, 27.04, 452.53] at T=17.57, Tc=18.49, muting...
+
+Sat solver failed for 2,3,3-trimethylpentane = [114.14, 2.23, 4.4, 6.0, 26.11, 426.29] at T=16.73, Tc=17.61, muting...
+(points skipped, sat solves failed, crit solves failed) = 151, 150, 0
+n_failed = 0
+loss = 0.14115952716614535
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.12, 4.36, 6.0, 26.17, 420.03] at T=16.03, Tc=16.88, muting...
+(points skipped, sat solves failed, crit solves failed) = 50, 50, 0
+n_failed = 0
+loss = 0.12962604326359997
+
+Sat solver failed for 2,2,3,3-tetramethylpentane = [128.16, 2.38, 4.49, 6.0, 26.16, 434.49] at T=16.67, Tc=17.55, muting...
+(points skipped, sat solves failed, crit solves failed) = 51, 50, 0
+n_failed = 0
+loss = 0.19893361770866766
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.13119129900125887
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+n_failed = 0
+val_loss = 0.20032497189374326
+
+epoch 14: batch_loss = 0.1402705498590185, val_loss = 0.20032497189374326, time = 6136.602570056915s
+
+Sat solver failed for 2,2,3,4-tetramethylpentane = [128.16, 2.35, 4.63, 6.0, 27.25, 453.48] at T=17.73, Tc=18.66, muting...
+(points skipped, sat solves failed, crit solves failed) = 53, 50, 0
+n_failed = 0
+loss = 0.09073352270211679
+
+Sat solver failed for 2,2,3-trimethylpentane = [114.14, 2.35, 4.4, 6.0, 25.71, 417.97] at T=16.2, Tc=17.06, muting...
+
+Sat solver failed for 3,3-diethylpentane = [128.16, 2.42, 4.62, 6.0, 26.84, 449.88] at T=17.47, Tc=18.38, muting...
+
+Sat solver failed for 2,3,3-trimethylpentane = [114.14, 2.26, 4.44, 6.0, 25.94, 424.28] at T=16.65, Tc=17.53, muting...
+(points skipped, sat solves failed, crit solves failed) = 151, 150, 0
+n_failed = 0
+loss = 0.13748811059433247
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.14, 4.39, 6.0, 26.02, 417.72] at T=15.94, Tc=16.78, muting...
+(points skipped, sat solves failed, crit solves failed) = 50, 50, 0
+n_failed = 0
+loss = 0.1262665849405367
+
+Sat solver failed for 2,2,3,3-tetramethylpentane = [128.16, 2.4, 4.53, 6.0, 26.01, 431.98] at T=16.57, Tc=17.44, muting...
+(points skipped, sat solves failed, crit solves failed) = 52, 50, 0
+n_failed = 0
+loss = 0.18016150362268324
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+n_failed = 0
+loss = 0.12089740783726365
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+n_failed = 0
+val_loss = 0.1967306352054255
+
+epoch 15: batch_loss = 0.13110942593938657, val_loss = 0.1967306352054255, time = 5212.39953994751s
+
+Sat solver failed for 2,2,3,4-tetramethylpentane = [128.16, 2.36, 4.66, 6.0, 27.12, 450.56] at T=17.27, Tc=18.18, muting...
+(points skipped, sat solves failed, crit solves failed) = 54, 50, 0
+n_failed = 0
+loss = 0.08512093313785986
+
+Sat solver failed for 3,3-diethylpentane = [128.16, 2.42, 4.65, 6.0, 26.72, 446.82] at T=17.35, Tc=18.26, muting...
+
+Sat solver failed for 2,3,3-trimethylpentane = [114.14, 2.26, 4.47, 6.0, 25.84, 421.8] at T=16.55, Tc=17.42, muting...
+
+Sat solver failed for 2,2,3-trimethylpentane = [114.14, 2.35, 4.43, 6.0, 25.6, 415.55] at T=16.11, Tc=16.96, muting...
+(points skipped, sat solves failed, crit solves failed) = 152, 150, 0
+n_failed = 0
+loss = 0.13243036565011942
+
+Sat solver failed for 3,3-dimethylpentane = [100.12, 2.14, 4.42, 6.0, 25.92, 415.2] at T=15.85, Tc=16.68, muting...
+(points skipped, sat solves failed, crit solves failed) = 50, 50, 0
+n_failed = 0
+loss = 0.1175659812023817
+
+Sat solver failed for 2,2,3,3-tetramethylpentane = [128.16, 2.39, 4.55, 6.0, 25.91, 429.46] at T=16.48, Tc=17.34, muting...
+(points skipped, sat solves failed, crit solves failed) = 52, 50, 0
+n_failed = 0
+loss = 0.16789919317194857
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+n_failed = 0
+loss = 0.10872852296256946
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+n_failed = 0
+val_loss = 0.2000102060956445
+
+epoch 16: batch_loss = 0.12234899922497582, val_loss = 0.2000102060956445, time = 5345.959971904755s
+
+Sat solver failed for 2,2,3,4-tetramethylpentane = [128.16, 2.35, 4.69, 6.0, 27.02, 448.41] at T=17.19, Tc=18.09, muting...
+(points skipped, sat solves failed, crit solves failed) = 55, 50, 0
