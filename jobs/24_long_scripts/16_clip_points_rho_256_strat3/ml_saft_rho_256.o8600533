@@ -93,3 +93,3153 @@ loss = 0.17537530925550032
 (points skipped, sat solves failed, crit solves failed) = 8, 0, 0
 loss = 0.16568259329570684
 (points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.18468663194870916
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1852328655260491
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2060489268072316
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17871938794685904
+
+epoch 7: batch_loss = 0.18340526536663943, val_loss = 0.17871938794685904, time = 1.5723531246185303s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17532230025187426
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16562904042010088
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.18462104664979176
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18516596718065959
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20597717148041036
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1786588120093275
+
+epoch 8: batch_loss = 0.18334310519656738, val_loss = 0.1786588120093275, time = 1.567262887954712s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17527051368494634
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16557543852708917
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.18455481031627385
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18510093898094077
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2059069666088108
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1785981542602796
+
+epoch 9: batch_loss = 0.18328173362361216, val_loss = 0.1785981542602796, time = 2.786444902420044s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1752186027046015
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16552131549300458
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.184489850140494
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18503543651025067
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20583579983561553
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1785388356592847
+
+epoch 10: batch_loss = 0.18322020093679325, val_loss = 0.1785388356592847, time = 1.5019140243530273s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1751665206425685
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16546742292912572
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.1844250858497503
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18497000868258576
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2057653519415369
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1784800281761407
+
+epoch 11: batch_loss = 0.1831588780091134, val_loss = 0.1784800281761407, time = 2.217681884765625s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17511409781525217
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16541402789729373
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.18436162402399361
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18490453192560677
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2056951729322211
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17842040236185291
+
+epoch 12: batch_loss = 0.18309789091887346, val_loss = 0.17842040236185291, time = 1.549314022064209s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17506189004390071
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16536124913059733
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.1842985727888254
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18483984422360872
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.205625547441904
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17836186328426376
+
+epoch 13: batch_loss = 0.18303742072576723, val_loss = 0.17836186328426376, time = 1.5406548976898193s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1750100296522892
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16530934767607836
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.1842356896109582
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1847752241223564
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20555540642913764
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17830344420094718
+
+epoch 14: batch_loss = 0.18297713949816394, val_loss = 0.17830344420094718, time = 1.5879669189453125s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17495761951883076
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16525794813525063
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.18417265138124858
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18471065087167643
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20548451465666787
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17824436718957157
+
+epoch 15: batch_loss = 0.18291667691273486, val_loss = 0.17824436718957157, time = 1.536067008972168s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17490517775248637
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16520643415350705
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.18410932344262718
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1846457307942665
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20541275566508022
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1781850176761966
+
+epoch 16: batch_loss = 0.18285588436159345, val_loss = 0.1781850176761966, time = 2.4303770065307617s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17485301669782713
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16515468634342279
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.1840454048998768
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18458038867979526
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20534008093451225
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17812517901347935
+
+epoch 17: batch_loss = 0.18279471551108686, val_loss = 0.17812517901347935, time = 2.5230908393859863s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17480080861766428
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16510232533156016
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.18398142139660237
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18451440621571802
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2052672303368167
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1780649216666346
+
+epoch 18: batch_loss = 0.1827332383796723, val_loss = 0.1780649216666346, time = 2.863485097885132s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17474871734582217
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16504942074088055
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18391721661348276
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1844484893169376
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2051939971682679
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17800424605990622
+
+epoch 19: batch_loss = 0.1826715682370782, val_loss = 0.17800424605990622, time = 1.6151378154754639s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17469618471176757
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16499564715822718
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18385276125866287
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18438230719440082
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2051206992749217
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17794304905950023
+
+epoch 20: batch_loss = 0.18260951991959604, val_loss = 0.17794304905950023, time = 1.5415079593658447s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17464326070595643
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1649413437019747
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18378796487046573
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18431538261372654
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2050471377015719
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17788113551546092
+
+epoch 21: batch_loss = 0.18254701791873904, val_loss = 0.17788113551546092, time = 2.459627151489258s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17459008653832292
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16488644637740976
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18372232207073463
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18424750265957343
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20497288877383846
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1778184910007643
+
+epoch 22: batch_loss = 0.18248384928397582, val_loss = 0.1778184910007643, time = 3.435257911682129s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17453602049188952
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16483085308403883
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18365563895122972
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18417877866683166
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2048979270635427
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1777549722679405
+
+epoch 23: batch_loss = 0.18241984365150649, val_loss = 0.1777549722679405, time = 1.6144471168518066s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17448119752923785
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16477488574506977
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18358820105186144
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18410902995980985
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20482224075446231
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17769017985056884
+
+epoch 24: batch_loss = 0.18235511100808824, val_loss = 0.17769017985056884, time = 2.5779058933258057s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.174425932523116
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16471819926842318
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18351928504780604
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18403806450898152
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2047453594222061
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17762495886706686
+
+epoch 25: batch_loss = 0.18228936815410657, val_loss = 0.17762495886706686, time = 2.3158159255981445s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17437030121563793
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16466070050043927
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18344993037111645
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18396615335285602
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2046674820488088
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17755900927166757
+
+epoch 26: batch_loss = 0.1822229134977717, val_loss = 0.17755900927166757, time = 1.5570080280303955s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17431403113699467
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16460255310167166
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18337984177137973
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18389323810248673
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2045888141025861
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17749178595190526
+
+epoch 27: batch_loss = 0.18215569564302375, val_loss = 0.17749178595190526, time = 1.762747049331665s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17425671157075223
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16454334651632666
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18330860646512845
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18381948011478083
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20450910297279742
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17742343643355366
+
+epoch 28: batch_loss = 0.18208744952795713, val_loss = 0.17742343643355366, time = 1.6140260696411133s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17419831452634685
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1644826183767774
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18323626938876705
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18374496494900416
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20442794102939388
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1773542446036266
+
+epoch 29: batch_loss = 0.18201802165405787, val_loss = 0.1773542446036266, time = 1.6074700355529785s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17413913100063033
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16442124306062234
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1831631426016816
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1836695840719907
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20434556033629991
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17728413271412413
+
+epoch 30: batch_loss = 0.18194773221424498, val_loss = 0.17728413271412413, time = 2.774350881576538s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.174078881542544
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16435891631971614
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1830886289081693
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18359330220225242
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20426210409509546
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17721301172990814
+
+epoch 31: batch_loss = 0.18187636661355547, val_loss = 0.17721301172990814, time = 3.022773027420044s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17401737965345415
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16429596228462434
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18301285299912215
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18351589685189632
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.204177539749706
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17714092173894294
+
+epoch 32: batch_loss = 0.1818039263077606, val_loss = 0.17714092173894294, time = 2.3532769680023193s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17395483262299022
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16423200490910825
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18293572737920955
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1834374228026321
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20409197520422048
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17706789827641753
+
+epoch 33: batch_loss = 0.18173039258363213, val_loss = 0.17706789827641753, time = 3.990697145462036s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17389143019954328
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16416699856909792
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1828573492579434
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18335769580156366
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2040052986632301
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17699363421656794
+
+epoch 34: batch_loss = 0.1816557544982757, val_loss = 0.17699363421656794, time = 1.5599799156188965s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17382720822091266
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16410104285722138
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1827778706961634
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18327690336065586
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20391709971799335
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17691833339025276
+
+epoch 35: batch_loss = 0.1815800249705893, val_loss = 0.17691833339025276, time = 1.6424839496612549s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17376189702775965
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16403414755404305
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18269691384275066
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18319467231004619
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20382750992165344
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1768418265972527
+
+epoch 36: batch_loss = 0.18150302813125058, val_loss = 0.1768418265972527, time = 2.7428197860717773s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17369569558718567
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.163965942097974
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1826142210958815
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18311107196170637
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20373655772168778
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1767639073582828
+
+epoch 37: batch_loss = 0.18142469769288708, val_loss = 0.1767639073582828, time = 3.4525399208068848s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17362845417314487
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16389644870340953
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18253028918511788
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18302616475218442
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20364416925066517
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17668475509899026
+
+epoch 38: batch_loss = 0.1813451052129044, val_loss = 0.17668475509899026, time = 1.632615089416504s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17356005934395208
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1638256691897809
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18244521763372518
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.182939735233117
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2035501159177824
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17660437503360563
+
+epoch 39: batch_loss = 0.18126415946367153, val_loss = 0.17660437503360563, time = 3.07275390625s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17349058788035435
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1637536455304846
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1823588180761465
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18285202952687796
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20345458857031573
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17652255320966698
+
+epoch 40: batch_loss = 0.18118193391683585, val_loss = 0.17652255320966698, time = 4.060454845428467s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1734199486147678
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1636802938483108
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18227097937096223
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1827628212695241
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2033572889281695
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1764391816197854
+
+epoch 41: batch_loss = 0.1810982664063469, val_loss = 0.1764391816197854, time = 3.1722819805145264s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17334804003729432
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16360553062718342
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18218154355475993
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1826719644109845
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20325812691607456
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17635417183917904
+
+epoch 42: batch_loss = 0.18101304110925936, val_loss = 0.17635417183917904, time = 4.205082893371582s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17327472035242775
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1635291272916883
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1820906157102316
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18257925993183882
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20315706612875437
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17626753542581017
+
+epoch 43: batch_loss = 0.1809261578829882, val_loss = 0.17626753542581017, time = 1.6438419818878174s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17319997991741135
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1634512751196654
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18199781235780682
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18248490374989276
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2030538087610195
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17617921638349382
+
+epoch 44: batch_loss = 0.1808375559811592, val_loss = 0.17617921638349382, time = 3.006571054458618s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17312370363063248
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16337199214234582
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1819030267869336
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1823886594352144
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2029480766194487
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17608941247074006
+
+epoch 45: batch_loss = 0.180747091722915, val_loss = 0.17608941247074006, time = 2.9726219177246094s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17304612550909612
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1632912499879182
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18180618906555632
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18229048801787953
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20284007980105498
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1759979451144516
+
+epoch 46: batch_loss = 0.18065482647630102, val_loss = 0.1759979451144516, time = 4.9294281005859375s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1729671402611999
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16320908338881818
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18170742063132414
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18219060479718227
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20272944163223403
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1759047084555663
+
+epoch 47: batch_loss = 0.18056073814215173, val_loss = 0.1759047084555663, time = 3.0604259967803955s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17288661991375864
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16312548223873777
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18160668206748415
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18208880612412143
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2026165370231557
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17580973141832593
+
+epoch 48: batch_loss = 0.18046482547345158, val_loss = 0.17580973141832593, time = 3.321010112762451s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17280451091505714
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16304053176169678
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18150405931855887
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18198491000402633
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20250118194245562
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17571270153121726
+
+epoch 49: batch_loss = 0.18036703878835897, val_loss = 0.17571270153121726, time = 1.6027090549468994s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17272087591191393
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16295408239907
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1813993493189163
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1818790512326425
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20238376984413295
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17561371536032563
+
+epoch 50: batch_loss = 0.18026742574133514, val_loss = 0.17561371536032563, time = 2.952285051345825s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17263577259759427
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16286583178999836
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18129233977774045
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18177081771226516
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20226392043267075
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1755128783139987
+
+epoch 51: batch_loss = 0.1801657364620538, val_loss = 0.1755128783139987, time = 4.148726940155029s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17254915422070802
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16277568116677218
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18118303185396156
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1816601974631391
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20214155391037983
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1754098246746587
+
+epoch 52: batch_loss = 0.18006192372299215, val_loss = 0.1754098246746587, time = 1.6257829666137695s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1724610136804418
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16268371476629437
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1810715394129096
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1815476026691997
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2020166583587665
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17530471575918188
+
+epoch 53: batch_loss = 0.17995610577752238, val_loss = 0.17530471575918188, time = 1.667876958847046s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1723712189749083
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16258987896625646
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18095770993491983
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18143304703060503
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20188928239250548
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17519769929111678
+
+epoch 54: batch_loss = 0.17984822745983903, val_loss = 0.17519769929111678, time = 2.959981918334961s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17227975486641195
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1624940361598604
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1808415244211357
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18131612752437043
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20175918188469047
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17508844926645759
+
+epoch 55: batch_loss = 0.1797381249712938, val_loss = 0.17508844926645759, time = 3.551382064819336s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1721865258683257
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16239634068587025
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18072270841870713
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1811967447123301
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20162611696570706
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17497696357954184
+
+epoch 56: batch_loss = 0.17962568733018805, val_loss = 0.17497696357954184, time = 1.6393840312957764s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17209142382055895
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1622966600442782
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1806013732521142
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18107466714370266
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20148984645304677
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17486303873737802
+
+epoch 57: batch_loss = 0.17951079414274015, val_loss = 0.17486303873737802, time = 1.6032259464263916s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17199441934998594
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16219461584219602
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18047740171236304
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18094980287562915
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20135038306259215
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17474659519318042
+
+epoch 58: batch_loss = 0.17939332456855325, val_loss = 0.17474659519318042, time = 3.0552661418914795s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17189552192982702
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16209049815823565
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18035082015898635
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18082214611722744
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20120779151935583
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1746277865487384
+
+epoch 59: batch_loss = 0.17927335557672647, val_loss = 0.1746277865487384, time = 3.252303123474121s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.171794518547134
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16198436169103642
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18022166932251718
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18069156353486476
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20106227483792316
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1745062356651194
+
+epoch 60: batch_loss = 0.1791508775866951, val_loss = 0.1745062356651194, time = 2.785046100616455s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17169147996178666
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16187613308772328
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.18008978877607573
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18055826671581782
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20091352051176223
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17438204506850738
+
+epoch 61: batch_loss = 0.17902583781063316, val_loss = 0.17438204506850738, time = 2.8304121494293213s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17158641817400475
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16176560219868874
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17995498411239458
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18042215212177187
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20076148034334515
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1742553421249263
+
+epoch 62: batch_loss = 0.17889812739004102, val_loss = 0.1742553421249263, time = 1.7048449516296387s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17147937309345115
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1616527536414069
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1798171784962165
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18028308986073574
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20060593653504247
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17412616819013857
+
+epoch 63: batch_loss = 0.17876766632537053, val_loss = 0.17412616819013857, time = 4.649072885513306s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17137025582830792
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16153768168441157
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17967622834268684
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.18014084834718702
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2004465637815318
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17399414613792513
+
+epoch 64: batch_loss = 0.17863431559682502, val_loss = 0.17399414613792513, time = 6.520019054412842s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17125892298608197
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1614202239775242
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.179531901641167
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17999535719652593
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.2002834412112445
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17385925258494547
+
+epoch 65: batch_loss = 0.17849796940250873, val_loss = 0.17385925258494547, time = 3.272737979888916s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17114531491472562
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16130022058523116
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17938433248307303
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17984658771345113
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.20011646914702863
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17372135919973833
+
+epoch 66: batch_loss = 0.1783585849687019, val_loss = 0.17372135919973833, time = 4.800795078277588s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17102941256172308
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16117759494141082
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1792335487575666
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17969443397235668
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19994560349233859
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1735803821917847
+
+epoch 67: batch_loss = 0.17821611874507917, val_loss = 0.1735803821917847, time = 3.071497917175293s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17091114767724416
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16105227739487665
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17907941495620308
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1795386203961686
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19977080128860672
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17343623797416854
+
+epoch 68: batch_loss = 0.17807045234261984, val_loss = 0.17343623797416854, time = 3.150796890258789s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17079048748077846
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16092409712716835
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17892177791082725
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17937905047207905
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19959181905545156
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17328878857644886
+
+epoch 69: batch_loss = 0.1779214464092609, val_loss = 0.17328878857644886, time = 2.7575151920318604s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17066727813935081
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1607930183673443
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17876049846998368
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17921575035866863
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19940848303440298
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1731379223405884
+
+epoch 70: batch_loss = 0.1777690056739501, val_loss = 0.1731379223405884, time = 2.6298880577087402s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17054146491765587
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1606590235640053
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17859544638231
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1790485900557394
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19922053048600366
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1729835391148783
+
+epoch 71: batch_loss = 0.17761301108114283, val_loss = 0.1729835391148783, time = 1.5935020446777344s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17041296885910684
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16052204647271398
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1784263982261221
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17887739506894876
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19902781113805398
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1728255766082005
+
+epoch 72: batch_loss = 0.17745332395298913, val_loss = 0.1728255766082005, time = 1.638273000717163s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17028171846082402
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16038196532938398
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1782532758942495
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17870208277859959
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19883028867312158
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17266401357899697
+
+epoch 73: batch_loss = 0.17728986622723572, val_loss = 0.17266401357899697, time = 1.6466879844665527s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17014762058414704
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16023867448654627
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1780759255379562
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17852255199842032
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19862801639571323
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17249862553082357
+
+epoch 74: batch_loss = 0.17712255780055663, val_loss = 0.17249862553082357, time = 1.606260061264038s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1700105212695562
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1600921186050434
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17789425658058808
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1783387393253403
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19842061829692623
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17232930999628884
+
+epoch 75: batch_loss = 0.17695125081549085, val_loss = 0.17232930999628884, time = 1.6712441444396973s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16987034932436318
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15994217196728505
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17770828089925098
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17815052060208772
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19820785086074533
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17215593299147644
+
+epoch 76: batch_loss = 0.17677583473074646, val_loss = 0.17215593299147644, time = 1.6415538787841797s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1697269991135048
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15978878882609643
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1775177516051489
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17795775465737226
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.197989651774979
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17197842685759918
+
+epoch 77: batch_loss = 0.17659618919542028, val_loss = 0.17197842685759918, time = 1.697342872619629s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16958037678034948
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15963192161884449
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.177322538134405
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17776035117572286
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.1977659619468154
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1717967599174112
+
+epoch 78: batch_loss = 0.17641222993122746, val_loss = 0.1717967599174112, time = 1.6784999370574951s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16943044620304298
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1594713905434278
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1771225309977439
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17755808578591203
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19753660510460647
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.1716107364978644
+
+epoch 79: batch_loss = 0.17622381172694662, val_loss = 0.1716107364978644, time = 1.6230440139770508s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16927715233509133
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15930709664761908
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17691754058820372
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17735082709132818
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.197301468311039
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17142020750225792
+
+epoch 80: batch_loss = 0.17603081699465628, val_loss = 0.17142020750225792, time = 1.6551389694213867s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1691203361154659
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1591389181024861
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17670744299095867
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1771385133933752
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.1970603935122001
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17122522782289368
+
+epoch 81: batch_loss = 0.17583312082289718, val_loss = 0.17122522782289368, time = 1.6089510917663574s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1689599696612069
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15896675703001437
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17649238752079333
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17692099200598535
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19681309079346995
+(points skipped, sat solves failed, crit solves failed) = 13, 0, 0
+val_loss = 0.17102553913722657
+
+epoch 82: batch_loss = 0.17563063940229398, val_loss = 0.17102553913722657, time = 1.5788328647613525s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16879583635718334
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15879049793020222
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17627202082863808
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17669807421267653
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19655928856867666
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.17082099374106544
+
+epoch 83: batch_loss = 0.17542314357947536, val_loss = 0.17082099374106544, time = 1.7295520305633545s
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1686278127821122
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1586100510771635
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17604618873974268
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17646962249945275
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.1962988770557986
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.1706114304051365
+
+epoch 84: batch_loss = 0.17521051043085395, val_loss = 0.1706114304051365, time = 1.5755951404571533s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16845588794556077
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15842531518354155
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17581471590324832
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17623554331394778
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.1960318937317713
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.17039676927739728
+
+epoch 85: batch_loss = 0.17499267121561393, val_loss = 0.17039676927739728, time = 1.6722779273986816s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16828000701477597
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1582361332777276
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17557756042542322
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17599562939601976
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19575804738076433
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.17017686278677402
+
+epoch 86: batch_loss = 0.17476947549894215, val_loss = 0.17017686278677402, time = 1.6162309646606445s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1681000760943752
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1580424694207931
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17533450190422611
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17574968723107595
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.19547708199913838
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.1699515654057612
+
+epoch 87: batch_loss = 0.17454076332992174, val_loss = 0.1699515654057612, time = 1.7598581314086914s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16791595100664714
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15784426186953876
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17508536108367337
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17549761786723458
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1951888571553271
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16972070220650812
+
+epoch 88: batch_loss = 0.1743064097964842, val_loss = 0.16972070220650812, time = 1.7409701347351074s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16772751993688834
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15764131802754616
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1748300470388927
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1752392992373376
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19489322334657613
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.1694841870899184
+
+epoch 89: batch_loss = 0.17406628151744818, val_loss = 0.1694841870899184, time = 1.6681170463562012s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16753465573355072
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15743350975718895
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17456841435410325
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.1749746016776596
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19459000801351675
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16924188583686062
+
+epoch 90: batch_loss = 0.17382023790720386, val_loss = 0.16924188583686062, time = 1.832183837890625s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1673372823587373
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15722072317666963
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17430029753575044
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17470329754050856
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19427890822560123
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.1689936227320043
+
+epoch 91: batch_loss = 0.17356810176745344, val_loss = 0.1689936227320043, time = 1.6874959468841553s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16713531583388808
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1570028577042251
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17402552854752903
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17442522674892608
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19395983975901956
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.1687392790133212
+
+epoch 92: batch_loss = 0.17330975371871757, val_loss = 0.1687392790133212, time = 1.7072479724884033s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16692861309381196
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1567797961363871
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1737439438673844
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17414023494377148
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19363258469705827
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16847872387509544
+
+epoch 93: batch_loss = 0.17304503454768264, val_loss = 0.16847872387509544, time = 1.625274896621704s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1667170383773301
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15655140300709394
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17345535318006441
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17384809306233157
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19329684310607478
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16821181651598122
+
+epoch 94: batch_loss = 0.17277374614657898, val_loss = 0.16821181651598122, time = 1.7883880138397217s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16650051204052113
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15631749607421577
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.173159566860994
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.173548589326676
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19295242821649497
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.167938399276008
+
+epoch 95: batch_loss = 0.17249571850378037, val_loss = 0.167938399276008, time = 1.6856749057769775s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16627887806885308
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.15607798478591534
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1728563912088504
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+loss = 0.17324159158863223
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19259922653446157
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.1676583321104908
+
+epoch 96: batch_loss = 0.1722108144373425, val_loss = 0.1676583321104908, time = 1.7011430263519287s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16605200769468467
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1558327090353693
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1725457018655325
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.17292701999968346
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1922370560783436
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16737143896707427
+
+epoch 97: batch_loss = 0.1719188989347227, val_loss = 0.16737143896707427, time = 1.9706549644470215s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16581983222257785
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.15558157841401243
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17222733870185902
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.17260469674543047
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1918656377554477
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16707753259658223
+
+epoch 98: batch_loss = 0.1716198167678655, val_loss = 0.16707753259658223, time = 1.8097269535064697s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16558230597107432
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15532451661786015
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17190115580979237
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.17227443421860605
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.19148478066994026
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16677651447176867
+
+epoch 99: batch_loss = 0.17131343865745463, val_loss = 0.16677651447176867, time = 1.8113269805908203s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1653392530289682
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15506135029770188
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17156695583168052
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+loss = 0.171936101363989
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.19109429515128865
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16646817811679485
+
+epoch 100: batch_loss = 0.17099959113472565, val_loss = 0.16646817811679485, time = 1.81917405128479s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16509052077352065
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15479192775504494
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17122451902918268
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17158946549963544
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.19069392858233236
+(points skipped, sat solves failed, crit solves failed) = 12, 0, 0
+val_loss = 0.16615241055144006
+
+epoch 101: batch_loss = 0.17067807232794321, val_loss = 0.16615241055144006, time = 1.7426400184631348s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16483602420419102
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1545161123050704
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17087368063056152
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17123434170306148
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.19028340684873105
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.1658290126308255
+
+epoch 102: batch_loss = 0.1703487131383231, val_loss = 0.1658290126308255, time = 1.839270830154419s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16457561302928195
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15423378692265294
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.17051424433108628
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17087058653754372
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18986254533633265
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.16549780466769176
+
+epoch 103: batch_loss = 0.1700113552313795, val_loss = 0.16549780466769176, time = 1.9146041870117188s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16430917207295626
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15394486441220126
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1701460153903382
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.17049794653269207
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18943106650082916
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.16515860731497578
+
+epoch 104: batch_loss = 0.1696658129818034, val_loss = 0.16515860731497578, time = 1.839953899383545s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1640365272406818
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15364916159970515
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16976873880067905
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1701162421331484
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18898878570474842
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.16481131556319806
+
+epoch 105: batch_loss = 0.16931189109579256, val_loss = 0.16481131556319806, time = 1.8840100765228271s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1637576193503974
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1533464967573867
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16938228428698945
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16972527631614293
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18853548628154915
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.16445569531594956
+
+epoch 106: batch_loss = 0.16894943259849313, val_loss = 0.16445569531594956, time = 1.7393920421600342s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1634723336274628
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15303675018070137
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16898643788105938
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16932494442820883
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18807098810284792
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.16409166816566628
+
+epoch 107: batch_loss = 0.16857829084405607, val_loss = 0.16409166816566628, time = 2.0292301177978516s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16318049027264422
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1527197964149658
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16858112140917403
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16891509063636198
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18759508401928768
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.16371905659154384
+
+epoch 108: batch_loss = 0.16819831655048675, val_loss = 0.16371905659154384, time = 1.6686620712280273s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16288199551740312
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15239545617449696
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16816616145487878
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16849552621179484
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18710755496260312
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.1633377110149915
+
+epoch 109: batch_loss = 0.16780933886423538, val_loss = 0.1633377110149915, time = 1.6843898296356201s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16257676520815753
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1520635523105671
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16774132798628888
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1680660779539583
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18660811737928154
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.16294747226032125
+
+epoch 110: batch_loss = 0.16741116816765067, val_loss = 0.16294747226032125, time = 1.6350200176239014s
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16226463620789564
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15172401205164204
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16730648711248203
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16762652858581437
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18609656215733641
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.1625481377304675
+
+epoch 111: batch_loss = 0.16700364522303407, val_loss = 0.1625481377304675, time = 1.7418010234832764s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.16194549548645382
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15137674485445946
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16686144340382475
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1671767156844181
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18557271266101447
+(points skipped, sat solves failed, crit solves failed) = 11, 0, 0
+val_loss = 0.16213958120311012
+
+epoch 112: batch_loss = 0.16658662241803412, val_loss = 0.16213958120311012, time = 1.654083013534546s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.1616192808637402
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15102164887761535
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16640603231673212
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1667165352020064
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18503635443284894
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+val_loss = 0.16172168969068762
+
+epoch 113: batch_loss = 0.1661599703385886, val_loss = 0.16172168969068762, time = 1.6801669597625732s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.16128585150899993
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15065863170227559
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1659401550031154
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16624587067738794
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18448730408228864
+(points skipped, sat solves failed, crit solves failed) = 10, 0, 0
+val_loss = 0.16129435439326828
+
+epoch 114: batch_loss = 0.16572356259481352, val_loss = 0.16129435439326828, time = 1.6901838779449463s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.16094508794903759
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15028753693502261
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16546358912124368
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16576453178425188
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18392532301883643
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+val_loss = 0.1608574641342676
+
+epoch 115: batch_loss = 0.16527721376167845, val_loss = 0.1608574641342676, time = 1.618302822113037s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.16059688162575178
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14990821985674413
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1649761691674242
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16527236945734963
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18335021553303224
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+val_loss = 0.1604108373892288
+
+epoch 116: batch_loss = 0.1648207711280604, val_loss = 0.1604108373892288, time = 1.5826959609985352s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.16024114699323405
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14952059655625896
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16447783415615058
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1647693088116305
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.182761729580468
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+val_loss = 0.15995433131124703
+
+epoch 117: batch_loss = 0.1643541232195484, val_loss = 0.15995433131124703, time = 1.717628002166748s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.15987784650988646
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14912458775649287
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16396844936994098
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16425525046847186
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.18215975412664598
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+val_loss = 0.15948781823771305
+
+epoch 118: batch_loss = 0.16387717764628762, val_loss = 0.15948781823771305, time = 1.6530649662017822s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.15950692243776163
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14872017218628555
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16344782500302152
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.163730032743446
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.18154417865507289
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+val_loss = 0.15901116083703026
+
+epoch 119: batch_loss = 0.16338982620511752, val_loss = 0.15901116083703026, time = 1.6514918804168701s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.1591282171633878
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14830715447347456
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16291584789657454
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1631935873312121
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.180914876043721
+(points skipped, sat solves failed, crit solves failed) = 9, 0, 0
+val_loss = 0.15852433453490464
+
+epoch 120: batch_loss = 0.162891936581674, val_loss = 0.15852433453490464, time = 1.7405099868774414s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.15874162319852558
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14788549023778555
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16237247575111577
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.1626458273757702
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.18027174911459812
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+val_loss = 0.15802727241063746
+
+epoch 121: batch_loss = 0.16238343313555903, val_loss = 0.15802727241063746, time = 1.6552510261535645s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.15834705532353632
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14745510763232417
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16181755174282422
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16208657033071455
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1796145191914419
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+val_loss = 0.15751985673843136
+
+epoch 122: batch_loss = 0.16186416084416824, val_loss = 0.15751985673843136, time = 1.631178855895996s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.1579444758243896
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1470158379989262
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1612509181107942
+(points skipped, sat solves failed, crit solves failed) = 8, 0, 0
+loss = 0.16151562598135566
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.17894316334201324
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+val_loss = 0.15700197169638555
+
+epoch 123: batch_loss = 0.16133400425149574, val_loss = 0.15700197169638555, time = 1.7431600093841553s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.1575337946732869
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14656763539807213
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.16067247809414525
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1609330333783649
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.17825757738112633
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+val_loss = 0.15647357396061456
+
+epoch 124: batch_loss = 0.1607929037849991, val_loss = 0.15647357396061456, time = 1.6209521293640137s
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.15711495543633341
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.14611045478000137
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.16008213926265885
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.16033869344161514
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.17755772298265438
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+val_loss = 0.15593449291527361
+
+epoch 125: batch_loss = 0.16024079318065262, val_loss = 0.15593449291527361, time = 1.7204911708831787s
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.15668790228925783
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.14564429854190375
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.15947985649996266
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.1597325310720514
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.17684340362010545
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+val_loss = 0.15538473006978462
+
+epoch 126: batch_loss = 0.1596775984046562, val_loss = 0.15538473006978462, time = 1.623650074005127s
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.156252600230947
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.14516905404928962
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.158865539288461
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.15911431309798704
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.17611444871536527
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+val_loss = 0.15482421975595878
+
+epoch 127: batch_loss = 0.15910319107641, val_loss = 0.15482421975595878, time = 1.7199580669403076s
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.1558089471010678
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.1446846219428234
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.15823910900588992
+(points skipped, sat solves failed, crit solves failed) = 7, 0, 0
+loss = 0.15848405753743672
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.17537070143450192
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+val_loss = 0.15425291974122615
+
+epoch 128: batch_loss = 0.15851748740434396, val_loss = 0.15425291974122615, time = 1.6745338439941406s
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.15535688277235613
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.14419101189784353
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.1576004833072619
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.1578417425234647
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.17461225453221818
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+val_loss = 0.15367078358544956
+
+epoch 129: batch_loss = 0.1579204750066289, val_loss = 0.15367078358544956, time = 1.7195580005645752s
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.15489635557129244
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1436882065585245
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.1569496869265025
+(points skipped, sat solves failed, crit solves failed) = 6, 0, 0
+loss = 0.15718734214147354
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.17383898477075035
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+val_loss = 0.15307776464154838
+
+epoch 130: batch_loss = 0.15731211519370866, val_loss = 0.15307776464154838, time = 1.6403391361236572s
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.15442734766219404
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.14317620010331208
+(points skipped, sat solves failed, crit solves failed) = 4, 0, 0
+loss = 0.1562866219516383
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.1565207748203467
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.1730508300832434
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+val_loss = 0.1524737660957115
+
+epoch 131: batch_loss = 0.15669235492414693, val_loss = 0.1524737660957115, time = 1.669497013092041s
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.1539498352872163
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1426549356988648
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.15561119148024377
+(points skipped, sat solves failed, crit solves failed) = 5, 0, 0
+loss = 0.15584209080764863
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.17224774395007314
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+val_loss = 0.15185870597395174
+
+epoch 132: batch_loss = 0.15606115944480933, val_loss = 0.15185870597395174, time = 1.7059600353240967s
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.15346378746788475
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.14212437976944126
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15492341587857908
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.1551512856037599
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.171429717690724
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+val_loss = 0.15123261002400296
+
+epoch 133: batch_loss = 0.1554185172820778, val_loss = 0.15123261002400296, time = 1.7014551162719727s
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.1529690794934255
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1415845247973906
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15422326840824196
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.1544483780707668
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.17059671488480807
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+val_loss = 0.15059551278685573
+
+epoch 134: batch_loss = 0.1547643931309266, val_loss = 0.15059551278685573, time = 1.6845829486846924s
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.15246572945595901
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1410353729075331
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15351072867592713
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15373335021109422
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.16974861830007307
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.14994742131335972
+
+epoch 135: batch_loss = 0.1540987599101173, val_loss = 0.14994742131335972, time = 1.7105159759521484s
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.15195379107372964
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.140476964065123
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.152785797048347
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1530062245417301
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.16888556495149296
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.1492883131140544
+
+epoch 136: batch_loss = 0.15342166833608456, val_loss = 0.1492883131140544, time = 1.7030961513519287s
+(points skipped, sat solves failed, crit solves failed) = 3, 0, 0
+loss = 0.15143325854283018
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13990933950737444
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1520484826365853
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15226694233328367
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1680075311638545
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.14861821697740785
+
+epoch 137: batch_loss = 0.1527331108367856, val_loss = 0.14861821697740785, time = 1.700551986694336s
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15090414612133315
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13933243120962774
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.15129878406036396
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1515156451100183
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.16711453727532802
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.1479371958614576
+
+epoch 138: batch_loss = 0.1520331087553342, val_loss = 0.1479371958614576, time = 1.681373119354248s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.15036644428066243
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13874628226372335
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1505366955815205
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1507523635446918
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.16620665211710373
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.14724525033844882
+
+epoch 139: batch_loss = 0.15132168755754036, val_loss = 0.14724525033844882, time = 1.6791999340057373s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14982017821844149
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13815089128940264
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14976222131981096
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1499771384822282
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.16528392202744524
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.1465424339374465
+
+epoch 140: batch_loss = 0.1505988702674657, val_loss = 0.1465424339374465, time = 1.6230099201202393s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14926537142184582
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13754632963544652
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14897540521336167
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14919007171710405
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.16434640000381287
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.1458287489314577
+
+epoch 141: batch_loss = 0.14986471559831419, val_loss = 0.1458287489314577, time = 1.6770150661468506s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14870205746796628
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13693263196586583
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14817632678122333
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14839124203740348
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.16339417009886073
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.14510431287055384
+
+epoch 142: batch_loss = 0.14911928567026392, val_loss = 0.14510431287055384, time = 1.7000470161437988s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14813028284508067
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1363098422173852
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1473650701315912
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14758076682885665
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1624273392949803
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+val_loss = 0.144369171352652
+
+epoch 143: batch_loss = 0.1483626602635788, val_loss = 0.144369171352652, time = 1.6853220462799072s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1475500851912071
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13567811848333583
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14654174105919826
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14675874208890025
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1614459698870168
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.14362346568210607
+
+epoch 144: batch_loss = 0.14759493134193163, val_loss = 0.14362346568210607, time = 1.6875s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14696151564580912
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13503754208830904
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14570646853524627
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14592535671818008
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.16045024718090703
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1428672857467611
+
+epoch 145: batch_loss = 0.14681622603369032, val_loss = 0.1428672857467611, time = 1.7034828662872314s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14636463197039595
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1343881835613635
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14485933576870733
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1450807177455207
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15944021251488819
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.14210072227901333
+
+epoch 146: batch_loss = 0.14602661631217512, val_loss = 0.14210072227901333, time = 1.701812982559204s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14575950899485984
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13373012248864558
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14400052453006612
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14422494120485027
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15841611842584144
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.14132393248248143
+
+epoch 147: batch_loss = 0.14522624312885266, val_loss = 0.14132393248248143, time = 1.7026300430297852s
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1451462748064022
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1330634472640417
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14313010156961778
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14335816261946283
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15737813391818586
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.14053699064612915
+
+epoch 148: batch_loss = 0.14441522403554208, val_loss = 0.14053699064612915, time = 1.6958978176116943s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.144524940048295
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1323882699643139
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14224821179389363
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14248060327025863
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15632644510257754
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13974007036629937
+
+epoch 149: batch_loss = 0.14359369403586775, val_loss = 0.13974007036629937, time = 1.746945858001709s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14389562187053395
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13170475489162675
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.141355063989532
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14159242835701008
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15526127921732913
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1389333587017048
+
+epoch 150: batch_loss = 0.14276182966520637, val_loss = 0.1389333587017048, time = 1.7013111114501953s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14325841953907453
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.1310130505896294
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14045085983384162
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14069388911686703
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15418275216151744
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13811703844991174
+
+epoch 151: batch_loss = 0.141919794248186, val_loss = 0.13811703844991174, time = 1.6834661960601807s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1426135172542667
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.13031326439067425
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13953576109528792
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13978520125286395
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15309121602927608
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13729124530778128
+
+epoch 152: batch_loss = 0.14106779200447378, val_loss = 0.13729124530778128, time = 1.7999529838562012s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14196104079176725
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.12960566202698875
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13860990517535626
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13886659612668437
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15198698769249644
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13645617946805547
+
+epoch 153: batch_loss = 0.1402060383626586, val_loss = 0.13645617946805547, time = 1.7454919815063477s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14130108548710452
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12889036988515434
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13767353113861233
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13793824737608493
+(points skipped, sat solves failed, crit solves failed) = 2, 0, 0
+loss = 0.15087030428179335
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1356121081604796
+
+epoch 154: batch_loss = 0.13933470763374992, val_loss = 0.1356121081604796, time = 1.727090835571289s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14063383470993335
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12816750404789154
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13672687250958865
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13700047541134153
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1497414825028974
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13475915810615718
+
+epoch 155: batch_loss = 0.1384540338363305, val_loss = 0.13475915810615718, time = 1.6999189853668213s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13995938756748622
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12743719864616732
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13577017694470478
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1360535497118025
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14860077798137458
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13389756622109014
+
+epoch 156: batch_loss = 0.1375642181703071, val_loss = 0.13389756622109014, time = 1.7317321300506592s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13927791077929294
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12669965627422902
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13480368815282867
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13509774650506434
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14744857148279972
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13302759670375622
+
+epoch 157: batch_loss = 0.13666551463884297, val_loss = 0.13302759670375622, time = 1.712568998336792s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13858960735596823
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12595518947428833
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13382768033966758
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13413334275075905
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14628522398140995
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13214948870184767
+
+epoch 158: batch_loss = 0.1357582087804186, val_loss = 0.13214948870184767, time = 1.793684959411621s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1378946792781134
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12520400281780567
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13284250143280232
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13316063046728346
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1451110786993132
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13126347144408057
+
+epoch 159: batch_loss = 0.13484257853906362, val_loss = 0.13126347144408057, time = 1.7680690288543701s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1371932876196366
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12444630691180442
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1318483918328343
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13217983950127457
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.14392648349265877
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.13036975676081972
+
+epoch 160: batch_loss = 0.13391886187164176, val_loss = 0.13036975676081972, time = 1.7630631923675537s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13648562233318998
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12368233026180589
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.13084564717189762
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13119135941467913
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14273184480874573
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12946870242914774
+
+epoch 161: batch_loss = 0.13298736079806367, val_loss = 0.12946870242914774, time = 1.7378981113433838s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13577186344569928
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12291232950143406
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.12983458829035233
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13019552779486604
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14152753479042487
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12856057397415996
+
+epoch 162: batch_loss = 0.13204836876455534, val_loss = 0.12856057397415996, time = 1.8003089427947998s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13505216279285343
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1221364923521833
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.12881552856948805
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12919268387904037
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.14031396763434414
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12764565399559824
+
+epoch 163: batch_loss = 0.13110216704558186, val_loss = 0.12764565399559824, time = 1.72890305519104s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13432676137804345
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12135508111880154
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.12778879801293738
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12818317115126734
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1390915811049873
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12672423300638286
+
+epoch 164: batch_loss = 0.1301490785532074, val_loss = 0.12672423300638286, time = 1.768829107284546s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13359591277622057
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1205683893112385
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.12675473516578448
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12716736164602094
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13786081334414715
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12579662759300114
+
+epoch 165: batch_loss = 0.12918944244868233, val_loss = 0.12579662759300114, time = 1.8133318424224854s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1328598582343617
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11977665735861587
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.12571366149796434
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12614560506487674
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1366220993379604
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12486316374163683
+
+epoch 166: batch_loss = 0.1282235762987558, val_loss = 0.12486316374163683, time = 1.7434840202331543s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13211880611084917
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11898012720894045
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.1246659997742526
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12511826725313413
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1353758889603864
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12392416064492714
+
+epoch 167: batch_loss = 0.12725181786151257, val_loss = 0.12392416064492714, time = 1.7039878368377686s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13137297874254994
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11817909871038264
+(points skipped, sat solves failed, crit solves failed) = 1, 0, 0
+loss = 0.12361201546515946
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12408578038273216
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1341226975929524
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12297993114222792
+
+epoch 168: batch_loss = 0.12627451417875532, val_loss = 0.12297993114222792, time = 1.7505509853363037s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13062263534167087
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11737384671634297
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12255216480034373
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12304848668109183
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13286293984545325
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12203084035701264
+
+epoch 169: batch_loss = 0.12529201467698053, val_loss = 0.12203084035701264, time = 1.7914841175079346s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12986801243954627
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11656464923930851
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12148680900794552
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12200675446991505
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13159705636094146
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.12107718198666163
+
+epoch 170: batch_loss = 0.12430465630353135, val_loss = 0.12107718198666163, time = 1.7486779689788818s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12910931428766462
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11575176548467309
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12041625679632574
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12096095144768239
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.13032558669282038
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1201193202428276
+
+epoch 171: batch_loss = 0.12331277494183324, val_loss = 0.1201193202428276, time = 1.7252998352050781s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1283467274656964
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11493546284188115
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11934090868965133
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11991145774519163
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1290490481088843
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11915755469518147
+
+epoch 172: batch_loss = 0.12231672097026096, val_loss = 0.11915755469518147, time = 1.7349190711975098s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12758060631886117
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11411602189432979
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11826126077725327
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11885867448186085
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1277679297898868
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11819221781896433
+
+epoch 173: batch_loss = 0.12131689865243837, val_loss = 0.11819221781896433, time = 1.7666189670562744s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12681119512542988
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11329374963609855
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11717769041135714
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11780298740152331
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12648292596895408
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11722370974438441
+
+epoch 174: batch_loss = 0.12031370970867258, val_loss = 0.11722370974438441, time = 1.7370641231536865s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12603878236190666
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11246891814028433
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1160905791680958
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11674479568350446
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12519449353234594
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11625234871171818
+
+epoch 175: batch_loss = 0.11930751377722744, val_loss = 0.11625234871171818, time = 1.751702070236206s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.125263651616823
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11164184972900294
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11500035842517488
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11568450847729196
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1239030963245264
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11527850720276131
+
+epoch 176: batch_loss = 0.11829869291456382, val_loss = 0.11527850720276131, time = 1.722517967224121s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12448610055906638
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11081282808272724
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11390744043449366
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11462249260805027
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12260924144052089
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11430253965356853
+
+epoch 177: batch_loss = 0.1172876206249717, val_loss = 0.11430253965356853, time = 1.758056879043579s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12370636665298193
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10998210366913283
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11281219279029475
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11355914876518762
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1213134949581688
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11332478152916853
+
+epoch 178: batch_loss = 0.11627466136715318, val_loss = 0.11332478152916853, time = 1.7337310314178467s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12292475785752596
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10914997418784086
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1117151015441802
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11249483692493366
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12001636076155626
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11234560942482846
+
+epoch 179: batch_loss = 0.11526020625520739, val_loss = 0.11234560942482846, time = 1.7635960578918457s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12214157142900796
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10831671835324173
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11061655059180854
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11142991958912372
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11871836660290037
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.11136535959496603
+
+epoch 180: batch_loss = 0.11424462531321647, val_loss = 0.11136535959496603, time = 1.7644190788269043s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12135710755516807
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1074826079178817
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10951697024288783
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11036478064228643
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11742000465487111
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1103843714388075
+
+epoch 181: batch_loss = 0.11322829420261901, val_loss = 0.1103843714388075, time = 1.7815330028533936s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.12057161565464677
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10664792540648381
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10841679582752849
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10929977770239564
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11612179763836883
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.10940297801785706
+
+epoch 182: batch_loss = 0.1122115824458847, val_loss = 0.10940297801785706, time = 1.7667529582977295s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11978533794639416
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10581291877530768
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10731644620159586
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10823526185815575
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11482427533853956
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.10842149476496006
+
+epoch 183: batch_loss = 0.1111948480239986, val_loss = 0.10842149476496006, time = 1.9173099994659424s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11899855841878523
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10497783064348327
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1062163126818804
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1071716072571353
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11352793955574529
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.10744023437205849
+
+epoch 184: batch_loss = 0.11017844971140592, val_loss = 0.10744023437205849, time = 1.8505749702453613s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11821156203518063
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10414290516040861
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10511681062492495
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10610920548753497
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11223327220177282
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1064595393333737
+
+epoch 185: batch_loss = 0.10916275110196441, val_loss = 0.1064595393333737, time = 1.8871641159057617s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1174246258784435
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10330842707133309
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10401834587387439
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10504838378126026
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11094080606399608
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.10547975482905317
+
+epoch 186: batch_loss = 0.10814811773378145, val_loss = 0.10547975482905317, time = 1.7420921325683594s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11663802397440423
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10247466539997048
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10292133917630888
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10398944484320888
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10965103174475803
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.10450120627037017
+
+epoch 187: batch_loss = 0.10713490102773011, val_loss = 0.10450120627037017, time = 1.956387996673584s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11585203094746288
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10164192821230489
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10182616152334847
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10293271804728292
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10836445132759687
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1035242001188955
+
+epoch 188: batch_loss = 0.1061234580115992, val_loss = 0.1035242001188955, time = 1.8292341232299805s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.115066901010093
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10081039661541183
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10073319929948585
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10187850691629899
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1070815490179492
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.10254902750670736
+
+epoch 189: batch_loss = 0.10511411057184776, val_loss = 0.10254902750670736, time = 1.8967578411102295s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11428288489666254
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09998028424022763
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09964283580402607
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10082711344685376
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10580275061149062
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.10157598369673396
+
+epoch 190: batch_loss = 0.10410717379985213, val_loss = 0.10157598369673396, time = 2.010272979736328s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11350023789065243
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09915181825300837
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09855543170187595
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09977882843753207
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10452853933511576
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.1006053335908564
+
+epoch 191: batch_loss = 0.10310297112363691, val_loss = 0.1006053335908564, time = 1.8449370861053467s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11271922869317083
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09832526933152227
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09747138361872205
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09873394359908308
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1032593216604641
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09963735515227105
+
+epoch 192: batch_loss = 0.10210182938059247, val_loss = 0.09963735515227105, time = 1.907271146774292s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11194011458616572
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0975008321104664
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09639102221803572
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09769274335718982
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10199551748134933
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09867234147471107
+
+epoch 193: batch_loss = 0.10110404595064137, val_loss = 0.09867234147471107, time = 1.7670021057128906s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.11116311942608051
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09667869251948484
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09531467924078203
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09665547553157562
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10073755090716623
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09771056290821764
+
+epoch 194: batch_loss = 0.10010990352501783, val_loss = 0.09771056290821764, time = 1.8867838382720947s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1103884895674082
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09585904574644208
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09424265990485402
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0956223826019102
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09948583026304764
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.0967522686943063
+
+epoch 195: batch_loss = 0.09911968161673243, val_loss = 0.0967522686943063, time = 1.8866431713104248s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10961647257998376
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09504208308398
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09317533142767191
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09459370798963106
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0982407479318697
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09579770141845179
+
+epoch 196: batch_loss = 0.09813366860262729, val_loss = 0.09579770141845179, time = 1.8981139659881592s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10884730641194246
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09422798125711804
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09211299256878208
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09356969170743969
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09700267682832402
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09484708411769989
+
+epoch 197: batch_loss = 0.09715212975472126, val_loss = 0.09484708411769989, time = 1.7399048805236816s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10808112525930295
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09341692116918257
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09105595833260202
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09255056551233648
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09577196327704753
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09390067158785753
+
+epoch 198: batch_loss = 0.0961753067100943, val_loss = 0.09390067158785753, time = 1.6999878883361816s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10731817756428444
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09260906510550529
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09000452580057836
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09153652936490554
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09454892603761021
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09295867772861655
+
+epoch 199: batch_loss = 0.09520344477457676, val_loss = 0.09295867772861655, time = 1.8691349029541016s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10655868080159878
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09180455304264548
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08895899755319821
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09052780382044114
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0933339604348994
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09202128045222284
+
+epoch 200: batch_loss = 0.09423679913055659, val_loss = 0.09202128045222284, time = 1.7776939868927002s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10580283478242827
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09100357136981882
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08791963959288115
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08952458320511426
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09212739225575702
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09108870848488186
+
+epoch 201: batch_loss = 0.0932756042411999, val_loss = 0.09108870848488186, time = 1.6701741218566895s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10505083750780451
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09020629100504313
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08688674966216145
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08852706593657503
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09092951933300826
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.09016118947665953
+
+epoch 202: batch_loss = 0.09232009268891847, val_loss = 0.09016118947665953, time = 2.0174448490142822s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10430288573320289
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0894128509431852
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08586056630960713
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08753544920218291
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08974067570870292
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.08923893061424193
+
+epoch 203: batch_loss = 0.09137048557937621, val_loss = 0.08923893061424193, time = 1.8417840003967285s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10355914854319817
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0886234180595151
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08484134667566672
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08654994217172257
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08856114981370672
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.08832211243065986
+
+epoch 204: batch_loss = 0.09042700105276186, val_loss = 0.08832211243065986, time = 1.9360969066619873s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10281981540460138
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08783813688022132
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08382933178726477
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08557069605804704
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08739122803180338
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.08741092638394235
+
+epoch 205: batch_loss = 0.08948984163238757, val_loss = 0.08741092638394235, time = 1.9424641132354736s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.10208508963028355
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08705715540034017
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08282477074522966
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08459790389372655
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08623120150935744
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.0865055548212608
+
+epoch 206: batch_loss = 0.08855922423578746, val_loss = 0.0865055548212608, time = 1.7206230163574219s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1013551164654358
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08628061707804616
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08182788770794694
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08363173860943121
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08508131274820817
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.08560615944092294
+
+epoch 207: batch_loss = 0.08763533452181364, val_loss = 0.08560615944092294, time = 1.731515884399414s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.1006300302252583
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08550864838424066
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08083891097830595
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08267235730331869
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08394184838543463
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.0847129245940053
+
+epoch 208: batch_loss = 0.08671835905531164, val_loss = 0.0847129245940053, time = 1.6353838443756104s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0999100193324525
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08474138659439721
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07985806231297546
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08171994401027768
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08281309760321094
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.08382601779031844
+
+epoch 209: batch_loss = 0.08580850197066275, val_loss = 0.08382601779031844, time = 1.7254679203033447s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09919524021877665
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08397898177197859
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07888555526211197
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08077469113362147
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08169524347917578
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.08294563421331311
+
+epoch 210: batch_loss = 0.0849059423731329, val_loss = 0.08294563421331311, time = 1.6585569381713867s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09848583024911303
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08322158038666926
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07792159496408556
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07983676581719376
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08058852970309843
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.08207195087315504
+
+epoch 211: batch_loss = 0.08401086022403201, val_loss = 0.08207195087315504, time = 1.6621899604797363s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09778195327737042
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08246931824062612
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0769663614937425
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07890636244070004
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07949316787633841
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.0812051265419597
+
+epoch 212: batch_loss = 0.0831234326657555, val_loss = 0.0812051265419597, time = 1.668321132659912s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09708373707359313
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08172234706161154
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07602003257141884
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07798363500490181
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07840939056804445
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.08034532192394693
+
+epoch 213: batch_loss = 0.08224382845591395, val_loss = 0.08034532192394693, time = 1.6682929992675781s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09639130181540581
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08098079180661875
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0750828152869706
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07706875368951221
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07733740284729222
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.0794927214839178
+
+epoch 214: batch_loss = 0.08137221308915991, val_loss = 0.0794927214839178, time = 1.6581192016601562s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09570477051268439
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08024478400820122
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07415488995663476
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07616190726168809
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07627740093932989
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.07864748053800089
+
+epoch 215: batch_loss = 0.08050875053570768, val_loss = 0.07864748053800089, time = 1.6477909088134766s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09502430498012947
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07951446321692215
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07323642706550018
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07526325364976762
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07522959699140912
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.0778097723977735
+
+epoch 216: batch_loss = 0.07965360918074571, val_loss = 0.0778097723977735, time = 1.6514408588409424s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09435002840900532
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07878997417845163
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07232763151290938
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07437295692865743
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07419419703130531
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.07697975054215049
+
+epoch 217: batch_loss = 0.07880695761206581, val_loss = 0.07697975054215049, time = 1.6532750129699707s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09368205216807882
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07807146102302902
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07142869401644021
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0734912169980223
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07317139973136169
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.0761575925197319
+
+epoch 218: batch_loss = 0.0779689647873864, val_loss = 0.0761575925197319, time = 1.59086012840271s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09302049653499841
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07735908463171783
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07053978121865177
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07261822515817767
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0721613929866294
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.07534346641997947
+
+epoch 219: batch_loss = 0.07713979610603502, val_loss = 0.07534346641997947, time = 1.6614301204681396s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09236548468248443
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07665297990760264
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06966106022980956
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0717541462456543
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07116433038410612
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.0745375204467188
+
+epoch 220: batch_loss = 0.07631960028993141, val_loss = 0.0745375204467188, time = 1.6812539100646973s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09171712941568792
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0759533113728899
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06879269576662364
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07089916467255687
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07018041862710726
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.07373992611894299
+
+epoch 221: batch_loss = 0.07550854397097312, val_loss = 0.07373992611894299, time = 1.5741779804229736s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0910755293825232
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07526021425026107
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0679348398731371
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07005345916896394
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06920984652203195
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.07295083195652108
+
+epoch 222: batch_loss = 0.07470677783938344, val_loss = 0.07295083195652108, time = 2.877548933029175s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.09044079071188701
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07457379940195348
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06708764189551598
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06921719013497216
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06825276391447602
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.07217038955689702
+
+epoch 223: batch_loss = 0.07391443721176091, val_loss = 0.07217038955689702, time = 3.303525924682617s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08981301769080044
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07389419988180758
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06625124049417233
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06839053918465583
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06730934879577904
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.07139875880853495
+
+epoch 224: batch_loss = 0.07313166920944306, val_loss = 0.07139875880853495, time = 5.4794580936431885s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08919230726234016
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07322158462826159
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06542577846474523
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06757366941494308
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06637974607754348
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.07063608726964031
+
+epoch 225: batch_loss = 0.07235861716956671, val_loss = 0.07063608726964031, time = 9.866314888000488s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08857875336506282
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07255606661658452
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06461138909817818
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06676674061570594
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06546410899856432
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.06988250411640887
+
+epoch 226: batch_loss = 0.07159541173881916, val_loss = 0.06988250411640887, time = 14.057132005691528s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08797244292766962
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07189776335050288
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06380820452388544
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06596991256874665
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0645625786967028
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.06913814743471583
+
+epoch 227: batch_loss = 0.07084218041350147, val_loss = 0.06913814743471583, time = 18.418614149093628s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08737345028331277
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.07124681681701894
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06301634054093619
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06518334209026923
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06367528452590883
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.06840315004770137
+
+epoch 228: batch_loss = 0.07009904685148918, val_loss = 0.06840315004770137, time = 21.705842971801758s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08678186505089616
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.0706033547357514
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06223591297856571
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06440717702836149
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06280235951653514
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.06767765847514404
+
+epoch 229: batch_loss = 0.06936613386202198, val_loss = 0.06767765847514404, time = 27.309988021850586s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08619776129087055
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06996748225536226
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06146703754018184
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06364156478477488
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06194391264361445
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.06696178740263496
+
+epoch 230: batch_loss = 0.0686435517029608, val_loss = 0.06696178740263496, time = 24.57131314277649s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08562120637851925
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06933932463074859
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.060709819962627
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06288663639787825
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.061100051560592145
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+val_loss = 0.06625563606656915
+
+epoch 231: batch_loss = 0.06793140778607305, val_loss = 0.06625563606656915, time = 20.267436027526855s
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.08505224897837568
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
+loss = 0.06871898089538148
+(points skipped, sat solves failed, crit solves failed) = 0, 0, 0
