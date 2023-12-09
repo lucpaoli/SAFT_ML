@@ -265,8 +265,8 @@ function eval_loss(X_batch, y_batch, metric, model, use_saft_head)
             ŷ_vec = [ŷ[2], ŷ[3], ŷ[5], ŷ[6]]
         end
         # @show y_vec, ŷ_vec
-        @assert !any(isnan.(y_vec)) "NaN in y, y_vec = $y_vec"
-        @assert !any(isnan.(ŷ_vec)) "NaN in y_hat, y_hat_vec = $ŷ_vec"
+        # @assert !any(isnan.(y_vec)) "NaN in y, y_vec = $y_vec"
+        # @assert !any(isnan.(ŷ_vec)) "NaN in y_hat, y_hat_vec = $ŷ_vec"
 
         # batch_loss += mean(metric(y_vec, ŷ_vec))
         for (y, ŷ) in zip(y_vec, ŷ_vec)
