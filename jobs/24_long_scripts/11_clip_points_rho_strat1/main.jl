@@ -84,7 +84,7 @@ function create_data(; batch_size=16, n_points=25, pretraining=false)
                 rhol_sat = 1/Vl_sat
 
                 push!(X_vec, T)
-                push!(Y_vec, [p_sat, rho_sat])
+                push!(Y_vec, [p_sat, rhol_sat])
             end
             mol_data[name] = (fp, Mw, X_vec, Y_vec)
         else
