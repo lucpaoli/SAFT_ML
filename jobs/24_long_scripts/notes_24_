@@ -1,0 +1,147 @@
+4_clip_points_nopre
+all runs jump to a val. batch loss of 10^29 after 1 epoch
+
+
+
+
+5_clip_points
+Lowest val. loss epoch: 27
+Lowest val. loss epoch (late in training): 620
+
+Epoch = 27
+Mean AAD over validation sets:
+Satv. l.: 3.145466996675535e-5, Satv. v.: 9.49260353805774e13, Satrho. l.: 1523.955867686865, Satrho. v.: 48.78, Satp: 102105.46, Cp1bar: 41.47
+Mean APD over validation sets:
+Satv. l.: 17.12, Satv. v.: 3.20753319536e9, Satrho. l.: 22.78, Satrho. v.: 79.78, Satp: 78.74, Cp1bar: 66.12
+
+Epoch = 620
+Mean AAD over validation sets:
+Satv. l.: 1.4898049818217704e-5, Satv. v.: 3.888765804e8, Satrho. l.: 592.5705944365137, Satrho. v.: 52.14, Satp: 94148.77, Cp1bar: 8.42
+Mean APD over validation sets:
+Satv. l.: 7.88, Satv. v.: 78647.65, Satrho. l.: 8.32, Satrho. v.: 72.92, Satp: 70.23, Cp1bar: 13.03
+
+
+
+
+6_ger_clip_points (fold 4 removed)
+Lowest val. loss epoch: 27
+Lowest val. loss epoch (late in training): 474
+
+Epoch = 27
+Mean AAD over validation sets:
+Satv. l.: 4.3371197691532166e-5, Satv. v.: 1.588394306154e10, Satrho. l.: 2155.6354514513423, Satrho. v.: 43.11, Satp: 78500.38, Cp1bar: 29.73
+Mean APD over validation sets:
+Satv. l.: 23.7, Satv. v.: 6.38010828e6, Satrho. l.: 33.8, Satrho. v.: 55.45, Satp: 54.82, Cp1bar: 37.98
+
+Epoch = 474
+Mean AAD over validation sets:
+Satv. l.: 1.2702839193864298e-5, Satv. v.: 6.035455393e7, Satrho. l.: 513.9037208960832, Satrho. v.: 52.98, Satp: 84946.87, Cp1bar: 9.18
+Mean APD over validation sets:
+Satv. l.: 6.63, Satv. v.: 43493.75, Satrho. l.: 7.27, Satrho. v.: 61.2, Satp: 59.37, Cp1bar: 13.44
+
+
+
+
+7_att_clip_points
+Lowest val. loss epoch: 20
+Lowest val. loss epoch (late in training): 448
+
+Epoch = 20
+Mean AAD over validation sets:
+Satv. l.: 4.0844935728758506e-5, Satv. v.: 1.501138815875164e13, Satrho. l.: 1734.3362424070297, Satrho. v.: 43.97, Satp: 89875.0, Cp1bar: 40.13
+Mean APD over validation sets:
+Satv. l.: 20.95, Satv. v.: 5.5015582441e8, Satrho. l.: 28.29, Satrho. v.: 73.39, Satp: 72.48, Cp1bar: 60.76
+
+Epoch = 448
+Mean AAD over validation sets:
+Satv. l.: 1.5282064731170216e-5, Satv. v.: 3.2528000468e8, Satrho. l.: 591.62301912936, Satrho. v.: 52.35, Satp: 94013.72, Cp1bar: 9.18
+Mean APD over validation sets:
+Satv. l.: 7.92, Satv. v.: 147210.37, Satrho. l.: 8.46, Satrho. v.: 68.7, Satp: 66.0, Cp1bar: 13.81
+
+
+
+
+11_clip_points_rho (fold 1 removed for epoch 771 analysis)
+Lowest val. loss epoch: 39
+Lowest val. loss epoch (late in training): 771
+
+Epoch = 39
+Mean AAD over validation sets:
+Satv. l.: 3.8448549261345054e-5, Satv. v.: 2.05063980308e9, Satrho. l.: 1912.0976084925799, Satrho. v.: 52.26, Satp: 108882.72, Cp1bar: 37.29
+Mean APD over validation sets:
+Satv. l.: 20.03, Satv. v.: 3.92699016e6, Satrho. l.: 30.65, Satrho. v.: 75.04, Satp: 73.89, Cp1bar: 56.38
+
+Epoch = 771
+Mean AAD over validation sets:
+Satv. l.: 1.639508035740212e-5, Satv. v.: 4.8405043162e8, Satrho. l.: 554.5965255582786, Satrho. v.: 40.93, Satp: 83180.96, Cp1bar: 7.49
+Mean APD over validation sets:
+Satv. l.: 8.2, Satv. v.: 146.7, Satrho. l.: 8.42, Satrho. v.: 73.7, Satp: 70.72, Cp1bar: 10.5
+
+
+
+
+12_clip_points_rho_slow
+Lowest val. loss epoch: 175
+Lowest val. loss epoch (late in training): N/A (Run doesn't appear to have additional minimum as of epoch 968, validation loss appears to have plateaued)
+
+Epoch = 175
+Mean AAD over validation sets:
+Satv. l.: 2.6064889755342615e-5, Satv. v.: 5.335939645262382e13, Satrho. l.: 1226.2668839520104, Satrho. v.: 49.87, Satp: 101451.94, Cp1bar: 40.11
+Mean APD over validation sets:
+Satv. l.: 14.12, Satv. v.: 1.80810630157e9, Satrho. l.: 18.05, Satrho. v.: 76.75, Satp: 75.48, Cp1bar: 63.66
+
+
+
+
+13_clip_points_rho_1024
+Lowest val. loss epoch: 66
+Lowest val. loss epoch: 119 (there is a second minimum near the training start)
+Lowest val. loss epoch (late in training): N/A (Run doesn't appear to have additional minimum as of epoch 2006, but validation loss still decreasing)
+
+Epoch = 66
+Mean AAD over validation sets:
+Satv. l.: 3.522353072183273e-5, Satv. v.: 2.652982870542831e15, Satrho. l.: 1233.8629963143935, Satrho. v.: 57.6, Satp: 111930.44, Cp1bar: 48.79
+Mean APD over validation sets:
+Satv. l.: 16.25, Satv. v.: 4.01598553989e9, Satrho. l.: 21.14, Satrho. v.: 86.48, Satp: 84.78, Cp1bar: 81.7
+
+Epoch = 118
+Mean AAD over validation sets:
+Satv. l.: 2.717888048806726e-5, Satv. v.: 8.241126294739717e13, Satrho. l.: 1034.4998613696184, Satrho. v.: 58.8, Satp: 102589.16, Cp1bar: 42.55
+Mean APD over validation sets:
+Satv. l.: 13.26, Satv. v.: 2.690507348e7, Satrho. l.: 16.61, Satrho. v.: 89.59, Satp: 86.66, Cp1bar: 62.38
+
+
+
+
+14_clip_points_rho_512
+Lowest val. loss epoch: 84
+Lowest val. loss epoch (late in training): (Run doesn't appear to have additional minimum as of epoch 3152, but validation loss still decreasing)
+
+Epoch = 84
+Mean AAD over validation sets:
+Satv. l.: 3.9801998008671595e-5, Satv. v.: 4.2409611534602325e20, Satrho. l.: 1289.0740635075238, Satrho. v.: 52.78, Satp: 99639.8, Cp1bar: 45.35
+Mean APD over validation sets:
+Satv. l.: 17.83, Satv. v.: 8.1300749295307e11, Satrho. l.: 23.49, Satrho. v.: 82.87, Satp: 80.78, Cp1bar: 71.15
+
+Epoch = 3152
+Mean AAD over validation sets:
+Satv. l.: 1.596419436695325e-5, Satv. v.: 6.4665949839e8, Satrho. l.: 436.11730585991165, Satrho. v.: 53.29, Satp: 83979.48, Cp1bar: 25.11
+Mean APD over validation sets:
+Satv. l.: 7.58, Satv. v.: 100621.01, Satrho. l.: 7.37, Satrho. v.: 63.86, Satp: 59.11, Cp1bar: 32.37
+
+
+
+
+15_clip_points_rho_128
+all runs jump to a val. batch loss of 10^29 after 1 epoch
+
+
+16_clip_points_rho_256
+Lowest val. loss epoch: 147
+Lowest val. loss epoch (late in training): (Run doesn't appear to have additional minimum as of epoch 312, and validation is still increasing)
+
+Epoch = 147
+Mean AAD over validation sets:
+Satv. l.: 4.0171963843549805e-5, Satv. v.: 9.763509472481845e18, Satrho. l.: 1327.6814178390512, Satrho. v.: 53.74, Satp: 96899.22, Cp1bar: 44.02
+Mean APD over validation sets:
+Satv. l.: 18.27, Satv. v.: 2.002956413445e10, Satrho. l.: 23.86, Satrho. v.: 82.2, Satp: 79.73, Cp1bar: 66.14

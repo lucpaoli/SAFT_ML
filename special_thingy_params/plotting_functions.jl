@@ -234,3 +234,64 @@ function remove_nans(pcp_prop, vrmie_prop)
 
     return pcp_prop, vrmie_prop
 end;
+
+function readout_file_analysis(; files_for_val_error, line_start_main_training, files_to_average)
+
+    all_train_losses_main = []
+    all_val_losses_main = []
+    epoch_ranges_main = []
+    epoch_times_main = []
+
+    lines_files_main = readlines.(files_for_val_error)
+
+    for lines in lines_files_main
+
+        epoch = 1
+        training_batch_losses = []
+        validation_batch_losses = []
+        epoch_times = []
+
+        for line in lines[line_start_main_training:end]
+
+            parts = split(line,"abc")
+
+            for part in parts 
+
+                if occursin("epoch $epoch:", part)
+
+                    training_batch_loss = parse(Float64,(split(split(part, ",")[1], "= ")[2]))
+                    validation_batch_loss = parse(Float64,(split(split(part, ",")[2], "val_loss = ")[2]))
+                    epoch_time = parse(Float64,(split(split(split(part, ",")[3], "= ")[2], "s")[1]))
+
+                    push!(training_batch_losses, Float64(training_batch_loss))
+                    push!(validation_batch_losses, Float64(validation_batch_loss))
+                    push!(epoch_times, epoch_time)
+
+                    epoch += 1
+                end
+
+            end
+        end
+
+        epoch_range = collect(range(1,epoch-1))
+        push!(all_val_losses_main, validation_batch_losses)
+        push!(all_train_losses_main, training_batch_losses)
+        push!(epoch_ranges_main, epoch_range)
+        push!(epoch_times_main, epoch_times)
+
+    end
+
+    total_epochs = length.(epoch_ranges_main)
+    shortest_total_epochs = minimum([total_epochs[i] for i in files_to_average])
+
+    println(total_epochs)
+
+    average_train_loss = [mean([all_train_losses_main[i][j] for i in files_to_average]) for j = 1:shortest_total_epochs]
+    average_val_loss = [mean([all_val_losses_main[i][j] for i in files_to_average]) for j = 1:shortest_total_epochs]
+    average_epoch_time = [mean([epoch_times_main[i][j] for i in files_to_average]) for j = 1:shortest_total_epochs]
+
+    epochs_min_val_loss = argmin(abs.(average_val_loss .- minimum(average_val_loss)))
+
+    return epochs_min_val_loss, total_epochs, average_val_loss, average_train_loss, average_epoch_time
+
+end;
