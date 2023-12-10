@@ -109,6 +109,8 @@ function sat_props_calc_VrMie(; species, processed_data_split, pcp_source_params
     v_vap_range_vrmie = []
     p_range_vrmie = []
     cp_range_vrmie = []        
+    cv_range_vrmie = []        
+    speed_sound_range_vrmie = []        
 
     processed_data_test_species = filter(row -> row.species == lowercase(species), processed_data_split);
     source_data_test_species = filter(row -> row.common_name == lowercase(species), pcp_source_params_split);
@@ -164,14 +166,18 @@ function sat_props_calc_VrMie(; species, processed_data_split, pcp_source_params
 
         (p_sat, v_liq_sat, v_vap_sat) = saturation_pressure(vrmie_model, T, method)
         cp_vrmie = isobaric_heat_capacity(vrmie_model, second_deriv_props_p, T)
+        cv_vrmie = isobaric_heat_capacity(vrmie_model, second_deriv_props_p, T)
+        speed_sound_vrmie = isobaric_heat_capacity(vrmie_model, second_deriv_props_p, T)
 
         push!(v_liq_range_vrmie, v_liq_sat)
         push!(v_vap_range_vrmie, v_vap_sat)
         push!(p_range_vrmie, p_sat)
         push!(cp_range_vrmie, cp_vrmie)
+        push!(cv_range_vrmie, cv_vrmie)
+        push!(speed_sound_range_vrmie, speed_sound_vrmie)
     end 
 
-    return T_range, [Tc_vrmie, pc_vrmie, Vc_vrmie], v_liq_range_vrmie, v_vap_range_vrmie, p_range_vrmie, cp_range_vrmie
+    return T_range, [Tc_vrmie, pc_vrmie, Vc_vrmie], v_liq_range_vrmie, v_vap_range_vrmie, p_range_vrmie, cp_range_vrmie, cv_range_vrmie, speed_sound_range_vrmie
 
 end
 
@@ -181,6 +187,8 @@ function sat_props_calc_PCP(; species, source_data_test_species, plot_all_exptl_
     v_vap_range_pcp = []
     p_range_pcp = []
     cp_range_pcp = []     
+    cv_range_pcp = []     
+    speed_sound_range_pcp = []        
     
     # Create PCP-SAFT model and compute critical props
     pcp_model = PPCSAFT([species])
@@ -202,14 +210,18 @@ function sat_props_calc_PCP(; species, source_data_test_species, plot_all_exptl_
         
         (p_sat, v_liq_sat, v_vap_sat) = saturation_pressure(pcp_model, T)
         cp_pcp = isobaric_heat_capacity(pcp_model, second_deriv_props_p, T)
+        cv_pcp = isochoric_heat_capacity(pcp_model, second_deriv_props_p, T)
+        speed_sound_pcp = speed_of_sound(pcp_model, second_deriv_props_p, T)
 
         push!(v_liq_range_pcp, v_liq_sat)
         push!(v_vap_range_pcp, v_vap_sat)
         push!(p_range_pcp,p_sat)
         push!(cp_range_pcp,cp_pcp)
+        push!(cv_range_pcp,cv_pcp)
+        push!(speed_sound_range_pcp,speed_sound_pcp)
     end
 
-    return T_range, [Tc_pcp, pc_pcp, Vc_pcp], v_liq_range_pcp, v_vap_range_pcp, p_range_pcp, cp_range_pcp
+    return T_range, [Tc_pcp, pc_pcp, Vc_pcp], v_liq_range_pcp, v_vap_range_pcp, p_range_pcp, cp_range_pcp, cv_range_pcp, speed_sound_range_pcp
 
 end;
 
@@ -295,3 +307,11 @@ function readout_file_analysis(; files_for_val_error, line_start_main_training, 
     return epochs_min_val_loss, total_epochs, average_val_loss, average_train_loss, average_epoch_time
 
 end;
+
+function r_squared(; y_actual, y_predicted)
+    mean_actual = sum(y_actual)/length(y_actual)
+    total_ss = sum((y_actual .- mean_actual).^2)
+    residual_ss = sum((y_actual .- y_predicted).^2)
+    r2 = 1.0 - residual_ss / total_ss
+    return r2
+end
