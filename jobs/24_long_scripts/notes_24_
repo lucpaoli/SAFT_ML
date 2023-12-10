@@ -101,7 +101,7 @@ Satv. l.: 12.74, Satv. v.: 540254.1, Satrho. l.: 12.57, Satrho. v.: 74.65, Satp:
 13_clip_points_rho_1024
 Lowest val. loss epoch: 66
 Lowest val. loss epoch: 119 (there is a second minimum near the training start)
-Lowest val. loss epoch (late in training): N/A (Run doesn't appear to have additional minimum as of epoch 2006, but validation loss still decreasing)
+Lowest val. loss epoch (late in training): N/A (Run doesn't appear to have additional minimum as of epoch 2005, but validation loss still decreasing)
 
 Epoch = 66
 Mean AAD over validation sets:
@@ -115,6 +115,11 @@ Satv. l.: 2.717888048806726e-5, Satv. v.: 8.241126294739717e13, Satrho. l.: 1034
 Mean APD over validation sets:
 Satv. l.: 13.26, Satv. v.: 2.690507348e7, Satrho. l.: 16.61, Satrho. v.: 89.59, Satp: 86.66, Cp1bar: 62.38
 
+Epoch = 2005
+Mean AAD over validation sets:
+Satv. l.: 1.3538505981648884e-5, Satv. v.: 5.1445129812e8, Satrho. l.: 428.06806076038714, Satrho. v.: 42.51, Satp: 75832.47, Cp1bar: 12.04
+Mean APD over validation sets:
+Satv. l.: 6.74, Satv. v.: 4495.09, Satrho. l.: 6.8, Satrho. v.: 62.22, Satp: 58.65, Cp1bar: 14.01
 
 
 
@@ -150,3 +155,17 @@ Mean AAD over validation sets:
 Satv. l.: 4.0171963843549805e-5, Satv. v.: 9.763509472481845e18, Satrho. l.: 1327.6814178390512, Satrho. v.: 53.74, Satp: 96899.22, Cp1bar: 44.02
 Mean APD over validation sets:
 Satv. l.: 18.27, Satv. v.: 2.002956413445e10, Satrho. l.: 23.86, Satrho. v.: 82.2, Satp: 79.73, Cp1bar: 66.14
+
+
+
+11_clip_points_rho final epoch:
+Run 1 fails
+
+12_clip_points_rho_slow final epoch:
+Satv. l.: 12.74, Satv. v.: 540254.1, Satrho. l.: 12.57, Satrho. v.: 74.65, Satp: 71.3, Cp1bar: 21.17
+
+13_clip_points_rho_1024 final epoch:
+Satv. l.: 6.74, Satv. v.: 4495.09, Satrho. l.: 6.8, Satrho. v.: 62.22, Satp: 58.65, Cp1bar: 14.01
+
+14_clip_points_rho_512 final epoch:
+Satv. l.: 7.58, Satv. v.: 100621.01, Satrho. l.: 7.37, Satrho. v.: 63.86, Satp: 59.11, Cp1bar: 32.37
