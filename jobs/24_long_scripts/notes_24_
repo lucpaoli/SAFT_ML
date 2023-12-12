@@ -169,3 +169,235 @@ Satv. l.: 6.74, Satv. v.: 4495.09, Satrho. l.: 6.8, Satrho. v.: 62.22, Satp: 58.
 
 14_clip_points_rho_512 final epoch:
 Satv. l.: 7.58, Satv. v.: 100621.01, Satrho. l.: 7.37, Satrho. v.: 63.86, Satp: 59.11, Cp1bar: 32.37
+
+
+
+
+5_clip points (last common epoch, batch losses):
+2005
+train: 0.03245902576732831
+val: 0.5218520149170918
+
+
+5_clip points (last common epoch, batch losses):
+513
+train: 0.03132086507501978
+val: 0.7187257165485491
+
+APD Sat. Liq. Density: 8.74303852486906
+APD Sat. Vap. Density: 72.44869143120715
+APD Sat. P: 69.64291932078228
+APD Isobaric Heat Capacity: 9.903848584301944
+
+500
+train: 0.0318708574586614
+val: 0.7208120676301073
+
+APD Sat. Liq. Density: 8.81905416149902
+APD Sat. Vap. Density: 72.47315615004457
+APD Sat. P: 69.65507119929356
+APD Isobaric Heat Capacity: 9.930488771456488
+
+
+
+5_ignore points (last common epoch, batch losses):
+513
+train: 0.03130780011802609
+val: 0.7242352589082118
+APD Sat. Liq. Density: 8.747810912755002
+APD Sat. Vap. Density: 72.47716490774083
+APD Sat. P: 69.66429489522471
+APD Isobaric Heat Capacity: 9.906966328778113
+
+500
+train: 0.03185775453884573
+val: 0.7262709676263756
+
+APD Sat. Liq. Density: 8.82418801618088
+APD Sat. Vap. Density: 72.50159982783391
+APD Sat. P: 69.67556625151781
+APD Isobaric Heat Capacity: 9.93401875710453
+
+
+5_Tr_Tc  (last common epoch, batch losses):
+513
+train: 0.010674353827304821
+val: 0.0505047494324692
+APD Sat. Liq. Density: 8.180044055821899
+APD Sat. Vap. Density: 135.89644818749056
+APD Sat. P: 132.77261562996404
+APD Isobaric Heat Capacity: 10.265745170573778
+
+500
+train: 0.010805044396213886
+val: 0.050734856463856184
+
+APD Sat. Liq. Density: 8.20844089840784
+APD Sat. Vap. Density: 137.45817411702882
+APD Sat. P: 134.37009118122234
+APD Isobaric Heat Capacity: 10.273743717170811
+
+
+
+
+
+0_ger_ran  (last common epoch, batch losses):
+250
+train: 93.81119234908343
+val: 32.970868641200525
+
+APD Sat. Liq. Density: 23.786493804733563
+APD Sat. Vap. Density: 3.279542653862588e11
+APD Sat. P: 3.2127737390116034e11
+APD Isobaric Heat Capacity: 33.02467622660354
+
+500
+train: 8.13909240964418
+val: 176.01444955391364
+
+APD Sat. Liq. Density: 20.48315010489776
+APD Sat. Vap. Density: 5.392951706980341e11
+APD Sat. P: 5.234838465630681e11
+APD Isobaric Heat Capacity: 30.722225085209924
+
+
+
+
+
+
+
+
+1_ger_strat  (last common epoch, batch losses):
+250
+train: 4539.231538567561
+val: 1.2305156752451608e8
+
+APD Sat. Liq. Density: 36.0904834439332
+APD Sat. Vap. Density: 1.2171312691437216e8
+APD Sat. P: 1.2144739036167581e8
+APD Isobaric Heat Capacity: 42.06904918014511
+
+1287
+train: 4.861040159544695
+val: 9.550710243456915e7
+
+APD Sat. Liq. Density: 39.893420382545344
+APD Sat. Vap. Density: 1.8444513322829634e7
+APD Sat. P: 1.77146926920807e7
+APD Isobaric Heat Capacity: 29.920654908473818
+
+500
+train: 879.9220873834126
+val: 9.781560724918956e7
+
+APD Sat. Liq. Density: 30.432583956789035
+APD Sat. Vap. Density: 3.3691924890422e7
+APD Sat. P: 3.3632060831320435e7
+APD Isobaric Heat Capacity: 40.2449037493425
+
+
+
+
+2_ger_inter  (last common epoch, batch losses):
+250
+train: 4491.408694311774
+val: 311.9654976324686
+
+APD Sat. Liq. Density: 36.03122493624712
+APD Sat. Vap. Density: 1.678736271109265e12
+APD Sat. P: 1.5873100535136235e12
+APD Isobaric Heat Capacity: 50.988538780999534
+
+2517
+train: 0.2221027319072622
+val: 0.5192484427264249
+
+APD Sat. Liq. Density: 21.061596169746508
+APD Sat. Vap. Density: 1.163684875212639e10
+APD Sat. P: 1.1506021965021921e10
+APD Isobaric Heat Capacity: 30.35898285936224
+
+500
+train: 801.5404225074504
+val: 41.12782362275267
+
+APD Sat. Liq. Density: 29.41564767961498
+APD Sat. Vap. Density: 6.342103192125633e12
+APD Sat. P: 5.50938996303768e12
+APD Isobaric Heat Capacity: 48.99264113109554
+
+
+
+
+
+
+All at epoch 500:
+
+Fingerprint length: 512
+Length after reduction: 259
+Average Jaccard: 0.724102193741427
+train: 0.028749523733742177
+val: 0.06216925896358271
+
+APD Sat. Liq. Density: 10.053864439860092
+APD Sat. Vap. Density: 89.77029024002083
+APD Sat. P: 89.06559773381784
+APD Isobaric Heat Capacity: 38.61461005881396
+
+Fingerprint length: 1024
+Length after reduction: 327
+Average Jaccard: 0.7486411698375488
+train: 0.02675506595013986
+val: 0.06103764051446053
+
+APD Sat. Liq. Density: 9.651579925697673
+APD Sat. Vap. Density: 91.32591116117159
+APD Sat. P: 90.72101186884547
+APD Isobaric Heat Capacity: 44.64546017231279
+
+Fingerprint length: 2048
+Length after reduction: 363
+Average Jaccard: 0.764898974807362
+train: 0.01563617984617218
+val: 0.043272257829703314
+
+APD Sat. Liq. Density: 8.178013328369635
+APD Sat. Vap. Density: 86.9414618371081
+APD Sat. P: 86.17430749876463
+APD Isobaric Heat Capacity: 33.86022116924579
+
+Fingerprint length: 4096
+Length after reduction: 369
+Average Jaccard: 0.7679265626694192
+train: 0.012610051935782175
+val: 0.03898957528864739
+
+APD Sat. Liq. Density: 8.32841228118537
+APD Sat. Vap. Density: 82.93395395362727
+APD Sat. P: 82.17968574920353
+APD Isobaric Heat Capacity: 34.892749563355274
+
+Fingerprint length: 8192
+Length after reduction: 370
+Average Jaccard: 0.76837728518939
+train: 0.010194063753908683
+val: 0.039322861958486915
+
+APD Sat. Liq. Density: 7.208107060354217
+APD Sat. Vap. Density: 80.42072494076655
+APD Sat. P: 79.54563654368741
+APD Isobaric Heat Capacity: 27.961736677881344
+
+Fingerprint length: 16384
+Length after reduction: 370
+Average Jaccard: 0.76837728518939
+train: 0.01177089019350672
+val: 0.04142167634965026
+
+APD Sat. Liq. Density: 7.961930178655619
+APD Sat. Vap. Density: 80.95096495636624
+APD Sat. P: 80.11954765074272
+APD Isobaric Heat Capacity: 31.580734679703195
+
+
+
