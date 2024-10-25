@@ -348,7 +348,7 @@ function create_X_data(model, mol_dict, batch_mols, x0_cache)
                 Tc0 = Vc
                 push!(mol_data, (fp, Mw, Tr, Tc, Vc, p_sat, p_sat_Vl, Vₗ, Vᵥ))
 
-                j == 1 && (x0_cache[mol] = (x0,)
+                j == 1 && (x0_cache[mol] = x0)
             end
         end
         # I think this is automagically safe under @Threads.threads
